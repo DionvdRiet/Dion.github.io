@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> <!--Chart.js Library-->
+	<link type="text/css" href="stylesheet.css" rel="stylesheet"> <!--Stylesheet--> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet"><!--Google Fonts-->
+	<title>Testjeee SpaceX</title>
+
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="head">
+
+			<h2 class="datum"> Friday <span class="white"> &nbsp 24-5-2030</span></h2>
+
+		</div>
+
+
+ 				<!--Resources-->
+
+	<h1 class="titel1">Resources</h1>
+
+	<div class="resources">
+
+	  
+		<div class="container">
+			<canvas class="barchart-y" id="myChartY" height="300px"></canvas>
+		</div>
+
+		<div class="container">
+			<canvas class="barchart-t" id="myChartT" height="300px"></canvas>
+		</div>
+
+		  	<div class="yesterday section-title">Yesterday</div>
+		  	<div class="today section-title">Today</div>
+
+
+	</div>
+
+				<!--Engine-->
+
+  	<h1 class="titel2">Engine</h1>
+
+ 	<div class="engine" style="position: relative; height: 50vh">
+
+ 		<div class="container">
+		    <canvas class="tempCh" id="myChartTemp" height="100px" width="50px"></canvas>
+		</div>
+
+		<div class="container">
+		    <canvas class="fuelCh" id="myChartFuel" height="100px" width="50px"></canvas>			
+		</div>
+
+		<div class="container">
+		    <canvas class="dynamicpressureCh" id="myChartDynamicPressure" height="100px" width="50px"></canvas>
+		</div>
+
+	  	<div class="temperature section-title">Temperature</div>
+
+	  	<div class="fuel section-title">Fuel</div>
+
+	  	<div class="dynamicpressure section-title">Dynamic Pressure</div>
+	</div>
+
+				<!--Journey-->
+
+	<h1 class="titel3">The Journey</h1>
+
+	<div class="journey" style="position: relative; height: 50vh">
+	  	
+		<div class="take-off">
+
+		  	<h3 class="active">Take off</h3>
+
+		</div>
+
+		<div class="in-transit">
+
+		  	<h3 class="inactive">In transit</h3>
+
+		</div>
+
+		<div class="in-orbit">
+
+		  	<h3 class="inactive">In orbit</h3>
+
+		</div>
+
+		<canvas id="myChartHorizontalA" class="horizontalBarA"></canvas>
+			
+		<div class="flex-position">	
+
+			<div class="current-speed">
+
+		  		<h3 class="titel">Current Speed</h3>
+
+		  		<h4 class="information">95.500km/h</h4>
+
+		  		<canvas id="stackedSpeed" class="chartSpeed"></canvas>	
+
+		  	</div>
+
+
+		  	<div class="current-distance">
+
+			  	<h3 class="titel">Distance Traveled</h3>
+
+			  	<h4 class="information">10.450 KM/ 56.000.000</h4>
+
+		  		<canvas id="myChartDistance" class="chartDistance"></canvas>	
+		  	</div>
+
+		  	<div class="current-time">
+
+			  	<h3 class="titel">Time Travelled</h3>
+
+			  	<h4 class="information">0d / 0h / 6m / 34</h4>
+
+		  		<canvas id="myChartTime" class="chartTime"></canvas>	
+		  	</div>
+
+		</div>
+
+	</div> 
+	</div>
+
+<script type="text/javascript">
+			
+		//Barchart links
+
+			var data = {
+		    labels: ["Water", "Steak", "Ice Cream"],
+		    datasets: [{
+		        label: "My First dataset",
+		        backgroundColor: ["#641acf","#4bee95","#f7ac69"],
+		        borderColor: "rgba(75,192,192,1)",
+		        data: [300, 200, 450],
+		    }]
+		};
+
+		var ctx = document.getElementById("myChartY");
+		var myChart = new Chart(ctx, {
+		    type: 'bar',
+		    data: data,
+		    options: {
+		    	legend: {
+       				display: false
+    			},
+		        scales: {
+		            yAxes:[{
+		            	 ticks:{
+		                 beginAtZero: true,
+		                 max: 500,
+               			 min: 0,
+		                 gridLines: { 
+		            		color:"1d1f2c",
+		            	}
+		               }
+		            }],
+		            xAxes: [{
+		                // Change here
+		            	barPercentage: 0.3,
+		            	categorySpacing:0,
+		            	gridLines: { 
+		            		color:"#1d1f2c"
+		            	}
+		            }]
+		        }
+		    }
+		});
+
+
+			//Barchart rechts
+
+
+			var data = {
+		   	labels: ["Water", "Steak", "Ice Cream"],
+		    datasets: [{
+		        label: "My First dataset",
+		        backgroundColor: ["#641acf","#4bee95","#f7ac69"],
+		        borderColor: "rgba(75,192,192,1)",
+		        data: [300, 200, 450],
+		    }]
+		};
+
+		var ctx = document.getElementById("myChartT");
+		var myChart = new Chart(ctx, {
+		    type: 'bar',
+		    data: data,
+		    options: {
+		    	legend: {
+       				display: false
+    			},
+		        scales: {
+		            yAxes:[{
+		            	 ticks:{
+		                 beginAtZero: true,
+		                 max: 500,
+               			 min: 0,
+		                 gridLines: { 
+		            		color:"1d1f2c",
+		            	}
+		               }
+		            }],
+		            xAxes: [{
+		                // Change here
+		            	barPercentage: 0.3,
+		            	categorySpacing:0,
+		            	gridLines: { 
+		            		color:"#1d1f2c"
+		            	}
+		            }]
+		        }
+		    }
+		});
+
+
+		//Temperature
+			var data = {
+		    labels: ["", ""],
+		    datasets: [{
+		        label: "My First dataset",
+		        backgroundColor: ["#171721","#3165f6"],
+		        borderColor: "rgba(75,192,192,0)",
+		        data: [0,100],
+		    }]
+		};
+
+
+
+		var ctx = document.getElementById("myChartTemp");
+		ctx.height = 75
+		var myChart = new Chart(ctx, {
+		    type: 'doughnut',
+		    data: data,
+		    options: {
+		    	cutoutPercentage: 80,
+		    	legend: {
+		    		display:false,
+		    	},
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero: true,
+		                    display:false,
+		                },
+		                gridLines: { 
+		            		color:"#1d1f2c",
+		            		zeroLineColor: '1d1f2c'
+		            	}
+		            }],
+		        xAxes: [{
+		                // Change here
+		            	barPercentage: 0.3,
+		            	categorySpacing:0,
+		            	gridLines: { 
+		            		color:"#1d1f2c"
+		            	}
+		            }]
+		        }
+		    }
+		});
+
+		//Fuel
+			var data = {
+		    datasets: [{
+		        label: "My First dataset",
+		        backgroundColor: ["#171721","#23e1d5"],
+		        borderColor: "rgba(75,192,192,0)",
+		        data: [50, 50],
+		    }]
+		};
+		var ctx = document.getElementById("myChartFuel");
+		ctx.height = 75
+		var myChart = new Chart(ctx, {
+		    type: 'doughnut',
+		    data: data,
+		    options: {
+		    	legend: {
+		    		display:false,
+		    	},
+		    	cutoutPercentage: 80,
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero: true,
+		                    display:false
+		                },
+		                gridLines: { 
+		            		color:"#1d1f2c",
+		            		zeroLineColor: '1d1f2c'
+		            	}
+		            }],
+		            xAxes: [{
+		                gridLines: { 
+		            		color:"#1d1f2c"
+		            	}
+		            }]
+		        }
+		    }
+		});
+
+		//Dynamic Pressure
+			var data = {
+		    labels: ["", ""],
+		    datasets: [{
+		        backgroundColor: ["#171721","#eea56e"],
+		        borderColor: "rgba(75,192,192,0)",
+		        data: [60, 40],
+		    }]
+		};
+
+		var ctx = document.getElementById("myChartDynamicPressure");
+		ctx.height = 75
+		var myChart = new Chart(ctx, {
+		    type: 'doughnut',
+		    data: data,
+		    options: {
+		    	legend: {
+		    		display:false,
+		    	},
+		    	cutoutPercentage: 80,
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero: true,
+		                    display:false
+		                },
+		                gridLines: { 
+		            		color:"#1d1f2c",
+		            		zeroLineColor: '1d1f2c'
+		            	}
+		            }],
+		            xAxes: [{
+		               gridLines: { 
+		            		color:"#1d1f2c"
+		            	}
+		            }]
+		        }
+		    }
+		});
+
+		//Stacked Bar Midden
+				var ctx = document.getElementById("myChartHorizontalA");
+				ctx.height = 6;
+				var myChart = new Chart(ctx, {
+				  type: 'horizontalBar',
+				  data: {
+				    labels: ["Red"],
+				    datasets: [{
+				        label: 'Active',
+				        data: [10],
+				        backgroundColor: [
+				          '#fe578b'
+				        ],
+				        borderColor: [
+				          ''
+				        ],
+				        borderWidth: 0
+				      },
+				      {
+				        label: 'Non-active',
+				        data: [80],
+				        backgroundColor: [
+				          '#62647b',
+				        ],
+				        borderColor: [
+				          '',
+				        ],
+				        borderWidth: 0
+				      }
+				      
+				    ]
+				  },
+				  options: {
+				  	legend: {
+				  		display:false
+				  	},
+				  	tooltips: {
+				  		enabled:false
+				  	},
+				    scales: {
+				      yAxes: [{
+				      	barPercentage: 0.5,
+				        stacked: true,
+				        ticks: {
+				        	display:false,
+				          beginAtZero: true
+				        }
+				      }],
+				      xAxes: [{
+				        stacked: true,
+				        categorySpacing: 0,
+				        ticks: {
+				        	display:false,
+				          beginAtZero: true
+				        }
+				      }]
+
+				    }
+				  }
+				});
+
+				//Stacked Bar Speed
+				var ctx = document.getElementById("stackedSpeed");
+				ctx.height = 5;
+				var myChart = new Chart(ctx, {
+				  type: 'horizontalBar',
+				  data: {
+				    labels: ["Red"],
+				    datasets: [{
+				        label: '# of Votes 1',
+				        data: [10],
+				        backgroundColor: [
+				          '#fe578b'
+				        ],
+				        borderColor: [
+				          ''
+				        ],
+				        borderWidth: 0
+				      },
+				      {
+				        label: '# of Votes 2',
+				        data: [80],
+				        backgroundColor: [
+				          '#62647b',
+				        ],
+				        borderColor: [
+				          '',
+				        ],
+				        borderWidth: 0
+				      },
+				      {
+				        label: '# of Votes 3',
+				        data: [10],
+				        backgroundColor: [
+				          '#62647b',
+				        ],
+				        borderColor: [
+				          '',
+				        ],
+				        borderWidth: 0
+				      }
+				    ]
+				  },
+				  options: {
+				  	legend: {
+				  		display:false
+				  	},
+				  	tooltips: {
+				  		enabled:false
+				  	},
+				    scales: {
+				      yAxes: [{
+				      	barPercentage: 0.5,
+				        stacked: true,
+				        ticks: {
+				        	display:false,
+				          beginAtZero: true
+				        }
+				      }],
+				      xAxes: [{
+				        stacked: true,
+				        categorySpacing: 0,
+				        ticks: {
+				        	display:false,
+				          beginAtZero: true
+				        }
+				      }]
+
+				    }
+				  }
+				});
+
+			
+				
+</script>
+
+</body>
+</html>

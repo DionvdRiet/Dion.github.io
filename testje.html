@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> <!--Chart.js Library-->
+	<script src="script.js"></script> <!--Scripts-->
+	<link type="text/css" href="stylesheet.css" rel="stylesheet"> <!--Stylesheet--> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet"><!--Google Fonts-->
+	<title>Testjeee SpaceX</title>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="head">
+
+			<h2 class="datum"> Friday <span class="white"> &nbsp 24-5-2030</span></h2>
+
+		</div>
+
+
+ 				<!--Resources-->
+
+	<h1 class="titel1">Resources</h1>
+
+	<div class="resources">
+
+	  
+
+			<canvas class="barchart-y" id="myChartY" width="250px" height="250px"></canvas>
+
+
+
+		    <canvas class="barchart-t" id="myChartT" width="350px" height="380px"></canvas>
+
+		  	<div class="yesterday section-title">Yesterday</div>
+
+		  	<div class="today section-title">Today</div>
+
+
+	</div>
+
+				<!--Engine-->
+
+  	<h1 class="titel2">Engine</h1>
+
+ 	<div class="engine">
+
+
+
+		    <canvas class="tempCh" id="myChartTemp" width="80px" height="80px"></canvas>
+
+
+
+		    <canvas class="fuelCh" id="myChartFuel" width="80px" height="80px"></canvas>
+
+			
+
+		    <canvas class="dynamicpressureCh" id="myChartDynamicPressure" width="80px" height="80px"></canvas>
+	  	
+	  	<div class="temperature section-title">Temperature</div>
+
+	  	<div class="fuel section-title">Fuel</div>
+
+	  	<div class="dynamicpressure section-title">Dynamic Pressure</div>
+
+	</div>
+
+				<!--Journey-->
+
+	<h1 class="titel3">The Journey</h1>
+
+	<div class="journey">
+	  	
+		<div class="take-off">
+
+		  	<h3 class="active">Take off</h3>
+
+		</div>
+
+		<div class="in-transit">
+
+		  	<h3 class="inactive">In transit</h3>
+
+		</div>
+
+		<div class="in-orbit">
+
+		  	<h3 class="inactive">In orbit</h3>
+
+		</div>
+
+		<canvas id="myChartHorizontalA" class="horizontalBarA"></canvas>
+			
+
+		<div class="current-speed">
+
+	  		<h3 class="titel-speed">Current Speed</h3>
+
+	  		<h4 class="information-speed">95.500km/h</h4>
+
+	  	</div>
+
+
+	  	<div class="current-distance">
+
+		  	<h3 class="titel-distance">Distance Traveled</h3>
+
+		  	<h4 class="information-distance">5.000 KM/ 56.000.000</h4>
+
+	  		<canvas id="myChartSpeed" class="chartSpeed"></canvas>	
+	  	</div>
+	
+	</div>
+
+</body>
+</html>

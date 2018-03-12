@@ -1,0 +1,357 @@
+	/* Kleuren:
+
+	Header:#22202e
+	Background:#2b2d42;
+	Background-secties:#1d1f2c;
+	Background-secties-balk & background-cirkeldiagrammen: #161620;
+	Titel:#8179dc;
+	Text:#f0f0f0;
+	(Text)Not-active:#626479;
+	testtest
+	*/
+
+
+		/*Media Querries*/
+		/*Mobile*/
+@media  only screen (max-width: 754px) {
+
+	.container{
+	    display: grid;
+	    height: 100%;
+	     max-width: 100%;
+	    grid-template-areas: "head head head"
+	    					 "titeleen . titeleen"
+	    					 "resources . resources"
+	    					 "engine . engine"
+	    					 "journey journey journey"
+	    					 ". . .";
+	    grid-template-columns:1fr 1% 1fr ;
+	    grid-template-rows: 0.5fr 0.1fr 5fr 0.1fr 3fr 0.1fr;
+
+	}
+
+	 canvas{
+    	height: 3px;
+    }
+
+    .resources,.engine,.journey{
+
+		height:30vh ;
+
+	}
+
+
+}
+
+		/*Tablet*/
+
+@media only screen and (min-width: 755px) and (max-width: 1024px){
+
+	.container{
+		display: grid;
+	    height: 100%;
+	    max-width: 100%;
+	    grid-template-areas: "head head head head head"
+	    					 ". titeleen . titeltwee ."
+	    					 ". resources . engine ."
+	    					 ". titeldrie . . ."
+	    					 ". journey journey journey ."
+	    					 ". . . . .";
+	    grid-template-columns:0.1fr 1fr 1% 1fr 0.1fr;
+	    grid-template-rows: 0.5fr 0.1fr 5fr 0.1fr 3fr 0.1fr;
+    }
+
+    
+
+    .resources,.engine,.journey,{
+
+		height:50vh ;
+
+	}
+
+}
+		/*Small Desktop*/
+
+@media only screen and (min-width:1025px) and (max-width: 1336px){
+
+	.container {
+	    display: grid;
+	    height: 100%;
+	    max-width: 100%;
+	    grid-template-areas: "head head head head head"
+	    					 ". titeleen . titeltwee ."
+	    					 ". resources . engine ."
+	    					 ". titeldrie . . ."
+	    					 ". journey journey journey ."
+	    					 ". . . . .";
+	    grid-template-columns:0.1fr 1fr 1% 1fr 0.1fr;
+	    grid-template-rows: 0.5fr 0.1fr 5fr 0.1fr 3fr 0.1fr;
+    }
+
+    .journey{
+		height:50% ;
+	}
+
+}
+
+		/*Large Desktop*/
+
+@media only screen and (min-width:1337px){
+
+	.container {
+	    display: grid;
+	    height: 100%;
+	    max-width: 100%;
+	    grid-template-areas: "head head head head head"
+	    					 ". titeleen . titeltwee ."
+	    					 ". resources . engine ."
+	    					 ". titeldrie . . ."
+	    					 ". journey journey journey ."
+	    					 ". . . . .";
+	    grid-template-columns:0.1fr 1fr 1% 1fr 0.1fr;
+	    grid-template-rows: 0.5fr 0.1fr 5fr 0.1fr 3fr 0.1fr;
+    }
+
+}
+
+
+
+html{
+		height: 100%;
+		width: 100%;
+	}
+
+body{
+		background-color: #2b2d42;
+		margin:0;
+		height: 100%;
+	}
+
+canvas{
+		max-width: 100%;
+	}
+
+
+.container > div{
+		background-color: #1d1f2c;
+	}
+
+.titel1{
+		grid-area: titeleen;
+	}
+
+.titel2{
+		grid-area: titeltwee;
+	}
+
+.titel3{
+		grid-area: titeldrie;
+	}
+
+.head{
+		grid-area: head;
+	}
+
+	h2{
+		font-family: 'Roboto Bold', sans-serif;
+		font-size: 100%;
+		color:#8179dc;
+		text-align: right;
+		justify-content: bottom;
+		margin-right: 3%;
+	}
+
+	.white{
+		color:#f0f0f0;
+	}
+
+	.resources{
+		grid-area:resources;
+		display: grid;
+		grid-template-areas: "barchart-y barchart-t"
+							 "yesterday today";
+		grid-template-rows: auto auto;
+		border-radius: 10px;
+	}
+
+	.barchart-y{
+		grid-area: barchart-y;
+	}
+
+	.barchart-t{
+		grid-area: barchart-t;
+	}
+
+	.section-title{
+		display: flex;
+		justify-content: center;
+		font-family: 'Roboto Bold', sans-serif;
+		font-size: 120%;
+		color:#f0f0f0;
+		background-color: #161620;
+		padding: 2%;
+	}
+
+	.yesterday{
+		
+		grid-area: yesterday;
+		border-radius: 0px 0px 0px 10px;
+	}
+
+	.today{
+		grid-area: today;
+		border-radius: 0px 0px 10px 0px;
+	}
+
+
+		h1{
+			font-family: 'Roboto Regular', sans-serif;
+			font-size: 100%;
+			color:#8179dc;
+		}
+
+		
+
+	.engine{
+		grid-area: engine;
+		display: grid;
+		grid-template-areas: "temp fuel dynamicpressure"
+							 "temperatureT fuelT dynamicpressureT";
+		grid-template-rows: 10fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		border-radius: 10px;
+	}
+
+		.tempCh{
+			grid-area:temp;
+		}
+
+		.fuelCh{
+			grid-area:fuel;
+		}
+
+		.dynamicpressureCh{
+			grid-area:dynamicpressure;
+		}
+		
+		.temperature{
+			grid-area: temperatureT;
+			border-radius: 0px 0px 0px 10px;
+		}
+
+
+		.fuel{
+			grid-area: fuelT;
+		}
+
+		.dynamicpressure{
+			grid-area: dynamicpressureT;
+			border-radius: 0px 0px 10px 0px;
+		}
+
+	.journey{
+		display: grid;
+		grid-area: journey;
+		grid-template-areas: "take-off in-transit in-orbit"
+							 "horizontalA horizontalA horizontalA"
+							 "flex flex flex";
+		grid-template-columns: 1fr 3fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		border-radius: 20px;
+		height: 35%;
+	}
+
+	.take-off{
+		grid-area: take-off;
+		text-align: center;
+		border-top: 3px solid #fe578b;
+		border-radius: 20px 0px 0px 0px;
+	}	
+
+	.in-transit{
+		grid-area: in-transit;
+		text-align: center;
+		border-top: 3px solid #62647b;
+	}
+
+		
+	.in-orbit{
+		grid-area: in-orbit;
+		text-align: center;
+		border-top: 3px solid #62647b;
+		border-radius: 0px 20px 0px 0px;
+	}
+
+		.active{
+			font-family: 'Roboto Regular', sans-serif;
+			color: #f0f0f0;
+		}
+		.inactive{
+			font-family: 'Roboto Regular', sans-serif;
+			color: #62647b;
+		}
+
+
+	.horizontalBarA{
+		grid-area: horizontalA;
+	}
+
+	.horizontalBarB{
+		grid-area: horizontalB;
+	}
+
+	.current-speed{
+		grid-area: speed;
+		display: grid;
+		text-align: center;
+
+	}
+
+		.titel{
+			font-family: 'Roboto Light', sans-serif;
+			color: #f0f0f0;
+			margin-top: 10%;
+			margin-bottom: -3%;
+
+		}
+
+		.information{
+			font-family: 'Roboto Light', sans-serif;
+			color: #626479;
+
+		}
+
+		.chartSpeed{
+
+		}
+
+	.current-distance{
+		grid-area: distance;
+		display: grid;
+		text-align: center;
+
+	}
+
+
+		.chart-distance{
+
+		}
+
+	.current-time{
+		grid-area: distance;
+		display: grid;
+		text-align: center;
+
+	}
+
+	
+		.chart-time{
+
+		}
+
+	.flex-position{
+		grid-area: flex;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
