@@ -21,7 +21,7 @@ function amsterdamTime(){
 
 	if (hoursAmsterdam >= 0 && hoursAmsterdam <= 5) {
    		document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
-        + 'rgba(30, 60, 114, 0.80)' + ', ' + 'rgba(42, 82, 152, 0.80)' + '), url(amsterdam.jpg)';
+        + 'rgba(30, 60, 114, 0.80)' + ', ' + 'rgba(42, 82, 152, 0.80)' + '), url(cities/amsterdam.jpg)';
         document.getElementById('amsterdam').style.backgroundSize = "100%";      
    	}
 
@@ -40,7 +40,7 @@ function amsterdamTime(){
 
 	else if (hoursAmsterdam >= 18 && hoursAmsterdam <= 23){
     	document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
-        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(Amsterdam.jpg)';
+        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(cities/amsterdam.jpg)';
         document.getElementById('amsterdam').style.backgroundSize = "100%";
 	}
 
@@ -82,14 +82,14 @@ function newYorkTime(){
 
 	else if (hoursNewYork >= 12 && hoursNewYork <= 17){
     	document.getElementById('new-york').style.background = '-moz-linear-gradient('
-        + 'rgba(0, 122, 223, 0.80)' + ', ' + 'rgba(0, 236, 188, 0.80)' + '), url(new-york.jpg)';
+        + 'rgba(0, 122, 223, 0.80)' + ', ' + 'rgba(0, 236, 188, 0.80)' + '), url(New-York.jpg)';
         document.getElementById('new-york').style.backgroundSize = "100%";
      
 	}
 
 	else if (hoursNewYork >= 18 && hoursNewYork <= 23){
     	document.getElementById('new-york').style.background = '-moz-linear-gradient('
-        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(new-york.jpg)';
+        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(New-york.jpg)';
         document.getElementById('new-york').style.backgroundSize = "100%";
 	}
 
