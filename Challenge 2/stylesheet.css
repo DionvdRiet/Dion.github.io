@@ -1,3 +1,10 @@
+@media  only screen (min-width: 1px) and (max-width: 754px) {
+
+html,body{
+  background-image: none;
+}
+}
+
 html,body{
   background-image: url(background.jpg);
   background-size: 100%;
