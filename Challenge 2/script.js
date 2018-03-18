@@ -3,7 +3,7 @@
 
 function amsterdamTime(){
 	var d = new Date();
-	var hours = d.getHours();
+	var hoursAmsterdam = d.getHours();
 	var mins = d.getMinutes();
 	var secs = d.getSeconds();
 
@@ -15,17 +15,42 @@ function amsterdamTime(){
 		mins = "0" + mins;
 	}
 
-	if(hours < 10) {
-		hours = "0" + hours;
+	if(hoursAmsterdam < 10) {
+		hoursAmsterdam = "0" + hoursAmsterdam;
 	}
 
-	document.getElementById("mainTimeAmsterdam").innerHTML = hours+":"+mins+":"+secs;
+	if (hoursAmsterdam >= 0 && hoursAmsterdam <= 5) {
+   		document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
+        + 'rgba(30, 60, 114, 0.80)' + ', ' + 'rgba(42, 82, 152, 0.80)' + '), url(amsterdam.jpg)';
+        document.getElementById('amsterdam').style.backgroundSize = "100%";      
+   	}
+
+	else if (hoursAmsterdam >= 6 && hoursAmsterdam <= 11){
+    	document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
+        + 'rgba(244, 59, 120, 0.90)' + ', ' + 'rgba(104, 43, 206, 0.90)' + '), url(amsterdam.jpg)';
+        document.getElementById('amsterdam').style.backgroundSize = "100%";
+	}
+
+	else if (hoursAmsterdam >= 12 && hoursAmsterdam <= 17){
+    	document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
+        + 'rgba(0, 122, 223, 0.80)' + ', ' + 'rgba(0, 236, 188, 0.80)' + '), url(amsterdam.jpg)';
+        document.getElementById('amsterdam').style.backgroundSize = "100%";
+     
+	}
+
+	else if (hoursAmsterdam >= 18 && hoursAmsterdam <= 23){
+    	document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
+        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(amsterdam.jpg)';
+        document.getElementById('amsterdam').style.backgroundSize = "100%";
+	}
+
+	document.getElementById("mainTimeAmsterdam").innerHTML = hoursAmsterdam+":"+mins+":"+secs;
 }
 setInterval(amsterdamTime, 100);
 
 function newYorkTime(){
 	var d = new Date();
-	var hours = d.getHours();
+	var hoursNewYork = d.getHours();
 	var mins = d.getMinutes();
 	var secs = d.getSeconds();
 
@@ -37,13 +62,38 @@ function newYorkTime(){
 		mins = "0" + mins;
 	}
 
-	if(hours < 10) {
-		hours = "0" + hours;
+	if(hoursNewYork < 10) {
+		hoursNewYork = "0" + hoursNewYork;
 	}
 
-	hours = hours - 5;
+	hoursNewYork = hoursNewYork - 5;
 
-	document.getElementById("mainTimeNewYork").innerHTML = hours+":"+mins+":"+secs;
+	if (hoursNewYork >= 0 && hoursNewYork <= 5) {
+   		document.getElementById('new-york').style.background = '-moz-linear-gradient('
+        + 'rgba(30, 60, 114, 0.80)' + ', ' + 'rgba(42, 82, 152, 0.80)' + '), url(new-york.jpg)';
+        document.getElementById('new-york').style.backgroundSize = "100%";      
+   	}
+
+	else if (hoursNewYork >= 6 && hoursNewYork <= 11){
+    	document.getElementById('new-york').style.background = '-moz-linear-gradient('
+        + 'rgba(244, 59, 120, 0.90)' + ', ' + 'rgba(104, 43, 206, 0.90)' + '), url(new-york.jpg)';
+        document.getElementById('new-york').style.backgroundSize = "100%";
+	}
+
+	else if (hoursNewYork >= 12 && hoursNewYork <= 17){
+    	document.getElementById('new-york').style.background = '-moz-linear-gradient('
+        + 'rgba(0, 122, 223, 0.80)' + ', ' + 'rgba(0, 236, 188, 0.80)' + '), url(new-york.jpg)';
+        document.getElementById('new-york').style.backgroundSize = "100%";
+     
+	}
+
+	else if (hoursNewYork >= 18 && hoursNewYork <= 23){
+    	document.getElementById('new-york').style.background = '-moz-linear-gradient('
+        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(new-york.jpg)';
+        document.getElementById('new-york').style.backgroundSize = "100%";
+	}
+
+	document.getElementById("mainTimeNewYork").innerHTML = hoursNewYork+":"+mins+":"+secs;
 }
 setInterval(newYorkTime, 100);
 
@@ -93,7 +143,7 @@ function londonTime(){
 	}
 
 
-	document.getElementById("mainTimeLondon").innerHTML = hours+":"+mins+":"+secs;
+	document.getElementById("mainTimeLondon").innerHTML = hoursLondon+":"+mins+":"+secs;
 }
 setInterval(londonTime, 100);
 
