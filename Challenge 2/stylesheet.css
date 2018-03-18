@@ -1,0 +1,150 @@
+html,body{
+  background-image: url(background.jpg);
+  background-size: 100%;
+}
+
+.container{
+  margin-top: 12%;
+}
+
+ul {
+  	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+#zon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#maan {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+
+.zon{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  margin-left: -550px;
+}
+
+.maan{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  margin-left: -550px;
+}
+
+
+.amsterdam{
+  background: 
+    linear-gradient(
+      rgba(244, 59, 120, 0.90), 
+      rgba(104, 43, 206, 0.90)
+    ),
+    url(amsterdam.jpg);
+
+    background-size: 100%;
+    z-index: 2;
+    position: relative;
+    opacity: 1;
+}
+
+.new-york{
+
+  background: 
+    linear-gradient(
+      rgba(30, 60, 114, 0.80), 
+      rgba(42, 82, 152, 0.80)
+    ),
+    url(New-York.jpg);
+
+    background-size: 100%;
+
+	/*background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);*/
+}
+
+.london{
+  background: 
+    linear-gradient(
+      rgba(39, 116, 249, 0.80), 
+      rgba(98, 29, 209, 0.80)
+    ),
+    url(London.jpg);
+
+    background-size: 100%;
+
+	/*background-image: linear-gradient(to top, #6a11cb 0%, #2575fc 100%);*/
+}
+
+.tokyo{
+   background: 
+    linear-gradient(
+      rgba(0, 122, 223, 0.80), 
+      rgba(0, 236, 188, 0.80)
+    ),
+    url(Tokyo.jpg);
+
+    background-size: 100%;
+
+	/*background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);*/
+}
+
+.amsterdam,.new-york,.london,.tokyo{
+	  width: 350px;
+    height: 350px;
+
+}
+
+
+#mainDateAmsterdam,#mainDateNewYork,#mainDateLondon,#mainDateTokyo{
+  font-family: 'Roboto Thin', sans-serif;
+  font-size: 190%;
+  position: relative;
+  color:white;
+  text-shadow: 3px 3px 6px rgba(0,0,0, 0.5);
+}
+
+#mainTimeAmsterdam,#mainTimeNewYork,#mainTimeLondon,#mainTimeTokyo{
+  font-family: 'Roboto Black', sans-serif;
+    position: relative;
+  margin-top: auto;
+  font-size: 500%;
+  color:white;
+  text-shadow: 3px 3px 6px rgba(0,0,0, 0.5);
+}
+
+
+
+.timezone{
+  position: relative;
+  margin-top: auto;
+  vertical-align: bottom;
+  background-color: white;
+  color: #6d6d6d;
+  font-family: 'Roboto Black', sans-serif;
+  font-size: 120%;
+  padding: 2% 0%;
+  border-radius: 0px 0px 20px 20px;
+}
+
