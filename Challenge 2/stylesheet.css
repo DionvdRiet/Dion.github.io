@@ -57,56 +57,20 @@ li {
 
 
 .amsterdam{
-  background: 
-    linear-gradient(
-      rgba(244, 59, 120, 0.90), 
-      rgba(104, 43, 206, 0.90)
-    ),
-    url(amsterdam.jpg);
-
-    background-size: 100%;
     z-index: 2;
     position: relative;
     opacity: 1;
 }
 
 .new-york{
-
-  background: 
-    linear-gradient(
-      rgba(30, 60, 114, 0.80), 
-      rgba(42, 82, 152, 0.80)
-    ),
-    url(New-York.jpg);
-
-    background-size: 100%;
-
 	/*background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);*/
 }
 
 .london{
-  background: 
-    linear-gradient(
-      rgba(39, 116, 249, 0.80), 
-      rgba(98, 29, 209, 0.80)
-    ),
-    url(London.jpg);
-
-    background-size: 100%;
-
 	/*background-image: linear-gradient(to top, #6a11cb 0%, #2575fc 100%);*/
 }
 
 .tokyo{
-   background: 
-    linear-gradient(
-      rgba(0, 122, 223, 0.80), 
-      rgba(0, 236, 188, 0.80)
-    ),
-    url(Tokyo.jpg);
-
-    background-size: 100%;
-
 	/*background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);*/
 }
 

@@ -49,7 +49,7 @@ setInterval(newYorkTime, 100);
 
 function londonTime(){
 	var d = new Date();
-	var hours = d.getHours();
+	var hoursLondon = d.getHours();
 	var mins = d.getMinutes();
 	var secs = d.getSeconds();
 
@@ -61,11 +61,36 @@ function londonTime(){
 		mins = "0" + mins;
 	}
 
-	if(hours < 10) {
-		hours = "0" + hours;
+	if(hoursLondon < 10) {
+		hoursLondon = "0" + hoursLondon;
 	}
 
-	hours = hours - 1;
+	hoursLondon = hoursLondon - 1;
+
+	if (hoursLondon >= 0 && hoursLondon <= 5) {
+   		document.getElementById('london').style.background = '-moz-linear-gradient('
+        + 'rgba(30, 60, 114, 0.80)' + ', ' + 'rgba(42, 82, 152, 0.80)' + '), url(london.jpg)';
+        document.getElementById('london').style.backgroundSize = "100%";      
+   	}
+
+	else if (hoursLondon >= 6 && hoursLondon <= 11){
+    	document.getElementById('london').style.background = '-moz-linear-gradient('
+        + 'rgba(244, 59, 120, 0.90)' + ', ' + 'rgba(104, 43, 206, 0.90)' + '), url(london.jpg)';
+        document.getElementById('london').style.backgroundSize = "100%";
+	}
+
+	else if (hoursLondon >= 12 && hoursLondon <= 17){
+    	document.getElementById('london').style.background = '-moz-linear-gradient('
+        + 'rgba(0, 122, 223, 0.80)' + ', ' + 'rgba(0, 236, 188, 0.80)' + '), url(london.jpg)';
+        document.getElementById('london').style.backgroundSize = "100%";
+     
+	}
+
+	else if (hoursLondon >= 18 && hoursLondon <= 23){
+    	document.getElementById('london').style.background = '-moz-linear-gradient('
+        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(london.jpg)';
+        document.getElementById('london').style.backgroundSize = "100%";
+	}
 
 
 	document.getElementById("mainTimeLondon").innerHTML = hours+":"+mins+":"+secs;
@@ -108,19 +133,20 @@ function tokyoTime(){
 
 	else if (hoursTokyo >= 6 && hoursTokyo <= 11){
     	document.getElementById('tokyo').style.background = '-moz-linear-gradient('
-        + 'rgba(30, 60, 114, 0.80)' + ', ' + 'rgba(42, 82, 152, 0.80)' + '), url(Tokyo.jpg)';
+        + 'rgba(244, 59, 120, 0.90)' + ', ' + 'rgba(104, 43, 206, 0.90)' + '), url(Tokyo.jpg)';
         document.getElementById('tokyo').style.backgroundSize = "100%";
 	}
 
 	else if (hoursTokyo >= 12 && hoursTokyo <= 17){
     	document.getElementById('tokyo').style.background = '-moz-linear-gradient('
-        + 'rgba(30, 60, 114, 0.80)' + ', ' + 'rgba(42, 82, 152, 0.80)' + '), url(Tokyo.jpg)';
+        + 'rgba(0, 122, 223, 0.80)' + ', ' + 'rgba(0, 236, 188, 0.80)' + '), url(Tokyo.jpg)';
         document.getElementById('tokyo').style.backgroundSize = "100%";
+     
 	}
 
 	else if (hoursTokyo >= 18 && hoursTokyo <= 23){
     	document.getElementById('tokyo').style.background = '-moz-linear-gradient('
-        + 'rgba(30, 60, 114, 0.80)' + ', ' + 'rgba(42, 82, 152, 0.80)' + '), url(Tokyo.jpg)';
+        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(Tokyo.jpg)';
         document.getElementById('tokyo').style.backgroundSize = "100%";
 	}
 
