@@ -142,7 +142,7 @@ function londonTime(){
         document.getElementById('london').style.backgroundSize = "100%";
 	}
 
-
+//
 	document.getElementById("mainTimeLondon").innerHTML = hoursLondon+":"+mins+":"+secs;
 }
 setInterval(londonTime, 100);
