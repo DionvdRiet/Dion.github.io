@@ -40,7 +40,7 @@ function amsterdamTime(){
 
 	else if (hoursAmsterdam >= 18 && hoursAmsterdam <= 23){
     	document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
-        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(amsterdam.jpg)';
+        + 'rgba(39, 116, 249, 0.80)' + ', ' + 'rgba(98, 29, 209, 0.80)' + '), url(Amsterdam.jpg)';
         document.getElementById('amsterdam').style.backgroundSize = "100%";
 	}
 
