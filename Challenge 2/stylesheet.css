@@ -1,9 +1,3 @@
-@media  only screen (min-width: 1px) and (max-width: 754px) {
-
-html,body{
-  background-image: none;
-}
-}
 
 html,body{
   background-image: url(background.jpg);
@@ -38,7 +32,7 @@ li {
     width: 100px;
     height: 100px;
     position: absolute;
-    align-self: center;
+    align-self:center;
     z-index: 0;
 }
 
@@ -47,6 +41,7 @@ li {
     width: 100px;
     height: 100px;
     position: absolute;
+    align-self:center;
 }
 
 
@@ -78,7 +73,6 @@ li {
 .amsterdam,.new-york,.london,.tokyo{
 	  width: 350px;
     height: 350px;
-
 }
 
 
@@ -88,6 +82,7 @@ li {
   position: relative;
   color:none;
   text-shadow: 3px 3px 6px rgba(0,0,0, 0.5);
+  z-index: 1;
 }
 
 #mainTimeAmsterdam,#mainTimeNewYork,#mainTimeLondon,#mainTimeTokyo{
@@ -97,6 +92,7 @@ li {
   font-size: 500%;
   color:white;
   text-shadow: 3px 3px 6px rgba(0,0,0, 0.5);
+  z-index: 1;
 }
 
 
@@ -113,3 +109,91 @@ li {
   border-radius: 0px 0px 20px 20px;
 }
 
+
+@media only screen and (max-width: 754px) {
+    .amsterdam,.new-york,.london,.tokyo{
+      width: 350px;
+      height: 350px;
+    }
+
+    #mainDateAmsterdam,#mainDateNewYork,#mainDateLondon,#mainDateTokyo{
+      font-size: 200%;
+    }
+
+    #mainTimeAmsterdam,#mainTimeNewYork,#mainTimeLondon,#mainTimeTokyo{
+      font-size: 450%;
+    }
+
+    ul {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+  }
+
+  li{ margin:0 0px 40px 0;
+  }
+
+  .timezone{
+    height: 6%;
+  }
+}
+
+
+@media only screen and (min-width: 755px) and (max-width: 1024px){
+    .amsterdam,.new-york,.london,.tokyo{
+      width: 200px;
+      height: 200px;
+    }
+
+    #mainDateAmsterdam,#mainDateNewYork,#mainDateLondon,#mainDateTokyo{
+      font-size: 150%;
+    }
+
+    #mainTimeAmsterdam,#mainTimeNewYork,#mainTimeLondon,#mainTimeTokyo{
+      font-size: 250%;
+    }
+
+    ul {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+  li{ margin:0 40px 0px 0;
+  }
+
+  .timezone{
+    height: 12%;
+  }
+}
+
+
+@media only screen and (min-width:1025px) and (max-width: 1336px){
+
+    .amsterdam,.new-york,.london,.tokyo{
+      width: 300px;
+      height: 300px;
+    }
+
+    #mainDateAmsterdam,#mainDateNewYork,#mainDateLondon,#mainDateTokyo{
+      font-size: 200%;
+    }
+
+    #mainTimeAmsterdam,#mainTimeNewYork,#mainTimeLondon,#mainTimeTokyo{
+      font-size: 350%;
+    }
+
+    ul {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+  li{ margin:0 40px 0px 0;
+  }
+
+  .timezone{
+    height: 10%;
+  }
+}

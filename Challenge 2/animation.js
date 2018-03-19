@@ -9,7 +9,7 @@ var zon4 = document.getElementById('zon4');
 var maan = document.getElementById('maan');
 
 var tl1 = new TimelineMax();
-tl1.to(mainTimeAmsterdam, 1, {top: 5});
+tl1.to(mainTimeAmsterdam, 1, {top: 5,});
 
 var tl1 = new TimelineMax();
 tl1.to(mainTimeNewYork, 1, {top: 5});
@@ -21,20 +21,22 @@ var tl1 = new TimelineMax();
 tl1.to(mainTimeTokyo, 1, {top: 5});
 
 var tl1 = new TimelineMax({repeat:-1});
-tl1.from(zon, 2, {x:0, y:-500})
-	.to(zon, 2, {x:0, y:-250});
+tl1.from(zon, 2, {x:0, y:-105, ease: Sine.easeInOut})
+	.to(zon, 5, {x:0, y:-100, ease: Sine.easeInOut});
 
 var tl1 = new TimelineMax({repeat:-1});
-tl1.to(zon2, 2, {x:0, y:-300})
-	.to(zon2, 2, {x:0, y:0});
+tl1.from(zon2, 2, {x:0, y:-105, ease: Sine.easeInOut})
+	.to(zon2, 5, {x:0, y:-100, ease: Sine.easeInOut});
 
 var tl1 = new TimelineMax({repeat:-1});
-tl1.to(zon3, 2, {x:0, y:-300})
-	.to(zon3, 2, {x:0, y:0});
+tl1.from(zon3, 2, {x:0, y:-105, ease: Sine.easeInOut})
+	.to(zon3, 5, {x:0, y:-100, ease: Sine.easeInOut});
 
 var tl1 = new TimelineMax({repeat:-1});
-tl1.to(zon4, 2, {x:0, y:-300})
-	.to(zon4, 2, {x:0, y:0});
+tl1.from(zon4, 2, {x:0, y:-105, ease: Sine.easeInOut})
+	.to(zon4, 5, {x:0, y:-100, ease: Sine.easeInOut});
+
+
 
 
 

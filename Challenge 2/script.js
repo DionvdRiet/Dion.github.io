@@ -405,7 +405,6 @@ function tokyoTime(){
 	}
 
 	document.getElementById("mainTimeTokyo").innerHTML = hoursTokyo+":"+mins+":"+secs;
-	
 }
 setInterval(tokyoTime, 100);
 
@@ -471,11 +470,7 @@ function tokyoDate(){
 }
 setInterval(tokyoDate, 100);
 
-var el = document.getElementById("zon4");
-if(hoursTokyo >= 5 && hoursTokyo <= 22){
 
+
+var el = document.getElementById("zon4");
 el.src = "maan.png";
-}
-else{
-    el.src = "zon.png";
-}
