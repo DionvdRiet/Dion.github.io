@@ -470,3 +470,12 @@ function tokyoDate(){
 	document.getElementById("mainDateTokyo",).innerHTML = day+" \267 "+month+" \267 "+year;
 }
 setInterval(tokyoDate, 100);
+
+var el = document.getElementById("zon4");
+if(hoursTokyo >= 5 && hoursTokyo <= 22){
+
+el.src = "maan.png";
+}
+else{
+    el.src = "zon.png";
+}

@@ -34,11 +34,14 @@ li {
     position: relative;
 }
 
-#zon {
+#zon,#zon2,#zon3,#zon4{
     width: 100px;
     height: 100px;
     position: absolute;
+    align-self: center;
+    z-index: 0;
 }
+
 
 #maan {
     width: 100px;
@@ -64,23 +67,13 @@ li {
 }
 
 
-.amsterdam{
+.amsterdam,.new-york,.london,.tokyo:not(#zon){
     z-index: 2;
     position: relative;
     opacity: 1;
 }
 
-.new-york{
-	/*background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);*/
-}
 
-.london{
-	/*background-image: linear-gradient(to top, #6a11cb 0%, #2575fc 100%);*/
-}
-
-.tokyo{
-	/*background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);*/
-}
 
 .amsterdam,.new-york,.london,.tokyo{
 	  width: 350px;
