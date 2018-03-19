@@ -33,15 +33,16 @@ li {
     height: 200px;
     position: relative;
 }
+
 #zon {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     position: absolute;
 }
 
 #maan {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     position: absolute;
 }
 
@@ -92,13 +93,13 @@ li {
   font-family: 'Roboto Thin', sans-serif;
   font-size: 190%;
   position: relative;
-  color:white;
+  color:none;
   text-shadow: 3px 3px 6px rgba(0,0,0, 0.5);
 }
 
 #mainTimeAmsterdam,#mainTimeNewYork,#mainTimeLondon,#mainTimeTokyo{
   font-family: 'Roboto Black', sans-serif;
-    position: relative;
+  position: relative;
   margin-top: auto;
   font-size: 500%;
   color:white;
