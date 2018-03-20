@@ -7,6 +7,7 @@ var zon2 = document.getElementById('zon2');
 var zon3 = document.getElementById('zon3');
 var zon4 = document.getElementById('zon4');
 var maan = document.getElementById('maan');
+var timeZone = document.getElementById("timezone");
 
 var tl1 = new TimelineMax();
 tl1.to(mainTimeAmsterdam, 1, {top: 5,});
@@ -19,6 +20,9 @@ tl1.to(mainTimeLondon, 1, {top: 5});
 
 var tl1 = new TimelineMax();
 tl1.to(mainTimeTokyo, 1, {top: 5});
+
+var tl1 = new TimelineMax();
+tl1.to(timeZone, 1, {right: 5});
 
 var tl1 = new TimelineMax({repeat:-1});
 tl1.from(zon, 2, {x:0, y:-105, ease: Sine.easeInOut})

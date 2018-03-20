@@ -21,7 +21,7 @@ function amsterdamTime(){
 
 	if (hoursAmsterdam >= 0 && hoursAmsterdam <= 3) {
    		document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
-        + 'rgba(4, 24, 35, 0.80)' + ', ' + 'rgba(18, 9, 40, 0.80)' + '), url(cities-challenge-2/amsterdam.jpg)';
+        + 'rgba(4, 24, 35, 0.80)' + ', ' + 'rgba(18, 9, 40, 0.80)' + '), url(cities/amsterdam.jpg)';
         document.getElementById('amsterdam').style.backgroundSize = "100%";  
         document.getElementById('mainDateAmsterdam').style.color = "white";    
    	}
@@ -36,6 +36,8 @@ function amsterdamTime(){
     	document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
         + 'rgba(234, 110, 151, 0.90)' + ', ' + 'rgba(145, 113, 198, 0.90)' + '), url(cities/amsterdam.jpg)';
         document.getElementById('mainDateAmsterdam').style.color = "black";
+        document.getElementById('amsterdam').style.backgroundSize = "100%";
+
 	}
 
 	else if (hoursAmsterdam >= 8 && hoursAmsterdam <= 9){
@@ -53,7 +55,7 @@ function amsterdamTime(){
 
 	else if (hoursAmsterdam >= 12 && hoursAmsterdam <= 13){
     	document.getElementById('amsterdam').style.background = '-moz-linear-gradient('
-        + 'rgba(0, 122, 223, 0.90)' + ', ' + 'rgba(0, 236, 188, 0.90)' + '), url(../cities-challenge-2/amsterdam.jpg)';
+        + 'rgba(0, 122, 223, 0.90)' + ', ' + 'rgba(0, 236, 188, 0.90)' + '), url(cities/amsterdam.jpg)';
         document.getElementById('amsterdam').style.backgroundSize = "100%";
         document.getElementById('mainDateAmsterdam').style.color = "black";
      
