@@ -10,7 +10,7 @@ var maan = document.getElementById('maan');
 var timeZone = document.getElementById("timezone");
 
 var tl1 = new TimelineMax();
-tl1.to(mainTimeAmsterdam, 1, {top: 5,});
+tl1.to(mainTimeAmsterdam, 1, {top: 5});
 
 var tl1 = new TimelineMax();
 tl1.to(mainTimeNewYork, 1, {top: 5});

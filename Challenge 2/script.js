@@ -474,5 +474,5 @@ setInterval(tokyoDate, 100);
 
 
 
-var el = document.getElementById("zon4");
-el.src = "maan.png";
+var plaatje = document.getElementById("zon4");
+plaatje.src = "maan.png";
