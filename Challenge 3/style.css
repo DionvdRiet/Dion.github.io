@@ -9,21 +9,49 @@ body,html{
 }
 
 .zoeken{
-	background-color: #c9c9c9;
+	background-color: #f0f0f0;
 	grid-column: 1/3;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
-	input{
+	h1{
+		font-family: 'Roboto Bold', sans-serif;
 		line-height: 50px;
 		width: 600px;
 		align-self: center;
 	}
+	
 
-	h1{
-		position: absolute;
+	#city{
+		font-family: 'Roboto Medium', sans-serif;
+		font-size: 120%;
+		line-height: 50px;
+		width: 600px;
+		align-self: center;
+		border:none;
+		color: #979797;
+		padding-left: 40px;
 	}
+
+	#submit{
+		font-family: 'Roboto Medium', sans-serif;
+		font-size: 120%;
+		background-color: #32e875;
+		border:none;
+		line-height: 50px;
+		width: 200px;
+		align-self: center;
+		margin-top: 10px;
+	}
+
+	#submit:hover{
+		background-color: #5438dc;
+		color:white;
+	}
+
 
 .informatie{
 	background-color: #b5b3b3;
@@ -32,3 +60,4 @@ body,html{
 .map{
 	background-color: #919191;
 }
+
