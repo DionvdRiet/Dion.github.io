@@ -10,22 +10,29 @@
 
 	<div class="container">
 
-		<div class="zoeken">
-			
-			<h1>City:</h1>
+		<div class="zoeken" >			
+			<h1>City:</h1 >
 			<input type="text" id="city" name="city" placeholder="London">
 			<input type="submit" id="submit" name="zoeken" value="Zoeken">
+			<div id="achtergrond"></div>
 
 		</div>
 
-		<div class="informatie"></div>
+		<div class="informatie">
+			<div id="stad"></div>
 
+			<div id="samen">
+				<div id="temperatuur"></div>
+				<div id="beschrijving"></div>
+			</div>
+
+		</div>
+
+			<img id="image">
 
 		<div id="map"></div>
 
 	</div>
-
-	<img id="image">
 
 	<script src="map.js"></script>	
 	<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBMbzS3Jzr9hraDFK9vQhAMW-7P7dIB6S0 &callback=initMap" async defer></script>
