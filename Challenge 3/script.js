@@ -2,20 +2,19 @@
 
 function getAPIdata() {
 
-	var api = "http://api.openweathermap.org/data/2.5/weather?q=";
+		var api = "http://api.openweathermap.org/data/2.5/weather?q=";
+	var city = "Sydney";
 	var apiKey = "&appid=f7f1680fa8f3203a7bd7724195d79100";
 	var units = "&units=metric";
 
 	function setup(){
-		var button = select('#submit');
-		button.mousePressed(weatherAsk);
-		input = select('#city');	
-	}
+	var button = select('#submit');
+	button.mousePressed(laadWeer);
+	input = select('#city');
+}
 
-	function weatherAsk(){
-		var link = api + "input.value()" + apiKey + units;
-		fetch(link)
-	}
+	fetch(api + city + apiKey + units)
+
 	
 	// parse to JSON format 
 	.then(function(response) {

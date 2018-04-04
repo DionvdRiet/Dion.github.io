@@ -44,7 +44,41 @@
 
 					var map = new google.maps.Map(document.getElementById('map'), {
 						zoom: 5,
-						center: myLatLng
+						center: myLatLng,
+						styles:[
+							  {
+							    "elementType": "geometry.fill",
+							    "stylers": [
+							      {
+							        "color": "#372978"
+							      }
+							    ]
+							  },
+							  {
+							    "elementType": "geometry.stroke",
+							    "stylers": [
+							      {
+							        "color": "#49f152"
+							      }
+							    ]
+							  },
+							  {
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#ffffff"
+							      }
+							    ]
+							  },
+							  {
+							    "elementType": "labels.text.stroke",
+							    "stylers": [
+							      {
+							        "color": "#151735"
+							      }
+							    ]
+							  }
+							]
 					});
 
 					var marker = new google.maps.Marker({
@@ -52,6 +86,8 @@
 						map: map,
 						title: 'Hello World!'
 					});
+
+
 
 					}
     		</script>
@@ -62,7 +98,7 @@
 
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMbzS3Jzr9hraDFK9vQhAMW-7P7dIB6S0&callback=initMap" async defer></script>
-	<script src="test.js">
+	<script src="script.js">
 	</script>
 
 </body>
