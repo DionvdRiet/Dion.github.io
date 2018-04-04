@@ -11,19 +11,28 @@
 	<div class="container">
 
 		<div class="zoeken" >			
-			<h1>City:</h1 >
+			<h1>City:</h1>
 			<input type="text" id="city" name="city" placeholder="London">
-			<input type="submit" id="submit" name="zoeken" value="Zoeken">
+			<button type="submit" id="submit" name="zoeken">Zoeken</button>
 			<div id="achtergrond"></div>
 
 		</div>
 
 		<div class="informatie">
-			<div id="stad"></div>
 
 			<div id="samen">
-				<div id="temperatuur"></div>
-				<div id="beschrijving"></div>
+				<div id="titel">Temperature:</div>
+				<div class="type" id="temperatuur"></div>
+			</div>
+			
+			<div id="samen">
+				<div id="titel">Current Condition</div>
+				<div class="type" id="condition"></div>
+			</div>
+
+			<div id="samen">
+				<div id="titel">Wind Speed</div>
+				<div class="type" id="wind"></div>
 			</div>
 
 		</div>

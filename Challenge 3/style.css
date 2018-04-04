@@ -64,24 +64,28 @@ body,html{
 .informatie{
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
-	#stad{
-		font-family: 'Roboto Black', sans-serif;
-		font-size: 200%;
-	}
-
-	#temperatuur{
-		font-family: 'Roboto Black', sans-serif;
-		font-size: 200%;
+	#samen{
 		align-self: center;
+		margin: 3%;
 	}
 
-	#beschrijving{
-		font-family: 'Roboto Black', sans-serif;
-		font-size: 200%;
+
+	#titel{
+		font-family: 'Roboto Medium', sans-serif;
+		font-size: 150%;
 		align-self: center;
 		flex:0 0 50%;
+	}
+
+	.type{
+		font-family: 'Roboto Regular', sans-serif;
+		margin-top: 5%;
+		color: #32e875;
+		font-size: 150%;
+		align-self: center;
 	}
 
 

@@ -2,8 +2,21 @@
 
 function getAPIdata() {
 
-	// get latest weather
-	fetch('http://api.openweathermap.org/data/2.5/weather?q=Sydney&appid=f7f1680fa8f3203a7bd7724195d79100&units=metric')
+	var api = "http://api.openweathermap.org/data/2.5/weather?q=";
+	var city = "Amsterdam";
+	var apiKey = "&appid=f7f1680fa8f3203a7bd7724195d79100";
+	var units = "&units=metric";
+
+	function setup(){
+	var button = select('#submit');
+	button.mousePressed(laadWeer);
+	input = select('#city');
+}
+
+	fetch(api + city + apiKey + units)
+
+
+
 	
 	// parse to JSON format 
 	.then(function(response) {
@@ -13,16 +26,15 @@ function getAPIdata() {
 	// render weather per day
 	.then(function(response) {
 
-		console.log(response.name);
-		document.getElementById('stad').innerHTML = response.name
-
-
 		console.log(response.main.temp);
 		document.getElementById('temperatuur').innerHTML = response.main.temp + "\xB0C"
 
-		console.log(response);
-		document.getElementById('beschrijving').innerHTML = "temperatuur"
 
+		console.log(response.weather[0].main);
+		document.getElementById('condition').innerHTML = response.weather[0].main
+
+		console.log(response.wind.speed);
+		document.getElementById('wind').innerHTML = response.wind.speed + "km/h"
 	})
 	
 	// catch error
