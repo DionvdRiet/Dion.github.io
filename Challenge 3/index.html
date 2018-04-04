@@ -10,9 +10,9 @@
 
 	<div class="container">
 
-		<div class="zoeken" >			
+		<div class="zoeken">			
 			<h1>City:</h1>
-			<input type="text" id="city" name="city" placeholder="London">
+			<input type="text" id="city" name="city" placeholder="Sydney">
 			<button type="submit" id="submit" name="zoeken">Zoeken</button>
 			<div id="achtergrond"></div>
 
@@ -22,7 +22,7 @@
 
 			<div id="samen">
 				<div id="titel">Temperature:</div>
-				<div class="type" id="temperatuur"></div>
+				<div class="type" id="temperature"></div>
 			</div>
 			
 			<div id="samen">
@@ -37,15 +37,32 @@
 
 		</div>
 
-			<img id="image">
+		<div class="map" id="map">
+			<script>
+				function initMap() {
+					var myLatLng = {lat: -31.199035, lng: 151.852042}; 
 
-		<div id="map"></div>
+					var map = new google.maps.Map(document.getElementById('map'), {
+						zoom: 5,
+						center: myLatLng
+					});
+
+					var marker = new google.maps.Marker({
+						position: myLatLng,
+						map: map,
+						title: 'Hello World!'
+					});
+
+					}
+    		</script>
+			
+		</div>
 
 	</div>
 
-	<script src="map.js"></script>	
-	<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBMbzS3Jzr9hraDFK9vQhAMW-7P7dIB6S0 &callback=initMap" async defer></script>
-	<script src="script.js">
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMbzS3Jzr9hraDFK9vQhAMW-7P7dIB6S0&callback=initMap" async defer></script>
+	<script src="test.js">
 	</script>
 
 </body>

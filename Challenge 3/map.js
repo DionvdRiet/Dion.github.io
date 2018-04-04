@@ -18,3 +18,4 @@
           position: myLatLng2,
           map: map,
           title: 'Hello World2!'
+      }
