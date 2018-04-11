@@ -2,7 +2,7 @@
 
 function getAPIdata() {
 
-		var api = "http://api.openweathermap.org/data/2.5/weather?q=";
+	var api = "http://api.openweathermap.org/data/2.5/weather?q=";
 	var city = "Sydney";
 	var apiKey = "&appid=f7f1680fa8f3203a7bd7724195d79100";
 	var units = "&units=metric";
@@ -26,7 +26,6 @@ function getAPIdata() {
 
 		console.log(response.main.temp);
 		document.getElementById('temperature').innerHTML = response.main.temp + "\xB0C"
-
 
 		console.log(response.weather[0].main);
 		document.getElementById('condition').innerHTML = response.weather[0].main
