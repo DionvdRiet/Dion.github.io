@@ -2,7 +2,7 @@
 
 function getAPIdata() {
 
-	var api = "http://api.openweathermap.org/data/2.5/weather?q=";
+	var api = "https://api.openweathermap.org/data/2.5/weather?q=";
 	var city = "Sydney";
 	var apiKey = "&appid=f7f1680fa8f3203a7bd7724195d79100";
 	var units = "&units=metric";
