@@ -1,0 +1,53 @@
+/*Achtergrond:#FCFCFC*/
+/*Secundair:#242428/*
+/*Accent:#5F13F7*/
+
+body,html{
+/*	height: 100%;
+	widows: 100%;*/
+	margin: 0;
+	background-color: #FCFCFC;
+}
+
+h1{
+	font-family: 'Heebo Bold', sans-serif;
+	font-size: 500%;
+	margin-left: 20%;
+	color: #242428;
+}
+
+h1:hover{
+	color: #FCFCFC;
+	background-color: #5F13F7;
+}
+
+.navigation{
+	display: flex;
+}
+
+ul{
+	font-family: 'Heebo Medium', sans-serif;
+	font-size: 120%;
+	list-style:none;
+	display: block;
+	padding-left: 1%;
+}
+
+li{
+	margin-bottom: 5%;
+}
+
+li:hover{
+	color: #FCFCFC;
+	background-color: #5F13F7;
+}
+
+
+.highlight{
+	color: #FCFCFC;
+	background-color: #5F13F7;
+}
+
+section{
+	height: 100vh;
+}
