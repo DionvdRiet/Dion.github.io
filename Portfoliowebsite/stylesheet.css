@@ -29,18 +29,32 @@ ul{
 }
 
 li{
+	padding: 1%;
 	margin-bottom: 5%;
+	width: 100%;
+	color: none;
+	background-color: none;
+	transition: width 0.2s ease-in-out, color 0.3s ease-out;
 }
 
 li:hover{
 	color: #FCFCFC;
 	background-color: #5F13F7;
+	width: 120%;
+
 }
 
 
 .highlight{
 	color: #FCFCFC;
 	background-color: #5F13F7;
+	transition: color 0.3s ease-out;
+}
+
+.highlight:hover{
+	width: 80%;
+	color: #5F13F7;
+	background-color: #FCFCFC;
 }
 
 section{
@@ -84,6 +98,17 @@ a{
 		font-size: 150%;
 	}
 
+		/*span{
+			padding: none;
+			transition: padding 0.1s ease-in;
+		}*/
+		span{
+			padding: 0.4%;
+			color: #FCFCFC;
+			background-color: #5F13F7;
+			width: 140%;
+		}
+
 .p-container{
 	display: flex;
 	height: 100%;
@@ -107,13 +132,13 @@ a{
 		background:url(Afbeeldingen/project-1.png);
 		background-position: top;
 		background-size: 100%;
-		transition: background-size 0.3s ease-in;
+		transition: background 0.5s ease-in, background-size 0.3s ease-in;
 	}
 
 	.project1:hover{
-		background:/*inear-gradient(rgba(95, 19, 247, 0.6), rgba(79, 16, 206, 0.6)), */url(Afbeeldingen/project-1.png);
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-1.png);
 		background-position: top;
-		background-size: 102%;
+		background-size: 110%;
 	}
 
 	h2{
