@@ -12,17 +12,12 @@ body,html{
 h1{
 	font-family: 'Heebo Bold', sans-serif;
 	font-size: 500%;
-	margin-left: 20%;
 	color: #242428;
 }
 
 h1:hover{
 	color: #FCFCFC;
 	background-color: #5F13F7;
-}
-
-.navigation{
-	display: flex;
 }
 
 ul{
@@ -52,7 +47,39 @@ section{
 	height: 100vh;
 }
 
+	.lijn{
+		display: flex;
+		background-color: #5F13F7;
+		width: 100%;
+		height: 1px;
+		grid-row:3;
+		grid-column: 2/5;
+	}
+
 a{
 	color:black;
 	text-decoration: none;
 }
+
+.container{
+	display: grid;
+	grid-template-rows: 1fr 3fr 0.1fr;
+	grid-template-columns: 1.5fr 2fr 2fr 2fr 1fr;
+}
+
+	.navigation{
+		display: flex;
+		grid-column: 1/2;
+	}
+
+	.titel{
+		grid-row:1;
+		grid-column: 2/4;
+	}
+
+	.tekst{
+		grid-row:2;
+		grid-column: 2/5;
+		font-family: 'Heebo Regular', sans-serif;
+		font-size: 150%;
+	}
