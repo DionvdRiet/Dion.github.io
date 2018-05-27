@@ -34,7 +34,7 @@ li{
 	width: 100%;
 	color: none;
 	background-color: none;
-	transition: width 0.2s ease-in-out, color 0.3s ease-out;
+	transition: width 0.3s ease-in-out, color 0.3s ease-out;
 }
 
 li:hover{
@@ -84,6 +84,13 @@ a{
 	.navigation{
 		display: flex;
 		grid-column: 1/2;
+		position: relative;
+		animation: slideIn 1s 1 ease-in-out;
+	}
+
+	@keyframes slideIn{
+		from{left:-200px;}
+		to{left:0px;}
 	}
 
 	.titel{
@@ -91,11 +98,24 @@ a{
 		grid-column: 2/4;
 	}
 
+
 	.content{
 		grid-row:2;
 		grid-column: 2/5;
 		font-family: 'Heebo Regular', sans-serif;
 		font-size: 150%;
+		position: relative;
+		animation:myMove 1s 1;
+	}
+
+	@keyframes myMove{
+		from{top:200px;}
+		to {top:0px;}
+	}
+
+	@keyframes fade{
+		from{opacity:20%;}
+		to {top:100%;}
 	}
 
 		/*span{
@@ -107,6 +127,12 @@ a{
 			color: #FCFCFC;
 			background-color: #5F13F7;
 			width: 140%;
+			animation: up 1s 1 ease-in-out, fade 0.2s 1 ease-in-out;
+		}
+
+		@keyframes up{
+			from{left: -100px}
+			to{left: 0px;}
 		}
 
 .p-container{
@@ -120,6 +146,7 @@ a{
 		height: 35%;
 		width: 100%;
 		margin-right: 2%;
+		border: 2px solid #5F13F7;
 		box-shadow: none;
 		transition: box-shadow 0.2s ease-in;
 	}
@@ -132,7 +159,7 @@ a{
 		background:url(Afbeeldingen/project-1.png);
 		background-position: top;
 		background-size: 100%;
-		transition: background 0.5s ease-in, background-size 0.3s ease-in;
+		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
 	}
 
 	.project1:hover{
@@ -141,12 +168,24 @@ a{
 		background-size: 110%;
 	}
 
+	.project2{
+		background:url(Afbeeldingen/project-2.png);
+		background-position: top;
+		background-size: 100%;
+		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+	}
+
+	.project2:hover{
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-2.gif);
+		background-position: top;
+		background-size: 110%;
+	}
+
 	h2{
-		color: white;
+		color: #242424;
 		font-size: 70%;
 		padding: 1%;
 		margin-top: 60%;
 		text-align: center;
-		background-color: #5F13F7;
 	}
 
