@@ -2,6 +2,11 @@
 /*Secundair:#242428/*
 /*Accent:#5F13F7*/
 
+*::selection{
+	background-color: #5F13F7;
+	color: #FCFCFC;
+}
+
 body,html{
 /*	height: 100%;
 	widows: 100%;*/
@@ -15,12 +20,23 @@ h1{
 	color: #242428;
 }
 
+
 ul{
 	font-family: 'Heebo Medium', sans-serif;
 	font-size: 120%;
 	list-style:none;
 	display: block;
 	padding-left: 1%;
+}
+
+.terug{
+	font-family: 'Heebo Medium', sans-serif;
+	color: #5F13F7;
+}
+
+	.terug:hover{
+	color:;
+	width: 80%;
 }
 
 li{
@@ -36,7 +52,6 @@ li:hover{
 	color: #FCFCFC;
 	background-color: #5F13F7;
 	width: 120%;
-
 }
 
 
@@ -190,5 +205,11 @@ a{
 		padding: 1%;
 		margin-top: 60%;
 		text-align: center;
+	}
+
+	h3{
+		font-family: 'Heebo Light', sans-serif;
+		font-size: 110%;
+		color: #545454;
 	}
 
