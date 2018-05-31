@@ -192,3 +192,30 @@ a{
 		text-align: center;
 	}
 
+
+.contact{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.contact > div{
+	background-color: #5F13F7;
+	height: 90%;
+	width: 40%;
+	box-shadow: none;
+	transition: box-shadow 0.2s ease-in;
+}
+
+	.formulier{
+		display: flex;
+		justify-content: center;
+		color: white;
+	}
+
+	.motivatie{
+		background-size: 130%;
+		background-image: url(Afbeeldingen/project-2.png);
+	}
