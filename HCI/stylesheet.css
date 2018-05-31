@@ -1,6 +1,6 @@
 /*Achtergrond:#FCFCFC*/
 /*Secundair:#242428/*
-/*Accent:#5F13F7*/
+/*Accent:#56e39f*/
 
 body,html{
 /*	height: 100%;
@@ -34,7 +34,7 @@ li{
 
 li:hover{
 	color: #FCFCFC;
-	background-color: #5F13F7;
+	background-color: #56e39f;
 	width: 120%;
 
 }
@@ -42,12 +42,12 @@ li:hover{
 
 .highlight{
 	color: #FCFCFC;
-	background-color: #5F13F7;
+	background-color: #56e39f;
 	transition: color 0.3s ease-out;
 }
 
 .highlight:hover{
-	color: #5F13F7;
+	color: #56e39f;
 	background-color: #FCFCFC;
 }
 
@@ -57,7 +57,7 @@ section{
 
 	.lijn{
 		display: flex;
-		background-color: #5F13F7;
+		background-color: #56e39f;
 		width: 100%;
 		height: 1px;
 		grid-row:3;
@@ -123,7 +123,7 @@ a{
 		span{
 			padding: 0.4%;
 			color: #FCFCFC;
-			background-color: #5F13F7;
+			background-color: #56e39f;
 			width: 140%;
 			animation: up 1s 1 ease-in-out, fade 0.2s 1 ease-in-out;
 		}
@@ -149,13 +149,13 @@ a{
 		height: 35%;
 		width: 100%;
 		margin-right: 2%;
-		border: 2px solid #5F13F7;
+		border: 2px solid #56e39f;
 		box-shadow: none;
 		transition: box-shadow 0.2s ease-in;
 	}
 
 	.p-container > div:hover{
-		box-shadow: 5px 5px 0px #5F13F7;
+		box-shadow: 5px 5px 0px #56e39f;
 	}
 
 	.project1{
@@ -166,7 +166,7 @@ a{
 	}
 
 	.project1:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-1.png);
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159)), url(Afbeeldingen/project-1.png);
 		background-position: top;
 		background-size: 110%;
 	}
@@ -179,7 +179,7 @@ a{
 	}
 
 	.project2:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-2.mp4);
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159)), url(Afbeeldingen/project-2.png);
 		background-position: top;
 		background-size: 110%;
 	}
