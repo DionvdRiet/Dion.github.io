@@ -71,7 +71,7 @@ a{
 .container{
 	display: grid;
 	grid-template-rows: 1fr 3fr 0.1fr;
-	grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+	grid-template-columns: 1.5fr 2fr 2fr 2fr 2fr 1fr;
 }
 
 	.navigation{
@@ -94,11 +94,15 @@ a{
 
 	.content{
 		grid-row:2;
-		grid-column: 2/5;
+		grid-column: 2/6;
 		font-family: 'Heebo Regular', sans-serif;
 		font-size: 150%;
 		position: relative;
 		animation:myMove 1s 1;
+	}
+
+	p{
+		text-align: justify;
 	}
 
 	.content > .slogan{
@@ -115,17 +119,36 @@ a{
 		to {top:100%;}
 	}
 
-		/*span{
-			padding: none;
-			transition: padding 0.1s ease-in;
-		}*/
+		
 		span{
 			padding: 0.4%;
 			color: #FCFCFC;
-			background-color: #5F13F7;
 			width: 140%;
-			animation: up 1s 1 ease-in-out, fade 0.2s 1 ease-in-out;
+			animation: up 1s 1 ease-in-out;
+			animation: highlight 0.2s ease-in;
+			animation-fill-mode: forwards;
+			animation-direction: alternate;
 		}
+
+			@keyframes highlight{
+					0%{background-color: none;
+				}
+					100%{background-color:#5F13F7;
+			}			
+		}
+
+		#twee{
+			animation-delay: 0.2s;
+		}
+
+		#drie{
+			animation-delay: 0.4s;
+		}
+
+		#vier{
+			animation-delay: 0.6s;
+		}
+
 
 		@keyframes up{
 			from{left: -100px}
@@ -231,25 +254,29 @@ a{
 		color: white;
 	}
 
-	input[type=text]{
+	input[type=text], input[type=email]{
 		font-family: 'Heebo light', sans-serif;
 		border: none;
+		box-shadow: 0px 2px #5F13F7;
 		background-color: #f9f9f9;
 		width: 80%;
 		height: 10%;
 		margin-bottom: 5%;
-		font-size: 1em;
+		font-size: 0.8em;
+
 	}
 
-		input[type=text]:focus{
+		input[type=text]:focus, input[type=email]:focus{
 			font-family: 'Heebo Regular', sans-serif;
 			box-shadow: 0px 2px #5F13F7;
+			color: #5F13F7;
 			background: white;
 			outline:none;
 		}
 
-		input[type=text]:valid{
+		input[type=text]:valid, input[type=email]:focus{
 			box-shadow: 0px 2px #5F13F7;
+			color: #5F13F7;
 			background: white;
 			outline:none;
 		}
@@ -261,18 +288,20 @@ a{
 		width: 80%;
 		height: 15%;
 		margin-bottom: 5%;
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 		textarea:focus{
-			font-family: 'Heebo light', sans-serif;
+			font-family: 'Heebo Regular', sans-serif;
 			box-shadow: 0px 2px #5F13F7;
+			color: #5F13F7;
 			background: white;
 			outline:none;
 		}
 
 		textarea:valid{
 			box-shadow: 0px 2px #5F13F7;
+			color: #5F13F7;
 			background: white;
 			outline:none;
 		}
@@ -286,13 +315,24 @@ a{
 		width: 80%;
 		height: 10%;
 		margin-bottom: 5%;
+		box-shadow: 0px 3px 5px #999;
 	}
 
 		input[type=submit]:hover{
+			background:linear-gradient(rgba(134, 73, 255, 1), rgba(95, 19, 247, 1));
+			box-shadow: 0px 3px 5px #bcbcbc;
+			text-shadow: 0px 3px 5px #5F13F7;
 
 		}
 
 	.motivatie{
-		background-size: 130%;
-		background-image: url(Afbeeldingen/project-2.png);
+		background-size: 100%;
+		background-image: url(Afbeeldingen/contact.jpg);
+	}
+
+	.handtekening{
+		background-size: 100%;
+		width: 10px;
+		height: 10px;
+		background-image: url(Afbeeldingen/handtekening.png);
 	}
