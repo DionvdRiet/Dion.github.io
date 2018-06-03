@@ -168,7 +168,7 @@ a{
 
 	.p-container > div{
 		background-color: #242424;
-		height: 35%;
+		height: 40%;
 		width: 100%;
 		margin-right: 2%;
 		border: 2px solid #5F13F7;
@@ -195,7 +195,7 @@ a{
 
 	.project2{
 		background:url(Afbeeldingen/project-2.png);
-		background-position: top;
+		background-position: center;
 		background-size: 100%;
 		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
 	}
@@ -210,7 +210,7 @@ a{
 		background:url(Afbeeldingen/material.png);
 		background-position: top;
 		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+		transition: background 0.5s ease-in-out;
 	}
 
 	.project3:hover{
@@ -258,7 +258,7 @@ a{
 		font-family: 'Heebo light', sans-serif;
 		border: none;
 		box-shadow: 0px 2px #5F13F7;
-		background-color: #f9f9f9;
+		color: #5F13F7;
 		width: 80%;
 		height: 10%;
 		margin-bottom: 5%;
