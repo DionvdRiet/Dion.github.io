@@ -35,7 +35,7 @@ ul{
 
 .terug{
 	font-family: 'Heebo Medium', sans-serif;
-	color: #5F13F7;
+	color: #FCFCFC;
 }
 
 	.terug:hover{
@@ -52,8 +52,8 @@ li{
 	transition: width 0.3s ease-in-out, color 0.3s ease-out;
 }
 
-	#first-li{
-		color: white;
+	.first-li{
+		color: #FCFCFC;
 	}
 
 li:hover{
@@ -120,12 +120,21 @@ a{
 
 	.content{
 		grid-row:2;
-		grid-column: 2/6;
+		grid-column: 2/5;
 		font-family: 'Heebo Regular', sans-serif;
 		font-size: 130%;
 		position: relative;
 		animation:myMove 1s 1;
 	}
+
+		.onderdeel{
+			text-align: justify;
+			margin-bottom: 5%;
+		}
+
+		.onderdeel > h3{
+			color: #5F13F7;
+		}
 
 	.content > .slogan{
 		vertical-align: middle;
@@ -191,7 +200,6 @@ a{
 		transition: background 0.5s ease-in-out; /*werkt niet*/
 	}
 
-
 	#first h1, #first .content{
 		color: #FCFCFC;
 	}
@@ -227,8 +235,10 @@ a{
 		text-align: center;
 	}
 
-	.ruimte{
-		background-color: rgba(0,0,0,0.1);
+	.beschrijving{
+		padding: 1% 1% 1% 0.5%;
+		text-shadow: 1px 1px black;
+		background-color: rgba(0,0,0,0.3);
 	}
 
 
