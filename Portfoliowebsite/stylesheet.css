@@ -133,7 +133,7 @@ a{
 			@keyframes highlight{
 					0%{background-color: none;
 				}
-					100%{background-color:#5F13F7;
+					100%{background:linear-gradient(rgba(95, 19, 247, 1), rgba(37, 117, 252,1));
 			}			
 		}
 
@@ -201,7 +201,7 @@ a{
 	}
 
 	.project2:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-2.png);
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-2.gif);
 		background-position: top;
 		background-size: 110%;
 	}

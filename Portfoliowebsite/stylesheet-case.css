@@ -193,7 +193,7 @@ a{
 	}
 
 	#first{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 0.4)), url(Afbeeldingen/mockup-1.jpg);
+		background:linear-gradient(to right, rgba(102, 126, 234, 0.9), rgba(79, 16, 206, 0.4)), url(Afbeeldingen/mockup-1.jpg);
 		background-position: center;
 		background-size:100%;
 		background-repeat: no-repeat;
@@ -237,8 +237,8 @@ a{
 
 	.beschrijving{
 		padding: 1% 1% 1% 0.5%;
-		text-shadow: 1px 1px black;
-		background-color: rgba(0,0,0,0.3);
+		text-shadow: 1px 1px rgba(0,0,0,0.3);
+		text-align: justify;
 	}
 
 
