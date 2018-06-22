@@ -5,12 +5,14 @@ body,html{
 
 .container{
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 15vw auto;
 	grid-template-rows: 1fr;
 	height: 130vh;
 }
 
 .sidebar{
+	position: fixed;
+	width: 15vw;
 	display: grid;
 	grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 10fr;
 	background-color: #364576;
@@ -18,10 +20,16 @@ body,html{
 	font-family: 'Heebo light', sans-serif;
 }
 
-	.search{
+	.search{ /*input*/
+		font-family: "Heebo Light", sans-serif;
 		background-color: white;
 		padding: 2% 0px 0px 5%;
-		font-size: 90%;
+		font-size: 110%;
+		border: none;
+	}
+
+	.search:focus{
+		outline: none;
 	}
 
 	ul{
@@ -30,9 +38,24 @@ body,html{
 		list-style-type: none;
 	}
 
+		.search-div{
+			display: grid;
+			padding-left: 1%;
+			grid-template-columns: 1fr 6fr ;
+			grid-template-rows:;
+			background-color: white;
+		}
+
+			.search-icon{
+				background-image: url("Afbeeldingen/search.png");
+				background-size: 90%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
 		.option{
 			display: grid;
-			grid-template-columns: 1fr 8fr ;
+			grid-template-columns: 1fr 10fr ;
 			grid-template-rows:;
 		}
 
@@ -41,24 +64,25 @@ body,html{
 		}
 
 		.downlight{
-			background-color: #263050;
+			background-color: #1a2135;
 		}
 
 		li{
 			display: grid;
-			font-family: 'Heebo Medium', sans-serif;
+			font-family: 'Heebo Light', sans-serif;
+			font-size: 110%;
 			background-color: #263050;
 			color: white;
 			list-style: none;
 		}
 
 		li:hover{
+			font-family: 'Heebo Medium', sans-serif;
 			color: #F95385;
 			background-color: #1a2135;
 		}
 
 		li > h4{
-			font-size: ;
 			margin-left: 5%;
 		}
 
@@ -66,6 +90,7 @@ body,html{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 0.8fr 1fr 1fr 1fr;
+	grid-column-start: 2;
 
 }
 
@@ -119,7 +144,7 @@ body,html{
 
 		.racehoofd{
 			display: grid;
-			grid-template-columns: 1fr 3fr;
+			grid-template-columns: 1fr 1.5fr;
 			background-size: 100%;
 			background-position: center;
 			background-image: url(Afbeeldingen/thecrew2.jpg);
@@ -128,7 +153,7 @@ body,html{
 
 		.shooterhoofd{
 			display: grid;
-			grid-template-columns: 1fr 3fr;
+			grid-template-columns: 1fr 1.5fr;
 			background-size: 100%;
 			background-position: center;
 			background-image: url(Afbeeldingen/anthem.jpg);
@@ -137,7 +162,7 @@ body,html{
 
 		.actionhoofd{
 			display: grid;
-			grid-template-columns: 1fr 3fr;
+			grid-template-columns: 1fr 1.5fr;
 			background-size: 140%;
 			background-position: center;
 			background-image: url(Afbeeldingen/BG&E.jpg);
