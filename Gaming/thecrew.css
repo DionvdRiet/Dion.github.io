@@ -87,7 +87,7 @@ body,html{
 .content{
 	display: grid;
 	grid-template-columns: 0.3fr 1fr 1fr 0.3fr 1fr 0.3fr;
-	grid-template-rows: 1.5fr 1fr 1fr;
+	grid-template-rows: 2fr 1fr 1fr;
 	grid-column-start: 2;
 
 }
@@ -95,6 +95,7 @@ body,html{
 	.header{
 		display: grid;
 		grid-column: 1/7;
+		grid-row: 1/2;
 		grid-template-columns: 5fr 5fr;
 		grid-template-rows: 1fr;
 	}
@@ -194,26 +195,6 @@ body,html{
 				color: #F95385;
 			}
 
-		.volgend{
-			display: grid;
-			grid-template-columns: 1fr 5fr;
-			font-family: 'Heebo ExtraBold', sans-serif;
-			color: white;
-			background-color: black;
-		}
-
-		.item1{
-			display: grid;
-			grid-template-columns: 1fr 3fr;
-			font-family: 'Heebo ExtraBold', sans-serif;
-
-		}
-
-		.cover1{
-			background-image: url("Afbeeldingen/test.jpg");
-			background-size: 100%;
-		}
-
 	.release{
 		grid-column: 2/4;
 		grid-row: 2/2;
@@ -254,11 +235,60 @@ body,html{
 		}
 
 			.timeline{
+				display: grid;
+				grid-template-rows:1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr;
+				justify-content: center;
 				grid-column: 1/1;
+				grid-template-columns: 1fr 1fr 1fr;
 				grid-row: 1/15;
-				width: 1px;
-				background-color: rgba(0,0,0,0.3);
+				
 			}
+
+				.rectangle1,.rectangle2,.rectangle3,.rectangle4,.rectangle5{
+					z-index: 1;
+					width: 10px;
+					height: 10px;
+					background-color: #F95385;
+				}
+
+				.rectangle1{
+					grid-column: 1;
+					grid-row: 1;
+				}
+
+					h5{
+						font-family: "Heebo Light", sans-serif;
+						color:#F95385;
+						margin-left: -30px;
+					}
+
+				.rectangle2{
+					grid-column: 1;
+					grid-row: 4;
+				}
+
+				.rectangle3{
+					grid-column: 1;
+					grid-row: 7;
+				}
+
+				.rectangle4{
+					grid-column: 1;
+					grid-row: 10;
+				}
+
+				.rectangle5{
+					grid-column: 1;
+					grid-row: 13;
+				}
+
+				.timeline-line{
+					z-index: 0;
+					width: 1px;
+					grid-column: 1;
+					grid-row: 1/13;
+					background-color: rgba(0,0,0,0.3);
+				}
 
 			.nieuws1,.nieuws2,.nieuws3,.nieuws4,.nieuws5{
 				display: grid;
