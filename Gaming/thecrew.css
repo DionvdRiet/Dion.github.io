@@ -89,7 +89,6 @@ body,html{
 	grid-template-columns: 0.3fr 1fr 1fr 0.3fr 1fr 0.3fr;
 	grid-template-rows: 2fr 1fr 1fr;
 	grid-column-start: 2;
-
 }
 
 	.header{
@@ -196,13 +195,37 @@ body,html{
 			}
 
 	.release{
-		grid-column: 2/4;
+		display: grid;
+		grid-template-columns: 1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr;
+		grid-column: 2/3;
 		grid-row: 2/2;
-
 	}
-		.days div{
+		.days{
 			font-family: 'Heebo ExtraBold', sans-serif;
 			color: #263050;
+			grid-column: 1/3;
+			/*box-shadow: 1px 1px 3px rgba(0,0,0,0.3);*/
+			text-align: center;
+		}
+
+			.release h4{
+				color:#F95385;
+			}
+
+		.weeks{
+			font-family: 'Heebo ExtraBold', sans-serif;
+			color: #263050;
+			grid-column: 4/6;
+			/*box-shadow: 1px 1px 3px rgba(0,0,0,0.3);*/
+			text-align: center;
+		}
+
+		.months{
+			font-family: 'Heebo ExtraBold', sans-serif;
+			color: #263050;
+			grid-column: 7/9;
+			/*box-shadow: 1px 1px 3px rgba(0,0,0,0.3);*/
+			text-align: center;
 		}
 
 		p{
