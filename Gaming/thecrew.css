@@ -86,8 +86,8 @@ body,html{
 
 .content{
 	display: grid;
-	grid-template-columns: 0.3fr 1fr 1.5fr 0.3fr 1fr 0.3fr;
-	grid-template-rows: 1.5fr 1fr ;
+	grid-template-columns: 0.3fr 1fr 1fr 0.3fr 1fr 0.3fr;
+	grid-template-rows: 1.5fr 1fr 1fr;
 	grid-column-start: 2;
 
 }
@@ -240,25 +240,57 @@ body,html{
 
 			.line{
 				grid-column: 2/4;
+				grid-row: 4/4;
 				height: 1px;
 				background-color: #F95385;
 			}
 
 		.nieuws{
 			display: grid;
-			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-columns: 1fr 10fr;
+			grid-template-rows:1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr;
 			grid-column: 5/6;
 			grid-row: 3/5;
 		}
 
-			.nieuws1,.nieuws2,.nieuws3,.nieuws4,.nieuws5{
-				display: grid;
-				grid-template-columns: 1fr 4fr;
+			.timeline{
+				grid-column: 1/1;
+				grid-row: 1/15;
+				width: 1px;
+				background-color: rgba(0,0,0,0.3);
 			}
 
+			.nieuws1,.nieuws2,.nieuws3,.nieuws4,.nieuws5{
+				display: grid;
+				grid-template-columns: 1fr 2.5fr;
+				box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+				position: relative;
+				grid-column: 2/2;
+			}
+
+				.nieuws1{
+					grid-row:1/3;
+				}
+
+				.nieuws2{
+					grid-row:4/6;
+				}
+
+				.nieuws3{
+					grid-row:7/9;
+				}
+
+				.nieuws4{
+					grid-row:10/12;
+				}
+
+				.nieuws5{
+					grid-row:13/15;
+				}
+
 			.nieuws1 div,.nieuws2 div,.nieuws3 div,.nieuws4 div,.nieuws5 div{
+				background-position: 30% 0%;
 				background-size: 300%;
-				background-position: 20% 0%;
 				background-repeat: no-repeat;
 			}
 
@@ -267,8 +299,34 @@ body,html{
 				background-image: url("Afbeeldingen/theCrew/Nieuws/mercedes.jpg");
 			}
 
-			h2{
-				font-family: 'Heebo ExtraBold', sans-serif;
-				font-size: 90%;
-				color: #263050;
+			.nieuws2 div{
+				background-image: url("Afbeeldingen/theCrew/Nieuws/cruise.jpg");
 			}
+
+			.nieuws3 div{
+				background-image: url("Afbeeldingen/theCrew/Nieuws/boat.jpg");
+			}
+
+			.nieuws4 div{
+				background-image: url("Afbeeldingen/theCrew/Nieuws/fly.png");
+			}
+
+			.nieuws5 div{
+				background-image: url("Afbeeldingen/theCrew/Nieuws/unlock.png");
+			}
+
+
+			h2{
+				font-family: 'Heebo Medium', sans-serif;
+				font-size: 80%;
+				color: #263050;
+				padding:3% 3%;
+				margin: 0 auto;
+				position: relative;
+			}
+
+		.playable{
+			grid-column: 2/5;
+			grid-row: 6/6;
+			background-color: blue;
+		}
