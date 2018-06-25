@@ -183,7 +183,7 @@ body,html{
 			grid-row:1/9;
 		}
 
-			.racehoofd,.shooterhoofd,.actionhoofd:hover{
+			.racehoofd,.shooterhoofd,.actionhoofd,.meer:hover{
 				cursor: pointer;
 			}
 
