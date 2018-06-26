@@ -124,6 +124,7 @@ body,html{
 			background-position: center;
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
+			cursor: pointer;
 		}
 
 		.grid div:hover:not(.game-beschrijving){
@@ -134,55 +135,55 @@ body,html{
 		.game1{
 			grid-column: 1/2;
 			grid-row: 1/2;
-			background-image: url("Afbeeldingen/meer-shooters/BF5.png");
+			background-image: url("Afbeeldingen/meer-racing/thecrew2.jpg");
 		}
 
 		.game2{
 			grid-column: 2/3;
 			grid-row: 1/2;
-			background-image: url("Afbeeldingen/meer-shooters/GTFO.jpg");
+			background-image: url("Afbeeldingen/meer-racing/dakar.jpg");
 		}
 
 		.game3{
 			grid-column: 3/4;
 			grid-row: 1/2;
-			background-image: url("Afbeeldingen/meer-shooters/anthem.jpg");
+			background-image: url("Afbeeldingen/meer-racing/forza.jpg");
 		}
 
 		.game4{
 			grid-column: 1/2;
 			grid-row: 2/3;
-			background-image: url("Afbeeldingen/meer-shooters/RDR2.jpg");
+			background-image: url("Afbeeldingen/meer-racing/moto.png");
 		}
 
 		.game5{
 			grid-column: 2/3;
 			grid-row: 2/3;
-			background-image: url("Afbeeldingen/meer-shooters/Star.jpg");
+			background-image: url("Afbeeldingen/meer-racing/onrush.jpg");
 		}
 
 		.game6{
 			grid-column: 3/4;
 			grid-row: 2/3;
-			background-image: url("Afbeeldingen/meer-shooters/BO4.jpg");
+			background-image: url("Afbeeldingen/meer-racing/assetto.jpg");
 		}
 
 		.game7{
 			grid-column: 1/2;
 			grid-row: 3/4;
-			background-image: url("Afbeeldingen/meer-shooters/division.jpg");
+			background-image: url("Afbeeldingen/meer-racing/vrally.jpg");
 		}
 
 		.game8{
 			grid-column: 2/3;
 			grid-row: 3/4;
-			background-image: url("Afbeeldingen/meer-shooters/metro.jpg");
+			background-image: url("Afbeeldingen/meer-racing/wreckfest.jpg");
 		}
 
 		.game9{
 			grid-column: 3/4;
 			grid-row: 3/4;
-			background-image: url("Afbeeldingen/meer-shooters/ready.jpg");
+			background-image: url("Afbeeldingen/meer-racing/apex.jpg");
 		}
 
 

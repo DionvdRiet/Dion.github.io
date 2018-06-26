@@ -1,6 +1,7 @@
 body,html{
 	margin: 0;
 	height: 100%;
+	background-color: black;
 }
 
 .container{
@@ -99,8 +100,9 @@ body,html{
 		grid-template-columns: 3fr 10fr 4fr;
 		grid-template-rows: 1fr;
 		background-image: url("Afbeeldingen/Shooter/BF5.png");
-		background-size: 100%;
+		background-size: cover;
 		background-position: 0% 0%;
+		z-index: 1;
 	}
 
 		.beschrijving{
@@ -110,7 +112,7 @@ body,html{
 			font-family: 'Heebo ExtraBold', sans-serif;
 			font-size: 90%;
 			text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
-			padding: 2% 0% 0% 5%;
+			padding: 5%;
 		}
 
 			h3{
@@ -138,28 +140,24 @@ body,html{
 
 		.cover1{
 			background-image: url("Afbeeldingen/test.jpg");
-			background-size: 100%;
+			background-size: cover;
 		}
 
 	.racing,.shooter,.action{
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr 1fr;
 		grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
-		background-color: orange;
 	}
 
-		.racing > div{
-			background-color: purple;
-		}
-
-		.racing > div:nth-child(1){
-			background-color: orange;
-		}
+	.racing div:hover:not(.hoofd-beschrijving):not(.game-beschrijving),.shooter div:hover:not(.hoofd-beschrijving):not(.game-beschrijving),.action div:hover:not(.hoofd-beschrijving):not(.game-beschrijving){
+		background-size:130%;
+		filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.4));
+	}
 
 		.racehoofd{
 			display: grid;
 			grid-template-columns: 1fr 1.5fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Racing/thecrew2.jpg);
 			grid-row:1/9;
@@ -168,7 +166,7 @@ body,html{
 		.shooterhoofd{
 			display: grid;
 			grid-template-columns: 1fr 1.5fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Shooter/anthem.jpg);
 			grid-row:1/9;
@@ -228,7 +226,7 @@ body,html{
 		.race1{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Racing/assetto.jpg);
 			grid-row: 1/5;
@@ -237,7 +235,7 @@ body,html{
 		.race2{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 120%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Racing/dakar.jpg);
 			grid-row: 5/9;
@@ -246,7 +244,7 @@ body,html{
 		.race3{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 110%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Racing/onrush.jpg);
 			grid-row: 1/5;
@@ -255,7 +253,7 @@ body,html{
 		.race4{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 120%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Racing/vrally.jpg);
 			grid-row: 5/9;
@@ -264,7 +262,7 @@ body,html{
 		.race5{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Racing/moto.png);
 			grid-row: 1/4;
@@ -273,7 +271,7 @@ body,html{
 		.race6{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Racing/forza.jpg);
 			grid-row: 4/7;
@@ -292,7 +290,7 @@ body,html{
 		.shooter1{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Shooter/star.jpg);
 			grid-row: 1/5;
@@ -301,7 +299,7 @@ body,html{
 		.shooter2{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 120%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Shooter/bo4.jpg);
 			grid-row: 5/9;
@@ -310,7 +308,7 @@ body,html{
 		.shooter3{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 110%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Shooter/metro.jpg);
 			grid-row: 1/5;
@@ -319,7 +317,7 @@ body,html{
 		.shooter4{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 120%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Shooter/gtfo.jpg);
 			grid-row: 5/9;
@@ -328,7 +326,7 @@ body,html{
 		.shooter5{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Shooter/bf5.png);
 			grid-row: 1/4;
@@ -337,7 +335,7 @@ body,html{
 		.shooter6{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Shooter/rdr2.jpg);
 			grid-row: 4/7;
@@ -346,7 +344,7 @@ body,html{
 		.action1{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Action/AC.jpg);
 			grid-row: 1/5;
@@ -355,7 +353,7 @@ body,html{
 		.action2{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 120%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Action/spider.jpg);
 			grid-row: 5/9;
@@ -364,7 +362,7 @@ body,html{
 		.action3{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 110%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Action/dying.jpg);
 			grid-row: 1/5;
@@ -373,7 +371,7 @@ body,html{
 		.action4{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 120%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Action/death.jpg);
 			grid-row: 5/9;
@@ -382,7 +380,7 @@ body,html{
 		.action5{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Action/tomb.jpg);
 			grid-row: 1/4;
@@ -391,7 +389,7 @@ body,html{
 		.action6{
 			display: grid;
 			grid-template-columns: 1.5fr 1fr;
-			background-size: 100%;
+			background-size: cover;
 			background-position: center;
 			background-image: url(Afbeeldingen/Action/days-gone.jpg);
 			grid-row: 4/7;
@@ -405,12 +403,11 @@ body,html{
 			border:none;
 			grid-column: 4/5;
 			grid-row: 7/9;
+			z-index: 1;
+			transition: background-color 0.2s ease-in;
 		}
 
-	.shooter{
-		background-color: yellow;
-	}
-
-	.action{
-		background-color: blue;
-	}
+		.meer:hover{
+			background-color: #F95385;
+			color: white;
+		}
