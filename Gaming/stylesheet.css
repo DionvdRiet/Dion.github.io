@@ -75,9 +75,10 @@ body,html{
 			background-color: #263050;
 			color: white;
 			list-style: none;
+			transition: background-color 0.2s ease-in;
 		}
 
-		li:hover{
+		li:hover:not(.overzichtspagina){
 			font-family: 'Heebo Medium', sans-serif;
 			color: #F95385;
 			background-color: #1a2135;
@@ -180,7 +181,7 @@ body,html{
 	}
 
 	.racing div:hover:not(.hoofd-beschrijving):not(.game-beschrijving),.shooter div:hover:not(.hoofd-beschrijving):not(.game-beschrijving),.action div:hover:not(.hoofd-beschrijving):not(.game-beschrijving){
-		background-size:130%;
+		background-size:120%;
 		filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.4));
 	}
 
@@ -202,7 +203,7 @@ body,html{
 			grid-row: 5fr 1fr;
 			background-size: cover;
 			background-position: center;
-			background-image: url(Afbeeldingen/Shooter/anthem.jpg);
+			background-image: url(Afbeeldingen/Shooter/strange.jpg);
 			grid-row:1/9;
 		}
 
@@ -213,7 +214,7 @@ body,html{
 			grid-row: 5fr 1fr;
 			background-size: cover;
 			background-position: center;
-			background-image: url(Afbeeldingen/Action/BG&E.jpg);
+			background-image: url(Afbeeldingen/Action/AC.jpg);
 			grid-row:1/9;
 		}
 
@@ -271,9 +272,9 @@ body,html{
 				}
 
 				.game-beschrijving h4{
-					font-family: 'Heebo Light', sans-serif;
+					font-family: 'Heebo Regular', sans-serif;
 					margin-top: auto;
-					font-size: 70%;
+					font-size: 80%;
 					position: relative;				
 				}
 
@@ -401,7 +402,7 @@ body,html{
 			grid-template-columns: 1.5fr 1fr;
 			background-size: cover;
 			background-position: center;
-			background-image: url(Afbeeldingen/Action/AC.jpg);
+			background-image: url(Afbeeldingen/Action/Anthem.jpg);
 			grid-row: 1/5;
 		}
 
