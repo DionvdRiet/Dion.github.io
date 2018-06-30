@@ -8,23 +8,23 @@
 // 	){
 // }
 
-function Strange(){
+function thecrew2(){
 	// Achtergrond
-	document.getElementById("header").style.backgroundImage = "url(Afbeeldingen/Meer-shooters/Headers/Strange.jpg)";
+	document.getElementById("header").style.backgroundImage = "url(Afbeeldingen/Meer-racing/Headers/thecrew2.jpg)";
 	document.getElementById("header").style.backgroundSize = "100%";
 	// document.getElementById("header").style.backgroundPosition = "50% 0%";
 	document.getElementById("header").style.transition = "background-image 2s ease-in-out";
 
 	//Achtergrond gameplay
-	document.getElementById("content").style.backgroundImage = "url(Afbeeldingen/Meer-shooters/Gameplay/Strange.jpg)";
+	document.getElementById("content").style.backgroundImage = "url(Afbeeldingen/Meer-racing/Gameplay/thecrew2.jpg)";
 	document.getElementById("content").style.transition = "background-image 2s ease-in-out";
 
 
 	// Tekst
-	document.getElementById("gametitel").innerHTML = "Strange Brigade";
-	document.getElementById("genre").innerHTML = "<span>Genre: </span>Third-person shooter";
-	document.getElementById("platform").innerHTML = "<span>Platform: </span>PS4";
-	document.getElementById("datum").innerHTML = "<span>Datum: </span>28 Augustus 2018";
+	document.getElementById("gametitel").innerHTML = "The Crew 2";
+	document.getElementById("genre").innerHTML = "<span>Genre: </span>Racing";
+	document.getElementById("platform").innerHTML = "<span>Platform: </span>PC/PS4/XBOX ONE";
+	document.getElementById("datum").innerHTML = "<span>Datum: </span>29 Juni 2018";
 	document.getElementById("gametitel").style.fontSize = "120%";
 
 	// Sliders
@@ -46,23 +46,23 @@ function Strange(){
 	}
 }
 
-function BO4(){
+function forza(){
 	// Achtergrond
-	document.getElementById("header").style.backgroundImage = "url(Afbeeldingen/Headers/BO4.jpg)";
+	document.getElementById("header").style.backgroundImage = "url(Afbeeldingen/Meer-racing/Headers/forza.jpg)";
 	document.getElementById("header").style.backgroundSize = "100%";
 	// document.getElementById("header").style.backgroundPosition = "50% 20%";
 	document.getElementById("header").style.transition = "background-image 2s ease-in-out";
 
 	//Achtergrond gameplay
-	document.getElementById("content").style.backgroundImage = "url(Afbeeldingen/Meer-shooters/Gameplay/BO4.jpg)";
+	document.getElementById("content").style.backgroundImage = "url(Afbeeldingen/Meer-racing/Gameplay/forza.jpg)";
 	document.getElementById("content").style.transition = "background-image 2s ease-in-out";
 
 	// Tekst
-	document.getElementById("gametitel").innerHTML = "Call of Duty: Black Ops 4";
+	document.getElementById("gametitel").innerHTML = "Forza Horizon 4";
 	document.getElementById("gametitel").style.fontSize = "120%";
-	document.getElementById("genre").innerHTML = "<span>Genre: </span>First Person Shooter";
-	document.getElementById("platform").innerHTML = "<span>Platform: </span>PC/PS4/XBOX ONE";
-	document.getElementById("datum").innerHTML = "<span>Datum: </span>12 Oktober 2018";
+	document.getElementById("genre").innerHTML = "<span>Genre: </span>Racing";
+	document.getElementById("platform").innerHTML = "<span>Platform: </span>PC/XBOX ONE";
+	document.getElementById("datum").innerHTML = "<span>Datum: </span>2 Oktober 2018";
 
 	// Sliders
 	document.getElementById("slide1").style.backgroundColor = "rgba(255,255,255,0.5)";
@@ -83,23 +83,23 @@ function BO4(){
 	}
 }
 
-function BF5(){
+function dakar18(){
 	// Achtergrond
-	document.getElementById("header").style.backgroundImage = "url(Afbeeldingen/Headers/BF5.jpg)";
+	document.getElementById("header").style.backgroundImage = "url(Afbeeldingen/Meer-racing/Headers/dakar.jpg)";
 	document.getElementById("header").style.backgroundSize = "100%";
 	// document.getElementById("header").style.backgroundPosition = "50% 70%";
 	document.getElementById("gametitel").style.fontSize = "";
 	document.getElementById("header").style.transition = "background-image 2s ease-in-out";
 
 	//Achtergrond gameplay
-	document.getElementById("content").style.backgroundImage = "url(Afbeeldingen/Meer-shooters/Gameplay/BF5.jpg)";
+	document.getElementById("content").style.backgroundImage = "url(Afbeeldingen/Meer-racing/Gameplay/dakar.jpg)";
 	document.getElementById("content").style.transition = "background-image 2s ease-in-out";
 
 	//Tekst
-	document.getElementById("gametitel").innerHTML = "Battlefield V";
-	document.getElementById("genre").innerHTML = "<span>Genre: </span>First Person Shooter";
+	document.getElementById("gametitel").innerHTML = "Dakar 18";
+	document.getElementById("genre").innerHTML = "<span>Genre: </span>Racing";
 	document.getElementById("platform").innerHTML = "<span>Platform: </span>PC/PS4/XBOX ONE";
-	document.getElementById("datum").innerHTML = "<span>Datum: </span>11 Oktober 2018";
+	document.getElementById("datum").innerHTML = "<span>Datum: </span>2018";
 
 	// Sliders
 	document.getElementById("slide1").style.backgroundColor = "rgba(255,255,255,0.5)";
@@ -121,24 +121,23 @@ function BF5(){
 	}
 }
 
-function RDR2(){
+function onrush(){
 	// Achtergrond
-	document.getElementById("header").style.backgroundImage = "url(Afbeeldingen/Headers/RDR2.jpg)";
+	document.getElementById("header").style.backgroundImage = "url(Afbeeldingen/Meer-racing/Headers/onrush.jpg)";
 	document.getElementById("header").style.backgroundSize = "100%";
 	// document.getElementById("header").style.backgroundPosition = "50% 70%";
 	document.getElementById("header").style.transition = "background-image 2s ease-in-out";
 
 	//Achtergrond gameplay
-	document.getElementById("content").style.backgroundImage = "url(Afbeeldingen/Meer-shooters/Gameplay/RDR2.jpg)";
+	document.getElementById("content").style.backgroundImage = "url(Afbeeldingen/Meer-racing/Gameplay/onrush.jpg)";
 	document.getElementById("content").style.transition = "background-image 2s ease-in-out";
 
 
 	// Tekst
-	document.getElementById("gametitel").innerHTML = "Red Dead Redemption 2";
-	document.getElementById("gametitel").style.fontSize = "120%";
-	document.getElementById("genre").innerHTML = "<span>Genre: </span>Action-Adventure";
+	document.getElementById("gametitel").innerHTML = "Onrush";
+	document.getElementById("genre").innerHTML = "<span>Genre: </span>Racing";
 	document.getElementById("platform").innerHTML = "<span>Platform: </span>PC/PS4/XBOX ONE";
-	document.getElementById("datum").innerHTML = "<span>Datum: </span>26 Oktober 2018";
+	document.getElementById("datum").innerHTML = "<span>Datum: </span>5 Juni 2018";
 
 	// Sliders
 	document.getElementById("slide1").style.backgroundColor = "rgba(255,255,255,0.5)";

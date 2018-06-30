@@ -88,8 +88,10 @@ body,html{
 .content{
 	display: grid;
 	grid-template-columns: 0.3fr 1fr 1fr 0.3fr 1fr 0.3fr;
-	grid-template-rows: 0.8fr 0.3fr 0.3fr 1fr 0.3fr 0.5fr;
+	grid-template-rows: 0.8fr 0.3fr 0.3fr 1fr 0.3fr 0.1fr 0.3fr;
 	grid-column-start: 2;
+	background-image: url(Afbeeldingen/Meer-shooters/Gameplay/Strange.jpg);
+	background-size: cover;
 }
 
 	.header{
@@ -115,8 +117,10 @@ body,html{
 
 
 		#header{
-			background-image: url("Afbeeldingen/Headers/thecrew2.jpg");
-			background-size: 80%;
+			background-image: url("Afbeeldingen/Meer-shooters/Headers/strange.jpg");
+			background-size: 100%;
+			background-position: 50% 20%;
+			font-size: 100%;
 		}
 
 			h3{
@@ -160,7 +164,7 @@ body,html{
 		display: grid;
 		grid-column: 2/6;
 		grid-row: 3/6;
-		grid-template-columns: repeat(1fr,3);
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows:repeat(1fr,3);
 	}
 
@@ -191,7 +195,7 @@ body,html{
 		.game3{
 			grid-column: 3/4;
 			grid-row: 1/2;
-			background-image: url("Afbeeldingen/meer-shooters/anthem.jpg");
+			background-image: url("Afbeeldingen/meer-shooters/strange.jpg");
 		}
 
 		.game4{
@@ -255,4 +259,21 @@ body,html{
 				margin-top: auto;
 				font-size: 70%;
 				position: relative;				
+			}
+
+		.pagination{
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			font-family: 'Heebo Light', sans-serif;
+			color: white;
+			grid-row: 7/8;
+			grid-column: 2/6;
+			letter-spacing: 10px;
+			font-size: 220%;
+			text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+		}
+
+			.pagination span{
+				font-family: 'Heebo Medium', sans-serif;
 			}
