@@ -480,29 +480,35 @@ body,html{
 		}
 
 			.item1,.item2,.item3{
-				display: flex;
 				justify-content: center;
 				background-size: cover;
 			}
 
 			.item1{
 				display: grid;
-				grid-template-rows: 0.3fr 0.6fr 0.3fr;
+				grid-template-rows: 0.3fr 1fr 0.3fr;
+				grid-template-columns: 1fr 1fr;
 				grid-column: 2/4;
 				grid-row: 2/2;
-				background-image: url("Afbeeldingen/theCrew/meer/thecrew1.jpg");
 			}
 
 				.item1 h1{
+					grid-column: 1/3;
 					grid-row: 1/2;
+					background-color: white;
 				}
 
 				.nieuws-foto1{
+					grid-column: 1/3;
 					grid-row: 2/3;
+					background-image: url("Afbeeldingen/theCrew/meer/thecrew1.jpg");
+					background-size: cover;
 				}
 
-				.item1 h1{
+				.item1 h3{
+					grid-column: 1/3;
 					grid-row: 3/4;
+					background-color: white;
 				}
 
 			.item2{
