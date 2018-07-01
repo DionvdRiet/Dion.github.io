@@ -144,9 +144,15 @@ body,html{
 			}
 
 			.over{
-				grid-template-columns: 1fr 6fr;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 0.02fr repeat(2,0.05fr) 0.02fr repeat(2,0.05fr) 0.02fr repeat(2,0.05fr) 0.02fr repeat(2,0.05fr) 0.02fr repeat(2,0.05fr) 0.02fr;
 				background:linear-gradient(to top right, rgba(247, 247, 247,1), rgba(255, 255, 255,0.8));
 			}
+
+				.over-icons{
+					list-style-type: none;
+				}
 
 				.icon{
 					display: grid;
@@ -161,22 +167,27 @@ body,html{
 
 				.car{
 					background-image: url("Afbeeldingen/Icons/race-car.svg"); 
+					grid-row: 2/3;
 				}
 
 				.controller{
 					background-image: url("Afbeeldingen/Icons/console.svg"); 
+					grid-row: 4/5;
 				}
 
 				.calendar{
 					background-image: url("Afbeeldingen/Icons/calendar.svg"); 
+					grid-row: 6/7;
 				}
 
 				.settings{
 					background-image: url("Afbeeldingen/Icons/tool.svg"); 
+					grid-row: 8/9;
 				}
 
 				.age{
 					background-image: url("Afbeeldingen/Icons/man.svg"); 
+					grid-row: 10/11;
 				}
 
 				.over li{

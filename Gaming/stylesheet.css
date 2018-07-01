@@ -131,7 +131,7 @@ body,html{
 
 		.volgend{
 			display: grid;
-			grid-template-rows: 0.1fr 0.5fr;
+			grid-template-rows: 0.1fr 0.6fr;
 			font-family: 'Heebo ExtraBold', sans-serif;
 			color: white;
 			grid-row: 1/4;
@@ -149,27 +149,43 @@ body,html{
 				font-size: 140%;
 			}
 
-			.volgend ul{
-				grid-column: 1/3;
-				grid-row: 2/3;
+			.gevolgde-games{
+				grid-column: 2/3;
+				grid-row: 2/2;
 			}
 
-			.volg1{
+			.volg1,.volg2,.volg3{
 				display: grid;
-				grid-template-columns: 0.5fr 3fr;
-				grid-template-rows: 1fr 1fr;
-				font-family: 'Heebo ExtraBold', sans-serif;	
+				grid-template-columns: 0.5fr 2fr;
+				grid-template-rows: 0.4fr 0.1fr;
+				font-size: 90%;
+				font-family: 'Heebo Medium', sans-serif;
 			}
 
-				.cover1{
+				.volg1:hover,.volg2:hover,.volg3:hover{
+					cursor: pointer;
+				}
+
+				.volgt1 h3,.volgt2 h3, .volgt3 h3{
+					grid-row: 1/1;
+				}
+
+				.cover1,.cover2,.cover3{
 					grid-row: 1/3;
 					grid-column: 1/2;
-					background-image: url("Afbeeldingen/Gevolgd/RDR2.jpg");
 					background-size: cover;
 				}
 
-				.volgt1 h3{
-					grid-row: 1/1;
+				.cover1{
+					background-image: url("Afbeeldingen/Gevolgd/thecrew2.jpg");
+				}
+
+				.cover2{
+					background-image: url("Afbeeldingen/Gevolgd/RDR2.jpg");
+				}
+
+				.cover3{
+					background-image: url("Afbeeldingen/Gevolgd/BO4.jpg");
 				}
 
 		.sliders{
