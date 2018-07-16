@@ -9,7 +9,7 @@
 
 <!--WELKOM-->
 	<a id="welkom">
-		<section class="container">
+		<section class="container" id="welcome">
 				<div class="navigation">
 					<ul>
 						<a href="#welkom">
@@ -38,15 +38,15 @@
 					<h1>Welkom</h1>
 				</div>
 				<div class="content">
-					<p class="slogan">Creativiteit uitgebreider dan een woordenboek</p>
+					<p class="slogan">Communication & Multimedia Design student aan de Haagse Hogeschool in Den Haag</p>
 				</div>
-				<div class="lijn"></div>
+				<!-- <div class="lijn"></div> -->
 		</section>
 	</a>
 <!--OVER MIJ-->
 
 	<a id="over-mij">
-		<section class="container">
+		<section class="container" id="over-mij">
 			
 			<div class="navigation">
 				<ul>
@@ -85,7 +85,7 @@
 <!--CASE STUDIES-->
 
 	<a id="case-studies">
-		<section class="container">
+		<section class="container" id="case-studies">
 			<div class="navigation">
 				<ul>
 					<a href="#welkom"><li>
@@ -112,31 +112,39 @@
 
 			<div class="content">
 				<div class="p-container">
-					<div class="project1" onclick="location.href='gaming.html'"><h2>Gaming Application</h2></div>
-					<div class="project2"><h2>Weather Application</h2></div>
-					<div class="project3"><h2>Material Design Prototype</h2></div>
+					<div class="project1" onclick="location.href='gaming.html'">
+						<div class="project1-img"></div>
+						<div class="project1-info"></div>
+					</div>
+					<div class="project2" onclick="location.href='gaming.html'">
+						<div class="project2-img"></div>
+						<div class="project2-info"></div>
+					</div>
+					<div class="project3" onclick="location.href='gaming.html'">
+						<div class="project3-img"></div>
+						<div class="project3-info"></div>
+					</div>
 				</div>
 			</div>
-			<div class="lijn"></div>
+			<!-- <div class="lijn"></div> -->
 
 		</section>
 	</a>
 
 <!--CONTACT-->
-
 	<a id="contact">
 		<section class="container">
 			<div class="navigation">
 				<ul>
-					<a href="#welkom"><li>
+					<a href="#welkom"><li class="contact-list">
 						Welkom
 					</li></a>
 
-					<a href="#over-mij"><li>
+					<a href="#over-mij"><li class="contact-list">
 						Over Mij
 					</li></a>
 
-					<a href="#case-studies"><li>
+					<a href="#case-studies"><li class="contact-list">
 						Case Studies
 					</li></a>
 
@@ -145,11 +153,9 @@
 					</li></a>
 				</ul>
 			</div>
-
 			<div class="titel">
-				<h1>Contact</h1>
+				<h1 class="contact-h1">Contact</h1>
 			</div>
-
 			<div class="content">
 					<div class="contact">
 						<div class="formulier">

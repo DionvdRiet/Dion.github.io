@@ -1,6 +1,6 @@
 /*Achtergrond:#FCFCFC*/
-/*Secundair:#242428/*
-/*Accent:#5F13F7*/
+/*Secundair:white/*
+/*Accent:#E71A5D*/
 
 body,html{
 /*	height: 100%;
@@ -12,7 +12,9 @@ body,html{
 h1{
 	font-family: 'Heebo Bold', sans-serif;
 	font-size: 500%;
-	color: #242428;
+	color: white;
+	border-left: 2px solid #E71A5D;
+	text-shadow: -3px 0px 6px rgba(0,0,0,0.2);
 }
 
 ul{
@@ -32,31 +34,35 @@ li{
 	transition: width 0.3s ease-in-out, color 0.3s ease-out;
 }
 
+.contact-list{
+	color: black;
+}
+
 li:hover{
 	color: #FCFCFC;
-	background-color: #5F13F7;
+	background-color: #E71A5D;
 	width: 120%;
 
 }
 
 .highlight{
 	color: #FCFCFC;
-	background-color: #5F13F7;
+	background-color: #E71A5D;
 	transition: color 0.3s ease-out;
 }
 
 .highlight:hover{
-	color: #5F13F7;
+	color: #E71A5D;
 	background:none;
 }
 
 section{
-	height: 100vh;
+	height: 100%;
 }
 
 	.lijn{
 		display: flex;
-		background-color: #5F13F7;
+		background-color: #E71A5D;
 		width: 100%;
 		height: 1px;
 		grid-row:3;
@@ -64,7 +70,7 @@ section{
 	}
 
 a{
-	color:black;
+	color:white;
 	text-decoration: none;
 }
 
@@ -73,6 +79,20 @@ a{
 	grid-template-rows: 1fr 3fr 0.1fr;
 	grid-template-columns: 1.5fr 2fr 2fr 2fr 2fr 1fr;
 }
+
+	#welcome{
+		background-image: url(Afbeeldingen/welcome.png);
+		background-size: cover;
+		background-position: 0% 100%;
+	}
+
+	#over-mij{
+		background-color: #292348;
+	}
+
+	#case-studies{
+		background-color: #292348;
+	}
 
 	.navigation{
 		display: flex;
@@ -91,7 +111,6 @@ a{
 		grid-column: 2/4;
 	}
 
-
 	.content{
 		grid-row:2;
 		grid-column: 2/6;
@@ -102,7 +121,10 @@ a{
 	}
 
 	p{
+		font-family: 'Heebo Light', sans-serif;
+		font-size: 90%;
 		text-align: justify;
+		color: white;
 	}
 
 	.content > .slogan{
@@ -121,6 +143,7 @@ a{
 
 		
 		span{
+			font-family: 'Heebo Medium', sans-serif;
 			padding: 0.4%;
 			color: #FCFCFC;
 			width: 140%;
@@ -133,7 +156,7 @@ a{
 			@keyframes highlight{
 					0%{background-color: none;
 				}
-					100%{background:linear-gradient(rgba(95, 19, 247, 1), rgba(37, 117, 252,1));
+					100%{background:linear-gradient(to right, rgba(231, 26, 93, 1), rgba(235, 47, 109,1));
 			}			
 		}
 
@@ -156,68 +179,77 @@ a{
 		}
 
 .p-container{
-	display: flex;
+	display: grid;
+	grid-row: 2/4;
+	grid-template-rows: 400px 30px 400px 30px 400px;
 	height: 100%;
 	width: 100%;
 }
 
 	.slogan{
-		color: #545454;
+		color: white;
 		font-size: 80%;
 	}
 
-	.p-container > div{
-		background-color: #242424;
-		height: 40%;
-		width: 100%;
-		margin-right: 2%;
-		border: 2px solid #5F13F7;
-		box-shadow: none;
-		transition: box-shadow 0.2s ease-in;
-	}
-
-	.p-container > div:hover{
-		box-shadow: 5px 5px 0px #5F13F7;
-	}
-
 	.project1{
-		background:url(Afbeeldingen/project-1.png);
-		background-position: top;
-		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+		display: grid;
+		grid-template-columns: 2fr 1fr;	
+		grid-row: 1/2;
 	}
 
-	.project1:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-1.png);
-		background-position: top;
-		background-size: 110%;
-	}
+		.project1-img{
+			background:url(Afbeeldingen/gamingapplication.jpg);
+			background-position: top;
+			background-size: 100%;
+			grid-column: 1/2;
+			transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+		}
+
+		.project1-info{
+			background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url(Afbeeldingen/gamingapplication-zw.jpg);
+			background-size: cover;
+			grid-column: 2/3;
+			background-color: white;
+		}
 
 	.project2{
-		background:url(Afbeeldingen/project-2.png);
-		background-position: center;
-		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+		display: grid;
+		grid-template-columns: 2fr 1fr;	
+		grid-row: 3/4;
 	}
 
-	.project2:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-2.gif);
-		background-position: top;
-		background-size: 110%;
-	}
+		.project2-img{
+			background:url(Afbeeldingen/time-app.jpg);
+			background-position: top;
+			background-size: 100%;
+			grid-column: 1/2;
+			transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+		}
+
+		.project2-info{
+			grid-column: 2/3;
+			background-color: white;
+		}
 
 	.project3{
-		background:url(Afbeeldingen/material.png);
-		background-position: top;
-		background-size: 100%;
-		transition: background 0.5s ease-in-out;
+		display: grid;
+		grid-template-columns: 2fr 1fr;	
+		grid-row: 5/6;
 	}
 
-	.project3:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/material.png);
-		background-position: top;
-		background-size: 110%;
-	}
+		.project3-img{
+			background:url(Afbeeldingen/material.jpg);
+			background-position: top;
+			background-size: 100%;
+			grid-column: 1/2;
+			transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+		}
+
+		.project3-info{
+			grid-column: 2/3;
+			background-color: white;
+		}
+
 
 	h2{
 		color: #242424;
@@ -237,9 +269,12 @@ a{
 	text-align: center;
 	height: 100%;
 	width: 100%;
-
-
 }
+
+	.contact-h1{
+		color: black;
+		text-shadow: none;
+	}
 
 .contact > div{
 	background-color: none;
@@ -257,8 +292,8 @@ a{
 	input[type=text], input[type=email]{
 		font-family: 'Heebo light', sans-serif;
 		border: none;
-		box-shadow: 0px 2px #5F13F7;
-		color: #5F13F7;
+		box-shadow: 0px 2px #E71A5D;
+		color: #E71A5D;
 		width: 80%;
 		height: 10%;
 		margin-bottom: 5%;
@@ -268,15 +303,15 @@ a{
 
 		input[type=text]:focus, input[type=email]:focus{
 			font-family: 'Heebo Regular', sans-serif;
-			box-shadow: 0px 2px #5F13F7;
-			color: #5F13F7;
+			box-shadow: 0px 2px #E71A5D;
+			color: #E71A5D;
 			background: white;
 			outline:none;
 		}
 
 		input[type=text]:valid, input[type=email]:focus{
-			box-shadow: 0px 2px #5F13F7;
-			color: #5F13F7;
+			box-shadow: 0px 2px #E71A5D;
+			color: #E71A5D;
 			background: white;
 			outline:none;
 		}
@@ -293,15 +328,15 @@ a{
 
 		textarea:focus{
 			font-family: 'Heebo Regular', sans-serif;
-			box-shadow: 0px 2px #5F13F7;
-			color: #5F13F7;
+			box-shadow: 0px 2px #E71A5D;
+			color: #E71A5D;
 			background: white;
 			outline:none;
 		}
 
 		textarea:valid{
-			box-shadow: 0px 2px #5F13F7;
-			color: #5F13F7;
+			box-shadow: 0px 2px #E71A5D;
+			color: #E71A5D;
 			background: white;
 			outline:none;
 		}
@@ -311,7 +346,7 @@ a{
 		font-size: 90%;
 		border: none;
 		color: #fcfcfc;
-		background-color: #5F13F7;
+		background-color: #E71A5D;
 		width: 80%;
 		height: 10%;
 		margin-bottom: 5%;
@@ -321,7 +356,7 @@ a{
 		input[type=submit]:hover{
 			background:linear-gradient(rgba(134, 73, 255, 1), rgba(95, 19, 247, 1));
 			box-shadow: 0px 3px 5px #bcbcbc;
-			text-shadow: 0px 3px 5px #5F13F7;
+			text-shadow: 0px 3px 5px #E71A5D;
 
 		}
 
