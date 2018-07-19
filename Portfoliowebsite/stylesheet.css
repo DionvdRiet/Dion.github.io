@@ -4,9 +4,15 @@
 
 body,html{
 /*	height: 100%;
-	widows: 100%;*/
+	width: 100%;*/
+	width: 100%;
 	margin: 0;
 	background:linear-gradient(to bottom, rgba(255, 247, 247, 0,9), rgba(252, 252, 252, 1));
+}
+
+*::selection{
+	background-color: #E71A5D;
+	color: white;
 }
 
 h1{
@@ -76,7 +82,7 @@ a{
 
 .container{
 	display: grid;
-	grid-template-rows: 1fr 3fr 0.1fr;
+	grid-template-rows: 0.5fr 3fr 0.1fr;
 	grid-template-columns: 1.5fr 2fr 2fr 2fr 2fr 1fr;
 }
 
@@ -120,6 +126,21 @@ a{
 		animation:myMove 1s 1;
 	}
 
+		.button-welcome{
+			font-family: 'Heebo ExtraBold', sans-serif;
+			font-size: 70%;
+			color: white;
+			background-color: transparent;
+			border: 2px solid #E71A5D;
+			padding: 1%;
+			transition: background-color 0.3s ease-in-out;
+			transform-origin: left;
+		}
+
+		.button-welcome:hover{
+			background-color: #E71A5D;
+		}
+
 	p{
 		font-family: 'Heebo Light', sans-serif;
 		font-size: 90%;
@@ -142,7 +163,7 @@ a{
 	}
 
 		
-		span{
+		p span{
 			font-family: 'Heebo Medium', sans-serif;
 			padding: 0.4%;
 			color: #FCFCFC;
@@ -181,9 +202,7 @@ a{
 .p-container{
 	display: grid;
 	grid-row: 2/4;
-	grid-template-rows: 400px 30px 400px 30px 400px;
-	height: 100%;
-	width: 100%;
+	grid-template-rows: 300px 10px 300px -1px 300px;
 }
 
 	.slogan{
@@ -191,39 +210,95 @@ a{
 		font-size: 80%;
 	}
 
-	.project1{
+	.project1,.project2,.project3{
 		display: grid;
-		grid-template-columns: 2fr 1fr;	
-		grid-row: 1/2;
+		grid-template-columns: 2.5fr 1fr;
 	}
+
+	.project1-img,.project2-img,.project3-img{
+		background-position: top;
+		background-size: 100%;
+		grid-column: 1/2;
+	}
+
+	.project1-info,.project2-info,.project3-info{
+		display: grid;
+		grid-template-rows: 0.5fr 1.5fr 0.4fr;
+		background-size: cover;
+		grid-column: 2/3;
+		background-color: white;
+	}
+
+	.project1{	
+		grid-row: 1/2;
+		z-index: 1;
+	}
+
+		#car{
+			background-image: url(Afbeeldingen/car.png);
+			background-size: 100%;
+			width: 250px;
+			height: 100px;
+			z-index: 2;
+			grid-row: 1/2;
+			opacity: 0;
+		}
 
 		.project1-img{
 			background:url(Afbeeldingen/gamingapplication.jpg);
-			background-position: top;
 			background-size: 100%;
-			grid-column: 1/2;
-			transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
 		}
 
 		.project1-info{
-			background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),url(Afbeeldingen/gamingapplication-zw.jpg);
-			background-size: cover;
-			grid-column: 2/3;
-			background-color: white;
+			/*background:linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),url(Afbeeldingen/gamingapplication-zw.jpg);*/
 		}
 
+			#info h2{
+				font-family: 'Heebo ExtraBold', sans-serif;
+				color: #E71A5D;
+				font-size: 110%;
+				padding: 3% 6%;
+				text-align: left;
+				grid-row: 1/2;
+			}
+
+			#info h4{
+				font-family: 'Heebo Light', sans-serif;
+				color: #292348;
+				font-size: 60%;
+				margin-top: -5%;
+				padding: 3% 6%;
+				grid-row: 2/3;
+			}
+
+				#info h4 span{
+					color: #E71A5D;
+				}
+
+			.button-project{
+				grid-row: 3/4;
+				font-family: 'Heebo ExtraBold', sans-serif;
+				font-size: 60%;
+				color: #292348;
+				background-color: transparent;
+				border: 2px solid #E71A5D;
+				margin-left: 6%;
+				margin-bottom: 3%;
+				width: 55%;
+			}
+
+			.button-project:hover{
+				color: white;
+				background-color: #292348;
+			}
+
 	.project2{
-		display: grid;
-		grid-template-columns: 2fr 1fr;	
 		grid-row: 3/4;
 	}
 
 		.project2-img{
 			background:url(Afbeeldingen/time-app.jpg);
-			background-position: top;
 			background-size: 100%;
-			grid-column: 1/2;
-			transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
 		}
 
 		.project2-info{
@@ -232,32 +307,18 @@ a{
 		}
 
 	.project3{
-		display: grid;
-		grid-template-columns: 2fr 1fr;	
 		grid-row: 5/6;
 	}
 
 		.project3-img{
 			background:url(Afbeeldingen/material.jpg);
-			background-position: top;
-			background-size: 100%;
-			grid-column: 1/2;
-			transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+			background-size: cover;
 		}
 
 		.project3-info{
 			grid-column: 2/3;
 			background-color: white;
 		}
-
-
-	h2{
-		color: #242424;
-		font-size: 70%;
-		padding: 1%;
-		margin-top: 60%;
-		text-align: center;
-	}
 
 .button{
 	background-color: red;

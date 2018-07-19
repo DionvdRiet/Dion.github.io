@@ -39,6 +39,8 @@
 				</div>
 				<div class="content">
 					<p class="slogan">Communication & Multimedia Design student aan de Haagse Hogeschool in Den Haag</p>
+					<a href="#case-studies"><input type="button" name="Projecten" value="NAAR PROJECTEN" class="button-welcome"></a>
+
 				</div>
 				<!-- <div class="lijn"></div> -->
 		</section>
@@ -112,17 +114,37 @@
 
 			<div class="content">
 				<div class="p-container">
-					<div class="project1" onclick="location.href='gaming.html'">
-						<div class="project1-img"></div>
-						<div class="project1-info"></div>
+					<div class="project1">
+						<div id="car"></div>
+						<div class="project1-img" id="gaming"></div>
+						<div class="project1-info" id="info">
+							<h2>Gaming Application</h2>
+							<h4>Voordat ik aan dit project begon bestond er nog geen applicatie of website die een breed overzicht gaf van games die eraan zitten te komen. Binnen dit project heb ik het gehele designproces van onderzoek tot realisatie doorlopen. </br></br>
+								<span>Onderzoek / User Testing / Ontwerpen (Adobe XD) / Prototyping / HTML/CSS/Javascript</span>
+							</h4>
+							<input type="button" name="bekijk" value="BEKIJK CASE >" class="button-project" onclick="location.href='gaming.html'" onmouseover="gaming()" onmouseout="regaming()">
+						</div> 
 					</div>
 					<div class="project2" onclick="location.href='gaming.html'">
-						<div class="project2-img"></div>
-						<div class="project2-info"></div>
+						<div class="project2-img" id="mars"></div>
+						<div class="project2-info" id="info">
+							<h2>Tijd voor mars</h2>
+							<h4>Het is 2032. Elon Musk, CEO van SpaceX is van plan mensen naar mars te sturen om zich daar te koloniseren. Voordat hij de bemanning de ruimte in kan sturen, heeft hij een interface nodig voor op hun apparaten. De marsians moeten ten alle tijden kunnen bekijken hoe laat het op aarde is, anders raakt hun slaapritme in de war. </br></br>
+								<span>Ontwerpen (Photoshop) / HTML/CSS/Javascript </span></h4>
+							<input type="button" name="bekijk" value="BEKIJK CASE >" class="button-project" onclick="location.href='gaming.html'" onmouseover="mars()" onmouseout="remars()">
+						</div> 
+						</div>
 					</div>
 					<div class="project3" onclick="location.href='gaming.html'">
-						<div class="project3-img"></div>
-						<div class="project3-info"></div>
+						<div class="project3-img" id="material"></div>
+						<div class="project3-info" id="info">
+							<h2>Noothulp</h2>
+							<h4>Kinderen die op muziekles zitten hebben vaak maar eens per week muziekles. Dit betekent in de meeste gevallen dat een kind slechts één keer per week oefent met haar piano of gitaar. Nu de meeste kinderen toch een telefoon tot hun beschikking hebben, moet er een applicatie worden ontwikkeld die zonder dat een professional in de buurt hoeft te zijn feedback geeft over het bespelen van een instrument.
+							</br></br>
+								<span>Onderzoek / User Testing / Ontwerpen / Prototyping / HTML/CSS/Javascript</span></h4>
+							<input type="button" name="bekijk" value="BEKIJK CASE >" class="button-project" onclick="location.href='gaming.html'" onmouseover="material()" onmouseout="rematerial()">
+						</div> 
+						</div>
 					</div>
 				</div>
 			</div>
@@ -176,16 +198,7 @@
 		</section>
 	</a>
 
-<!-- 	<script type="text/javascript">
-		$(window).scroll(function () {
-  if($(window).scrollTop() > 0) {
-    div.addClass("up");
-  }
-  else {
-    div.removeClass("up");
-  }
-});
-	</script>
- -->
+<script src="projects.js"></script>
+<script src="TweenMax.min.js"></script>
 </body>
 </html>

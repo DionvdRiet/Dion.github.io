@@ -1,9 +1,9 @@
 /*Achtergrond:#FCFCFC*/
 /*Secundair:#242428/*
-/*Accent:#5F13F7*/
+/*Accent:#E71A5D*/
 
 *::selection{
-	background-color: #5F13F7;
+	background-color: #E71A5D;
 	color: #FCFCFC;
 }
 
@@ -58,19 +58,19 @@ li{
 
 li:hover{
 	color: #FCFCFC;
-	background-color: #5F13F7;
+	background-color: #E71A5D;
 	width: 120%;
 }
 
 
 .highlight{
 	color: #FCFCFC;
-	background-color: #5F13F7;
+	background-color: #E71A5D;
 	transition: color 0.3s ease-out;
 }
 
 .highlight:hover{
-	color: #5F13F7;
+	color: #E71A5D;
 	background-color: #FCFCFC;
 }
 
@@ -80,7 +80,7 @@ section{
 
 	.lijn{
 		display: flex;
-		background-color: #5F13F7;
+		background-color: #E71A5D;
 		width: 100%;
 		height: 1px;
 		grid-row:5;
@@ -133,7 +133,7 @@ a{
 		}
 
 		.onderdeel > h3{
-			color: #5F13F7;
+			color: #E71A5D;
 		}
 
 	.content > .slogan{
@@ -157,7 +157,7 @@ a{
 		span{
 			padding: 0.4%;
 			color: #FCFCFC;
-			background-color: #5F13F7;
+			background-color: #E71A5D;
 			width: 140%;
 			animation: up 1s 1 ease-in-out, fade 0.2s 1 ease-in-out;
 		}
@@ -183,17 +183,17 @@ a{
 		height: 35%;
 		width: 100%;
 		margin-right: 2%;
-		border: 2px solid #5F13F7;
+		border: 2px solid #E71A5D;
 		box-shadow: none;
 		transition: box-shadow 0.2s ease-in;
 	}
 
 	.p-container > div:hover{
-		box-shadow: 5px 5px 0px #5F13F7;
+		box-shadow: 5px 5px 0px #E71A5D;
 	}
 
 	#first{
-		background:linear-gradient(to right, rgba(102, 126, 234, 0.9), rgba(79, 16, 206, 0.4)), url(Afbeeldingen/mockup-1.jpg);
+		background:linear-gradient(to left, rgba(231, 26, 93, 0.9), rgba(41, 35, 72, 0.8)), url(Afbeeldingen/mockup-1.jpg);
 		background-position: center;
 		background-size:100%;
 		background-repeat: no-repeat;
