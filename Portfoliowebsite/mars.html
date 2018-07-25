@@ -95,13 +95,13 @@
 
 				<div class="doel">
 					<div class="doel-icon"></div>
-					<h3 class="onderdeel-titel">Probleem</h3>
+					<h3 class="onderdeel-titel">Doel</h3>
 					<h4 class="onderdeel-beschrijving">Naar mijn mening bestaat er nog geen applicatie op de markt waar gameliefhebbers gemakkelijk kunnen bekijken welke games er 	binnekort uit gaan komen.</h4>
 				</div>
 
 				<div class="doelgroep">
 					<div class="doelgroep-icon"></div>
-					<h3 class="onderdeel-titel">Probleem</h3>
+					<h3 class="onderdeel-titel">Doelgroep</h3>
 					<h4 class="onderdeel-beschrijving">Naar mijn mening bestaat er nog geen applicatie op de markt waar gameliefhebbers gemakkelijk kunnen bekijken welke games er 	binnekort uit gaan komen.</h4>
 				</div>
 
@@ -139,7 +139,9 @@
 			</div>
 
 			<div class="content" id="oplossing">
-					<div class="preview"></div>
+					<video class="preview" autoplay loop>
+						<source src="Videos/mars.mp4" type="video/mp4">
+					</video>
 			</div>
 			<div class="lijn"></div>
 
@@ -174,8 +176,38 @@
 			</div> -->
 
 			<div class="content" id="showcase">
-					<div class="homepage"></div>
-					<div class="detailpagina"></div>
+				<div class="detailpagina"></div>
+					<div class="homepage">
+						<pre>
+							<code class="media">
+								function amsterdamTime(){</br>
+								var d = new Date();</br>
+								var hoursAmsterdam = d.getHours();</br>
+								var mins = d.getMinutes();</br>
+								var secs = d.getSeconds();</br>
+								</br></br>
+								if(secs < 10) {</br>
+									secs = "0" + secs;</br>
+								}</br>
+								</br></br>
+								if(mins < 10) {</br>
+									mins = "0" + mins;</br>
+								}</br>	
+								</br></br>
+								if(hoursAmsterdam < 10) {</br>
+									hoursAmsterdam = "0" + hoursAmsterdam;</br>
+								}</br>
+								</br></br>
+								if (hoursAmsterdam >= 0 && hoursAmsterdam <= 3) {</br>
+							   		document.getElementById('amsterdam').style.background = '-moz-linear-gradient('</br>
+							        + 'rgba(4, 24, 35, 0.80)' + ', ' + 'rgba(18, 9, 40, 0.80)' + '), url(cities/amsterdam.jpg)';</br>
+							        document.getElementById('amsterdam').style.backgroundSize = "100%";  </br>
+							        document.getElementById('mainDateAmsterdam').style.color = "white";    </br>
+							   	}
+							</code>
+						</pre>
+					</div>
+					
 			</div>
 
 		</section>

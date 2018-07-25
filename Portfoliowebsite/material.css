@@ -1,0 +1,362 @@
+/*Achtergrond:#FCFCFC*/
+/*Secundair:#242428/*
+/*Accent:#E71A5D*/
+
+*::selection{
+	background-color: #E71A5D;
+	color: #FCFCFC;
+}
+
+body,html{
+/*	height: 100%;
+	widows: 100%;*/
+	margin: 0;
+	background-color: #FCFCFC;
+}
+
+h1{
+	font-family: 'Heebo Bold', sans-serif;
+	font-size: 400%;
+	color: #FCFCFC;
+}
+
+
+ul{
+	font-family: 'Heebo Medium', sans-serif;
+	font-size: 120%;
+	list-style:none;
+	display: block;
+	padding-left: 1%;
+}
+
+.terug{
+	font-family: 'Heebo Medium', sans-serif;
+	color: #FCFCFC;
+}
+
+	.terug:hover{
+	color:;
+	width: 80%;
+}
+
+li{
+	padding: 1%;
+	margin-bottom: 5%;
+	width: 100%;
+	color: none;
+	background-color: none;
+	transition: width 0.3s ease-in-out, color 0.3s ease-out;
+}
+
+	.first-li{
+		color: #FCFCFC;
+	}
+
+li:hover{
+	color: #FCFCFC;
+	background-color: #E71A5D;
+	width: 120%;
+}
+
+
+.highlight{
+	color: #FCFCFC;
+	background-color: #E71A5D;
+	transition: color 0.3s ease-out;
+}
+
+.highlight:hover{
+	color: #E71A5D;
+	background-color: #FCFCFC;
+}
+
+section{
+	height: 100vh;
+}
+
+	.lijn{
+		display: flex;
+		background-color: #E71A5D;
+		width: 100%;
+		height: 1px;
+		grid-row:5;
+		grid-column: 2/5;
+	}
+
+a{
+	color:black;
+	text-decoration: none;
+}
+
+.container{
+	display: grid;
+	grid-template-rows: 1fr 3fr 3fr 0.1fr;
+	/*grid-template-columns: 2fr 3fr 2fr 1fr 3fr 0.5fr;*/
+	grid-template-columns: 1.5fr 2fr 2fr 2fr 4fr 1fr;
+}
+
+	.navigation{
+		display: flex;
+		grid-column: 1/2;
+		position: relative;
+		animation: slideIn 1s 1 ease-in-out;
+	}
+
+	@keyframes slideIn{
+		from{left:-200px;}
+		to{left:0px;}
+	}
+
+	.titel{
+		grid-row:1;
+		grid-column: 2/5;
+	}
+
+		h1{
+			border-left: 2px solid #E71A5D;
+			color: black;
+		}
+
+	.content{
+		grid-row:2;
+		grid-column: 2/6;
+		font-family: 'Heebo Regular', sans-serif;
+		font-size: 130%;
+		position: relative;
+		animation:myMove 1s 1;
+	}
+/*
+		#main-case{
+			display: flex;
+			justify-content: center;
+			align-: center;
+		}*/
+
+
+
+	.content > .slogan{
+		vertical-align: middle;
+	}
+
+	@keyframes myMove{
+		from{top:200px;}
+		to {top:0px;}
+	}
+
+	@keyframes fade{
+		from{opacity:20%;}
+		to {top:100%;}
+	}
+
+		/*span{
+			padding: none;
+			transition: padding 0.1s ease-in;
+		}*/
+		span{
+			padding: 0.4%;
+			color: #FCFCFC;
+			background-color: #E71A5D;
+			width: 140%;
+			animation: up 1s 1 ease-in-out, fade 0.2s 1 ease-in-out;
+		}
+
+		@keyframes up{
+			from{left: -100px}
+			to{left: 0px;}
+		}
+
+	.slogan{
+		color: #545454;
+		font-size: 80%;
+	}
+
+
+	#first{
+		background:linear-gradient(to left, rgba(231, 26, 93, 0.9), rgba(41, 35, 72, 0.8)), url(Afbeeldingen/Gaming/mockup-2.jpg);
+		background-position: center;
+		background-size:100%;
+		background-repeat: no-repeat;
+		transition: background 0.5s ease-in-out; /*werkt niet*/
+	}
+
+	#first h1, #first .content{
+		color: #FCFCFC;
+	}
+
+	#first h3{
+		color: #FCFCFC;
+	}
+
+	#results{
+
+	}
+		#main-case{
+			grid-column: 3/6;
+		}
+		.probleem,.rol,.doel,.doelgroep{
+			display: grid;
+			grid-template-columns: 1fr 0.6fr 4fr;
+			grid-template-rows: 1fr 0.5fr;
+		}
+
+			.probleem-icon{
+				background-image: url(Afbeeldingen/problem.svg);
+				background-size: 70%;
+				background-repeat: no-repeat;
+				grid-column: 1/3;
+				grid-row: 1/3;
+				opacity: 0.06;
+			}
+
+			.rol-icon{
+				background-image: url(Afbeeldingen/pencil.svg);
+				background-size: 70%;
+				background-repeat: no-repeat;
+				grid-column: 1/3;
+				grid-row: 1/3;
+				opacity: 0.06;
+			}
+
+			.doel-icon{
+				background-image: url(Afbeeldingen/goal.svg);
+				background-size: 70%;
+				background-repeat: no-repeat;
+				grid-column: 1/3;
+				grid-row: 1/3;
+				opacity: 0.06;
+			}
+
+			.doelgroep-icon{
+				background-image: url(Afbeeldingen/user.svg);
+				background-size: 70%;
+				background-repeat: no-repeat;
+				grid-column: 1/3;
+				grid-row: 1/3;
+				opacity: 0.06;
+			}
+
+			.onderdeel-titel{
+				grid-column: 2/4;
+				grid-row: 1/2;
+				color: #E71A5D;
+			}
+
+			.onderdeel-beschrijving{
+				grid-column: 2/4;
+				grid-row: 2/3;
+				font-size: 80%;
+				/*color: */
+			}
+
+			#oplossing{
+				display: grid;
+				grid-template-columns: 4fr 3fr 3fr 1.5fr;
+				grid-template-rows: 3fr 3fr 2fr;
+				height: 100vh;				
+			}
+
+			.preview{
+				grid-column: 2/4;
+				grid-row:1/3;
+				height: 70vh;
+			}
+
+			#oplossing p{
+				grid-column: 2/4;
+			}
+
+			#voorbeeld{
+			}
+
+			#showcase{
+				display: grid;
+				grid-template-columns: 1.5fr 3fr 3fr 1.5fr;
+				grid-template-rows: 1fr 3fr 1fr 1fr 3fr 1fr 3fr 3fr 1fr;
+				height: 450vh;
+			}
+
+				.homepage{
+					/*background-image: url(Afbeeldingen/preview-mars.png);*/
+					display: grid;
+					grid-template-columns: 1fr 0.3fr 1fr 0.3fr 1fr;
+					grid-template-rows: 2fr 0.3fr 2fr 0.3fr;
+					background-repeat: no-repeat;
+					grid-column: 1/5;
+					grid-row:2/4;
+					background-size: 80%;
+					height: 200vh;
+				}
+
+					.eerste{
+						background-image: url(Afbeeldingen/Material/aanmeldscherm.png);
+						background-size: 100%;
+						background-repeat: no-repeat;
+						grid-column: 1/2;
+						grid-row:1/2;
+					}
+
+					.tweede{
+						background-image: url(Afbeeldingen/Material/aanmeldscherm-keyboard.png);
+						background-size: 100%;
+						background-repeat: no-repeat;
+						grid-column: 3/4;
+						grid-row:1/2;
+					}
+
+					.derde{
+						background-image: url(Afbeeldingen/Material/verkeerd.png);
+						background-size: 100%;
+						background-repeat: no-repeat;
+						grid-column: 5/6;
+						grid-row:1/2;
+					}
+
+					.vierde{
+						background-image: url(Afbeeldingen/Material/aanmeldscherm.png);
+						background-size: 100%;
+						background-repeat: no-repeat;
+						grid-column: 1/2;
+						grid-row:3/4;
+					}
+
+					.vijfde{
+						background-image: url(Afbeeldingen/Material/aanmeldscherm-keyboard.png);
+						background-size: 100%;
+						background-repeat: no-repeat;
+						grid-column: 3/4;
+						grid-row:3/4;
+					}
+
+					.zesde{
+						background-image: url(Afbeeldingen/Material/verkeerd.png);
+						background-size: 100%;
+						background-repeat: no-repeat;
+						grid-column: 5/6;
+						grid-row:3/4;
+					}
+
+				.detailpagina{
+					/*background-image: url(Afbeeldingen/preview-mars.png);*/
+					display: grid;
+					grid-template-columns: 1fr 0.3fr 1fr 0.3fr 1fr;
+					background-repeat: no-repeat;
+					grid-column: 1/5;
+					grid-row:2/4;
+					background-size: 80%;
+					height: 100vh;
+				}
+
+				.shooters{
+					/*background-image: url(Afbeeldingen/shooters.jpg);*/
+					background-repeat: no-repeat;
+					grid-column: 1/5;
+					grid-row:8/10;
+					background-size: cover;
+					height: 120vh;
+				}
+
+
+
+
+
+
