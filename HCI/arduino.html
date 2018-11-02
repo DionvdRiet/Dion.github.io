@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arduino</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700" rel="stylesheet"> 
+</head>
+<body>
+
+<!--WELKOM-->
+	<a id="welkom">
+		<section class="container">
+				<div class="navigation">
+					<ul>
+						<a href="index.html">
+							<li>
+								Terug
+							</li>
+						</a>
+						<a href="#welkom">
+							<li class="highlight">
+								Welcome
+							</li>
+						</a>
+						<a href="#over-mij">
+							<li>
+								Topics
+							</li>
+						</a>
+						<a href="#case-studies">
+							<li>
+								Excursion
+							</li>
+						</a>
+						<a href="#contact">
+							<li>
+								Lab weeks
+							</li>
+						</a>
+					</ul>
+				</div>
+				<div class="titel">
+					<h1>Arduino</h1>
+				</div>
+				<div class="content-processing">
+					<h1>Opdracht 3c</h1>
+					<p>	Bij deze opdracht is het de bedoeling dat beide lampjes branden, maar dat het groene lampje twee keer sneller knippert dan de gele</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/3c.mp4" type="video/mp4">
+					</video></br>
+					<pre>
+						<code>
+							void setup() {</br>
+							  // initialize digital pin LED_BUILTIN as an output.</br>
+							  pinMode(12, OUTPUT);</br>
+							  pinMode(13, OUTPUT);</br>
+							}</br></br>
+
+							// the loop function runs over and over again forever</br>
+							void loop() {</br>
+							  digitalWrite(13, HIGH); </br>
+							  digitalWrite(12, HIGH);     // turn the LED on (HIGH is the voltage level)</br>
+							  delay(1000);   </br>
+							                              // wait for a second</br>
+							  digitalWrite(13, LOW);</br>
+							  digitalWrite(12, HIGH);// turn the LED off by making the voltage LOW</br>
+							  delay(1000);                       // wait for a second</br></br>
+
+							   digitalWrite(13, HIGH); </br>
+							   digitalWrite(12, LOW);// turn the LED on (HIGH is the voltage level)</br>
+							  delay(500); </br>
+							  // wait for a second</br>
+							   digitalWrite(13, LOW); </br>
+							  digitalWrite(12, LOW);    // turn the LED off by making the voltage LOW</br>
+							  delay(1000);                       // wait for a second</br>
+							}
+
+						</code>
+
+					</pre>
+					<h1>Opdracht 4c</h1>
+					<p>In plaats van dat de lampjes knipperen, gaan ze nu langzaam of aan, of uit. Het idee is dat het groene lampje langzaam van uit naar aan gaat, terwijl het gele lampje langzaam van aan naar uit gaat.</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/4c.mp4" type="video/mp4">
+					</video></br>
+
+					<pre>
+						<code>
+								int greenLedPin = 10;</br>
+								int yellowLedPin = 9;</br>
+
+								void setup() {</br>
+								  pinMode(greenLedPin, OUTPUT);</br>
+								  pinMode(yellowLedPin, OUTPUT);</br>
+								}</br></br>
+
+								void loop() {</br>
+								  for (int brightness=0; brightness <256; brightness++){</br>
+								    analogWrite(greenLedPin,brightness);</br>
+								    delay(10);</br>
+								  }</br></br>
+
+								  for (int brightness=256; brightness >0; brightness--){</br>
+								    analogWrite(yellowLedPin,brightness);</br>
+								    delay(10);</br>
+								  }</br>
+								}
+						</code>
+					</pre>
+
+					<h1>Opdracht 6c</h1>
+					<p>Doormiddel van een potentiometer kan de waarde van lichtdoorlaatbaarheid worden bepaald bij beide lampjes. Omdat de waarde van het gele lampje andersom is, zal deze hetzelfde effect hebben als opdracht 4c, alleen nu wordt het handmatig aangepast</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/6c.mp4" type="video/mp4">
+					</video></br>
+
+					<pre>
+						<code>
+							int greenLed = 10;</br>
+							int yellowLed = 9;</br>
+							float sensorValue = 0; // variable for sensor value</br>
+							int sensorPin = A0; // variable for sensor pin</br></br>
+
+							void setup() {</br>
+							 pinMode(sensorPin, INPUT);</br>
+							 pinMode(greenLed, OUTPUT);</br>
+							pinMode(yellowLed, OUTPUT);</br>
+							 Serial.begin(9600);</br></br>
+							 
+							}
+							void loop() {</br>
+							 sensorValue = analogRead(sensorPin); // read the value/current on the sensor pin and</br>
+							 // store that value in the variable sensorValue</br>
+							 Serial.print("sensor = "); // print out the text "sensor = " to the serial</br>
+							 // monitor</br>
+							 Serial.println(sensorValue); // print out sensorValue to the serial monitor</br>
+							 
+							sensorValue = (sensorValue/1023)*255;</br>
+							 analogWrite(greenLed, sensorValue);</br>
+
+							  analogWrite(yellowLed, 255-sensorValue);</br>
+							 delay(20);</br>
+							}
+						</code>
+					</pre>
+
+					<h1>Opdracht 7</h1>
+					<p>Hier wordt de waarde van lichtdoorlaatbaarheid bij de lampjes bepaald door een nabijheidsensor. Hoe dichterbij een object bij de sensor komt, hoe hogere invloed dat heeft op de lampjes</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/7.mp4" type="video/mp4">
+					</video></br>
+
+					<pre>
+						<code>
+							float sensorValue = 0; // variable for sensor value</br>
+							int sensorPin = A0; // variable for sensor pin</br>
+							int greenLedPin = 10;</br>
+							int yellowLedPin = 9;</br></br>
+
+							void setup() {</br>
+							 pinMode(sensorPin, INPUT);</br>
+							 Serial.begin(9600);</br>
+							 pinMode(greenLedPin, OUTPUT);</br>
+							 pinMode(yellowLedPin, OUTPUT);</br>
+							}</br></br>
+
+							void loop() {</br>
+							 sensorValue = analogRead(sensorPin); // read the value/current on the sensor pin and</br>
+							 // store that value in the variable sensorValue</br>
+							 sensorValue = (sensorValue/800)*255;</br>
+							 analogWrite(greenLedPin, sensorValue);</br>
+							 analogWrite(yellowLedPin, sensorValue);</br></br>
+							 
+							 Serial.print("sensor = "); // print out the text "sensor = " to the serial</br>
+							 // monitor</br>
+							 Serial.println(sensorValue); // print out sensorValue to the Serial Monitor</br>
+							 delay(20); // delay for 0.2 seconds</br>
+							}
+						</code>
+					</pre>
+
+					<h1>Opdracht 8b</h1>
+					<p>Door de code van de vorige opdracht te koppelen aan een processing figuur, krijg je dit rare effect. Hoe dichter een object komt bij de nabijheidssensor, hoe meer de kleuren gaan veranderen op zowel de voorgrond als de achtergrond.</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/8b.mp4" type="video/mp4">
+					</video></br>
+
+					<pre>
+						<code>
+							float sensorValue = 0; // variable for sensor value</br>
+							int sensorPin = A0; // variable for sensor pin</br>
+							int greenLedPin = 10; // variable for green LED pin</br>
+							void setup() {</br>
+							  Serial.begin(9600); // Start the Serial connection at a </br>
+							// speed of 9600 bps</br>
+							  pinMode(sensorPin, INPUT);     </br>
+							// Input pin for potmeter or LDR</br>
+							  pinMode(greenLedPin, OUTPUT);     </br>
+							// Output pin for LED</br>
+							}</br>
+							void loop() {</br>
+							  sensorValue = analogRead(sensorPin);// Read the value/current on the sensor pin and</br>
+							// store that value in the variable sensorValue</br>
+							  sensorValue =(sensorValue/1023)*255; </br>
+							// Rescale the sensor's value. Change</br>
+							// to calibrate the sensor.</br>
+							  analogWrite(greenLedPin, sensorValue); // Send power to LED</br>
+							  Serial.println(sensorValue);// Print the sensorValue to tht serial </br>
+							// connection  </br>
+							  delay(100);                           </br>
+							// Wait 0.1 seconds</br>
+							}
+						</code>
+					</pre>
+
+					<h1>Opdracht 9f</h1>
+					<p>Doormiddel van een druk op de drop geeft de code een 'ja' signaal aan het groene lampje om te gaan branden. Dit signaal zit op beide lampjes, maar wanneer er op beide knopjes wordt gedrukt, wordt het ja-signaal niet doorgevoerd (mede dankzij een else-if statement)</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/9f.mp4" type="video/mp4">
+					</video></br>
+
+					<pre>
+						<code>
+							/* 9D</br>
+							int ledPin =  13;</br>
+							int buttonPinL = 3; </br>
+							int buttonPinR = 2;   </br>
+							void setup() {pinMode(ledPin, OUTPUT);</br>
+							  pinMode(buttonPinL, INPUT);</br>
+							  pinMode(buttonPinR, INPUT);</br>
+							 } </br></br>
+							 
+							void loop(){ </br>
+							  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:</br>
+							  if (digitalRead(buttonPinL) && (digitalRead(buttonPinR)) == HIGH) {</br>
+							    // turn LED on:</br>
+							    digitalWrite(ledPin, HIGH);</br>
+							  } else {</br>
+							    // turn LED off:</br>
+							    digitalWrite(ledPin, LOW);</br>
+							  }
+							}</br>
+							*/
+							/* 9E</br>
+
+							int ledPin =  13;</br>
+							int buttonPinL = 3; </br>
+							int buttonPinR = 2;   </br>
+							void setup() {pinMode(ledPin, OUTPUT);</br>
+							  pinMode(buttonPinL, INPUT);</br>
+							  pinMode(buttonPinR, INPUT);</br>
+							 } </br>
+							 
+							void loop(){ </br>
+							  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:</br>
+							  if (digitalRead(buttonPinL) | (digitalRead(buttonPinR)) == HIGH) {</br>
+							    // turn LED on:</br>
+							    digitalWrite(ledPin, HIGH);</br>
+							  } else {</br>
+							    // turn LED off:</br>
+							    digitalWrite(ledPin, LOW);</br>
+							  }
+							}</br>
+							*/</br>
+							//9F</br>
+							int ledPin =  13;</br>
+							int buttonPinL = 3; </br>
+							int buttonPinR = 2;   </br>
+							void setup() {pinMode(ledPin, OUTPUT);</br>
+							  pinMode(buttonPinL, INPUT);</br>
+							  pinMode(buttonPinR, INPUT);</br>
+							 } </br>
+							 
+							void loop(){ </br>
+							  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:</br>
+							  if (digitalRead(buttonPinL) && (digitalRead(buttonPinR)) == HIGH) {</br>
+							    // turn LED on:</br>
+							    digitalWrite(ledPin, LOW);</br>
+							  } else if (digitalRead(buttonPinL) | (digitalRead(buttonPinR)) == HIGH) {</br>
+							    // turn LED off:</br>
+							    digitalWrite(ledPin, HIGH);</br>
+							  }else{</br>
+							    // turn LED off:</br>
+							    digitalWrite(ledPin, LOW);</br>
+							  }
+							}
+						</code>
+					</pre>
+
+					<h1>Opdracht 10b</h1>
+					<p>De code is lichtelijk aangepast van de gegeven code, zodat de servomoder lijkt te dansen</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/10b.mp4" type="video/mp4">
+					</video></br>
+
+					<pre>
+						<code>
+								#include <Servo.h></br>
+								Servo myServo;    // Declare a servo object for us to control </br>
+								int servoPin = 9; // Var for the pin the servo connects to </br>
+								int pos = 0;      // Var to keep track of the servo's position </br>
+
+								void setup() {  </br>
+								  myServo.attach(servoPin);  // Tell the servo to what pin it's connected to </br>
+								}    
+								  void loop() {   </br>
+								    for(pos = 0; pos < 180; pos += 1){ // Loop, pos is added to (from 0 to 160)   </br>  
+								      myServo.write(pos);              // Turn the servo to the position in pos  </br>    
+								      delay(5);                       // Wait 15ms   </br>
+								     }   
+								     for(pos = 180; pos>=40; pos -= 1){  // Loop, pos is added to (from 160 to 0)   </br>                                  
+								        myServo.write(pos);              // Turn the servo to the position in pos  </br>  
+								        delay(5);                       // Wait 15ms     }  } </br>
+								  }
+								       for(pos = 40; pos>=30; pos -= 1){  // Loop, pos is added to (from 160 to 0)  </br>                                   
+								        myServo.write(pos);              // Turn the servo to the position in pos   </br> 
+								        delay(3);                       // Wait 15ms     }  } </br>
+								  }
+								       for(pos = 30; pos>=10; pos -= 1){  // Loop, pos is added to (from 160 to 0) </br>                                    
+								        myServo.write(pos);              // Turn the servo to the position in pos  </br>  
+								        delay(3);                       // Wait 15ms     }  } </br>
+								  }
+
+								        for(pos = 30; pos < 90; pos += 1){  // Loop, pos is added to (from 160 to 0) </br>                                    
+								        myServo.write(pos);              // Turn the servo to the position in pos   </br> 
+								        delay(3);                       // Wait 15ms     }  } </br>
+								  }</br>
+								}
+</br>
+						</code>
+					</pre>
+
+					<h1>Opdracht 11b</h1>
+					<p>Beide buttons bepalen de bewegingen van de servo op een andere manier. Wanneer er op de linker knop wordt gedrukt, draait de servo ongeveer een kwartslag terug, terwijl wanneer er op de rechterknop wordt gedrukt, dan draait de servomotor een kwartslag mee met de klok.	</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/11b.mp4" type="video/mp4">
+					</video></br>
+
+					<pre>
+						<code>
+								#include <Servo.h> 
+								Servo myServo;    // Declare a servo object for us to control</br>
+								int servoPin = 9; // Var for the pin the servo connects to </br>
+								int pos = 0;      // Var to keep track of the servo's position </br>
+								 
+								int buttonPinL = 3;  // Var for the pin of the left button</br>
+								int buttonPinR = 2;  // Var for the pin of the right button </br>
+								 </br>
+								void setup() {    
+								  myServo.attach(servoPin);   // Tell the servo to what pin it's connected to  </br>   
+								  pinMode(buttonPinL, INPUT); // Set the left button pin to input   </br>
+								  pinMode(buttonPinR, INPUT); // Set the right button pin to input </br>
+								}      
+								    
+								void loop(){ </br>
+								  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:</br>
+								  if (digitalRead(buttonPinL) == HIGH) {</br>
+								    // turn LED on:</br>
+								    for(pos = 60; pos < 150; pos += 1){ // Loop, pos is added to (from 0 to 160)    </br> 
+								      myServo.write(pos);              // Turn the servo to the position in pos   </br>   
+								      delay(5);
+								    }</br>
+								  } </br>
+
+								   else if (digitalRead(buttonPinR) == HIGH) {</br>
+								    // turn LED on:</br>
+								    for(pos = 150; pos >60; pos -= 1){ // Loop, pos is added to (from 0 to 160)  </br>   
+								      myServo.write(pos);              // Turn the servo to the position in pos   </br>   
+								      delay(5);</br>
+								    }
+								  } 
+								}
+								 
+						</code>
+					</pre>
+
+					<h1>Opdracht 12b</h1>
+					<p>	Verschillende frequenties op verschillende tijden</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/12b.mp4" type="video/mp4">
+					</video></br>
+
+					<pre>
+						<code>
+								int speakerPin = 8;  </br>
+								 
+								void setup() {   </br>
+								   pinMode(speakerPin, OUTPUT);    </br>
+								}</br></br>
+								 
+								void loop() {        </br>
+								  tone(speakerPin, 15000, 200);  // plays a tone of 262Hz for 200ms  </br>
+								  delay(250);                  // wait 250 ms </br></br>
+								 
+								  tone(speakerPin, 10023, 200);  // plays a tone of 294Hz for 200ms   </br>
+								  delay(250);                  // wait 250 ms </br></br>
+								 
+								  tone(speakerPin, 13023, 200);  // plays a tone of 330Hz for 200ms  </br> 
+								  delay(250);                  // wait 250 ms </br></br>
+								 
+								  tone(speakerPin, 2093, 200);  // plays a tone of 262Hz for 200ms  </br> 
+								  delay(150);                  // wait 500 ms </br></br>
+
+								  tone(speakerPin, 4, 200);  // plays a tone of 262Hz for 200ms  </br> 
+								  delay(100);                  // wait 500 ms </br></br>
+
+								  tone(speakerPin, 16, 200);  // plays a tone of 330Hz for 200ms </br>  
+								  delay(250);                  // wait 250 ms </br></br>
+
+								  tone(speakerPin, 12.25, 200);  // plays a tone of 330Hz for 200ms </br>  
+								  delay(250);                  // wait 250 ms </br></br>
+								}
+								  
+						</code>
+					</pre>
+
+					<h1>Opdracht 13e</h1>
+					<p>De arduino kan meer dan je denkt. Bij de laatste opdracht is het idee dat er een waterpas wordt gecreëerd, die kan bepalen of iets recht staat of niet. Het blauwe apparaat, ook wel een accelerometer is een sensor dat G-krachten kan meten. Met deze code gaat er een geluidje af als de sensor op een recht oppervlak staat. 	</p>
+					<video width="500px" height="300px" controls>
+						<source src="Videos/13e.mp4" type="video/mp4">
+					</video></br>
+					<pre>
+						<code>
+							#include "I2Cdev.h"
+							#include "MPU6050_6Axis_MotionApps20.h"
+							#include "Wire.h"
+
+							MPU6050 mpu;
+
+							int LED_PIN  = 13;
+							int speakerPin = 8;
+							bool blinkState = false;
+
+							// MPU control/status vars
+							bool dmpReady = false;  // set true if DMP init was successful
+							uint8_t mpuIntStatus;   // holds actual interrupt status byte from MPU
+							uint8_t devStatus;      // return status after each device operation (0 = success, !0 = error)
+							uint16_t packetSize;    // expected DMP packet size (default is 42 bytes)
+							uint16_t fifoCount;     // count of all bytes currently in FIFO
+							uint8_t fifoBuffer[64]; // FIFO storage buffer
+
+							// orientation/motion vars
+							Quaternion q;           // [w, x, y, z]         quaternion container
+							VectorFloat gravity;    // [x, y, z]            gravity vector
+							float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gravity vector
+
+							// ================================================================
+							// ===               INTERRUPT DETECTION ROUTINE                ===
+							// ================================================================
+
+							volatile bool mpuInterrupt = false;     // indicates whether MPU interrupt pin has gone high
+							void dmpDataReady() {
+							    mpuInterrupt = true;
+							}
+
+
+							// ================================================================
+							// ===                      INITIAL SETUP                       ===
+							// ================================================================
+
+
+							void setup() {
+							   pinMode(speakerPin, OUTPUT);
+							    Wire.begin();
+
+							    Serial.begin(115200);
+							    while (!Serial); // wait for Leonardo enumeration, others continue immediately
+
+							    // initialize device
+							    Serial.println("Initializing I2C devices...");
+							    mpu.initialize();
+
+							    // verify connection
+							    Serial.println("Testing device connections...");
+							    Serial.println(mpu.testConnection() ? "MPU6050 connection successful" : "MPU6050 connection failed");
+
+							    // load and configure the DMP
+							    Serial.println("Initializing DMP...");
+							    devStatus = mpu.dmpInitialize();
+
+							    // supply your own gyro offsets here
+							    Serial.println("setting offsets");
+							    mpu.setXAccelOffset(1117); // alter this offset for your accelerometer X
+							    mpu.setYAccelOffset(839); // alter this offset for your accelerometer Y
+							    mpu.setZAccelOffset(1047);  // alter this offset for your accelerometer Z
+							    mpu.setXGyroOffset(108);   // alter this offset for your gyroscoop X
+							    mpu.setYGyroOffset(-21);   // alter this offset for your gyroscoop Y
+							    mpu.setZGyroOffset(49);    // alter this offset for your gyroscoop Z
+							    
+							    
+							    // make sure it worked (returns 0 if so)
+							    if (devStatus == 0) {
+							        // turn on the DMP, now that it's ready
+							        Serial.println("Enabling DMP...");
+							        mpu.setDMPEnabled(true);
+
+							        // enable Arduino interrupt detection
+							        Serial.println("Enabling interrupt detection (Arduino external interrupt 0)...");
+							        attachInterrupt(0, dmpDataReady, RISING);
+							        mpuIntStatus = mpu.getIntStatus();
+
+							        // set our DMP Ready flag so the main loop() function knows it's okay to use it
+							        Serial.println(F("DMP ready! Waiting for first interrupt..."));
+							        dmpReady = true;
+
+							        // get expected DMP packet size for later comparison
+							        packetSize = mpu.dmpGetFIFOPacketSize();
+							    } else {
+							        // ERROR!
+							        // 1 = initial memory load failed
+							        // 2 = DMP configuration updates failed
+							        // (if it's going to break, usually the code will be 1)
+							        Serial.print("DMP Initialization failed (code ");
+							        Serial.print(devStatus);
+							        Serial.println(")");
+							    }
+
+							    // configure LED for output
+							    pinMode(LED_PIN, OUTPUT);
+							}
+
+
+
+							// ================================================================
+							// ===                    MAIN PROGRAM LOOP                     ===
+							// ================================================================
+
+							void loop() {
+							    // if programming failed, don't try to do anything
+							    if (!dmpReady) return;
+
+							    // wait for MPU interrupt or extra packet(s) available
+							    while (!mpuInterrupt && fifoCount < packetSize) {
+							        // other program behavior stuff here
+							        // .
+							        // .
+							        // .
+							        // if you are really paranoid you can frequently test in between other
+							        // stuff to see if mpuInterrupt is true, and if so, "break;" from the
+							        // while() loop to immediately process the MPU data
+							        // .
+							        // .
+							        // .
+							    }
+
+							    // reset interrupt flag and get INT_STATUS byte
+							    mpuInterrupt = false;
+							    mpuIntStatus = mpu.getIntStatus();
+
+							    // get current FIFO count
+							    fifoCount = mpu.getFIFOCount();
+
+							    // check for overflow (this should never happen unless our code is too inefficient)
+							    if ((mpuIntStatus & 0x10) || fifoCount == 1024) {
+							        // reset so we can continue cleanly
+							        mpu.resetFIFO();
+							        Serial.println("FIFO overflow!");
+
+							    // otherwise, check for DMP data ready interrupt (this should happen frequently)
+							    } else if (mpuIntStatus & 0x02) {
+							        // wait for correct available data length, should be a VERY short wait
+							        while (fifoCount < packetSize) 
+							          fifoCount = mpu.getFIFOCount();
+							        mpu.getFIFOBytes(fifoBuffer, packetSize);
+							        fifoCount -= packetSize;
+
+
+							        // display Yaw, Pitch, Roll angles in degrees
+							        mpu.dmpGetQuaternion(&q, fifoBuffer);
+							        mpu.dmpGetGravity(&gravity, &q);
+							        mpu.dmpGetYawPitchRoll(ypr, &q, &gravity);
+							        Serial.print("ypr\t");
+							        Serial.print(ypr[0] * 180/M_PI);
+							        Serial.print("\t");
+							        Serial.print(ypr[1] * 180/M_PI);
+							        Serial.print("\t");
+							        Serial.println(ypr[2] * 180/M_PI);
+
+							          // blink LED to indicate activity
+							        blinkState = !blinkState;
+							        digitalWrite(LED_PIN, blinkState);
+							    }
+							  checkAccelerometer();
+							}
+
+							void checkAccelerometer(){
+							        if (((( ypr[1]* 180/M_PI)< 2) && (( ypr[1]* 180/M_PI)>-2)) && (((ypr[2]* 180/M_PI)<2) && ((ypr[2] * 180/M_PI)>-2))) {
+							          tone(speakerPin, 523, 200);  // Wel geluid
+							        } else {
+							          tone(speakerPin, 0); } //Geen geluid
+							}
+						</code>
+					</pre>
+
+				</div>
+				<div class="lijn"></div>
+		</section>
+	</a>
+<!--TOPICS-->
+</body>
+</html>
