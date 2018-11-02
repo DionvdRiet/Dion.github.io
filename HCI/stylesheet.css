@@ -108,7 +108,7 @@ a{
 			display: grid;
 			grid-column: 2/5;
 			height: 80%;
-			grid-template-columns: 0.3fr 5fr 0.3fr 5fr 0.3fr 5fr 0.3fr 5fr 0.3fr;
+			grid-template-columns: 0.3fr 5fr 0.3fr 5fr 0.3fr 5fr 0.3fr 5fr 0.3fr 5fr 0.3fr;
 		}
 
 		.content-topics h1{
@@ -148,6 +148,14 @@ a{
 				grid-column: 8/9;
 			}
 
+			.excursie{
+				background-image: url(Afbeeldingen/excursie.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				grid-column: 10/11;
+			}
+
+
 				.exertion-titel{
 					grid-column: 2/3;
 				}
@@ -162,6 +170,10 @@ a{
 
 				.artificial-titel{
 					grid-column: 8/9;
+				}
+
+				.excursie-titel{
+					grid-column: 10/11;
 				}
 
 	.content > .slogan{
@@ -381,6 +393,12 @@ a{
 
 			.product-paragraaf{
 				grid-column: 3/4;
+				text-align: justify;
+				padding-bottom: 15%;
+			}
+
+			.reflectie-paragraaf{
+				grid-column: 2/5;
 				text-align: justify;
 				padding-bottom: 15%;
 			}
