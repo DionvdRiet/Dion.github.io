@@ -185,7 +185,7 @@ a{
 	#first{
 		background:linear-gradient(to left, rgba(231, 26, 93, 0.9), rgba(41, 35, 72, 0.8)), url(Afbeeldingen/Material/mockup-3.jpg);
 		background-position: center;
-		background-size:100%;
+		background-size:cover;
 		background-repeat: no-repeat;
 		transition: background 0.5s ease-in-out; /*werkt niet*/
 	}
@@ -290,7 +290,8 @@ a{
 				}
 
 				.prototype:hover{
-					background-color: #E71A5D;
+					border: 2px solid #E71A5D;
+					background-color: #292348;
 					color: white;
 				}
 

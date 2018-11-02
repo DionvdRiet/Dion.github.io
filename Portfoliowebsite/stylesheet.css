@@ -165,7 +165,9 @@ a{
 		
 		p span{
 			font-family: 'Heebo Medium', sans-serif;
-			padding: 0.4%;
+			padding: 0.3%;
+			line-height: 35px;
+			background:linear-gradient(to right, rgba(231, 26, 93, 0.2), rgba(235, 47, 109,0.2));
 			color: #FCFCFC;
 			width: 140%;
 			animation: up 1s 1 ease-in-out;
@@ -175,22 +177,26 @@ a{
 		}
 
 			@keyframes highlight{
-					0%{background-color: none;
+					0%{background:linear-gradient(to right, rgba(231, 26, 93, 0.2), rgba(235, 47, 109,0.2));
 				}
 					100%{background:linear-gradient(to right, rgba(231, 26, 93, 1), rgba(235, 47, 109,1));
 			}			
 		}
 
 		#twee{
-			animation-delay: 0.2s;
-		}
-
-		#drie{
 			animation-delay: 0.4s;
 		}
 
-		#vier{
+		#drie{
 			animation-delay: 0.6s;
+		}
+
+		#vier{
+			animation-delay: 1s;
+		}
+
+		#vijf{
+			animation-delay: 1.4s;
 		}
 
 
@@ -217,17 +223,26 @@ a{
 
 	.project1-img,.project2-img,.project3-img{
 		background-position: top;
-		background-size: 100%;
+		background-size: cover;
 		grid-column: 1/2;
 	}
 
-	.project1-info,.project2-info,.project3-info{
+	.project2-info,.project3-info{
 		display: grid;
-		grid-template-rows: 0.5fr 1.5fr 0.4fr;
+		grid-template-rows: 0.5fr 1.5fr 0.3fr;
 		background-size: cover;
 		grid-column: 2/3;
 		background-color: white;
 	}
+
+	.project1-info{
+		display: grid;
+		grid-template-rows: 0.5fr 1.5fr 0.45fr;
+		background-size: cover;
+		grid-column: 2/3;
+		background-color: white;
+	}
+
 
 	.project1{	
 		grid-row: 1/2;
@@ -298,7 +313,7 @@ a{
 
 		.project2-img{
 			background:url(Afbeeldingen/time-app.jpg);
-			background-size: 100%;
+			background-size: cover;
 		}
 
 		.project2-info{
@@ -312,7 +327,8 @@ a{
 
 		.project3-img{
 			background:url(Afbeeldingen/material.jpg);
-			background-size: cover;
+			background-size: 100%;
+			background-position: 0% 20%;
 		}
 
 		.project3-info{
