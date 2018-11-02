@@ -104,6 +104,19 @@ a{
 		animation:myMove 1s 1;
 	}
 
+	.content-intro{
+		grid-row:2;
+		grid-column: 2/5;
+		font-family: 'Heebo Regular', sans-serif;
+		font-size: 150%;
+		position: relative;
+		animation:myMove 1s 1;
+		background-image: url(Afbeeldingen/header.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+
 		.content-topics{
 			display: grid;
 			grid-column: 2/5;
