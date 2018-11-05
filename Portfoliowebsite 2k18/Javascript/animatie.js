@@ -1,3 +1,19 @@
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 350) {
+        document.getElementById("indicator-actief").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-actief").style.width = "25px";
+        document.getElementById("indicator-inactief").style.backgroundColor = "#38F8D4";
+        document.getElementById("indicator-inactief").style.width = "50px";
+    } else {
+        document.getElementById("indicator-actief").style.backgroundColor = "#38F8D4";
+        document.getElementById("indicator-actief").style.width = "50px";
+        document.getElementById("indicator-inactief").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-inactief").style.width = "25px";
+    }
+}
+
 function laden(){
 	document.getElementById('load').style.opacity = "1";
 }
@@ -12,18 +28,18 @@ function lineNormal(){
 }
 
 function projectDicht(){
-	document.getElementById('project').style.height = "0%";
-	document.getElementById('project').style.gridRow = "2/4";
+	document.getElementById('project-1').style.height = "0%";
+	document.getElementById('project-1').style.gridRow = "2/4";
 	document.getElementById('button').style.backgroundSize = "100% 100%";
 	document.getElementById('button').style.color = "white";
-	document.getElementById('fadeOut').style.opacity = "0";
+	document.getElementById('sectie-1').style.opacity = "0";
 
 	// document.getElementById('button').style.background = "linear-gradient(to right, rgba(67,233,123,1) 0%, rgba(56,249,215,1) 100%)"
 }
 
 function projectOpen(){
-	document.getElementById('project').style.height = "100%";
-	document.getElementById('project').style.gridRow = "1/4";
+	document.getElementById('project-1').style.height = "100%";
+	document.getElementById('project-1').style.gridRow = "1/4";
 }
 
 function pagina(){
