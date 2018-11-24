@@ -94,7 +94,7 @@ section{
 			margin-top: 12.5%;
 		}
 
-		h1{
+		.content h1{
 			display: flex;
 			justify-content: center;
 			grid-column: 4/10;
@@ -282,10 +282,10 @@ section{
 
 		.case-content{
 			display: grid;
-			grid-template-rows: 10vh 20% auto;
+			grid-template-rows: 5vh 30vh auto;
 			background-color: #131A2B;
 			grid-column: 2/3;
-			height: 120vh;
+			/*height: 120vh;*/
 		}
 
 		#case-content{
@@ -293,7 +293,8 @@ section{
 
 			.case-header{
 				grid-row:2/3;
-				/*background-color: red;*/
+				background-image: url('../Afbeeldingen/gaming-preview.jpg');
+				background-size: cover;
 			}
 
 				.case-header h2{
@@ -311,3 +312,91 @@ section{
 					opacity: 0;
 					transition: opacity 1s ease-in-out;
 				}
+
+		.case-informatie{
+			display: grid;
+			grid-template-columns: 20% 60% 20%;
+			grid-row:3/4;
+		}
+
+		.case-informatie > *{
+			grid-column: 2/3;
+		}
+
+		.case-intro{
+			color: white;
+			text-align: justify;
+			font-family: vista-sans-narrow, sans-serif;
+			font-weight: 300;
+		}
+
+			.case-informatie h1{
+				color: #38F8D4;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+			}
+
+		.doelgroep{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+		}
+
+			#doelgroep h1{
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+				color: #38F8D4;
+				font-size: 200%;
+			}
+
+				.doelgroep-image-1,.doelgroep-image-2,.doelgroep-image-3{
+					height: 350px;
+					width: 220px;
+				}
+
+				.doelgroep-image-1{
+					background-image: url('../Afbeeldingen/doelgroep1.png');
+					background-size: 110%;
+					background-repeat: no-repeat;
+					animation: grow 1.5s ease-in;
+				}
+
+				.doelgroep-image-2{
+					background-image: url('../Afbeeldingen/doelgroep1.png');
+					background-size: 110%;
+					background-repeat: no-repeat;
+					animation: grow 1.5s ease-in-out;
+					animation-delay: 0.5s;
+				}
+
+				.doelgroep-image-3{
+					background-image: url('../Afbeeldingen/doelgroep1.png');
+					background-size: 110%;
+					background-repeat: no-repeat;
+					animation: grow 1.5s ease-in-out;
+					animation-delay: 1s;
+				}
+
+				.doelgroep-informatie{
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 300;
+					font-size: 120%;
+					color: white;
+					grid-column: 4/8;
+					padding: 0% 5%;
+					text-align: justify;
+				}
+
+			@keyframes fadeIn{
+				from {opacity:0; height:0%;}
+				to{opacity: 1; ;height: 30%;}
+			}
+
+			@keyframes grow{
+				from {height:0px;}
+				to{height: 350px;}
+			}
+
+
+
+
