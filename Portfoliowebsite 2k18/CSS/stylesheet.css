@@ -315,7 +315,7 @@ section{
 
 		.case-informatie{
 			display: grid;
-			grid-template-columns: 20% 60% 20%;
+			grid-template-columns: 15% 70% 15%;
 			grid-row:3/4;
 		}
 
@@ -342,38 +342,80 @@ section{
 			flex-direction: row;
 		}
 
-			#doelgroep h1{
+			.doelgroep-container{
+				display: grid;
+				grid-template-rows: 100%;
+			}
+
+			.doelgroep h1, #lijn, .doelgroep p{
+				opacity: 0;
+				animation: fadeIn 1s ease-in forwards;
+				animation-delay: 2s;
+			}
+
+			.doelgroep h1{
+				grid-row:1/2;
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
-				color: #38F8D4;
-				font-size: 200%;
+				color: white;
+				font-size: 30px;
+				padding:0% 3%;
+				padding-top:70%;
+			}
+
+			#lijn{
+				height: 1px;
+				margin-left: 3%;
+				background-color: #38F8D4;
+			}		
+
+				.lijn-1{
+					width: 50%;
+				}
+
+				.lijn-2{
+					width: 170px;
+				}
+
+				.lijn-3{
+					width: 50%;
+				}	
+
+			.doelgroep p{
+				/*grid-row:3/4;*/
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				text-align: justify;
+				color: white;
+				font-size: 100%;
+				padding: 0% 3%;
 			}
 
 				.doelgroep-image-1,.doelgroep-image-2,.doelgroep-image-3{
-					height: 350px;
-					width: 220px;
+					height: 100%;
+					width: 33%;
 				}
 
 				.doelgroep-image-1{
-					background-image: url('../Afbeeldingen/doelgroep1.png');
-					background-size: 110%;
+					background-image: url('../Afbeeldingen/actiespellen.jpg');
+					background-size: cover;
 					background-repeat: no-repeat;
-					animation: grow 1.5s ease-in;
+					animation: grow 1s ease-in backwards;
 				}
 
 				.doelgroep-image-2{
-					background-image: url('../Afbeeldingen/doelgroep1.png');
-					background-size: 110%;
+					background-image: url('../Afbeeldingen/leeftijd.jpg');
+					background-size: cover;
 					background-repeat: no-repeat;
-					animation: grow 1.5s ease-in-out;
+					animation: grow 1s ease-in backwards;
 					animation-delay: 0.5s;
 				}
 
 				.doelgroep-image-3{
-					background-image: url('../Afbeeldingen/doelgroep1.png');
-					background-size: 110%;
+					background-image: url('../Afbeeldingen/actiespellen.jpg');
+					background-size: cover;
 					background-repeat: no-repeat;
-					animation: grow 1.5s ease-in-out;
+					animation: grow 1s ease-in backwards;
 					animation-delay: 1s;
 				}
 
@@ -388,8 +430,8 @@ section{
 				}
 
 			@keyframes fadeIn{
-				from {opacity:0; height:0%;}
-				to{opacity: 1; ;height: 30%;}
+				from {opacity:0;}
+				to{opacity: 1;}
 			}
 
 			@keyframes grow{
