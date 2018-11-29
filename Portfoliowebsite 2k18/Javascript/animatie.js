@@ -29,7 +29,7 @@ function lineNormal(){
 
 function projectDicht(){
 	document.getElementById('project-1').style.height = "0%";
-	document.getElementById('project-1').style.gridRow = "2/4";
+	// document.getElementById('project-1').style.gridRow = "2/4";
 	document.getElementById('button').style.backgroundSize = "100% 100%";
 	document.getElementById('button').style.color = "white";
 	document.getElementById('sectie-1').style.opacity = "0";

@@ -2,6 +2,7 @@ body,html{
 	margin:0;
 	padding: 0;
 	height: 100%;
+	width: 100%;
 }
 
 section{
@@ -245,14 +246,22 @@ section{
 		.case{
 			display: grid;
 			grid-template-columns: 20vw auto;
+			width: 100%;
 		}
 
 		nav{
 			display: grid;
+			height: 100vh;
+			width: 20vw;
 			grid-template-columns: 15% 10% 100%;
 			grid-template-rows: 10vh auto;
 			grid-column: 1/2;
 			position: fixed;
+			animation: navSlide 1s ease-in forwards;
+		}
+
+		nav > *{
+			animation: fadeIn 3s ease-in-out forwards;
 		}
 
 			.back{
@@ -260,8 +269,8 @@ section{
 				grid-column: 1/2;
 				background-image:url('../Afbeeldingen/back.svg');
 				background-repeat: no-repeat;
-				background-position: center;
-				background-size: 100%;
+				background-position: 50% 3%;
+				background-size: 80%;
 			}
 
 			.back:hover{
@@ -269,22 +278,46 @@ section{
 				background-image:url('../Afbeeldingen/back-blue.svg');
 			}
 
+			.nav-info{
+				display: flex;
+				flex-direction: column;
+				grid-row:2/3;
+				grid-column: 3/4;
+			}
+
 			nav h2{
 				font-family: vista-sans-narrow, sans-serif;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 170%;
-				grid-row:2/3;
-				grid-column: 3/4;
 				color: #5F5F5F;
 				display: inline;
+			}
+
+			nav h3{
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 130%;
+				color: black;
+				padding-right: 40%;
+			}
+
+			nav span{
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 120%;
+				color: #38F8D4;
 			}
 
 		.case-content{
 			display: grid;
 			grid-template-rows: 5vh 30vh auto;
 			background-color: #131A2B;
+			width: 100%;
 			grid-column: 2/3;
+			animation: caseSlide 2s ease-in forwards;
 			/*height: 120vh;*/
 		}
 
@@ -317,6 +350,7 @@ section{
 			display: grid;
 			grid-template-columns: 15% 70% 15%;
 			grid-row:3/4;
+			width: 100%;
 		}
 
 		.case-informatie > *{
@@ -328,6 +362,7 @@ section{
 			text-align: justify;
 			font-family: vista-sans-narrow, sans-serif;
 			font-weight: 300;
+			font-size: 120%;
 		}
 
 			.case-informatie h1{
@@ -381,7 +416,7 @@ section{
 					width: 50%;
 				}	
 
-			.doelgroep p{
+			.case-informatie p{
 				/*grid-row:3/4;*/
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 300;
@@ -435,10 +470,19 @@ section{
 			}
 
 			@keyframes grow{
-				from {height:0px;}
-				to{height: 350px;}
+				from {height:0px; background-position: 0% 0%; filter: blur(10px);}
+				to{height: 350px;  background-position: 100% 100%; filter: blur(0px);}
 			}
 
+			.case-afbeelding-1{
+				background-color: red;
+				width: 100%;
+				height: 30%;
+			}
+
+			.preview{
+				width: 100%;
+			}
 
 
 
