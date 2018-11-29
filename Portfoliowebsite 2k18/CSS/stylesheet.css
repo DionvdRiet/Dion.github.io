@@ -431,6 +431,13 @@ section{
 					width: 33%;
 				}
 
+				.doelgroep-image-1 p,.doelgroep-image-2 p,.doelgroep-image-3 p{
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 500;
+					font-size: 110%;
+					padding: 0% 5%;
+				}
+
 				.doelgroep-image-1{
 					background-image: url('../Afbeeldingen/actiespellen.jpg');
 					background-size: cover;
@@ -447,7 +454,7 @@ section{
 				}
 
 				.doelgroep-image-3{
-					background-image: url('../Afbeeldingen/actiespellen.jpg');
+					background-image: url('../Afbeeldingen/console.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
