@@ -11,7 +11,7 @@ section{
 }
 
 	header{
-		z-index: 2;
+		z-index: 10;
 		position: fixed;
 		width: 100%;
 		height: 10%;
@@ -353,11 +353,12 @@ section{
 			width: 100%;
 		}
 
-		.case-informatie > *{
+	/*	.case-informatie > *{
 			grid-column: 2/3;
-		}
+		}*/
 
 		.case-intro{
+			grid-column: 2/3;
 			color: white;
 			text-align: justify;
 			font-family: vista-sans-narrow, sans-serif;
@@ -372,6 +373,7 @@ section{
 			}
 
 		.doelgroep{
+			grid-column: 2/3;
 			display: flex;
 			justify-content: space-between;
 			flex-direction: row;
@@ -487,9 +489,109 @@ section{
 				height: 30%;
 			}
 
+			.case-product{
+				grid-column: 2/3;
+			}
+
 			.preview{
 				width: 100%;
 			}
+
+			.populair{
+				grid-column: 2/3;
+				margin-top: 10%;
+				width: 100%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+				animation: fadeIn 2s ease-in forwards;
+
+			}
+
+				.populair-afbeeldingen{
+					grid-column: 1/2;
+					position: relative;
+				}
+
+					.pop-afbeelding-1,.pop-afbeelding-2,.pop-afbeelding-3{
+						height:300px;
+						width: 350px;
+						background-size: 90%;
+						background-repeat: no-repeat;
+						position: absolute;
+					}
+
+					.pop-afbeelding-1{
+						background-image: url('../Afbeeldingen/head-1.png');
+						z-index: 1;
+						left:0px;
+						top:0px;
+					}
+
+					.pop-afbeelding-2{
+						background-image: url('../Afbeeldingen/head-2.png');
+						z-index: 2;
+						left: 20px;
+						top:20px;
+						
+					}
+
+					.pop-afbeelding-3{
+						background-image: url('../Afbeeldingen/head-3.png');
+						z-index: 3;
+						left:40px;
+						top:40px;
+					}
+
+				.populair-info{
+					display: flex;
+					flex-direction: column;
+					align-self: right;
+					grid-column: 2/3;
+					max-width: 70%;
+				}
+
+					.populair-info p{
+
+					}
+
+					.populair-info h1{
+						padding-left: 3%;
+					}
+
+				.lijst{
+					animation: fadeIn 2s ease-in forwards;
+					grid-column: 2/4;
+					margin-top: 10%;
+					width: 100%;
+					display: grid;
+					grid-template-columns: 40% 60%;
+				}
+
+					.lijst-afbeelding{
+						grid-column: 2/3;
+						background-image: url('../Afbeeldingen/lijst.jpg');
+						/*height:300px;*/
+						/*width: 350px;*/
+						background-size: 120%;
+						background-position: left;
+						background-repeat: no-repeat;
+					}
+
+					.lijst-info{
+						display: flex;
+						flex-direction: column;
+						grid-column: 1/2;
+						max-width: 85%;
+					}
+
+						.lijst-info p{
+
+						}
+
+						.lijst-info h1{
+							padding-left: 3%;
+						}
+
 
 
 
