@@ -87,8 +87,9 @@ a{
 .container{
 	display: grid;
 	grid-template-rows: 1fr 3fr 0.1fr;
-	grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+	grid-template-columns: 2fr 3fr 2fr 1fr 3fr 0.5fr;
 }
+
 
 	.navigation{
 		display: flex;
@@ -104,7 +105,7 @@ a{
 
 	.titel{
 		grid-row:1;
-		grid-column: 2/4;
+		grid-column: 2/5;
 	}
 
 
@@ -173,10 +174,11 @@ a{
 		box-shadow: 5px 5px 0px #5F13F7;
 	}
 
-	.project1{
+	.image{
+		grid-column: 5;
 		background:url(Afbeeldingen/project-1.png);
 		background-position: top;
-		background-size: 100%;
+		background-size:200%;
 		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
 	}
 

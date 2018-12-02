@@ -1,0 +1,604 @@
+body,html{
+	margin: 0;
+	height: 100%;
+	background-color: #263050;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 15vw auto;
+	grid-template-rows: 1fr;
+	height: 130vh;
+}
+
+.sidebar{
+	position: fixed;
+	width: 15vw;
+	display: grid;
+	grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 10fr;
+	background-color: #364576;
+	grid-column: 1/1;
+	font-family: 'Heebo light', sans-serif;
+}
+
+	.search{ /*input*/
+		font-family: "Heebo Light", sans-serif;
+		background-color: white;
+		padding: 2% 0px 0px 5%;
+		font-size: 110%;
+		border: none;
+	}
+
+	.search:focus{
+		outline: none;
+	}
+
+	.sidebar ul{
+		width: 100%;
+		padding:0;
+		list-style-type: none;
+	}
+
+		.search-div{
+			display: grid;
+			padding-left: 1%;
+			grid-template-columns: 1fr 6fr ;
+			grid-template-rows:;
+			background-color: white;
+		}
+
+			.search-icon{
+				background-image: url("Afbeeldingen/Icons/search.png");
+				background-size: 90%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+		.option{
+			display: grid;
+			grid-template-columns: 1fr 10fr ;
+			grid-template-rows:;
+		}
+
+		.highlight{
+			background-color: #F95385;
+		}
+
+		.downlight{
+			background-color: #1a2135;
+		}
+
+		.sidebar li{
+			display: grid;
+			font-family: 'Heebo Light', sans-serif;
+			font-size: 110%;
+			background-color: #263050;
+			color: white;
+			list-style: none;
+			transition: background-color 0.2s ease-in;
+		}
+
+		.sidebar li:hover:not(.overzichtspagina){
+			font-family: 'Heebo Medium', sans-serif;
+			color: #F95385;
+			background-color: #1a2135;
+		}
+
+		.sidebar li > h4{
+			margin-left: 5%;
+		}
+
+.content{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.5fr 0.8fr 0.8fr 0.8fr 1fr;
+	grid-column-start: 2;
+
+}
+
+	.header{
+		display: grid;
+		grid-template-columns: 3fr 10fr 4fr;
+		grid-template-rows: 1fr 0.1fr 0.05fr;
+		background-size: cover;
+		background-position: 0% 0%;
+		z-index: 1;
+	}
+
+		#header{
+			background-image: url("Afbeeldingen/Headers/thecrew2.jpg");
+			background-size: 80%;
+		}
+
+		.beschrijving{
+			background-color: rgba(0,0,0,0.7);
+			color: white;
+			text-align: left;
+			font-family: 'Heebo ExtraBold', sans-serif;
+			font-size: 90%;
+			text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+			padding: 5%;
+			grid-row: 1/4;
+		}
+
+			h3{
+				font-family: 'Heebo Light', sans-serif;
+			}
+
+			span{
+				color: #F95385;
+			}
+
+		.volgend{
+			display: grid;
+			grid-template-rows: 0.1fr 0.6fr;
+			font-family: 'Heebo ExtraBold', sans-serif;
+			color: white;
+			grid-row: 1/4;
+			grid-column: 3/4;
+			background:linear-gradient(to right, rgba(0,0,0,0.6), rgba(8,8,8,0.6)), url("Afbeeldingen/Gevolgd/Achtergrond.jpg");
+			background-size: cover;
+		}
+
+			.volgend h1{
+				display: grid;
+/*				grid-template-columns: 1fr 5fr;*/
+				grid-row:1/2;
+				grid-column: 1/3;
+				padding: 0% 3%;
+				font-size: 140%;
+			}
+
+			.gevolgde-games{
+				grid-column: 2/3;
+				grid-row: 2/2;
+			}
+
+			.volg1,.volg2,.volg3{
+				display: grid;
+				grid-template-columns: 0.5fr 2fr;
+				grid-template-rows: 0.4fr 0.1fr;
+				font-size: 90%;
+				font-family: 'Heebo Medium', sans-serif;
+			}
+
+				.volg1:hover,.volg2:hover,.volg3:hover{
+					cursor: pointer;
+				}
+
+				.volgt1 h3,.volgt2 h3, .volgt3 h3{
+					grid-row: 1/1;
+				}
+
+				.cover1,.cover2,.cover3{
+					grid-row: 1/3;
+					grid-column: 1/2;
+					background-size: cover;
+				}
+
+				.cover1{
+					background-image: url("Afbeeldingen/Gevolgd/thecrew2.jpg");
+				}
+
+				.cover2{
+					background-image: url("Afbeeldingen/Gevolgd/RDR2.jpg");
+				}
+
+				.cover3{
+					background-image: url("Afbeeldingen/Gevolgd/BO4.jpg");
+				}
+
+		.sliders{
+			display: flex;
+			justify-content: center;
+			grid-column: 2/2;
+			grid-row: 2/3;
+		}
+
+		.sliders div{
+			margin-top: auto;
+			height: 20px;
+			width: 20px;
+			margin:1%;
+			background-color: rgba(255,255,255,0.5);
+			box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+		}
+
+		.sliders div:hover{
+			cursor: pointer;
+		}
+
+			#slide1{
+				background-color: #F95385;
+			}
+
+			#slide1:hover{
+				cursor:auto;
+			}
+
+	.racing,.shooter,.action{
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+		grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
+	}
+
+	.racing div:hover:not(.hoofd-beschrijving):not(.game-beschrijving),.shooter div:hover:not(.hoofd-beschrijving):not(.game-beschrijving),.action div:hover:not(.hoofd-beschrijving):not(.game-beschrijving){
+		background-size:120%;
+		filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.4));
+	}
+
+		.racehoofd{
+			display: grid;
+			grid-template-columns: 1fr 1.5fr;
+			grid-template-rows: 5fr 1fr;
+			grid-row: 5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Racing/thecrew2.jpg);
+			grid-row:1/9;
+		}
+
+		.shooterhoofd{
+			display: grid;
+			grid-template-columns: 1fr 1.5fr;
+			grid-template-rows: 5fr 1fr;
+			grid-row: 5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Shooter/strange.jpg);
+			grid-row:1/9;
+		}
+
+		.actionhoofd{
+			display: grid;
+			grid-template-columns: 1fr 1.5fr;
+			grid-template-rows: 5fr 1fr;
+			grid-row: 5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Action/AC.jpg);
+			grid-row:1/9;
+		}
+
+			.racehoofd,.shooterhoofd,.actionhoofd,.meer:hover{
+				cursor: pointer;
+			}
+
+			.hoofd-beschrijving{
+				display: flex;
+				justify-content: center;
+				background-color: rgba(0,0,0,0.7);
+				color: white;;
+				font-family: 'Heebo ExtraBold', sans-serif;
+				text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+				grid-row: 1/3;
+				grid-column: 1/2;
+				padding: 0% 2%;
+			}
+
+				.hoofd-beschrijving h2{
+					font-size: 160%;
+					margin:0 auto;
+				}
+
+				.tijd{
+					display: flex;
+					justify-content: center;
+					grid-column: 1/3;
+					grid-row: 3/3;
+					background-color: rgba(0,0,0,0.7);
+				}
+
+				.tijd h4{
+					font-family: 'Heebo Light', sans-serif;
+					color: white;
+					font-size: 100%;		
+				}
+
+			.game-beschrijving{
+				display: flex;
+				background-color: rgba(0,0,0,0.5);
+				color: white;
+				text-align: left;
+				font-family: 'Heebo ExtraBold', sans-serif;
+				font-size: 90%;
+				text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+				padding: 2% 0% 0% 5%;
+				position: relative;
+			}
+
+				.game-beschrijving h2{
+					font-size: 90%;
+					margin:0 auto;
+					position: absolute;
+				}
+
+				.game-beschrijving h4{
+					font-family: 'Heebo Regular', sans-serif;
+					margin-top: auto;
+					font-size: 80%;
+					position: relative;				
+				}
+
+
+		.race1{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Racing/assetto.jpg);
+			grid-row: 1/5;
+		}
+
+		.race2{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Racing/dakar.jpg);
+			grid-row: 5/9;
+		}
+
+		.race3{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Racing/onrush.jpg);
+			grid-row: 1/5;
+		}
+
+		.race4{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Racing/vrally.jpg);
+			grid-row: 5/9;
+		}
+
+		.race5{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Racing/moto.png);
+			grid-row: 1/4;
+		}
+
+		.race6{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Racing/forza.jpg);
+			grid-row: 4/7;
+		}
+
+		.meer-racing{
+			font-family: 'Heebo Medium', sans-serif;
+			font-size: 100%;
+			background-color: #FFED8A;
+			color: #263050;
+			border:none;
+			grid-column: 4/5;
+			grid-row: 7/9;
+		}
+
+		.shooter1{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Shooter/star.jpg);
+			grid-row: 1/5;
+		}
+
+		.shooter2{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Shooter/bo4.jpg);
+			grid-row: 5/9;
+		}
+
+		.shooter3{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Shooter/metro.jpg);
+			grid-row: 1/5;
+		}
+
+		.shooter4{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Shooter/gtfo.jpg);
+			grid-row: 5/9;
+		}
+
+		.shooter5{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Shooter/bf5.png);
+			grid-row: 1/4;
+		}
+
+		.shooter6{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Shooter/rdr2.jpg);
+			grid-row: 4/7;
+		}
+
+		.action1{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Action/Anthem.jpg);
+			grid-row: 1/5;
+		}
+
+		.action2{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Action/spider.jpg);
+			grid-row: 5/9;
+		}
+
+		.action3{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Action/dying.jpg);
+			grid-row: 1/5;
+		}
+
+		.action4{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Action/death.jpg);
+			grid-row: 5/9;
+		}
+
+		.action5{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Action/tomb.jpg);
+			grid-row: 1/4;
+		}
+
+		.action6{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			background-size: cover;
+			background-position: center;
+			background-image: url(Afbeeldingen/Action/days-gone.jpg);
+			grid-row: 4/7;
+		}
+
+		.meer{
+			font-family: 'Heebo Medium', sans-serif;
+			font-size: 100%;
+			background-color: #FFED8A;
+			color: #263050;
+			border:none;
+			grid-column: 4/5;
+			grid-row: 7/9;
+			z-index: 1;
+			transition: background-color 0.2s ease-in;
+		}
+
+		.meer:hover{
+			background-color: #F95385;
+			color: white;
+		}
+
+		.nieuws{
+			border-top: 2px solid #263050;
+			display: grid;
+			grid-template-rows: 1fr;
+			grid-template-columns:0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr;
+			grid-column: 1/2;
+			grid-row:5/6;
+			background:linear-gradient(to right, rgba(249,83,133,1), rgba(255,237,138,1));
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+			.nieuws a{
+				text-decoration: none;
+			}
+
+			
+			.item1{
+				display: grid;
+				grid-template-rows: 1fr 0.3fr 0.2fr;
+				grid-template-columns: 1fr 1fr;
+				grid-column: 2/4;
+				grid-row: 2/2;
+				background-color: white;
+			}
+
+				#nieuws-foto1{
+					grid-column: 1/3;
+					grid-row: 1/2;
+					background-image: url("Afbeeldingen/Nieuws/BF5.jpg");
+					background-size: cover;
+				}
+
+				.item1 h3, .item2 h3, .item3 h3{
+					padding: 0% 5%;
+					font-size: 90%;
+					grid-column: 1/3;
+					grid-row: 2/3;
+					color: #263050;
+					background-color: white;
+					font-family: 'Heebo Light', sans-serif;
+				}
+
+				.item1 h4, .item2 h4, .item3 h4{
+					font-size: 90%;
+					padding:0% 10%;
+					color: #F95385;
+					font-family: 'Heebo Medium', sans-serif;
+					grid-row: 3/4;
+				}
+
+				.item1 h4:hover, .item2 h4:hover, .item3 h4:hover{
+					color: #263050;
+				}
+
+			.item2{
+				display: grid;
+				grid-template-rows: 1fr 0.3fr 0.2fr;
+				grid-template-columns: 1fr 1fr;
+				grid-column: 5/7;
+				grid-row: 2/2;
+				background-color: white;
+			}
+				#nieuws-foto2{
+					grid-column: 1/3;
+					grid-row: 1/2;
+					background-image: url("Afbeeldingen/Nieuws/RDR2.jpg");
+					background-size: cover;
+				}
+
+			.item3{
+				display: grid;
+				grid-template-rows: 1fr 0.3fr 0.2fr;
+				grid-template-columns: 1fr 1fr;
+				grid-column: 8/10;
+				grid-row: 2/2;
+				background-color: white;
+			}
+				#nieuws-foto3{
+					grid-column: 1/3;
+					grid-row: 1/2;
+					background-image: url("Afbeeldingen/Nieuws/Death-stranding.jpg");
+					background-size: cover;
+				}
+
+			.nieuws h1{
+				padding: 0% 3%;
+				color: #263050;
+				font-family: "Heebo Medium", sans-serif;
+				font-size: 90%;
+
+			}

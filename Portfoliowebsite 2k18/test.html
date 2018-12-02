@@ -1,0 +1,28 @@
+<style>
+#ball{
+	background-color:orange;
+	width: 50px;
+	height: 50px;
+}
+@keyframes ball-bounce {
+	from { background-position: 0px; }
+	to { background-position: -300px; }
+}
+@-webkit-keyframes ball-bounce {
+	from { background-position: 0px; }
+	to { background-position: -300px; }
+}
+</style>
+<div id="ball"></div>
+<button id="startbtn">Start</button>
+<button id="stopbtn">Stop</button>
+<script>
+startbtn.addEventListener("click", function(){
+	ball.style.animation = "ball-bounce 0.7s steps(6) infinite";
+	ball.style.webkitAnimation = "ball-bounce 0.7s steps(6) infinite";
+});
+stopbtn.addEventListener("click", function(){
+	ball.style.animation = "";
+	ball.style.webkitAnimation = "";
+});
+</script>

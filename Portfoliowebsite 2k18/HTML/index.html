@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfoliowebsite 2k18 Dion van der Riet</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+	<link rel="stylesheet" href="https://use.typekit.net/due7wge.css">
+</head>
+<body>
+<header>
+	<ul>
+		<li class="active" id="projecten-lijn">Projecten</li>
+		<li class="inactive" id="over-mij-lijn" onmouseover="lineChange()" onmouseout="lineNormal()">Over mij</li>
+		<li class="inactive" id="contact-lijn">Contact</li>
+	</ul>
+</header>
+	<section id="sectie-1">
+		<div class="content">
+			<div class="indicator">
+				<div id="indicator-actief" onclick="location.href='#sectie-1'"></div>
+				<div id="indicator-inactief" onclick="location.href='#sectie-2'"></div>
+			</div>
+			<h1 class="titellijn"><span id="titellijn">Gaming Application</span></h1>
+			<div class="project-container">
+				<div class="project" id="project-1"></div>
+			</div>
+			<input type="button" name="" value="BEKIJK PROJECT" id="button" onclick = "projectDicht(); pagina()">
+			<div class="informatie">
+				<p>Dit project heeft 54 uur geduurd. Gedurende dit project heb ik akosdksakopkopsako  koasca</p>
+				<h2>Research <span class="blue">/</span> Prototyping <span class="blue">/</span> Javascript</h2>
+			</div>
+		</div>
+	</section>
+	
+	<section id="sectie-2">
+		<div class="content">
+			<h1 class="titellijn"><span id="titellijn">Project 2</span></h1>
+				<div class="project-container">
+					<div class="project" id="project-2"></div>
+				</div>
+				<input type="button" name="" value="BEKIJK PROJECT" id="button" onclick = "projectDicht(); pagina()">
+				<div class="informatie">
+					<p>Dit project heeft 54 uur geduurd. Gedurende dit project heb ik akosdksakopkopsako  koasca</p>
+					<h2>Research <span class="blue">/</span> Prototyping <span class="blue">/</span> Javascript</h2>
+				</div>
+		</div>
+	</section>
+
+<script type="text/javascript" src="../Javascript/animatie.js">
+	
+</script>
+</body>
+</html>

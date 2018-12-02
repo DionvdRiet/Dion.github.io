@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gaming Application</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet"> 
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="search-div">
+				<div class="search-icon"></div>
+				<input class="search" type="text" placeholder="Zoeken..."></input>
+			</div>
+				<div class="option">
+					<div class="highlight"></div>
+					<li class="overzichtspagina"><h4>Overzichtspagina</h4></li>
+				</div>
+				<div class="option">
+					<div class="downlight" id="downlight1"></div>
+					<li onmouseover="state1()" onmouseleave="offstate1()"><h4>Genres</h4></li>
+				</div>
+				<div class="option">
+					<div class="downlight" id="downlight2"></div>
+					<li onmouseover="state2()" onmouseleave="offstate2()"><h4>Platforms</h4></li>
+				</div>
+				<div class="option">
+					<div class="downlight" id="downlight3"></div>
+					<li onmouseover="state3()" onmouseleave="offstate3()"><h4>Sorteren op</h4></li>
+				</div>
+			<div></div>
+		</div>
+		<div class="content">
+			<div class="header" id="header">
+				<div class="beschrijving">
+					<h2 id="gametitel">
+						The Crew 2
+					</h2>
+					<h3 id="genre">
+						<span>Genre: </span>Racing
+					</h3>
+					<h3 id="platform">
+						<span>Platform: </span>PC/PS4/XBOX ONE
+					</h3>
+					<h3 id="datum">
+						<span>Datum: </span>29 Juni 2018
+					</h3>
+				</div>
+				<div></div>
+				<div class="volgend">
+					<h1>Gevolgde games</h1>
+					<div class="gevolgde-games">
+						<div class="volg1" onclick="location.href='thecrew.html'">
+							<div class="cover1"></div>
+							<h3>The Crew 2</h3>
+						</div>
+						<div class="volg2">
+							<div class="cover2"></div>
+							<h3>Red Dead Redemption 2</h3>
+						</div>
+						<div class="volg3">
+							<div class="cover3"></div>
+							<h3>Call of Duty: Black Ops 4</h3>
+						</div>
+					</div>
+				</div>
+				<div class="sliders">
+					<div id="slide1" onclick="theCrew()"></div>
+					<div id="slide2" onclick="BO4()"></div>
+					<div id="slide3" onclick="BF5()"></div>
+					<div id="slide4" onclick="RDR2()"></div>
+				</div>
+			</div>
+
+			<!-- RACE -->
+
+			<div class="racing">
+				<div class="racehoofd" onclick="location.href='thecrew.html'">
+					<div class="hoofd-beschrijving">
+						<h2 id="h2">The Crew 2</h2>
+					</div>
+					<div class="tijd">
+						<h4 id="tc2"></h4>
+					</div>
+				</div>
+				<div class="race1">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Assetto Corza Competizione</h2>
+						<h4>Zomer 2018</h4>
+					</div>
+				</div>
+				<div class="race2">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Dakar 18</h2>
+						<h4>2018</h4>
+					</div>
+				</div>
+				<div class="race3">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Onrush</h2>
+						<h4>5-6-18</h4>
+					</div>
+				</div>
+				<div class="race4">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>V-Rally 4</h2>
+						<h4>September 2018</h4>
+					</div>
+				</div>
+				<div class="race5">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Motogp 18</h2>
+						<h4>7-6-18</h4>
+					</div>
+				</div>
+				<div class="race6">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Forza Horizon 4</h2>
+						<h4>2-10-18</h4>
+					</div>
+				</div>
+				<input type="button" name="racing-games" value="Meer Racing Games" class="meer" onclick="location.href='racing.html'">
+			</div>
+
+			<!-- SHOOTER -->
+
+			<div class="shooter">
+				<div class="shooterhoofd">
+					<div class="hoofd-beschrijving">
+						<h2>Strange Brigade</h2>
+					</div>
+					<div class="tijd">
+						<h4 id="strange-brigade"></h4>
+					</div>
+				</div>
+				<div class="shooter1">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Star Citizen</h2>
+						<h4>Nog niet bekend</h4>
+					</div>
+				</div>
+				<div class="shooter2">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Call of Duty: Black Ops 3</h2>
+						<h4>12-10-18</h4>
+					</div>
+				</div>
+				<div class="shooter3">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Metro Exodus</h2>
+						<h4>22-9-19</h4>
+					</div>
+				</div>
+				<div class="shooter4">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>GTFO</h2>
+						<h4>2018</h4>
+					</div>
+				</div>
+				<div class="shooter5">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Battlefield V</h2>
+						<h4>19-10-18</h4>
+					</div>
+				</div>
+				<div class="shooter6">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Red Dead Redemption 2</h2>
+						<h4>26-10-2018</h4>
+					</div>
+				</div>
+				<input type="button" name="shooter-games" onclick="location.href='shooter.html'" value="Meer Shooting Games" class="meer">
+			</div>
+
+			<!-- ACTION -->
+
+			<div class="action">
+				<div class="actionhoofd">
+					<div class="hoofd-beschrijving">
+						<h2>Assassin's Creed Odyssey</h2>
+					</div>
+					<div class="tijd">
+						<h4 id="ac"></h4>
+					</div>
+				</div>
+				<div class="action1">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Anthem</h2>
+						<h4>22-2-19</h4>
+					</div>
+				</div>
+				<div class="action2">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Marvel's Spiderman</h2>
+						<h4>7-9-18</h4>
+					</div>
+				</div>
+				<div class="action3">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Dying Light 2</h2>
+						<h4>Nog niet bekend</h4>
+					</div>
+				</div>
+				<div class="action4">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Death Stranding</h2>
+						<h4>Nog niet bekend</h4>
+					</div>
+				</div>
+				<div class="action5">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Shadow of the Tomb Raider</h2>
+						<h4>14-9-18</h4>
+					</div>
+				</div>
+				<div class="action6">
+					<div></div>
+					<div class="game-beschrijving">
+						<h2>Days Gone</h2>
+						<h4>22-2-19</h4>
+					</div>
+				</div>
+				<input type="button" name="action-games" value="Meer Action Games" class="meer">
+			</div>
+			<div class="nieuws">
+				<div class="item1">
+					<div id="nieuws-foto1"></div>
+					<h3>Gisteren is de closed alpha van Battlefield V voor pc van start gegaan, die overigens slechts beperkte tijd beschikbaar is en waarvoor je nadrukkelijk een uitnodiging nodig hebt; de test is dan ook maar toegankelijk voor een beperkte groep...</h3>
+					<a href="https://nl.hardware.info/nieuws/58079/systeemeisen-voor-battlefield-v-closed-alpha-bekendgemaakt" target="_blank" onmouseover="nieuws1on()" onmouseout="nieuws1off()"><h4>NAAR ARTIKEL</h4></a>
+				</div>
+				<div class="item2">
+					<div id="nieuws-foto2"></div>
+					<h3>Een ontwikkelaar van Rockstar Leeds die eerder aan LA Noire en GTA V werkte, vermeldde op zijn LinkedIn-pagina dat hij aan Red Dead Redemption 2 werkt, waaronder aan de pc-versie. Rockstar heeft nog geen pc-versie aangekondigd....</h3>
+					<a href="https://tweakers.net/nieuws/140133/red-dead-redemption-2-ontwikkelaar-maakte-op-linkedin-melding-van-pc-versie.html" target="_blank" onmouseover="nieuws2on()" onmouseout="nieuws2off()"><h4>NAAR ARTIKEL</h4></a>
+				</div>
+				<div class="item3">
+					<div id="nieuws-foto3"></div>
+					<h3>Hideo Kojima heeft tijdens een gesprek op de PlayStation-booth op de E3 iets meer informatie bekendgemaakt over Death Stranding. Zo besprak hij onder andere de invloed van de originele Super Mario, waar de gameplay in Super Mario Bros...</h3>
+					<a href="https://www.gamereactor.nl/nieuws/600113/Death+Stranding+laat+je+struikelen+en+meegesleurd+worden/?sid=88f6e8435b8074c2d1cebf99671a6ae1" target="_blank" onmouseover="nieuws3on()" onmouseout="nieuws3off()"><h4>NAAR ARTIKEL</h4></a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+<script type="text/javascript" src="header.js"></script>
+<script type="text/javascript" src="release.js"></script>
+<script type="text/javascript" src="list.js"></script>
+<script type="text/javascript" src="nieuws.js"></script>
+</body>
+</html>

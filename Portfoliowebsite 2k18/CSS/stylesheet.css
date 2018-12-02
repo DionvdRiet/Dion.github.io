@@ -1,0 +1,610 @@
+body,html{
+	margin:0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+section{
+	display: grid;
+	height: 100vh;
+}
+
+	header{
+		z-index: 10;
+		position: fixed;
+		width: 100%;
+		/*height: 10%;*/
+		display: flex;
+		justify-content: center;
+		background-color: white;
+		/*grid-row:1/2;*/
+		box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+	}
+
+		header ul{
+			/*display: flex;
+			justify-content: center;*/
+			align-self: center;
+		}
+
+		header li{
+			font-family: vista-sans-narrow, sans-serif;
+			font-size: 180%;
+			font-weight: 500;
+			display: inline;
+			margin:0% 20px;
+			color: #131A2B;
+		}
+
+			.inactive{
+				text-decoration: line-through;
+				text-decoration-color: #38F8D4;	
+			}
+
+			.inactive:hover{
+				text-decoration: none;
+			}
+
+	.content{
+		display: grid;
+		grid-template-columns: repeat(12,1fr);
+		grid-template-rows: 0.5fr 1fr 2fr 1fr;
+		background-color: #F6F6F6;
+	}
+
+		.indicator{
+			position: fixed;
+			top: 50%;
+			transform: translateY(-50%);
+			grid-template-rows: 2/2;
+			grid-column: 1/4;
+		}
+
+			.indicator div{
+				margin:30% 30%;
+			}
+
+			.indicator div:hover{
+				cursor: pointer;
+			}
+
+			#indicator-actief{
+				transition: width 0.3s ease-in-out;
+				transition: background-color 0.3s ease-in-out;
+				height: 5px;
+				width: 50px;
+				background-color: #38F8D4;
+			}
+
+			#indicator-inactief{
+				transition: width 0.3s ease-in-out;
+				transition: background-color 0.3s ease-in-out;
+				height: 5px;
+				width: 25px;
+				background-color: #131A2B;
+			}
+
+
+		.titel-lijn{
+			grid-column: 2/3;
+			z-index: 1;
+			position: absolute;
+			background-color: #38F8D4;
+			width: 100px;
+			height: 15px;
+			margin-top: 12.5%;
+		}
+
+		.content h1{
+			display: flex;
+			justify-content: center;
+			grid-column: 4/10;
+			grid-row:2/2;
+			position: relative;
+			font-family: vista-sans-narrow, sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 80px;
+			color: #131A2B;
+		}
+
+		.project-container{
+			grid-column: 4/10;
+			grid-row:3/3;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+
+		.project{
+			height: 100%;
+			display: flex;
+			transition: height 1.5s ease-in-out;
+			background-color: #131A2B;
+			vertical-align: middle;
+			grid-row:1/4;
+		}
+
+		#project-1{
+			background-image: url(../Afbeeldingen/gaming-preview.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.titellijn {
+			line-height: 0.5;
+			text-align: center;
+		}
+		.titellijn span {
+			display: inline-block;
+			position: relative;  
+		}
+		.titellijn span:before{
+		  content: "";
+		  position: absolute;
+		  height: 20px;
+		  background-color: #38F8D4;
+		  top: 10px;
+		  width: 0%;
+		  transition: width 0.5s ease-in-out;
+		}
+
+		.titellijn:hover span:before{
+		  width:100%;
+		}
+
+		@keyframes theline{
+			from {width:0%;}
+			to{width:100%;}
+		}
+
+		.titellijn span:before {
+		  /*right: 100%;*/
+		  margin-right: 15px;
+		}
+
+		input[type="button"]{
+			grid-column: 6/8;
+			grid-row:4/4;
+			background-color: white;
+			border:none;
+			padding-bottom:5px;
+			background:
+			   linear-gradient(
+			     to right, 
+			     rgba(19,26,43,1) 0%,
+			     rgba(19,26,43,1) 100%
+			   )
+			   left 
+			   bottom
+			   white    
+			   no-repeat;
+			background-size:100% 7px;
+			font-family: vista-sans-narrow, sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 150%;
+			margin-top: 10%;
+			height: 40%;
+			color: #131A2B;
+			/*transition: color 1.5s ease-in-out;*/
+			outline:none;
+			transition: background-size 1.5s ease-in-out;
+		}
+
+		input[type="button"]:hover{
+			background:
+			   linear-gradient(
+			     to right, 
+			     rgba(67,233,123,1) 0%,
+			     rgba(56,249,215,1) 100%
+			   )
+			   left 
+			   bottom
+			   white    
+			   no-repeat;
+			   background-size:100% 7px ;
+		}
+
+		.input[type="button"]:active{
+			border:none;
+		}
+
+		.informatie{
+			grid-column: 10/13;
+			grid-row:3/4;
+			padding: 25% 5%;
+		}
+
+			.informatie p{
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				font-size: 130%;
+			}
+
+			.informatie h2{
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+			}
+
+			.blue{
+				color:#38F8D4;
+			}
+
+		#sectie-1{
+			opacity: 1;
+			transition: opacity 1s ease-in-out;
+			transition-delay: 1s;
+		}
+
+		 #sectie-2 .content{
+			background-color: white;
+		}
+
+
+		/*CASE STUDIES*/
+
+		.case{
+			display: grid;
+			grid-template-columns: 20vw auto;
+			width: 100%;
+		}
+
+		nav{
+			display: grid;
+			height: 100vh;
+			width: 20vw;
+			grid-template-columns: 15% 10% 100%;
+			grid-template-rows: 10vh auto;
+			grid-column: 1/2;
+			position: fixed;
+			animation: navSlide 1s ease-in forwards;
+		}
+
+		nav > *{
+			animation: fadeIn 3s ease-in-out forwards;
+		}
+
+			.back{
+				grid-row:2/3;
+				grid-column: 1/2;
+				background-image:url('../Afbeeldingen/back.svg');
+				background-repeat: no-repeat;
+				background-position: 50% 3%;
+				background-size: 80%;
+			}
+
+			.back:hover{
+				cursor: pointer;
+				background-image:url('../Afbeeldingen/back-blue.svg');
+			}
+
+			.nav-info{
+				display: flex;
+				flex-direction: column;
+				grid-row:2/3;
+				grid-column: 3/4;
+			}
+
+			nav h2{
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 170%;
+				color: #5F5F5F;
+				display: inline;
+			}
+
+			nav h3{
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 130%;
+				color: black;
+				padding-right: 40%;
+			}
+
+			nav span{
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 120%;
+				color: #38F8D4;
+			}
+
+		.case-content{
+			display: grid;
+			grid-template-rows: 5vh 30vh auto;
+			background-color: #131A2B;
+			width: 100%;
+			grid-column: 2/3;
+			animation: caseSlide 2s ease-in forwards;
+			/*height: 120vh;*/
+		}
+
+		#case-content{
+		}
+
+			.case-header{
+				grid-row:2/3;
+				background-image: url('../Afbeeldingen/gaming-preview.jpg');
+				background-size: cover;
+			}
+
+				.case-header h2{
+					display: flex;
+					justify-content: center;
+					grid-row:3/4;
+					color: #38F8D4;
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 500;
+					transition: opacity 1s ease-in-out;
+
+				}
+
+				#load{
+					opacity: 0;
+					transition: opacity 1s ease-in-out;
+				}
+
+		.case-informatie{
+			display: grid;
+			grid-template-columns: 15% 70% 15%;
+			grid-row:3/4;
+			width: 100%;
+		}
+
+	/*	.case-informatie > *{
+			grid-column: 2/3;
+		}*/
+
+		.case-intro{
+			grid-column: 2/3;
+			color: white;
+			text-align: justify;
+			font-family: vista-sans-narrow, sans-serif;
+			font-weight: 300;
+			font-size: 120%;
+		}
+
+			.case-informatie h1{
+				color: #38F8D4;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+			}
+
+		.doelgroep{
+			grid-column: 2/3;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+		}
+
+			.doelgroep-container{
+				display: grid;
+				grid-template-rows: 100%;
+			}
+
+			.doelgroep h1, #lijn, .doelgroep p{
+				opacity: 0;
+				animation: fadeIn 1s ease-in forwards;
+				animation-delay: 2s;
+			}
+
+			.doelgroep h1{
+				grid-row:1/2;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+				color: white;
+				font-size: 30px;
+				padding:0% 3%;
+				padding-top:70%;
+			}
+
+			#lijn{
+				height: 1px;
+				margin-left: 3%;
+				background-color: #38F8D4;
+			}		
+
+				.lijn-1{
+					width: 50%;
+				}
+
+				.lijn-2{
+					width: 170px;
+				}
+
+				.lijn-3{
+					width: 50%;
+				}	
+
+			.case-informatie p{
+				/*grid-row:3/4;*/
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				text-align: justify;
+				color: white;
+				font-size: 100%;
+				padding: 0% 3%;
+			}
+
+				.doelgroep-image-1,.doelgroep-image-2,.doelgroep-image-3{
+					height: 100%;
+					width: 33%;
+				}
+
+				.doelgroep-image-1 p,.doelgroep-image-2 p,.doelgroep-image-3 p{
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 500;
+					font-size: 110%;
+					padding: 0% 5%;
+				}
+
+				.doelgroep-image-1{
+					background-image: url('../Afbeeldingen/actiespellen.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
+				}
+
+				.doelgroep-image-2{
+					background-image: url('../Afbeeldingen/leeftijd.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
+					animation-delay: 0.5s;
+				}
+
+				.doelgroep-image-3{
+					background-image: url('../Afbeeldingen/console.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
+					animation-delay: 1s;
+				}
+
+				.doelgroep-informatie{
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 300;
+					font-size: 120%;
+					color: white;
+					grid-column: 4/8;
+					padding: 0% 5%;
+					text-align: justify;
+				}
+
+			@keyframes fadeIn{
+				from {opacity:0;}
+				to{opacity: 1;}
+			}
+
+			@keyframes grow{
+				from {height:0px; background-position: 0% 0%; filter: blur(10px);}
+				to{height: 350px;  background-position: 100% 100%; filter: blur(0px);}
+			}
+
+			.case-afbeelding-1{
+				background-color: red;
+				width: 100%;
+				height: 30%;
+			}
+
+			.case-product{
+				grid-column: 2/3;
+			}
+
+			.preview{
+				width: 100%;
+			}
+
+			.populair{
+				grid-column: 2/3;
+				margin-top: 10%;
+				width: 100%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+			}
+
+			#populair{
+				opacity: 0;
+			}
+
+				.populair-afbeeldingen{
+					grid-column: 1/2;
+					position: relative;
+				}
+
+					.pop-afbeelding-1,.pop-afbeelding-2,.pop-afbeelding-3{
+						height:300px;
+						width: 350px;
+						background-size: 90%;
+						background-repeat: no-repeat;
+						position: absolute;
+					}
+
+					.pop-afbeelding-1{
+						background-image: url('../Afbeeldingen/head-1.png');
+						z-index: 1;
+						left:0px;
+						top:0px;
+					}
+
+					.pop-afbeelding-2{
+						background-image: url('../Afbeeldingen/head-2.png');
+						z-index: 2;
+						left: 20px;
+						top:20px;
+						
+					}
+
+					.pop-afbeelding-3{
+						background-image: url('../Afbeeldingen/head-3.png');
+						z-index: 3;
+						left:40px;
+						top:40px;
+					}
+
+				.populair-info{
+					display: flex;
+					flex-direction: column;
+					align-self: right;
+					grid-column: 2/3;
+					max-width: 70%;
+				}
+
+					.populair-info p{
+
+					}
+
+					.populair-info h1{
+						padding-left: 3%;
+					}
+
+				.lijst{
+					grid-column: 2/4;
+					margin-top: 10%;
+					width: 100%;
+					display: grid;
+					grid-template-columns: 40% 60%;
+				}
+
+				#lijst{
+					opacity: 0;
+				}
+
+					.lijst-afbeelding{
+						grid-column: 2/3;
+						background-image: url('../Afbeeldingen/lijst.jpg');
+						/*height:300px;*/
+						/*width: 350px;*/
+						background-size: 120%;
+						background-position: left;
+						background-repeat: no-repeat;
+					}
+
+					#lijst-img{
+						position: relative;
+						left: 1000px;
+					}
+
+					.lijst-info{
+						display: flex;
+						flex-direction: column;
+						grid-column: 1/2;
+						max-width: 85%;
+					}
+
+						.lijst-info p{
+
+						}
+
+						.lijst-info h1{
+							padding-left: 3%;
+						}
+
+
+
+
+
+
