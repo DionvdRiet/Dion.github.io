@@ -53,6 +53,32 @@ section{
 		background-color: #F6F6F6;
 	}
 
+	.formulier{
+		grid-column: 5/9;
+		grid-row:3; 
+		margin-top:-10%;
+	}
+
+		form{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.formulier h3{
+			font-family: vista-sans-narrow, sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 150%;
+			position: relative;
+			top:10px;
+		}
+
+		input[type="text"]{
+			border:none;
+			height: 50px;
+			margin-bottom: 3%;
+		}
+
 		.indicator{
 			position: fixed;
 			top: 50%;
