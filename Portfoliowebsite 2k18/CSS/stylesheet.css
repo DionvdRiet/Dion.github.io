@@ -483,7 +483,7 @@ section{
 				}
 
 				.doelgroep-image-3{
-					background-image: url('../Afbeeldingen/conole.jpg');
+					background-image: url('../Afbeeldingen/console.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
@@ -550,14 +550,14 @@ section{
 					}
 
 					.pop-afbeelding-1{
-						background-image: url('../Afbeeldingen/head-1.png');
+						background-image: url('../Afbeeldingen/crew.png');
 						z-index: 1;
 						left:0px;
 						top:0px;
 					}
 
 					.pop-afbeelding-2{
-						background-image: url('../Afbeeldingen/head-2.png');
+						background-image: url('../Afbeeldingen/cod.png');
 						z-index: 2;
 						left: 20px;
 						top:20px;
@@ -565,7 +565,7 @@ section{
 					}
 
 					.pop-afbeelding-3{
-						background-image: url('../Afbeeldingen/head-3.png');
+						background-image: url('../Afbeeldingen/aco.png');
 						z-index: 3;
 						left:40px;
 						top:40px;
