@@ -340,7 +340,7 @@ section{
 
 		.case-content{
 			display: grid;
-			grid-template-rows: 5vh 30vh auto;
+			grid-template-rows: 5vh 300px auto;
 			background-color: #131A2B;
 			width: 100%;
 			grid-column: 2/3;
@@ -351,11 +351,32 @@ section{
 		#case-content{
 		}
 
-			.case-header{
-				grid-row:2/3;
-				background-image: url('../Afbeeldingen/gaming-preview.jpg');
-				background-size: cover;
+			.case-titel{
+				margin-top: 5%;
+				display: flex;
+				justify-content: center;
+				/*display: block;*/
+				grid-row:2/2;
 			}
+
+				.case-titel h1{
+					position: absolute;
+					font-family: vista-sans-narrow, sans-serif;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 70px;
+					color: #38F8D4;
+				}
+
+				.case-titel h2{
+					font-family: vista-sans-narrow, sans-serif;
+					font-style: normal;
+					font-weight: 300;
+					position: relative;
+					top:130px;
+					font-size: 25px;
+					color: white;
+				}
 
 				.case-header h2{
 					display: flex;
