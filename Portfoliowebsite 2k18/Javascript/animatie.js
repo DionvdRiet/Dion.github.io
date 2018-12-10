@@ -1,6 +1,10 @@
 window.onscroll = function() {myFunction()};
-window.onscroll = function() {peer()};
-window.onscroll = function() {lijstFadeIn()};
+window.onscroll = function() {
+    populairFadeIn()
+    lijstFadeIn()
+    volgFadeIn()
+};
+// window.onscroll = function() {volgFadeIn()};
 
 function myFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 350) {
@@ -49,13 +53,24 @@ function pagina(){
 	setTimeout("location.href = 'gaming.html';",2000)
 }
 
-function lijstFadeIn() {
+function populairFadeIn() {
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop >650) {
+        document.getElementById("populair").style.animation = "fadeIn 0.5s ease-in forwards";
+    }
+}
+
+function lijstFadeIn() {
+    if (document.body.scrollTop > 650 || document.documentElement.scrollTop >750) {
         document.getElementById("lijst").style.opacity = "1";
         document.getElementById("lijst").style.animation = "fadeIn 0.5s ease-in forwards";
-        document.getElementById("populair").style.opacity = "1";
-        document.getElementById("populair").style.animation = "fadeIn 0.5s ease-in forwards";
         document.getElementById("lijst-img").style.left = "0px";
         document.getElementById("lijst-img").style.transition = "left 1.2s ease-in-out";
+    }
+}
+
+function volgFadeIn() {
+    if (document.body.scrollTop > 1150 || document.documentElement.scrollTop >1300) {
+        document.getElementById("volg").style.opacity = "1";
+        document.getElementById("volg").style.animation = "fadeIn 0.5s ease-in forwards";
     }
 }
