@@ -1,5 +1,6 @@
-window.onscroll = function() {myFunction()};
+
 window.onscroll = function() {
+    myFunction()
     populairFadeIn()
     lijstFadeIn()
     volgFadeIn()
@@ -44,6 +45,15 @@ function projectDicht(){
 	// document.getElementById('button').style.background = "linear-gradient(to right, rgba(67,233,123,1) 0%, rgba(56,249,215,1) 100%)"
 }
 
+function project2Dicht(){
+    document.getElementById('project-2').style.height = "0%";
+    document.getElementById('button2').style.backgroundSize = "100% 100%";
+    document.getElementById('button2').style.color = "white";
+    document.getElementById('sectie-2').style.opacity = "0";
+
+    // document.getElementById('button').style.background = "linear-gradient(to right, rgba(67,233,123,1) 0%, rgba(56,249,215,1) 100%)"
+}
+
 function projectOpen(){
 	document.getElementById('project-1').style.height = "100%";
 	document.getElementById('project-1').style.gridRow = "1/4";
@@ -52,6 +62,11 @@ function projectOpen(){
 function pagina(){
 	setTimeout("location.href = 'gaming.html';",2000)
 }
+
+function pagina2(){
+    setTimeout("location.href = 'ben.html';",2000)
+}
+
 
 function populairFadeIn() {
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop >650) {

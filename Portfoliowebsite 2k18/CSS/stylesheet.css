@@ -152,7 +152,13 @@ section{
 		}
 
 		#project-1{
-			background-image: url(../Afbeeldingen/gaming-preview.jpg);
+			background-image: url(../Afbeeldingen/index.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		#project-2{
+			background-image: url(../Afbeeldingen/ben.png);
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
@@ -263,8 +269,11 @@ section{
 			transition-delay: 1s;
 		}
 
-		 #sectie-2 .content{
+		 #sectie-2{
+		 	opacity: 1;
 			background-color: white;
+			transition: opacity 1s ease-in-out;
+			transition-delay: 1s;
 		}
 
 
@@ -444,7 +453,8 @@ section{
 				grid-row:1/2;
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
-				color: white;
+				color: #38F8D4;
+				text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 				font-size: 30px;
 				padding:0% 3%;
 				padding-top:70%;
@@ -482,7 +492,19 @@ section{
 					width: 33%;
 				}
 
+				.ben-doelgroep-image-1,.ben-doelgroep-image-2,.ben-doelgroep-image-3{
+					height: 100%;
+					width: 33%;
+				}
+
 				.doelgroep-image-1 p,.doelgroep-image-2 p,.doelgroep-image-3 p{
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 500;
+					font-size: 110%;
+					padding: 0% 5%;
+				}
+
+				.ben-doelgroep-image-1 p,.ben-doelgroep-image-2 p,.ben-doelgroep-image-3 p{
 					font-family: vista-sans-narrow, sans-serif;
 					font-weight: 500;
 					font-size: 110%;
@@ -506,6 +528,29 @@ section{
 
 				.doelgroep-image-3{
 					background-image: url('../Afbeeldingen/console.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
+					animation-delay: 1s;
+				}
+
+				.ben-doelgroep-image-1{
+					background-image: url('../Afbeeldingen/verlengen.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
+				}
+
+				.ben-doelgroep-image-2{
+					background-image: url('../Afbeeldingen/keuze.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
+					animation-delay: 0.5s;
+				}
+
+				.ben-doelgroep-image-3{
+					background-image: url('../Afbeeldingen/kosten.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
@@ -536,14 +581,6 @@ section{
 				background-color: red;
 				width: 100%;
 				height: 30%;
-			}
-
-			.case-product{
-				grid-column: 2/3;
-			}
-
-			.preview{
-				width: 100%;
 			}
 
 			.populair{
@@ -665,7 +702,7 @@ section{
 
 					.volg-afbeelding{
 						grid-column: 1/2;
-						background-image: url('../Afbeeldingen/detailpagina.png');
+						background-image: url('../Afbeeldingen/detail.png');
 						height:300px;
 						width: 300px;
 						background-size: 200%;
@@ -692,11 +729,134 @@ section{
 						grid-column: 3/4;
 						background-image: url('../Afbeeldingen/nieuws.png');
 						height:300px;
-						width: 400px;
+						/*width: 400px;*/
 						background-size: contain;
 						background-position: center;
 						background-repeat: no-repeat;
 					}
+
+			.case-product{
+				grid-column: 2/3;
+			}			
+
+				.index-img{
+					background-image: url('../Afbeeldingen/index.jpg');
+					height:1000px;
+					width: 100%;
+					background-size: 100%;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				.detail-img{
+					background-image: url('../Afbeeldingen/detail.png');
+					height:1800px;
+					width: 100%;
+					background-size: 100%;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+
+			.cocreatie{
+				grid-column: 2/3;
+				margin-top: 10%;
+				width: 100%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+			}
+
+		/*	#cocreatie{
+				opacity: 0;
+			}*/
+
+			.cocreatie-img{
+				grid-column: 1/2;
+				background-image: url('../Afbeeldingen/co-creatie.jpg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				height: 300px;
+			}
+
+			.cocreatie-info{
+				display: flex;
+				flex-direction: column;
+				align-self: right;
+				grid-column: 2/3;
+				/*max-width: 70%;*/
+			}
+
+			.cocreatie-info div{
+				display: flex;
+				justify-content: center;
+				margin:3%;
+				color: white;
+				width: 70%;
+				height: 30%;
+				padding: 3%;
+				background-size: 5%;
+				background-repeat: no-repeat;
+				background-position: 3% 50%;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+				font-size: 150%;
+				text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+			}
+
+				.positief-punt{
+					background-image:  url('../Afbeeldingen/checked.svg');
+					background-color: #972497;
+
+				}
+
+				.negatief-punt{
+					background-image:  url('../Afbeeldingen/cancel.svg');
+					background-color: #FFDB2A;
+				}
+
+				.verbeterpunt{
+					background-image:  url('../Afbeeldingen/add.svg');
+					background-color: #385EF8;
+				}
+
+
+			.co-extra{
+				grid-column: 1/3;
+			}
+
+			.co-extra-img{
+				display: flex;
+				justify-content: space-between;
+				grid-column: 1/3;
+			}
+
+				.co-extra-img div{
+					width: 250px;
+					height: 150px;
+					background-size: 100%;
+
+				}
+
+				.co-extra-img-1{
+					background-image:  url('../Afbeeldingen/conceptmapping.jpg');
+				}
+
+				.co-extra-img-2{
+					background-image:  url('../Afbeeldingen/brainstorm.jpg');
+				}
+
+				.co-extra-img-3{
+					background-image:  url('../Afbeeldingen/concepten.jpg');
+				}
+
+
+			.prototypes{
+				grid-column: 2/3;
+				margin-top: 10%;
+				width: 100%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+			}
 
 
 
