@@ -1,6 +1,6 @@
 
 window.onscroll = function() {
-    myFunction()
+    // myFunction()
     populairFadeIn()
     lijstFadeIn()
     volgFadeIn()
