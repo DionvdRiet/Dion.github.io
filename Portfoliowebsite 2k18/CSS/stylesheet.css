@@ -50,7 +50,7 @@ section{
 		display: grid;
 		grid-template-columns: repeat(12,1fr);
 		grid-template-rows: 0.5fr 1fr 2fr 1fr;
-		background-color: #F6F6F6;
+	
 	}
 
 	.formulier{
@@ -254,6 +254,77 @@ section{
 				font-size: 130%;
 			}
 
+			.persoonlijke-informatie{
+				grid-column: 3/11;
+				grid-row:3/4;
+				text-align: justify;
+				font-size: 110%;
+				line-height: 30px;
+			}
+
+			.contact-informatie{
+				grid-column: 5/9;
+				grid-row:3/4;
+				text-align: center;
+				font-size: 110%;
+				line-height: 30px;
+			}
+
+				.contact-informatie p{
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 300;
+					font-size: 130%;
+				}
+
+					.contact-informatie span{
+						font-weight: 500;
+					}
+
+			.social-media{
+				display: flex;
+				justify-content: center;
+			}
+
+			.persoonlijke-informatie p{
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				font-size: 130%;
+			}
+
+			.highlight{
+				/*background-color: #38F8D4;*/
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+				color:white;
+				padding: 5px;
+				animation: highlight 0.2s ease-in;
+				animation-fill-mode: forwards;
+				animation-direction: alternate;
+			}
+
+			@keyframes highlight{
+					0%{background:linear-gradient(to right, rgba(56, 248, 212,0.2), rgba(56, 248, 212,0.2));
+				}
+					100%{background:linear-gradient(to right, rgba(56, 248, 212, 1), rgba(56, 248, 212,1));
+			}			
+		}
+
+		#twee{
+			animation-delay: 0.4s;
+		}
+
+		#drie{
+			animation-delay: 0.6s;
+		}
+
+		#vier{
+			animation-delay: 1s;
+		}
+
+		#vijf{
+			animation-delay: 1.4s;
+		}
+
 			.informatie h2{
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
@@ -277,11 +348,13 @@ section{
 
 		 #sectie-2{
 		 	opacity: 1;
-			background-color: white;
 			transition: opacity 1s ease-in-out;
 			transition-delay: 1s;
 		}
 
+		#sectie-2 .content{
+			background-color: #F6F6F6;
+		}
 
 		/*CASE STUDIES*/
 

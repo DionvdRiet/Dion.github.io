@@ -348,6 +348,11 @@ a{
 	width: 100%;
 }
 
+	.contact-informatie{
+		grid-column: 4/9;
+		grid-row:3/4;
+	}
+
 	.contact-h1{
 		color: black;
 		text-shadow: none;
