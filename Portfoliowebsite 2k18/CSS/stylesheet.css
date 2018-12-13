@@ -462,7 +462,7 @@ section{
 
 			#lijn{
 				height: 1px;
-				margin-left: 3%;
+				/*margin-left: 3%;*/
 				background-color: #38F8D4;
 			}		
 
@@ -643,7 +643,7 @@ section{
 					}
 
 					.populair-info h1{
-						padding-left: 3%;
+						/*padding-left: 3%;*/
 					}
 
 				.lijst{
@@ -736,26 +736,92 @@ section{
 					}
 
 			.case-product{
-				grid-column: 2/3;
-			}			
+				/*display: grid;*/
+				grid-column:2/2;
+				/*grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+			}	
 
-				.index-img{
-					background-image: url('../Afbeeldingen/index.jpg');
-					height:1000px;
+			.case-product div{
+				/*border:1px solid red;*/
+				/*margin-bottom: -20%;*/
+			}	
+
+
+				.product-img-1{
+					background-image: url('../Afbeeldingen/final-index.png');
+					height:927px;
 					width: 100%;
 					background-size: 100%;
-					background-position: center;
+					background-position: top;
+					background-repeat: no-repeat;
+					grid-row:1/2;
+				}
+
+				.product-img-2{
+					background-image: url('../Afbeeldingen/final-sim.png');
+					height:1072px;
+					width: 100%;
+					background-size: 100%;
+					background-position: top;
+					background-repeat: no-repeat;
+					grid-row:2/3;
+				}
+
+				.product-img-3{
+					background-image: url('../Afbeeldingen/final-toestel.png');
+					height:3392px;
+					width: 100%;
+					background-size: 100%;
+					background-position: top;
+					background-repeat: no-repeat;
+					grid-row:3/4;
+				}
+
+				.product-img-4{
+					background-image: url('../Afbeeldingen/final-vergelijken.png');
+					height:2077px;
+					width: 100%;
+					background-size: 100%;
+					background-position: top;
 					background-repeat: no-repeat;
 				}
 
-				.detail-img{
-					background-image: url('../Afbeeldingen/detail.png');
-					height:1800px;
+				.product-img-5{
+					background-image: url('../Afbeeldingen/final-vergelijken-3.png');
+					height:2077px;
 					width: 100%;
 					background-size: 100%;
-					background-position: center;
+					background-position: top;
 					background-repeat: no-repeat;
 				}
+
+				.product-img-6{
+					background-image: url('../Afbeeldingen/final-gekozen.png');
+					height:1181px;
+					width: 100%;
+					background-size: 100%;
+					background-position: top;
+					background-repeat: no-repeat;
+				}
+
+				.product-img-7{
+					background-image: url('../Afbeeldingen/final-controle.png');
+					height:1240px;
+					width: 100%;
+					background-size: 100%;
+					background-position: top;
+					background-repeat: no-repeat;
+				}
+
+				.product-img-8{
+					background-image: url('../Afbeeldingen/final-verlengd.png');
+					height:1032px;
+					width: 100%;
+					background-size: 100%;
+					background-position: top;
+					background-repeat: no-repeat;
+				}
+
 
 
 			.cocreatie{
