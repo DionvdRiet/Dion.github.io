@@ -858,7 +858,49 @@ section{
 				grid-template-columns: 50% 50%;
 			}
 
+			.prototype-afbeelding-1{
+				background-image:  url('../Afbeeldingen/beginscherm.png');
+				height:200px;
+				width: 350px;
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
 
+			.prototype-afbeelding-2{
+				background-image:  url('../Afbeeldingen/sim-only.png');
+				height:200px;
+				width: 350px;
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+
+			.prototype-afbeelding-3{
+				background-image:  url('../Afbeeldingen/toestel.png');
+				height:200px;
+				width: 350px;
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+
+			.mascotte-afbeelding{
+				background-image:  url('../Afbeeldingen/mascotte.png');
+				height:400px;
+				width: 350px;
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+
+			.afbeelding-rechts{
+				grid-column: 2/3;
+			}
+
+			.prototype-info{
+				display: flex;
+				flex-direction: column;
+				/*align-self: right;*/
+				grid-column: 1/2;
+				max-width: 90%;
+			}
 
 
 
