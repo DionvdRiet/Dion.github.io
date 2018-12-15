@@ -1,3 +1,6 @@
+
+
+
 body,html{
 	margin:0;
 	padding: 0;
@@ -125,7 +128,6 @@ section{
 		.content h1{
 			display: flex;
 			justify-content: center;
-			grid-column: 4/10;
 			grid-row:2/2;
 			position: relative;
 			font-family: vista-sans-narrow, sans-serif;
@@ -543,7 +545,8 @@ section{
 				height: 1px;
 				/*margin-left: 3%;*/
 				background-color: #38F8D4;
-			}		
+			}	
+
 
 				.lijn-1{
 					width: 50%;
@@ -972,6 +975,41 @@ section{
 				grid-column: 1/2;
 				max-width: 90%;
 			}
+
+/*Media Queries*/
+@media screen and (max-width: 600px) {
+  .content h1{
+  	grid-column: 1/13;
+  	grid-row:1;
+  	font-size: 50px;
+  }
+
+  ul{
+  	display: none;
+  }
+
+  .indicator{
+  	display: none;
+  }
+
+  .project-container{
+  	grid-column: 1/13;
+  	grid-row:2/2;
+  	display: grid;
+  	grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .informatie{
+  	grid-column: 1/13;
+  	grid-row:3/3;
+  }
+
+}
+@media screen and (min-width: 601px){
+.content h1{
+			grid-column: 4/10;
+		}
+}
 
 
 
