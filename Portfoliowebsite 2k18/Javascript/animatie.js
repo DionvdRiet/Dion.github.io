@@ -25,6 +25,16 @@ function laden(){
 	document.getElementById('load').style.opacity = "1";
 }
 
+function overlay(){
+    document.getElementById('overlay').style.opacity = "1";
+    document.getElementById('responsive-menu').style.display = "none";
+    document.getElementById('responsive-nav-item-1').style.display = "block";
+    document.getElementById('responsive-nav-item-2').style.display = "block";
+    document.getElementById('responsive-nav-item-3').style.display = "block";
+    document.getElementById('header').style.height = "40%";
+
+}
+
 function lineChange(){
 	document.getElementById('projecten-lijn').style.textDecoration = "line-through";
 	document.getElementById('projecten-lijn').style.textDecorationColor = "#38F8D4";

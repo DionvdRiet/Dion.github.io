@@ -6,14 +6,18 @@
 	<link rel="stylesheet" href="https://use.typekit.net/due7wge.css">
 </head>
 <body>
-<header>
+<header id="header">
 	<ul>
 		<li class="active" id="projecten-lijn">Projecten</li>
 		<li class="inactive" id="over-mij-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='persoonlijk.html'">Over mij</li>
-		<li class="inactive" id="contact-lijn" onclick="location.href='contact.html'">Contact</li>
+		<li class="inactive" id="contact-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='contact.html'">Contact</li>
 	</ul>
-	<ul class="responsive-nav">
-		<h2>Menu</h2>
+	<ul class="responsive-nav" onclick="overlay()">
+		<li id="responsive-menu"><h2>Menu</h2></li>
+		<li id="responsive-nav-item-1"><h2>Projecten</h2></li>
+		<li id="responsive-nav-item-2"><h2>Over mij</h2></li>
+		<li id="responsive-nav-item-3"><h2>Contact</h2></li>
+		<div id="overlay" class="overlay"></div>
 	</ul>
 </header>
 	<section id="sectie-1">
