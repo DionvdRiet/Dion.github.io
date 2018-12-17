@@ -26,8 +26,8 @@ function laden(){
 }
 
 function overlay(){
-    document.getElementById('overlay').style.opacity = "1";
-    document.getElementById('responsive-menu').style.display = "none";
+    document.getElementById('responsive-menu').style.color = "blue";
+    document.getElementById('responsive-menu').style.innerHTML = "Sluit menu";
     document.getElementById('responsive-nav-item-1').style.display = "block";
     document.getElementById('responsive-nav-item-2').style.display = "block";
     document.getElementById('responsive-nav-item-3').style.display = "block";

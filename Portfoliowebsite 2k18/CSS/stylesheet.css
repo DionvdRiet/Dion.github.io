@@ -995,8 +995,9 @@ section{
 		z-index: 10;
 		position: fixed;
 		width: 100%;
-		height: 5%;
+		/*height: 5%;*/
 		display: flex;
+		justify-content: left;
 		transition: height 0.5s ease-in;
 		/*justify-content: top;*/
 		background-color: #131A2B;
@@ -1013,9 +1014,10 @@ section{
 
 		header li{
 			font-family: vista-sans-narrow, sans-serif;
-			font-size: 180%;
+			font-size: 110%;
 			font-weight: 500;
-			display: block;
+			/*height: 50px;*/
+			/*display: block;*/
 			margin:0% 20px;
 			color: #131A2B;
 		}
@@ -1035,10 +1037,10 @@ section{
 		}
 
 		#overlay{
-			position: absolute;
-			opacity: 0;
+			position: fixed;
+			opacity: 1;
 			height: 4000px;
-			width: 3000px;
+			width: 100%;
 			background-color: rgba(0,0,0,0.2);
 		}
 
