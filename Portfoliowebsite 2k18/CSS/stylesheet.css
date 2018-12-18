@@ -976,6 +976,10 @@ section{
 				max-width: 90%;
 			}
 
+	.responsive-content{
+		display: none;
+	}
+
 	.responsive-nav{
 		display: none;
 	}
@@ -995,14 +999,14 @@ section{
 		z-index: 10;
 		position: fixed;
 		width: 100%;
-		height: 10%;
+		height: 100px;
 		display: flex;
 		justify-content: left;
 		transition: height 0.5s ease-in;
 		/*justify-content: top;*/
-		background-color: #131A2B;
+		background-color: white;
 		/*grid-row:1/2;*/
-		box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+		box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
 	}
 
 		header ul{
@@ -1043,6 +1047,10 @@ section{
 			color: #38F8D4;
 		}
 
+		#responsive-menu h2, #responsive-nav-item-2 h2, #responsive-nav-item-3 h2{
+			color: #131A2B;
+		}
+
 		#overlay{
 			position: fixed;
 			opacity: 1;
@@ -1051,10 +1059,64 @@ section{
 			background-color: rgba(0,0,0,0.2);
 		}
 
-  .content h1{
-  	grid-column: 1/13;
-  	grid-row:1;
-  	font-size: 50px;
+
+	.responsive-content{
+		display: grid;
+		margin-top:100px;
+		/*grid-template-columns: repeat(12,1fr);
+		grid-template-rows: 0.5fr 1fr 2fr 1fr;*/
+	}
+
+
+	.responsive-project-1{
+		height: 600px;
+		background-image: url(../Afbeeldingen/index.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+		.responsive-project-1 h1{
+			display: flex;
+			justify-content: center;
+			position: relative;
+			top:-70px;
+			/*grid-row:2/2;*/
+			position: relative;
+			font-family: vista-sans-narrow, sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 80px;
+			color: white;
+			background-color: #131A2B;
+			padding: 1%;
+		}
+
+		.responsive-project-1 p{
+			display: flex;
+			justify-content: center;
+			position: relative;
+			bottom:-320px;
+			font-family: vista-sans-narrow, sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			background-color: #131A2B;
+			color: white;
+		}
+
+		.responsive-project-1 h2{
+			position: relative;
+			bottom:-320px;
+			display: flex;
+			justify-content: center;
+			font-family: vista-sans-narrow, sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			background-color: #38F8D4;
+		}
+
+
+  .content{
+  	display: none;
   }
 
   .indicator{
