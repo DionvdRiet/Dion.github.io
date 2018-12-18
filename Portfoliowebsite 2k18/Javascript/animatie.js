@@ -31,6 +31,9 @@ function overlay(){
     document.getElementById('responsive-nav-item-1').style.display = "block";
     document.getElementById('responsive-nav-item-2').style.display = "block";
     document.getElementById('responsive-nav-item-3').style.display = "block";
+    document.getElementById('responsive-nav-item-1').style.opacity = "1";
+    document.getElementById('responsive-nav-item-2').style.opacity = "1";
+    document.getElementById('responsive-nav-item-3').style.opacity = "1";
     document.getElementById('header').style.height = "40%";
 
 }
