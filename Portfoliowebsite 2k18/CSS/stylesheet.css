@@ -98,7 +98,7 @@ section{
 				cursor: pointer;
 			}
 
-			#indicator-actief{
+			#indicator-1{
 				transition: width 0.3s ease-in-out;
 				transition: background-color 0.3s ease-in-out;
 				height: 5px;
@@ -106,7 +106,7 @@ section{
 				background-color: #38F8D4;
 			}
 
-			#indicator-inactief{
+			#indicator-2,#indicator-3{
 				transition: width 0.3s ease-in-out;
 				transition: background-color 0.3s ease-in-out;
 				height: 5px;
@@ -163,6 +163,13 @@ section{
 			background-image: url(../Afbeeldingen/ben.png);
 			background-size: cover;
 			background-repeat: no-repeat;
+		}
+
+		#project-3{
+			background-image: url(../Afbeeldingen/home.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 0% 50%;
 		}
 
 		.titellijn {
@@ -290,7 +297,8 @@ section{
 			.persoonlijke-informatie p{
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 300;
-				font-size: 130%;
+				font-size: 140%;
+				line-height: 40px;
 			}
 
 			.highlight{
@@ -354,6 +362,12 @@ section{
 			transition-delay: 1s;
 		}
 
+		 #sectie-3{
+		 	opacity: 1;
+			transition: opacity 1s ease-in-out;
+			transition-delay: 1s;
+		}
+
 		#sectie-2 .content{
 			background-color: #F6F6F6;
 		}
@@ -375,6 +389,8 @@ section{
 			grid-column: 1/2;
 			position: fixed;
 			animation: navSlide 1s ease-in forwards;
+			background-color: white;
+			z-index: 3;
 		}
 
 		nav > *{
@@ -579,6 +595,11 @@ section{
 					width: 33%;
 				}
 
+				.noothulp-doelgroep-image-1,.noothulp-doelgroep-image-2,.noothulp-doelgroep-image-3{
+					max-height: 100%;
+					width: 33%;
+				}
+
 				.doelgroep-image-1 p,.doelgroep-image-2 p,.doelgroep-image-3 p{
 					font-family: vista-sans-narrow, sans-serif;
 					font-weight: 500;
@@ -592,6 +613,15 @@ section{
 					font-size: 110%;
 					padding: 0% 5%;
 				}
+
+				.noothulp-doelgroep-image-1 p,.noothulp-doelgroep-image-2 p,.noothulp-doelgroep-image-3 p{
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 500;
+					font-size: 110%;
+					padding: 0% 5%;
+					text-shadow: 2px 2px rgba(0,0,0,0.4);
+				}
+
 
 				.doelgroep-image-1{
 					background-image: url('../Afbeeldingen/actiespellen.jpg');
@@ -637,6 +667,28 @@ section{
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
 					animation-delay: 1s;
+				}
+
+				.noothulp-doelgroep-image-1{
+					background-image: url('../Afbeeldingen/les.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
+				}
+
+				.noothulp-doelgroep-image-2{
+					background-image: url('../Afbeeldingen/thuis.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
+					animation-delay: 0.5s;
+				}
+
+				.noothulp-doelgroep-image-3{
+					background-image: url('../Afbeeldingen/youtube.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					animation: grow 1s ease-in backwards;
 				}
 
 				.doelgroep-informatie{
@@ -727,6 +779,35 @@ section{
 					.populair-info h1{
 						/*padding-left: 3%;*/
 					}
+
+				.huiswerk-info{
+					display: flex;
+					flex-direction: column;
+					align-self: right;
+					grid-column: 2/3;
+					max-width: 100%;
+				}
+
+				.feedback{
+					grid-column: 1/3;
+					display: grid;
+					grid-template-columns: 50% 50%;
+				}
+				
+				.feedback img{
+					z-index: 1;
+					grid-column: 1/2;
+					margin-left: -20%;
+				}
+
+
+				.feedback-info{
+					display: flex;
+					flex-direction: column;
+					align-self: right;
+					grid-column: 2/3;
+					max-width: 100%;
+				}
 
 				.lijst{
 					grid-column: 2/4;
@@ -832,7 +913,7 @@ section{
 
 
 
-			.cocreatie{
+			.cocreatie,.brainstorm{
 				grid-column: 2/3;
 				margin-top: 10%;
 				width: 100%;
@@ -840,16 +921,18 @@ section{
 				grid-template-columns: 50% 50%;
 			}
 
-		/*	#cocreatie{
+			#cocreatie{
 				opacity: 0;
-			}*/
+				position: relative;
+				bottom: -10px;
+			}
 
 			.cocreatie-img{
 				grid-column: 1/2;
-				background-image: url('../Afbeeldingen/co-creatie.jpg');
+				/*background-image: url('../Afbeeldingen/co-creatie.jpg');
 				background-size: contain;
 				background-repeat: no-repeat;
-				height: 300px;
+				height: 300px;*/
 			}
 
 			.cocreatie-info{
@@ -894,7 +977,7 @@ section{
 				}
 
 
-			.co-extra{
+			.co-extra,.brainstorm-extra{
 				grid-column: 1/3;
 			}
 
@@ -925,12 +1008,36 @@ section{
 
 
 			.prototypes{
+				grid-column: 2/4;
+				margin-top: 10%;
+				width: 100%;
+				display: grid;
+				grid-template-columns: 40% 60%;
+			}
+
+			#prototypes{
+				opacity: 0;
+				position: relative;
+				bottom: -10px;
+			}
+
+			.muziek-concept{
 				grid-column: 2/3;
 				margin-top: 10%;
 				width: 100%;
 				display: grid;
 				grid-template-columns: 50% 50%;
 			}
+
+			.muziek-concept p{
+				grid-column: 1/3;
+			}
+
+				.concept-images{
+					display: flex;
+					justify-content: center;
+					grid-column: 2/3;
+				}
 
 			.prototype-afbeelding-1{
 				background-image:  url('../Afbeeldingen/beginscherm.png');
@@ -976,7 +1083,7 @@ section{
 				max-width: 90%;
 			}
 
-	.responsive-content{
+	.responsive-content,.responsive-project-1,.responsive-project-2{
 		display: none;
 	}
 
@@ -992,9 +1099,27 @@ section{
 			color: white;
 		}
 
+	#up{
+		opacity: 0;
+		position: relative;
+		bottom: -10px;
+	}
+
+	@keyframes up{
+		from {opacity:0;, bottom:-10px;}
+		to{opacity: 1; bottom:10px;}
+	}
+
+	#onderzoek{
+		opacity: 0;
+		position: relative;
+		bottom: -10px;
+	}
+
+
 /*Media Queries*/
 @media screen and (max-width: 1000px) {
-  
+
 	header{
 		z-index: 10;
 		position: fixed;
@@ -1067,15 +1192,28 @@ section{
 		grid-template-rows: 0.5fr 1fr 2fr 1fr;*/
 	}
 
+	.responsive-section{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
 
 	.responsive-project-1{
-		height: 600px;
+		grid-row:1/2;
+		/*height: 600px;*/
 		background-image: url(../Afbeeldingen/index.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 
-		.responsive-project-1 h1{
+	.responsive-project-2{
+		grid-row:2/3;
+		/*height: 600px;*/
+		background-image: url(../Afbeeldingen/index.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+		.responsive-project-1 h1, .responsive-project-2 h1{
 			display: flex;
 			justify-content: center;
 			position: relative;
@@ -1091,7 +1229,7 @@ section{
 			padding: 1%;
 		}
 
-		.responsive-project-1 p{
+		.responsive-project-1 p,.responsive-project-2 p{
 			display: flex;
 			justify-content: center;
 			position: relative;
@@ -1103,7 +1241,7 @@ section{
 			color: white;
 		}
 
-		.responsive-project-1 h2{
+		.responsive-project-1 h2, .responsive-project-2 h2{
 			position: relative;
 			bottom:-320px;
 			display: flex;

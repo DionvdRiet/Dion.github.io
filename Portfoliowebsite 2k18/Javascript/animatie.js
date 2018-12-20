@@ -1,28 +1,45 @@
-window.onscroll = function() {
-    populairFadeIn()
-    lijstFadeIn()
-    volgFadeIn()
-        myFunction()
-};
-// window.onscroll = function() {volgFadeIn()};
+   window.onscroll = function() {
 
-function myFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 350) {
-        document.getElementById("indicator-actief").style.backgroundColor = "#131A2B";
-        document.getElementById("indicator-actief").style.width = "25px";
-        document.getElementById("indicator-inactief").style.backgroundColor = "#38F8D4";
-        document.getElementById("indicator-inactief").style.width = "50px";
+    indicator1()
+    indicator2()
+    indicator3()
+    
+    };
+
+
+
+
+function indicator1() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        document.getElementById("indicator-1").style.backgroundColor = "#38F8D4";
+        document.getElementById("indicator-1").style.width = "50px";
+        document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-2").style.width = "25px";
+        document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-3").style.width = "25px";
     } 
-    else {
-        document.getElementById("indicator-actief").style.backgroundColor = "#38F8D4";
-        document.getElementById("indicator-actief").style.width = "50px";
-        document.getElementById("indicator-inactief").style.backgroundColor = "#131A2B";
-        document.getElementById("indicator-inactief").style.width = "25px";
-    }
 }
 
-function laden(){
-	document.getElementById('load').style.opacity = "1";
+function indicator2() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        document.getElementById("indicator-1").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-1").style.width = "25px";
+        document.getElementById("indicator-2").style.backgroundColor = "#38F8D4";
+        document.getElementById("indicator-2").style.width = "50px";
+        document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-3").style.width = "25px";
+    } 
+}
+
+function indicator3() {
+    if (document.body.scrollTop > 1300|| document.documentElement.scrollTop > 1300) {
+        document.getElementById("indicator-1").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-1").style.width = "25px";
+        document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-2").style.width = "25px";
+        document.getElementById("indicator-3").style.backgroundColor = "#38F8D4";
+        document.getElementById("indicator-3").style.width = "50px";
+    } 
 }
 
 function overlay(){
@@ -66,6 +83,15 @@ function project2Dicht(){
     // document.getElementById('button').style.background = "linear-gradient(to right, rgba(67,233,123,1) 0%, rgba(56,249,215,1) 100%)"
 }
 
+function project3Dicht(){
+    document.getElementById('project-3').style.height = "0%";
+    document.getElementById('button3').style.backgroundSize = "100% 100%";
+    document.getElementById('button3').style.color = "white";
+    document.getElementById('sectie-3').style.opacity = "0";
+
+    // document.getElementById('button').style.background = "linear-gradient(to right, rgba(67,233,123,1) 0%, rgba(56,249,215,1) 100%)"
+}
+
 function projectOpen(){
 	document.getElementById('project-1').style.height = "100%";
 	document.getElementById('project-1').style.gridRow = "1/4";
@@ -79,25 +105,7 @@ function pagina2(){
     setTimeout("location.href = 'ben.html';",2000)
 }
 
-
-function populairFadeIn() {
-    if (document.body.scrollTop > 550 || document.documentElement.scrollTop >650) {
-        document.getElementById("populair").style.animation = "fadeIn 0.5s ease-in forwards";
-    }
+function pagina3(){
+    setTimeout("location.href = 'noothulp.html';",2000)
 }
 
-function lijstFadeIn() {
-    if (document.body.scrollTop > 650 || document.documentElement.scrollTop >750) {
-        document.getElementById("lijst").style.opacity = "1";
-        document.getElementById("lijst").style.animation = "fadeIn 0.5s ease-in forwards";
-        document.getElementById("lijst-img").style.left = "0px";
-        document.getElementById("lijst-img").style.transition = "left 1.2s ease-in-out";
-    }
-}
-
-function volgFadeIn() {
-    if (document.body.scrollTop > 1150 || document.documentElement.scrollTop >1300) {
-        document.getElementById("volg").style.opacity = "1";
-        document.getElementById("volg").style.animation = "fadeIn 0.5s ease-in forwards";
-    }
-}
