@@ -6,6 +6,7 @@ window.onscroll = function() {
     up();
     onderzoek();
     cocreatie();
+    caseGaming();
 };
 
 
@@ -52,4 +53,13 @@ function cocreatie(){
         document.getElementById("cocreatie").style.animation = "up 1s ease-in-out forwards";
         document.getElementById("prototypes").style.animation = "up 1s ease-in-out forwards";
     }
+}
+
+function caseGaming(){
+    document.getElementById('extra-case-titel').innerHTML = "Gaming Application";
+    document.getElementById('extra-case-titel').style.top = "-50px";
+    document.getElementById('case-een').style.height = "0px";
+    document.getElementById('case-twee').style.height = "0px";
+    document.getElementById('case-tekst1').style.opacity = "0";
+    document.getElementById('case-tekst2').style.opacity = "0";
 }

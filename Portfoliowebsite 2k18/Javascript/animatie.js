@@ -44,7 +44,7 @@ function indicator3() {
 
 function overlay(){
     document.getElementById('responsive-menu').style.color = "blue";
-    document.getElementById('responsive-menu').style.innerHTML = "Sluit menu";
+    document.getElementById('responsive-menu').innerHTML = "Sluit menu";
     document.getElementById('responsive-nav-item-1').style.display = "block";
     document.getElementById('responsive-nav-item-2').style.display = "block";
     document.getElementById('responsive-nav-item-3').style.display = "block";
