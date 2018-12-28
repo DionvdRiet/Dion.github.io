@@ -31,3 +31,15 @@ function volgFadeIn() {
         document.getElementById("volg").style.animation = "fadeIn 0.5s ease-in forwards";
     }
 }
+
+function caseGamingDelay(){
+    setTimeout("location.href = 'gaming.html';",1000)
+}
+
+function caseBenDelay(){
+    setTimeout("location.href = 'ben.html';",1000)
+}
+
+function caseNoothulpDelay(){
+    setTimeout("location.href = 'noothulp.html';",1000)
+}

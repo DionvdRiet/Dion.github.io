@@ -6,7 +6,6 @@ window.onscroll = function() {
     up();
     onderzoek();
     cocreatie();
-    caseGaming();
 };
 
 
@@ -55,11 +54,41 @@ function cocreatie(){
     }
 }
 
-function caseGaming(){
-    document.getElementById('extra-case-titel').innerHTML = "Gaming Application";
-    document.getElementById('extra-case-titel').style.top = "-50px";
+function caseDown(){
+    // document.getElementById('extra-case-titel').innerHTML = "Gaming Application";
+    // document.getElementById('extra-case-titel').style.top = "-50px";
     document.getElementById('case-een').style.height = "0px";
     document.getElementById('case-twee').style.height = "0px";
+    document.getElementById('case-tekst1').style.textDecoration = "underline";
+    document.getElementById('case-tekst1').style.textDecorationColor = "#38F8D4";
     document.getElementById('case-tekst1').style.opacity = "0";
     document.getElementById('case-tekst2').style.opacity = "0";
+}
+
+function caseGamingDelay(){
+    setTimeout("location.href = 'gaming.html';",1000)
+}
+
+function caseBenDelay(){
+    setTimeout("location.href = 'ben.html';",1000)
+}
+
+function caseNoothulpDelay(){
+    setTimeout("location.href = 'noothulp.html';",1000)
+}
+
+
+function underline1(){
+    document.getElementById('case-tekst1').style.textDecoration = "underline";
+    document.getElementById('case-tekst1').style.textDecorationColor = "#38F8D4";
+}
+
+function underline2(){
+    document.getElementById('case-tekst2').style.textDecoration = "underline";
+    document.getElementById('case-tekst2').style.textDecorationColor = "#38F8D4";
+}
+
+function unline(){
+    document.getElementById('case-tekst1').style.textDecoration = "none";
+    document.getElementById('case-tekst2').style.textDecoration = "none";
 }
