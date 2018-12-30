@@ -44,3 +44,18 @@ function caseBenDelay(){
 function caseNoothulpDelay(){
     setTimeout("location.href = 'noothulp.html';",1000)
 }
+
+function underline1(){
+    document.getElementById('case-tekst1').style.textDecoration = "underline";
+    document.getElementById('case-tekst1').style.textDecorationColor = "#38F8D4";
+}
+
+function underline2(){
+    document.getElementById('case-tekst2').style.textDecoration = "underline";
+    document.getElementById('case-tekst2').style.textDecorationColor = "#38F8D4";
+}
+
+function unline(){
+    document.getElementById('case-tekst1').style.textDecoration = "none";
+    document.getElementById('case-tekst2').style.textDecoration = "none";
+}
