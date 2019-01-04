@@ -32,6 +32,23 @@ function volgFadeIn() {
     }
 }
 
+function lineChange(){
+    document.getElementById('projecten-lijn').style.textDecoration = "line-through";
+    document.getElementById('projecten-lijn').style.textDecorationColor = "#38F8D4";
+}
+
+function lineNormal(){
+    document.getElementById('projecten-lijn').style.textDecoration = "none";
+}
+
+
+function caseDown(){
+    // document.getElementById('extra-case-titel').innerHTML = "Gaming Application";
+    // document.getElementById('extra-case-titel').style.top = "-50px";
+    document.getElementById('case-een').style.height = "1000px";
+    document.getElementById('case-twee').style.height = "1000px";
+    // document.getElementById('case-tekst2').style.opacity = "0";
+}
 
 function caseGamingDelay(){
     setTimeout("location.href = 'gaming.html';",1000)

@@ -5,12 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
 	<link rel="stylesheet" href="https://use.typekit.net/due7wge.css">
 </head>
-<body onload="laden()">
+<body onload="laden()" class="case-background">
 <header>
 	<ul>
 		<li class="active" id="projecten-lijn" onclick="location.href='index.html'">Projecten</li>
 		<li class="inactive" id="over-mij-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='persoonlijk.html'">Over mij</li>
-		<li class="inactive" id="contact-lijn" onclick="location.href='contact.html'">Contact</li>
+		<li class="inactive" id="contact-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='contact.html'">Contact</li>
 	</ul>
 </header>
 	<section class="case" id="load">
@@ -91,9 +91,9 @@
 
 				<div class="case-product">
 					<h1>Product</h1>
-						<img src="../Afbeeldingen/index.jpg" width="800px">
-						<img src="../Afbeeldingen/detail.png" width="800px">
-						<img src="../Afbeeldingen/meer.png" width="800px">
+						<img src="../Afbeeldingen/Gaming/index.jpg" width="800px">
+						<img src="../Afbeeldingen/Gaming/detail.png" width="800px">
+						<img src="../Afbeeldingen/Gaming/meer.png" width="800px">
 				</div>
 				<div class="extra-cases">
 					<h1 id="extra-case-titel">Meer cases</h1>
@@ -101,11 +101,11 @@
 						<h3 id="case-tekst1">Ben Verlengproces</h3>
 						<!-- <div id="extra-cases-underline"></div> -->
 						<div class="opvulling"></div>
-						<div class="ben-case-background"></div>
+						<div id="ben-case-background"></div>
 					</div>
 					<div class="noothulp-case" id="case-twee" onmouseover="underline2()" onmouseleave="unline()" onclick = "caseDown(); caseNoothulpDelay()">
 						<h3 id="case-tekst2">Noothulp</h3>
-						<div class="noothulp-case-background"></div>
+						<div id="noothulp-case-background"></div>
 					</div>
 				</div>
 			</div>

@@ -1,12 +1,13 @@
-
-
-
 body,html{
 	margin:0;
 	padding: 0;
 	height: 100%;
 	width: 100%;
 }
+
+	.case-background{
+		background-color:#131A2B;
+	}
 
 section{
 	display: grid;
@@ -154,19 +155,19 @@ section{
 		}
 
 		#project-1{
-			background-image: url(../Afbeeldingen/index.jpg);
+			background-image: url(../Afbeeldingen/Gaming/index.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
 
 		#project-2{
-			background-image: url(../Afbeeldingen/ben.png);
+			background-image: url(../Afbeeldingen/Ben/ben.png);
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
 
 		#project-3{
-			background-image: url(../Afbeeldingen/home.jpg);
+			background-image: url(../Afbeeldingen/Noothulp/home.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: 0% 50%;
@@ -550,7 +551,7 @@ section{
 				grid-row:1/2;
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
-				color: #38F8D4;
+				color: white;
 				text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 				font-size: 30px;
 				padding:0% 3%;
@@ -624,14 +625,14 @@ section{
 
 
 				.doelgroep-image-1{
-					background-image: url('../Afbeeldingen/actiespellen.jpg');
+					background-image: url('../Afbeeldingen/Gaming/actiespellen.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
 				}
 
 				.doelgroep-image-2{
-					background-image: url('../Afbeeldingen/leeftijd.jpg');
+					background-image: url('../Afbeeldingen/Gaming/leeftijd.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
@@ -639,7 +640,7 @@ section{
 				}
 
 				.doelgroep-image-3{
-					background-image: url('../Afbeeldingen/console.jpg');
+					background-image: url('../Afbeeldingen/Gaming/console.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
@@ -647,14 +648,14 @@ section{
 				}
 
 				.ben-doelgroep-image-1{
-					background-image: url('../Afbeeldingen/verlengen.jpg');
+					background-image: url('../Afbeeldingen/Ben/verlengen.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
 				}
 
 				.ben-doelgroep-image-2{
-					background-image: url('../Afbeeldingen/keuze.jpg');
+					background-image: url('../Afbeeldingen/Ben/keuze.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
@@ -662,7 +663,7 @@ section{
 				}
 
 				.ben-doelgroep-image-3{
-					background-image: url('../Afbeeldingen/kosten.jpg');
+					background-image: url('../Afbeeldingen/Ben/kosten.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
@@ -670,14 +671,14 @@ section{
 				}
 
 				.noothulp-doelgroep-image-1{
-					background-image: url('../Afbeeldingen/les.jpg');
+					background-image: url('../Afbeeldingen/Noothulp/les.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
 				}
 
 				.noothulp-doelgroep-image-2{
-					background-image: url('../Afbeeldingen/thuis.jpg');
+					background-image: url('../Afbeeldingen/Noothulp/thuis.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
@@ -685,7 +686,7 @@ section{
 				}
 
 				.noothulp-doelgroep-image-3{
-					background-image: url('../Afbeeldingen/youtube.jpg');
+					background-image: url('../Afbeeldingen/Noothulp/youtube.jpg');
 					background-size: cover;
 					background-repeat: no-repeat;
 					animation: grow 1s ease-in backwards;
@@ -743,14 +744,14 @@ section{
 					}
 
 					.pop-afbeelding-1{
-						background-image: url('../Afbeeldingen/crew.png');
+						background-image: url('../Afbeeldingen/Gaming/crew.png');
 						z-index: 1;
 						left:0px;
 						top:0px;
 					}
 
 					.pop-afbeelding-2{
-						background-image: url('../Afbeeldingen/cod.png');
+						background-image: url('../Afbeeldingen/Gaming/cod.png');
 						z-index: 2;
 						left: 20px;
 						top:20px;
@@ -758,7 +759,7 @@ section{
 					}
 
 					.pop-afbeelding-3{
-						background-image: url('../Afbeeldingen/aco.png');
+						background-image: url('../Afbeeldingen/Gaming/aco.png');
 						z-index: 3;
 						left:40px;
 						top:40px;
@@ -823,7 +824,7 @@ section{
 
 					.lijst-afbeelding{
 						grid-column: 2/3;
-						background-image: url('../Afbeeldingen/lijst.jpg');
+						background-image: url('../Afbeeldingen/Gaming/lijst.jpg');
 						/*height:300px;*/
 						/*width: 350px;*/
 						background-size: 120%;
@@ -865,7 +866,7 @@ section{
 
 					.volg-afbeelding{
 						grid-column: 1/2;
-						background-image: url('../Afbeeldingen/detail.png');
+						background-image: url('../Afbeeldingen/Gaming/detail.png');
 						height:300px;
 						width: 300px;
 						background-size: 200%;
@@ -890,7 +891,7 @@ section{
 
 					.nieuws-afbeelding{
 						grid-column: 3/4;
-						background-image: url('../Afbeeldingen/nieuws.png');
+						background-image: url('../Afbeeldingen/Gaming/nieuws.png');
 						height:300px;
 						/*width: 400px;*/
 						background-size: contain;
@@ -987,32 +988,13 @@ section{
 				grid-column: 1/3;
 			}
 
-				.co-extra-img div{
-					width: 250px;
-					height: 150px;
-					background-size: 100%;
-
-				}
-
-				.co-extra-img-1{
-					background-image:  url('../Afbeeldingen/conceptmapping.jpg');
-				}
-
-				.co-extra-img-2{
-					background-image:  url('../Afbeeldingen/brainstorm.jpg');
-				}
-
-				.co-extra-img-3{
-					background-image:  url('../Afbeeldingen/concepten.jpg');
-				}
-
 
 			.prototypes{
 				grid-column: 2/4;
 				margin-top: 10%;
 				width: 100%;
 				display: grid;
-				grid-template-columns: 40% 60%;
+				grid-template-columns: 50% 50%;
 			}
 
 			#prototypes{
@@ -1040,33 +1022,33 @@ section{
 				}
 
 			.prototype-afbeelding-1{
-				background-image:  url('../Afbeeldingen/beginscherm.png');
-				height:200px;
-				width: 350px;
+				background-image:  url('../Afbeeldingen/Ben/beginscherm.png');
+				height:250px;
+				width: 500px;
 				background-size: 100%;
 				background-repeat: no-repeat;
 			}
 
 			.prototype-afbeelding-2{
-				background-image:  url('../Afbeeldingen/bundel.png');
+				background-image:  url('../Afbeeldingen/Ben/bundel.png');
 				height:200px;
-				width: 350px;
+				width: 400px;
 				background-size: 100%;
 				background-repeat: no-repeat;
 			}
 
 			.prototype-afbeelding-3{
-				background-image:  url('../Afbeeldingen/toestel.png');
+				background-image:  url('../Afbeeldingen/Ben/toestel.png');
 				height:200px;
-				width: 350px;
+				width: 400px;
 				background-size: 100%;
 				background-repeat: no-repeat;
 			}
 
 			.mascotte-afbeelding{
-				background-image:  url('../Afbeeldingen/mascotte.png');
-				height:400px;
-				width: 350px;
+				background-image:  url('../Afbeeldingen/Ben/mascotte.png');
+				height:600px;
+				width: 500px;
 				background-size: 100%;
 				background-repeat: no-repeat;
 			}
@@ -1121,7 +1103,7 @@ section{
 		grid-template-columns: 50% 50%;
 		width: 100%;
 		grid-column: 1/4;
-		height:400px;
+		height:500px;
 	}
 
 		.gaming-case,.ben-case,.noothulp-case{
@@ -1187,7 +1169,7 @@ section{
 			width: 30%;
 		}
 
-		.gaming-case-background,.ben-case-background,.noothulp-case-background{
+		#gaming-case-background,#ben-case-background,#noothulp-case-background{
 			position: relative;
 			z-index: 1;
 			background-size: cover;
@@ -1199,20 +1181,20 @@ section{
 			transition: background-size 0.1s ease-in;
 		} 
 
-		.gaming-case-background:hover,.ben-case-background:hover,.noothulp-case-background:hover{
+		#gaming-case-background:hover,#ben-case-background:hover,#noothulp-case-background:hover{
 			filter: blur(1px);
 			background-size: 115%;
 		}
 
-		.gaming-case-background{
+		#gaming-case-background{
 			background-image:  url('../Afbeeldingen/ExtraCase/gaming.jpg');
 		}
 
-		.ben-case-background{
+		#ben-case-background{
 			background-image:  url('../Afbeeldingen/ExtraCase/ben.jpg');
 		}
 
-		.noothulp-case-background{
+		#noothulp-case-background{
 			background-image:  url('../Afbeeldingen/ExtraCase/noothulp.jpg');
 		}
 
