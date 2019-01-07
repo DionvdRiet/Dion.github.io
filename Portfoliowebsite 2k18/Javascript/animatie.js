@@ -7,6 +7,11 @@
     };
 
 
+function up(){
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop >0) {
+        document.getElementById("up").style.animation = "up 1s ease-in-out forwards";
+    }
+}
 
 
 function indicator1() {
