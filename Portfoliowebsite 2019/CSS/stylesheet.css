@@ -115,6 +115,11 @@ section{
 				background-color: #131A2B;
 			}
 
+			#indicator-1:hover,#indicator-2:hover,#indicator-3:hover{
+				width: 50px;
+				background-color: #38F8D4;
+			}
+
 
 		.titel-lijn{
 			grid-column: 2/3;

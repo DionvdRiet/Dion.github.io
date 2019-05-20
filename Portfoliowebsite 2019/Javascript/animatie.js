@@ -7,6 +7,8 @@
     };
 
 
+
+
 function up(){
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop >0) {
         document.getElementById("up").style.animation = "up 1s ease-in-out forwards";
@@ -45,6 +47,26 @@ function indicator3() {
         document.getElementById("indicator-3").style.backgroundColor = "#38F8D4";
         document.getElementById("indicator-3").style.width = "50px";
     } 
+}
+
+function indicatorOneOn(){
+   document.getElementById("indicator-1").style.backgroundColor = "#38F8D4";
+   document.getElementById("indicator-1").style.width = "50px";
+}
+
+function indicatorTwoOn(){
+   document.getElementById("indicator-2").style.backgroundColor = "#38F8D4";
+   document.getElementById("indicator-2").style.width = "50px";
+}
+
+function indicatorTwoOff(){
+   document.getElementById("indicator-2").style.backgroundColor = "inherit";
+   document.getElementById("indicator-2").style.width = "initial";
+}
+
+function indicatorThreeOn(){
+   document.getElementById("indicator-3").style.backgroundColor = "#38F8D4";
+   document.getElementById("indicator-3").style.width = "50px";
 }
 
 function overlay(){
