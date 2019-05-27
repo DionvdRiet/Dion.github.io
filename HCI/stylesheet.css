@@ -1,29 +1,29 @@
 /*Achtergrond:#FCFCFC*/
-/*Secundair:#242428/*
-<<<<<<< HEAD
-/*Accent:#ff001d*/
-=======
-/*Accent:#56e39f*/
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
+/*Secundair:white/*
+/*Accent:#E71A5D*/
 
 body,html{
 /*	height: 100%;
-	widows: 100%;*/
+	width: 100%;*/
+	width: 100%;
 	margin: 0;
-	background-color: #FCFCFC;
+	background:linear-gradient(to bottom, rgba(255, 247, 247, 0,9), rgba(252, 252, 252, 1));
+}
+
+*::selection{
+	background-color: #E71A5D;
+	color: white;
 }
 
 h1{
 	font-family: 'Heebo Bold', sans-serif;
 	font-size: 500%;
-	color: #242428;
+	color: white;
+	border-left: 2px solid #E71A5D;
+	text-shadow: -3px 0px 6px rgba(0,0,0,0.2);
 }
 
-<<<<<<< HEAD
 ul{
-=======
-.navigation ul{
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
 	font-family: 'Heebo Medium', sans-serif;
 	font-size: 120%;
 	list-style:none;
@@ -31,12 +31,7 @@ ul{
 	padding-left: 1%;
 }
 
-<<<<<<< HEAD
 li{
-=======
-
-.navigation li{
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
 	padding: 1%;
 	margin-bottom: 5%;
 	width: 100%;
@@ -45,51 +40,35 @@ li{
 	transition: width 0.3s ease-in-out, color 0.3s ease-out;
 }
 
-<<<<<<< HEAD
+.contact-list{
+	color: black;
+}
+
 li:hover{
 	color: #FCFCFC;
-	background-color: #ff001d;
-=======
-
-.navigation li:hover{
-	color: #FCFCFC;
-	background-color: #56e39f;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
+	background-color: #E71A5D;
 	width: 120%;
 
 }
 
-
 .highlight{
 	color: #FCFCFC;
-<<<<<<< HEAD
-	background-color: #ff001d;
-=======
-	background-color: #56e39f;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
+	background-color: #E71A5D;
 	transition: color 0.3s ease-out;
 }
 
 .highlight:hover{
-<<<<<<< HEAD
-	color: #ff001d;
-=======
-	color: #56e39f;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
-	background-color: #FCFCFC;
+	color: #E71A5D;
+	background:none;
 }
 
 section{
-	height: 100vh;
+	height: 100%;
 }
 
 	.lijn{
 		display: flex;
-<<<<<<< HEAD
-		background-color: #ff001d;
-=======
-		background-color: #56e39f;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
+		background-color: #E71A5D;
 		width: 100%;
 		height: 1px;
 		grid-row:3;
@@ -97,23 +76,29 @@ section{
 	}
 
 a{
-	color:black;
+	color:white;
 	text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
-.koe-link{
-	color: rgba(0,0,0,0.5);
-	font-family: 'Heebo Black', sans-serif;
-}
-
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
 .container{
 	display: grid;
-	grid-template-rows: 1fr 3fr 0.1fr;
-	grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+	grid-template-rows: 0.5fr 3fr 0.1fr;
+	grid-template-columns: 1.5fr 2fr 2fr 2fr 2fr 1fr;
 }
+
+	#welcome{
+		background-image: url(Afbeeldingen/welcome.png);
+		background-size: cover;
+		background-position: 0% 100%;
+	}
+
+	#over-mij{
+		background-color: #292348;
+	}
+
+	#case-studies{
+		background-color: #292348;
+	}
 
 	.navigation{
 		display: flex;
@@ -132,38 +117,95 @@ a{
 		grid-column: 2/4;
 	}
 
-
 	.content{
 		grid-row:2;
-		grid-column: 2/5;
+		grid-column: 2/6;
 		font-family: 'Heebo Regular', sans-serif;
 		font-size: 150%;
 		position: relative;
 		animation:myMove 1s 1;
 	}
 
-<<<<<<< HEAD
+		.button-welcome{
+			font-family: 'Heebo ExtraBold', sans-serif;
+			font-size: 70%;
+			color: white;
+			background-color: transparent;
+			border: 2px solid #E71A5D;
+			padding: 1%;
+			transition: background-color 0.3s ease-in-out;
+			transform-origin: left;
+		}
+
+		.button-welcome:hover{
+			background-color: #E71A5D;
+		}
+
+	.beschrijving{
+		font-family: 'Heebo Light', sans-serif;
+		font-size: 90%;
+		text-align: justify;
+		color: white;
+	}
+
 	.content > .slogan{
 		vertical-align: middle;
-=======
-	.content-intro{
-		grid-row:2;
-		grid-column: 2/4;
-		font-family: 'Heebo Regular', sans-serif;
-		font-size: 150%;
-		position: relative;
-		animation:myMove 1s 1;
 	}
 
-	.foto{
-		grid-column: 4/5;
-		background-image: url(Afbeeldingen/header.jpg);
-		background-size: contain;
-		background-repeat: no-repeat;
-		/*background-position: right;*/
+	@keyframes myMove{
+		from{top:200px;}
+		to {top:0px;}
 	}
 
-		.content-topics{
+	@keyframes fade{
+		from{opacity:20%;}
+		to {top:100%;}
+	}
+
+		
+		p span{
+			font-family: 'Heebo Medium', sans-serif;
+			padding: 0.3%;
+			line-height: 35px;
+			background:linear-gradient(to right, rgba(231, 26, 93, 0.2), rgba(235, 47, 109,0.2));
+			color: #FCFCFC;
+			width: 140%;
+			animation: up 1s 1 ease-in-out;
+			animation: highlight 0.2s ease-in;
+			animation-fill-mode: forwards;
+			animation-direction: alternate;
+		}
+
+			@keyframes highlight{
+					0%{background:linear-gradient(to right, rgba(231, 26, 93, 0.2), rgba(235, 47, 109,0.2));
+				}
+					100%{background:linear-gradient(to right, rgba(231, 26, 93, 1), rgba(235, 47, 109,1));
+			}			
+		}
+
+		#twee{
+			animation-delay: 0.4s;
+		}
+
+		#drie{
+			animation-delay: 0.6s;
+		}
+
+		#vier{
+			animation-delay: 1s;
+		}
+
+		#vijf{
+			animation-delay: 1.4s;
+		}
+
+
+		@keyframes up{
+			from{left: -100px}
+			to{left: 0px;}
+		}
+
+.content-topics{
 			display: grid;
 			grid-column: 2/5;
 			height: 80%;
@@ -235,273 +277,290 @@ a{
 					grid-column: 10/11;
 				}
 
-	.content > .slogan{
-		vertical-align: middle;
-		grid-column: 2/3;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
-	}
-
-	@keyframes myMove{
-		from{top:200px;}
-		to {top:0px;}
-	}
-
-	@keyframes fade{
-		from{opacity:20%;}
-		to {top:100%;}
-	}
-
-		/*span{
-			padding: none;
-			transition: padding 0.1s ease-in;
-		}*/
-<<<<<<< HEAD
-		span{
-			padding: 0.4%;
-			color: #FCFCFC;
-			background-color: #ff001d;
-=======
-		li span{
-			padding: 0.4%;
-			color: #FCFCFC;
-			background-color: #56e39f;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
-			width: 140%;
-			animation: up 1s 1 ease-in-out, fade 0.2s 1 ease-in-out;
-		}
-
-		@keyframes up{
-			from{left: -100px}
-			to{left: 0px;}
-		}
 
 .p-container{
+	display: grid;
+	grid-row: 2/4;
+	grid-template-rows: 300px 10px 300px -1px 300px;
+}
+
+	.slogan{
+		color: white;
+		font-size: 80%;
+	}
+
+	.project1,.project2,.project3{
+		display: grid;
+		grid-template-columns: 2.5fr 1fr;
+	}
+
+	.project1-img,.project2-img,.project3-img{
+		background-position: top;
+		background-size: cover;
+		grid-column: 1/2;
+	}
+
+	.project2-info,.project3-info{
+		display: grid;
+		grid-template-rows: 0.5fr 1.5fr 0.3fr;
+		background-size: cover;
+		grid-column: 2/3;
+		background-color: white;
+	}
+
+	.project1-info{
+		display: grid;
+		grid-template-rows: 0.5fr 1.5fr 0.45fr;
+		background-size: cover;
+		grid-column: 2/3;
+		background-color: white;
+	}
+
+
+	.project1{	
+		grid-row: 1/2;
+		z-index: 1;
+	}
+
+		#car{
+			background-image: url(Afbeeldingen/car.png);
+			background-size: 100%;
+			width: 250px;
+			height: 100px;
+			z-index: 2;
+			grid-row: 1/2;
+			opacity: 0;
+		}
+
+		.project1-img{
+			background:url(Afbeeldingen/gamingapplication.jpg);
+			background-size: 100%;
+		}
+
+		.project1-info{
+			/*background:linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),url(Afbeeldingen/gamingapplication-zw.jpg);*/
+		}
+
+			#info h2{
+				font-family: 'Heebo ExtraBold', sans-serif;
+				color: #E71A5D;
+				font-size: 110%;
+				padding: 3% 6%;
+				text-align: left;
+				grid-row: 1/2;
+			}
+
+			#info h4{
+				font-family: 'Heebo Light', sans-serif;
+				color: #292348;
+				font-size: 60%;
+				margin-top: -5%;
+				padding: 3% 6%;
+				grid-row: 2/3;
+			}
+
+				#info h4 span{
+					color: #E71A5D;
+				}
+
+			.button-project{
+				grid-row: 3/4;
+				font-family: 'Heebo ExtraBold', sans-serif;
+				font-size: 60%;
+				color: #292348;
+				background-color: transparent;
+				border: 2px solid #E71A5D;
+				margin-left: 6%;
+				margin-bottom: 3%;
+				width: 55%;
+			}
+
+			.button-project:hover{
+				color: white;
+				background-color: #292348;
+			}
+
+	.project2{
+		grid-row: 3/4;
+	}
+
+		.project2-img{
+			background:url(Afbeeldingen/time-app.jpg);
+			background-size: cover;
+		}
+
+		.project2-info{
+			grid-column: 2/3;
+			background-color: white;
+		}
+
+	.project3{
+		grid-row: 5/6;
+	}
+
+		.project3-img{
+			background:url(Afbeeldingen/material.jpg);
+			background-size: 100%;
+			background-position: 0% 20%;
+		}
+
+		.project3-info{
+			grid-column: 2/3;
+			background-color: white;
+		}
+
+.button{
+	background-color: red;
+}
+
+.contact{
 	display: flex;
+	justify-content: center;
+	text-align: center;
 	height: 100%;
 	width: 100%;
 }
 
-	.slogan{
-		color: #545454;
-		font-size: 80%;
+	.contact-informatie{
+		grid-column: 4/9;
+		grid-row:3/4;
 	}
 
-	.p-container > div{
-		background-color: #242424;
-		height: 35%;
-		width: 100%;
-		margin-right: 2%;
-<<<<<<< HEAD
-		border: 2px solid #ff001d;
-=======
-		border: 2px solid #56e39f;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
-		box-shadow: none;
-		transition: box-shadow 0.2s ease-in;
+	.contact-h1{
+		color: black;
+		text-shadow: none;
 	}
 
-	.p-container > div:hover{
-<<<<<<< HEAD
-		box-shadow: 5px 5px 0px #ff001d;
+	.contact h4{
+		color: #292348;
 	}
 
-	.project1{
-		background:url(Afbeeldingen/project-1.png);
-		background-position: top;
-=======
-		box-shadow: 5px 5px 0px #56e39f;
+.contact > div{
+	background-color: none;
+	height: 90%;
+	width: 40%;
+
+}
+	.formulier{
+		display: flex;
+		justify-content: center;
+		color: white;
+		border: 2px solid white;
+		box-shadow: 3px 3px 5px rgba(188,188,188,0.4);
 	}
 
-	.project1{
-		background:url(Afbeeldingen/processing.jpg);
-		background-position: center;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
-		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
-	}
-
-	.project1:hover{
-<<<<<<< HEAD
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-1.png);
-		background-position: top;
-=======
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/processing.jpg);
-		background-position: center;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
-		background-size: 110%;
-	}
-
-	.project2{
-<<<<<<< HEAD
-		background:url(Afbeeldingen/project-2.png);
-		background-position: top;
-=======
-		background:url(Afbeeldingen/unity.jpg);
-		background-position: center;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
-		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
-	}
-
-	.project2:hover{
-<<<<<<< HEAD
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(79, 16, 206, 1)), url(Afbeeldingen/project-2.mp4);
-		background-position: top;
-=======
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/unity.jpg);
-		background-position: center;
-		background-size: 110%;
-	}
-
-	.project3{
-		background:url(Afbeeldingen/arduino.jpg);
-		background-position: center;
-		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
-	}
-
-	.project3:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/arduino.jpg);
-		background-position: center;
-		background-size: 110%;
-	}
-
-	.proces{
-		background:url(Afbeeldingen/proces.jpg);
-		background-position: center;
-		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
-	}
-
-	.proces:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/proces.jpg);
-		background-position: center;
-		background-size: 110%;
-	}
-
-	.product{
-		background:url(Afbeeldingen/product.jpg);
-		background-position: center;
-		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
-	}
-
-	.product:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/product.jpg);
-		background-position: center;
-		background-size: 110%;
-	}
-
-	.reflect{
-		background:url(Afbeeldingen/reflectie.jpg);
-		background-position: center;
-		background-size: 100%;
-		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
-	}
-
-	.reflect:hover{
-		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/reflectie.jpg);
-		background-position: center;
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
-		background-size: 110%;
-	}
-
-	h2{
-		color: #242424;
-		font-size: 70%;
-		padding: 1%;
-		margin-top: 60%;
-		text-align: center;
-	}
-
-<<<<<<< HEAD
-=======
-	.content-proces{
-		grid-row:2;
-		grid-column: 2/5;
+	.alternatief{
 		display: grid;
-		grid-template-columns: 20% 60% 20%;
+		grid-template-columns: 1fr 5fr;
+		grid-template-rows: 3fr 1fr 1fr 1fr 3fr;
+
 	}
 
-	.content-proces h1{
-		font-size: 200%;
-	}
+		.telefoon{
+			display: grid;
+			grid-template-columns: 1fr 5fr;
+			grid-row: 2/3;
+			grid-column: 2;
+			box-shadow: 3px 3px 5px rgba(188,188,188,0.4);
+			font-size: 90%;
+		}
 
-	.content-proces *{
-		grid-column: 2/3;
-	}
-
-	.content-processing{
-		grid-row:2;
-		grid-column: 2/5;
-		display: grid;
-		grid-template-columns: 20% 60% 20%;
-	}
-
-	.content-processing h1{
-		font-size: 200%;
-	}
-
-	.content-processing ul{
-				font-family: 'Heebo Regular', sans-serif;
-	}
-
-	.content-processing *{
-		grid-column: 2/3;
-	}
-
-	.content-processing img{
-		width: 100%;
-	}
-
-	p{
-		/*margin-top:-25%;*/
-		line-height: 40px;
-		font-family: 'Heebo Regular', sans-serif;
-	}
-
-	img{
-		width: 70%;
-		grid-column:2/3;
-	}
-
-	iframe{
-		grid-column: 3/3;
-	}
-
-	.details{
-		font-family: 'Heebo Regular', sans-serif;
-	}
-
-	code{
-				line-height: 4px;
-				
+			.tel-icon{
+				background-color: #E71A5D;
+				background-image: url(Afbeeldingen/phone.svg);
+				background-size: 50%;
+				background-position: center;
+				background-repeat: no-repeat;
 			}
 
-				.comment{
-					color: #d36582;
-				}
+		.email{
+			display: grid;
+			grid-template-columns: 1fr 5fr;
+			grid-row: 4/5;
+			grid-column: 2;
+			box-shadow: 3px 3px 5px rgba(188,188,188,0.4);
+			font-size: 90%;
+		}
 
-			pre{
-				white-space: normal;
-				padding: 5%;
-				margin-top: 3%;
-				background-color: #f7f0f0;
+			.mail-icon{
+				background-color: #E71A5D;
+				background-image: url(Afbeeldingen/mail.svg);
+				background-size: 50%;
+				background-position: center;
+				background-repeat: no-repeat;
 			}
 
-			.product-paragraaf{
-				grid-column: 3/4;
-				text-align: justify;
-				padding-bottom: 15%;
-			}
+	input[type=text], input[type=email]{
+		font-family: 'Heebo light', sans-serif;
+		border: none;
+		box-shadow: 0px 2px #292348;
+		color: #292842;
+		width: 80%;
+		height: 10%;
+		margin-bottom: 5%;
+		font-size: 0.8em;
+	}
 
-			.reflectie-paragraaf{
-				grid-column: 2/5;
-				text-align: justify;
-				padding-bottom: 15%;
-			}
+		input[type=text]:hover, input[type=email]:hover{
+			box-shadow: 0px 2px #E71A5D;
+		}
 
-			.product-img{
-				grid-column: 2/6;
-			}
->>>>>>> bb73c013ae0da1cd0e5a48c01ac697fbba11d04b
+		input[type=text]:focus, input[type=email]:focus{
+			font-family: 'Heebo Regular', sans-serif;
+			box-shadow: 0px 2px #E71A5D;
+			color: #E71A5D;
+			background: white;
+			outline:none;
+		}
+
+	/*	input[type=text]:valid, input[type=email]:focus{
+			box-shadow: 0px 2px #E71A5D;
+			color: #E71A5D;
+			background: white;
+			outline:none;
+		}
+*/
+	textarea{
+		font-family: 'Heebo light', sans-serif;
+		border: none;
+		box-shadow: 0px 2px #292348;
+		width: 80%;
+		height: 15%;
+		margin-bottom: 5%;
+		font-size: 0.8em;
+	}
+
+		textarea:hover{
+			box-shadow: 0px 2px #E71A5D;
+		}
+
+		textarea:focus{
+			font-family: 'Heebo Regular', sans-serif;
+			box-shadow: 0px 2px #E71A5D;
+			color: #E71A5D;
+			background: white;
+			outline:none;
+		}
+/*
+		textarea:valid{
+			box-shadow: 0px 2px #E71A5D;
+			color: #E71A5D;
+			background: white;
+			outline:none;
+		}*/
+
+	input[type=submit]{
+		font-family: 'Heebo Medium', sans-serif;
+		font-size: 90%;
+		border: none;
+		color: #fcfcfc;
+		background-color: #E71A5D;
+		width: 80%;
+		height: 10%;
+		margin-bottom: 5%;
+	}
+
+		input[type=submit]:hover{
+			background-color: #292348;
+			border: 2px solid #E71A5D;
+		}

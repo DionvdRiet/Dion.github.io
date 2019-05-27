@@ -1,0 +1,431 @@
+/*Achtergrond:#FCFCFC*/
+/*Secundair:#242428/*
+/*Accent:#56e39f*/
+
+body,html{
+/*	height: 100%;
+	widows: 100%;*/
+	margin: 0;
+	background-color: #FCFCFC;
+}
+
+h1{
+	font-family: 'Heebo Bold', sans-serif;
+	font-size: 500%;
+	color: #242428;
+}
+
+.navigation ul{
+	font-family: 'Heebo Medium', sans-serif;
+	font-size: 120%;
+	list-style:none;
+	display: block;
+	padding-left: 1%;
+}
+
+
+.navigation li{
+	padding: 1%;
+	margin-bottom: 5%;
+	width: 100%;
+	color: none;
+	background-color: none;
+	transition: width 0.3s ease-in-out, color 0.3s ease-out;
+}
+
+
+.navigation li:hover{
+	color: #FCFCFC;
+	background-color: #56e39f;
+	width: 120%;
+
+}
+
+
+.highlight{
+	color: #FCFCFC;
+	background-color: #56e39f;
+	transition: color 0.3s ease-out;
+}
+
+.highlight:hover{
+	color: #56e39f;
+	background-color: #FCFCFC;
+}
+
+section{
+	height: 100vh;
+}
+
+	.lijn{
+		display: flex;
+		background-color: #56e39f;
+		width: 100%;
+		height: 1px;
+		grid-row:3;
+		grid-column: 2/5;
+	}
+
+a{
+	color:black;
+	text-decoration: none;
+}
+
+.koe-link{
+	color: rgba(0,0,0,0.5);
+	font-family: 'Heebo Black', sans-serif;
+}
+
+.container{
+	display: grid;
+	grid-template-rows: 1fr 3fr 0.1fr;
+	grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+	.navigation{
+		display: flex;
+		grid-column: 1/2;
+		position: relative;
+		animation: slideIn 1s 1 ease-in-out;
+	}
+
+	@keyframes slideIn{
+		from{left:-200px;}
+		to{left:0px;}
+	}
+
+	.titel{
+		grid-row:1;
+		grid-column: 2/4;
+	}
+
+
+	.content{
+		grid-row:2;
+		grid-column: 2/5;
+		font-family: 'Heebo Regular', sans-serif;
+		font-size: 150%;
+		position: relative;
+		animation:myMove 1s 1;
+	}
+
+	.content-intro{
+		grid-row:2;
+		grid-column: 2/4;
+		font-family: 'Heebo Regular', sans-serif;
+		font-size: 150%;
+		position: relative;
+		animation:myMove 1s 1;
+	}
+
+	.foto{
+		grid-column: 4/5;
+		background-image: url(Afbeeldingen/header.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		/*background-position: right;*/
+	}
+
+		.content-topics{
+			display: grid;
+			grid-column: 2/5;
+			height: 80%;
+			grid-template-columns: 0.3fr 5fr 0.3fr 5fr 0.3fr 5fr 0.3fr 5fr 0.3fr 5fr 0.3fr;
+		}
+
+		.content-topics h1{
+			/*grid-column: 2/3;*/
+			font-size: 100%;
+		}
+
+		.content-topics div{
+
+		}
+
+			.exertion{
+				background-image: url(Afbeeldingen/exertion.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				grid-column: 2/3;
+			}
+
+			.ar-vr{
+				background-image: url(Afbeeldingen/vr.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				grid-column: 4/5;
+			}
+
+			.wearables{
+				background-image: url(Afbeeldingen/smartwatch.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				grid-column: 6/7;
+			}
+
+			.artificial{
+				background-image: url(Afbeeldingen/artificial.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				grid-column: 8/9;
+			}
+
+			.excursie{
+				background-image: url(Afbeeldingen/excursie.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				grid-column: 10/11;
+			}
+
+
+				.exertion-titel{
+					grid-column: 2/3;
+				}
+
+				.ar-titel{
+					grid-column: 4/5;
+				}
+
+				.wearables-titel{
+					grid-column: 6/7;
+				}
+
+				.artificial-titel{
+					grid-column: 8/9;
+				}
+
+				.excursie-titel{
+					grid-column: 10/11;
+				}
+
+	.content > .slogan{
+		vertical-align: middle;
+		grid-column: 2/3;
+	}
+
+	@keyframes myMove{
+		from{top:200px;}
+		to {top:0px;}
+	}
+
+	@keyframes fade{
+		from{opacity:20%;}
+		to {top:100%;}
+	}
+
+		/*span{
+			padding: none;
+			transition: padding 0.1s ease-in;
+		}*/
+		li span{
+			padding: 0.4%;
+			color: #FCFCFC;
+			background-color: #56e39f;
+			width: 140%;
+			animation: up 1s 1 ease-in-out, fade 0.2s 1 ease-in-out;
+		}
+
+		@keyframes up{
+			from{left: -100px}
+			to{left: 0px;}
+		}
+
+.p-container{
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+	.slogan{
+		color: #545454;
+		font-size: 80%;
+	}
+
+	.p-container > div{
+		background-color: #242424;
+		height: 35%;
+		width: 100%;
+		margin-right: 2%;
+		border: 2px solid #56e39f;
+		box-shadow: none;
+		transition: box-shadow 0.2s ease-in;
+	}
+
+	.p-container > div:hover{
+		box-shadow: 5px 5px 0px #56e39f;
+	}
+
+	.project1{
+		background:url(Afbeeldingen/processing.jpg);
+		background-position: center;
+		background-size: 100%;
+		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+	}
+
+	.project1:hover{
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/processing.jpg);
+		background-position: center;
+		background-size: 110%;
+	}
+
+	.project2{
+		background:url(Afbeeldingen/vr.jpg);
+		background-position: center;
+		background-size: 100%;
+		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+	}
+
+	.project2:hover{
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/vr.jpg);
+		background-position: center;
+		background-size: 110%;
+	}
+
+	.project3{
+		background:url(Afbeeldingen/arduino.jpg);
+		background-position: center;
+		background-size: 100%;
+		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+	}
+
+	.project3:hover{
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/arduino.jpg);
+		background-position: center;
+		background-size: 110%;
+	}
+
+	.proces{
+		/*background:url(Afbeeldingen/proces.jpg);*/
+		background-position: center;
+		background-size: 100%;
+		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+	}
+
+	.proces:hover{
+		/*background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/proces.jpg);*/
+		background-position: center;
+		background-size: 110%;
+	}
+
+	.product{
+		/*background:url(Afbeeldingen/product.jpg);*/
+		background-position: center;
+		background-size: 100%;
+		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+	}
+
+	.product:hover{
+		/*background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/product.jpg);*/
+		background-position: center;
+		background-size: 110%;
+	}
+
+	.reflect{
+		/*background:url(Afbeeldingen/reflectie.jpg);*/
+		background-position: center;
+		background-size: 100%;
+		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
+	}
+
+	.reflect:hover{
+		/*background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/reflectie.jpg);*/
+		background-position: center;
+		background-size: 110%;
+	}
+
+	h2{
+		color: #242424;
+		font-size: 70%;
+		padding: 1%;
+		margin-top: 60%;
+		text-align: center;
+	}
+
+	.content-proces{
+		grid-row:2;
+		grid-column: 2/5;
+		display: grid;
+		grid-template-columns: 20% 60% 20%;
+	}
+
+	.content-proces h1{
+		font-size: 200%;
+	}
+
+	.content-proces *{
+		grid-column: 1/4;
+	}
+
+	.content-processing{
+		grid-row:2;
+		grid-column: 2/5;
+		display: grid;
+		grid-template-columns: 20% 60% 20%;
+	}
+
+	.content-processing h1{
+		font-size: 200%;
+	}
+
+	.content-processing ul{
+				font-family: 'Heebo Regular', sans-serif;
+	}
+
+	.content-processing *{
+		grid-column: 2/3;
+	}
+
+	.content-processing img{
+		width: 100%;
+	}
+
+	p{
+		/*margin-top:-25%;*/
+		line-height: 40px;
+		font-family: 'Heebo Regular', sans-serif;
+	}
+
+	img{
+		width: 70%;
+		grid-column:2/3;
+	}
+
+	iframe{
+		grid-column: 3/3;
+	}
+
+	.details{
+		font-family: 'Heebo Regular', sans-serif;
+	}
+
+	code{
+				line-height: 4px;
+				
+			}
+
+				.comment{
+					color: #d36582;
+				}
+
+			pre{
+				white-space: normal;
+				padding: 5%;
+				margin-top: 3%;
+				background-color: #f7f0f0;
+			}
+
+			.product-paragraaf{
+				grid-column: 3/4;
+				text-align: justify;
+				padding-bottom: 15%;
+			}
+
+			.reflectie-paragraaf{
+				grid-column: 2/5;
+				text-align: justify;
+				padding-bottom: 15%;
+			}
+
+			.product-img{
+				grid-column: 2/6;
+			}
