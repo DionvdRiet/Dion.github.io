@@ -410,6 +410,12 @@ a{
 		grid-column:2/3;
 	}
 
+	.resultaat{
+		width: 30%;
+		/*grid-column:1/2;*/
+	}
+
+
 	iframe{
 		grid-column: 3/3;
 	}
