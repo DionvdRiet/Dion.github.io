@@ -15,6 +15,19 @@ h1{
 	color: #242428;
 }
 
+h4{
+	font-family: 'Heebo Bold', sans-serif;
+	font-size: 150%;
+	color: #242428;
+}
+
+h3{
+	font-family: 'Heebo Medium', sans-serif;
+	font-size: 120%;
+	color: #242428;
+}
+
+
 .navigation ul{
 	font-family: 'Heebo Medium', sans-serif;
 	font-size: 120%;
@@ -69,6 +82,13 @@ section{
 a{
 	color:black;
 	text-decoration: none;
+}
+
+.content-proces a{
+	color:blue;
+	text-decoration: underline;
+	font-family: 'Heebo Regular', sans-serif;
+	font-size: 100%;
 }
 
 .koe-link{
@@ -381,7 +401,7 @@ a{
 
 	p{
 		/*margin-top:-25%;*/
-		line-height: 40px;
+		line-height: 30px;
 		font-family: 'Heebo Regular', sans-serif;
 	}
 
