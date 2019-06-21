@@ -140,7 +140,7 @@ a{
 
 	.foto{
 		grid-column: 4/5;
-		background-image: url(Afbeeldingen/header.jpg);
+		background-image: url(Afbeeldingen/foto.jpg);
 		background-size: contain;
 		background-repeat: no-repeat;
 		/*background-position: right;*/
@@ -340,15 +340,15 @@ a{
 		background-size: 110%;
 	}
 
-	.reflect{
-		/*background:url(Afbeeldingen/reflectie.jpg);*/
+	.reflectie{
+		background:url(Afbeeldingen/reflectie.jpg);
 		background-position: center;
 		background-size: 100%;
 		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
 	}
 
-	.reflect:hover{
-		/*background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/reflectie.jpg);*/
+	.reflectie:hover{
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/reflectie.jpg);
 		background-position: center;
 		background-size: 110%;
 	}
