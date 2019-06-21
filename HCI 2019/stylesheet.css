@@ -315,20 +315,20 @@ a{
 	}
 
 	.proces{
-		/*background:url(Afbeeldingen/proces.jpg);*/
+		background:url(Afbeeldingen/proces.jpg);
 		background-position: center;
 		background-size: 100%;
 		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
 	}
 
 	.proces:hover{
-		/*background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/proces.jpg);*/
+		background:linear-gradient(rgba(95, 19, 247, 0.1), rgba(86, 227, 159,0.3)), url(Afbeeldingen/proces.jpg);
 		background-position: center;
 		background-size: 110%;
 	}
 
 	.product{
-		/*background:url(Afbeeldingen/product.jpg);*/
+		background:url(Afbeeldingen/product.jpg);
 		background-position: center;
 		background-size: 100%;
 		transition: background 0.5s ease-in-out, background-size 0.3s ease-out; /*werkt niet*/
@@ -441,7 +441,7 @@ a{
 			}
 
 			.product-paragraaf{
-				grid-column: 3/4;
+				grid-column: 2/5;
 				text-align: justify;
 				padding-bottom: 15%;
 			}
