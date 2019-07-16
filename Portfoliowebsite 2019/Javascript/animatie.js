@@ -18,7 +18,7 @@ function up(){
 
 function indicator1() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        document.getElementById("indicator-1").style.backgroundColor = "#38F8D4";
+        document.getElementById("indicator-1").style.backgroundColor = "#E5F838";
         document.getElementById("indicator-1").style.width = "50px";
         document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-2").style.width = "25px";
@@ -31,7 +31,7 @@ function indicator2() {
     if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
         document.getElementById("indicator-1").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-1").style.width = "25px";
-        document.getElementById("indicator-2").style.backgroundColor = "#38F8D4";
+        document.getElementById("indicator-2").style.backgroundColor = "#E5F838";
         document.getElementById("indicator-2").style.width = "50px";
         document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-3").style.width = "25px";
@@ -44,18 +44,18 @@ function indicator3() {
         document.getElementById("indicator-1").style.width = "25px";
         document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-2").style.width = "25px";
-        document.getElementById("indicator-3").style.backgroundColor = "#38F8D4";
+        document.getElementById("indicator-3").style.backgroundColor = "#E5F838";
         document.getElementById("indicator-3").style.width = "50px";
     } 
 }
 
 function indicatorOneOn(){
-   document.getElementById("indicator-1").style.backgroundColor = "#38F8D4";
+   document.getElementById("indicator-1").style.backgroundColor = "#E5F838";
    document.getElementById("indicator-1").style.width = "50px";
 }
 
 function indicatorTwoOn(){
-   document.getElementById("indicator-2").style.backgroundColor = "#38F8D4";
+   document.getElementById("indicator-2").style.backgroundColor = "#E5F838";
    document.getElementById("indicator-2").style.width = "50px";
 }
 
@@ -65,7 +65,7 @@ function indicatorTwoOff(){
 }
 
 function indicatorThreeOn(){
-   document.getElementById("indicator-3").style.backgroundColor = "#38F8D4";
+   document.getElementById("indicator-3").style.backgroundColor = "#E5F838";
    document.getElementById("indicator-3").style.width = "50px";
 }
 
@@ -84,7 +84,7 @@ function overlay(){
 
 function lineChange(){
 	document.getElementById('projecten-lijn').style.textDecoration = "line-through";
-	document.getElementById('projecten-lijn').style.textDecorationColor = "#38F8D4";
+	document.getElementById('projecten-lijn').style.textDecorationColor = "#E5F838";
 }
 
 function lineNormal(){
@@ -95,6 +95,7 @@ function projectDicht(){
 	document.getElementById('project-1').style.height = "0%";
 	// document.getElementById('project-1').style.gridRow = "2/4";
 	document.getElementById('button').style.backgroundSize = "100% 100%";
+    // document.getElementById('button').style.background = "background:linear-gradient(to right,rgba(229, 248, 56,1) 0%,rgba(229,248,56,1) 100%)";
 	document.getElementById('button').style.color = "white";
 	document.getElementById('sectie-1').style.opacity = "0";
 

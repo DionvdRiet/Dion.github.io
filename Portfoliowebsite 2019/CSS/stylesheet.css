@@ -2,7 +2,8 @@ body,html{
 	margin:0;
 	padding: 0;
 	height: 100%;
-	width: 100%;
+/*	overflow-y: scroll;
+	overflow-x: hidden;*/
 }
 
 	.case-background{
@@ -11,13 +12,13 @@ body,html{
 
 section{
 	display: grid;
-	height: 100vh;
+	/*height: 100vh;*/
 }
 
 	header{
 		z-index: 10;
 		position: fixed;
-		width: 100%;
+		width: 100vw;
 		/*height: 10%;*/
 		display: flex;
 		justify-content: center;
@@ -29,7 +30,8 @@ section{
 		header ul{
 			/*display: flex;
 			justify-content: center;*/
-			align-self: center;
+			/*align-self: center;*/
+
 		}
 
 		header li{
@@ -43,7 +45,7 @@ section{
 
 			.inactive{
 				text-decoration: line-through;
-				text-decoration-color: #38F8D4;	
+				text-decoration-color: #E5F838;	
 			}
 
 			.inactive:hover{
@@ -104,7 +106,7 @@ section{
 				transition: background-color 0.3s ease-in-out;
 				height: 5px;
 				width: 50px;
-				background-color: #38F8D4;
+				background-color: #E5F838;
 			}
 
 			#indicator-2,#indicator-3{
@@ -115,17 +117,21 @@ section{
 				background-color: #131A2B;
 			}
 
-			#indicator-1:hover,#indicator-2:hover,#indicator-3:hover{
-				width: 50px;
-				background-color: #38F8D4;
+			#indicator-1,#indicator-2,#indicator-3{
+				/*border:1px solid #131A2B;*/
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 			}
 
+			#indicator-1:hover,#indicator-2:hover,#indicator-3:hover{
+				width: 50px;
+				background-color: #E5F838;
+			}
 
 		.titel-lijn{
 			grid-column: 2/3;
 			z-index: 1;
 			position: absolute;
-			background-color: #38F8D4;
+			background-color: #E5F838;
 			width: 100px;
 			height: 15px;
 			margin-top: 12.5%;
@@ -160,7 +166,7 @@ section{
 		}
 
 		#project-1{
-			background-image: url(../Afbeeldingen/Gaming/index.jpg);
+			background-image: url(../Afbeeldingen/Gaming/index-nieuw.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
@@ -190,7 +196,7 @@ section{
 		  content: "";
 		  position: absolute;
 		  height: 20px;
-		  background-color: #38F8D4;
+		  background-color: #E5F838;
 		  top: 10px;
 		  width: 0%;
 		  transition: width 0.5s ease-in-out;
@@ -210,7 +216,7 @@ section{
 		  margin-right: 15px;
 		}
 
-		input[type="button"]{
+		.content input[type="button"]{
 			grid-column: 6/8;
 			grid-row:4/4;
 			background-color: white;
@@ -243,8 +249,8 @@ section{
 			background:
 			   linear-gradient(
 			     to right, 
-			     rgba(67,233,123,1) 0%,
-			     rgba(56,249,215,1) 100%
+			     rgba(229, 248, 56,1) 0%,
+			     rgba(229,248,56,1) 100%
 			   )
 			   left 
 			   bottom
@@ -308,7 +314,7 @@ section{
 			}
 
 			.highlight{
-				/*background-color: #38F8D4;*/
+				/*background-color: #E5F838;*/
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
 				color:white;
@@ -347,7 +353,7 @@ section{
 			}
 
 			.blue{
-				color:#38F8D4;
+				color:#E5F838;
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
 			}
@@ -375,7 +381,7 @@ section{
 			transition-delay: 1s;
 		}
 
-		#sectie-2 .content{
+		#sectie-2 .content, #button2{
 			background-color: #F6F6F6;
 		}
 
@@ -455,10 +461,10 @@ section{
 
 		.case-content{
 			display: grid;
-			grid-template-rows: 5vh 300px auto;
+			/*grid-template-rows: 5vh 300px auto;*/
 			background-color: #131A2B;
 			width: 100%;
-			grid-column: 2/3;
+			grid-column: 1/3;
 			animation: caseSlide 2s ease-in forwards;
 			/*height: 120vh;*/
 		}
@@ -466,21 +472,46 @@ section{
 		#case-content{
 		}
 
+		.case-header{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+
+			#gaming-header{
+				background:linear-gradient(rgba(19, 26, 43, 0.80),rgba(19, 26, 43, 1.0)), url('../Afbeeldingen/Gaming/index-nieuw.jpg');
+				background-size:100%;
+				background-position: top;
+			}
+
+			#ben-header{
+				background:linear-gradient(rgba(19, 26, 43, 0.80),rgba(19, 26, 43, 1.0)), url('../Afbeeldingen/ben/ben.png');
+				background-size:100%;
+				background-position: top;
+			}
+
+			#noothulp-header{
+				background:linear-gradient(rgba(19, 26, 43, 0.80),rgba(19, 26, 43, 1.0)), url('../Afbeeldingen/Noothulp/home.jpg');
+				background-size:100%;
+				background-position: top;
+			}
+
 			.case-titel{
-				margin-top: 5%;
-				display: flex;
-				justify-content: center;
+				/*background-color: red;*/
+				position: relative;
+				margin-top: 10%;
 				/*display: block;*/
-				grid-row:2/2;
 			}
 
 				.case-titel h1{
-					position: absolute;
+					position: relative;
 					font-family: vista-sans-narrow, sans-serif;
 					font-style: normal;
 					font-weight: 500;
-					font-size: 70px;
-					color: #38F8D4;
+					font-size: 100px;
+					color: white;
 				}
 
 				.case-titel h2{
@@ -488,26 +519,241 @@ section{
 					font-style: normal;
 					font-weight: 300;
 					position: relative;
-					top:130px;
+					top:-30px;
 					font-size: 25px;
-					color: white;
-				}
-
-				.case-header h2{
-					display: flex;
-					justify-content: center;
-					grid-row:3/4;
-					color: #38F8D4;
-					font-family: vista-sans-narrow, sans-serif;
-					font-weight: 500;
-					transition: opacity 1s ease-in-out;
-
+					color: #E5F838;
 				}
 
 				#load{
 					opacity: 0;
 					transition: opacity 1s ease-in-out;
 				}
+
+
+		.projectoverzicht{
+			width: 100vw;
+			height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			grid-template-rows: 2fr 1fr 1fr 3fr 2fr;
+		}
+			.project-info{
+				grid-column: 1/2;
+				grid-row:2/5;
+			}
+
+				.project-item{
+					padding: 0px 50px;
+				}
+
+					.project-item h1,.huiswerk-info h1{
+						font-family: vista-sans-narrow, sans-serif;
+						font-style: normal;
+						font-weight: 500;
+						color: #E5F838;
+					}
+
+					.project-item p, .huiswerk-info p{
+						font-family: vista-sans-narrow, sans-serif;
+						font-style: normal;
+						font-weight: 300;
+						color: white;
+						font-size: 20px;
+					}
+
+					.project-item-lijn{
+						background-color: #E5F838;
+						height: 2px;
+						opacity: 0;
+						animation: fadeIn 1s ease-in forwards;
+						animation-delay: 2s;
+					}
+
+			.project-omschrijving{
+				padding: 0px 100px;
+				grid-column: 2/3;
+				grid-row:1/2;
+				color: white;
+				text-align: justify;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				font-size: 110%;
+			}
+
+				.project-omschrijving h1{
+					color: #E5F838;
+					font-weight: 500;
+				}
+
+			.doelgroep-info{
+				padding: 0px 100px;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+				grid-column: 2/3;
+				grid-row: 3/5;
+			}
+
+				.doelgroep-info div{
+
+				}
+
+				.doelgroep-info h1{
+					color: #E5F838;
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 500;
+					text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+					font-size: 30px;
+					padding:0% 3%;
+					padding-top:30%;
+				}
+
+				.doelgroep-info p {
+					color: white;
+				}
+
+				.doelgroep-info h1,.doelgroep-info p{
+					opacity: 0;
+					animation: fadeIn 1s ease-in forwards;
+					animation-delay: 2s;
+				}
+
+		.research{
+			border-top: 2px #E5F838 solid;
+			border-bottom: 2px #E5F838 solid;
+			background-color: white;
+		}
+
+			.title{
+				display: flex;
+				justify-content: center;
+			}
+
+				#belangrijkste-titel{
+					grid-column: 2/3;
+				}
+
+			.research h1{
+				color: #131A2B;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+				font-size: 60px;
+				border-bottom: 5px #E5F838 solid;
+			}
+
+			.research p{
+				color: #131A2B;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				font-size: 20px;
+				padding: 0px 20%;
+			}
+
+		.wireframes{
+			display: grid;
+	/*		grid-template-columns: 3fr 3fr;
+			grid-template-rows: 1fr 1fr;*/
+			padding:0px 20%;
+		}
+
+
+			.wireframe-1{
+				/*background-image: url('../Afbeeldingen/Gaming/wireframe-1.png');*/
+				grid-column: 1/2;
+				grid-row:1/2;
+				padding: 0px 5px 5px 0px;
+			}
+
+			.wireframe-2{
+				grid-column: 2/3;
+				grid-row:1/3;
+				padding: 0px 0px 0px 5px;
+			}
+
+			.wireframe-3{
+				grid-column: 1/2;
+				grid-row:2/3;
+				padding: 5px 5px 0px 0px;
+			}
+
+		
+		.belangrijkste-functies{
+			display: grid;
+			grid-template-columns: 1fr 3fr 1fr;
+			grid-row:3/4;
+			width: 100%;
+		}
+
+		.belangrijkste-functies .title h1{
+			color: white;
+			font-family: vista-sans-narrow, sans-serif;
+			font-weight: 500;
+			font-size: 60px;
+			border-bottom: 5px #E5F838 solid;
+		}
+
+		.eindresultaat{
+			grid-column: 2/3;
+		}
+
+			.eindresultaat-sectie{
+						grid-column: 2/3;
+					}
+			.eindtekst{
+				grid-column: 2/3;
+				color: white;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				font-size: 20px;
+				padding: 0px 20%;
+			}
+
+			.eindtekst-ben{
+				grid-column: 2/3;
+				color: white;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				font-size: 20px;
+			}
+
+			#eindlink{
+				color: #E5F838;
+			}
+
+		.eerste-prototypes{
+			display: grid;
+			grid-template-columns: 50% 50%;
+			padding:0px 15%;
+		}
+
+			.eerste-prototypes h1{
+				color: white;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+				font-size: 60px;
+				border-bottom: 5px #E5F838 solid;
+			}
+
+			#eerste-prototype{
+				padding: 20%;
+			}
+
+			.paragraaf{
+				color: white;
+			}
+
+		.brainstorm-afbeeldingen{
+			display: flex;
+			/*flex-direction: row;*/
+			/*display: block;*/
+			margin-left: auto;
+			margin-right: auto;
+			/*width: 50%;*/
+		}
+
+			.brainstorm-afbeeldingen img{
+				margin: 0px 20px;
+			}
 
 		.case-informatie{
 			display: grid;
@@ -516,9 +762,9 @@ section{
 			width: 100%;
 		}
 
-	/*	.case-informatie > *{
+		.case-informatie > *{
 			grid-column: 2/3;
-		}*/
+		}
 
 		.case-intro{
 			grid-column: 2/3;
@@ -530,7 +776,7 @@ section{
 		}
 
 			.case-informatie h1{
-				color: #38F8D4;
+				color: #E5F838;
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
 			}
@@ -567,7 +813,7 @@ section{
 			#lijn{
 				height: 1px;
 				/*margin-left: 3%;*/
-				background-color: #38F8D4;
+				background-color: #E5F838;
 			}	
 
 
@@ -872,7 +1118,7 @@ section{
 
 					.volg-afbeelding{
 						grid-column: 1/2;
-						background-image: url('../Afbeeldingen/Gaming/detail.png');
+						background-image: url('../Afbeeldingen/Gaming/detail-nieuw.png');
 						height:300px;
 						width: 300px;
 						background-size: 200%;
@@ -905,6 +1151,19 @@ section{
 						background-repeat: no-repeat;
 					}
 
+			.co-creatie{
+				
+			}
+
+				.co-afbeelding{
+					display: flex;
+					justify-content: center;
+				}
+
+				.co-paragraaf{
+					grid-column: 2/3;
+				}
+
 			.case-product{
 				/*display: grid;*/
 				grid-column:2/2;
@@ -916,8 +1175,6 @@ section{
 				/*margin-bottom: -20%;*/
 				max-height: 50%;
 			}	
-
-
 
 
 			.cocreatie,.brainstorm{
@@ -990,9 +1247,12 @@ section{
 
 			.co-extra-img{
 				display: flex;
-				justify-content: space-between;
-				grid-column: 1/3;
+				justify-content: center;
 			}
+
+				.co-extra-img img{
+					padding: 20px;
+				}
 
 
 			.prototypes{
@@ -1177,7 +1437,7 @@ section{
 			align-self: center;
 			height: 3px;
 			/*width: 40%;*/
-			background-color: #38F8D4;
+			background-color: #E5F838;
 		}
 
 		#case-een{
@@ -1279,7 +1539,7 @@ section{
 		}
 
 		#responsive-nav-item-1 h2{
-			color: #38F8D4;
+			color: #E5F838;
 		}
 
 		#responsive-menu h2, #responsive-nav-item-2 h2, #responsive-nav-item-3 h2{
@@ -1359,7 +1619,7 @@ section{
 			font-family: vista-sans-narrow, sans-serif;
 			font-style: normal;
 			font-weight: 500;
-			background-color: #38F8D4;
+			background-color: #E5F838;
 		}
 
 

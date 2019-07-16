@@ -71,7 +71,7 @@ function cocreatie(){
 
 function lineChange(){
     document.getElementById('projecten-lijn').style.textDecoration = "line-through";
-    document.getElementById('projecten-lijn').style.textDecorationColor = "#38F8D4";
+    document.getElementById('projecten-lijn').style.textDecorationColor = "#E5F838";
 }
 
 function lineNormal(){
@@ -102,12 +102,12 @@ function caseNoothulpDelay(){
 
 function underline1(){
     document.getElementById('case-tekst1').style.textDecoration = "underline";
-    document.getElementById('case-tekst1').style.textDecorationColor = "#38F8D4";
+    document.getElementById('case-tekst1').style.textDecorationColor = "#E5F838";
 }
 
 function underline2(){
     document.getElementById('case-tekst2').style.textDecoration = "underline";
-    document.getElementById('case-tekst2').style.textDecorationColor = "#38F8D4";
+    document.getElementById('case-tekst2').style.textDecorationColor = "#E5F838";
 }
 
 function unline(){
