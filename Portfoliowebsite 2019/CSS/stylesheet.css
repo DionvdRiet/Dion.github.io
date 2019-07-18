@@ -31,7 +31,7 @@ section{
 			/*display: flex;
 			justify-content: center;*/
 			/*align-self: center;*/
-
+			padding-left: 0px;
 		}
 
 		header li{
@@ -487,7 +487,7 @@ section{
 			}
 
 			#ben-header{
-				background:linear-gradient(rgba(19, 26, 43, 0.80),rgba(19, 26, 43, 1.0)), url('../Afbeeldingen/ben/ben.png');
+				background:linear-gradient(rgba(19, 26, 43, 0.80),rgba(19, 26, 43, 1.0)), url('../Afbeeldingen/Ben/ben.png');
 				background-size:100%;
 				background-position: top;
 			}
