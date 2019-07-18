@@ -599,9 +599,15 @@ section{
 
 				}
 
-				.doelgroep-image-1{
-									/*position: relative;*/
+				.doelgroep-image-1, .doelgroep-image-2, .doelgroep-image-3, .ben-doelgroep-image-1, .ben-doelgroep-image-2, .ben-doelgroep-image-3, .noothulp-doelgroep-image-1, .noothulp-doelgroep-image-2, .noothulp-doelgroep-image-3{
+					position: relative;
 				}
+
+					.doelgroep-bottom{
+						position: absolute;
+						left: 0;
+						bottom:0;
+					}
 
 				.doelgroep-info h1{
 					color: #E5F838;
@@ -1483,6 +1489,10 @@ section{
 
 		#gaming-case-background{
 			background-image:  url('../Afbeeldingen/ExtraCase/gaming.jpg');
+		}
+
+		#gaming-case-background:{
+			background-image:  url('../Afbeeldingen/Afbeeldingen/Gaming/index-nieuw.jpg');
 		}
 
 		#ben-case-background{
