@@ -388,8 +388,8 @@ section{
 		/*CASE STUDIES*/
 
 		.case{
-			display: grid;
-			grid-template-columns: 20vw auto;
+			display: flex;
+			justify-content: center;
 			width: 100%;
 		}
 
@@ -500,10 +500,20 @@ section{
 
 			.case-titel{
 				/*background-color: red;*/
-				position: relative;
-				margin-top: 10%;
+				display: flex;
+				/*align-content: center;*/
+				justify-content: center;
+				align-items: center;
+				margin-top:70px;
+				/*flex-wrap: nowrap;*/
 				/*display: block;*/
 			}
+
+			/*.paars{
+				width: 100px;
+				height: 100px;
+				background-color: purple;
+			}*/
 
 				.case-titel h1{
 					position: relative;
@@ -512,14 +522,14 @@ section{
 					font-weight: 500;
 					font-size: 100px;
 					color: white;
+					bottom:70px;
 				}
 
 				.case-titel h2{
+					position: absolute;
 					font-family: vista-sans-narrow, sans-serif;
 					font-style: normal;
 					font-weight: 300;
-					position: relative;
-					top:-30px;
 					font-size: 25px;
 					color: #E5F838;
 				}
