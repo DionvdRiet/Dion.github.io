@@ -481,7 +481,7 @@ section{
 		}
 
 			#gaming-header{
-				background:linear-gradient(rgba(19, 26, 43, 0.80),rgba(19, 26, 43, 1.0)), url('../Afbeeldingen/Gaming/index-nieuw.jpg');
+				background:linear-gradient(rgba(19, 26, 43, 0.80),rgba(19, 26, 43, 1.0)), url('../Afbeeldingen/Gaming/index-nieuw.png');
 				background-size:100%;
 				background-position: top;
 			}
@@ -1502,7 +1502,7 @@ section{
 		}
 
 		#gaming-case-background:{
-			background-image:  url('../Afbeeldingen/Afbeeldingen/Gaming/index-nieuw.jpg');
+			background-image:  url('../Afbeeldingen/Afbeeldingen/Gaming/index-nieuw.png');
 		}
 
 		#ben-case-background{
