@@ -166,8 +166,9 @@ section{
 		}
 
 		#project-1{
-			background-image: url(../Afbeeldingen/Gaming/index-nieuw.png);
+			background-image: url(../Afbeeldingen/Gaming/full-overzicht.jpg);
 			background-size: cover;
+			background-position: center;
 			background-repeat: no-repeat;
 		}
 
@@ -215,6 +216,67 @@ section{
 		  /*right: 100%;*/
 		  margin-right: 15px;
 		}
+
+		.medium{
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 500;
+				font-size: 130%;
+				color: #EF2F51;
+		}
+
+		.home-news{
+			display: grid;
+			grid-template-columns: 25% 40% 25%;
+		}
+
+			.paragraph-left{
+				grid-column: 1/2;
+				align-self: center;
+				text-align: right;
+			}
+
+			.paragraph-right{
+				grid-column: 3/4;
+				align-self: center;
+				text-align: left;
+			}
+
+			.home-news img{
+				grid-column: 2/3;
+				width:100%;
+			}
+
+		.discover{
+			display: grid;
+			grid-template-columns: 30% 25% 40%;
+		}
+
+			.paragraph-left-discover{
+				grid-column: 2/3;
+				align-self: center;
+				text-align: right;
+			}
+			.discover img{
+				grid-column: 3/4;
+				width:100%;
+			}
+
+		.gamepagina{
+			display: grid;
+			grid-template-columns: 30% 25% 30%;
+		}
+
+			.paragraph-right-gamepagina{
+				grid-column: 2/3;
+				align-self: center;
+				text-align: left;
+			}
+			.gamepagina img{
+				grid-column: 1/2;
+				width:100%
+			}
+
+
 
 		.content input[type="button"]{
 			grid-column: 6/8;
@@ -481,9 +543,10 @@ section{
 		}
 
 			#gaming-header{
-				background:linear-gradient(rgba(19, 26, 43, 0.80),rgba(19, 26, 43, 1.0)), url('../Afbeeldingen/Gaming/index-nieuw.png');
-				background-size:100%;
-				background-position: top;
+				background:url('../Afbeeldingen/Gaming/header-test.png');
+				background-size:contain;
+				/*background-position: bottom;*/
+				background-repeat: no-repeat;
 			}
 
 			#ben-header{
