@@ -1764,72 +1764,50 @@ section{
 
 
 	.responsive-content{
-		display: grid;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		margin-top:100px;
-		/*grid-template-columns: repeat(12,1fr);
-		grid-template-rows: 0.5fr 1fr 2fr 1fr;*/
 	}
+
+	.responsive-content div{
+		margin:10%;
+	}
+
+		.responsive-project{
+			display: flex;
+			justify-content: center;
+			position: relative;
+			width: 80%;
+			height: 400px;
+			background-color: none;
+			border:1px solid rgba(112,112,112,0.15);
+		}
+
+		.appelsap{
+			
+		}
+
+		/*	.responsive-project div{
+				width: 100%;
+				border:1px solid rgba(112,112,112,0.15);
+			}*/
+
+			.responsive-project h2{
+				border:1px solid rgba(112,112,112,0.15);
+				position: absolute;
+				bottom:0;
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 40px;
+			}
+
 
 	.responsive-section{
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 	}
-
-	.responsive-project-1{
-		grid-row:1/2;
-		/*height: 600px;*/
-		background-image: url(../Afbeeldingen/index.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-
-	.responsive-project-2{
-		grid-row:2/3;
-		/*height: 600px;*/
-		background-image: url(../Afbeeldingen/index.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-
-		.responsive-project-1 h1, .responsive-project-2 h1{
-			display: flex;
-			justify-content: center;
-			position: relative;
-			top:-70px;
-			/*grid-row:2/2;*/
-			position: relative;
-			font-family: vista-sans-narrow, sans-serif;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 80px;
-			color: white;
-			background-color: #131A2B;
-			padding: 1%;
-		}
-
-		.responsive-project-1 p,.responsive-project-2 p{
-			display: flex;
-			justify-content: center;
-			position: relative;
-			bottom:-320px;
-			font-family: vista-sans-narrow, sans-serif;
-			font-style: normal;
-			font-weight: 300;
-			background-color: #131A2B;
-			color: white;
-		}
-
-		.responsive-project-1 h2, .responsive-project-2 h2{
-			position: relative;
-			bottom:-320px;
-			display: flex;
-			justify-content: center;
-			font-family: vista-sans-narrow, sans-serif;
-			font-style: normal;
-			font-weight: 500;
-			background-color: #E5F838;
-		}
-
 
   .content{
   	display: none;
@@ -1852,12 +1830,4 @@ section{
   }
 
 }
-@media screen and (min-width: 601px){
-.content h1{
-			grid-column: 4/10;
-		}
-}
-
-
-
 
