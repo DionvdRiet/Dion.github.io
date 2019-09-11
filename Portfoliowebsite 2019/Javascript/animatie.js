@@ -137,3 +137,18 @@ function pagina3(){
     setTimeout("location.href = 'noothulp.html';",2000)
 }
 
+function responsiveProjectOne(){
+    document.getElementById('responsive-project-line-1').style.height = "200vh";
+    document.getElementById('responsive-image-1').style.height = "4000px";
+    document.getElementById('responsive-image-1').style.width = "1000px";
+    document.getElementById('responsive-image-1').style.top = "-100px";
+    document.getElementById('responsive-image-1').style.filter = "opacity(0.1)";
+    // document.getElementById('responsive-project-line-1').style.background = 'linear-gradient('
+    //     + 'rgba(229, 248, 56, 0.80)' + ', ' + 'rgba(229, 248, 56, 0.80)' + '), url(../Afbeeldingen/Gaming/full-overzicht.jpg)';
+    // document.getElementById("responsive-project-line-1").style.transition = "height 1s ease-in-out forwards";
+    document.getElementById("project-box").style.backgroundColor = "transparent";
+    document.getElementById("responsive-title").style.alignSelf = "center";
+
+}
+
+

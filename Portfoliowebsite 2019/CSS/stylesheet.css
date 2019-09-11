@@ -1826,6 +1826,8 @@ section{
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
+				transition: height .3s ease-in;
+				transition: filter .3s ease-in;
 			}
 
 			.responsive-image-2{
@@ -1867,6 +1869,7 @@ section{
 			position: absolute;
 			z-index: 1;
 			align-self: center;
+			transition: height .3s ease-in;
 		}
 
 
