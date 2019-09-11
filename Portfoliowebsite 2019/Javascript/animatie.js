@@ -138,12 +138,12 @@ function pagina3(){
 }
 
 function responsiveProjectOne(){
-    document.getElementById('responsive-project-line-1').style.height = "200vh";
+    document.getElementById('responsive-project-line-1').style.height = "100vh";
+    document.getElementById('responsive-project-line-1').style.alignSelf = "";
     document.getElementById('responsive-title-1').style.alignSelf = "center";
     document.getElementById('responsive-par-1').style.alignSelf = "center";
     document.getElementById('responsive-par-1').style.position = "relative";
     document.getElementById('responsive-par-1').style.marginTop = "200px";
-
     document.getElementById('responsive-image-1').style.display = "none";
     // document.getElementById('responsive-image-1').style.width = "1500px";
     // document.getElementById('responsive-image-1').style.top = "-100px";

@@ -1877,12 +1877,12 @@ section{
 
 		.responsive-project-line{
 			width: 100%;
-			height: 80px;
+			height: 100px;
 			background-color: #E5F838;
 			position: absolute;
 			z-index: 1;
 			align-self: center;
-			transition: height .5s ease-in;
+			transition: height 1s ease-in;
 		}
 
 
