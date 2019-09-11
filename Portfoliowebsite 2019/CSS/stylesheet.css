@@ -1804,10 +1804,7 @@ section{
 			}
 
 
-	.responsive-section{
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-	}
+
 
   .content{
   	display: none;
@@ -1830,4 +1827,13 @@ section{
   }
 
 }
+
+@media screen and (min-width: 601px){
+.content h1{
+			grid-column: 4/10;
+		}
+}
+
+
+
 
