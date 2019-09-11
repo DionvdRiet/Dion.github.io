@@ -139,15 +139,26 @@ function pagina3(){
 
 function responsiveProjectOne(){
     document.getElementById('responsive-project-line-1').style.height = "200vh";
-    document.getElementById('responsive-image-1').style.height = "4000px";
-    document.getElementById('responsive-image-1').style.width = "1000px";
-    document.getElementById('responsive-image-1').style.top = "-100px";
-    document.getElementById('responsive-image-1').style.filter = "opacity(0.1)";
-    // document.getElementById('responsive-project-line-1').style.background = 'linear-gradient('
-    //     + 'rgba(229, 248, 56, 0.80)' + ', ' + 'rgba(229, 248, 56, 0.80)' + '), url(../Afbeeldingen/Gaming/full-overzicht.jpg)';
-    // document.getElementById("responsive-project-line-1").style.transition = "height 1s ease-in-out forwards";
+    document.getElementById('responsive-title-1').style.alignSelf = "center";
+    document.getElementById('responsive-par-1').style.alignSelf = "center";
+    document.getElementById('responsive-par-1').style.position = "relative";
+    document.getElementById('responsive-par-1').style.marginTop = "200px";
+
+    document.getElementById('responsive-image-1').style.display = "none";
+    // document.getElementById('responsive-image-1').style.width = "1500px";
+    // document.getElementById('responsive-image-1').style.top = "-100px";
+    // document.getElementById('responsive-image-1').style.filter = "opacity(0.1)";
+    document.getElementById('responsive-project-line-1').style.background = 'linear-gradient('
+        + 'rgba(229, 248, 56, 0.95)' + ', ' + 'rgba(229, 248, 56, 0.95)' + '), url(../Afbeeldingen/Gaming/full-overzicht.jpg)';
+    document.getElementById("responsive-project-line-1").style.transition = "height 1s ease-in-out forwards";
+    document.getElementById("responsive-project-line-1").style.backgroundSize = "cover";
+    document.getElementById("responsive-project-line-1").style.backgroundPosition = "center";
     document.getElementById("project-box").style.backgroundColor = "transparent";
-    document.getElementById("responsive-title").style.alignSelf = "center";
+    document.getElementById("project-box").style.border = "none";
+    document.getElementById("project-box").style.height = "100vh";
+    document.getElementById("responsive-project-2").style.display = "none";
+    document.getElementById("responsive-project-3").style.display = "none";
+    document.getElementById("responsive-button").style.display = "none";
 
 }
 

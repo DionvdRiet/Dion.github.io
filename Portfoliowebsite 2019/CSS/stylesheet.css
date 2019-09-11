@@ -1796,7 +1796,7 @@ section{
 
 			.project-box h1{
 				position: absolute;
-				/*top:0;*/
+				/*top:0px;*/
 				font-family: vista-sans-narrow, sans-serif;
 				font-style: normal;
 				font-weight: 500;
@@ -1816,17 +1816,30 @@ section{
 
 			.project-box img{
 			}
+/*
+			#responsive-image-1{
+				max-height: 0;
+			    transition: max-height 0.15s ease-out;
+			    overflow: hidden;
+			    background: #d5d5d5;
+			}
+			#responsive-image-1:hover{
+			max-height: 500px;
+			    transition: max-height 0.25s ease-in;
+			}*/
 
 			.responsive-image-1{
 				position: absolute;
 				top:250px;
 				width: 100%;
+				max-width: 100vw;
+				/*max-height: 0px;*/
 				height: 329px;
 				background-image: url(../Afbeeldingen/Gaming/full-overzicht.jpg);
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
-				transition: height .3s ease-in;
+				transition: height .3s ease-in;	
 				transition: filter .3s ease-in;
 			}
 
@@ -1869,7 +1882,7 @@ section{
 			position: absolute;
 			z-index: 1;
 			align-self: center;
-			transition: height .3s ease-in;
+			transition: height .5s ease-in-out;
 		}
 
 
