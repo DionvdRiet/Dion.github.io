@@ -1686,7 +1686,7 @@ section{
 		/*justify-content: top;*/
 		background-color: white;
 		/*grid-row:1/2;*/
-		/*box-shadow: 0px 3px 10px rgba(0,0,0,0.4);*/
+		box-shadow: none;
 	}
 
 		header ul{
@@ -1763,37 +1763,94 @@ section{
 		}
 
 
-	.responsive-content{
+	.responsive-section{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-top:100px;
 	}
 
-	.responsive-content div{
-		margin:10%;
+	.responsive-section div{
+		margin:20px 0%;
 	}
 
 		.responsive-project{
 			display: flex;
 			justify-content: center;
 			position: relative;
-			width: 80%;
-			height: 400px;
-			background-color: none;
+		}
+
+			#responsive-project-1{
+				margin-top:170px;
+			}
+
+		.project-box{
+			display: flex;
+			justify-content: center;
+			width: 800px;
+			height: 700px;
+			background-color: white;
+			position: relative;
 			border:1px solid rgba(112,112,112,0.15);
+			z-index: 2;
 		}
 
-		.appelsap{
-			
-		}
+			.project-box h1{
+				position: absolute;
+				/*top:0;*/
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 60px;
+			}
 
-		/*	.responsive-project div{
+			.project-box p{
+				position: absolute;
+				top:100px;
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 40px;
+				padding:10px;
+				text-align: center;
+			}
+
+			.project-box img{
+			}
+
+			.responsive-image-1{
+				position: absolute;
+				top:250px;
 				width: 100%;
-				border:1px solid rgba(112,112,112,0.15);
-			}*/
+				height: 329px;
+				background-image: url(../Afbeeldingen/Gaming/full-overzicht.jpg);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
 
-			.responsive-project h2{
+			.responsive-image-2{
+				position: absolute;
+				top:250px;
+				width: 100%;
+				height: 329px;
+				background-image: url(../Afbeeldingen/Ben/beginscherm.png);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			.responsive-image-3{
+				position: absolute;
+				top:300px;
+				width: 100%;
+				height: 329px;
+				background-image: url(../Afbeeldingen/Noothulp/home-test.jpg);
+				background-size: 80%;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			.project-box h2{
 				border:1px solid rgba(112,112,112,0.15);
 				position: absolute;
 				bottom:0;
@@ -1802,6 +1859,15 @@ section{
 				font-weight: 500;
 				font-size: 40px;
 			}
+
+		.responsive-project-line{
+			width: 100%;
+			height: 80px;
+			background-color: #E5F838;
+			position: absolute;
+			z-index: 1;
+			align-self: center;
+		}
 
 
 
