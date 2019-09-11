@@ -1839,8 +1839,8 @@ section{
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
-				transition: height .5s ease-in;	
-				transition: filter .5s ease-in;
+/*				transition: height .5s ease-in;	
+				transition: filter .5s ease-in;*/
 			}
 
 			.responsive-image-2{
