@@ -1749,6 +1749,10 @@ section{
 				transition: opacity 1s ease-in;
 			}
 
+			#close-overlay{
+				background-color: ;
+			}
+
 			.yellow{
 				color:#E5F838;
 			}

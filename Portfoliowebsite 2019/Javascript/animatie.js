@@ -152,7 +152,32 @@ function overlay(){
     document.getElementById('overlay-menu-2').style.filter = "opacity(1)";
     document.getElementById('overlay-menu-3').style.filter = "opacity(1)";
     document.getElementById('header').style.backgroundColor = "#131A2B";
+    document.getElementById('hamburger-menu').id = "close-overlay";
+
+    document.getElementById("close-overlay").onclick = function(){closeOverlay()};
+
+    function closeOverlay() {
+    document.getElementById('overlay').style.height = "0vh";
+    // document.getElementById('overlay').style.display = "0vh";
+    document.getElementById('hamburger-1').style.margin = "5px 0px";
+    document.getElementById('hamburger-2').style.margin = "5px 0px";
+    document.getElementById('hamburger-3').style.margin = "5px 0px";
+    document.getElementById('hamburger-1').style.backgroundColor = "#131A2B";
+    document.getElementById('hamburger-2').style.backgroundColor = "#131A2B";
+    document.getElementById('hamburger-3').style.backgroundColor = "#131A2B";
+    document.getElementById('overlay-menu-1').style.display = "none";
+    document.getElementById('overlay-menu-2').style.display = "none";
+    document.getElementById('overlay-menu-3').style.display = "none";
+    document.getElementById('overlay-menu-1').style.filter = "opacity(0)";
+    document.getElementById('overlay-menu-2').style.filter = "opacity(0)";
+    document.getElementById('overlay-menu-3').style.filter = "opacity(0)";
+    document.getElementById('header').style.backgroundColor = "white";
+    document.getElementById("close-overlay").id = "hamburger-menu";
+    document.getElementById("hamburger-menu").onclick = function(){overlay()};
 }
+
+}
+
 
 function responsiveProjectOne(){
     document.getElementById('responsive-project-line-1').style.height = "100vh";
