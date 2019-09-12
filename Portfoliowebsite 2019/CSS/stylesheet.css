@@ -1687,6 +1687,7 @@ section{
 		background-color: white;
 		/*grid-row:1/2;*/
 		box-shadow: none;
+		
 	}
 
 		header ul{
@@ -1783,6 +1784,7 @@ section{
 			background-color: #131A2B;
 			margin: 5px;
 			transition: margin .5s ease-in;
+			transition: background-color .5s ease-in;
 		}
 
 		#responsive-nav-item-1,#responsive-nav-item-2,#responsive-nav-item-3{
