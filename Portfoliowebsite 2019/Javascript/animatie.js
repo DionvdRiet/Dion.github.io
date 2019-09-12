@@ -142,6 +142,16 @@ function overlay(){
     document.getElementById('hamburger-1').style.margin = "10px 0px";
     document.getElementById('hamburger-2').style.margin = "10px 0px";
     document.getElementById('hamburger-3').style.margin = "10px 0px";
+    document.getElementById('hamburger-1').style.backgroundColor = "white";
+    document.getElementById('hamburger-2').style.backgroundColor = "white";
+    document.getElementById('hamburger-3').style.backgroundColor = "white";
+    document.getElementById('overlay-menu-1').style.display = "block";
+    document.getElementById('overlay-menu-2').style.display = "block";
+    document.getElementById('overlay-menu-3').style.display = "block";
+    document.getElementById('overlay-menu-1').style.filter = "opacity(1)";
+    document.getElementById('overlay-menu-2').style.filter = "opacity(1)";
+    document.getElementById('overlay-menu-3').style.filter = "opacity(1)";
+    document.getElementById('header').style.backgroundColor = "#131A2B";
 }
 
 function responsiveProjectOne(){

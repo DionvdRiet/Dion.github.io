@@ -1724,13 +1724,37 @@ section{
 		}
 
 			.responsive-nav-balk{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
 				grid-column: 1/3;
 				/*position: relative;*/
 				background-color: #131A2B;
-				width: 100vw;
+				/*width: 100vw;*/
 				/*display: none;*/
 				/*margin-top:100px;*/
 				/*z-index: 3;*/
+			}
+
+			.responsive-nav-balk h1{
+				display: none;
+				/*color: white;*/
+				align-self: center;
+				font-family: vista-sans-narrow, sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 60px;
+				margin:100px;
+				filter: opacity(0);
+				transition: opacity 1s ease-in;
+			}
+
+			.yellow{
+				color:#E5F838;
+			}
+
+			.white{
+				color: white;
 			}
 
 			#overlay{
@@ -1922,7 +1946,7 @@ section{
 
 }
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 1001px){
 .content h1{
 			grid-column: 4/10;
 		}
