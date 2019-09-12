@@ -1719,6 +1719,7 @@ section{
 			font-style: normal;
 			font-weight: 500;
 			font-size: 50px;
+			color:blue;
 		}
 
 		.hamburger-menu{
@@ -1882,7 +1883,8 @@ section{
 			position: absolute;
 			z-index: 1;
 			align-self: center;
-			transition: height 1s ease-in;
+			transition: height .5s ease-in;
+			will-change: transform;
 		}
 
 
