@@ -137,6 +137,13 @@ function pagina3(){
     setTimeout("location.href = 'noothulp.html';",2000)
 }
 
+function overlay(){
+    document.getElementById('overlay').style.height = "100vh";
+    document.getElementById('hamburger-1').style.margin = "10px 0px";
+    document.getElementById('hamburger-2').style.margin = "10px 0px";
+    document.getElementById('hamburger-3').style.margin = "10px 0px";
+}
+
 function responsiveProjectOne(){
     document.getElementById('responsive-project-line-1').style.height = "100vh";
     document.getElementById('responsive-project-line-1').style.alignSelf = "center";
