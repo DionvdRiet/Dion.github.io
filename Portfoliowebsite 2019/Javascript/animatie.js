@@ -193,6 +193,7 @@ function responsiveProjectOne(){
     document.getElementById("responsive-project-2").style.display = "none";
     document.getElementById("responsive-project-3").style.display = "none";
     document.getElementById("responsive-button").style.display = "none";
+    setTimeout("location.href = 'gaming.html';",2000)
 
 }
 

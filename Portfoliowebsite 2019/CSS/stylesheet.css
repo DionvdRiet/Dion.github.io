@@ -1783,10 +1783,18 @@ section{
 			align-self: left;
 			width: 50px;
 			height: 8px;
-			background-color: #131A2B;
 			margin: 5px;
 			transition: margin .5s ease-in;
 			transition: background-color .5s ease-in;
+		}
+
+			#hamburger-1,#hamburger-2,#hamburger-3{
+				background-color: #131A2B;
+			}
+
+		.left-arrow{
+			width: 50px;
+			align-self: center;
 		}
 
 		#responsive-nav-item-1,#responsive-nav-item-2,#responsive-nav-item-3{
@@ -1814,6 +1822,10 @@ section{
 	.responsive-section div{
 		margin:20px 0%;
 	}
+
+		.full-overzicht-img{
+			width: 500px;
+		}
 
 		.responsive-project{
 			display: flex;
