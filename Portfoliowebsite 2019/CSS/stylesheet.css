@@ -1819,6 +1819,7 @@ section{
 		justify-content: center;
 	}
 
+
 	.responsive-section div{
 		margin:20px 0%;
 	}
@@ -1939,6 +1940,20 @@ section{
 			transition: height .5s ease-in;
 			will-change: transform;
 		}
+
+			#project-omhoog{
+				width: 100%;
+				height: 10px;
+				background-color: white;
+				position: relative;
+				margin-top: 3000px;
+				z-index: 20;
+				transition: margin-top .5s ease-in;
+			}
+
+			#responsive-title-1,#responsive-par-1{
+				z-index: 10;
+			}
 
 
 

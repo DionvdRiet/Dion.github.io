@@ -193,8 +193,15 @@ function responsiveProjectOne(){
     document.getElementById("responsive-project-2").style.display = "none";
     document.getElementById("responsive-project-3").style.display = "none";
     document.getElementById("responsive-button").style.display = "none";
+    document.getElementById('responsive-project-line-1').style.height = "100vh";
+    setTimeout(projectOmhoog, 1500)
     setTimeout("location.href = 'gaming.html';",2000)
 
 }
 
+function projectOmhoog(){
+    document.getElementById('responsive-project-line-1').style.height = "100vh";
+    document.getElementById('project-omhoog').style.height = "2000px";
+    document.getElementById('project-omhoog').style.marginTop = "0px";
+}
 
