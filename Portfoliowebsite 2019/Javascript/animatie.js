@@ -183,7 +183,7 @@ function responsiveProjectOne(){
     // document.getElementById('responsive-image-1').style.top = "-100px";
     // document.getElementById('responsive-image-1').style.filter = "opacity(0.1)";
     document.getElementById('responsive-project-line-1').style.background = 'linear-gradient('
-        + 'rgba(229, 248, 56, 0.95)' + ', ' + 'rgba(229, 248, 56, 0.95)' + '), url(../Afbeeldingen/Gaming/full-overzicht.jpg)';
+        + 'rgba(229, 248, 56, 0.90)' + ', ' + 'rgba(229, 248, 56, 0.90)' + '), url(../Afbeeldingen/Gaming/full-overzicht.jpg)';
     document.getElementById("responsive-project-line-1").style.transition = "height 1s ease-in-out forwards";
     document.getElementById("responsive-project-line-1").style.backgroundSize = "cover";
     document.getElementById("responsive-project-line-1").style.backgroundPosition = "center";
@@ -194,13 +194,13 @@ function responsiveProjectOne(){
     document.getElementById("responsive-project-3").style.display = "none";
     document.getElementById("responsive-button").style.display = "none";
     document.getElementById('responsive-project-line-1').style.height = "100vh";
-    setTimeout(projectOmhoog, 1500)
-    setTimeout("location.href = 'gaming.html';",2000)
+    setTimeout(projectOmhoog, 500)
+    setTimeout("location.href = 'gaming.html';",1000)
 
 }
 
 function projectOmhoog(){
-    document.getElementById('responsive-project-line-1').style.height = "100vh";
+    // document.getElementById('responsive-project-line-1').style.height = "100vh";
     document.getElementById('project-omhoog').style.height = "2000px";
     document.getElementById('project-omhoog').style.marginTop = "0px";
 }

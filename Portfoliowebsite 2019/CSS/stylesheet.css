@@ -1666,6 +1666,10 @@ section{
 			background-image:  url('../Afbeeldingen/ExtraCase/noothulp.jpg');
 		}
 
+		.responsive-nav-balk, .responsive-section{
+				display: none;
+			}
+
 
 /*Media Queries*/
 @media screen and (max-width: 1000px) {
@@ -1937,7 +1941,7 @@ section{
 			position: absolute;
 			z-index: 1;
 			align-self: center;
-			transition: height .5s ease-in;
+			transition: height .3s ease-in;
 			will-change: transform;
 		}
 
@@ -1955,8 +1959,32 @@ section{
 				z-index: 10;
 			}
 
+			/*Play Next Case*/
 
+			.case-header{
+				width: 100vw;
+				height:450px;
+				display: flex;
+				justify-content: center;
+				text-align: center;
+			}
 
+			.project-omschrijving{
+				padding: 0px 20px;
+				grid-column: 1/3;
+				/*grid-row:1/2;*/
+				color: white;
+				text-align: justify;
+				font-family: vista-sans-narrow, sans-serif;
+				font-weight: 300;
+				font-size: 40px;
+				line-height: 50px;
+			}
+
+				.project-omschrijving h1{
+					color: #E5F838;
+					font-weight: 500;
+				}
 
 
   .content{
