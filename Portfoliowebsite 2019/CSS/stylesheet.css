@@ -741,15 +741,27 @@ section{
 				color: #131A2B;
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 300;
-				font-size: 20px;
+				font-size: 26px;
 				/*padding: 0px 20%;*/
 			}
 
 			#responsive-research{
+				display: grid;
+				grid-template-columns: 30px auto 30px;
 				background-color: white;
 				border-top:3px solid #E5F838;
-				border-bottom:3px solid #E5F838;
 			}
+
+				#responsive-research *{
+					grid-column: 2/3;
+				}
+
+				#responsive-research p{
+					color: #131A2B;
+					font-family: vista-sans-narrow, sans-serif;
+					font-weight: 300;
+					font-size: 26px;
+				}
 
 			
 			.research-blokken{
@@ -826,6 +838,11 @@ section{
 					.yellow{
 						color:#E5F838;
 					}
+
+				#responsive-designfase{
+					background-color: white;
+					border-bottom:3px solid #E5F838;
+				}
 
 		.designfase{
 			display: grid;
@@ -2049,6 +2066,12 @@ section{
 
 					.doelgroep-image-1,.doelgroep-image-2,.doelgroep-image-3{
 						animation: none;
+					}
+
+					#responsive-projectoverzicht{
+						height: 3000px;
+						display: flex;
+						justify-content: space-between;
 					}
 
 					.responsive-doelgroep-info{
