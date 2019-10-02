@@ -1701,11 +1701,21 @@ section{
 				display: none;
 			}
 
+		#home-news-desktop{
+			display: block;
+		}
+
+		#home-news-responsive{
+			display: none;
+		}
+
 
 /*Media Queries*/
 @media screen and (max-width: 1000px) {
 
-	body{
+	body p{
+		font-size: 50px;
+		line-height: 70px;
 	}
 
 	header{
@@ -2135,6 +2145,53 @@ section{
 						position: absolute;
 						bottom: 0;
 					}
+
+					.wireframe-1{
+						background-image: url('../Afbeeldingen/Gaming/Wireframes/wireframes.png');
+						width: 100%;
+						height: 600px;
+						background-size: contain;
+						background-repeat: no-repeat;
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+						/*width: 50%;*/
+					}
+
+					.full-overzicht-img{
+						width: 100%;
+					}
+
+					.home-news{
+						display: grid;
+						grid-template-columns: 10px auto 10px;
+						grid-template-rows: auto auto;
+					}
+
+						#home-news-img{
+							/*width: 700px;*/
+							grid-row:1/2;
+							grid-column: 2/3;
+						}
+
+						#home-news-desktop{
+							display: none;
+						}
+
+						#home-news-responsive{
+							display: block;
+						}
+
+						.home-news p{
+							grid-column: 2/3;
+							grid-row:2/3;
+							font-family: vista-sans-narrow, sans-serif;
+							font-style: normal;
+							font-weight: 300;
+						}
+
+
+
 
   .content{
   	display: none;
