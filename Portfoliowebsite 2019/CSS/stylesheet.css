@@ -762,7 +762,6 @@ section{
 					font-weight: 300;
 					font-size: 26px;
 				}
-
 			
 			.research-blokken{
 				position: relative;
@@ -1750,7 +1749,7 @@ section{
 @media screen and (max-width: 1000px) {
 
 	body p{
-		font-size: 50px;
+		font-size: 26px;
 		line-height: 70px;
 	}
 
@@ -2123,6 +2122,12 @@ section{
 						justify-content: space-between;
 					}
 
+					#responsive-projectoverzicht-ben{
+						height: 3800px;
+						display: flex;
+						justify-content: center;
+					}
+
 					.responsive-doelgroep-info{
 						display: grid;
 						grid-template-columns: 50px auto 50px;
@@ -2147,7 +2152,7 @@ section{
 							line-height: 60px;
 						}
 
-					.responsive-doelgroep-image-1{
+					.responsive-doelgroep-image-gaming-1{
 						position: relative;
 						padding: 10px;
 						background-image: url('../Afbeeldingen/Gaming/actiespellen.jpg');
@@ -2158,7 +2163,7 @@ section{
 						grid-column: 2/3;
 					}
 
-					.responsive-doelgroep-image-2{
+					.responsive-doelgroep-image-gaming-2{
 						position: relative;
 						padding: 10px;
 						background-image: url('../Afbeeldingen/Gaming/leeftijd.jpg');
@@ -2169,10 +2174,43 @@ section{
 						grid-column: 2/3;
 					}
 
-					.responsive-doelgroep-image-3{
+					.responsive-doelgroep-image-gaming-3{
 						position: relative;
 						padding: 10px;
 						background-image: url('../Afbeeldingen/Gaming/console.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+						height: 450px;
+						color: #E5F838;
+						grid-column: 2/3;
+					}
+
+					.responsive-doelgroep-image-ben-1{
+						position: relative;
+						padding: 10px;
+						background-image: url('../Afbeeldingen/Ben/verlengen.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+						height: 450px;
+						color: #E5F838;
+						grid-column: 2/3;
+					}
+
+					.responsive-doelgroep-image-ben-2{
+						position: relative;
+						padding: 10px;
+						background-image: url('../Afbeeldingen/Ben/keuze.jpg');
+						background-size: cover;
+						background-repeat: no-repeat;
+						height: 450px;
+						color: #E5F838;
+						grid-column: 2/3;
+					}
+
+					.responsive-doelgroep-image-ben-3{
+						position: relative;
+						padding: 10px;
+						background-image: url('../Afbeeldingen/Ben/kosten.jpg');
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
@@ -2240,6 +2278,15 @@ section{
 							flex-direction: column;
 						}
 
+			.co-extra-img{
+				display: flex;
+				flex-direction: column;
+			}
+
+				.co-extra-img img{
+					width: 100%;
+					padding: 10px 0px;
+				}
 
 
 
