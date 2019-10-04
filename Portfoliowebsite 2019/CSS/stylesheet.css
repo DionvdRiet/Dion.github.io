@@ -1602,14 +1602,42 @@ section{
 	}
 
 		.gaming-case,.ben-case,.noothulp-case{
-			position: relative;
+			/*position: relative;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			background-position: center;
 			background-repeat: no-repeat;
-			height: 100%;
+			height: 300px;*/
 		}
+
+		.gaming-case,.ben-case,.noothulp-case{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.gaming-case, .ben-case{
+			background-color:white;
+		}
+
+		.noothulp-case{
+			background-color:#131A2B;
+		}
+
+			.gaming-case h3,.ben-case h3,.noothulp-case h3{
+				grid-column: 1/2;
+				/*align-self: center;*/
+				/*text-align: left;*/
+				color: #131A2B;
+				text-shadow: none;
+				background-color: #E5F838;
+				padding: 50px 20px;
+			}
+
+			#gaming-case-background, #ben-case-background, #noothulp-case-background{
+				grid-column: 2/3;
+				width: 100%;
+			}
 
 		.extra-cases h1{
 			/*position: absolute;*/
@@ -1633,8 +1661,8 @@ section{
 			font-style: normal;
 			font-weight: 500;
 			font-size: 50px;
-			color: white;
-			text-shadow: 0px 3px 6px rgba(0,0,0,0.7);
+			/*color: white;*/
+			/*text-shadow: 0px 3px 6px rgba(0,0,0,0.7);*/
 			opacity: 1;
 			transition: opacity 1s ease-in;
 		}
@@ -1690,11 +1718,16 @@ section{
 		}
 
 		#ben-case-background{
-			background-image:  url('../Afbeeldingen/ExtraCase/ben.jpg');
+			background-image:  url('../Afbeeldingen/ExtraCase/ben.png');
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 
 		#noothulp-case-background{
 			background-image:  url('../Afbeeldingen/ExtraCase/noothulp.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: -100px 0px;
 		}
 
 		.responsive-nav-balk, .responsive-section{
@@ -1731,8 +1764,11 @@ section{
 		background-color: white;
 		/*grid-row:1/2;*/
 		box-shadow: none;
-
 	}
+
+		#load{
+			transition: opacity .3s ease-in-out;
+		}
 
 		header ul{
 			/*display: flex;
