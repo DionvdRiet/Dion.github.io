@@ -1711,6 +1711,9 @@ section{
 
 		#gaming-case-background{
 			background-image:  url('../Afbeeldingen/ExtraCase/gaming.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: -300px 0px;
 		}
 
 		#gaming-case-background:{
