@@ -124,6 +124,10 @@ function pagina3(){
     setTimeout("location.href = 'noothulp.html';",2000)
 }
 
+function projectContainer(){
+    document.getElementById('project-container').style.marginTop = "0px";
+}
+
 function overlay(){
     document.getElementById('overlay').style.height = "100vh";
     document.getElementById('hamburger-1').style.margin = "10px 0px";
@@ -135,9 +139,9 @@ function overlay(){
     document.getElementById('overlay-menu-1').style.display = "block";
     document.getElementById('overlay-menu-2').style.display = "block";
     document.getElementById('overlay-menu-3').style.display = "block";
-    document.getElementById('overlay-menu-1').style.filter = "opacity(1)";
-    document.getElementById('overlay-menu-2').style.filter = "opacity(1)";
-    document.getElementById('overlay-menu-3').style.filter = "opacity(1)";
+    document.getElementById('overlay-menu-1').style.opacity = "0.9";
+    document.getElementById('overlay-menu-2').style.opacity = "1";
+    document.getElementById('overlay-menu-3').style.opacity = "1";
     document.getElementById('header').style.backgroundColor = "#131A2B";
     document.getElementById('header').style.border = "1px solid rgba(255,255,255,0.15)";
     document.getElementById('hamburger-menu').id = "close-overlay";
@@ -196,7 +200,64 @@ function responsiveProjectOne(){
     document.getElementById('responsive-project-line-1').style.height = "100vh";
     setTimeout(projectOmhoog, 500)
     setTimeout("location.href = 'gaming.html';",1000)
+}
 
+function responsiveProjectTwo(){
+    document.getElementById('responsive-project-line-1').style.height = "100vh";
+    document.getElementById('responsive-project-line-1').style.alignSelf = "center";
+    document.getElementById('responsive-title-1').style.alignSelf = "center";
+    document.getElementById('responsive-title-1').style.fontSize = "100px";
+    document.getElementById('responsive-par-1').style.alignSelf = "center";
+    document.getElementById('responsive-par-1').style.position = "relative";
+    document.getElementById('responsive-par-1').style.marginTop = "400px";
+    document.getElementById('responsive-par-1').style.fontSize = "60px";
+    document.getElementById('responsive-image-1').style.display = "none";
+    // document.getElementById('responsive-image-1').style.width = "1500px";
+    // document.getElementById('responsive-image-1').style.top = "-100px";
+    // document.getElementById('responsive-image-1').style.filter = "opacity(0.1)";
+    document.getElementById('responsive-project-line-1').style.background = 'linear-gradient('
+        + 'rgba(229, 248, 56, 0.90)' + ', ' + 'rgba(229, 248, 56, 0.90)' + '), url(../Afbeeldingen/Gaming/full-overzicht.jpg)';
+    document.getElementById("responsive-project-line-1").style.transition = "height 1s ease-in-out forwards";
+    document.getElementById("responsive-project-line-1").style.backgroundSize = "cover";
+    document.getElementById("responsive-project-line-1").style.backgroundPosition = "center";
+    document.getElementById("project-box").style.backgroundColor = "transparent";
+    document.getElementById("project-box").style.border = "none";
+    document.getElementById("project-box").style.height = "80vh";
+    document.getElementById("responsive-project-2").style.display = "none";
+    document.getElementById("responsive-project-3").style.display = "none";
+    document.getElementById("responsive-button-ben").style.display = "none";
+    document.getElementById('responsive-project-line-1').style.height = "100vh";
+    setTimeout(projectOmhoog, 500)
+    setTimeout("location.href = 'ben.html';",1000)
+}
+
+function responsiveProjectThree(){
+    document.getElementById('responsive-project-line-3').style.height = "100vh";
+    document.getElementById('responsive-project-line-3').style.alignSelf = "center";
+    document.getElementById('responsive-title-3').style.alignSelf = "center";
+    document.getElementById('responsive-title-3').style.fontSize = "100px";
+    document.getElementById('responsive-par-3').style.alignSelf = "center";
+    document.getElementById('responsive-par-3').style.position = "relative";
+    document.getElementById('responsive-par-3').style.marginTop = "400px";
+    document.getElementById('responsive-par-3').style.fontSize = "60px";
+    document.getElementById('responsive-image-3').style.display = "none";
+    // document.getElementById('responsive-image-1').style.width = "1500px";
+    // document.getElementById('responsive-image-1').style.top = "-100px";
+    // document.getElementById('responsive-image-1').style.filter = "opacity(0.1)";
+    document.getElementById('responsive-project-line-3').style.background = 'linear-gradient('
+        + 'rgba(229, 248, 56, 0.90)' + ', ' + 'rgba(229, 248, 56, 0.90)' + '), url(../Afbeeldingen/Noothulp/home-test.jpg)';
+    document.getElementById("responsive-project-line-3").style.transition = "height 1s ease-in-out forwards";
+    document.getElementById("responsive-project-line-3").style.backgroundSize = "cover";
+    document.getElementById("responsive-project-line-3").style.backgroundPosition = "center";
+    document.getElementById("project-box").style.backgroundColor = "transparent";
+    document.getElementById("project-box").style.border = "none";
+    document.getElementById("project-box").style.height = "80vh";
+    document.getElementById("responsive-project-1").style.display = "none";
+    document.getElementById("responsive-project-2").style.display = "none";
+    document.getElementById("responsive-button-noothulp").style.display = "none";
+    document.getElementById('responsive-project-line-3').style.height = "100vh";
+    setTimeout(projectOmhoog, 500)
+    setTimeout("location.href = 'noothulp.html';",1000)
 }
 
 function projectOmhoog(){
