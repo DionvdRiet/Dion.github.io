@@ -7,7 +7,15 @@
     };
 
 
-
+function indicator(){
+    document.getElementById("indicator").style.marginLeft = "0px";
+    document.getElementById("indicator-1").style.width = "50px";
+    document.getElementById("indicator-2").style.width = "25px";
+    document.getElementById("indicator-3").style.width = "25px";
+    document.getElementById("indicator-1").style.backgroundColor = "#E5F838";
+    document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
+    document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
+}
 
 function up(){
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop >0) {
@@ -79,7 +87,7 @@ function lineNormal(){
 }
 
 function projectDicht(){
-	document.getElementById('project-1').style.height = "0%";
+	document.getElementById('project-1').style.height = "0vh";
 	// document.getElementById('project-1').style.gridRow = "2/4";
 	document.getElementById('button').style.backgroundSize = "100% 100%";
     // document.getElementById('button').style.background = "background:linear-gradient(to right,rgba(229, 248, 56,1) 0%,rgba(229,248,56,1) 100%)";
@@ -126,6 +134,16 @@ function pagina3(){
 
 function projectContainer(){
     document.getElementById('project-container').style.marginTop = "0px";
+    document.getElementById('informatie-p').style.opacity = "1";
+    document.getElementById('informatie-h2-1').style.opacity = "1";
+    document.getElementById('informatie-h2-2').style.opacity = "1";
+    document.getElementById('informatie-h2-3').style.opacity = "1";
+    document.getElementById('yellow-line').style.color = "#E5F838";
+    document.getElementById('yellow-line').style.opacity = "1";
+    document.getElementById('yellow-line-2').style.color = "#E5F838";
+    document.getElementById('yellow-line-2').style.opacity = "1";
+    document.getElementById('transformTitle').style.transform = "translate3d(0px, 0px, 0px)";
+
 }
 
 function overlay(){

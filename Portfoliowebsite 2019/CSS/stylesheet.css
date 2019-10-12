@@ -2,8 +2,6 @@ body,html{
 	margin:0;
 	padding: 0;
 	height: 100%;
-/*	overflow-y: scroll;
-	overflow-x: hidden;*/
 }
 
 	.case-background{
@@ -12,25 +10,19 @@ body,html{
 
 section{
 	display: grid;
-	/*height: 100vh;*/
 }
 
 	header{
 		z-index: 10;
 		position: fixed;
 		width: 100vw;
-		/*height: 10%;*/
 		display: flex;
 		justify-content: center;
 		background-color: white;
-		/*grid-row:1/2;*/
-		box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+		border:1px solid rgba(112,112,112,0.15); 
 	}
 
 		header ul{
-			/*display: flex;
-			justify-content: center;*/
-			/*align-self: center;*/
 			padding-left: 0px;
 		}
 
@@ -45,7 +37,7 @@ section{
 
 			.inactive{
 				text-decoration: line-through;
-				text-decoration-color: #E5F838;	
+				text-decoration-color: #FFED00;	
 			}
 
 			.inactive:hover{
@@ -56,34 +48,7 @@ section{
 		display: grid;
 		grid-template-columns: repeat(12,1fr);
 		grid-template-rows: 0.5fr 1fr 2fr 1fr;
-	
 	}
-
-	.formulier{
-		grid-column: 5/9;
-		grid-row:3; 
-		margin-top:-10%;
-	}
-
-		form{
-			display: flex;
-			flex-direction: column;
-		}
-
-		.formulier h3{
-			font-family: vista-sans-narrow, sans-serif;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 150%;
-			position: relative;
-			top:10px;
-		}
-
-		input[type="text"]{
-			border:none;
-			height: 50px;
-			margin-bottom: 3%;
-		}
 
 		.indicator{
 			position: fixed;
@@ -94,44 +59,47 @@ section{
 		}
 
 			.indicator div{
-				margin:30% 30%;
+				margin:30%
 			}
 
 			.indicator div:hover{
 				cursor: pointer;
 			}
 
+			#indicator{
+				margin-left: -100px;
+				transition: margin-left .5s ease-in;
+				transition-delay: 1s;
+			}
+
+			#indicator-1, #indicator-2, #indicator-3{
+				height: 5px;
+				transition: width .3s ease-in-out;
+				transition: background-color .3s ease-in-out;
+			}
+
 			#indicator-1{
-				transition: width 0.3s ease-in-out;
-				transition: background-color 0.3s ease-in-out;
 				height: 5px;
 				width: 50px;
-				background-color: #E5F838;
+				background-color: #FFED00;
 			}
 
 			#indicator-2,#indicator-3{
-				transition: width 0.3s ease-in-out;
-				transition: background-color 0.3s ease-in-out;
 				height: 5px;
 				width: 25px;
 				background-color: #131A2B;
 			}
 
-			#indicator-1,#indicator-2,#indicator-3{
-				/*border:1px solid #131A2B;*/
-				/*box-shadow: 0px 0px 10px rgba(0,0,0,0.1);*/
-			}
-
 			#indicator-1:hover,#indicator-2:hover,#indicator-3:hover{
 				width: 50px;
-				background-color: #E5F838;
+				background-color: #FFED00;
 			}
 
 		.titel-lijn{
 			grid-column: 2/3;
 			z-index: 1;
 			position: absolute;
-			background-color: #E5F838;
+			background-color: #FFED00;
 			width: 100px;
 			height: 15px;
 			margin-top: 12.5%;
@@ -147,6 +115,12 @@ section{
 			font-weight: 500;
 			font-size: 80px;
 			color: #131A2B;
+		}
+
+		#transformTitle{
+			transform: translate3d(0px, 200px, 0px);
+			z-index: 1;
+			transition: transform 1s cubic-bezier(.365,.305,0,1) .6s;
 		}
 
 		.project-container{
@@ -168,8 +142,9 @@ section{
 		#project-1{
 			background-image: url(../Afbeeldingen/Gaming/full-overzicht.jpg);
 			background-size: cover;
-			background-position: center;
+			background-position: top;
 			background-repeat: no-repeat;
+			z-index: 2;
 		}
 
 		#project-2{
@@ -197,15 +172,15 @@ section{
 		  content: "";
 		  position: absolute;
 		  height: 20px;
-		  background-color: #E5F838;
+		  background-color: #FFED00;
 		  top: 10px;
 		  width: 0%;
 		  transition: width 0.5s ease-in-out;
 		}
 
-		.titellijn:hover span:before{
+		/*.titellijn:hover span:before{
 		  width:100%;
-		}
+		}*/
 
 		@keyframes theline{
 			from {width:0%;}
@@ -225,7 +200,7 @@ section{
 		}
 
 		.designfase{
-			border-bottom: 2px #E5F838 solid;
+			border-bottom: 2px #FFED00 solid;
 			background-color: white;
 		}
 
@@ -340,6 +315,45 @@ section{
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 300;
 				font-size: 130%;
+				opacity: 0;
+				transition: opacity .3s ease-in; 
+				transition-delay: 1s;
+			}
+
+			#informatie-h2-1{
+				opacity: 0;
+				transition: opacity .3s ease-in; 
+				transition-delay: 1s;
+			}
+
+			#informatie-h2-2{
+				opacity: 0;
+				transition: opacity .3s ease-in; 
+				transition-delay: 1.5s;
+			}
+
+			#informatie-h2-3{
+				opacity: 0;
+				transition: opacity .3s ease-in; 
+				transition-delay: 2s;
+			}
+
+			#yellow-line{
+				opacity: 0;
+				transition: opacity .3s ease-in; 
+				transition-delay: 2s;
+				color: white;
+				transition: color .3s ease-in; 
+				transition-delay: 2s;
+			}
+
+			#yellow-line-2{
+				opacity: 0;
+				transition: opacity .3s ease-in; 
+				transition-delay: 2s;
+				color: white;
+				transition: color .3s ease-in; 
+				transition-delay: 2s;
 			}
 
 			.persoonlijke-informatie{
@@ -381,7 +395,7 @@ section{
 			}
 
 			.highlight{
-				/*background-color: #E5F838;*/
+				/*background-color: #FFED00;*/
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
 				color:black;
@@ -420,7 +434,7 @@ section{
 			}
 
 			.blue{
-				color:#E5F838;
+				color:#FFED00;
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
 			}
@@ -604,7 +618,7 @@ section{
 					font-style: normal;
 					font-weight: 300;
 					font-size: 25px;
-					color: #E5F838;
+					color: #FFED00;
 				}
 
 				#load{
@@ -617,8 +631,9 @@ section{
 			width: 100vw;
 			height: 100vh;
 			display: grid;
-			grid-template-columns: 1fr 3fr;
-			grid-template-rows: 2fr 2fr 1fr 3fr 2fr;
+			/*grid-template-columns: 1fr 3fr;*/
+			/*grid-template-rows: 2fr 2fr 1fr 3fr 2fr;*/
+			/*display: block;*/
 		}
 			.project-info{
 				align-self: center;
@@ -634,7 +649,7 @@ section{
 						font-family: vista-sans-narrow, sans-serif;
 						font-style: normal;
 						font-weight: 500;
-						color: #E5F838;
+						color: #FFED00;
 					}
 
 					.project-item p, .huiswerk-info p{
@@ -646,7 +661,7 @@ section{
 					}
 
 					.project-item-lijn{
-						background-color: #E5F838;
+						background-color: #FFED00;
 						height: 2px;
 						opacity: 0;
 						animation: fadeIn 1s ease-in forwards;
@@ -665,7 +680,7 @@ section{
 			}
 
 				.project-omschrijving h1{
-					color: #E5F838;
+					color: #FFED00;
 					font-weight: 500;
 				}
 
@@ -674,7 +689,7 @@ section{
 				display: flex;
 				justify-content: space-between;
 				flex-direction: row;
-				grid-column: 2/3;
+				grid-column: 2/5;
 				grid-row: 2/5;
 			}
 
@@ -693,7 +708,7 @@ section{
 					}
 
 				.doelgroep-info h1{
-					color: #E5F838;
+					color: #FFED00;
 					font-family: vista-sans-narrow, sans-serif;
 					font-weight: 500;
 					text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
@@ -715,7 +730,7 @@ section{
 				}
 
 		.research{
-			border-top: 2px #E5F838 solid;
+			border-top: 2px #FFED00 solid;
 			background-color: white;
 			grid-template-columns: 20% 60% 20%;
 		}
@@ -738,7 +753,7 @@ section{
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
 				font-size: 60px;
-				border-bottom: 5px #E5F838 solid;
+				border-bottom: 5px #FFED00 solid;
 			}
 
 			.research p{
@@ -753,7 +768,7 @@ section{
 				display: grid;
 				grid-template-columns: 10px auto 10px;
 				background-color: white;
-				border-top:3px solid #E5F838;
+				border-top:3px solid #FFED00;
 			}
 
 				#responsive-research *{
@@ -808,7 +823,7 @@ section{
 				.research-div h3{
 					font-family: vista-sans-narrow, sans-serif;
 					font-weight: 300;
-					color:#E5F838;
+					color:#FFED00;
 				}
 
 				.research-div-procenten{
@@ -824,7 +839,7 @@ section{
 					}
 
 						.research-div-procenten h2{
-							color: #E5F838;
+							color: #FFED00;
 							align-self: center;
 							font-size: 40px;
 							margin-bottom: 0%;
@@ -840,12 +855,12 @@ section{
 				}
 
 					.yellow{
-						color:#E5F838;
+						color:#FFED00;
 					}
 
 				#responsive-designfase{
 					background-color: white;
-					border-bottom:3px solid #E5F838;
+					border-bottom:3px solid #FFED00;
 				}
 
 		.designfase{
@@ -901,7 +916,7 @@ section{
 			font-family: vista-sans-narrow, sans-serif;
 			font-weight: 500;
 			font-size: 60px;
-			border-bottom: 5px #E5F838 solid;
+			border-bottom: 5px #FFED00 solid;
 		}
 
 		.eindresultaat{
@@ -929,7 +944,7 @@ section{
 			}
 
 			#eindlink{
-				color: #E5F838;
+				color: #FFED00;
 			}
 
 		.eerste-prototypes{
@@ -943,7 +958,7 @@ section{
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
 				font-size: 60px;
-				border-bottom: 5px #E5F838 solid;
+				border-bottom: 5px #FFED00 solid;
 			}
 
 			#eerste-prototype{
@@ -988,7 +1003,7 @@ section{
 		}
 
 			.case-informatie h1{
-				color: #E5F838;
+				color: #FFED00;
 				font-family: vista-sans-narrow, sans-serif;
 				font-weight: 500;
 			}
@@ -1025,7 +1040,7 @@ section{
 			#lijn{
 				height: 1px;
 				/*margin-left: 3%;*/
-				background-color: #E5F838;
+				background-color: #FFED00;
 			}	
 
 
@@ -1637,7 +1652,7 @@ section{
 				/*text-align: left;*/
 				color: #131A2B;
 				text-shadow: none;
-				background-color: #E5F838;
+				background-color: #FFED00;
 				padding: 50px 20px;
 			}
 
@@ -1679,7 +1694,7 @@ section{
 			align-self: center;
 			height: 3px;
 			/*width: 40%;*/
-			background-color: #E5F838;
+			background-color: #FFED00;
 		}
 
 		#case-een{
@@ -1740,7 +1755,7 @@ section{
 			background-position: -100px 0px;
 		}
 
-		.responsive-nav-balk, .responsive-section{
+		.responsive-nav-balk{
 				display: none;
 			}
 
@@ -1854,7 +1869,7 @@ section{
 			}
 
 			.yellow{
-				color:#E5F838;
+				color:#FFED00;
 			}
 
 			.white{
@@ -1903,7 +1918,7 @@ section{
 		}
 
 		#responsive-nav-item-1 h2{
-			color: #E5F838;
+			color: #FFED00;
 		}
 
 		#responsive-menu h2, #responsive-nav-item-2 h2, #responsive-nav-item-3 h2{
@@ -2031,7 +2046,7 @@ section{
 		.responsive-project-line{
 			width: 100%;
 			height: 100px;
-			background-color: #E5F838;
+			background-color: #FFED00;
 			position: absolute;
 			z-index: 1;
 			align-self: center;
@@ -2076,15 +2091,9 @@ section{
 			}
 
 				.project-omschrijving h1{
-					color: #E5F838;
+					color: #FFED00;
 					font-weight: 500;
 				}
-
-			.projectoverzicht{
-				width: 100vw;
-				height: 100vh;
-				display: block;
-			}
 
 				.project-item h1, .project-item p{
 					font-size: 50px;
@@ -2096,11 +2105,11 @@ section{
 
 				.doelgroep-info{
 					padding-top:400px;
-					/*display: flex;
+					display: flex;
 					justify-content: space-between;
 					flex-direction: row;
 					grid-column: 2/3;
-					grid-row: 2/5;*/
+					grid-row: 2/5;
 				}
 
 					.doelgroep-image-1{
@@ -2175,7 +2184,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2186,7 +2195,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2197,7 +2206,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2208,7 +2217,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2219,7 +2228,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2230,7 +2239,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2241,7 +2250,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2252,7 +2261,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2263,7 +2272,7 @@ section{
 						background-size: cover;
 						background-repeat: no-repeat;
 						height: 450px;
-						color: #E5F838;
+						color: #FFED00;
 						grid-column: 2/3;
 					}
 
@@ -2303,11 +2312,11 @@ section{
 							font-family: vista-sans-narrow, sans-serif;
 							font-style: normal;
 							font-weight: 500;
-							color: #E5F838;
+							color: #FFED00;
 						}
 
 						.ben-prototype .medium{
-							color: #E5F838;
+							color: #FFED00;
 						}
 
 					.ben-prototype-dubbel{
@@ -2325,11 +2334,11 @@ section{
 							font-family: vista-sans-narrow, sans-serif;
 							font-style: normal;
 							font-weight: 500;
-							color: #E5F838;
+							color: #FFED00;
 						}
 
 						.ben-prototype-dubbel .medium{
-							color: #E5F838;
+							color: #FFED00;
 						}
 
 						#responsive-par{
@@ -2341,7 +2350,7 @@ section{
 						}
 
 						.project-item-lijn{
-							background-color: #E5F838;
+							background-color: #FFED00;
 							height: 2px;
 							opacity: 0;
 							animation: fadeIn 1s ease-in forwards;
@@ -2368,7 +2377,7 @@ section{
 
 						}
 
-						.doelgroep-info, #final-desktop-par, #desktop-functies, .desktop-eindresultaat{
+						.doelgroep-info, #final-desktop-par, #desktop-functies, .desktop-eindresultaat, .responsive-doelgroep-info{
 							display: none;
 						}
 

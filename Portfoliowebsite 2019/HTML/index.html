@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/due7wge.css">
 	<link rel="shortcut icon" type="image/png" href="../Afbeeldingen/favicon.ico"/>
 </head>
-<body onload="projectContainer()">
+<body onload="projectContainer(); indicator()">
 <header>
 	<ul>
 		<li class="active" id="projecten-lijn">Projecten</li>
@@ -29,19 +29,19 @@
 </header>
 	<section id="sectie-1" class="">
 		<div class="content" id="project-container">
-			<div class="indicator">
+			<div class="indicator" id="indicator">
 				<div id="indicator-1" onmouseover="indicatorOneOn()" onclick="location.href='#sectie-1'"></div>
 				<div id="indicator-2" onmouseover="indicatorTwoOn()" onmouseleave="indicatorTwoOff()" onclick="location.href='#sectie-2'"></div>
 				<div id="indicator-3" onmouseover="indicatorThreeOn()" onclick="location.href='#sectie-3'"></div>
 			</div>
-			<h1 class="titellijn"><span id="titellijn">Play Next</span></h1>
+			<h1 class="titellijn" id="transformTitle"><span id="titellijn">Play Next</span></h1>
 			<div class="project-container">
 				<div class="project" id="project-1"></div>
 			</div>
 			<input type="button" name="" value="BEKIJK PROJECT" id="button" onclick = "projectDicht(); pagina()">
 			<div class="informatie">
-				<p>Het creëren van een online platform waar gebruikers alles te weten komen over opkomende games.</p>
-				<h2>Research <span class="blue">/</span> Prototyping <span class="blue">/</span> Javascript</h2>
+				<p id="informatie-p">Het creëren van een online platform waar gebruikers alles te weten komen over aankomende games.</p>
+				<h2><span id="informatie-h2-1">Research <span id="yellow-line"> / </span></span><span id="informatie-h2-2">Prototyping <span id="yellow-line-2"> / </span></span><span id="informatie-h2-3"> Javascript</span></h2>
 			</div>
 		</div>
 	</section>
