@@ -13,6 +13,7 @@ body{
 		}
 
 	header{
+		position: fixed;
 		background-color: white;
 		border-bottom:1px solid rgba(112,112,112,0.15); 
 	}
@@ -130,6 +131,31 @@ body{
 			font-weight: 700;
 		}
 
+		.image{
+			background: rgb(255,237,0);
+			background: linear-gradient(90deg, rgba(255,237,0,1) 0%, rgba(253,160,133,1) 100%);
+		}
+
+		.volgende-cases{
+			grid-column: 2/3;
+			display: flex;
+			flex-direction: row;
+		}
+
+		.volgende-case{
+			width:50%;
+			background-color: #F5F5F5;
+			margin: 0px 20px;
+		}
+
+		footer{
+			margin-top:20px;
+			width: 100%;
+			height: 100px;
+			border-bottom:1px solid rgba(112,112,112,0.15); 
+			background-color: red;
+		}
+
 /* MOBILE */
 
 @media screen and (max-width: 1000px){
@@ -149,7 +175,8 @@ body{
 	}
 
 	header{
-		height: 65px;
+		z-index: 2;
+		height: 85px;
 	}
 
 	header h1{
@@ -200,6 +227,12 @@ body{
 		grid-column: 1/4;
 	}
 
+	.image{
+		margin-top: 30px;
+		height: 500px;
+		grid-column: 1/4;
+	}
+
 }
 
 /* DESKTOP*/
@@ -221,8 +254,8 @@ body{
 	}
 
 	header{
-		height: 50px;
-		position: relative;
+		z-index: 2;
+		height: 65px;
 	}
 
 		header ul{
@@ -274,6 +307,12 @@ body{
 	}
 
 	.quote{
+		grid-column: 2/3;
+	}
+
+	.image{
+		margin-top: 20px;
+		height: 500px;
 		grid-column: 2/3;
 	}
 }
