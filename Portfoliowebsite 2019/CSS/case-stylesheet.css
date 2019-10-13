@@ -63,7 +63,7 @@ body{
 		display: grid;
 	}
 
-	section h2, section h3{
+	section *{
 		grid-column: 2/3;
 	}
 
@@ -97,6 +97,39 @@ body{
 			font-style: italic;
 		}
 
+	.quote{
+		width: 100%;
+		background-color: #FFED00;
+	}
+
+		.left-quote{
+			left:-100px;
+		}
+
+		.right-quote{
+			right: 100px;
+		}
+
+		.quote h3{
+			color:#131A2B;
+			font-style: italic;
+		}
+
+		blockquote{
+			font-family: paralucent, sans-serif;
+			font-weight: 300;
+			font-style: italic;
+			color:#131A2B;
+			position: relative;
+		}
+
+		blockquote span{
+			position: absolute;
+			font-size: 100px;
+			color: rgba(19, 26, 43,0.15);
+			font-weight: 700;
+		}
+
 /* MOBILE */
 
 @media screen and (max-width: 1000px){
@@ -109,7 +142,7 @@ body{
 		display: block;
 	}
 
-	header, .introductie{
+	header, .introductie,.quote{
 		display: grid;
 		grid-template-columns: 100px auto 100px;
 		width: 100vw;
@@ -162,6 +195,11 @@ body{
 		font-style: normal;
 		line-height: 40px;
 	}
+
+	.quote{
+		grid-column: 1/4;
+	}
+
 }
 
 /* DESKTOP*/
@@ -233,5 +271,9 @@ body{
 	section h3{
 		font-style: normal;
 		line-height: 30px;
+	}
+
+	.quote{
+		grid-column: 2/3;
 	}
 }
