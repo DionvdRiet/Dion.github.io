@@ -56,7 +56,7 @@ body{
 	}
 
 	.introductie{
-		line-height: 15px;
+		line-height: 30px;
 	}
 		.introductie-lijn{
 			grid-column: 2/3;
@@ -323,7 +323,7 @@ body{
 		}
 
 	header h1{
-		margin: 0px 50px;
+		margin: 0px 30px;
 		font-size: 25px;
 	}
 
