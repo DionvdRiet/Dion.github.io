@@ -1,13 +1,10 @@
 body{
 	width: 100vw;
 	margin:0;
+	overflow-x: hidden;
 }
-
 	/* GRID */
-
 	header, .introductie{
-		display: grid;
-		grid-template-columns: 50px auto 50px;
 		width: 100vw;
 	}
 
@@ -17,7 +14,7 @@ body{
 
 	header{
 		background-color: white;
-		border:1px solid rgba(112,112,112,0.15); 
+		border-bottom:1px solid rgba(112,112,112,0.15); 
 	}
 
 		header h1{
@@ -31,7 +28,6 @@ body{
 			background: rgb(255,237,0);
 			background: linear-gradient(90deg, rgba(255,237,0,1) 0%, rgba(253,160,133,1) 100%);
 		}
-
 
 	h1{
 		font-family: paralucent, sans-serif;
@@ -65,42 +61,62 @@ body{
 
 	section{
 		display: grid;
-		grid-template-columns: 50px auto 400px 50px; 
 	}
 
-		.sectie{
-			display: grid;
-			grid-column: 1/3; 
-		} 
+	section h2, section h3{
+		grid-column: 2/3;
+	}
 
-			.sectie *{
-				grid-column: 2/3;
-			}
+	.sectie-indicatie-achtergrond{
+		grid-column: 1/2;
+		background-color: #F5F5F5;
+		margin: 0px 10px 10px 0px;
+		height: 100px;
+		position: relative;
+	}
 
-			.sectie-achtergrond{
-				display: grid;
-				grid-template-columns: 50px auto 400px 50px; 
-				height: 200px;
-				background-color: #F5F5F5;
-			}
+		.sectie-indicatie-achtergrond h2{
+			margin-left: 20px;		
+		}
 
-				.sectie-achtergrond h2{
-					grid-column: 2/3;
-				}
+	.ruimte{
+		grid-column: 2/4;
+	}
 
-				.sectie-indicatie{
-					position: absolute;
-					align-self: left;
-					background-color: #FFED00;
-				}
-
-
+	.sectie-indicatie{
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		right: 0;
+		background-color: #FFED00;
+	}
+		.sectie-indicatie h4{
+			align-self: center;
+			font-family: paralucent, sans-serif;
+			font-weight: 700;
+			font-style: italic;
+		}
 
 /* MOBILE */
 
 @media screen and (max-width: 1000px){
+
+	#desktop{
+		display: none;
+	}
+
+	#responsive{
+		display: block;
+	}
+
+	header, .introductie{
+		display: grid;
+		grid-template-columns: 100px auto 100px;
+		width: 100vw;
+	}
+
 	header{
-		height: 100px;
+		height: 65px;
 	}
 
 	header h1{
@@ -118,16 +134,104 @@ body{
 	h3{
 		font-size: 27px;
 	}
+
+	section{
+		grid-template-columns: 100px auto 100px; 
+	}
+
+		.sectie-indicatie-achtergrond{
+			width: 400px;
+			padding: 10px;
+		}
+
+		.sectie-indicatie{
+			width: 80px;
+			height: 50px;
+			bottom: -30px;
+		}
+		.sectie-indicatie h4{
+			font-size: 25px;
+		}
+
+	section h2{
+		font-style: normal;
+		margin-bottom: -10px;
+	}
+
+	section h3{
+		font-style: normal;
+		line-height: 40px;
+	}
 }
 
 /* DESKTOP*/
 
 @media screen and (min-width: 1001px){
+
+	#desktop{
+		display: block;
+	}
+
+	#responsive{
+		display: none;
+	}
+
+	header, .introductie{
+		display: grid;
+		grid-template-columns: 300px auto 300px;
+		width: 100vw;
+	}
+
 	header{
 		height: 50px;
+		position: relative;
 	}
+
+		header ul{
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			padding: 0;
+		}
+
+	header h1{
+		margin: 0px 50px;
+		font-size: 25px;
+	}
+
+		#active-page{
+
+		}
+
+		#inactive-page{
+			text-decoration: line-through;
+			text-decoration-color: #FFED00;
+		}
 
 	h1{
 		font-size: 50px;
+	}
+
+	section{
+		grid-template-columns: 300px auto 300px; 
+	}
+
+	.sectie-indicatie{
+		width: 60px;
+		height: 40px;
+		bottom: -20px;
+	}
+		.sectie-indicatie h4{
+			font-size: 20px;
+		}
+
+	section h2{
+		font-style: normal;
+		margin-bottom: -10px;
+	}
+
+	section h3{
+		font-style: normal;
+		line-height: 30px;
 	}
 }
