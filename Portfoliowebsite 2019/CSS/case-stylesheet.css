@@ -106,34 +106,75 @@ body{
 	.quote{
 		width: 100%;
 		background-color: #FFED00;
+		margin-bottom: 10px;
 	}
-
-		.left-quote{
-			left:-100px;
-		}
-
-		.right-quote{
-			right: 100px;
+		.quote h2, .quote h3{
+			padding: 0px 20px;
 		}
 
 		.quote h3{
-			color:#252e45;
+			color:#575757;
 			font-style: italic;
+			font-weight: 500;
 		}
+
+			/*.quote h3::before{
+				content: "- ";
+				font-family: paralucent, sans-serif;
+				font-weight: 700;
+				color: #575757;
+			}*/
+
+			.quote-getal-flex{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+
+			.quote-getal{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
+
+				.research-div-procenten h2{
+					/*color: #FFED00;*/
+					align-self: center;
+					font-size: 26px;
+					margin-bottom: 0%;
+				}
+
+				.research-div-procenten h3{
+					color: white;
+				}
 
 		blockquote{
 			font-family: paralucent, sans-serif;
-			font-weight: 300;
+			font-weight: 500;
+			font-size: 24px;
 			font-style: italic;
 			color:#252e45;
 			position: relative;
 		}
 
-		blockquote span{
-			position: absolute;
-			font-size: 100px;
-			color: rgba(19, 26, 43,0.15);
-			font-weight: 700;
+			blockquote ul{
+				padding:0;
+			}
+
+			blockquote li{
+				list-style:none;
+			}
+
+			blockquote li::before{
+				list-style:none;
+				content: "- ";
+				font-family: paralucent, sans-serif;
+				font-weight: 700;
+				color: #252e45;
+			}
+
+		a{
+			text-decoration: none;
 		}
 
 		.image{
@@ -179,6 +220,7 @@ body{
 				border:none;
 				padding: 12px;
 				box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
+				text-shadow: 3px 3px 10px rgba(0, 0, 0,0.15);
 				outline:none;
 			}
 
@@ -194,10 +236,18 @@ body{
 			background-color: white;
 		}
 
-		/* GAMING AFBEELDINGEN */
+		/* Play Next AFBEELDINGEN */
 		#gaming-header{
 			background-image: url('../Afbeeldingen/Gaming/header.jpg');
 		}
+
+		#play-next-persona{
+			background-image: url('../Afbeeldingen/Gaming/play-next-persona.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 400px;
+		}
+
 
 /* MOBILE */
 
@@ -376,6 +426,7 @@ body{
 	input[type="button"]:hover{
 		/*font-size: 19px;*/
 		box-shadow: none;
+		text-shadow: none;
 	}
 
 	.volgende-cases{

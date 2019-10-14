@@ -1,6 +1,7 @@
 function openProject(){
 	document.getElementById('button-1').style.fontSize = "19px";
 	document.getElementById('button-1').style.boxShadow = "none";
+	document.getElementById('button-1').style.textShadow = "none";
 
 	// document.getElementById('volgende-case-1').style.width = "100vw";
 	// document.getElementById('volgende-case-1').style.zIndex = "1";
