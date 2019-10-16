@@ -180,9 +180,14 @@ body{
 
 		.image{
 			grid-column: 2/3;
-			width: 100%;
+			/*width: 100%;*/
 /*			background: rgb(255,237,0);
 			background: linear-gradient(90deg, rgba(255,237,0,1) 0%, rgba(253,160,133,1) 100%);*/
+		}
+
+		#mobile-image{
+			display: flex;
+			justify-content: center;
 		}
 
 		.volgende-case{
@@ -251,6 +256,12 @@ body{
 			height: 400px;
 		}
 
+		#left-text{
+			grid-column: 1/2;
+			text-align: right;
+			margin-left: 10px;
+		}
+
 	/*	#play-next-schetsen-1{
 			background-image: url('../Afbeeldingen/Gaming/Schetsen/schetsen1.jpg');
 			background-size: 100%;
@@ -262,6 +273,14 @@ body{
 		#image-wide{
 			grid-column: 1/4;
 		}
+
+			h3 span{
+				font-family: paralucent, sans-serif;
+				font-weight: 500;
+				font-size: 20px;
+				font-style: normal;
+				color:#252e45;
+			}
 
 
 /* MOBILE */
