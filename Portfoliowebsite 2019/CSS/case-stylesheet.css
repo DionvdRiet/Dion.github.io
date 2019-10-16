@@ -282,6 +282,20 @@ body{
 				color:#252e45;
 			}
 
+		#ben-header{
+			background-image: url('../Afbeeldingen/Ben/ben.png');
+			background-size: cover;;
+			background-position: top;
+			height: 1000px;
+		}
+
+		#ben-persona{
+			background-image: url('../Afbeeldingen/ben/ben-persona.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 500px;
+		}
+
 
 /* MOBILE */
 
