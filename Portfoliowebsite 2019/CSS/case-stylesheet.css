@@ -179,8 +179,10 @@ body{
 		}
 
 		.image{
-			background: rgb(255,237,0);
-			background: linear-gradient(90deg, rgba(255,237,0,1) 0%, rgba(253,160,133,1) 100%);
+			grid-column: 2/3;
+			width: 100%;
+/*			background: rgb(255,237,0);
+			background: linear-gradient(90deg, rgba(255,237,0,1) 0%, rgba(253,160,133,1) 100%);*/
 		}
 
 		.volgende-case{
@@ -247,6 +249,18 @@ body{
 			background-size: cover;
 			background-repeat: no-repeat;
 			height: 400px;
+		}
+
+	/*	#play-next-schetsen-1{
+			background-image: url('../Afbeeldingen/Gaming/Schetsen/schetsen1.jpg');
+			background-size: 100%;
+			background-position: top;
+			background-repeat: no-repeat;
+			height: 1000px;
+		}*/
+
+		#image-wide{
+			grid-column: 1/4;
 		}
 
 
