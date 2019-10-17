@@ -77,7 +77,7 @@ body{
 		grid-column: 1/2;
 		color: #252e45;
 		background-color: #F5F5F5;
-		margin: 0px 10px 10px 0px;
+		margin: 20px 0px 20px 0px;
 		height: 100px;
 		position: relative;
 	}
@@ -158,15 +158,24 @@ body{
 			position: relative;
 		}
 
-			blockquote ul{
+			cite{
+				/*border-top:3px solid #FFED00;*/
+			}
+
+			section ul{
 				padding:0;
 			}
 
-			blockquote li{
+			section li{
 				list-style:none;
+				font-size: 18px;
+				line-height: 30px;
+				color: #575757;
+				font-family: paralucent, sans-serif;
+				font-weight: 300;
 			}
 
-			blockquote li::before{
+			section li::before{
 				list-style:none;
 				content: "- ";
 				font-family: paralucent, sans-serif;
@@ -247,6 +256,8 @@ body{
 		/* Play Next AFBEELDINGEN */
 		#gaming-header{
 			background-image: url('../Afbeeldingen/Gaming/header.jpg');
+			height: 600px;
+			/*background-position: top;*/
 		}
 
 		#play-next-persona{
@@ -300,6 +311,11 @@ body{
 /* MOBILE */
 
 @media screen and (max-width: 1000px){
+
+	body *{
+		text-align: left;
+		line-height: 70px;
+	}
 
 	#desktop{
 		display: none;
