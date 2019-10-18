@@ -390,6 +390,12 @@ body{
 		grid-column: 1/4;
 	}
 
+	.mobile-image{
+		display: flex;
+		justify-content: center;
+		grid-column: 1/4;
+	}
+
 	.volgende-cases{
 		grid-column: 1/4;
 		display: flex;
@@ -403,6 +409,7 @@ body{
 		width:100%;
 		margin-bottom:250px;
 	}
+
 
 }
 
