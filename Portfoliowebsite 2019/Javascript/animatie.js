@@ -121,11 +121,11 @@ function projectOpen(){
 }
 
 function pagina(){
-	setTimeout("location.href = 'gaming.html';",2000)
+	setTimeout("location.href = 'play-next.html';",2000)
 }
 
 function pagina2(){
-    setTimeout("location.href = 'ben.html';",2000)
+    setTimeout("location.href = 'ben-verlengproces.html';",2000)
 }
 
 function pagina3(){
@@ -217,7 +217,7 @@ function responsiveProjectOne(){
     document.getElementById("responsive-button").style.display = "none";
     document.getElementById('responsive-project-line-1').style.height = "100vh";
     setTimeout(projectOmhoog, 500)
-    setTimeout("location.href = 'gaming.html';",1000)
+    setTimeout("location.href = 'play-next.html';",1000)
 }
 
 function responsiveProjectTwo(){
@@ -246,7 +246,7 @@ function responsiveProjectTwo(){
     document.getElementById("responsive-button-ben").style.display = "none";
     document.getElementById('responsive-project-line-1').style.height = "100vh";
     setTimeout(projectOmhoog, 500)
-    setTimeout("location.href = 'ben.html';",1000)
+    setTimeout("location.href = 'ben-verlengproces.html';",1000)
 }
 
 function responsiveProjectThree(){
