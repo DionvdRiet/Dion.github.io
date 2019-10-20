@@ -27,5 +27,12 @@ function startAnimation() {
         document.getElementById("sectie-indicatie-achtergrond").style.transform = "translateX(0px)";
         document.getElementById("case-title").style.transform = "translateY(0px)";
         document.getElementById("case-title").style.opacity = "1";
+        document.getElementById("animateIn1").style.opacity = "1";
+        document.getElementById("animateIn2").style.opacity = "1";
+        document.getElementById("animateIn3").style.opacity = "1";
+        document.getElementById("animateIn4").style.opacity = "1";
+        document.getElementById("animateIn5").style.opacity = "1";
+        document.getElementById("animateIn6").style.opacity = "1";
+        document.getElementById("animateIn7").style.opacity = "1";
     } 
 }
