@@ -59,10 +59,33 @@ body{
 	.introductie{
 		line-height: 30px;
 	}
+
+		#case-title{
+			transform: translateY(100px);
+			transition: transform 2s cubic-bezier(.365,.305,0,1);
+		}
 		.introductie-lijn{
 			grid-column: 2/3;
-			height: 10px;
-			background-color: #FFED00;
+		}
+
+			#introductie-lijn{
+				grid-column: 2/3;
+				height: 10px;
+				background-color: #FFED00;
+				z-index: 3;
+			}
+
+			.introductie-lijn > .ruimte{
+				position: absolute;
+				background-color: white;
+				width: 100%;
+				height: 100px;
+				z-index: 2;
+			}
+
+		.introductie h3{
+			position: relative;
+			z-index: 3;
 		}
 
 	section{
@@ -85,6 +108,12 @@ body{
 		.sectie-indicatie-achtergrond h2{
 			margin-left: 20px;		
 		}
+
+	#sectie-indicatie-achtergrond{
+		transform: translateX(-500px);
+		transition: transform 0.3s cubic-bezier(.365,.305,0,1);
+		transition-delay: 1s;
+	}
 
 	.ruimte{
 		grid-column: 2/4;
@@ -238,7 +267,7 @@ body{
 			}
 
 			#noothulp-case-afbeelding{
-				background-image: url('../Afbeeldingen/Noothulp/home.jpg');
+				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 				background-size: cover;
 				background-position: center;
 			}
@@ -314,9 +343,9 @@ body{
 
 		#ben-header{
 			background-image: url('../Afbeeldingen/Ben/ben.png');
-			background-size: cover;;
-			background-position: top;
-			height: 1000px;
+			/*background-size: cover;*/
+			/*background-position: top;*/
+			height: 600px;
 		}
 
 		#ben-persona{
@@ -327,14 +356,14 @@ body{
 		}
 
 		#noothulp-header{
-			background-image: url('../Afbeeldingen/Noothulp/home.jpg');
-			background-size: cover;;
-			background-position: top;
-			height: 1000px;
+			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+			/*background-size: cover;*/
+			/*background-position: top;*/
+			height: 600px;
 		}
 
 		#noothulp-persona{
-			background-image: url('../Afbeeldingen/Noothulp/ben-persona.png');
+			background-image: url('../Afbeeldingen/Noothulp/persona.png');
 			background-size: contain;
 			background-repeat: no-repeat;
 			height: 500px;
