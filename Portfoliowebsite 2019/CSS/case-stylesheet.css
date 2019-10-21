@@ -261,7 +261,7 @@ body{
 			}
 
 			#play-next-case-afbeelding{
-				background-image: url('../Afbeeldingen/Gaming/header.JPG');
+				background-image: url('../Afbeeldingen/Gaming/header.jpg');
 				background-size: 100%;
 				background-repeat: no-repeat;
 				background-position: center;
@@ -274,7 +274,7 @@ body{
 			}
 
 			#noothulp-case-afbeelding{
-				background-image: url('../Afbeeldingen/Noothulp/header.JPG');
+				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 				background-size: cover;
 				background-position: center;
 			}
@@ -310,13 +310,13 @@ body{
 
 		/* Play Next AFBEELDINGEN */
 		#gaming-header{
-			background-image: url('../Afbeeldingen/Gaming/header.JPG');
+			background-image: url('../Afbeeldingen/Gaming/header.jpg');
 			height: 600px;
 			/*background-position: top;*/
 		}
 
 		#play-next-persona{
-			background-image: url('../Afbeeldingen/Gaming/play-next-persona.JPG');
+			background-image: url('../Afbeeldingen/Gaming/play-next-persona.jpg');
 			background-size: cover;
 			background-repeat: no-repeat;
 			height: 400px;
@@ -329,7 +329,7 @@ body{
 		}
 
 	/*	#play-next-schetsen-1{
-			background-image: url('../Afbeeldingen/Gaming/Schetsen/schetsen1.JPG');
+			background-image: url('../Afbeeldingen/Gaming/Schetsen/schetsen1.jpg');
 			background-size: 100%;
 			background-position: top;
 			background-repeat: no-repeat;
@@ -363,7 +363,7 @@ body{
 		}
 
 		#noothulp-header{
-			background-image: url('../Afbeeldingen/Noothulp/header.JPG');
+			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 			/*background-size: cover;*/
 			/*background-position: top;*/
 			height: 600px;
