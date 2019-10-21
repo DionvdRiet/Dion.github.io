@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="https://use.typekit.net/gqv3dkc.css">
 	<link rel="shortcut icon" type="image/png" href="../Afbeeldingen/favicon.ico"/>
 </head>
-<body>
+<body onload="caseSwitchAnimationDown()">
+	<div id="caseSwitchAnimation"></div>
 	<header id="desktop">
 		<ul>
 			<li onclick="location.href='index.html'"><h1 id="active-page">Projecten</h1></li>
@@ -142,14 +143,14 @@
 				<div class="introductie-lijn"></div>
 				<h3>Ontdek jouw volgende favoriete game</h3>
 				<div class="afbeelding" id="play-next-case-afbeelding"></div>
-				<input type="button" name="button" onclick="location.href='play-next.html'" value="BEKIJK PROJECT">
+				<input type="button" name="button" value="BEKIJK PROJECT" onclick="playNext()">
 			</div>
 			<div class="volgende-case">
 				<h1>Ben verlengproces</h1>
 				<div class="introductie-lijn"></div>
 				<h3>Verlengen kan simpel zijn</h3>
 				<div class="afbeelding" id="ben-case-afbeelding"></div>
-				<input type="button" name="button" value="BEKIJK PROJECT" onclick="location.href='ben-verlengproces.html'" id="button-1">
+				<input type="button" name="button" value="BEKIJK PROJECT" id="button-1" onclick="benVerlengproces()">
 			</div>
 		</div>
 	</section>
