@@ -12,7 +12,7 @@ function indicator(){
     document.getElementById("indicator-1").style.width = "50px";
     document.getElementById("indicator-2").style.width = "25px";
     document.getElementById("indicator-3").style.width = "25px";
-    document.getElementById("indicator-1").style.backgroundColor = "#E5F838";
+    document.getElementById("indicator-1").style.backgroundColor = "#FFED00";
     document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
     document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
 }
@@ -26,7 +26,7 @@ function up(){
 
 function indicator1() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        document.getElementById("indicator-1").style.backgroundColor = "#E5F838";
+        document.getElementById("indicator-1").style.backgroundColor = "#FFED00";
         document.getElementById("indicator-1").style.width = "50px";
         document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-2").style.width = "25px";
@@ -39,7 +39,7 @@ function indicator2() {
     if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
         document.getElementById("indicator-1").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-1").style.width = "25px";
-        document.getElementById("indicator-2").style.backgroundColor = "#E5F838";
+        document.getElementById("indicator-2").style.backgroundColor = "#FFED00";
         document.getElementById("indicator-2").style.width = "50px";
         document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-3").style.width = "25px";
@@ -52,18 +52,18 @@ function indicator3() {
         document.getElementById("indicator-1").style.width = "25px";
         document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-2").style.width = "25px";
-        document.getElementById("indicator-3").style.backgroundColor = "#E5F838";
+        document.getElementById("indicator-3").style.backgroundColor = "#FFED00";
         document.getElementById("indicator-3").style.width = "50px";
     } 
 }
 
 function indicatorOneOn(){
-   document.getElementById("indicator-1").style.backgroundColor = "#E5F838";
+   document.getElementById("indicator-1").style.backgroundColor = "#FFED00";
    document.getElementById("indicator-1").style.width = "50px";
 }
 
 function indicatorTwoOn(){
-   document.getElementById("indicator-2").style.backgroundColor = "#E5F838";
+   document.getElementById("indicator-2").style.backgroundColor = "#FFED00";
    document.getElementById("indicator-2").style.width = "50px";
 }
 
@@ -73,13 +73,13 @@ function indicatorTwoOff(){
 }
 
 function indicatorThreeOn(){
-   document.getElementById("indicator-3").style.backgroundColor = "#E5F838";
+   document.getElementById("indicator-3").style.backgroundColor = "#FFED00";
    document.getElementById("indicator-3").style.width = "50px";
 }
 
 function lineChange(){
 	document.getElementById('projecten-lijn').style.textDecoration = "line-through";
-	document.getElementById('projecten-lijn').style.textDecorationColor = "#E5F838";
+	document.getElementById('projecten-lijn').style.textDecorationColor = "#FFED00";
 }
 
 function lineNormal(){
@@ -121,26 +121,38 @@ function projectOpen(){
 }
 
 function pagina(){
+    document.getElementById('caseSwitchAnimation').style.opacity = "1";
+    document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+    document.getElementById("caseSwitchAnimation").style.height = "100vh";
+    document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 	setTimeout("location.href = 'play-next.html';",2000)
 }
 
 function pagina2(){
+    document.getElementById('caseSwitchAnimation').style.opacity = "1";
+    document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+    document.getElementById("caseSwitchAnimation").style.height = "100vh";
+    document.getElementById("caseSwitchAnimation").style.bottom = "0px";
     setTimeout("location.href = 'ben-verlengproces.html';",2000)
 }
 
 function pagina3(){
+    document.getElementById('caseSwitchAnimation').style.opacity = "1";
+    document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+    document.getElementById("caseSwitchAnimation").style.height = "100vh";
+    document.getElementById("caseSwitchAnimation").style.bottom = "0px";
     setTimeout("location.href = 'noothulp.html';",2000)
 }
 
 function projectContainer(){
-    document.getElementById('project-container').style.marginTop = "0px";
+    // document.getElementById('project-container').style.marginTop = "0px";
     document.getElementById('informatie-p').style.opacity = "1";
     document.getElementById('informatie-h2-1').style.opacity = "1";
     document.getElementById('informatie-h2-2').style.opacity = "1";
     document.getElementById('informatie-h2-3').style.opacity = "1";
-    document.getElementById('yellow-line').style.color = "#E5F838";
+    document.getElementById('yellow-line').style.color = "#FFED00";
     document.getElementById('yellow-line').style.opacity = "1";
-    document.getElementById('yellow-line-2').style.color = "#E5F838";
+    document.getElementById('yellow-line-2').style.color = "#FFED00";
     document.getElementById('yellow-line-2').style.opacity = "1";
     document.getElementById('transformTitle').style.transform = "translate3d(0px, 0px, 0px)";
 
@@ -151,7 +163,7 @@ function overlay(){
     document.getElementById('hamburger-1').style.margin = "10px 0px";
     document.getElementById('hamburger-2').style.margin = "10px 0px";
     document.getElementById('hamburger-3').style.margin = "10px 0px";
-    document.getElementById('hamburger-1').style.backgroundColor = "#E5F838";
+    document.getElementById('hamburger-1').style.backgroundColor = "#FFED00";
     document.getElementById('hamburger-2').style.backgroundColor = "white";
     document.getElementById('hamburger-3').style.backgroundColor = "white";
     document.getElementById('overlay-menu-1').style.display = "block";
@@ -281,6 +293,6 @@ function responsiveProjectThree(){
 function projectOmhoog(){
     // document.getElementById('responsive-project-line-1').style.height = "100vh";
     document.getElementById('project-omhoog').style.height = "2000px";
-    document.getElementById('project-omhoog').style.marginTop = "0px";
+    document.getElementById('project-omhoog').style.marginTop = "-50px";
 }
 

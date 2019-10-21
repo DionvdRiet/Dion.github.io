@@ -23,7 +23,7 @@ function openProject(){
 }
 
 function startAnimation() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("sectie-indicatie-achtergrond").style.transform = "translateX(0px)";
         document.getElementById("case-title").style.transform = "translateY(0px)";
         document.getElementById("case-title").style.opacity = "1";
@@ -35,6 +35,15 @@ function startAnimation() {
         document.getElementById("animateIn6").style.opacity = "1";
         document.getElementById("animateIn7").style.opacity = "1";
     } 
+}
+
+function home(){
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+
+	setTimeout("location.href = 'index.html';",1500)
 }
 
 function playNext(){
