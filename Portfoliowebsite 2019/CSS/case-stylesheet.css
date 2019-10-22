@@ -5,6 +5,7 @@ body{
 	overflow-x: hidden;
 	color: #F5F5F5;
 	text-align: justify;
+	max-width: 80vw;
 }
 	/* GRID */
 	header, .introductie{
@@ -109,6 +110,7 @@ body{
 
 	section{
 		display: grid;
+		width: 100vw;
 	}
 
 	section *{
@@ -324,6 +326,7 @@ body{
 		#gaming-header{
 			background-image: url('../Afbeeldingen/Gaming/header.jpg');
 			height: 600px;
+			width: 100vw;
 			/*background-position: top;*/
 		}
 
@@ -365,6 +368,7 @@ body{
 			/*background-size: cover;*/
 			/*background-position: top;*/
 			height: 600px;
+			width: 100vw;
 		}
 
 		#ben-persona{
@@ -379,6 +383,7 @@ body{
 			/*background-size: cover;*/
 			/*background-position: top;*/
 			height: 600px;
+			width: 100vw;
 		}
 
 		#noothulp-persona{
@@ -386,6 +391,7 @@ body{
 			background-size: contain;
 			background-repeat: no-repeat;
 			height: 500px;
+
 		}
 
 
@@ -414,11 +420,11 @@ body{
 
 	header{
 		z-index: 2;
-		height: 85px;
+		height: 120px;
 	}
 
 	header h1{
-		font-size: 36px;
+		font-size: 44px;
 	}
 
 	h1{
