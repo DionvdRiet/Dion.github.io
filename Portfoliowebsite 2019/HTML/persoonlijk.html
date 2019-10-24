@@ -2,29 +2,46 @@
 <html>
 <head>
 	<title>Over Mij | Portfoliowebsite Dion van der Riet</title>
-	<link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
-	<link rel="stylesheet" href="https://use.typekit.net/due7wge.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/case-stylesheet.css">
+	<link rel="stylesheet" href="https://use.typekit.net/gqv3dkc.css">
 	<link rel="shortcut icon" type="image/png" href="../Afbeeldingen/favicon.ico"/>
 </head>
-<body>
-<header>
-	<ul>
-		<li class="inactive" id="projecten-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='index.html'" >Projecten</li>
-		<li class="active" id="over-mij-lijn" onclick="location.href='persoonlijk.html'">Over mij</li>
-		<li class="inactive" id="contact-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='contact.html'">Contact</li>
-	</ul>
-</header>
-	<section id="sectie-1">
-		<div class="content">
-			<h1 class="titellijn">Over mij</h1>
-			<div class="project-container">
+<body  onload="caseSwitchAnimationDown()">
+	<div id="caseSwitchAnimation"></div>
+	<header id="desktop">
+		<ul>
+			<li onclick="home()"><h1 id="inactive-page">Projecten</h1></li>
+			<li  onclick="overMij()"><h1 id="active-page">Over mij</h1></li>
+			<li  onclick="contact()"><h1 id="inactive-page">Contact</h1></li>
+		</ul>
+	</header>
+	<header id="responsive">
+		<h1>Play Next</h1>
+	</header>
+	<section class="persoonlijk-section">
+		<div class="persoonlijk-intro">
+			<h1>Goedemiddag,</h1>
+			<h3>Ik ben Dion van de Riet, een 21-jarige student Communication and Multimedia Design aan de Haagse Hogeschool.</h3>
+		</div>
+		<img src="../Afbeeldingen/OverMij/dion.jpg" width="500px">
+	</section>
+	<section class="persoonlijk-section">
+		<div class="tijdlijn">
+			<div class="tijdlijn-lijn">
 			</div>
-			<div class="persoonlijke-informatie">
-				<p>Ik ben Dion van der Riet, een 20-jarig student <span class="highlight">Communication & Multimedia Design</span> aan de Haagse Hogeschool. In de afgelopen drie jaar heb ik tijdens mijn opleiding veel ervaring opgedaan in de vorm van <span class="highlight" id="twee">prototyping, coderen (HTML, CSS, Javascript), user testing en voornamelijk concepting</span>. Zo'n 5 jaar geleden ben ik begonnen met ontwerpen van banners voor o.a. YouTubers, maar sinds het begin van mijn studie is mijn <span class="highlight" id="drie">liefde voor webdesign</span> gaan groeien. Dankzij het programma Adobe Xd zet ik ideeën snel om in pixels. Omdat ik al een aantal jaren bezig ben met designen, vind ik het makkelijk om <span class="highlight" id="vier">individueel</span> een ontwerp uit te werken, maar met de vele groepsprojecten bij deze opleiding ben ik er toch wel achtergekomen dat klasgenoten ook hele fijne mensen zijn. Mijn favoriete projecten zijn projecten waar ik mijn creativiteit los kan laten op <span class="highlight" id="vijf">concepten, designs en code</span>.</p>
-			</div>
+			<div class="tijdlijn-1"><h3>In de afgelopen drie jaar heb ik tijdens mijn opleiding veel ervaring opgedaan in de vorm van prototyping, coderen (HTML, CSS, Javascript), user testing en voornamelijk concepting.</h3></div>
+			<div class="tijdlijn-2"><h3>Zo'n 5 jaar geleden ben ik begonnen met ontwerpen van banners voor o.a. YouTubers, maar sinds het begin van mijn studie is mijn liefde voor webdesign gaan groeien.</h3></div>
+			<div class="tijdlijn-3"><h3>Dankzij Adobe Xd zet ik ideeën snel om in pixels. Omdat ik al een aantal jaren bezig ben met designen, vind ik het makkelijk om individueel een ontwerp uit te werken. Mijn favoriete projecten zijn projecten waar ik mijn creativiteit los kan laten op concepten, designs en code.</h3></div>
 		</div>
 	</section>
-<script type="text/javascript" src="../Javascript/animatie.js">
+	<section>
+		<div class="persoonlijk-einde">
+			<h1>Neem gerust contact op</h1>
+			<input type="button" value="CONTACTPAGINA" onclick="contact()">
+		</div>
+	</section>
+
+<script type="text/javascript" src="../Javascript/case.js"></script>
 	
 </script>
 </body>
