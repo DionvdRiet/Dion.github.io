@@ -228,10 +228,13 @@ body{
 
 	.eindresultaat-section{
 		display: grid;
-		grid-template-columns: 300px auto auto auto 300px;
+		grid-template-columns: 200px auto auto auto 200px;
 		text-align: left;
 	}
 
+		.eindresultaat-section img{
+			margin-bottom:10%;
+		}
 
 		.eindresultaat-section h1{
 			font-family: paralucent, sans-serif;
@@ -248,6 +251,10 @@ body{
 			border-radius: 10px;
 		}
 
+		.eindresultaat-afbeelding{
+			grid-column: 1/6;
+		}
+
 		.eindresultaat-links{
 			grid-column: 1/3;
 			margin: -30px;
@@ -260,11 +267,13 @@ body{
 
 		.eindresultaat-rechts{
 			grid-column: 3/6;
+			position: relative;
 		}
 
 		#toevoegen-tekst{
-			grid-column: 1/2;
-			/*width: 60%;*/
+			grid-column: 2/3;
+			position: relative;
+			width: 90%;
 		}
 
 	.ruimte{
@@ -462,6 +471,15 @@ body{
 			width: 100vw;
 		}
 
+		#finance-persona{
+			background-image: url('../Afbeeldingen/Finance/jeezy.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 400px;
+		}
+
+
 		#gaming-header{
 			background-image: url('../Afbeeldingen/Gaming/header.jpg');
 			height: 600px;
@@ -602,6 +620,12 @@ body{
 	section h3{
 		font-style: normal;
 		line-height: 40px;
+	}
+
+	.eindresultaat-section{
+		display: grid;
+		grid-template-columns: 50px auto auto auto 50px;
+		text-align: left;
 	}
 
 	.quote{
