@@ -39,7 +39,7 @@ function startAnimation() {
 
 function home(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 
@@ -48,7 +48,7 @@ function home(){
 
 function overMij(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 
@@ -57,16 +57,25 @@ function overMij(){
 
 function contact(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 
 	setTimeout("location.href = 'contact.html';",1500)
 }
 
+function saveNow(){
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+
+	setTimeout("location.href = 'save-now.html';",1500)
+}
+
 function playNext(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 
@@ -75,7 +84,7 @@ function playNext(){
 
 function benVerlengproces(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 
@@ -84,7 +93,7 @@ function benVerlengproces(){
 
 function noothulp(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateY(0px)";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 
@@ -93,7 +102,7 @@ function noothulp(){
 
 function caseSwitchAnimationDown(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateY(100%)";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	// document.getElementById("caseSwitchAnimation").style.top = "0px";
 	setTimeout(noOpacity, 1000);
