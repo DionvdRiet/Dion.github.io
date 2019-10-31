@@ -3,6 +3,7 @@
     indicator1()
     indicator2()
     indicator3()
+    indicator4()
     
     };
 
@@ -32,6 +33,8 @@ function indicator1() {
         document.getElementById("indicator-2").style.width = "25px";
         document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-3").style.width = "25px";
+        document.getElementById("indicator-4").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-4").style.width = "25px";
     } 
 }
 
@@ -43,6 +46,8 @@ function indicator2() {
         document.getElementById("indicator-2").style.width = "50px";
         document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
         document.getElementById("indicator-3").style.width = "25px";
+        document.getElementById("indicator-4").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-4").style.width = "25px";
     } 
 }
 
@@ -54,6 +59,21 @@ function indicator3() {
         document.getElementById("indicator-2").style.width = "25px";
         document.getElementById("indicator-3").style.backgroundColor = "#FFED00";
         document.getElementById("indicator-3").style.width = "50px";
+        document.getElementById("indicator-4").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-4").style.width = "25px";
+    } 
+}
+
+function indicator4() {
+    if (document.body.scrollTop > 2200|| document.documentElement.scrollTop > 2200) {
+        document.getElementById("indicator-1").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-1").style.width = "25px";
+        document.getElementById("indicator-2").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-2").style.width = "25px";
+        document.getElementById("indicator-3").style.backgroundColor = "#131A2B";
+        document.getElementById("indicator-3").style.width = "25px";
+        document.getElementById("indicator-4").style.backgroundColor = "#FFED00";
+        document.getElementById("indicator-4").style.width = "50px";
     } 
 }
 
@@ -87,7 +107,7 @@ function lineNormal(){
 }
 
 function projectDicht(){
-	document.getElementById('project-1').style.height = "0vh";
+	document.getElementById('p').style.height = "0vh";
 	// document.getElementById('project-1').style.gridRow = "2/4";
 	document.getElementById('button').style.backgroundSize = "100% 100%";
     // document.getElementById('button').style.background = "background:linear-gradient(to right,rgba(229, 248, 56,1) 0%,rgba(229,248,56,1) 100%)";
@@ -128,7 +148,7 @@ function saveNow(){
     setTimeout("location.href = 'save-now.html';",2000)
 }
 
-function pagina(){
+function playNext(){
     document.getElementById('caseSwitchAnimation').style.opacity = "1";
     document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
     document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -136,7 +156,7 @@ function pagina(){
 	setTimeout("location.href = 'play-next.html';",2000)
 }
 
-function pagina2(){
+function benVerlengproces(){
     document.getElementById('caseSwitchAnimation').style.opacity = "1";
     document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
     document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -144,7 +164,7 @@ function pagina2(){
     setTimeout("location.href = 'ben-verlengproces.html';",2000)
 }
 
-function pagina3(){
+function noothulp(){
     document.getElementById('caseSwitchAnimation').style.opacity = "1";
     document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
     document.getElementById("caseSwitchAnimation").style.height = "100vh";

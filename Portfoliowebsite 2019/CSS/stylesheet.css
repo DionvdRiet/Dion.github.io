@@ -79,14 +79,14 @@ section{
 
 			#indicator{
 				margin-left: -100px;
-				transition: margin-left .5s ease-in;
+				transition: margin-left .3s ease-in;
 				transition-delay: 1s;
 			}
 
-			#indicator-1, #indicator-2, #indicator-3{
-				height: 5px;
-				transition: width .3s ease-in-out;
-				transition: background-color .3s ease-in-out;
+			#indicator-1, #indicator-2, #indicator-3 #indicator-4{
+				/*height: 5px;*/
+				/*transition: width .3s ease-in-out;*/
+				/*transition: background-color .3s ease-in-out;*/
 			}
 
 			#indicator-1{
@@ -95,7 +95,7 @@ section{
 				background-color: #FFED00;
 			}
 
-			#indicator-2,#indicator-3{
+			#indicator-2,#indicator-3, #indicator-4{
 				height: 5px;
 				width: 25px;
 				background-color: #131A2B;
@@ -284,7 +284,6 @@ section{
 		.content input[type="button"]{
 			grid-column: 6/8;
 			grid-row:4/4;
-			background-color: white;
 			border:none;
 			padding-bottom:5px;
 			background:
@@ -295,7 +294,7 @@ section{
 			   )
 			   left 
 			   bottom
-			   white    
+			   transparent    
 			   no-repeat;
 			background-size:100% 7px;
 			font-family: paralucent, sans-serif;
@@ -485,7 +484,7 @@ section{
 			transition-delay: 1s;
 		}
 
-		#sectie-2 .content, #button2, #sectie-4 .content{
+		#sectie-2 .content, .darkbutton, #sectie-4 .content{
 			background-color: #F6F6F6;
 		}
 

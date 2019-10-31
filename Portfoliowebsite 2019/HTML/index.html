@@ -34,6 +34,7 @@
 				<div id="indicator-1" onmouseover="indicatorOneOn()" onclick="location.href='#sectie-1'"></div>
 				<div id="indicator-2" onmouseover="indicatorTwoOn()" onmouseleave="indicatorTwoOff()" onclick="location.href='#sectie-2'"></div>
 				<div id="indicator-3" onmouseover="indicatorThreeOn()" onclick="location.href='#sectie-3'"></div>
+				<div id="indicator-4" onmouseover="indicatorFourOn()" onclick="location.href='#sectie-4'"></div>
 			</div>
 			<h1 class="titellijn" id="transformTitle"><span id="titellijn">Save Now</span></h1>
 			<div class="project-container">
@@ -48,14 +49,13 @@
 	</section>
 	<section id="sectie-2" class="">
 		<div class="content" id="project-container">
-			<h1 class="titellijn" id="transformTitle"><span id="titellijn">Play Next</span></h1>
+			<h1 class="titellijn"><span id="titellijn">Play Next</span></h1>
 			<div class="project-container">
 				<div class="project" id="play-next-project"></div>
 			</div>
-			<input type="button" name="" value="BEKIJK PROJECT" id="button" onclick = "projectDicht(); pagina()">
+			<input type="button" name="" value="BEKIJK PROJECT" id="button" class="darkbutton" onclick = "playNext()">
 			<div class="informatie">
 				<p id="informatie-p">Het creëren van een online platform waar gebruikers alles te weten komen over aankomende games.</p>
-				<h2><span id="informatie-h2-1">Research <span id="yellow-line"> / </span></span><span id="informatie-h2-2">Prototyping <span id="yellow-line-2"> / </span></span><span id="informatie-h2-3"> Javascript</span></h2>
 			</div>
 		</div>
 	</section>
@@ -65,7 +65,7 @@
 				<div class="project-container">
 					<div class="project" id="ben-project"></div>
 				</div>
-				<input type="button" name="" value="BEKIJK PROJECT" id="button2" onclick = "project2Dicht(); pagina2()">
+				<input type="button" name="" value="BEKIJK PROJECT" id="button2" onclick = "benVerlengproces()">
 				<div class="informatie">
 					<p>Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen</p>
 					<h2>Prototyping <span class="blue">/</span> HTML/CSS <span class="blue">/</span> Javascript</h2>
@@ -78,7 +78,7 @@
 				<div class="project-container">
 					<div class="project" id="noothulp-project"></div>
 				</div>
-				<input type="button" name="" value="BEKIJK PROJECT" id="button3" onclick = "project3Dicht(); pagina3()">
+				<input type="button" name="" value="BEKIJK PROJECT" id="button3" onclick = "noothulp()">
 				<div class="informatie">
 					<p>Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent </p>
 					<h2>Concepting <span class="blue">/</span> Design <span class="blue">/</span> Prototyping</h2>
