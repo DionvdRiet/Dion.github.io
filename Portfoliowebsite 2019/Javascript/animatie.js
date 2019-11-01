@@ -175,13 +175,13 @@ function noothulp(){
 function projectContainer(){
     // document.getElementById('project-container').style.marginTop = "0px";
     document.getElementById('informatie-p').style.opacity = "1";
-    document.getElementById('informatie-h2-1').style.opacity = "1";
-    document.getElementById('informatie-h2-2').style.opacity = "1";
-    document.getElementById('informatie-h2-3').style.opacity = "1";
-    document.getElementById('yellow-line').style.color = "#FFED00";
-    document.getElementById('yellow-line').style.opacity = "1";
-    document.getElementById('yellow-line-2').style.color = "#FFED00";
-    document.getElementById('yellow-line-2').style.opacity = "1";
+    // document.getElementById('informatie-h2-1').style.opacity = "1";
+    // document.getElementById('informatie-h2-2').style.opacity = "1";
+    // document.getElementById('informatie-h2-3').style.opacity = "1";
+    // document.getElementById('yellow-line').style.color = "#FFED00";
+    // document.getElementById('yellow-line').style.opacity = "1";
+    // document.getElementById('yellow-line-2').style.color = "#FFED00";
+    // document.getElementById('yellow-line-2').style.opacity = "1";
     document.getElementById('transformTitle').style.transform = "translate3d(0px, 0px, 0px)";
 
 }
