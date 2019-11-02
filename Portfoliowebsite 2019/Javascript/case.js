@@ -1,8 +1,20 @@
 window.onscroll = function() {
 
-startAnimation()
+startAnimation(x);
 
 };
+
+function responsiveAnimationTest(x) {
+  if (x.matches) { // If media query matches
+    startAnimation();
+  } else {
+    startResponsiveAnimation();
+  }
+}
+
+var x = window.matchMedia("(min-width: 1001px)")
+responsiveAnimationTest(x)
+x.addListener(responsiveAnimationTest)
 
 
 function openProject(){
@@ -35,6 +47,19 @@ function startAnimation() {
         document.getElementById("animateIn6").style.opacity = "1";
         document.getElementById("animateIn7").style.opacity = "1";
     } 
+}
+
+function startResponsiveAnimation() {
+        document.getElementById("sectie-indicatie-achtergrond").style.transform = "translateX(0px)";
+        document.getElementById("case-title").style.transform = "translateY(0px)";
+        document.getElementById("case-title").style.opacity = "1";
+        document.getElementById("animateIn1").style.opacity = "1";
+        document.getElementById("animateIn2").style.opacity = "1";
+        document.getElementById("animateIn3").style.opacity = "1";
+        document.getElementById("animateIn4").style.opacity = "1";
+        document.getElementById("animateIn5").style.opacity = "1";
+        document.getElementById("animateIn6").style.opacity = "1";
+        document.getElementById("animateIn7").style.opacity = "1";
 }
 
 function home(){
@@ -111,11 +136,11 @@ function caseSwitchAnimationDown(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
-	// document.getElementById("caseSwitchAnimation").style.top = "0px";
 	setTimeout(noOpacity, 1000);
 }
 
 function noOpacity(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "0";
+	document.getElementById("caseSwitchAnimation").style.display = "none";
 }
 
