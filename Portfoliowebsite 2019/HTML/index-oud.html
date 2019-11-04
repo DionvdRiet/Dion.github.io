@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfoliowebsite 2019 Dion van der Riet</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+	<link rel="stylesheet" href="https://use.typekit.net/gqv3dkc.css">
+	<link rel="shortcut icon" type="image/png" href="../Afbeeldingen/favicon.ico"/>
+</head>
+<body onload="projectContainer(); indicator(); caseSwitchAnimationDown()">
+	<div id="caseSwitchAnimation"></div>
+<header>
+	<ul>
+		<li class="active" id="projecten-lijn">Projecten</li>
+		<li class="inactive" id="over-mij-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='persoonlijk.html'">Over mij</li>
+		<li class="inactive" id="contact-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='contact.html'">Contact</li>
+	</ul>
+	<div class="responsive-nav" id="header">
+		<div class="hamburger-menu" id="hamburger-menu" onclick="overlay()">
+			<div id="hamburger-1"></div>
+			<div id="hamburger-2"></div>
+			<div id="hamburger-3"></div>
+		</div>
+		<h1>Projecten</h1>
+	</div>
+	<div class="responsive-nav-balk" id="overlay">
+		<h1 class="yellow" id="overlay-menu-1">Projecten</h1>
+		<h1 class="white" id="overlay-menu-2">Over mij</h1>
+		<h1 class="white" id="overlay-menu-3">Contact</h1>
+	</div>
+</header>
+	<section id="sectie-1" class="">
+		<div class="content" id="project-container">
+			<div class="indicator" id="indicator">
+				<div id="indicator-1" onmouseover="indicatorOneOn()" onclick="location.href='#sectie-1'"></div>
+				<div id="indicator-2" onmouseover="indicatorTwoOn()" onmouseleave="indicatorTwoOff()" onclick="location.href='#sectie-2'"></div>
+				<div id="indicator-3" onmouseover="indicatorThreeOn()" onclick="location.href='#sectie-3'"></div>
+				<div id="indicator-4" onmouseover="indicatorFourOn()" onclick="location.href='#sectie-4'"></div>
+			</div>
+			<h1 class="titellijn" id="transformTitle"><span id="titellijn">Save Now</span></h1>
+			<div class="project-container">
+				<div class="project" id="save-now-project"></div>
+			</div>
+			<input type="button" name="" value="BEKIJK PROJECT" id="button" onclick = "saveNow()">
+			<div class="informatie">
+				<p id="informatie-p">Houd je uitgaven in de gaten.</p>
+				<!-- <h2><span id="informatie-h2-1">Research <span id="yellow-line"> / </span></span><span id="informatie-h2-2">Prototyping <span id="yellow-line-2"> / </span></span><span id="informatie-h2-3"> Javascript</span></h2> -->
+			</div>
+		</div>
+	</section>
+	<section id="sectie-2" class="">
+		<div class="content" id="project-container">
+			<h1 class="titellijn"><span id="titellijn">Play Next</span></h1>
+			<div class="project-container">
+				<div class="project" id="play-next-project"></div>
+			</div>
+			<input type="button" name="" value="BEKIJK PROJECT" id="button" class="darkbutton" onclick = "playNext()">
+			<div class="informatie">
+				<p id="informatie-p">Het creëren van een online platform waar gebruikers alles te weten komen over aankomende games.</p>
+			</div>
+		</div>
+	</section>
+	<section id="sectie-3" class="">
+		<div class="content">
+			<h1 class="titellijn"><span id="titellijn">Ben verlengproces</span></h1>
+				<div class="project-container">
+					<div class="project" id="ben-project"></div>
+				</div>
+				<input type="button" name="" value="BEKIJK PROJECT" id="button2" onclick = "benVerlengproces()">
+				<div class="informatie">
+					<p>Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen</p>
+					<!-- <h2>Prototyping <span class="blue">/</span> HTML/CSS <span class="blue">/</span> Javascript</h2> -->
+				</div>
+		</div>
+	</section>
+	<section id="sectie-4" class="">
+		<div class="content">
+			<h1 class="titellijn"><span id="titellijn">Noothulp</span></h1>
+				<div class="project-container">
+					<div class="project" id="noothulp-project"></div>
+				</div>
+				<input type="button" name="" value="BEKIJK PROJECT" id="button3" onclick = "noothulp()">
+				<div class="informatie">
+					<p>Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent </p>
+					<!-- <h2>Concepting <span class="blue">/</span> Design <span class="blue">/</span> Prototyping</h2> -->
+				</div>
+		</div>
+	</section>
+	<section class="responsive-section">
+		<div class="responsive-project" id="responsive-project-1">
+			<div class="project-box" id="project-box">
+				<h1 id="responsive-title-1">Play Next</h1>
+				<p id="responsive-par-1">Het creëren van een online platform waar gebruikers alles te weten komen over opkomende games</p>
+				<div class="responsive-image-1" id="responsive-image-1"></div>
+				<h2 onclick="responsiveProjectOne()" id="responsive-button">BEKIJK PROJECT</h2>
+			</div>
+			<div class="responsive-project-line" id="responsive-project-line-1">
+				<div id="project-omhoog"></div>
+			</div>
+		</div>
+		<div class="responsive-project" id="responsive-project-2">
+			<div class="project-box">
+				<h1 id="responsive-title-2">Ben Verlengproces</h1>
+				<p id="responsive-par-2">Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen</p>
+				<div class="responsive-image-2" id="responsive-image-2"></div>
+				<h2  onclick="responsiveProjectTwo()" id="responsive-button-ben">BEKIJK PROJECT</h2>
+			</div>
+			<div class="responsive-project-line"></div>
+		</div>
+		<div class="responsive-project" id="responsive-project-3">
+			<div class="project-box">
+				<h1 id="responsive-title-3">Noothulp</h1>
+				<p id="responsive-par-3">Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent </p>
+				<div class="responsive-image-3" id="responsive-image-3"></div>
+				<h2 onclick="responsiveProjectThree()" id="responsive-button-noothulp">BEKIJK PROJECT</h2>
+			</div>
+			<div class="responsive-project-line" id="responsive-project-line-3"></div>
+		</div>
+	</section>
+	<footer></footer>
+
+<script type="text/javascript" src="../Javascript/case.js"></script>
+<script type="text/javascript" src="../Javascript/animatie.js">
+	
+</script>
+</body>
+</html>

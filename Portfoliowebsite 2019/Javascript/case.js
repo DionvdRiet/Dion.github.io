@@ -1,10 +1,45 @@
-window.onscroll = function() {
+// window.onload      = responsiveAnimation()  ;
 
+window.onscroll = function() {
+aanHetScrollen();
 startAnimation(x);
 
 };
 
-function responsiveAnimationTest(x) {
+function loadWebsite(){
+	document.getElementById('caseSwitchAnimation').style.opacity = "0";
+	document.body.style.overflowY = "hidden";
+	document.getElementById('loadWebsite').style.opacity = "1";
+	document.getElementById('loadWebsiteBarFilled').style.width = "100%";
+
+	setTimeout(function(){ 
+	  document.body.style.overflowY = "scroll";
+	  document.getElementById('loadWebsite').style.opacity = "0";
+	  document.getElementById('loadWebsiteWit').style.opacity = "0";
+	  document.getElementById('loadWebsiteWit').style.display = "none";
+
+	}, 3000);
+
+
+	setTimeout(function(){ 
+	document.getElementById('caseSwitchAnimation').style.transitionDelay = "2.5s";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
+	document.getElementById("caseSwitchAnimation").style.height = "100%";
+	document.getElementById('welkom-bericht').style.opacity = "1";
+	 document.getElementById('welkom-bericht').style.transform = "translateX(0px)";
+	}, 500);
+
+	setTimeout(function(){
+		document.getElementById('loadWebsite').style.display = "none";
+	}, 5000);
+
+
+	// caseSwitchAnimationDown();
+}
+
+
+function responsiveAnimation(x) {
   if (x.matches) { // If media query matches
     startAnimation();
   } else {
@@ -34,6 +69,11 @@ function openProject(){
 	// document.getElementById('volgende-cases').style.transition = "opacity 0.5s ease-in";
 }
 
+function aanHetScrollen() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("scroll-beneden").style.opacity = "0";
+    } 
+}
 function startAnimation() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("sectie-indicatie-achtergrond").style.transform = "translateX(0px)";

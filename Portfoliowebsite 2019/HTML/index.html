@@ -1,126 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfoliowebsite 2019 Dion van der Riet</title>
-	<link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+	<title>Welkom | Portfoliowebsite Dion van der Riet</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/case-stylesheet.css">
 	<link rel="stylesheet" href="https://use.typekit.net/gqv3dkc.css">
 	<link rel="shortcut icon" type="image/png" href="../Afbeeldingen/favicon.ico"/>
 </head>
-<body onload="projectContainer(); indicator(); caseSwitchAnimationDown()">
+<body onload="loadWebsite()">
+	<div id="loadWebsite">
+		<div class="loadWebsiteTitel">
+			<h1>Dion van der Riet</h1>
+			<h3>UX Design student</h3>
+			<div id="loadWebsiteBar">
+				<div id="loadWebsiteBarFilled"></div>
+				<div id="loadWebsiteBarBackground"></div>
+			</div>
+		</div>
+	</div>
+	<div id="loadWebsiteWit"></div>
 	<div id="caseSwitchAnimation"></div>
-<header>
-	<ul>
-		<li class="active" id="projecten-lijn">Projecten</li>
-		<li class="inactive" id="over-mij-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='persoonlijk.html'">Over mij</li>
-		<li class="inactive" id="contact-lijn" onmouseover="lineChange()" onmouseout="lineNormal()" onclick="location.href='contact.html'">Contact</li>
-	</ul>
-	<div class="responsive-nav" id="header">
+	<!-- <div class="welkom-projecten-indicator">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div> -->
+	<header id="desktop">
+		<ul>
+			<li onclick="home()"><h1 id="active-page">Projecten</h1></li>
+			<li onclick="location.href='contact.html'"><h1 id="inactive-page">Contact</h1></li>
+		</ul>
+	</header>
+	<header class="responsive-nav">
 		<div class="hamburger-menu" id="hamburger-menu" onclick="overlay()">
-			<div id="hamburger-1"></div>
-			<div id="hamburger-2"></div>
-			<div id="hamburger-3"></div>
+			<img src="../Afbeeldingen/left-arrow.svg" class="left-arrow" onclick="location.href='index.html'">
 		</div>
+		<h1>Save Now</h1>
+	</header>
+	<section class="welkom">
+		<div id="welkom-bericht">
+			<h1>Goedemiddag,</h1>
+			<h3>Mijn naam is Dion van de Riet, een 21-jarige student Communication and Multimedia Design aan de Haagse Hogeschool.</h3>
+		</div>
+		<div class="welkom-foto-1"></div>
+		<div class="welkom-foto-2"></div>
+		<h3 id="scroll-beneden">Scroll naar beneden :)</h3>
+	</section>
+	<section class="welkom-introductie">
+		<h3>
+			In de afgelopen drie jaar heb ik tijdens mijn opleiding veel ervaring opgedaan in de vorm van prototyping, coderen (HTML, CSS, Javascript), user testing en voornamelijk concepting.
+			<br><br>
+			Zo'n 6 jaar geleden ben ik begonnen met ontwerpen van banners voor o.a. YouTubers, maar sinds het begin van mijn studie is mijn liefde voor webdesign gaan groeien.
+			<br><br>
+			Dankzij Adobe Xd zet ik ideeën snel om in pixels. Omdat ik al een aantal jaren bezig ben met designen, vind ik het makkelijk om individueel een ontwerp uit te werken. Mijn favoriete projecten zijn projecten waar ik mijn creativiteit los kan laten op concepten, designs en code.
+		</h3>
+	</section>
+	<section class="welkom-projecten">
 		<h1>Projecten</h1>
-	</div>
-	<div class="responsive-nav-balk" id="overlay">
-		<h1 class="yellow" id="overlay-menu-1">Projecten</h1>
-		<h1 class="white" id="overlay-menu-2">Over mij</h1>
-		<h1 class="white" id="overlay-menu-3">Contact</h1>
-	</div>
-</header>
-	<section id="sectie-1" class="">
-		<div class="content" id="project-container">
-			<div class="indicator" id="indicator">
-				<div id="indicator-1" onmouseover="indicatorOneOn()" onclick="location.href='#sectie-1'"></div>
-				<div id="indicator-2" onmouseover="indicatorTwoOn()" onmouseleave="indicatorTwoOff()" onclick="location.href='#sectie-2'"></div>
-				<div id="indicator-3" onmouseover="indicatorThreeOn()" onclick="location.href='#sectie-3'"></div>
-				<div id="indicator-4" onmouseover="indicatorFourOn()" onclick="location.href='#sectie-4'"></div>
-			</div>
-			<h1 class="titellijn" id="transformTitle"><span id="titellijn">Save Now</span></h1>
-			<div class="project-container">
-				<div class="project" id="save-now-project"></div>
-			</div>
-			<input type="button" name="" value="BEKIJK PROJECT" id="button" onclick = "saveNow()">
-			<div class="informatie">
-				<p id="informatie-p">Houd je uitgaven in de gaten.</p>
-				<!-- <h2><span id="informatie-h2-1">Research <span id="yellow-line"> / </span></span><span id="informatie-h2-2">Prototyping <span id="yellow-line-2"> / </span></span><span id="informatie-h2-3"> Javascript</span></h2> -->
+		<div id="welkom-save-now">
+			<div class="welkom-projecten-info">
+				<h2>Save Now</h2>
+				<h3>Het creëren van een applicatie om alles te weten te komen over jouw aankopen en financiële situatie te verbeteren.</h3>
+				<input type="button" name="button" value="BEKIJK PROJECT" onclick="saveNow()">
 			</div>
 		</div>
-	</section>
-	<section id="sectie-2" class="">
-		<div class="content" id="project-container">
-			<h1 class="titellijn"><span id="titellijn">Play Next</span></h1>
-			<div class="project-container">
-				<div class="project" id="play-next-project"></div>
-			</div>
-			<input type="button" name="" value="BEKIJK PROJECT" id="button" class="darkbutton" onclick = "playNext()">
-			<div class="informatie">
-				<p id="informatie-p">Het creëren van een online platform waar gebruikers alles te weten komen over aankomende games.</p>
+		<div id="welkom-play-next">
+			<div class="welkom-projecten-info">
+				<h2>Play Next</h2>
+				<h3>Het creëren van een online platform waar gebruikers alles te weten komen over aankomende games.</h3>
+				<input type="button" name="button" value="BEKIJK PROJECT" onclick="playNext()">
 			</div>
 		</div>
-	</section>
-	<section id="sectie-3" class="">
-		<div class="content">
-			<h1 class="titellijn"><span id="titellijn">Ben verlengproces</span></h1>
-				<div class="project-container">
-					<div class="project" id="ben-project"></div>
-				</div>
-				<input type="button" name="" value="BEKIJK PROJECT" id="button2" onclick = "benVerlengproces()">
-				<div class="informatie">
-					<p>Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen</p>
-					<!-- <h2>Prototyping <span class="blue">/</span> HTML/CSS <span class="blue">/</span> Javascript</h2> -->
-				</div>
-		</div>
-	</section>
-	<section id="sectie-4" class="">
-		<div class="content">
-			<h1 class="titellijn"><span id="titellijn">Noothulp</span></h1>
-				<div class="project-container">
-					<div class="project" id="noothulp-project"></div>
-				</div>
-				<input type="button" name="" value="BEKIJK PROJECT" id="button3" onclick = "noothulp()">
-				<div class="informatie">
-					<p>Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent </p>
-					<!-- <h2>Concepting <span class="blue">/</span> Design <span class="blue">/</span> Prototyping</h2> -->
-				</div>
-		</div>
-	</section>
-	<section class="responsive-section">
-		<div class="responsive-project" id="responsive-project-1">
-			<div class="project-box" id="project-box">
-				<h1 id="responsive-title-1">Play Next</h1>
-				<p id="responsive-par-1">Het creëren van een online platform waar gebruikers alles te weten komen over opkomende games</p>
-				<div class="responsive-image-1" id="responsive-image-1"></div>
-				<h2 onclick="responsiveProjectOne()" id="responsive-button">BEKIJK PROJECT</h2>
-			</div>
-			<div class="responsive-project-line" id="responsive-project-line-1">
-				<div id="project-omhoog"></div>
+		<div id="welkom-ben">
+			<div class="welkom-projecten-info">
+				<h2>Ben verlengproces</h2>
+				<h3>Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen.</h3>
+				<input type="button" name="button" value="BEKIJK PROJECT" onclick="benVerlengproces()">
 			</div>
 		</div>
-		<div class="responsive-project" id="responsive-project-2">
-			<div class="project-box">
-				<h1 id="responsive-title-2">Ben Verlengproces</h1>
-				<p id="responsive-par-2">Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen</p>
-				<div class="responsive-image-2" id="responsive-image-2"></div>
-				<h2  onclick="responsiveProjectTwo()" id="responsive-button-ben">BEKIJK PROJECT</h2>
+		<div id="welkom-noothulp">
+			<div class="welkom-projecten-info">
+				<h2>Noothulp</h2>
+				<h3>Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent.</h3>
+				<input type="button" name="button" value="BEKIJK PROJECT" onclick="noothulp()">
 			</div>
-			<div class="responsive-project-line"></div>
 		</div>
-		<div class="responsive-project" id="responsive-project-3">
-			<div class="project-box">
-				<h1 id="responsive-title-3">Noothulp</h1>
-				<p id="responsive-par-3">Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent </p>
-				<div class="responsive-image-3" id="responsive-image-3"></div>
-				<h2 onclick="responsiveProjectThree()" id="responsive-button-noothulp">BEKIJK PROJECT</h2>
-			</div>
-			<div class="responsive-project-line" id="responsive-project-line-3"></div>
-		</div>
-	</section>
-	<footer></footer>
 
-<script type="text/javascript" src="../Javascript/case.js"></script>
-<script type="text/javascript" src="../Javascript/animatie.js">
-	
-</script>
+	</section>
+
+
+	<script type="text/javascript" src="../Javascript/case.js"></script>
 </body>
 </html>
