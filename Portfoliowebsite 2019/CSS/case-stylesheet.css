@@ -33,6 +33,10 @@ body{
 			/*margin:10px 0px;*/
 		}
 
+			.loadWebsiteTitel h1{
+				margin: -20px 0px;
+			}
+
 		#loadWebsiteBar{
 			width: 100%;
 			height: 5px;
