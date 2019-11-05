@@ -6,6 +6,17 @@ startAnimation(x);
 
 };
 
+const NAME = "once";
+
+function loadWebsiteCheck() {
+    if (this.name !== NAME) {
+      this.name = NAME;
+      loadWebsite();
+    } else {
+     websiteIsLoaded();
+    }
+}
+
 function loadWebsite(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "0";
 	document.body.style.overflowY = "hidden";
@@ -20,7 +31,6 @@ function loadWebsite(){
 
 	}, 3000);
 
-
 	setTimeout(function(){ 
 	document.getElementById('caseSwitchAnimation').style.transitionDelay = "2.5s";
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
@@ -33,10 +43,21 @@ function loadWebsite(){
 	setTimeout(function(){
 		document.getElementById('loadWebsite').style.display = "none";
 	}, 5000);
-
-
-	// caseSwitchAnimationDown();
 }
+
+function websiteIsLoaded(){
+	document.getElementById('loadWebsiteWit').style.display = "none";
+	document.getElementById('caseSwitchAnimation').style.transitionDelay = "none";
+	document.getElementById('welkom-bericht').style.transitionDelay = "0s";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
+	document.getElementById("caseSwitchAnimation").style.height = "100%";
+	document.getElementById('welkom-bericht').style.opacity = "1";
+	document.getElementById('welkom-bericht').style.transform = "translateX(0px)";
+	document.getElementById('loadWebsite').style.display = "none";
+
+}
+
 
 
 function responsiveAnimation(x) {
