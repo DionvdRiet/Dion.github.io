@@ -622,6 +622,10 @@ body{
 				color: #252e45;
 			}
 
+		li, a, input[type="button"]{
+			cursor: pointer;
+		}
+
 		a{
 			text-decoration: none;
 		}
