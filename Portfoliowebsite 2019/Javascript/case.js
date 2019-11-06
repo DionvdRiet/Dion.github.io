@@ -93,8 +93,41 @@ function openProject(){
 function aanHetScrollen() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("scroll-beneden").style.opacity = "0";
+        document.getElementById("desktop").style.height = "50px";
+        document.getElementById("active-page").style.fontSize = "20px";
+        document.getElementById("inactive-page").style.fontSize = "20px";
+        document.getElementById("active-page").style.margin = "-5px 20px";
+        document.getElementById("inactive-page").style.margin = "-5px 20px";
     } 
+
+    else{
+    	document.getElementById("scroll-beneden").style.opacity = "1";
+    	document.getElementById("desktop").style.height = "inherit";
+    	document.getElementById("active-page").style.fontSize = "25px";
+    	document.getElementById("inactive-page").style.fontSize = "25px";
+    	document.getElementById("active-page").style.margin = "0px 30px";
+        document.getElementById("inactive-page").style.margin = "0px 30px";
+    }
 }
+
+function headerSizeNormal(){
+		document.getElementById("scroll-beneden").style.opacity = "1";
+		document.getElementById("desktop").style.height = "inherit";
+		document.getElementById("active-page").style.fontSize = "25px";
+		document.getElementById("inactive-page").style.fontSize = "25px";
+		document.getElementById("active-page").style.margin = "0px 30px";
+	    document.getElementById("inactive-page").style.margin = "0px 30px";
+}
+
+function headerSizeBack(){
+		document.getElementById("scroll-beneden").style.opacity = "0";
+        document.getElementById("desktop").style.height = "50px";
+        document.getElementById("active-page").style.fontSize = "20px";
+        document.getElementById("inactive-page").style.fontSize = "20px";
+        document.getElementById("active-page").style.margin = "-5px 20px";
+        document.getElementById("inactive-page").style.margin = "-5px 20px";
+}
+
 function startAnimation() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("sectie-indicatie-achtergrond").style.transform = "translateX(0px)";

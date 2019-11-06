@@ -1057,6 +1057,7 @@ body{
 	header{
 		z-index: 2;
 		height: 65px;
+		transition: height .3s cubic-bezier(.365,.305,0,1);
 	}
 
 		header ul{
@@ -1066,9 +1067,16 @@ body{
 			padding: 0;
 		}
 
+		header li h1:hover{
+			color:black;
+		}
+
+
+
 	header h1{
 		margin: 0px 30px;
 		font-size: 25px;
+		transition: font-size .3s cubic-bezier(.365,.305,0,1);
 	}
 
 		#active-page{
