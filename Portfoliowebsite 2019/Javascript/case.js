@@ -98,6 +98,9 @@ function aanHetScrollen() {
         document.getElementById("inactive-page").style.fontSize = "20px";
         document.getElementById("active-page").style.margin = "-5px 20px";
         document.getElementById("inactive-page").style.margin = "-5px 20px";
+        document.getElementById("active-page").style.color = "#F5F5F5";
+        document.getElementById("inactive-page").style.color = "#F5F5F5";
+        // document.getElementById("inactive-page").style.textDecorationColor = "white";
     } 
 
     else{
@@ -107,25 +110,29 @@ function aanHetScrollen() {
     	document.getElementById("inactive-page").style.fontSize = "25px";
     	document.getElementById("active-page").style.margin = "0px 30px";
         document.getElementById("inactive-page").style.margin = "0px 30px";
+       	document.getElementById("active-page").style.color = "#252e45";
+       	document.getElementById("inactive-page").style.color = "#252e45";
     }
 }
 
 function headerSizeNormal(){
-		document.getElementById("scroll-beneden").style.opacity = "1";
 		document.getElementById("desktop").style.height = "inherit";
 		document.getElementById("active-page").style.fontSize = "25px";
 		document.getElementById("inactive-page").style.fontSize = "25px";
 		document.getElementById("active-page").style.margin = "0px 30px";
 	    document.getElementById("inactive-page").style.margin = "0px 30px";
+	    document.getElementById("active-page").style.color = "#252e45";
+	    document.getElementById("inactive-page").style.color = "#252e45";
 }
 
 function headerSizeBack(){
-		document.getElementById("scroll-beneden").style.opacity = "0";
         document.getElementById("desktop").style.height = "50px";
         document.getElementById("active-page").style.fontSize = "20px";
         document.getElementById("inactive-page").style.fontSize = "20px";
         document.getElementById("active-page").style.margin = "-5px 20px";
         document.getElementById("inactive-page").style.margin = "-5px 20px";
+        document.getElementById("active-page").style.color = "#F5F5F5";
+        document.getElementById("inactive-page").style.color = "#F5F5F5";
 }
 
 function startAnimation() {
