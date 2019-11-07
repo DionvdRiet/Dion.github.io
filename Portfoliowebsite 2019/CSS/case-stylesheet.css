@@ -67,7 +67,7 @@ body{
 
 			#loadWebsiteWit{
 				width: 100vh;
-				height: 100%;
+				height: 100vh;
 				position: fixed;
 				background-color: white;
 				z-index: 4;
