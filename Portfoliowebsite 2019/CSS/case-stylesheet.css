@@ -110,6 +110,7 @@ body{
 
 			#welkom-bericht h1{
 				font-size: 60px;
+				margin: 5px 0px;
 			}
 
 			#welkom-bericht h3{
@@ -826,6 +827,53 @@ body{
 
 	#responsive{
 		display: block;
+	}
+
+	.welkom{
+		display: grid;
+		grid-template-columns: 100px auto 100px;
+		grid-template-rows: 80% 20%;
+		width: 100vw;
+		height: 100vh;
+		position: relative;
+	}
+
+		#welkom-bericht{
+			width: 750px;
+			bottom: 100px;
+			grid-column: 2/3;
+			grid-row:2/3;
+			background-color: white;
+			padding: 20px;
+			border-left: 5px solid #FFED00;
+			border-bottom:1px solid rgba(112,112,112,0.15); 
+			word-break: break-word;
+		}
+
+			#welkom-bericht h1{
+				font-size: 80px;
+				margin: 30px 0px -10px 0px;
+			}
+
+			#welkom-bericht h3, .welkom-introductie h3{
+				font-size: 40px;
+				line-height: 60px;
+				margin-right: 0px;
+			}
+
+
+	.welkom-foto-1{
+		margin-top:120px;
+		width: 100vw;
+	}
+
+	.welkom-foto-2{
+		display: none;
+	}
+
+	.welkom-introductie, .welkom-projecten{
+		height: 100vh;
+		grid-template-columns: 100px auto 100px;
 	}
 
 	header, .introductie,.quote{
