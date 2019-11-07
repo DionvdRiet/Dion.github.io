@@ -829,17 +829,43 @@ body{
 		display: block;
 	}
 
+	#loadWebsite{
+		grid-template-columns: 100px auto 100px;
+	}
+
+		.loadWebsiteTitel{
+			width: 100%;
+		}
+
+			.loadWebsiteTitel h1{
+				font-size: 80px;
+				margin: -20px 0px;
+			}
+
+			.loadWebsiteTitel h3{
+				font-size: 60px;
+				font-style: normal;
+			}
+
+		#loadWebsiteBar{
+			width: 100%;
+			height: 5px;
+			position: relative;
+			background-color: transparent;
+		}
+
 	.welkom{
 		display: grid;
 		grid-template-columns: 100px auto 100px;
 		grid-template-rows: 80% 20%;
 		width: 100vw;
-		height: 100vh;
+		height: 80vh;
 		position: relative;
 	}
 
 		#welkom-bericht{
-			width: 750px;
+			position: absolute;
+			width: 100%;
 			bottom: 100px;
 			grid-column: 2/3;
 			grid-row:2/3;
@@ -871,9 +897,62 @@ body{
 		display: none;
 	}
 
+	#scroll-beneden{
+		display: none;
+	}
+
 	.welkom-introductie, .welkom-projecten{
 		height: 100vh;
 		grid-template-columns: 100px auto 100px;
+	}
+
+	.welkom-projecten-indicator{
+		display: grid;
+		grid-template-columns: 300px auto 300px;
+		width: 100vw;
+		position: fixed;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 3;
+	}
+
+	.welkom-projecten-indicator div{
+		grid-column: 3/4;
+		position: relative;
+		left: 200px;
+		background-color: #FFED00;
+		height: 5px;
+		width: 20px;
+		margin:5px;
+	}
+
+	.welkom-projecten div{
+		grid-column: 2/3;
+		/*background-color: red;*/
+		margin-bottom: 10%;		
+		position: relative;	
+	}
+	.welkom-projecten-info{
+		grid-column: 1/3;
+		grid-row:1/2;
+		top: 250px;
+		left: 0px;
+		width: 300px;
+		height: auto;
+		/*height: 50%;*/
+		align-self: center;
+		position: absolute;
+		background-color: white;
+		padding: 30px;
+		border-left: 5px solid #FFED00;
+	}
+
+	.welkom-projecten-info h1{
+		font-size: 60px;
+	}
+
+	.welkom-projecten-info input[type="button"]{
+		bottom:-20px;
 	}
 
 	header, .introductie,.quote{

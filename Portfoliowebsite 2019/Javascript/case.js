@@ -42,7 +42,8 @@ function loadWebsite(){
 
 	setTimeout(function(){
 		document.getElementById('loadWebsite').style.display = "none";
-	}, 5000);
+		document.getElementById('caseSwitchAnimation').style.display = "none";
+	}, 10000);
 }
 
 function websiteIsLoaded(){
@@ -55,6 +56,7 @@ function websiteIsLoaded(){
 	document.getElementById('welkom-bericht').style.opacity = "1";
 	document.getElementById('welkom-bericht').style.transform = "translateX(0px)";
 	document.getElementById('loadWebsite').style.display = "none";
+	document.getElementById('caseSwitchAnimation').style.display = "none";
 
 }
 
