@@ -207,16 +207,16 @@ body{
 			}
 
 			#welkom-save-now{
-				background-image: url('../Afbeeldingen/Finance/header-origineel.jpg');
+				background-image: url('../Afbeeldingen/Finance/header.jpg');
 			}
 
 			#welkom-play-next{
-				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/preview.jpg');
+				background-image: url('../Afbeeldingen/Gaming/header.jpg');
 				background-repeat: no-repeat;
 			}
 
 			#welkom-ben{
-				background-image: url('../Afbeeldingen/Ben/eindresultaat.jpg');
+				background-image: url('../Afbeeldingen/Ben/header.jpg');
 			}
 
 			#welkom-noothulp{
@@ -437,7 +437,14 @@ body{
 		width: 100vw;
 		background-color: #FFED00;
 		transition: transform 1s cubic-bezier(.365,.305,0,1);
+		/*animation-name: example;*/
+		animation-duration: 1.5s;
 		/*display: none;*/
+	}
+
+	@keyframes caseSwitch {
+	  from {transform: translateX(100%);}
+	  to {transform: translateX(0px);;}
 	}
 
 	section{
@@ -670,27 +677,27 @@ body{
 			}
 
 			#save-now-case-afbeelding{
-				background-image: url('../Afbeeldingen/Finance/header.jpg');
+				background-image: url('../Afbeeldingen/Finance/extra.jpg');
 				background-size: 100%;
 				background-repeat: no-repeat;
 				background-position: center;
 			}
 
 			#play-next-case-afbeelding{
-				background-image: url('../Afbeeldingen/Gaming/header.jpg');
+				background-image: url('../Afbeeldingen/Gaming/extra.jpg');
 				background-size: 100%;
 				background-repeat: no-repeat;
 				background-position: center;
 			}
 
 			#ben-case-afbeelding{
-				background-image: url('../Afbeeldingen/Ben/ben.png');
+				background-image: url('../Afbeeldingen/Ben/extra.png');
 				background-size: cover;
 				background-position: center;
 			}
 
 			#noothulp-case-afbeelding{
-				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+				background-image: url('../Afbeeldingen/Noothulp/extra.jpg');
 				background-size: cover;
 				background-position: center;
 			}
@@ -741,7 +748,6 @@ body{
 			height: 400px;
 		}
 
-
 		#gaming-header{
 			background-image: url('../Afbeeldingen/Gaming/header.jpg');
 			height: 600px;
@@ -782,7 +788,7 @@ body{
 			}
 */
 		#ben-header{
-			background-image: url('../Afbeeldingen/Ben/ben.png');
+			background-image: url('../Afbeeldingen/Ben/header.jpg');
 			/*background-size: cover;*/
 			/*background-position: top;*/
 			height: 600px;
@@ -797,7 +803,7 @@ body{
 		}
 
 		#noothulp-header{
-			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+			background-image: url('../Afbeeldingen/Noothulp/home.jpg');
 			/*background-size: cover;*/
 			/*background-position: top;*/
 			height: 600px;
