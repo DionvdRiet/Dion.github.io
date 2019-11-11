@@ -211,7 +211,7 @@ body{
 			}
 
 			#welkom-play-next{
-				background-image: url('../Afbeeldingen/Gaming/header.jpg');
+				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
 				background-repeat: no-repeat;
 			}
 
@@ -493,11 +493,18 @@ body{
 			color:#252e45;
 		}
 
-		.finance-line{
+		.play-next-line, .finance-line{
 			height: 5px;
 			width: 100%;
-			background-color: #0B41DA;
 			border-radius: 10px;
+		}
+
+		.play-next-line{
+			background-color:#F22B50;
+		}
+
+		.finance-line{
+			background-color: #0B41DA;
 		}
 
 		.eindresultaat-afbeelding{
@@ -648,7 +655,7 @@ body{
 		}
 
 		#full-image{
-			grid-column: 1/4;
+			grid-column: 1/6;
 		}
 
 		.volgende-case{
@@ -749,8 +756,8 @@ body{
 		}
 
 		#gaming-header{
-			background-image: url('../Afbeeldingen/Gaming/header.jpg');
-			height: 600px;
+			background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
+			height: 800px;
 			width: 100vw;
 		}
 
