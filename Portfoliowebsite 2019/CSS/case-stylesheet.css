@@ -850,6 +850,7 @@ body{
 
 		.loadWebsiteTitel{
 			width: 100%;
+			align-self: center;
 		}
 
 			.loadWebsiteTitel h1{

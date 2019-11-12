@@ -18,12 +18,14 @@ function loadWebsiteCheck() {
 }
 
 function loadWebsite(){
+	document.getElementById('loadWebsite').style.opacity = "1";
+	document.getElementById('loadWebsiteWit').style.height = "100%";
 	document.getElementById('caseSwitchAnimation').style.display = "none";
 	document.getElementById('caseSwitchAnimation').style.opacity = "0";
-	document.body.style.overflowY = "hidden";
-	document.getElementById('loadWebsite').style.opacity = "1";
+	// document.body.style.overflowY = "hidden";
+	
 	document.getElementById('loadWebsiteBarFilled').style.width = "100%";
-		  document.getElementById('caseSwitchAnimation').style.display = "block";
+	// document.getElementById('caseSwitchAnimation').style.display = "block";
 
 	setTimeout(function(){ 
 	  document.body.style.overflowY = "scroll";
