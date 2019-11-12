@@ -429,7 +429,7 @@ body{
 		}
 
 	#caseSwitchAnimation{
-		position: absolute;
+		position: fixed;
 		z-index: 4;
 		opacity: 1;
 		transform: translateX(0px);
@@ -1268,7 +1268,7 @@ body{
 	}
 
 	input[type="button"]:hover{
-		/*font-size: 19px;*/
+		font-size: 19px;
 		box-shadow: none;
 		text-shadow: none;
 	}
