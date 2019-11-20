@@ -912,6 +912,7 @@ body{
 			border-left: 5px solid #FFED00;
 			border-bottom:1px solid rgba(112,112,112,0.15); 
 			word-break: break-word;
+			box-shadow: none;
 		}
 
 			#welkom-bericht h1{
