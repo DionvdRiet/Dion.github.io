@@ -54,6 +54,8 @@ function loadWebsite(){
 		document.getElementById('loadWebsite').style.display = "none";
 		document.getElementById('caseSwitchAnimation').style.display = "none";
 		document.getElementById('caseSwitchAnimationWhite').style.display = "none";
+		document.getElementById('desktop').style.animationName = "navDown";
+		document.getElementById('desktop').style.opacity = "1";
 	}, 4000);
 }
 
@@ -72,6 +74,7 @@ function websiteIsLoaded(){
 	document.getElementById('loadWebsite').style.display = "none";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimationWhite').style.display = "block";
+	document.getElementById('desktop').style.opacity = "1";
 
 	setTimeout(function(){
 		document.getElementById('caseSwitchAnimation').style.display = "none";
@@ -223,6 +226,41 @@ function contact(){
 	setTimeout("location.href = 'contact.html';",1500)
 }
 
+function saveNowOn(){
+	document.getElementById('welkom-save-now').style.backgroundSize = "103%";
+	document.getElementById('welkom-save-now').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+}
+
+function playNextOn(){
+	document.getElementById('welkom-play-next').style.backgroundSize = "103%";
+	document.getElementById('welkom-play-next').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+}
+
+function benVerlengprocesOn(){
+	document.getElementById('welkom-ben').style.backgroundSize = "103%";
+	document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+}
+
+function noothulpOn(){
+	document.getElementById('welkom-noothulp').style.backgroundSize = "103%";
+	document.getElementById('welkom-noothulp').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+}
+
+function caseOff(){
+	document.getElementById('welkom-save-now').style.backgroundSize = "100%";
+	document.getElementById('welkom-save-now').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+
+	document.getElementById('welkom-play-next').style.backgroundSize = "100%";
+	document.getElementById('welkom-play-next').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+
+	document.getElementById('welkom-ben').style.backgroundSize = "100%";
+	document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+
+	document.getElementById('welkom-noothulp').style.backgroundSize = "100%";
+	document.getElementById('welkom-noothulp').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+}
+
+
 function saveNow(){
 	document.getElementById('caseSwitchAnimationWhite').style.display = "block";
 	document.getElementById('caseSwitchAnimationWhite').style.position = "fixed";
@@ -305,3 +343,6 @@ function noOpacity(){
 	document.getElementById("caseSwitchAnimation").style.display = "none";
 }
 
+function linkedIn(){
+	window.open('https://www.linkedin.com/in/dion-van-der-riet-217479158/', '_blank');
+}

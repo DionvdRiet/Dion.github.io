@@ -14,8 +14,8 @@ function aanHetScrollen() {
         document.getElementById("inactive-page").style.fontSize = "20px";
         document.getElementById("active-page").style.margin = "-5px 20px";
         document.getElementById("inactive-page").style.margin = "-5px 20px";
-        document.getElementById("active-page").style.color = "#F5F5F5";
-        document.getElementById("inactive-page").style.color = "#F5F5F5";
+        document.getElementById("active-page").style.color = "#575757";
+        document.getElementById("inactive-page").style.color = "#575757";
         // document.getElementById("inactive-page").style.textDecorationColor = "white";
     } 
 
