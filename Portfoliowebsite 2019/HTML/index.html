@@ -90,17 +90,20 @@
 		</div>
 	</section>
 	<footer onmouseleave="emailDown()" class="index-footer">
-			<div id="footer-transparent-left" onmouseover="emailDown()"></div>
-			<div id="email-popup" >
-				<h1>16102908@student.hhs.nl</h1>
+		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
+		<div id="email-popup">
+			<input type="text" value="16102908@student.hhs.nl" id="email-popup-text">
+			<div id="emailCopy" onclick="emailCopied()">
+				<h1 id="emailCopyButton">KOPIËER</h1>
 			</div>
-			<h1>Dion van der Riet 2019</h1>
-			<div class="socials">
-				<div id="linkedIn" onclick="linkedIn()"></div>
-				<div id="email" onmouseover="emailUp()"></div>
-			</div>
-			<div class="footer-balk" onmouseout="emailDown()"></div>
-		</footer>
+		</div>
+		<h1>Dion van der Riet 2019</h1>
+		<div class="socials">
+			<div id="linkedIn" onclick="linkedIn()"></div>
+			<div id="email" onmouseover="emailUp()"></div>
+		</div>
+		<div class="footer-balk" onmouseout="emailDown()"></div>
+	</footer>
 	<script type="text/javascript" src="../Javascript/case.js"></script>
 	<script type="text/javascript" src="../Javascript/index-animatie.js"></script>
 </body>

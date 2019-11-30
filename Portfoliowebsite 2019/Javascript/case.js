@@ -354,3 +354,16 @@ function emailUp(){
 function emailDown(){
 	document.getElementById('email-popup').style.display = "none";
 }
+
+function emailCopied(){
+	var copyText = document.getElementById("email-popup-text");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999)
+	document.execCommand("copy");
+
+	document.getElementById('emailCopyButton').innerHTML = "GEKOPIËERD";
+	document.getElementById('emailCopyButton').style.color = "#FFED00";
+	document.getElementById('emailCopy').style.backgroundColor = "#252e45";
+	document.getElementById('email-popup-text').style.backgroundColor = "#FFED00";
+}
+

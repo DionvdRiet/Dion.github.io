@@ -67,6 +67,7 @@ body{
 			}
 
 			#loadWebsiteWit{
+				display: block;
 				width: 100vh;
 				height: 100vh;
 				position: fixed;
@@ -744,7 +745,7 @@ body{
 				color:#252e45;
 				background-color: #FFED00;
 				border:none;
-				padding: 12px;
+				padding: 12px 20px;
 				box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
 				text-shadow: 3px 3px 10px rgba(0, 0, 0,0.15);
 				outline:none;
@@ -906,22 +907,60 @@ body{
 		#email-popup{
 			grid-column: 3/4;
 			grid-row: 1/2;
-			width: 250px;
+			width: 400px;
 			height: 50px;
 			background-color: #F5F5F5;
 			bottom: 50px;
 			display: none;
 			justify-content: center;
 			align-items: center;
+			/*position: absolute;*/
 		}
 
 			#email-popup h1{
 				letter-spacing: 0px;
 			}
 
-		#email-popup h1::selection{
+		#email-popup-text::selection{
 			background-color: #FFED00;
 		}
+
+			#emailCopy{
+				display: flex;
+				justify-content: center;
+				width: 150px;
+				height: 50px;
+				background-color: #FFED00;
+				position: relative;
+				left: 40px;
+				box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
+				text-shadow: 3px 3px 10px rgba(0, 0, 0,0.15);
+			}
+
+			#emailCopy:hover{
+				box-shadow: none;
+				text-shadow: none;
+			}
+
+			#emailCopy h1{
+				font-weight: 700;
+				font-size: 20px;
+				font-style: italic;
+				color:#252e45;
+			}
+
+			#email-popup-text{
+				margin-left: 5px;
+				outline: none;
+				border: none;
+				font-family: paralucent, sans-serif;
+				font-size: 16px;
+				font-weight: 500;
+				font-style: normal;
+				color: #252e45;
+				background-color: #F5F5F5;
+				transition: background-color .3s cubic-bezier(.365,.305,0,1);
+			}
 
 		#linkedIn{
 			background-image: url(../Afbeeldingen/linkedin.svg);
