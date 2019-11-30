@@ -346,3 +346,11 @@ function noOpacity(){
 function linkedIn(){
 	window.open('https://www.linkedin.com/in/dion-van-der-riet-217479158/', '_blank');
 }
+
+function emailUp(){
+	document.getElementById('email-popup').style.display = "flex";
+}
+
+function emailDown(){
+	document.getElementById('email-popup').style.display = "none";
+}
