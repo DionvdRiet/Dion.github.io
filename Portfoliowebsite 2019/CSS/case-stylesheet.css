@@ -462,7 +462,7 @@ body{
 		background-color: #FFED00;
 		transition: transform 1s cubic-bezier(.365,.305,0,1);
 		/*animation-name: example;*/
-		animation-duration: 1.5s;
+		animation-duration: 1.6s;
 		animation-delay: 0.1s;
 		/*display: none;*/
 	}
