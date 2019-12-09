@@ -1228,12 +1228,13 @@ body{
 			width: 50px;
 			height: 5px;
 			margin: 5px;
-			transition: margin .5s ease-in;
-			transition: background-color .5s ease-in;
+			transition: background-color .3s cubic-bezier(.365,.305,0,1);
+			transition: margin-top .3s cubic-bezier(.365,.305,0,1);
+			transition: margin-bottom .3s cubic-bezier(.365,.305,0,1);
 		}
 
 			#hamburger-1,#hamburger-2{
-				background-color: #FFED00;
+				background-color: #252e45;
 			}
 
 		.left-arrow{
