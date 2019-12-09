@@ -67,7 +67,24 @@ function websiteIsLoaded(){
 	setTimeout(function(){
 		document.getElementById('caseSwitchAnimation').style.display = "none";
 	}, 1000);
+}
 
+
+function overlay(){
+    document.getElementById('responsive-nav').style.height = "100vh";
+    document.getElementById('responsive-nav-list').style.display = "flex";
+    document.getElementById('responsive-nav-list').style.opacity = "1";
+    document.getElementById('hamburger-menu').id = "close-overlay";
+
+    document.getElementById("close-overlay").onclick = function(){closeOverlay()};
+}
+
+function closeOverlay(){
+    document.getElementById('responsive-nav').style.height = "120px";
+    document.getElementById('responsive-nav-list').style.display = "none";
+    document.getElementById('close-overlay').id = "hamburger-menu";
+
+    document.getElementById("hamburger-menu").onclick = function(){overlay()};
 }
 
 
