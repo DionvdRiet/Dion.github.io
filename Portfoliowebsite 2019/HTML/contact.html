@@ -2,16 +2,33 @@
 <html>
 <head>
 	<title>Contact | Portfoliowebsite Dion van der Riet</title>
-	<link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/case-stylesheet.css">
 	<link rel="stylesheet" href="https://use.typekit.net/gqv3dkc.css">
 	<link rel="shortcut icon" type="image/png" href="../Afbeeldingen/favicon.ico"/>
 </head>
-<body>
-<header>
-	<ul>
-		<li class="inactive" id="projecten-lijn" onclick="location.href='index.html'">Projecten</li>
-		<li class="active" id="contact-lijn" onclick="location.href='contact.html'">Contact</li>
-	</ul>
+<body onload="caseSwitchAnimationDown()">
+<div id="caseSwitchAnimation"></div>
+<header id="desktop" onmouseover="headerSizeNormal()" onmouseout="headerSizeBack()">
+		<ul>
+			<li onclick="home()"><h1 id="inactive-page">Projecten</h1></li>
+			<li onclick="location.href='contact.html'"><h1 id="active-page">Contact</h1></li>
+		</ul>
+	</header>
+<header id="responsive-nav">
+	<div class="responsive-nav-top">
+		<div class="arrow-left" onclick="home()">
+			<img src="../Afbeeldingen/arrow-left.svg" width="50px">
+		</div>
+		<div class="hamburger-menu" id="hamburger-menu" onclick="overlay()">
+			<div id="hamburger-1"></div>
+			<div id="hamburger-2"></div>
+		</div>
+		<h1>Contact</h1>
+	</div>
+	<div id="responsive-nav-list">
+		<h1 id="inactive-page" onclick="home()">Projecten</h1>
+		<h1 id="active-page" onclick="contact()">Contact</h1>
+	</div>
 </header>
 	<section id="sectie-1">
 		<div class="content">
@@ -25,7 +42,22 @@
 
 	</section>
 
-<script type="text/javascript" src="../Javascript/animatie.js">
+<footer onmouseleave="emailDown()">
+		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
+		<div id="email-popup">
+			<input type="text" value="16102908@student.hhs.nl" id="email-popup-text">
+			<div id="emailCopy" onclick="emailCopied()">
+				<h1 id="emailCopyButton">KOPIËER</h1>
+			</div>
+		</div>
+		<h1>Dion van der Riet 2019</h1>
+		<div class="socials">
+			<div id="linkedIn" onclick="linkedIn()"></div>
+			<div id="email" onmouseover="emailUp()"></div>
+		</div>
+		<div class="footer-balk" onmouseout="emailDown()"></div>
+	</footer>
+	<script type="text/javascript" src="../Javascript/case.js"></script>
 	
 </script>
 </body>

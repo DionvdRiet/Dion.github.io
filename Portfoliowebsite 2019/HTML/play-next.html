@@ -14,10 +14,26 @@
 			<li onclick="location.href='contact.html'"><h1 id="inactive-page">Contact</h1></li>
 		</ul>
 	</header>
-	<header id="responsive">
-		<h1>Play Next</h1>
+	<header id="responsive-nav">
+		<div class="responsive-nav-top">
+			<div class="arrow-left" onclick="home()">
+				<img src="../Afbeeldingen/arrow-left.svg" width="50px">
+			</div>
+			<div class="hamburger-menu" id="hamburger-menu" onclick="overlay()">
+				<div id="hamburger-1"></div>
+				<div id="hamburger-2"></div>
+			</div>
+			<h1>Play Next</h1>
+		</div>
+		<div id="responsive-nav-list">
+			<h1 id="active-page" onclick="closeOverlay()">Projecten</h1>
+			<h1 id="inactive-page" onclick="contact()">Contact</h1>
+		</div>
 	</header>
- 	<div class="header-image" id="gaming-header"></div> 
+ 		<div class="parallax-container" id="header-container">
+ 	 		<div class="header-image" id="gaming-header"></div> 
+ 	 	</div>
+ 	 	<div class="header-extra"></div>
 	<div class="introductie">
 		<h1 id="case-title">Play Next</h1>
 		<div class="introductie-lijn">
@@ -192,5 +208,27 @@
 		<div class="footer-balk" onmouseout="emailDown()"></div>
 	</footer>
 	<script type="text/javascript" src="../Javascript/case.js"></script>
+	<script type="text/javascript" src="../Javascript/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" >
+		var parallaxElements = $('.header-image'),
+		    parallaxQuantity = parallaxElements.length;
+
+		$(window).on('scroll', function () {
+
+		  window.requestAnimationFrame(function () {
+
+		    for (var i = 0; i < parallaxQuantity; i++) {
+		      var currentElement =  parallaxElements.eq(i);
+		      var scrolled = $(window).scrollTop();
+		          
+		        currentElement.css({
+		          'transform': 'translate3d(0,' + scrolled * -0.3 + 'px, 0)'
+		        });
+
+		    }
+		  });
+
+		});
+	</script>
 </body>
 </html>

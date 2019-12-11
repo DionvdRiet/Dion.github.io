@@ -208,22 +208,13 @@ function home(){
 	setTimeout("location.href = 'index.html';",1500)
 }
 
-function overMij(){
-	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById('caseSwitchAnimation').style.position = "fixed";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
-	document.getElementById("caseSwitchAnimation").style.height = "100vh";
-	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
-
-	setTimeout("location.href = 'persoonlijk.html';",1500)
-}
-
 function contact(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
-	document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
 
 	setTimeout("location.href = 'contact.html';",1500)
 }
@@ -308,6 +299,7 @@ function caseSwitchAnimationDown(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
+	// document.getElementById("heade").style.filter = "blur(0px)";
 	setTimeout(noOpacity, 1000);
 }
 
