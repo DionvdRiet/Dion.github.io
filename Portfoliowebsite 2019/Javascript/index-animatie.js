@@ -1,5 +1,6 @@
 window.onscroll = function() {
 aanHetScrollen();
+welkomIntroductie();
 caseOne();
 caseTwo();
 caseThree();
@@ -29,6 +30,13 @@ function aanHetScrollen() {
        	document.getElementById("active-page").style.color = "#252e45";
        	document.getElementById("inactive-page").style.color = "#252e45";
     }
+}
+
+function welkomIntroductie(){
+    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+        document.getElementById("welkom-introductie").style.opacity = "1";
+        document.getElementById("welkom-introductie").style.color = "#575757";
+    } 
 }
 
 function caseOne(){
