@@ -22,7 +22,8 @@ function loadWebsite(){
 	document.getElementById('loadWebsiteWit').style.height = "100%";
 	document.getElementById('caseSwitchAnimation').style.display = "none";
 	document.getElementById('caseSwitchAnimation').style.opacity = "0";
-	// document.body.style.overflowY = "hidden";
+	document.getElementById('loadWebsiteTitel').style.transform = "translateY(0px)";
+	setTimeout(1000);
 	
 	document.getElementById('loadWebsiteBarFilled').style.width = "100%";
 	// document.getElementById('caseSwitchAnimation').style.display = "block";
