@@ -26,7 +26,6 @@ function loadWebsite(){
 	setTimeout(1000);
 	
 	document.getElementById('loadWebsiteBarFilled').style.width = "100%";
-	// document.getElementById('caseSwitchAnimation').style.display = "block";
 
 	setTimeout(function(){ 
 	  document.body.style.overflowY = "scroll";
@@ -41,9 +40,10 @@ function loadWebsite(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
+	document.getElementById('welkom').style.opacity = "1";
 	document.getElementById('welkom-bericht').style.opacity = "1";
 	 document.getElementById('welkom-bericht').style.transform = "translateX(0px)";
-	}, 500);
+	}, 900);
 
 	setTimeout(function(){
 		document.getElementById('loadWebsite').style.display = "none";
@@ -54,6 +54,7 @@ function loadWebsite(){
 }
 
 function websiteIsLoaded(){
+	document.getElementById('welkom').style.opacity = "1";
 	document.getElementById('loadWebsiteWit').style.display = "none";
 	document.getElementById('caseSwitchAnimation').style.transitionDelay = "none";
 	document.getElementById('welkom-bericht').style.transitionDelay = "0s";

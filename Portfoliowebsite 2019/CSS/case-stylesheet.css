@@ -83,13 +83,15 @@ body{
 				transition: opacity 1s cubic-bezier(.365,.305,0,1);
 			}
 	
-	.welkom{
+	#welkom{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 90% 10%;
 		width: 100vw;
 		height: 100vh;
 		position: relative;
+		opacity: 0;
+		transition: opacity .3s cubic-bezier(.365,.305,0,1);
 	}
 
 		#welkom-bericht{
@@ -111,7 +113,7 @@ body{
 			opacity: 0;
 			transition: opacity 1s cubic-bezier(.365,.305,0,1);
 			transition: transform 1s cubic-bezier(.365,.305,0,1);
-			transition-delay: 3s;
+			transition-delay: 2s;
 		}
 
 			#welkom-bericht h1{
@@ -146,7 +148,7 @@ body{
 			background-position: top;
 		}
 
-			.welkom h3{
+			#welkom h3{
 				display: flex;
 				justify-content: center;
 				grid-column: 1/3;
