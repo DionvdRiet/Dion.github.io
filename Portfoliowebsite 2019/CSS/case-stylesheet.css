@@ -446,6 +446,7 @@ body{
 				grid-column: 2/3;
 				height: 10px;
 				background-color: #FFED00;
+				box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
 				z-index: -2;
 			}
 
@@ -597,6 +598,7 @@ body{
 		position: absolute;
 		right: 0;
 		background-color: #FFED00;
+		box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
 	}
 		.sectie-indicatie h4{
 			align-self: center;
@@ -608,6 +610,7 @@ body{
 	.quote{
 		width: 100%;
 		background-color: #FFED00;
+		box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
 		margin-bottom: 10px;
 	}
 		.quote h2, .quote h3{
