@@ -40,10 +40,6 @@ body{
 				margin: -20px 0px;
 			}
 
-			#loadWebsiteTitel h3{
-				font-style: normal;
-			}
-
 		#loadWebsiteBar{
 			width: 100%;
 			height: 5px;
@@ -59,7 +55,6 @@ body{
 				position: absolute;
 				transition: width 1s cubic-bezier(.365,.305,0,1);
 				transition-delay: 1s;
-				/*box-shadow: 3px 3px 10px #FFED00;*/
 			}
 
 			#loadWebsiteBarBackground{
@@ -70,9 +65,9 @@ body{
 			}
 
 			#loadWebsiteWit{
-				display: block;
 				width: 100vh;
 				height: 100vh;
+				display: block;
 				position: fixed;
 				background-color: white;
 				z-index: 4;
@@ -137,12 +132,11 @@ body{
 		}
 
 		.welkom-foto-2{
-						z-index: -1;
+			z-index: -1;
 			position: relative;
 			grid-column: 2/3;
 			grid-row: 1/2;
 			background-color: #FFED00;
-			/*background-image: url('../Afbeeldingen/Welkom/welkom-foto-2.jpg');*/
 			background-size: 100%;
 			background-repeat: no-repeat;
 			background-position: top;
@@ -165,7 +159,7 @@ body{
 
 			.welkom-introductie *{
 				grid-column: 2/3;
-				line-height: 30px;
+				/*line-height: 30px;*/
 				margin:none;
 				align-self: center;
 				vertical-align: middle;
@@ -430,7 +424,7 @@ body{
 	h3{
 		font-family: paralucent, sans-serif;
 		font-weight: 400;
-		font-style: italic;
+		font-style: normal;
 		color: #575757;
 	}
 
@@ -1010,8 +1004,9 @@ body{
 	}
 
 	#loadWebsite{
+		position: relative;
 		grid-template-columns: 50px auto 50px;
-		width: 100%;
+		width: 100vw;
 		height: 100vh;
 	}
 
@@ -1021,34 +1016,36 @@ body{
 		}
 
 			#loadWebsiteTitel h1{
-				font-size: 80px;
+				font-size: 90px;
 				margin: -20px 0px;
 			}
 
 			#loadWebsiteTitel h3{
-				font-size: 60px;
+				font-size: 70px;
 				font-style: normal;
 			}
 
 		#loadWebsiteBar{
+			position: absolute;
 			width: 100%;
-			height: 5px;
-			position: relative;
+			height: 15px;
+			bottom: 0px;
+			right: 0px;
 			background-color: transparent;
 		}
 
-	.welkom{
+	#welkom{
 		display: grid;
 		grid-template-columns: 50px auto 50px;
 		grid-template-rows: 80% 20%;
 		width: 100vw;
-		height: 80vh;
+		height:60vh;
 		position: relative;
 	}
 
 		#welkom-bericht{
 			position: absolute;
-			width: 90vw;
+			width: 95%;
 			bottom: 100px;
 			grid-column: 2/3;
 			grid-row:2/3;
@@ -1065,7 +1062,7 @@ body{
 				margin: 30px 0px -10px 0px;
 			}
 
-			#welkom-bericht h3, .welkom-introductie h3{
+			#welkom-bericht h3, #welkom-introductie h3{
 				line-height: 60px;
 				font-size: 34px;
 				margin-right: 0px;
@@ -1085,7 +1082,8 @@ body{
 	}
 
 	.welkom-introductie{
-		height: 90vh;
+		height: auto;
+		min-height: 50vh;
 	}
 
 	.welkom-projecten{
