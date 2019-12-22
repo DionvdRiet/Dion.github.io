@@ -1048,7 +1048,7 @@ body{
 
 		#welkom-bericht{
 			position: absolute;
-			width: 100%;
+			width: 90vw;
 			bottom: 100px;
 			grid-column: 2/3;
 			grid-row:2/3;
@@ -1067,6 +1067,7 @@ body{
 
 			#welkom-bericht h3, .welkom-introductie h3{
 				line-height: 60px;
+				font-size: 34px;
 				margin-right: 0px;
 			}
 
@@ -1097,6 +1098,15 @@ body{
 
 		.welkom-projecten h1{
 			font-size: 80px;
+			margin-bottom: -10%;
+		}
+
+		.welkom-projecten h2{
+			font-size: 50px;
+		}
+
+		.welkom-projecten h3{
+			font-size: 40px;
 		}
 
 	.welkom-projecten-indicator{
@@ -1127,14 +1137,13 @@ body{
 		border-left: 5px solid #FFED00;
 	}
 
-	.welkom-projecten-info h1{
-		font-size: 60px;
-	}
-
 	.welkom-projecten-info input[type="button"]{
-		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		font-size: 50px;
 		padding: 20px;
-		bottom:-100px;
+		bottom:-80px;
+		width: 60%;
 		text-shadow: none;
 		box-shadow: none;
 	}
