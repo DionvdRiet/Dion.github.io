@@ -50,6 +50,7 @@ function loadWebsite(){
 		document.getElementById('caseSwitchAnimation').style.display = "none";
 		document.getElementById('desktop').style.animationName = "navDown";
 		document.getElementById('desktop').style.opacity = "1";
+		document.getElementById('responsive-nav-list').style.display = "none";
 	}, 4000);
 }
 
@@ -68,6 +69,7 @@ function websiteIsLoaded(){
 	document.getElementById('desktop').style.opacity = "1";
 	setTimeout(function(){
 		document.getElementById('caseSwitchAnimation').style.display = "none";
+		document.getElementById('responsive-nav-list').style.display = "none";
 	}, 1000);
 }
 
@@ -308,6 +310,7 @@ function caseSwitchAnimationDown(){
 function noOpacity(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "0";
 	document.getElementById("caseSwitchAnimation").style.display = "none";
+	document.getElementById('responsive-nav-list').style.display = "none";
 }
 
 function linkedIn(){
