@@ -186,9 +186,11 @@ body{
 				position: fixed;
 				top: 50%;
 				transform: translateY(-50%);
+				transform: translateX(+50%);
 				z-index: 3;
 				opacity: 0;
-				transition: opacity .3s cubic-bezier(.365,.305,0,1);
+				transition: opacity 3s cubic-bezier(.365,.305,0,1) linear 3s;
+				transition: transform .3s cubic-bezier(.365,.305,0,1);
 			}
 
 				#welkom-projecten-indicator div{
@@ -198,10 +200,16 @@ body{
 					height: 5px;
 					width: 20px;
 					margin:5px;
+					transition: width .1s cubic-bezier(.365,.305,0,1);
 				}
 
 				#project-indicator-1{
 					background-color: #FFED00;
+				}
+
+				@keyframes indicatorfade{
+				  from {opacity: 1;}
+				  to {opacity: 0;}
 				}
 
 			.welkom-projecten div{

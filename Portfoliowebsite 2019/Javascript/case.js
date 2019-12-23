@@ -247,6 +247,7 @@ function caseOff(){
 
 
 function saveNow(){
+	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -258,6 +259,7 @@ function saveNow(){
 }
 
 function playNext(){
+	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -268,6 +270,7 @@ function playNext(){
 }
 
 function benVerlengproces(){
+	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -278,6 +281,7 @@ function benVerlengproces(){
 }
 
 function noothulp(){
+	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
