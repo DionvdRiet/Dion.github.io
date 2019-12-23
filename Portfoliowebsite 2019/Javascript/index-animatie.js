@@ -5,7 +5,22 @@ caseOne();
 caseTwo();
 caseThree();
 caseFour();
+projectenIndicator();
 };
+
+
+function projectenIndicator(){
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("welkom-projecten-indicator").style.opacity = "1";
+        // document.getElementById("project-indicator-1").style.backgroundColor = "#FFED00";
+               
+    } 
+
+    else{
+        document.getElementById("welkom-projecten-indicator").style.opacity = "0";
+    }
+}
+
 
 function aanHetScrollen() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -44,6 +59,16 @@ function caseOne(){
 	    document.getElementById("welkom-save-now").style.transform = "translateX(0%)";
 	    document.getElementById("welkom-save-now").style.opacity = "1";
 	    document.getElementById("save-now-project-info").style.opacity = "1";
+
+        document.getElementById("project-indicator-1").style.backgroundColor = "#FFED00";
+        document.getElementById("project-indicator-2").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-3").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-4").style.backgroundColor = "rgb(87, 87, 87)";
+
+        document.getElementById("project-indicator-1").style.boxShadow = "3px 3px 10px rgba(255, 237, 0,0.5)";
+        document.getElementById("project-indicator-2").style.boxShadow = "none";
+        document.getElementById("project-indicator-3").style.boxShadow = "none";
+        document.getElementById("project-indicator-4").style.boxShadow = "none";
 	} 
 }
 
@@ -51,6 +76,16 @@ function caseTwo(){
 	if (document.body.scrollTop > 1650 || document.documentElement.scrollTop > 1650) {
 	    document.getElementById("welkom-play-next").style.transform = "translateX(0%)";
 	    document.getElementById("play-next-project-info").style.opacity = "1";
+
+        document.getElementById("project-indicator-1").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-2").style.backgroundColor = "#FFED00";
+        document.getElementById("project-indicator-3").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-4").style.backgroundColor = "rgb(87, 87, 87)";
+
+        document.getElementById("project-indicator-1").style.boxShadow = "none";
+        document.getElementById("project-indicator-2").style.boxShadow = "3px 3px 10px rgba(255, 237, 0,0.5)";
+        document.getElementById("project-indicator-3").style.boxShadow = "none";
+        document.getElementById("project-indicator-4").style.boxShadow = "none";
 	} 
 }
 
@@ -58,6 +93,16 @@ function caseThree(){
 	if (document.body.scrollTop > 2550 || document.documentElement.scrollTop > 2550) {
 	    document.getElementById("welkom-ben").style.transform = "translateX(0%)";
 	    document.getElementById("ben-project-info").style.opacity = "1";
+
+        document.getElementById("project-indicator-1").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-2").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-3").style.backgroundColor = "#FFED00";
+        document.getElementById("project-indicator-4").style.backgroundColor = "rgb(87, 87, 87)";
+
+        document.getElementById("project-indicator-1").style.boxShadow = "none";
+        document.getElementById("project-indicator-2").style.boxShadow = "none";
+        document.getElementById("project-indicator-3").style.boxShadow = "3px 3px 10px rgba(255, 237, 0,0.5)";
+        document.getElementById("project-indicator-4").style.boxShadow = "none";
 	} 
 }
 
@@ -65,5 +110,15 @@ function caseFour(){
 	if (document.body.scrollTop > 3450 || document.documentElement.scrollTop > 3450) {
 	    document.getElementById("welkom-noothulp").style.transform = "translateX(0%)";
 	    document.getElementById("noothulp-project-info").style.opacity = "1";
+
+        document.getElementById("project-indicator-1").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-2").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-3").style.backgroundColor = "rgb(87, 87, 87)";
+        document.getElementById("project-indicator-4").style.backgroundColor = "#FFED00";
+
+        document.getElementById("project-indicator-1").style.boxShadow = "none";
+        document.getElementById("project-indicator-2").style.boxShadow = "none";
+        document.getElementById("project-indicator-3").style.boxShadow = "none";
+        document.getElementById("project-indicator-4").style.boxShadow = "3px 3px 10px rgba(255, 237, 0,0.5)";
 	} 
 }

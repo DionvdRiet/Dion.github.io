@@ -179,7 +179,7 @@ body{
 			height: 100vh;
 		}
 
-			.welkom-projecten-indicator{
+			#welkom-projecten-indicator{
 				display: grid;
 				grid-template-columns: 300px auto 300px;
 				width: 100vw;
@@ -187,16 +187,21 @@ body{
 				top: 50%;
 				transform: translateY(-50%);
 				z-index: 3;
+				opacity: 0;
+				transition: opacity .3s cubic-bezier(.365,.305,0,1);
 			}
 
-				.welkom-projecten-indicator div{
+				#welkom-projecten-indicator div{
 					grid-column: 3/4;
 					position: relative;
 					left: 200px;
-					background-color: #FFED00;
 					height: 5px;
 					width: 20px;
 					margin:5px;
+				}
+
+				#project-indicator-1{
+					background-color: #FFED00;
 				}
 
 			.welkom-projecten div{
@@ -1110,7 +1115,7 @@ body{
 			font-size: 40px;
 		}
 
-	.welkom-projecten-indicator{
+	#welkom-projecten-indicator{
 		display: none;
 	}
 
