@@ -126,7 +126,7 @@ body{
 			grid-column: 1/2;
 			grid-row: 1/2;
 			background-image: url('../Afbeeldingen/Welkom/welkom-foto-1.jpg');
-			background-size: 100%;
+			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: top;
 		}
@@ -1062,7 +1062,7 @@ body{
 		#welkom-bericht{
 			position: absolute;
 			width: 100%;
-			top: -380px;
+			/*top: -380px;*/
 			grid-column: 2/4;
 			grid-row:3/3;
 			background-color: white;
@@ -1098,8 +1098,10 @@ body{
 	}
 
 	.welkom-introductie{
+		margin-top: 180px;
 		height: auto;
-		min-height: 50vh;
+		min-height: 60vh;
+		padding: 10% 0%;
 	}
 
 	.welkom-projecten{
@@ -1139,7 +1141,7 @@ body{
 	.welkom-projecten-info{
 		grid-column: 3/4;
 		grid-row:1/2;
-		top: 300px;
+		top: 500px;
 		left: 5%;
 		width: 80%;
 		height: auto;
@@ -1450,6 +1452,11 @@ body{
 		width:100%;
 		margin-bottom:250px;
 	}
+
+/*	.index-footer{
+		margin-bottom: 200px;
+	}*/
+
 
 	footer{
 		grid-template-columns: 5% 50% 45% 0%;
