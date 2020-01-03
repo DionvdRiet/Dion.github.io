@@ -1008,7 +1008,7 @@ body{
 
 	body *{
 		text-align: left;
-		line-height: 70px;
+		line-height: 1.2;
 	}
 
 	#desktop{
@@ -1356,7 +1356,7 @@ body{
  	h3{
 		font-style: normal;
 		font-size: 16px;
-		line-height: 74px;
+		line-height: 1.8;
 	}
 
 	#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
