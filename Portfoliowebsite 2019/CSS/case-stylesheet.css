@@ -997,7 +997,7 @@ body{
 			margin-top: 8%;
 		}
 
-		#responsive-nav{
+		#responsive-nav, .responsive-image{
 			display: none;
 		}
 
@@ -1011,11 +1011,11 @@ body{
 		line-height: 1.2;
 	}
 
-	#desktop{
+	#desktop, .desktop-image{
 		display: none;
 	}
 
-	#responsive,#responsive-nav{
+	#responsive,#responsive-nav,.responsive-image{
 		display: block;
 	}
 
@@ -1425,7 +1425,21 @@ body{
 	.quote{
 		margin-top: 30px;
 		grid-column: 1/4;
+		padding: 10% 0px;
 	}
+
+		.quote li{
+			line-height: 2;
+		}
+
+		.quote h3{
+			font-family: paralucent, sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 36px;
+			color: #252e45;
+
+		}
 
 	.image{
 		margin-top: 30px;
@@ -1515,7 +1529,7 @@ body{
 
 @media screen and (min-width: 1001px){
 
-	#desktop{
+	#desktop, .desktop-image{
 		display: block;
 	}
 
