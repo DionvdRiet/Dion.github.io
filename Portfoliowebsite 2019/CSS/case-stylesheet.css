@@ -576,6 +576,11 @@ body{
 			background-color: #0B41DA;
 		}
 
+		.eindresultaat-container{
+			/*position: relative;*/
+			display: block;
+		}
+
 		.eindresultaat-afbeelding{
 			grid-column: 1/6;
 		}
@@ -1402,6 +1407,15 @@ body{
 			display: grid;
 			grid-template-columns: 50px auto auto auto 50px;
 			grid-column: 1/6;
+			margin-bottom: 200px;
+		}
+
+		#eindresultaat-container-toevoegen{
+			position: relative;
+			display: grid;
+			grid-template-columns: 50px auto auto auto 50px;
+			grid-column: 1/6;
+			margin-bottom: 500px;
 		}
 
 		.eindresultaat-afbeelding{
@@ -1427,23 +1441,34 @@ body{
 			/*z-index: 3;*/
 		}
 
-			#expenses-tekst h1{
+			.eindresultaat-tekst-analyse{
+				bottom: -3000px;
+			}
+
+			#expenses-tekst h1, #toevoegen-tekst h1{
 				font-size: 36px;
 			}
 
-			#expenses-tekst h3{
+			#expenses-tekst h3, #toevoegen-tekst h3{
 				font-size: 30px;
 			}
 
 		.eindresultaat-rechts{
-			grid-column: 3/6;
-			position: relative;
+			grid-column: 1/6;
+			margin: -30px;
+			/*position: absolute;*/
 		}
 
 		#toevoegen-tekst{
-			grid-column: 2/3;
-			position: relative;
-			width: 90%;
+			grid-column: 2/4;
+			padding: 6%;
+			/*right: 10px;*/
+			bottom: -400px;
+			width: 100%;
+			/*height: auto;*/
+			background-color: white;
+			position: absolute;
+			z-index: 3;
 		}
 
 	.quote{
