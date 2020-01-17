@@ -576,11 +576,6 @@ body{
 			background-color: #0B41DA;
 		}
 
-		.eindresultaat-container{
-			/*position: relative;*/
-			display: block;
-		}
-
 		.eindresultaat-afbeelding{
 			grid-column: 1/6;
 		}
@@ -1002,7 +997,7 @@ body{
 			margin-top: 8%;
 		}
 
-		#responsive-nav, .responsive-image{
+		#responsive-nav, .responsive-image, #eindresultaat-section-responsive{
 			display: none;
 		}
 
@@ -1016,11 +1011,11 @@ body{
 		line-height: 1.2;
 	}
 
-	#desktop, .desktop-image{
+	#desktop, .desktop-image, #eindresultaat-section-desktop{
 		display: none;
 	}
 
-	#responsive,#responsive-nav,.responsive-image{
+	#responsive,#responsive-nav,.responsive-image, #eindresultaat-section-responsive{
 		display: block;
 	}
 
@@ -1424,7 +1419,7 @@ body{
 		}
 
 		.eindresultaat-links{
-			grid-column: 1/4;
+			grid-column: 2/4;
 			margin: -30px;
 			/*position: relative;*/
 		}
@@ -1437,16 +1432,16 @@ body{
 			grid-column: 3/5;
 			padding: 6%;
 			/*right: 10px;*/
-			bottom: -40px;
-			width: 80%;
+			/*bottom: -40px;*/
+			width: auto;
 			/*height: auto;*/
 			background-color: white;
 			position: absolute;
-			/*z-index: 3;*/
+			z-index: 3;
 		}
 
 			.eindresultaat-tekst-analyse{
-				bottom: -3000px;
+				bottom: -300px;
 			}
 
 			#expenses-tekst h1, #toevoegen-tekst h1{
@@ -1458,17 +1453,17 @@ body{
 			}
 
 		.eindresultaat-rechts{
-			grid-column: 1/6;
+			grid-column: 3/5;
 			margin: -30px;
 			/*position: absolute;*/
 		}
 
 		#toevoegen-tekst{
-			grid-column: 2/4;
+			grid-column: 3/5;
 			padding: 6%;
 			/*right: 10px;*/
 			bottom: -400px;
-			width: 100%;
+			width: auto;
 			/*height: auto;*/
 			background-color: white;
 			position: absolute;
