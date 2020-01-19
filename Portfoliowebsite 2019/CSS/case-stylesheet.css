@@ -225,11 +225,11 @@ body{
 
 			#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
 				height: 700px;
-				background-size: 100%;
+				background-size: 140%;
 				background-position: center;
 				background-repeat: no-repeat;
 				transform: translateX(-100%);
-				transition: transform .5s cubic-bezier(.365,.305,0,1);
+				transition: transform .5s cubic-bezier(.365,.305,0,1), background-size 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			#welkom-save-now{
@@ -298,14 +298,15 @@ body{
 			justify-content: center;
 		}
 /*Oude header-image */
-		#finance-header, #gaming-header, #ben-header, #noothulp-header{
+		.finance-header, .gaming-header, .ben-header, .noothulp-header{
 			position: absolute;
 			height: 700px;
 			width: 100%;
 			z-index: -6;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-size: 100%;
+			background-size: 140%;
+			transition: background-size 2s cubic-bezier(.365,.305,0,1) ;
 		}
 
 /*		#heade{
@@ -804,7 +805,7 @@ body{
 		/* Play Next AFBEELDINGEN */
 		/* gaming-header oud */
 
-		#finance-header{
+		.finance-header{
 			background-image: url('../Afbeeldingen/Finance/header.jpg');
 			height: 900px;
 			width: 100vw;
@@ -818,7 +819,7 @@ body{
 			height: 400px;
 		}
 
-		#gaming-header{
+		.gaming-header{
 			background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
 			height: 900px;
 			width: 100vw;
@@ -841,7 +842,7 @@ body{
 			grid-column: 1/4;
 		}
 
-		#ben-header{
+		.ben-header{
 			background-image: url('../Afbeeldingen/Ben/header.jpg');
 			height: 900px;
 			width: 100vw;
@@ -854,7 +855,7 @@ body{
 			height: 500px;
 		}
 
-		#noothulp-header{
+		.noothulp-header{
 			background-image: url('../Afbeeldingen/Noothulp/home.jpg');
 			height: 900px;
 			width: 100vw;
@@ -1360,7 +1361,7 @@ body{
 	}
 
 	#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
-		background-size: 100%;
+		background-size: 140%;
 		height: 800px;
 	}
 
