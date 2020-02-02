@@ -685,6 +685,21 @@ body{
 				/*border-top:3px solid #FFED00;*/
 			}
 
+			#doelgroepAnimation,#doelgroepBeschrijving{
+				opacity: 0;
+				transition: opacity 0.3s cubic-bezier(.365,.305,0,1);
+			}
+
+			#saveNowQuote1,#saveNowQuote2{
+				opacity: 0;
+				transform: translateY(30%);
+				transition: opacity 0.3s cubic-bezier(.365,.305,0,1) 0.3s, transform .3s cubic-bezier(.365,.305,0,1) 0.3s ;
+			}
+
+			#saveNowQuote2{
+				transition-delay: 0.6s;
+			}
+
 			section ul{
 				padding:0;
 			}

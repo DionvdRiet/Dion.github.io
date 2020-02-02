@@ -1,8 +1,10 @@
 // window.onload      = responsiveAnimation()  ;
 
 window.onscroll = function() {
+saveNowQuote();
 aanHetScrollen();
 startAnimation(x);
+
 };
 
 const NAME = "once";
@@ -369,5 +371,16 @@ function emailCopied(){
 	document.getElementById('emailCopyButton').style.color = "#FFED00";
 	document.getElementById('emailCopy').style.backgroundColor = "#252e45";
 	document.getElementById('email-popup-text').style.backgroundColor = "#FFED00";
+}
+
+function saveNowQuote(){
+	if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+		document.getElementById('doelgroepAnimation').style.opacity = "1";
+		document.getElementById('doelgroepBeschrijving').style.opacity = "1";
+        document.getElementById('saveNowQuote1').style.opacity = "1";
+		document.getElementById('saveNowQuote1').style.transform = "translateY(0%)";
+		document.getElementById('saveNowQuote2').style.opacity = "1";
+		document.getElementById('saveNowQuote2').style.transform = "translateY(0%)";
+    } 
 }
 
