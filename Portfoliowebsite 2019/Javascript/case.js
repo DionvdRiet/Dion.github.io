@@ -7,6 +7,11 @@ saveNowSchets2();
 saveNowSchets3();
 saveNowEindresultaat();
 saveNowExpenses();
+saveNowToevoegen();
+saveNowAnalyse();
+saveNowArticles();
+saveNowDebt();
+volgendeCase();
 aanHetScrollen();
 startAnimation(x);
 
@@ -126,7 +131,7 @@ function openProject(){
 
 function aanHetScrollen() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("scroll-beneden").style.opacity = "0";
+        // document.getElementById("scroll-beneden").style.opacity = "0";
         document.getElementById("desktop").style.height = "50px";
         document.getElementById("active-page").style.fontSize = "20px";
         document.getElementById("inactive-page").style.fontSize = "20px";
@@ -138,7 +143,7 @@ function aanHetScrollen() {
     } 
 
     else{
-    	document.getElementById("scroll-beneden").style.opacity = "1";
+    	// document.getElementById("scroll-beneden").style.opacity = "1";
     	document.getElementById("desktop").style.height = "inherit";
     	document.getElementById("active-page").style.fontSize = "25px";
     	document.getElementById("inactive-page").style.fontSize = "25px";
@@ -310,6 +315,7 @@ function saveNow(){
 }
 
 function playNext(){
+	document.getElementById('volgendeCasePlayNext').style.color = "#FFED00";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -379,7 +385,7 @@ function emailCopied(){
 }
 
 function saveNowQuote(){
-	if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+	if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
 		document.getElementById('doelgroepAnimation').style.opacity = "1";
 		document.getElementById('doelgroepBeschrijving').style.opacity = "1";
         document.getElementById('saveNowQuote1').style.opacity = "1";
@@ -392,38 +398,80 @@ function saveNowQuote(){
 }
 
 function saveNowSchets1(){
-	if (document.body.scrollTop > 2400 || document.documentElement.scrollTop > 2400) {
+	if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
 		document.getElementById('full-image-save-now-1').style.opacity = "1";
 		document.getElementById('full-image-save-now-1').style.transform = "translateY(0%)";
     } 
 }
 
 function saveNowSchets2(){
-	if (document.body.scrollTop > 2900 || document.documentElement.scrollTop > 2900) {
+	if (document.body.scrollTop > 2700 || document.documentElement.scrollTop > 2700) {
 		document.getElementById('full-image-save-now-2').style.opacity = "1";
 		document.getElementById('full-image-save-now-2').style.transform = "translateY(0%)";
     } 
 }
 
 function saveNowSchets3(){
-	if (document.body.scrollTop > 3500 || document.documentElement.scrollTop > 3500) {
+	if (document.body.scrollTop > 3300 || document.documentElement.scrollTop > 3300) {
 		document.getElementById('full-image-save-now-3').style.opacity = "1";
 		document.getElementById('full-image-save-now-3').style.transform = "translateY(0%)";
     } 
 }
 
 function saveNowEindresultaat(){
-	if (document.body.scrollTop > 4500 || document.documentElement.scrollTop > 4500) {
+	if (document.body.scrollTop > 4300 || document.documentElement.scrollTop > 4300) {
 		document.getElementById('saveNowEindresultaat').style.opacity = "1";
 		document.getElementById('saveNowEindresultaat').style.backgroundSize = "100%";
     } 
 }
 
 function saveNowExpenses(){
-	if (document.body.scrollTop > 5500 || document.documentElement.scrollTop > 5500) {
+	if (document.body.scrollTop > 5100 || document.documentElement.scrollTop > 5100) {
 		document.getElementById('saveNowExpenses').style.opacity = "1";
 		document.getElementById('saveNowExpenses').style.transform = "translateX(0%)";
 		document.getElementById('expenses-tekst').style.opacity = "1";
     } 
 }
+
+function saveNowToevoegen(){
+	if (document.body.scrollTop > 5800 || document.documentElement.scrollTop > 5800) {
+		document.getElementById('saveNowToevoegen').style.opacity = "1";
+		document.getElementById('saveNowToevoegen').style.transform = "translateX(0%)";
+		document.getElementById('toevoegen-tekst').style.opacity = "1";
+    } 
+}
+
+function saveNowAnalyse(){
+	if (document.body.scrollTop > 6400 || document.documentElement.scrollTop > 6400) {
+		document.getElementById('saveNowAnalyse').style.opacity = "1";
+		document.getElementById('saveNowAnalyse').style.transform = "translateX(0%)";
+		document.getElementById('analyse-tekst').style.opacity = "1";
+    } 
+}
+
+function saveNowArticles(){
+	if (document.body.scrollTop > 7100 || document.documentElement.scrollTop > 7100) {
+		document.getElementById('saveNowArticles').style.opacity = "1";
+		document.getElementById('saveNowArticles').style.transform = "translateX(0%)";
+		document.getElementById('articles-tekst').style.opacity = "1";
+    } 
+}
+
+function saveNowDebt(){
+	if (document.body.scrollTop > 7800 || document.documentElement.scrollTop > 7800) {
+		document.getElementById('saveNowDebt').style.opacity = "1";
+		document.getElementById('saveNowDebt').style.transform = "translateX(0%)";
+		document.getElementById('debt-tekst').style.opacity = "1";
+    } 
+}
+
+function volgendeCase(){
+	if (document.body.scrollTop > 8400 || document.documentElement.scrollTop > 8400) {
+		document.getElementById('volgendeCase').style.opacity = "1";
+		document.getElementById('volgendeCase').style.transform = "translateY(0%)";
+    } 
+}
+
+
+
 
