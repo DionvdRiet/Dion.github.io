@@ -220,7 +220,7 @@
 		<div class="ruimte"></div>
 		<h2>Bedankt voor het lezen!</h2>
 		<h3>Klaar voor de volgende case study?</h3>
-		<div class="volgende-cases">
+		<!-- <div class="volgende-cases">
 			<div class="volgende-case">
 				<h1 id="volgendeCasePlayNext">Play Next</h1>
 				<div class="introductie-lijn"></div>
@@ -235,9 +235,16 @@
 				<div class="afbeelding" id="ben-case-afbeelding"></div>
 				<input type="button" name="button" value="BEKIJK PROJECT" id="button-1" onclick="benVerlengproces()">
 			</div>
+		</div> -->
+		<div id="volgendeCaseNieuw">
+			<div id="volgendeCaseNieuwTekst">
+				<h1>Play Next</h1>
+				<h3>Ontdek jouw volgende favoriete game</h3>
+				<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" onclick="playNextNieuw()" onmouseover="playNextOnNieuw()" onmouseout="caseOff()">
+			</div>
 		</div>
 	</section>
-	<footer onmouseleave="emailDown()">
+	<footer onmouseleave="emailDown()" id="footer">
 		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
 		<div id="email-popup">
 			<input type="text" value="16102908@student.hhs.nl" id="email-popup-text">

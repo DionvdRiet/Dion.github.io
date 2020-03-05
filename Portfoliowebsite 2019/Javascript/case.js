@@ -233,6 +233,11 @@ function playNextOn(){
 	document.getElementById('welkom-play-next').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
 
+function playNextOnNieuw(){
+	document.getElementById('volgendeCaseNieuw').style.backgroundSize = "103%";
+	document.getElementById('volgendeCaseNieuw').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+}
+
 function benVerlengprocesOn(){
 	document.getElementById('welkom-ben').style.backgroundSize = "103%";
 	document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
@@ -244,6 +249,9 @@ function noothulpOn(){
 }
 
 function caseOff(){
+	document.getElementById('volgendeCaseNieuw').style.backgroundSize = "100%";
+	document.getElementById('volgendeCaseNieuw').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+
 	document.getElementById('welkom-save-now').style.backgroundSize = "100%";
 	document.getElementById('welkom-save-now').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 
@@ -305,6 +313,7 @@ function noothulpWelkom(){
 
 function saveNow(){
 	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
@@ -317,6 +326,18 @@ function saveNow(){
 function playNext(){
 	document.getElementById('volgendeCasePlayNext').style.color = "#FFED00";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+	setTimeout("location.href = 'play-next.html';",1500)
+}
+
+function playNextNieuw(){
+	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
@@ -327,6 +348,7 @@ function playNext(){
 
 function benVerlengproces(){
 	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
@@ -337,6 +359,7 @@ function benVerlengproces(){
 
 function noothulp(){
 	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
@@ -469,6 +492,16 @@ function volgendeCase(){
 	if (document.body.scrollTop > 8400 || document.documentElement.scrollTop > 8400) {
 		document.getElementById('volgendeCase').style.opacity = "1";
 		document.getElementById('volgendeCase').style.transform = "translateY(0%)";
+		document.getElementById('volgendeCaseNieuw').style.opacity = "1";
+		document.getElementById('volgendeCaseNieuwTekst').style.opacity = "1";
+		document.getElementById('volgendeCaseNieuwTekst').style.transform = "translateY(0%)";
+		document.getElementById('volgendeCaseButton').style.opacity = "1";
+		document.getElementById('volgendeCaseButton').style.width = "40%";
+		document.getElementById('footer').style.opacity = "1";
+		document.getElementById('footer').style.width = "100vw";
+
+		document.getElementById('linkedIn').style.opacity = "1";
+		document.getElementById('email').style.opacity = "1";
     } 
 }
 
