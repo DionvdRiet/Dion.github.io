@@ -86,9 +86,12 @@ function websiteIsLoaded(){
 
 
 function overlay(){
+	document.getElementById('responsive-nav-list-item-1').style.opacity = "1";
+    document.getElementById('responsive-nav-list-item-2').style.opacity = "1";
     document.getElementById('responsive-nav').style.height = "100vh";
     document.getElementById('responsive-nav-list').style.display = "flex";
     document.getElementById('responsive-nav-list').style.opacity = "1";
+
     document.getElementById('hamburger-1').style.marginBottom = "10px";
     document.getElementById('hamburger-2').style.marginTop = "10px";
     document.getElementById('hamburger-2').style.backgroundColor = "#FFED00";
