@@ -40,8 +40,8 @@
 			<h1>Projecten</h1>
 		</div>
 		<div id="responsive-nav-list">
-			<h1 id="active-page" onclick="closeOverlay()">Projecten</h1>
-			<h1 id="inactive-page" onclick="location.href='contact.html'">Contact</h1>
+			<h1 id="responsive-nav-list-item-1" onclick="closeOverlay()">Projecten</h1>
+			<h1 id="responsive-nav-list-item-2" onclick="contact()">Contact</h1>
 		</div>
 	</header>
 	<section id="welkom">
@@ -65,7 +65,7 @@
 	<section class="welkom-projecten">
 		<div class="welkom-projecten-intro">
 			<h1>Projecten</h1>
-			<div class="welkom-projecten-scroll">
+			<div id="welkom-projecten-scroll">
 				<h3>Scroll voor alle projecten</h3>
 				<img src="../Afbeeldingen/arrow-right.svg" width="40px">
 			</div>
@@ -116,9 +116,6 @@
 				<input type="button" name="button" value="BEKIJK PROJECT" class="projectCardButton" onclick="benVerlengprocesWelkom()" onmouseover="style='font-size : 19px'; benVerlengprocesOn()" onmouseout="style='font-size : 20px'; caseOff()">
 			</div>
 		</div>
-
-
-
 
 		<div id="welkom-save-now">
 			<div class="welkom-projecten-info" id="save-now-project-info">

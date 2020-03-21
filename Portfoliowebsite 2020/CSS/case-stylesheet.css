@@ -179,6 +179,10 @@ body{
 			height: 100vh;
 		}
 
+			.welkom-projecten-intro{
+				grid-column: 2/3;
+			}
+
 			#welkom-projecten-indicator{
 				display: grid;
 				grid-template-columns: 300px auto 300px;
@@ -213,7 +217,7 @@ body{
 				}
 
 			.welkom-projecten div{
-				grid-column: 1/3;
+				/*grid-column: 1/3;*/
 				/*background-color: red;*/
 				/*margin-bottom: 10%;		*/
 				position: relative;	
@@ -224,6 +228,7 @@ body{
 			}
 
 			#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
+				grid-column: 1/3;
 				height: 700px;
 				background-size: 140%;
 				background-position: center;
@@ -978,7 +983,7 @@ body{
 		}
 
 	.index-footer{
-		margin-top: 2650px;
+		/*margin-top: 2650px;*/
 	}
 
 	footer{
@@ -1114,14 +1119,14 @@ body{
 			transition-delay: 1s;
 		}
 
-		#responsive-nav, .responsive-image, #eindresultaat-section-responsive{
-			display: none;
-		}
-
 
 /* MOBILE */
 
 @media screen and (max-width: 1000px){
+
+	.index-footer{
+		margin-top:260px;
+	}
 
 	#volgendeCaseNieuw{
 		width: 100vw;
@@ -1226,7 +1231,7 @@ body{
 	}
 
 	.welkom-projecten{
-		height: 100vh;
+		height: 60vh;
 	}
 
 	.welkom-introductie, .welkom-projecten{
@@ -1493,15 +1498,18 @@ body{
 
 	.welkom-projecten-intro{
 		grid-column: 2/3;
+		margin-left: 48px;
+		/*height: 100px;*/
 	}
 
 	#projectCardContainer{
+		margin-top: ;
 		display: flex;
 		flex-wrap: nowrap;
 		overflow-x: auto;
 		width: 100%;
 		grid-column: 1/4;
-		height: 110%;
+		height: 150%;
 		/*overflow-x: scroll;*/
 	}
 
@@ -1520,7 +1528,7 @@ body{
 			grid-template-columns: 48px auto 48px;
 			height: 1000px;
 			width: 75%;
-			box-shadow: 0px 10px 20px rgba(78, 78, 78, 0.10);
+			box-shadow: 0px 10px 20px rgba(78, 78, 78, 0.05);
 		}
 
 			.projectCardImage{
@@ -1806,7 +1814,8 @@ body{
 	  to {opacity: 1; transform: translateY(0px);}
 	}
 
-	#responsive{
+	
+	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-projecten-scroll{
 		display: none;
 	}
 
