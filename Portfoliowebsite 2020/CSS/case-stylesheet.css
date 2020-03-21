@@ -828,7 +828,7 @@ body{
 			}
 
 			.volgendeCaseNoothulp{
-				background-image: url('../Afbeeldingen/Gaming/Noothulp-Next-Case.jpg');
+				background-image: url('../Afbeeldingen/Noothulp/Noothulp-Next-Case.jpg');
 			}
 
 		#footer{
@@ -854,8 +854,8 @@ body{
 		#volgendeCaseButton{
 			left: 0;
 			bottom: 60px;
-			width: 0px;
-			opacity: 0;
+			width: 40%;
+			opacity: 1;
 			transition: width .3s cubic-bezier(.365,.305,0,1) .6s, opacity .3s cubic-bezier(.365,.305,0,1) .5s;
 		}
 

@@ -338,6 +338,17 @@ function playNext(){
 	setTimeout("location.href = 'play-next.html';",1500)
 }
 
+function saveNowNieuw(){
+	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+	setTimeout("location.href = 'save-now.html';",1500)
+}
+
 function playNextNieuw(){
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
@@ -358,6 +369,17 @@ function benVerlengprocesNieuw(){
 	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
 
 	setTimeout("location.href = 'ben-verlengproces.html';",1500)
+}
+
+function noothulpNieuw(){
+	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+	setTimeout("location.href = 'noothulp.html';",1500)
 }
 
 function benVerlengproces(){
