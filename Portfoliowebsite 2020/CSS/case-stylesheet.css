@@ -1136,6 +1136,12 @@ body{
 
 @media screen and (max-width: 1000px){
 
+	.parallax-container{
+		position: relative;
+		height: 40vh;
+	}
+
+
 	.index-footer{
 		margin-top:260px;
 	}
@@ -1474,6 +1480,11 @@ body{
 		bottom: -50px;
 		font-size: 56px;
 		padding: 24px 40px;
+		background-image: url("../Afbeeldingen/arrow-right.svg");
+		background-size: 40px;
+		background-position: 92% 50%;
+		background-repeat: no-repeat;
+		padding-right: 120px;
 	}
 
 	section{
