@@ -90,6 +90,10 @@ body{
 		  width: 0%;
 		  box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
 		}
+
+		#myBarResponsive{
+			height: 4px;
+		}
 	
 	#welkom{
 		display: grid;
