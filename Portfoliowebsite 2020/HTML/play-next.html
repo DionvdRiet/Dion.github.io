@@ -9,12 +9,18 @@
 <body onload="caseSwitchAnimationDown()">
 	<div id="caseSwitchAnimation"></div>
 	<header id="desktop" onmouseover="headerSizeNormal()" onmouseout="headerSizeBack()">
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
 		<ul>
 			<li onclick="home()"><h1 id="active-page">Projecten</h1></li>
 			<li onclick="location.href='contact.html'"><h1 id="inactive-page">Contact</h1></li>
 		</ul>
 	</header>
 	<header id="responsive-nav">
+		<div class="progress-container">
+			<div class="progress-bar" id="myBarResponsive"></div>
+		</div>
 		<div class="responsive-nav-top">
 			<div class="arrow-left" onclick="home()">
 				<img src="../Afbeeldingen/arrow-left.svg" width="50px">

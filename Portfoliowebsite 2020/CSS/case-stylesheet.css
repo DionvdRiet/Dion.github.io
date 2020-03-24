@@ -77,6 +77,19 @@ body{
 				opacity: 1;
 				transition: opacity 1s cubic-bezier(.365,.305,0,1);
 			}
+
+	.progress-container{
+	  width: 100%;
+	  height: 2px;
+	  background: transparent;
+	}
+
+		.progress-bar{
+		  height: 2px;
+		  background: #FFED00;
+		  width: 0%;
+		  box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
+		}
 	
 	#welkom{
 		display: grid;
@@ -1338,7 +1351,7 @@ body{
 		.responsive-nav-top{
 			display: flex;
 			justify-content: center;
-			max-height: 120px;
+			max-height: 122px;
 			border:1px solid rgba(112,112,112,0.15); 
 		}
 
@@ -1539,6 +1552,10 @@ body{
 			margin-left: 64px;
 		}
 
+		.projectCardLast{
+			margin-right: 64px;
+		}
+
 		.projectCard{
 			flex: 0 0 auto;
 			display: grid;
@@ -1576,9 +1593,9 @@ body{
 				display: flex;
 				justify-content: center;
 				width: 260px;
-				padding:0px 32px;
+				padding:16px 32px;
 				background-color: white;
-				transform: translateY(-76px);
+				transform: translateY(-64px);
 				margin-left: 48px;
 				margin-bottom: -120px;
 			}

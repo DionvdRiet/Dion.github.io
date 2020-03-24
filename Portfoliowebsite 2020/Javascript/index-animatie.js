@@ -1,13 +1,11 @@
-window.onscroll = function() {
+window.onscroll = function(){
 aanHetScrollen();
 welkomIntroductie();
 caseOne();
 caseTwo();
 caseThree();
 caseFour();
-projectenIndicator();
 };
-
 
 function projectenIndicator(){
     if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
