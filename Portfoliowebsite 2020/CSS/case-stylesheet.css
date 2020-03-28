@@ -137,18 +137,22 @@ body{
 				margin-right: 300px;
 			}
 
-		.welkom-foto-1{
+		#welkom-foto-1{
 			z-index: -1;
 			position: relative;
 			grid-column: 1/2;
 			grid-row: 1/2;
-			background-image: url('../Afbeeldingen/Welkom/welkom-foto-1.jpg');
+			/*background-image: url('../Afbeeldingen/Welkom/welkom-foto-1.jpg');*/
+			background-image: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(255,237,0,0.65) 100%), url('../Afbeeldingen/Welkom/welkom-foto-1.jpg');
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: top;
+			background-size: 140%;
+			/*transition: ;*/
+			transition: background-image 2s cubic-bezier(.365,.305,0,1), background-size 2s cubic-bezier(.365,.305,0,1);
 		}
 
-		.welkom-foto-2{
+		#welkom-foto-2{
 			z-index: -1;
 			position: relative;
 			grid-column: 2/3;
@@ -329,7 +333,7 @@ body{
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 140%;
-			transition: background-size 2s cubic-bezier(.365,.305,0,1) ;
+			transition: background-size 2s cubic-bezier(.365,.305,0,1);
 		}
 
 /*		#heade{
@@ -1246,7 +1250,7 @@ body{
 				margin-right: 0px;
 			}
 
-	.welkom-foto-1{
+	#welkom-foto-1{
 		margin-top:120px;
 		width: 100vw;
 		height: 100%;
@@ -1254,7 +1258,7 @@ body{
 		background-position: bottom;
 	}
 
-	.welkom-foto-2{
+	#welkom-foto-2{
 		display: none;
 	}
 
