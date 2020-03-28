@@ -108,10 +108,12 @@ function overlay(){
     document.getElementById('responsive-nav').style.height = "100vh";
     document.getElementById('responsive-nav-list').style.display = "flex";
     document.getElementById('responsive-nav-list').style.opacity = "1";
+    document.getElementById('responsive-nav-list').style.backgroundColor = "#FFED00";
+    document.getElementById('responsive-nav-list').style.height = "100%";
 
-    document.getElementById('hamburger-1').style.marginBottom = "10px";
-    document.getElementById('hamburger-2').style.marginTop = "10px";
-    document.getElementById('hamburger-2').style.backgroundColor = "#FFED00";
+    document.getElementById('hamburger-1').style.transform = "rotate(-45deg)";
+    document.getElementById('hamburger-2').style.transform = "rotate(45deg)";
+    document.getElementById('hamburger-2').style.marginTop = "-8px";
     document.getElementById('hamburger-menu').id = "close-overlay";
 
     document.getElementById("close-overlay").onclick = function(){closeOverlay()};
@@ -124,6 +126,10 @@ function closeOverlay(){
     document.getElementById('hamburger-1').style.marginBottom = "5px";
     document.getElementById('hamburger-2').style.marginTop = "5px";
     document.getElementById('hamburger-2').style.backgroundColor = "#252e45";
+
+    document.getElementById('hamburger-1').style.transform = "rotate(0deg)";
+    document.getElementById('hamburger-2').style.transform = "rotate(0deg)";
+    document.getElementById('hamburger-2').style.transform = "translateY(0px)";
 
     document.getElementById("hamburger-menu").onclick = function(){overlay()};
 }
