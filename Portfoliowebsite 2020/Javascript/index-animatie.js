@@ -24,7 +24,7 @@ function projectenIndicator(){
 
 function aanHetScrollen() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("scroll-beneden").style.opacity = "0";
+        // document.getElementById("scroll-beneden").style.opacity = "0";
         document.getElementById("desktop").style.height = "50px";
         document.getElementById("active-page").style.fontSize = "20px";
         document.getElementById("inactive-page").style.fontSize = "20px";
@@ -36,7 +36,7 @@ function aanHetScrollen() {
     } 
 
     else{
-    	document.getElementById("scroll-beneden").style.opacity = "1";
+    	// document.getElementById("scroll-beneden").style.opacity = "1";
     	document.getElementById("desktop").style.height = "inherit";
     	document.getElementById("active-page").style.fontSize = "25px";
     	document.getElementById("inactive-page").style.fontSize = "25px";
