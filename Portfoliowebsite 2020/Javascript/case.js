@@ -233,6 +233,17 @@ function startResponsiveAnimation() {
 }
 
 function home(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+	document.getElementById("arrow-left").style.transform = "translateY(+90%)";
+	document.getElementById("arrow-left").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Welkom";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	}, 1000);
+
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
@@ -304,8 +315,9 @@ function saveNowWelkom(){
 	document.getElementById("nav-project-title").innerHTML = "Save Now";
 	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
 	document.getElementById("nav-project-title").style.opacity = "1";
+	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+	document.getElementById("arrow-left-home").style.opacity = "1";
 	}, 1000);
-
 
 	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
@@ -319,6 +331,17 @@ function saveNowWelkom(){
 }
 
 function playNextWelkom(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Play Next";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+	document.getElementById("arrow-left-home").style.opacity = "1";
+	}, 1000);
+
 	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
@@ -330,6 +353,17 @@ function playNextWelkom(){
 }
 
 function benVerlengprocesWelkom(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Ben Verlengproces";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+	document.getElementById("arrow-left-home").style.opacity = "1";
+	}, 1000);
+
 	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
@@ -341,6 +375,17 @@ function benVerlengprocesWelkom(){
 }
 
 function noothulpWelkom(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Noothulp";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+	document.getElementById("arrow-left-home").style.opacity = "1";
+	}, 1000);
+
 	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";

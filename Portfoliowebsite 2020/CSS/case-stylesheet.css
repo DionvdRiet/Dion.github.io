@@ -1183,6 +1183,18 @@ body{
 		transition: transform .6s cubic-bezier(.365,.305,0,1) 0.2s, opacity .3s cubic-bezier(.365,.305,0,1) 0.2s;
 	}
 
+	#arrow-left{
+		opacity: 1;
+		transform: translateY(0%);
+		transition: transform .6s cubic-bezier(.365,.305,0,1) 0.2s, opacity .3s cubic-bezier(.365,.305,0,1) 0.2s;
+	}
+
+	#arrow-left-home{
+		opacity: 0;
+		transform: translateY(+90%);
+		transition: transform .6s cubic-bezier(.365,.305,0,1) 0.2s, opacity .3s cubic-bezier(.365,.305,0,1) 0.2s;
+	}
+
 	header, .introductie,.quote{
 		display: grid;
 		grid-template-columns: 50px auto 50px;
@@ -1254,7 +1266,7 @@ body{
 
 				#responsive-nav-list-item-2{
 					text-decoration: line-through;
-					text-decoration-color: #FFED00;
+					text-decoration-color: white;
 				}
 
 
