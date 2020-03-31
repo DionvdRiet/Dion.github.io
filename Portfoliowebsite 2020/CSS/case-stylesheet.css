@@ -183,11 +183,6 @@ body{
 				vertical-align: middle;
 			}
 
-			#welkom-introductie{
-				opacity: 0;
-				transition: opacity .3s cubic-bezier(.365,.305,0,1);
-			}
-
 		.welkom-projecten{
 			display: grid;
 			grid-template-columns: 300px auto 300px;
@@ -1115,6 +1110,7 @@ body{
 	}
 
 	.welkom-introductie{
+		opacity: 1;
 		margin-top: 180px;
 		height: auto;
 		min-height: 60vh;
@@ -1746,10 +1742,6 @@ body{
 		transition: font-size .3s cubic-bezier(.365,.305,0,1);
 	}
 
-		#active-page{
-
-		}
-
 		#inactive-page{
 			text-decoration: line-through;
 			text-decoration-color: #FFED00;
@@ -1783,6 +1775,11 @@ body{
 	h3{
 		font-style: normal;
 		line-height: 30px;
+	}
+
+	#welkom-introductie{
+		opacity: 0;
+		transition: opacity .3s cubic-bezier(.365,.305,0,1);
 	}
 
 	.quote{
