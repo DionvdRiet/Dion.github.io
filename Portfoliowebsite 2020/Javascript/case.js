@@ -297,6 +297,16 @@ function caseOff(){
 
 
 function saveNowWelkom(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Save Now";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	}, 1000);
+
+
 	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";

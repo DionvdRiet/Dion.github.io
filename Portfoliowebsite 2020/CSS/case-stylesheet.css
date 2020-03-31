@@ -1177,6 +1177,12 @@ body{
 		box-shadow: none;
 	}
 
+	#nav-project-title{
+		opacity: 1;
+		transform: translateY(0%);
+		transition: transform .6s cubic-bezier(.365,.305,0,1) 0.2s, opacity .3s cubic-bezier(.365,.305,0,1) 0.2s;
+	}
+
 	header, .introductie,.quote{
 		display: grid;
 		grid-template-columns: 50px auto 50px;
