@@ -403,7 +403,6 @@ function saveNow(){
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
-	// document.getElementById("caseSwitchAnimation").style.transform = "translateX(0px)";
 
 	setTimeout("location.href = 'save-now.html';",1500)
 }
