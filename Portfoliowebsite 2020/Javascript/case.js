@@ -208,6 +208,9 @@ function startAnimation() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("sectie-indicatie-achtergrond").style.transform = "translateX(0px)";
         document.getElementById("case-title").style.transform = "translateY(0px)";
+        document.getElementById("introductie-lijn").style.width = "100%";
+        document.getElementById("projectbeschrijving").style.transform = "translateY(0px)";
+        document.getElementById("projectbeschrijving").style.opacity = "1";
         document.getElementById("case-title").style.opacity = "1";
         document.getElementById("animateIn1").style.opacity = "1";
         document.getElementById("animateIn2").style.opacity = "1";

@@ -8,7 +8,7 @@ body{
 	overflow-x: hidden;
 	color: #F5F5F5;
 	text-align: justify;
-	max-width: 80vw;
+	min-width: 100vw;
 }
 
 	#loadWebsite{
@@ -348,23 +348,24 @@ body{
 		transform: translateY(-100px);
 		line-height: 30px;
 		z-index: 3;
+		margin-bottom: -160px;
 	}
 
 		#case-title{
 			z-index: 1;
-			transform: translateY(100px);
-			transition: transform 2s cubic-bezier(.365,.305,0,1);
-		}
-		.introductie-lijn{
-			grid-column: 2/3;
+			opacity: 0;
+			transform: translateY(50px);
+			transition: transform 2s cubic-bezier(.365,.305,0,1), opacity 2s cubic-bezier(.365,.305,0,1) 0.3s;
 		}
 
 			#introductie-lijn{
 				grid-column: 2/3;
 				height: 10px;
+				width: 0%;
 				background-color: #FFED00;
 				box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
-				z-index: -2;
+				z-index: 2;
+				transition: width 2s cubic-bezier(.365,.305,0,1);
 			}
 
 			.introductie-lijn > .ruimte{
@@ -375,9 +376,12 @@ body{
 				z-index: -1;
 			}
 
-		.introductie h3{
+		#projectbeschrijving{
 			position: relative;
 			z-index: -1;
+			opacity: 0;
+			transform: translateY(-50px);
+			transition: transform 2s cubic-bezier(.365,.305,0,1), opacity 2s cubic-bezier(.365,.305,0,1) 0.3s;
 		}
 
 		#animateIn1, #animateIn2, #animateIn3, #animateIn4, #animateIn5, #animateIn6, #animateIn7{
@@ -1359,10 +1363,6 @@ body{
 		font-size: 54px;
 	}
 
-	.sectie-titel{
-		font-size: 50px;
-	}
-
 	h2{
 		font-style: normal;
 	}
@@ -1396,6 +1396,10 @@ body{
 			width: 100px;
 			height: 60px;
 			bottom: -30px;
+		}
+
+		.sectie-indicatie-titel{
+			font-size: 48px;
 		}
 
 		.sectie-indicatie h4{
