@@ -1749,15 +1749,87 @@ body{
 			display: grid;
 			grid-template-columns: 50px auto 50px;
 			width:100vw;
-			margin-top:100px;
+			/*margin-top:100px;*/
 		}
 
-			.eindresultaat-backdrop-blue, .eindresultaat-backdrop-white{
+			.minder-margin{
+			/*	padding-bottom: 0px;
+				margin-bottom: -140px;*/
+			}
+
+			.responsive-eindresultaat-beschrijving{
+				z-index: 3;
+				grid-column: 1/4;
+				height: 500px;
+				width: 100%;
+				background-color: white;
+			}
+
+				.responsive-eindresultaat-beschrijving *{
+					padding: 3%;
+				}
+
+				.responsive-eindresultaat-beschrijving h2{
+					font-size: 48px;
+					color: #252E45;
+					margin-bottom: -3%;
+					border-bottom: 8px solid #0B41DA;
+				}
+
+				.responsive-eindresultaat-beschrijving-lijn{
+					padding: 3%;
+					height: 1px;
+					width: 100%;
+					background-color: #0B41DA;
+				}
+
+				.responsive-eindresultaat-beschrijving p{
+					font-size: 40px;
+					font-family: paralucent, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					color: #575757;
+				}
+
+			.eindresultaat-enkel,.eindresultaat-backdrop-blue, .eindresultaat-backdrop-white{
 				display: grid;
+				grid-column: 1/4;
 				grid-template-columns: 50px auto 50px;
 				width: 100%;
 				height: auto;
-				padding: 10% 0% 20% 0%;
+			}
+
+			.padding-b-10{
+				padding-top:10%;
+			}
+
+			.padding-b-20{
+				padding-top:20%;
+			}
+
+			.padding-o-10{
+				padding-bottom:10%;
+			}
+
+			.padding-o-20{
+				padding-bottom:20%;
+			}
+
+			.eindresultaat-enkel{
+				position: relative;
+			}
+
+			.backdrop-grey{
+				display: flex;
+				justify-content: center;
+				align-self: center;
+				vertical-align: middle;
+				position: absolute;
+				grid-column: 1/4;
+				z-index: -1;
+				background-color: #F5F5F5;
+				height: 1000px;
+				width: 100%; 
 			}
 
 			.eindresultaat-backdrop-blue{
@@ -1778,13 +1850,13 @@ body{
 
 			.backdrop-boven{
 				padding: 5% 0% 20% 0%;
-				transform: translateY(-5%);
+				transform: translateY(-1%);
 				z-index: 5;
 			}
 
 			.backdrop-onder{
 				padding: 5% 0% 20% 0%;
-				transform: translateY(5%);
+				transform: translateY(1%);
 				z-index: 5;
 			}
 
