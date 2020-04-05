@@ -1094,7 +1094,7 @@ body{
 
 			#loadWebsiteTitel h1{
 				font-size: 90px;
-				margin: -20px 0px;
+				margin-bottom: -48px;
 			}
 
 			#loadWebsiteTitel h3{
@@ -1744,6 +1744,56 @@ body{
 		#email-popup h1{
 			font-size: 34px;
 		}
+
+		.eindresultaat-responsive{
+			display: grid;
+			grid-template-columns: 50px auto 50px;
+			width:100vw;
+			margin-top:100px;
+		}
+
+			.eindresultaat-backdrop-blue, .eindresultaat-backdrop-white{
+				display: grid;
+				grid-template-columns: 50px auto 50px;
+				width: 100%;
+				height: auto;
+				padding: 10% 0% 20% 0%;
+			}
+
+			.eindresultaat-backdrop-blue{
+				background-color: #0B41DA;
+			}
+
+			.eindresultaat-backdrop-white{
+				background-color: white;
+			}
+
+			.backdrop-links{
+				grid-column: 1/3;
+			}
+
+			.backdrop-rechts{
+				grid-column: 2/4;
+			}
+
+			.backdrop-boven{
+				padding: 5% 0% 20% 0%;
+				transform: translateY(-5%);
+				z-index: 5;
+			}
+
+			.backdrop-onder{
+				padding: 5% 0% 20% 0%;
+				transform: translateY(5%);
+				z-index: 5;
+			}
+
+			.responsive-eindresultaat{
+				grid-column: 2/3;
+			}
+
+
+
 }
 
 /* DESKTOP*/
@@ -1751,7 +1801,6 @@ body{
 @media screen and (min-width: 1001px){
 
 	#projectbeschrijving{
-			/*margin-top: -10%;*/
 			margin-bottom: 80px;
 		}
 
@@ -1771,7 +1820,7 @@ body{
 	}
 
 	
-	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-projecten-scroll, .finance-header-responsive{
+	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-projecten-scroll, .finance-header-responsive, .eindresultaat-responsive{
 		display: none;
 	}
 
