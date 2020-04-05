@@ -390,10 +390,6 @@ body{
 			transition-delay: 1.5s;
 		}
 
-		#projectBeschrijving{
-			margin-top: -10%;
-		}
-
 	#caseSwitchAnimationWhite{
 		position: fixed;
 		z-index: 3;
@@ -734,7 +730,6 @@ body{
 			#volgendeCaseNieuwTekst h1{
 				font-size: 60px;
 				margin-bottom: -6px;
-				width: 200%;
 			}
 
 		#volgendeCaseButton{
@@ -1014,6 +1009,43 @@ body{
 
 @media screen and (max-width: 1000px){
 
+	#case-title{
+		opacity: 0;
+		transform: translateY(-50px);
+		animation: projectBeschrijvingOmhoog 2s forwards;
+	}
+
+	#introductie-lijn{
+		opacity: 0;
+		width: 0%;
+		animation: introductieLijn 2s forwards;
+	}
+
+	#projectbeschrijving{
+		opacity: 0;
+		transform: translateY(-50px);
+		animation: projectBeschrijvingOmlaag 2s forwards;
+	}
+
+	@keyframes projectBeschrijvingOmhoog {
+	  from {opacity: 0; transform: translateY(50px);}
+	  to {opacity: 1; transform: translateY(0px);}
+	}
+
+	@keyframes introductieLijn {
+	  from {opacity: 0; width: 0%;}
+	  to {opacity: 1; width:100%;}
+	}
+
+	@keyframes projectBeschrijvingOmlaag {
+	  from {opacity: 0; transform: translateY(-50px);}
+	  to {opacity: 1; transform: translateY(0px);}
+	}
+
+	.introductie{
+		margin-bottom: 16px;
+	}
+
 	#scroll-beneden{
 		opacity: 0;
 	}
@@ -1040,7 +1072,7 @@ body{
 		line-height: 1.2;
 	}
 
-	#desktop, .desktop-image, #eindresultaat-section-desktop{
+	#desktop, .desktop-image, #eindresultaat-section-desktop, .parallax-container, .header-extra{
 		display: none;
 	}
 
@@ -1358,6 +1390,17 @@ body{
 			color: #131A2B;
 		}
 
+	.finance-header-responsive{
+		background-image: url('../Afbeeldingen/Finance/header.jpg');
+		height: 800px;
+		width: 100vw;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top;
+		position: relative;
+		margin-bottom: 60px;
+		transform: translateY(120px);
+	}
 
 	h1{
 		font-size: 54px;
@@ -1707,6 +1750,11 @@ body{
 
 @media screen and (min-width: 1001px){
 
+	#projectbeschrijving{
+			/*margin-top: -10%;*/
+			margin-bottom: 80px;
+		}
+
 	#desktop, .desktop-image{
 		display: block;
 	}
@@ -1723,7 +1771,7 @@ body{
 	}
 
 	
-	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-projecten-scroll{
+	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-projecten-scroll, .finance-header-responsive{
 		display: none;
 	}
 
@@ -1835,6 +1883,10 @@ body{
 
 	.index-footer{
 		margin-top: 2450px;
+	}
+
+	#volgendeCaseNieuwTekst h1{
+		width: 200%;
 	}
 
 

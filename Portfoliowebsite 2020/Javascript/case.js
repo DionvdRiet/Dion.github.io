@@ -493,7 +493,6 @@ function caseSwitchAnimationDown(){
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
 	document.getElementById("header-image").style.backgroundSize = "100%";
-	// document.getElementById("heade").style.filter = "blur(0px)";
 	setTimeout(noOpacity, 1000);
 }
 
