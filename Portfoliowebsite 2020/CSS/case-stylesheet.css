@@ -1454,7 +1454,7 @@ body{
 		font-style: normal;
 		font-size: 20px;
 		line-height: 1.6;
-		margin-top: -4px;
+		/*margin-top: -4px;*/
 	}
 
 	#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
@@ -1908,7 +1908,7 @@ body{
 				}
 
 					#projectTypeLine{
-						align-self: center;
+						/*align-self: center;*/
 						height: 100px;
 						width: 12px;
 						background-color: #FFED00;
@@ -1918,6 +1918,7 @@ body{
 					#projectType h3{
 						font-size: 48px;
 						font-weight: 500;
+						margin-top: 16px;
 					}
 
 				#volgendeCaseCardText{
