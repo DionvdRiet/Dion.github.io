@@ -1403,6 +1403,18 @@ body{
 		transform: translateY(120px);
 	}
 
+	.play-next-header-responsive{
+		background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
+		height: 800px;
+		width: 100vw;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top;
+		position: relative;
+		margin-bottom: 60px;
+		transform: translateY(120px);
+	}
+
 	h1{
 		font-size: 54px;
 	}
@@ -1838,6 +1850,10 @@ body{
 				background-color: #0B41DA;
 			}
 
+			.eindresultaat-backdrop-red{
+				background-color: #F22B50;
+			}
+
 			.eindresultaat-backdrop-white{
 				background-color: white;
 			}
@@ -1957,7 +1973,7 @@ body{
 			margin-bottom: 80px;
 		}
 
-	#desktop, .desktop-image{
+	#desktop, .desktop-image, #volgendeCase{
 		display: block;
 	}
 
@@ -1974,7 +1990,7 @@ body{
 
 	
 	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, 
-	#welkom-projecten-scroll, .finance-header-responsive, .eindresultaat-responsive, #volgendeCaseCard{
+	#welkom-projecten-scroll, .finance-header-responsive, .gaming-header-responsive, .eindresultaat-responsive, #volgendeCaseCard{
 		display: none;
 	}
 
