@@ -1787,7 +1787,14 @@ body{
 					font-size: 48px;
 					color: #252E45;
 					margin-bottom: -3%;
+				}
+
+				.responsive-eindresultaat-beschrijving h2{
 					border-bottom: 8px solid #0B41DA;
+				}
+
+				.gaming-border h2{
+					border-bottom: 8px solid #F22B50;
 				}
 
 				.responsive-eindresultaat-beschrijving-lijn{
