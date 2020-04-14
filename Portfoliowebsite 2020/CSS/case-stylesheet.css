@@ -530,7 +530,12 @@ body{
 		opacity: 0;
 		transform: translateY(30%);
 		transition: opacity 0.3s cubic-bezier(.365,.305,0,1), transform .3s cubic-bezier(.365,.305,0,1);
+		display: grid;
 	}
+
+		#volgendeCase h2{
+			grid-column: 2/3;
+		}
 
 	.sectie-indicatie{
 		display: flex;
@@ -1073,7 +1078,7 @@ body{
 		line-height: 1.2;
 	}
 
-	#desktop, .desktop-image, #eindresultaat-section-desktop, .parallax-container, .header-extra, #volgendeCase, #volgendeCasePlayNext{
+	#desktop, .desktop-image, #eindresultaat-section-desktop, .parallax-container, .header-extra, #volgendeCase, #volgendeCaseStatic{
 		display: none;
 	}
 
@@ -1414,6 +1419,33 @@ body{
 		margin-bottom: 60px;
 		transform: translateY(120px);
 	}
+
+	.ben-header-responsive{
+		background-image: url('../Afbeeldingen/Ben/header.jpg');
+		height: 800px;
+		width: 100vw;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top;
+		position: relative;
+		margin-bottom: 60px;
+		transform: translateY(120px);
+	}
+
+	.noothulp-header-responsive{
+		background-image: url('../Afbeeldingen/Noothulp/home.jpg');
+		height: 800px;
+		width: 100vw;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top;
+		position: relative;
+		margin-bottom: 60px;
+		transform: translateY(120px);
+		margin-bottom: 200px;
+	}
+
+
 
 	h1{
 		font-size: 54px;
@@ -1902,7 +1934,7 @@ body{
 				grid-column: 2/3;
 			}
 
-			.volgendeCasePlayNext, .volgendeCaseBen{
+			.volgendeCaseStatic, .volgendeCaseBen{
 				width: 100%;
 				height: 600px;
 				background-size: 100%;
@@ -1920,7 +1952,7 @@ body{
 				height: 700px;
 				/*background-color: red;*/
 				background-size: cover;
-				background-position: 30% 40%;
+				background-position: 50% 40%;
 				background-repeat: no-repeat;
 				/*margin-bottom: -150px;*/
 				opacity: 1;
@@ -1986,9 +2018,17 @@ body{
 			margin-bottom: 80px;
 		}
 
-	#desktop, .desktop-image, #volgendeCase{
+	#desktop, .desktop-image{
 		display: block;
 	}
+
+	#volgendeCase{
+		display: grid;
+	}
+
+		#volgendeCase h2, #volgendeCaseStatic h2{
+			margin-bottom: -12px;
+		}
 
 	.indexHeader{
 		opacity: 0;

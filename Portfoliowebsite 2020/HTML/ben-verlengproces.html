@@ -40,6 +40,7 @@
  		<div class="ben-header" id="header-image"></div> 
  	</div>
  	<div class="header-extra"></div>
+ 	<div class="ben-header-responsive"></div>
 	<div class="introductie">
 		<h1 id="case-title">Ben Verlengproces</h1>
 		<div class="introductie-lijn">
@@ -234,27 +235,10 @@
 		</div>
 		<h3><cite>Abonnement aangevraagd</cite></h3>
 	</section>
-	<section>
+	<section id="volgendeCaseStatic">
 		<div class="ruimte"></div>
 		<h2>Bedankt voor het lezen!</h2>
 		<h3>Klaar voor de volgende case study?</h3>
-		<!-- <div class="volgende-cases">
-			<div class="volgende-case">
-				<h1>Play Next</h1>
-				<div class="introductie-lijn"></div>
-				<h3>Ontdek jouw volgende favoriete game.</h3>
-				<div class="afbeelding" id="play-next-case-afbeelding"></div>
-				<input type="button" name="button" value="BEKIJK PROJECT" onclick="playNext()">
-			</div>
-			<div class="volgende-case">
-				<h1>Noothulp</h1>
-				<div class="introductie-lijn"></div>
-				<h3>Verlengen kan simpel zijn.</h3>
-				<div class="afbeelding" id="noothulp-case-afbeelding"></div>
-				<input type="button" name="button" value="BEKIJK PROJECT" id="button-1" onclick="noothulp()">
-			</div>
-		</div> -->
-
 		<div id="volgendeCaseNieuw" class="volgendeCaseNoothulp">
 			<div id="volgendeCaseNieuwTekst">
 				<h1>Noothulp</h1>
@@ -262,7 +246,23 @@
 				<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" onclick="noothulpNieuw()" onmouseover="onNieuw()" onmouseout="caseOff()">
 			</div>
 		</div>
+	</section>
+	<section id="volgendeCaseCard">
+		<div class="ruimte"></div>
+		<h2>Bedankt voor het lezen!</h2>
+		<h3>Klaar voor de volgende case study?</h3>
 
+		<div class="caseCard volgendeCaseNoothulp">
+			<div id="projectType">
+				<div id="projectTypeLine"></div>
+				<h3>Appdesign</h3>
+			</div>
+			<div id="volgendeCaseCardText">
+				<h1>Noothulp</h1>
+				<h3>Muziekles zonder docent</h3>
+				<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseCardButton" onclick="noothulpNieuw()" onmouseover="onNieuw()" onmouseout="caseOff()">
+			</div>
+		</div>
 	</section>
 	<footer onmouseleave="emailDown()">
 		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
