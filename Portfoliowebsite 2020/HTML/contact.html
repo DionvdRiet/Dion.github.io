@@ -8,11 +8,19 @@
 </head>
 <body onload="caseSwitchAnimationDown()">
 <div id="caseSwitchAnimation"></div>
-<header id="desktop" onmouseover="headerSizeNormal()" onmouseout="headerSizeBack()">
-		<ul>
-			<li onclick="home()"><h1 id="inactive-page">Projecten</h1></li>
-			<li onclick="location.href='contact.html'"><h1 id="active-page">Contact</h1></li>
-		</ul>
+<header id="desktop" class="headerDefault" onmouseover="headerSizeNormal()" onmouseout="headerSizeBack()">
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+		<div id="headerContainer" class="headerContainerDefault" onclick="home()">
+			<div id="headerItem1">
+				<h2 id="inactive-page-1">Welkom</h2>
+			</div>
+			<div id="headerItemDefault2" onmouseover="headerItemDefaultTwo()" onmouseout="headerItemDefaultTwoOff()">
+				<h2 id="active-page-1">Contact</h2>
+			</div>
+			<div id="headerContainer2"  class="headerContainerActive"></div>
+		</div>
 	</header>
 <header id="responsive-nav">
 	<div class="responsive-nav-top">
@@ -57,8 +65,7 @@
 		</div>
 		<div class="footer-balk" onmouseout="emailDown()"></div>
 	</footer>
-	<script type="text/javascript" src="../Javascript/case.js"></script>
-	
+	<script type="text/javascript" src="../Javascript/case.js"></script>	
 </script>
 </body>
 </html>
