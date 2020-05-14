@@ -1,5 +1,9 @@
-body, #loadWebsite, header, .introductie{
+body, #loadWebsite, #loadWebsite, #welkom, header, .introductie{
 	width: 100vw;
+}
+
+#loadWebsite, #loadWebsiteWit, #welkom{
+	height: 100vh;
 }
 
 body{
@@ -8,14 +12,11 @@ body{
 	overflow-x: hidden;
 	color: #F5F5F5;
 	text-align: justify;
-	min-width: 100vw;
 }
 
 	#loadWebsite{
 		display: grid;
-		grid-template-columns: 300px auto 300px;
 		grid-template-rows: 1fr auto 1fr;
-		height: 100vh;
 		background-color: white;
 		position: fixed;
 		z-index: 5;
@@ -67,8 +68,7 @@ body{
 			}
 
 			#loadWebsiteWit{
-				width: 100vh;
-				height: 100vh;
+				width: 100vw;
 				display: block;
 				position: fixed;
 				background-color: white;
@@ -99,8 +99,6 @@ body{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 90% 10%;
-		width: 100vw;
-		height: 100vh;
 		position: relative;
 		opacity: 0;
 		transition: opacity .3s cubic-bezier(.365,.305,0,1);
@@ -312,7 +310,7 @@ body{
 
 		.parallax-container{
 			position: relative;
-			height: 600px;
+			height: 800px;
 		}
 
 		.header-extra{
@@ -1039,8 +1037,6 @@ body{
 	#loadWebsite{
 		position: relative;
 		grid-template-columns: 50px auto 50px;
-		width: 100vw;
-		height: 100vh;
 	}
 
 		#loadWebsiteTitel{
@@ -1955,12 +1951,15 @@ body{
 		display: none;
 	}
 
-	#projectbeschrijving{
-			margin-bottom: 80px;
-		}
+	/*Desktop Grid*/
+	#loadWebsite, .introductie{
+		display: grid;
+		grid-template-columns: 300px auto 300px;
+		width: 100vw;
+	}
 
-	#desktop, .desktop-image{
-		/*display: block;*/
+	#projectbeschrijving{
+		margin-bottom: 80px;
 	}
 
 	#volgendeCase{
@@ -1975,17 +1974,6 @@ body{
 		opacity: 0;
 		animation-duration: 1s;
 		animation-timing-function: cubic-bezier(.365,.305,0,1);
-	}
-
-	@keyframes navDown {
-	  from {opacity: 0; transform: translateY(-100%);}
-	  to {opacity: 1; transform: translateY(0px);}
-	}
-
-	.introductie{
-		display: grid;
-		grid-template-columns: 300px auto 300px;
-		width: 100vw;
 	}
 
 	header{
@@ -2156,6 +2144,13 @@ body{
 
 	#volgendeCaseNieuwTekst h1{
 		width: 200%;
+	}
+
+	/*Animaties*/
+
+	@keyframes navDown {
+	  from {opacity: 0; transform: translateY(-100%);}
+	  to {opacity: 1; transform: translateY(0px);}
 	}
 
 
