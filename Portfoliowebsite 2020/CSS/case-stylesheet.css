@@ -92,7 +92,7 @@ body{
 		.progress-bar{
 		  background: #FFED00;
 		  width: 0%;
-		  box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
+		  /*box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);*/
 		}
 	
 	#welkom{
@@ -535,7 +535,7 @@ body{
 		position: absolute;
 		right: 0;
 		background-color: #FFED00;
-		box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
+		/*box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);*/
 	}
 		.sectie-indicatie h4{
 			align-self: center;
@@ -608,7 +608,7 @@ body{
 	.quote{
 		width: 100%;
 		background-color: #FFED00;
-		box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
+		/*box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);*/
 		margin-bottom: 10px;
 	}
 		.quote h2, .quote h3{
@@ -705,9 +705,13 @@ body{
 			grid-column: 2/3;
 		}
 
-		#mobile-image{
-			display: flex;
-			justify-content: center;
+		.imageEnBeschrijving{
+			position: relative;
+			margin-bottom: 60px;
+			background-size: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			/*height: 400px;*/
 		}
 
 		#full-image-save-now-1, #full-image-save-now-2, #full-image-save-now-3{
@@ -755,7 +759,7 @@ body{
 		}
 
 			.volgendeCaseSaveNow{
-				background-image: url('../Afbeeldingen/Finance/SaveNow-Next-Case.jpg');
+				background-image: url('../Afbeeldingen/Finance/saveNow-Next-Case.jpg');
 			}
 
 			.volgendeCasePlayNext{
@@ -763,11 +767,11 @@ body{
 			}
 
 			.volgendeCaseBen{
-				background-image: url('../Afbeeldingen/Ben/Ben-Next-Case.jpg');
+				background-image: url('../Afbeeldingen/Ben/ben-Next-Case.jpg');
 			}
 
 			.volgendeCaseNoothulp{
-				background-image: url('../Afbeeldingen/Noothulp/Noothulp-Next-Case.jpg');
+				background-image: url('../Afbeeldingen/Noothulp/noothulp-Next-Case.jpg');
 			}
 
 		#footer{
@@ -825,22 +829,17 @@ body{
 			width: 100vw;
 		}
 
-		#finance-persona, #play-next-persona{
-			position: relative;
-			margin-bottom: 30px;
-			background-size: 100%;
-			background-position: center;
-			background-repeat: no-repeat;
+		#finance-persona, #play-next-persona, #ben-persona{
 			height: 400px;
 		}
 
 		#finance-persona{
 			background-image: url('../Afbeeldingen/Finance/spending.jpg');
-			width: 0%;
-			transition: width .6s cubic-bezier(.365,.305,0,1) 1s;
+			opacity: 0;
+			transition: opacity .6s cubic-bezier(.365,.305,0,1) 1s;
 		}
 
-		#persona-beschrijving{
+		.image-beschrijving{
 			transform: translateY(100%);
 			background-color: #FFED00;
 			font-weight: 700;
@@ -852,11 +851,13 @@ body{
 			transition: opacity .6s cubic-bezier(.365,.305,0,1) 0.6s;
 		}
 
-			#persona-beschrijving cite{
+			#image-beschrijving cite{
 				display: flex;
 				justify-content: center;
 				align-self: center;
 			}
+
+
 
 		.gaming-header{
 			background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
@@ -886,7 +887,7 @@ body{
 
 		#ben-persona{
 			background-image: url('../Afbeeldingen/Ben/ben-persona.png');
-			background-size: contain;
+			background-size: cover;
 			background-repeat: no-repeat;
 			height: 500px;
 		}
@@ -2014,6 +2015,12 @@ body{
 					#volgendeCaseCardButton{
 						grid-column: 2/3;
 						left:0;
+					}
+
+					.mobile-image{
+						display: flex;
+						justify-content: center;
+						grid-column: 2/3;
 					}
 
 }

@@ -580,8 +580,7 @@ function saveNowQuote(){
 		document.getElementById('saveNowQuote1').style.transform = "translateY(0%)";
 		document.getElementById('saveNowQuote2').style.opacity = "1";
 		document.getElementById('saveNowQuote2').style.transform = "translateY(0%)";
-		document.getElementById('finance-persona').style.width = "100%";
-		document.getElementById('persona-beschrijving').style.opacity = "1";
+		document.getElementById('finance-persona').style.opacity = "1";
     } 
 }
 
