@@ -669,6 +669,90 @@ function volgendeCase(){
     } 
 }
 
+function saveNowCard(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Save Now";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+	document.getElementById("arrow-left-home").style.opacity = "1";
+	}, 1000);
+
+	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+	setTimeout("location.href = 'save-now.html';",1600)
+}
+
+function playNextCard(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Play Next";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+	document.getElementById("arrow-left-home").style.opacity = "1";
+	}, 1000);
+
+	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+	setTimeout("location.href = 'play-next.html';",1600)
+}
+
+function benVerlengprocesCard(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Ben Verlengproces";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+	document.getElementById("arrow-left-home").style.opacity = "1";
+	}, 1000);
+
+	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+	setTimeout("location.href = 'ben-verlengproces.html';",1600)
+}
+
+function noothulpCard(){
+	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+	document.getElementById("nav-project-title").style.opacity = "0";
+
+	setTimeout(function(){ 
+	document.getElementById("nav-project-title").innerHTML = "Noothulp";
+	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+	document.getElementById("nav-project-title").style.opacity = "1";
+	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+	document.getElementById("arrow-left-home").style.opacity = "1";
+	}, 1000);
+
+	document.getElementById('caseSwitchAnimation').style.display = "block";
+	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+	setTimeout("location.href = 'noothulp.html';",1600)
+}
+
 
 
 
