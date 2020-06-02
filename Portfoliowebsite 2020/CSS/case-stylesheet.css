@@ -1039,6 +1039,27 @@ body{
 
 @media screen and (max-width: 1000px){
 
+	#finance-persona, #play-next-persona, #ben-persona{
+		height: 600px;
+	}
+
+	a{
+		grid-column: 1/4;
+	}
+
+	.imageEnBeschrijving{
+		grid-column: 1/4;
+		margin-top: 28px;
+		margin-bottom: 102px;
+		background-size: 100%;
+	}
+
+	.image-beschrijving{
+		/*transform: translateY(120%);*/
+		font-size: 44px;
+		/*margin-bottom: 16px;*/
+	}
+
 	#focus{
 		grid-column: 1/4;
 		width: 100vw;
