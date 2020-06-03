@@ -1553,7 +1553,7 @@ body{
 		background-position: right;
 		position: relative;
 		margin-bottom: 120px;
-		/*transform: translateY(120px);*/
+		transform: translateY(0px);
 		position: relative;
 	}
 
@@ -1565,7 +1565,7 @@ body{
 		width: 340px;
 		height: 160px;
 		background-color: white;
-		bottom:-4px;
+		bottom: 0;
 		right: -4px;
 		text-align: right;
 		font-size: 32px;
