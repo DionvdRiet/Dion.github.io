@@ -1552,8 +1552,8 @@ body{
 		background-repeat: no-repeat;
 		background-position: right;
 		position: relative;
-		margin-bottom: 60px;
-		transform: translateY(120px);
+		margin-bottom: 120px;
+		/*transform: translateY(120px);*/
 		position: relative;
 	}
 
@@ -1565,8 +1565,8 @@ body{
 		width: 340px;
 		height: 160px;
 		background-color: white;
-		bottom:0;
-		right: 0;
+		bottom:-4px;
+		right: -4px;
 		text-align: right;
 		font-size: 32px;
 		background-image: url("../Afbeeldingen/arrow-down.svg");
@@ -1574,20 +1574,20 @@ body{
 		background-position: 16% 50%;
 		padding-left: 8%;
 		background-repeat: no-repeat;
+		z-index: 1;
 	}
 
 	.header-scroll-yellow{
-		z-index: -1;
+		z-index: 0;
 		position: absolute;
-		width: 340px;
+		width: 354px;
 		height: 160px;
 		bottom: 0;
-		right: 0;
+		right: -4px;
 		background-color: #FFED00;
-		transform: translateX(-50%);
+		/*transform: translateX(400px);*/
 		transform: translateY(-20%);
 	}
-
 
 	.ben-header-responsive{
 		background-image: url('../Afbeeldingen/Ben/header.jpg');
@@ -2180,7 +2180,7 @@ body{
 		display: none;
 	}
 
-	#focus1Yellow, #focus2Yellow, #focus3Yellow{
+	#focus1Yellow, #focus2Yellow, #focus3Yellow, .play-next-header-responsive{
 		display: none;
 	}
 
