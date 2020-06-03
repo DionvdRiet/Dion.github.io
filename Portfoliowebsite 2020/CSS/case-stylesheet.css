@@ -1546,7 +1546,8 @@ body{
 
 	.play-next-header-responsive{
 		background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
-		height: 100vh;
+		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--vh, 1vh) * 100);
 		width: 100vw;
 		background-size: cover;
 		background-repeat: no-repeat;
