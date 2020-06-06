@@ -46,11 +46,21 @@
 			<h1 id="responsive-nav-list-item-2" onclick="contact()">Contact</h1>
 		</div>
 	</header>
-	<div class="parallax-container">
- 		<div class="ben-header" id="header-image"></div> 
+	<div class="ben-header" id="header-image-desktop">
+		<a href="#case-start">
+ 		 	<div class="header-scroll">
+ 				<h2>Scroll</h2>
+ 			</div>
+ 		</a>
+	</div>
+ 	<div class="ben-header-responsive responsive-header-image">
+ 		 <a href="#case-start">
+ 		 	<div class="header-scroll">
+ 				<h2>Scroll</h2>
+ 			</div>
+ 		</a>
+ 		<div class="header-scroll-yellow" id="case-start"></div>
  	</div>
- 	<div class="header-extra"></div>
- 	<div class="ben-header-responsive"></div>
 	<div class="introductie">
 		<h1 id="case-title">Ben Verlengproces</h1>
 		<div class="introductie-lijn">
@@ -58,7 +68,6 @@
 			<div class="ruimte"></div>
 		</div>
 		<h3 id="projectbeschrijving">Verlengen kan simpel zijn</h3>
-		<h3 id="scroll-beneden">Scroll naar beneden :)</h3>
 	</div>
 	<section>
 		<div class="sectie-indicatie-achtergrond" id="sectie-indicatie-achtergrond">
@@ -359,7 +368,7 @@
 	</footer>
 	<script type="text/javascript" src="../Javascript/case.js"></script>
 	<script type="text/javascript" src="../Javascript/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" >
+	<!-- <script type="text/javascript" >
 		var parallaxElements = $('.ben-header'),
 		    parallaxQuantity = parallaxElements.length;
 
@@ -379,6 +388,6 @@
 		  });
 
 		});
-	</script>
+	</script> -->
 </body>
 </html>

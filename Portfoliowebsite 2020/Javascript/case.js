@@ -18,13 +18,6 @@ aanHetScrollen();
 startAnimation(x);
 };
 
-// We listen to the resize event
-window.addEventListener('resize', () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-
 const NAME = "once";
 
 function loadWebsiteCheck() {
@@ -545,7 +538,6 @@ function caseSwitchAnimationDown(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
-	document.getElementById("header-image").style.backgroundSize = "100%";
 	setTimeout(noOpacity, 1000);
 }
 
