@@ -250,7 +250,7 @@ body{
 			}
 
 			#welkom-noothulp{
-				background-image: url('../Afbeeldingen/Noothulp/home.jpg');
+				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 				margin-bottom:none;
 			}
 
@@ -316,6 +316,11 @@ body{
 		  z-index: -5;
 		}
 
+	.introductie{
+		line-height: 30px;
+		z-index: 3;
+	}
+
 	h1, h2, h3{
 		font-family: paralucent, sans-serif;
 		font-style: normal;
@@ -329,13 +334,6 @@ body{
 	h3{
 		font-weight: 400;
 		color: #575757;
-	}
-
-	.introductie{
-		transform: translateY(-100px);
-		line-height: 30px;
-		z-index: 3;
-		margin-top: 32px;
 	}
 
 		#case-title{
@@ -824,12 +822,12 @@ body{
 			width: 100vw;
 		}
 
-		.header-scroll{
+		/*.header-scroll{
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			position: absolute;
-			width: 80px;
+			width: 10%;
 			height: 60px;
 			background-color: white;
 			bottom: 0;
@@ -841,7 +839,7 @@ body{
 			padding-left: 4%;
 			background-repeat: no-repeat;
 			z-index: 1;
-		}
+		}*/
 
 		#finance-persona, #play-next-persona, #ben-persona{
 			height: 400px;
@@ -920,7 +918,7 @@ body{
 		}
 
 		.noothulp-header{
-			background-image: url('../Afbeeldingen/Noothulp/home.jpg');
+			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 		}
 
 		.noothulp-header-responsive{
@@ -1618,8 +1616,13 @@ body{
 		font-style: normal;
 	}
 
+	.introductie{
+		transform: translateY(-100px);
+		margin-top: 32px;
+	}
+
 	.introductie h3{
-		font-size: 31px;
+		font-size: 32px;
 	}
 
 	input[type="button"]{
@@ -2316,6 +2319,10 @@ body{
 		.responsive-nav{
 			display: none;
 		}
+
+	.introductie{
+		margin-top: 32px;
+	}
 
 	h1{
 		font-size: 50px;
