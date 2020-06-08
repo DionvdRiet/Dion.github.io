@@ -808,7 +808,6 @@ body{
 				border:none;
 				padding: 16px 24px;
 				box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
-				text-shadow: 3px 3px 10px rgba(0, 0, 0,0.15);
 				outline:none;
 			}
 
@@ -1017,7 +1016,6 @@ body{
 				position: relative;
 				left: 40px;
 				box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
-				text-shadow: 3px 3px 10px rgba(0, 0, 0,0.15);
 			}
 
 			#emailCopy:hover{
@@ -1732,17 +1730,18 @@ body{
 				display: flex;
 				justify-content: center;
 				width: 260px;
-				padding:0px 32px;
+				padding:0px 24px;
 				background-color: white;
 				transform: translateY(-72px);
-				margin-left: 48px;
+				/*margin-left: 48px;*/
 				margin-bottom: -120px;
+				border-top: 8px solid #FFED00;
 			}
 
 				.projectCardLabel h2{
 					align-self: center;
-					font-size: 48px;
-					color: #4E4E4E;
+					font-size: 40px;
+					color: #252E45;
 				}
 
 			.projectCardButton{
@@ -1852,7 +1851,7 @@ body{
 		#toevoegen-tekst{
 			grid-column: 3/5;
 			padding: 6%;
-			/*right: 10px;*/
+			/*right: 10px;
 			bottom: -400px;
 			width: auto;
 			/*height: auto;*/
