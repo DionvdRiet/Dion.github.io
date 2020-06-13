@@ -539,6 +539,10 @@ function caseSwitchAnimationDown(){
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
 	setTimeout(noOpacity, 1000);
+	document.getElementById('case-header-title').style.opacity = "1";
+	document.getElementById("case-header-title").style.transform = "translateY(0%)";
+	document.getElementById('case-header-title-responsive').style.opacity = "1";
+	document.getElementById("case-header-title-responsive").style.transform = "translateY(0%)";
 }
 
 function noOpacity(){
