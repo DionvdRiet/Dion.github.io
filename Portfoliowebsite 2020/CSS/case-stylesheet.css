@@ -297,14 +297,6 @@ body{
 			justify-content: center;
 		}
 
-		.finance-case-header, .play-next-case-header, .ben-case-header, .noothulp-case-header{
-			display: flex;
-			justify-content: center;
-			background-position: center;
-			background-size: cover;
-			transition: background-size 2s cubic-bezier(.365,.305,0,1);
-		}
-
 		.case-header-title-container{
 			width: 100vw;
 			height: 100vh;
@@ -895,7 +887,7 @@ body{
 			background-image: url('../Afbeeldingen/Finance/header.jpg');
 		}
 
-		.finance-case-header{
+		#finance-case-header{
 			background-image: linear-gradient(to bottom, rgba(37,46,69,0.50), rgba(37,46,69,0.40), transparent), url('../Afbeeldingen/Finance/header.jpg');
 		}
 
@@ -931,17 +923,22 @@ body{
 				align-self: center;
 			}
 
-		#header-image-desktop{
+		#finance-case-header, #play-next-case-header, #ben-case-header, #noothulp-case-header{
+			display: flex;
 			height: 100vh;
 			width: 100vw;
 			position: relative;
+			justify-content: center;
+			background-position: center;
+			background-size: cover;
+			transition: background-size 2s cubic-bezier(.365,.305,0,1);
 		}
 
 		.play-next-header{
 			background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
 		}
 
-		.play-next-case-header{
+		#play-next-case-header{
 			background-image: linear-gradient(to bottom, rgba(37,46,69,0.40), rgba(37,46,69,0.30), transparent), url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
 		}
 
@@ -967,7 +964,7 @@ body{
 			background-image: url('../Afbeeldingen/Ben/header.jpg');
 		}
 
-		.ben-case-header{
+		#ben-case-header{
 			background-image: linear-gradient(to bottom, rgba(37,46,69,0.60), rgba(37,46,69,0.50), transparent), url('../Afbeeldingen/Ben/header.jpg');
 		}
 
@@ -986,7 +983,7 @@ body{
 			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 		}
 
-		.noothulp-case-header{
+		#noothulp-case-header{
 			background-image: linear-gradient(to bottom, rgba(37,46,69,0.60), rgba(37,46,69,0.50), transparent), url('../Afbeeldingen/Noothulp/header.jpg');
 		}
 
@@ -1311,7 +1308,7 @@ body{
 		display: none;
 	}
 
-	#header-image-desktop{
+	#finance-case-header, #play-next-case-header, #ben-case-header, #noothulp-case-header{
 		display: none;
 	}
 
