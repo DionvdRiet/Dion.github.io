@@ -2293,7 +2293,7 @@ body{
 		}
 
 		.headerContainerCase{
-			grid-template-columns: auto auto auto;
+			grid-template-columns: 33.33% 33.33% 33.33%;
 		}
 
 
@@ -2306,9 +2306,10 @@ body{
 				transition: font-size .3s cubic-bezier(.365,.305,0,1);
 			}
 
-			#headerItem1,#headerItem2, #headerItem3, #headerItemDefault2{
+			#headerItem1, #headerItem2, #headerItem3, #headerItemDefault2{
 				display: flex;
 				justify-content: center;
+			    white-space: nowrap;
 			}
 
 			#headerItem1{
@@ -2320,6 +2321,7 @@ body{
 			}
 
 			#headerItem3{
+				z-index: 2;
 				grid-column: 2/3;
 			}
 
@@ -2327,9 +2329,16 @@ body{
 				grid-column: 2/3;
 			}
 
-			#headerContainer1, #headerContainer2{
+			#headerContainer1, #headerContainer2, #headerContainer3{
 				height: 4px;
 				width: 100%;
+				min-width: auto;
+			}
+
+			@keyframes headerContainer{
+				0%   {width: 100%;}
+		 	  	50%  {width: 90%;}
+		 	  	100% {width: 100%;}
 			}
 
 			#headerContainer1{
@@ -2339,6 +2348,15 @@ body{
 
 			#headerContainer2{
 				grid-column: 2/3;
+				grid-row: 2/3;
+				transform: translateX(0%);
+				transition: transform 0.4s cubic-bezier(.365,.305,0,1);
+				animation-duration: 0.3s;
+				animation-timing-function: cubic-bezier(.365,.305,0,1);
+			}
+
+			#headerContainer3{
+				grid-column: 3/4;
 				grid-row: 2/3;
 			}
 

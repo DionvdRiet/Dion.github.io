@@ -200,13 +200,15 @@ function headerItemDefaultTwoOff(){
 }
 
 function headerItemOne(){
-		document.getElementById("headerItem1").style.backgroundColor = "#FFED00";
-        document.getElementById("inactive-page-1").style.color = "#252e45";
+        // document.getElementById("headerContainer1").classList.add('headerContainerActive');
+        document.getElementById("headerContainer2").style.transform = "translateX(-100%)";
+        document.getElementById("headerContainer2").style.animationName = "headerContainer";
 }
 
 function headerItemTwo(){
-		document.getElementById("headerItem2").style.backgroundColor = "#FFED00";
-        document.getElementById("inactive-page-2").style.color = "#252e45";
+		document.getElementById("headerContainer2").style.transform = "translateX(100%)";
+		document.getElementById("headerContainer2").style.animationName = "headerContainer";
+        // document.getElementById("headerContainer3").classList.add('headerContainerActive');
 }
 
 function headerItemThree(){
@@ -217,11 +219,16 @@ function headerItemThree(){
 function headerItemOffOne(){
 		document.getElementById("headerItem1").style.backgroundColor = "white";
         document.getElementById("inactive-page-1").style.color = "#D3D3D3";
+        document.getElementById("headerContainer1").classList.remove('headerContainerActive');
+        document.getElementById("headerContainer2").style.transform = "translateX(0%)";
 }
 
 function headerItemOffTwo(){
 		document.getElementById("headerItem2").style.backgroundColor = "white";
         document.getElementById("inactive-page-2").style.color = "#D3D3D3";
+        document.getElementById("headerContainer3").classList.remove('headerContainerActive');
+        document.getElementById("headerContainer2").style.transform = "translateX(0%)";
+        document.getElementById("headerContainer2").style.width = "100%";
 }
 
 function headerSizeNormal(){
@@ -616,7 +623,7 @@ function saveNowEindresultaat(){
 }
 
 function saveNowExpenses(){
-	if (document.body.scrollTop > 5100 || document.documentElement.scrollTop > 5100) {
+	if (document.body.scrollTop > 6200 || document.documentElement.scrollTop > 6200) {
 		document.getElementById('saveNowExpenses').style.opacity = "1";
 		document.getElementById('saveNowExpenses').style.transform = "translateX(0%)";
 		document.getElementById('expenses-tekst').style.opacity = "1";
@@ -624,7 +631,7 @@ function saveNowExpenses(){
 }
 
 function saveNowToevoegen(){
-	if (document.body.scrollTop > 5800 || document.documentElement.scrollTop > 5800) {
+	if (document.body.scrollTop > 7100 || document.documentElement.scrollTop > 7100) {
 		document.getElementById('saveNowToevoegen').style.opacity = "1";
 		document.getElementById('saveNowToevoegen').style.transform = "translateX(0%)";
 		document.getElementById('toevoegen-tekst').style.opacity = "1";
@@ -632,7 +639,7 @@ function saveNowToevoegen(){
 }
 
 function saveNowAnalyse(){
-	if (document.body.scrollTop > 6400 || document.documentElement.scrollTop > 6400) {
+	if (document.body.scrollTop > 7600 || document.documentElement.scrollTop > 7600) {
 		document.getElementById('saveNowAnalyse').style.opacity = "1";
 		document.getElementById('saveNowAnalyse').style.transform = "translateX(0%)";
 		document.getElementById('analyse-tekst').style.opacity = "1";
@@ -640,7 +647,7 @@ function saveNowAnalyse(){
 }
 
 function saveNowArticles(){
-	if (document.body.scrollTop > 7100 || document.documentElement.scrollTop > 7100) {
+	if (document.body.scrollTop > 8200 || document.documentElement.scrollTop > 8200) {
 		document.getElementById('saveNowArticles').style.opacity = "1";
 		document.getElementById('saveNowArticles').style.transform = "translateX(0%)";
 		document.getElementById('articles-tekst').style.opacity = "1";
@@ -648,7 +655,7 @@ function saveNowArticles(){
 }
 
 function saveNowDebt(){
-	if (document.body.scrollTop > 7800 || document.documentElement.scrollTop > 7800) {
+	if (document.body.scrollTop > 8900 || document.documentElement.scrollTop > 8900) {
 		document.getElementById('saveNowDebt').style.opacity = "1";
 		document.getElementById('saveNowDebt').style.transform = "translateX(0%)";
 		document.getElementById('debt-tekst').style.opacity = "1";
