@@ -51,8 +51,8 @@ function aanHetScrollen() {
 
 function welkomIntroductie(){
     if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-        document.getElementById("welkom-introductie").style.opacity = "1";
-        document.getElementById("welkom-introductie").style.color = "#575757";
+        document.getElementById("welkom-introductie-tekst").style.opacity = "1";
+        document.getElementById("welkom-introductie-tekst").style.color = "#575757";
     } 
 }
 

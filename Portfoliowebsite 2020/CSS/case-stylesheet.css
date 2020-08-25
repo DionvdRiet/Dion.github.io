@@ -98,7 +98,7 @@ body{
 	#welkom{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 90% 10%;
+		grid-template-rows: 100vh 0%;
 		position: relative;
 		opacity: 0;
 		transition: opacity .3s cubic-bezier(.365,.305,0,1);
@@ -168,22 +168,42 @@ body{
 
 		.welkom-introductie{
 			display: grid;
-			grid-template-columns: 300px auto 300px;
+			grid-template-columns: 25% 75%;
 			width: 100vw;
-			height: 60vh;
-			background-color: #F6F6F6;
 		}
 
-			.welkom-introductie *{
+			.welkom-introductie h1{
+				margin-bottom:0px;
+				padding-right: 48px;
+				grid-column: 1/2;
+				transform: rotate(-90deg);
+				text-align: right;
+				align-self: center;
+			}
+
+			.welkom-introductie h1::before, .welkom-projecten-intro h1::before{
+				content: "-"; /* Insert content that looks like bullets */
+				padding-right: 16px;
+				color: #FFED00; /* Or a color you prefer */
+			}
+
+			.welkom-projecten-intro h1{
+				margin-left: -40px;
+			}
+
+			#welkom-introductie-tekst{
 				grid-column: 2/3;
-				margin:none;
+				/*width: 90%;*/
+				margin-top:0px;
 				align-self: center;
 				vertical-align: middle;
+				background-color: #F6F6F6;
+				padding: 48px;
 			}
 
 		.welkom-projecten{
 			display: grid;
-			grid-template-columns: 300px auto 300px;
+			grid-template-columns: 25% auto 300px;
 			width: 100vw;
 			height: 100vh;
 		}
@@ -1374,7 +1394,7 @@ body{
 				margin: 30px 0px -10px 32px;
 			}
 
-			#welkom-bericht h3, #welkom-introductie h3{
+			#welkom-bericht h3, #welkom-introductie-tekst h3{
 				line-height: 60px;
 				font-size: 34px;
 				margin: 0px 0px 0px 32px;
@@ -1735,6 +1755,14 @@ body{
 	.welkom-projecten-intro{
 		grid-column: 2/3;
 		margin-left: 16px;
+	}
+
+	.welkom-projecten-intro h1{
+		margin-left: 0px;
+	}
+
+	.welkom-introductie h1::before, .welkom-projecten-intro h1::before{
+		content: none;
 	}
 
 	#projectCardContainer{
@@ -2427,11 +2455,6 @@ body{
 	h3{
 		font-style: normal;
 		line-height: 30px;
-	}
-
-	#welkom-introductie{
-		opacity: 0;
-		transition: opacity .3s cubic-bezier(.365,.305,0,1);
 	}
 
 	.quote{
