@@ -57,7 +57,7 @@ function welkomIntroductie(){
 }
 
 function caseOne(){
-	if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+	if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
 	    document.getElementById("welkom-save-now").style.transform = "translateX(0%)";
 	    document.getElementById("welkom-save-now").style.opacity = "1";
         document.getElementById("welkom-save-now").style.backgroundSize = "100%";

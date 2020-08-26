@@ -98,7 +98,7 @@ body{
 	#welkom{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100vh 0%;
+		grid-template-rows: 90vh 0%;
 		position: relative;
 		opacity: 0;
 		transition: opacity .3s cubic-bezier(.365,.305,0,1);
@@ -154,9 +154,6 @@ body{
 			grid-column: 2/3;
 			grid-row: 1/2;
 			background-color: #FFED00;
-			background-size: 100%;
-			background-repeat: no-repeat;
-			background-position: top;
 		}
 
 			#welkom h3{
@@ -167,6 +164,7 @@ body{
 			}
 
 		.welkom-introductie{
+			margin-top: -10vh;
 			display: grid;
 			grid-template-columns: 25% 75%;
 			width: 100vw;
@@ -176,15 +174,15 @@ body{
 				margin-bottom:0px;
 				padding-right: 48px;
 				grid-column: 1/2;
-				transform: rotate(-90deg);
+				transform: rotate(-90deg) translateY(98px);
 				text-align: right;
 				align-self: center;
 			}
 
 			.welkom-introductie h1::before, .welkom-projecten-intro h1::before{
-				content: "-"; /* Insert content that looks like bullets */
+				content: "-";
 				padding-right: 16px;
-				color: #FFED00; /* Or a color you prefer */
+				color: #FFED00;
 			}
 
 			.welkom-projecten-intro h1{
@@ -1404,7 +1402,7 @@ body{
 		margin-top:120px;
 		width: 100vw;
 		height: 1000px;
-		background-size: 140%;
+		background-size: cover;
 		background-position: top;
 	}
 
