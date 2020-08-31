@@ -60,8 +60,14 @@ function welkomIntroductie(){
 
 function caseOne(){
 	if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+        document.getElementById("welkom-projecten-title").style.opacity = "1";
+        document.getElementById("welkom-projecten-title").style.transform = "translateY(0px)";
+
+        setTimeout(function(){ 
         document.getElementById("welkom-grijs").style.opacity = "0";
         document.getElementById("welkom-grijs").style.display = "none";
+        }, 300);
+        
 	    document.getElementById("welkom-save-now").style.transform = "translateX(0%)";
 	    document.getElementById("welkom-save-now").style.opacity = "1";
         document.getElementById("welkom-save-now").style.backgroundSize = "100%";

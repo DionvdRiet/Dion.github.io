@@ -181,14 +181,17 @@ body{
 				transition: transform .3s cubic-bezier(.365,.305,0,1), opacity .3s cubic-bezier(.365,.305,0,1);
 			}
 
-			#welkom-introductie-title::before, .welkom-projecten-intro h1::before{
+			#welkom-introductie-title::before, #welkom-projecten-title::before{
 				content: "-";
 				padding-right: 16px;
 				color: #FFED00;
 			}
 
-			.welkom-projecten-intro h1{
+			#welkom-projecten-title{
+				opacity: 0;
 				margin-left: -40px;
+				transform: translateY(200px);
+				transition: transform .3s cubic-bezier(.365,.305,0,1), opacity .3s cubic-bezier(.365,.305,0,1);
 			}
 
 			#welkom-introductie-tekst-container{
@@ -275,6 +278,7 @@ body{
 
 			#welkom-save-now{
 				background-image: url('../Afbeeldingen/Finance/header.jpg');
+				transition-delay: .3s;
 			}
 
 			#welkom-play-next{
@@ -1772,11 +1776,11 @@ body{
 		margin-left: 16px;
 	}
 
-	.welkom-projecten-intro h1{
+	#welkom-projecten-title{
 		margin-left: 0px;
 	}
 
-	.welkom-introductie h1::before, .welkom-projecten-intro h1::before{
+	.welkom-introductie h1::before, #welkom-projecten-title::before{
 		content: none;
 	}
 
