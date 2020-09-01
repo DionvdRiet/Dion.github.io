@@ -2391,6 +2391,10 @@ body{
 			#headerContainer1{
 				grid-column: 1/2;
 				grid-row: 2/3;
+				transform: translateX(0%);
+				transition: transform 0.4s cubic-bezier(.365,.305,0,1);
+				animation-duration: 0.3s;
+				animation-timing-function: cubic-bezier(.365,.305,0,1);
 			}
 
 			#headerContainer2{

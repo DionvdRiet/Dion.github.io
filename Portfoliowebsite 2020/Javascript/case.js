@@ -190,13 +190,11 @@ function aanHetScrollen() {
 }
 
 function headerItemDefaultTwo(){
-		document.getElementById("headerItemDefault2").style.backgroundColor = "#FFED00";
-        document.getElementById("inactive-page-1").style.color = "#252e45";
+		document.getElementById("headerContainer1").style.transform = "translateX(100%)";
 }
 
 function headerItemDefaultTwoOff(){
-		document.getElementById("headerItemDefault2").style.backgroundColor = "white";
-        document.getElementById("inactive-page-1").style.color = "#D3D3D3";
+		document.getElementById("headerContainer1").style.transform = "translateX(0%)";
 }
 
 function headerItemOne(){
