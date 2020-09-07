@@ -51,7 +51,7 @@ function aanHetScrollen() {
 
 function welkomIntroductie(){
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-        document.getElementById("welkom-introductie-title").style.transform = "rotate(-90deg) translate(0px, 98px)";
+        document.getElementById("welkom-introductie-title").style.transform = "rotate(-90deg) translate(0px, -300px)";
         document.getElementById("welkom-introductie-title").style.opacity = "1";
         document.getElementById("welkom-introductie-tekst").style.opacity = "1";
         document.getElementById("welkom-introductie-tekst").style.color = "#575757";
