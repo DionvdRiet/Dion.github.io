@@ -1284,8 +1284,12 @@ body{
 		grid-column: 3/4;
 	}
 
-	#focus-lijn{
+	#welkom-introductie-title, #focus-lijn{
 		display: none;
+	}
+
+	#welkom-introductie-title-responsive{
+		margin:0;
 	}
 
 	#case-title{
@@ -1442,17 +1446,6 @@ body{
 		opacity: 1;
 		margin-top: 228px;
 		/*padding: 48px;*/
-	}
-
-	#welkom-introductie-title{
-		margin-bottom:0px;
-		padding-right: 0px;
-		grid-column: 1/2;
-		transform: rotate(0deg) translate(0px, 0px);
-		text-align: left;
-		align-self: flex-start;
-		opacity: 1;
-		transition: none;
 	}
 
 	.welkom-projecten{
@@ -2294,8 +2287,8 @@ body{
 
 @media screen and (min-width: 1001px){
 
-	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, 
-	#welkom-projecten-scroll, .finance-header-responsive, .gaming-header-responsive, .eindresultaat-responsive, #volgendeCaseCard{
+	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-introductie-title-responsive,
+		#welkom-projecten-scroll, .finance-header-responsive, .gaming-header-responsive, .eindresultaat-responsive, #volgendeCaseCard{
 		display: none;
 	}
 
