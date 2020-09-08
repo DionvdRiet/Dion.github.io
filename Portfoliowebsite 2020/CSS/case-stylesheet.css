@@ -1411,6 +1411,7 @@ body{
 			word-break: break-word;
 			box-shadow: none;
 			z-index: 5;
+			box-shadow: none;
 		}
 
 			#welkom-bericht h1{
@@ -1441,6 +1442,17 @@ body{
 		opacity: 1;
 		margin-top: 228px;
 		/*padding: 48px;*/
+	}
+
+	#welkom-introductie-title{
+		margin-bottom:0px;
+		padding-right: 0px;
+		grid-column: 1/2;
+		transform: rotate(0deg) translate(0px, 0px);
+		text-align: left;
+		align-self: flex-start;
+		opacity: 1;
+		transition: none;
 	}
 
 	.welkom-projecten{
@@ -1777,7 +1789,6 @@ body{
 
 	.welkom-projecten-intro{
 		grid-column: 2/3;
-		margin-left: 16px;
 	}
 
 	#welkom-projecten-title{
