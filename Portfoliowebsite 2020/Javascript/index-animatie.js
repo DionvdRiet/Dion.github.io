@@ -54,6 +54,9 @@ function welkomIntroductie(){
         document.getElementById("welkom-introductie-title").style.transform = "rotate(-90deg) translate(0px, -300px)";
         document.getElementById("welkom-introductie-title").style.opacity = "1";
         document.getElementById("welkom-introductie-tekst").style.opacity = "1";
+        document.getElementById("welkom-introductie-tekst").style.transform = "translateY(0px)";
+        document.getElementById("welkom-introductie-title-responsive").style.opacity = "1";
+        document.getElementById("welkom-introductie-title-responsive").style.transform = "translateY(0px)";
         document.getElementById("welkom-introductie-tekst").style.color = "#575757";
     } 
 }
