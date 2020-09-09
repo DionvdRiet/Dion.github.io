@@ -126,15 +126,6 @@ body{
 			transition-delay: 2s;
 		}
 
-			#welkom-bericht h1{
-				font-size: 60px;
-				margin: 5px 0px;
-			}
-
-			#welkom-bericht h3{
-				margin-right: 300px;
-			}
-
 		#welkom-foto-1{
 			z-index: -1;
 			position: relative;
@@ -1421,24 +1412,36 @@ body{
 			grid-row:3/3;
 			background-color: white;
 			padding:20px;
-			/*padding-bottom: 40px;*/
 			border-left: 10px solid #FFED00;
 			word-break: break-word;
 			box-shadow: none;
 			z-index: 5;
-			box-shadow: none;
 		}
 
-			#welkom-bericht h1{
+			#welkom-bericht-title{
 				font-size: 76px;
 				margin: 24px 0px 4px 32px;
+				opacity: 0;
+				transform: translateY(50px);
+				animation: welkomBericht .6s cubic-bezier(.365,.305,0,1) forwards;
+				animation-delay: 0.3s;
 			}
 
-			#welkom-bericht h3{
+			#welkom-bericht-tekst{
 				line-height: 66px;
 				font-size: 40px;
 				margin: 0px 0px 0px 32px;
+				opacity: 0;
+				transform: translateY(50px);
+				animation: welkomBericht .6s cubic-bezier(.365,.305,0,1) forwards;
+				animation-delay: .6s;
 			}
+
+			@keyframes welkomBericht{
+			  from {opacity: 0; transform: translateY(50px);}
+			  to {opacity: 1; transform: translateY(0px);}
+			}
+
 
 	#welkom-foto-1{
 		margin-top:120px;
@@ -2312,6 +2315,15 @@ body{
 		display: grid;
 		grid-template-columns: 300px auto 300px;
 		width: 100vw;
+	}
+
+	#welkom-bericht h1{
+		font-size: 60px;
+		margin: 5px 0px;
+	}
+
+	#welkom-bericht h3{
+		margin-right: 300px;
 	}
 
 	#projectbeschrijving{
