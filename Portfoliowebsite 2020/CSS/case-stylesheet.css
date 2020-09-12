@@ -1290,7 +1290,7 @@ body{
 	#welkom-introductie-tekst{
 		font-size: 16px;
 		font-size-adjust: 1.5;
-		line-height: 60px;
+		line-height: auto;
 		opacity: 0;
 		transform: translateY(50px);
 		transition: transform .6s cubic-bezier(.365,.305,0,1), opacity .6s cubic-bezier(.365,.305,0,1) .03s;
