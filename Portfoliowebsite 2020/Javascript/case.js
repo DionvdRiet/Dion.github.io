@@ -164,7 +164,7 @@ function aanHetScrollen() {
         // document.getElementById("scroll-beneden").style.opacity = "0";
         document.getElementById("desktop").style.height = "50px";
         document.getElementById("desktop").style.gridTemplateColumns = "550px auto 550px";
-        document.getElementById("headerContainer").style.height = "50px";
+        // document.getElementById("headerContainer").style.height = "50px";
         document.getElementById("inactive-page-1").style.fontSize = "18px";
         document.getElementById("active-page-1").style.fontSize = "18px";
         document.getElementById("inactive-page-2").style.fontSize = "18px";
@@ -210,19 +210,15 @@ function headerItemTwo(){
 }
 
 function headerItemThree(){
-		document.getElementById("headerItem3").style.backgroundColor = "#FFED00";
         document.getElementById("inactive-page-3").style.color = "#252e45";
 }
 
 function headerItemOffOne(){
-		document.getElementById("headerItem1").style.backgroundColor = "white";
-        document.getElementById("inactive-page-1").style.color = "#D3D3D3";
         document.getElementById("headerContainer1").classList.remove('headerContainerActive');
         document.getElementById("headerContainer2").style.transform = "translateX(0%)";
 }
 
 function headerItemOffTwo(){
-		document.getElementById("headerItem2").style.backgroundColor = "white";
         document.getElementById("inactive-page-2").style.color = "#D3D3D3";
         document.getElementById("headerContainer3").classList.remove('headerContainerActive');
         document.getElementById("headerContainer2").style.transform = "translateX(0%)";

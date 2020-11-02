@@ -2470,7 +2470,7 @@ body{
 			}
 
 			.headerContainerActive{
-				background-color: #FFED00;
+				background-color: white;
 			}
 
 		header ul{
@@ -2500,7 +2500,7 @@ body{
 		}
 
 		#inactive-page-1, #inactive-page-2{
-			color: #D3D3D3;
+			color: white;
 		}
 
 		.responsive-nav{
