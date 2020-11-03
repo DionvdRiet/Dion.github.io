@@ -442,7 +442,6 @@ body{
 				height: 8px;
 				width: 0%;
 				background-color: #FFED00;
-				/*box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);*/
 				z-index: 2;
 				transition: width 2s cubic-bezier(.365,.305,0,1);
 			}
