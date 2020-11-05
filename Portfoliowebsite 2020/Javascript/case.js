@@ -162,31 +162,24 @@ function openProject(){
 function aanHetScrollen() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         // document.getElementById("scroll-beneden").style.opacity = "0";
-        document.getElementById("desktop").style.height = "50px";
-        document.getElementById("headerContainer").style.height = "50px";
         document.getElementById("desktop").style.gridTemplateColumns = "550px auto 550px";
-        // document.getElementById("headerContainer").style.height = "50px";
-        document.getElementById("inactive-page-1").style.fontSize = "18px";
-        document.getElementById("active-page-1").style.fontSize = "18px";
-        document.getElementById("inactive-page-2").style.fontSize = "18px";
-        // document.getElementById("inactive-page").style.alignSelf = "center";
-        // document.getElementById("inactive-page").style.textDecorationColor = "white";
+        document.getElementById("desktop").style.backgroundColor = "white";
+        document.getElementById("desktop").style.borderBottom = "1px solid rgba(112,112,112,0.15)";
+        document.getElementById("headerContainer2").style.backgroundColor = "#FFED00";
+        document.getElementById("headerContainer2").style.transform = "translateY(-1px)";
+        // document.getElementById("headerContainer").style.height = "50px"
+
+            document.getElementById("active-page-1").style.fontSize = "18px";
+            document.getElementById("inactive-page-1").style.fontSize = "18px";
+            document.getElementById("inactive-page-2").style.fontSize = "18px";
+
     } 
 
     else{
     	// document.getElementById("scroll-beneden").style.opacity = "1";
-    	document.getElementById("desktop").style.height = "inherit";
-		document.getElementById("desktop").style.gridTemplateColumns = "500px auto 500px";
-		document.getElementById("headerContainer").style.height = "65px";
-    	document.getElementById("active-page-1").style.fontSize = "25px";
-    	document.getElementById("inactive-page-1").style.fontSize = "25px";
-    	document.getElementById("inactive-page-2").style.fontSize = "25px";
-    	document.getElementById("active-page").style.margin = "0px 30px";
-        document.getElementById("inactive-page-1").style.margin = "0px 30px";
-        document.getElementById("inactive-page-2").style.margin = "0px 30px";
-       	document.getElementById("active-page").style.color = "#252e45";
-       	document.getElementById("inactive-page-1").style.color = "#252e45";
-       	document.getElementById("inactive-page-2").style.color = "#252e45";
+    	// document.getElementById("desktop").style.height = "inherit";
+		// document.getElementById("desktop").style.gridTemplateColumns = "500px auto 500px";
+		// document.getElementById("headerContainer").style.height = "65px";
     }
 }
 
@@ -210,24 +203,19 @@ function headerItemTwo(){
         // document.getElementById("headerContainer3").classList.add('headerContainerActive');
 }
 
-function headerItemThree(){
-        document.getElementById("inactive-page-3").style.color = "#252e45";
-}
-
 function headerItemOffOne(){
         document.getElementById("headerContainer1").classList.remove('headerContainerActive');
         document.getElementById("headerContainer2").style.transform = "translateX(0%)";
 }
 
 function headerItemOffTwo(){
-        document.getElementById("inactive-page-2").style.color = "#D3D3D3";
         document.getElementById("headerContainer3").classList.remove('headerContainerActive');
         document.getElementById("headerContainer2").style.transform = "translateX(0%)";
         document.getElementById("headerContainer2").style.width = "100%";
 }
 
 function headerSizeNormal(){
-		document.getElementById("desktop").style.height = "inherit";
+		document.getElementById("desktop").style.height = "65px";
 		document.getElementById("desktop").style.gridTemplateColumns = "500px auto 500px";
 		document.getElementById("headerContainer").style.height = "65px";
 		document.getElementById("active-page-1").style.fontSize = "25px";

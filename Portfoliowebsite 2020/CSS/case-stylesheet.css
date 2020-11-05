@@ -2378,17 +2378,21 @@ body{
 		animation-timing-function: cubic-bezier(.365,.305,0,1);
 	}
 
-	header{
+	#desktop{
 		display: grid;
 		grid-template-columns: 550px auto 550px;
 		width: 100vw;
 		z-index: 3;
-		height: 65px;
 		margin-top: -4px;
 		background-color: transparent;
-		border-bottom:1px solid rgba(255,255,255,0.15);  
+		border-bottom:1px solid rgba(255,255,255,0.15);
+		transition: background-color .3s cubic-bezier(.365,.305,0,1);  
 
 	}
+
+		#desktop, #headerContainer{
+			height: 50px;
+		}
 
 		#headerContainer{
 			display: grid;
@@ -2457,7 +2461,7 @@ body{
 			#headerContainer1{
 				grid-column: 1/2;
 				grid-row: 2/3;
-				transform: translateX(0%);
+				transform: translateX(0%), translateY(-1px);
 				transition: transform 0.4s cubic-bezier(.365,.305,0,1);
 				animation-duration: 0.3s;
 				animation-timing-function: cubic-bezier(.365,.305,0,1);
