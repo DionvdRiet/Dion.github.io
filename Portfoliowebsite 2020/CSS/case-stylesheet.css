@@ -160,7 +160,7 @@ body{
 			width: 100vw;
 		}
 
-			#welkom-introductie-title::before, #welkom-projecten-title::before{
+			.highlightTitle::before{
 				content: "-";
 				padding-right: 16px;
 				color: #FFED00;
@@ -505,7 +505,7 @@ body{
 	}
 
 	section *{
-		grid-column: 1/4;
+		grid-column: 2/3;
 	}
 
 	.indicatieAchtergrondEen{
@@ -657,6 +657,16 @@ body{
 			font-family: paralucent, sans-serif;
 			font-weight: 700;
 			font-style: italic;
+		}
+
+	.prototypeContainer{
+		display: grid;
+		grid-column: 1/4;
+		grid-template-columns: 300px auto 300px;
+	}
+
+		.wideImage{
+			grid-column:1/4;
 		}
 
 	#focus{
