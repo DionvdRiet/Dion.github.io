@@ -160,7 +160,7 @@ function openProject(){
 }
 
 function aanHetScrollen() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         // document.getElementById("scroll-beneden").style.opacity = "0";
         document.getElementById("desktop").style.gridTemplateColumns = "550px auto 550px";
         document.getElementById("desktop").style.backgroundColor = "white";
@@ -172,6 +172,10 @@ function aanHetScrollen() {
             document.getElementById("active-page-1").style.fontSize = "18px";
             document.getElementById("inactive-page-1").style.fontSize = "18px";
             document.getElementById("inactive-page-2").style.fontSize = "18px";
+
+            document.getElementById("active-page-1").style.color = "#252e45";
+            document.getElementById("inactive-page-1").style.color = "#252e45";
+            document.getElementById("inactive-page-2").style.color = "#252e45";
 
     } 
 
@@ -215,14 +219,14 @@ function headerItemOffTwo(){
 }
 
 function headerSizeNormal(){
-		document.getElementById("desktop").style.height = "65px";
-		document.getElementById("desktop").style.gridTemplateColumns = "500px auto 500px";
-		document.getElementById("headerContainer").style.height = "65px";
-		document.getElementById("active-page-1").style.fontSize = "25px";
-    	document.getElementById("inactive-page-1").style.fontSize = "25px";
-    	document.getElementById("inactive-page-2").style.fontSize = "25px";
-		document.getElementById("active-page").style.margin = "0px 30px";
-	    document.getElementById("inactive-page").style.margin = "0px 30px";
+		// document.getElementById("desktop").style.height = "65px";
+		// document.getElementById("desktop").style.gridTemplateColumns = "500px auto 500px";
+		// document.getElementById("headerContainer").style.height = "65px";
+		// document.getElementById("active-page-1").style.fontSize = "22px";
+  //   	document.getElementById("inactive-page-1").style.fontSize = "22px";
+  //   	document.getElementById("inactive-page-2").style.fontSize = "22px";
+		// document.getElementById("active-page").style.margin = "0px 30px";
+	 //    document.getElementById("inactive-page").style.margin = "0px 30px";
 	    document.getElementById("active-page").style.color = "#252e45";
 	    document.getElementById("inactive-page").style.color = "#252e45";
 }
