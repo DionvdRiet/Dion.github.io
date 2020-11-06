@@ -166,7 +166,6 @@ function aanHetScrollen() {
         document.getElementById("desktop").style.backgroundColor = "white";
         document.getElementById("desktop").style.borderBottom = "1px solid rgba(112,112,112,0.15)";
         document.getElementById("headerContainer2").style.backgroundColor = "#FFED00";
-        document.getElementById("headerContainer2").style.transform = "translateY(-1px)";
         // document.getElementById("headerContainer").style.height = "50px"
 
             document.getElementById("active-page-1").style.fontSize = "18px";
@@ -197,24 +196,24 @@ function headerItemDefaultTwoOff(){
 
 function headerItemOne(){
         // document.getElementById("headerContainer1").classList.add('headerContainerActive');
-        document.getElementById("headerContainer2").style.transform = "translateX(-100%)";
+        document.getElementById("headerContainer2").style.transform = "translate(-100%, -2px)";
         document.getElementById("headerContainer2").style.animationName = "headerContainer";
 }
 
 function headerItemTwo(){
-		document.getElementById("headerContainer2").style.transform = "translateX(100%)";
+		document.getElementById("headerContainer2").style.transform = "translate(100%, -2px)";
 		document.getElementById("headerContainer2").style.animationName = "headerContainer";
         // document.getElementById("headerContainer3").classList.add('headerContainerActive');
 }
 
 function headerItemOffOne(){
         document.getElementById("headerContainer1").classList.remove('headerContainerActive');
-        document.getElementById("headerContainer2").style.transform = "translateX(0%)";
+        document.getElementById("headerContainer2").style.transform = "translate(0%, -2px)";
 }
 
 function headerItemOffTwo(){
         document.getElementById("headerContainer3").classList.remove('headerContainerActive');
-        document.getElementById("headerContainer2").style.transform = "translateX(0%)";
+        document.getElementById("headerContainer2").style.transform = "translate(0%, -2px)";
         document.getElementById("headerContainer2").style.width = "100%";
 }
 

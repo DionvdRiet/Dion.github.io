@@ -533,6 +533,27 @@ body{
 		transition-delay: 1s;
 	}
 
+	.eindresultaatTile{
+		display: grid;
+		width: 100vw;
+		height: 100%;
+		grid-column: 1/4;
+		grid-template-columns: 75% 25%;
+	}
+
+	.eindresultaatTileImage{
+		grid-column: 1/2;
+		width: 100%;
+		height: 60vh;
+	}
+
+	.eindresultaatTileTekst{
+		grid-column: 2/3;
+		display: flex;
+		justify-content: center;
+		vertical-align: middle;
+	}
+
 	.eindresultaat-section{
 		display: grid;
 		grid-template-columns: 200px auto auto auto 200px;
@@ -2385,7 +2406,7 @@ body{
 		z-index: 3;
 		margin-top: -4px;
 		background-color: transparent;
-		border-bottom:1px solid rgba(255,255,255,0.15);
+		border-bottom:1px solid rgba(255,255,255,0.50);
 		transition: background-color .6s cubic-bezier(.365,.305,0,1);  
 
 	}
@@ -2405,10 +2426,6 @@ body{
 			/*box-shadow: 0px 10px 20px rgba(112,112,112,0.05);*/
 		}
 
-		.negers{
-			box-shadow: 1px 1px 1px black;
-		}
-
 		.headerContainerDefault{
 			grid-template-columns: auto auto;
 		}
@@ -2416,7 +2433,6 @@ body{
 		.headerContainerCase{
 			grid-template-columns: 33.3% 33.3% 33.3%;
 		}
-
 
 		header, #headerContainer{
 			transition: height .3s cubic-bezier(.365,.305,0,1);
@@ -2480,7 +2496,7 @@ body{
 			#headerContainer2{
 				grid-column: 2/3;
 				grid-row: 2/3;
-				transform: translateX(0%);
+				transform: translate(0%, -2px);
 				transition: transform 0.4s cubic-bezier(.365,.305,0,1);
 				animation-duration: 0.3s;
 				animation-timing-function: cubic-bezier(.365,.305,0,1);
