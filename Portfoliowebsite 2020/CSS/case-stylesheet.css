@@ -625,27 +625,74 @@ body{
 				background-color: #0B41DA;
 			}
 
-
 		.eindresultaatContainer{
 			grid-column: 1/5;
 			width: 100vw;
 			display: grid;
 			grid-template-columns: repeat(12,1fr);
-			margin:48px 0px;
+			margin:60px 0px;
 			position: relative;
 		}
 
-			#eindresultaatHome{
-				grid-column:5/8;
-				position: relative;
-			}
+			/*.ananas{
+				position: absolute;
+				z-index: 0;
+				background-color: #F22B50;
+				grid-column: 5/7;
+				width: 100%;
+				height: 50%;
+			}*/
 
 			.eindresultaatImageTekst{
-				grid-column: 7/10;
 				position: absolute;
 				z-index: 1;
 				transform: translateY(50%);
 			}
+
+				#eindresultaatHome, #eindresultaatNews, #eindresultaatDiscover, #eindresultaatCommunity, #eindresultaatFollowing{
+					position: relative;
+				}
+
+				#eindresultaatITHome{
+					grid-column: 7/10;
+				}
+
+				#eindresultaatHome{
+					grid-column:5/8;
+				}
+
+				#eindresultaatITNews{
+					grid-column: 4/7;
+				}
+
+				#eindresultaatNews{
+					grid-column:7/13;
+				}
+
+				#eindresultaatITDiscover{
+					grid-column: 6/9;
+				}
+
+				#eindresultaatDiscover{
+					grid-column:1/7;
+				}
+
+				#eindresultaatITCommunity{
+					grid-column: 4/7;
+				}
+
+				#eindresultaatCommunity{
+					grid-column:6/10;
+				}
+
+				#eindresultaatITFollowing{
+					grid-column: 7/10;
+				}
+
+				#eindresultaatFollowing{
+					grid-column:1/7;
+				}
+
 
 				.eindresultaatContainer h4{
 					margin-bottom: 0px;
@@ -1005,8 +1052,14 @@ body{
 			transition: width .3s cubic-bezier(.365,.305,0,1) .6s, opacity .3s cubic-bezier(.365,.305,0,1) .5s;
 		}
 
+		.nieuweButton{
+			/*position: absolute;*/
+			width: auto;
+		}
+
+
 			input[type="button"]{
-				position: absolute;
+				position: relative;
 				right: 0;
 				bottom: -30px;
 				font-family: paralucent, sans-serif;
@@ -1017,8 +1070,23 @@ body{
 				background-color: #FFED00;
 				border:none;
 				padding: 16px 24px;
-				box-shadow: 3px 3px 10px rgba(255, 237, 0,0.5);
 				outline:none;
+				z-index: -1;
+				transform: translate(0px, 0px);
+				transition: transform .6s cubic-bezier(.365,.305,0,1);
+			}
+
+			#nieuweButtonUnderlay{
+				display: block;
+				color:transparent;
+				background-color: transparent;
+				border:4px solid #252E45;
+				padding: 18px 24px;
+				outline:none;
+				z-index: 1;
+				transform: translate(-8px, -8px);
+				max-width: auto;
+				transition: transform .6s cubic-bezier(.365,.305,0,1);
 			}
 
 			input[type="button"]:focus{
@@ -2689,12 +2757,6 @@ body{
 		margin-top: 20px;
 		height: 500px;
 		grid-column: 2/3;
-	}
-
-	input[type="button"]:hover{
-		font-size: 18px;
-		box-shadow: none;
-		text-shadow: none;
 	}
 
 	.index-footer{
