@@ -246,7 +246,6 @@
 			<h2 class="sectie-indicatie-titel">Eindresultaat</h2>
 		</div>
 		<div class="ruimte"></div>
-
 		<h2>Uitgaven</h2>
 		<div class="eindresultaat-enkel">
 						<div class="backdrop-grey"></div>
@@ -326,20 +325,24 @@
 			</div>
 		</div>
 	</section>
-
-	<section id="volgendeCase">
-		<div class="ruimte"></div>
-		<h2>Bedankt voor het lezen!</h2>
-		<h3>Klaar voor de volgende case study?</h3>
-		<div id="volgendeCaseNieuw" class="volgendeCasePlayNext">
-			<div id="volgendeCaseNieuwTekst">
-				<h1>Play Next</h1>
-				<h3>Ontdek jouw volgende favoriete game</h3>
-				<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" onclick="playNextNieuw()" onmouseover="onNieuw()" onmouseout="caseOff()">
+		<section id="volgendeCaseStatic">
+			<div class="ruimte"></div>
+			<h2>Bedankt voor het lezen!</h2>
+			<h3>Klaar voor de volgende case study?</h3>
+			<div id="volgendeCaseNieuw">
+				<div id="volgendeCaseNieuwTekst">
+					<h1>Play next</h1>
+					<h3>Ontdek jouw volgende favoriete game</h3>
+					<div id="interactiveButton" onmouseover="onNieuw()" onmouseout="caseOff()">
+						<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" class="volgendeCaseButton" onclick="playNextNieuw()" >
+						<input type="button" name="button" value="BEKIJK PROJECT" id="nieuweButtonUnderlay" onclick="playNextNieuw()" >
+					</div>
+				</div>
+				<div class="volgendeCasePlayNext"></div>
 			</div>
-		</div>
-	</section>
-	<footer onmouseleave="emailDown()" id="footer">
+		</section>
+
+	<footer onmouseleave="emailDown()">
 		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
 		<div id="email-popup">
 			<input type="text" value="16102908@student.hhs.nl" id="email-popup-text">
@@ -349,8 +352,8 @@
 		</div>
 		<h1>Dion van der Riet 2020</h1>
 		<div class="socials">
-			<div id="linkedIn" onclick="linkedIn()"></div>
 			<div id="email" onmouseover="emailUp()"></div>
+			<div id="linkedIn" onclick="linkedIn()"></div>
 		</div>
 		<div class="footer-balk" onmouseout="emailDown()"></div>
 	</footer>
