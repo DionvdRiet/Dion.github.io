@@ -318,7 +318,7 @@ function playNextOn(){
 
 function onNieuw(){
     document.getElementById('nieuweButtonUnderlay').style.transform = "translate(0px, 0px)";
-    document.getElementById('volgendeCaseButton').style.transform = "translate(-8px, -8px)";
+    document.getElementById('volgendeCaseButton').style.transform = "translate(12px, 12px)";
 	document.getElementById('volgendeCaseNieuw').style.backgroundSize = "103%";
 	document.getElementById('volgendeCaseNieuw').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
@@ -334,7 +334,7 @@ function noothulpOn(){
 }
 
 function caseOff(){
-    document.getElementById('nieuweButtonUnderlay').style.transform = "translate(-8px, -8px)";
+    document.getElementById('nieuweButtonUnderlay').style.transform = "translate(12px, 12px)";
     document.getElementById('volgendeCaseButton').style.transform = "translate(0px, 0px)";
 	document.getElementById('volgendeCaseNieuw').style.backgroundSize = "100%";
 	document.getElementById('volgendeCaseNieuw').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";

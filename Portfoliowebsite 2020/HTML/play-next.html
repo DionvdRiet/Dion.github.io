@@ -195,7 +195,7 @@
 				<h3>en behaal nieuwe highscores!</h3>
 			</div>
 		</div>
-		<div class="eindresultaatContainer">
+		<div class="eindresultaatContainer" id="eindresultaatMargin">
 			<div class="eindresultaatImageTekst" id="eindresultaatITHome">
 				<h4>1/5</h4>
 				<h2>Home</h2>
@@ -276,14 +276,16 @@
 		<div class="ruimte"></div>
 		<h2>Bedankt voor het lezen!</h2>
 		<h3>Klaar voor de volgende case study?</h3>
-		<div id="volgendeCaseNieuw" class="volgendeCaseBen">
+		<div id="volgendeCaseNieuw">
 			<div id="volgendeCaseNieuwTekst">
 				<h1>Ben Verlengproces</h1>
 				<h3>Verlengen kan simpel zijn</h3>
-
-					<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" onclick="benVerlengprocesNieuw()" onmouseover="onNieuw()" onmouseout="caseOff()">
-					<div id="nieuweButtonUnderlay">BEKIJK PROJECT</div>
+				<div id="interactiveButton" onmouseover="onNieuw()" onmouseout="caseOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" class="volgendeCaseButton" onclick="benVerlengprocesNieuw()" >
+					<input type="button" name="button" value="BEKIJK PROJECT" id="nieuweButtonUnderlay" onclick="benVerlengprocesNieuw()" >
+				</div>
 			</div>
+			<div class="volgendeCaseBen" ></div>
 		</div>
 	</section>
 	<section class="eindresultaat-responsive">
@@ -380,8 +382,8 @@
 		</div>
 		<h1>Dion van der Riet 2020</h1>
 		<div class="socials">
-			<div id="linkedIn" onclick="linkedIn()"></div>
 			<div id="email" onmouseover="emailUp()"></div>
+			<div id="linkedIn" onclick="linkedIn()"></div>
 		</div>
 		<div class="footer-balk" onmouseout="emailDown()"></div>
 	</footer>

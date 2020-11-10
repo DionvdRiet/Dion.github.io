@@ -630,9 +630,12 @@ body{
 			width: 100vw;
 			display: grid;
 			grid-template-columns: repeat(12,1fr);
-			margin:60px 0px;
 			position: relative;
 		}
+
+			#eindresultaatMargin{
+				margin:60px 0px;
+			}
 
 			/*.ananas{
 				position: absolute;
@@ -670,7 +673,7 @@ body{
 				}
 
 				#eindresultaatITDiscover{
-					grid-column: 6/9;
+					grid-column: 7/10;
 				}
 
 				#eindresultaatDiscover{
@@ -686,11 +689,11 @@ body{
 				}
 
 				#eindresultaatITFollowing{
-					grid-column: 7/10;
+					grid-column: 8/11;
 				}
 
 				#eindresultaatFollowing{
-					grid-column:1/7;
+					grid-column:1/8;
 				}
 
 
@@ -995,29 +998,35 @@ body{
 
 		#volgendeCaseNieuw{
 			display: grid;
-			grid-template-columns: 300px 500px auto 300px;
+			grid-template-columns: 200px auto 50%;
 			grid-column: 1/4;
 			width: 100%;
 			height: 300px;
 			background-color: white;
-			background-size: 100%;
+			background-size: cover;
 			background-position: right;
 			background-repeat: no-repeat;
 			margin-bottom: -150px;
 			opacity: 1;
+			border-top: 1px solid #F6F6F6;
 			transition: opacity .6s cubic-bezier(.365,.305,0,1) .3s;
 		}
+
+			.volgendeCaseSaveNow, .volgendeCasePlayNext, .volgendeCaseBen, .volgendeCaseNoothulp{
+				grid-column: 3/4;
+				background-size: 100%;
+			}
 
 			.volgendeCaseSaveNow{
 				background-image: url('../Afbeeldingen/Finance/saveNow-NextCase.jpg');
 			}
 
 			.volgendeCasePlayNext{
-				background-image: url('../Afbeeldingen/Gaming/playNext-Next-Case.jpg');
+				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
 			}
 
 			.volgendeCaseBen{
-				background-image: url('../Afbeeldingen/Ben/ben-Next-Case.jpg');
+				background-image: url('../Afbeeldingen/Ben/header.jpg');
 			}
 
 			.volgendeCaseNoothulp{
@@ -1030,6 +1039,10 @@ body{
 			transition: opacity .6s cubic-bezier(.365,.305,0,1) 0.6s, width .6s cubic-bezier(.365,.305,0,1) 0.6s;
 		}
 
+		#volgendeCaseStatic{
+			grid-template-columns: 200px auto 200px;
+		}
+
 		#volgendeCaseNieuwTekst{
 			width: 100%;
 			height: 100%;
@@ -1040,52 +1053,70 @@ body{
 		}
 
 			#volgendeCaseNieuwTekst h1{
+				margin-top:0px;
 				font-size: 60px;
+			}
+
+			#volgendeCaseNieuwTekst h3{
+				font-size: 20px;
+				font-weight: 500;
+			}
+
+			#volgendeCaseNieuwTekst h1, #volgendeCaseNieuwTekst h3{
 				margin-bottom: -6px;
 			}
 
-		#volgendeCaseButton{
+		#volgendeCaseButton, #nieuweButtonUnderlay{
+			height: 20%;
 			left: 0;
-			bottom: 60px;
-			width: 40%;
+			bottom: 100px;
+			width: 50%;
 			opacity: 1;
 			transition: width .3s cubic-bezier(.365,.305,0,1) .6s, opacity .3s cubic-bezier(.365,.305,0,1) .5s;
 		}
+
 
 		.nieuweButton{
 			/*position: absolute;*/
 			width: auto;
 		}
 
+			#interactiveButton{
+				display: flex;
+			}
+
 
 			input[type="button"]{
-				position: relative;
-				right: 0;
-				bottom: -30px;
+				position: absolute;
 				font-family: paralucent, sans-serif;
 				font-weight: 700;
-				font-size: 20px;
+				font-size: 24px;
 				font-style: italic;
-				color:#252e45;
-				background-color: #FFED00;
-				border:none;
-				padding: 16px 24px;
+				/*padding: 16px;*/
 				outline:none;
-				z-index: -1;
+				z-index: 2;
+			}
+
+			.volgendeCaseButton{
+				color:#252e45;
+				background-color: transparent;
+				border:4px solid #252E45;
 				transform: translate(0px, 0px);
 				transition: transform .6s cubic-bezier(.365,.305,0,1);
+				height: 20%;
 			}
 
 			#nieuweButtonUnderlay{
-				display: block;
+				position: absolute;
+				transition: width .3s cubic-bezier(.365,.305,0,1) .6s, opacity .3s cubic-bezier(.365,.305,0,1) .5s;
+				/*bottom: -30px;*/
 				color:transparent;
-				background-color: transparent;
-				border:4px solid #252E45;
-				padding: 18px 24px;
+				background-color: #FFED00;
+				/*padding: 16px;*/
+				border:none;
 				outline:none;
-				z-index: 1;
-				transform: translate(-8px, -8px);
-				max-width: auto;
+				z-index: 0;
+				transform: translate(12px, 12px);
 				transition: transform .6s cubic-bezier(.365,.305,0,1);
 			}
 
@@ -1210,7 +1241,7 @@ body{
 
 	footer{
 		display: grid;
-		grid-template-columns: 5% 42% 48% 5%;
+		grid-template-columns: 200px auto auto 200px 200px;
 		grid-template-rows: 50px 80px;
 		margin-top: 100px;
 		margin-bottom: 0px;
@@ -1219,11 +1250,12 @@ body{
 	}
 
 		.footer-balk{
+			border-top: 1px solid #F6F6F6;
 			grid-row: 2/3;
 			grid-column: 1/5;
 			width: 100%;
 			height: 100%;
-			background-color: #FFED00;
+			background-color: white;
 			z-index: -1;
 		}
 
@@ -1238,17 +1270,18 @@ body{
 
 		.socials{
 			grid-row: 2/3;
-			grid-column: 3/4;
+			grid-column: 5/6;
 			display: flex;
-			justify-content: space-between;
-			width: 100px;
+			justify-content: space-around;
+			width: 200px;
+			background-color: #FFED00;
 		}
 
 		.socials div{
 			width: 30px;
-			height: 25px;
+			height: 30px;
 			align-self: center;
-			background-size: contain;
+			background-size: 28px;
 			background-repeat: no-repeat;
 		}
 
@@ -1265,7 +1298,7 @@ body{
 		}
 
 		#email-popup{
-			grid-column: 3/4;
+			grid-column: 4/6;
 			grid-row: 1/2;
 			width: 400px;
 			height: 50px;
@@ -1332,7 +1365,7 @@ body{
 
 		#email{
 			background-image: url(../Afbeeldingen/email.svg);
-			margin-top: 8%;
+			margin-top: 8px;
 			transition-delay: 1s;
 		}
 

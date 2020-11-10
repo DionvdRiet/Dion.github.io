@@ -140,7 +140,10 @@
 			<div class="welkom-projecten-info" id="save-now-project-info">
 				<h2>Save Now</h2>
 				<h3>Het creëren van een applicatie om alles te weten te komen over jouw aankopen en financiële situatie te verbeteren.</h3>
-				<input type="button" name="button" value="BEKIJK PROJECT" onclick="saveNowWelkom()" onmouseover="style='font-size : 19px'; saveNowOn()" onmouseout="style='font-size : 20px'; caseOff()">
+				<div id="interactiveButton" onmouseover="onNieuw()" onmouseout="caseOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" class="volgendeCaseButton" onclick="benVerlengprocesNieuw()" >
+					<input type="button" name="button" value="BEKIJK PROJECT" id="nieuweButtonUnderlay" onclick="benVerlengprocesNieuw()" >
+				</div>
 			</div>
 		</div>
 		<div id="welkom-play-next">
