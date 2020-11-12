@@ -323,6 +323,65 @@ function onNieuw(){
 	document.getElementById('volgendeCaseNieuw').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
 
+function saveNowButton(){
+    document.getElementById('ibiSaveNow').style.transform = "translate(12px, 12px)";
+    document.getElementById('iuSaveNow').style.transform = "translate(0px, 0px)";
+}
+
+function saveNowButtonOff(){
+    document.getElementById('ibiSaveNow').style.transform = "translate(0px, 0px)";
+    document.getElementById('iuSaveNow').style.transform = "translate(12px, 12px)";
+}
+
+function playNextButton(){
+    document.getElementById('ibiPlayNext').style.transform = "translate(12px, 12px)";
+    document.getElementById('iuPlayNext').style.transform = "translate(0px, 0px)";
+}
+
+function playNextButtonOff(){
+    document.getElementById('ibiPlayNext').style.transform = "translate(0px, 0px)";
+    document.getElementById('iuPlayNext').style.transform = "translate(12px, 12px)";
+}
+
+function benButton(){
+    document.getElementById('ibiBen').style.transform = "translate(12px, 12px)";
+    document.getElementById('iuBen').style.transform = "translate(0px, 0px)";
+}
+
+function benButtonOff(){
+    document.getElementById('ibiBen').style.transform = "translate(0px, 0px)";
+    document.getElementById('iuBen').style.transform = "translate(12px, 12px)";
+}
+
+function noothulpButton(){
+    document.getElementById('ibiNoothulp').style.transform = "translate(12px, 12px)";
+    document.getElementById('iuNoothulp').style.transform = "translate(0px, 0px)";
+}
+
+function noothulpButtonOff(){
+    document.getElementById('ibiNoothulp').style.transform = "translate(0px, 0px)";
+    document.getElementById('iuNoothulp').style.transform = "translate(12px, 12px)";
+}
+
+function caseOff(){
+    document.getElementById('nieuweButtonUnderlay').style.transform = "translate(12px, 12px)";
+    document.getElementById('volgendeCaseButton').style.transform = "translate(0px, 0px)";
+    document.getElementById('volgendeCaseNieuw').style.backgroundSize = "100%";
+    document.getElementById('volgendeCaseNieuw').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+
+    document.getElementById('welkom-save-now').style.backgroundSize = "100%";
+    document.getElementById('welkom-save-now').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+
+    document.getElementById('welkom-play-next').style.backgroundSize = "100%";
+    document.getElementById('welkom-play-next').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+
+    document.getElementById('welkom-ben').style.backgroundSize = "100%";
+    document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+
+    document.getElementById('welkom-noothulp').style.backgroundSize = "100%";
+    document.getElementById('welkom-noothulp').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+}
+
 function benVerlengprocesOn(){
 	document.getElementById('welkom-ben').style.backgroundSize = "103%";
 	document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
@@ -332,26 +391,6 @@ function noothulpOn(){
 	document.getElementById('welkom-noothulp').style.backgroundSize = "103%";
 	document.getElementById('welkom-noothulp').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
-
-function caseOff(){
-    document.getElementById('nieuweButtonUnderlay').style.transform = "translate(12px, 12px)";
-    document.getElementById('volgendeCaseButton').style.transform = "translate(0px, 0px)";
-	document.getElementById('volgendeCaseNieuw').style.backgroundSize = "100%";
-	document.getElementById('volgendeCaseNieuw').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
-
-	document.getElementById('welkom-save-now').style.backgroundSize = "100%";
-	document.getElementById('welkom-save-now').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
-
-	document.getElementById('welkom-play-next').style.backgroundSize = "100%";
-	document.getElementById('welkom-play-next').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
-
-	document.getElementById('welkom-ben').style.backgroundSize = "100%";
-	document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
-
-	document.getElementById('welkom-noothulp').style.backgroundSize = "100%";
-	document.getElementById('welkom-noothulp').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
-}
-
 
 function saveNowWelkom(){
 	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
@@ -442,29 +481,6 @@ function noothulpWelkom(){
 	setTimeout("location.href = 'noothulp.html';",1500)
 }
 
-function saveNow(){
-	document.getElementById('caseSwitchAnimation').style.display = "block";
-	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById('caseSwitchAnimation').style.position = "fixed";
-	document.getElementById("caseSwitchAnimation").style.height = "100vh";
-	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
-	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
-
-	setTimeout("location.href = 'save-now.html';",1500)
-}
-
-function playNext(){
-	document.getElementById('volgendeCasePlayNext').style.color = "#FFED00";
-	document.getElementById('caseSwitchAnimation').style.display = "block";
-	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById('caseSwitchAnimation').style.position = "fixed";
-	document.getElementById("caseSwitchAnimation").style.height = "100vh";
-	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
-	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
-
-	setTimeout("location.href = 'play-next.html';",1500)
-}
-
 function saveNowNieuw(){
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
@@ -509,27 +525,52 @@ function noothulpNieuw(){
 	setTimeout("location.href = 'noothulp.html';",1500)
 }
 
-function benVerlengproces(){
-	document.getElementById('caseSwitchAnimation').style.display = "block";
-	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById('caseSwitchAnimation').style.position = "fixed";
-	document.getElementById("caseSwitchAnimation").style.height = "100vh";
-	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
-	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+// function saveNow(){
+//     document.getElementById('caseSwitchAnimation').style.display = "block";
+//     document.getElementById('caseSwitchAnimation').style.opacity = "1";
+//     document.getElementById('caseSwitchAnimation').style.position = "fixed";
+//     document.getElementById("caseSwitchAnimation").style.height = "100vh";
+//     document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+//     document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
 
-	setTimeout("location.href = 'ben-verlengproces.html';",1500)
-}
+//     setTimeout("location.href = 'save-now.html';",1500)
+// }
 
-function noothulp(){
-	document.getElementById('caseSwitchAnimation').style.display = "block";
-	document.getElementById('caseSwitchAnimation').style.opacity = "1";
-	document.getElementById('caseSwitchAnimation').style.position = "fixed";
-	document.getElementById("caseSwitchAnimation").style.height = "100vh";
-	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
-	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+// function playNext(){
+//     document.getElementById('volgendeCasePlayNext').style.color = "#FFED00";
+//     document.getElementById('caseSwitchAnimation').style.display = "block";
+//     document.getElementById('caseSwitchAnimation').style.opacity = "1";
+//     document.getElementById('caseSwitchAnimation').style.position = "fixed";
+//     document.getElementById("caseSwitchAnimation").style.height = "100vh";
+//     document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+//     document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
 
-	setTimeout("location.href = 'noothulp.html';",1500)
-}
+//     setTimeout("location.href = 'play-next.html';",1500)
+// }
+
+// function benVerlengproces(){
+// 	document.getElementById('caseSwitchAnimation').style.display = "block";
+// 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+// 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+// 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+// 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+// 	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+// 	setTimeout("location.href = 'ben-verlengproces.html';",1500)
+// }
+
+// function noothulp(){
+// 	document.getElementById('caseSwitchAnimation').style.display = "block";
+// 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
+// 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
+// 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
+// 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+// 	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+// 	setTimeout("location.href = 'noothulp.html';",1500)
+// }
+
+
 
 function caseSwitchAnimationDown(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
