@@ -204,8 +204,6 @@ body{
 		.welkom-projecten{
 			display: grid;
 			grid-template-columns: 25% auto 300px;
-			width: 100vw;
-			height: 100vh;
 		}
 
 			.welkom-projecten-intro{
@@ -283,7 +281,7 @@ body{
 
 			#welkom-noothulp{
 				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
-				margin-bottom:none;
+				margin-bottom: 0px;
 			}
 
 			.welkom-projecten-info{
@@ -1280,8 +1278,6 @@ body{
 		display: grid;
 		grid-template-columns: 200px auto auto 200px 100px 100px;
 		grid-template-rows: 50px 80px;
-		margin-top: 100px;
-		margin-bottom: 0px;
 		width: 100vw;
 		height: 80px;
 	}
@@ -1575,10 +1571,6 @@ body{
 	.parallax-container{
 		position: relative;
 		height: 40vh;
-	}
-
-	.index-footer{
-		margin-top:260px;
 	}
 
 	#volgendeCaseNieuw{
@@ -2814,10 +2806,6 @@ body{
 		margin-top: 20px;
 		height: 500px;
 		grid-column: 2/3;
-	}
-
-	.index-footer{
-		margin-top: 2450px;
 	}
 
 	#volgendeCaseNieuwTekst h1{
