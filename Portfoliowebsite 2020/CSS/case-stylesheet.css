@@ -656,9 +656,29 @@ body{
 				transform: translateY(50%);
 			}
 
-				#eindresultaatHome, #eindresultaatNews, #eindresultaatDiscover, #eindresultaatCommunity, #eindresultaatFollowing{
+				.eindresultaatImage{
 					position: relative;
 				}
+
+				/*Save Now*/
+
+				#eindresultaatITArticles{
+					grid-column: 4/7;
+				}
+
+				#eindresultaatArticles{
+					grid-column:6/11;
+				}
+
+				#eindresultaatITDebt{
+					grid-column: 8/11;
+				}
+
+				#eindresultaatDebt{
+					grid-column:1/7;
+				}
+
+				/*Play Next*/
 
 				#eindresultaatITHome{
 					grid-column: 7/10;
@@ -700,15 +720,21 @@ body{
 					grid-column:1/8;
 				}
 
-
 				.eindresultaatContainer h4{
 					margin-bottom: 0px;
 					font-size: 24px;
-					color: #F22B50;
 					font-family: paralucent, sans-serif;
 					font-weight: 700;
 					font-style: italic;
 				}
+
+					.saveNowImageTekst h4{
+						color: #0B41DA;
+					}
+
+					.playNextImageTekst h4{
+						color: #F22B50;
+					}
 
 				.eindresultaatContainer h2{
 					margin-top:4px;
@@ -1252,7 +1278,7 @@ body{
 
 	footer{
 		display: grid;
-		grid-template-columns: 200px auto auto 200px 200px;
+		grid-template-columns: 200px auto auto 200px 100px 100px;
 		grid-template-rows: 50px 80px;
 		margin-top: 100px;
 		margin-bottom: 0px;
@@ -1279,33 +1305,37 @@ body{
 		 	/*margin-left: 5%;*/
 		}
 
-		.socials{
-			grid-row: 2/3;
-			grid-column: 5/6;
-			display: flex;
-			justify-content: space-around;
-			width: 200px;
-			background-color: #FFED00;
-		}
-
-		.socials div{
-			width: 30px;
-			height: 30px;
-			align-self: center;
-			background-size: 28px;
-			background-repeat: no-repeat;
-		}
-
-		.socials div:hover{
-			cursor: pointer;
-		}
-
 		#footer-transparent-left{
 			grid-column: 1/3;
 			grid-row: 1/2;
 			width: auto;
 			height: 50px;
 			background-color: transparent;
+		}
+
+		#linkedIn, #email{
+			grid-row:2/3;
+			width: 100px;
+			height: 80px;
+			background-size: 30%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: #FFED00;
+			opacity: 1;
+			transition: opacity .3s cubic-bezier(.365,.305,0,1);
+		}
+
+		#linkedIn{
+			grid-column: 6/7;
+			background-image: url(../Afbeeldingen/linkedin.svg);
+			transition-delay: 0.9s;
+		}
+
+		#email{
+			grid-column: 5/6;
+			background-image: url(../Afbeeldingen/email.svg);
+			background-position: 50% 58%;
+			transition-delay: 1s;
 		}
 
 		#email-popup{
@@ -1363,22 +1393,6 @@ body{
 				background-color: #F9F9F9;
 				transition: background-color .3s cubic-bezier(.365,.305,0,1);
 			}
-
-		#linkedIn, #email{
-			opacity: 1;
-			transition: opacity .3s cubic-bezier(.365,.305,0,1);
-		}
-
-		#linkedIn{
-			background-image: url(../Afbeeldingen/linkedin.svg);
-			transition-delay: 0.9s;
-		}
-
-		#email{
-			background-image: url(../Afbeeldingen/email.svg);
-			margin-top: 8px;
-			transition-delay: 1s;
-		}
 
 
 /* MOBILE */
