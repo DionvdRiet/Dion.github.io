@@ -417,7 +417,7 @@ body{
 		z-index: 3;
 	}
 
-	h1, h2, h3{
+	h1, h2, h3, p{
 		font-family: paralucent, sans-serif;
 		font-style: normal;
 	}
@@ -430,6 +430,12 @@ body{
 	h3{
 		font-weight: 400;
 		color: #575757;
+	}
+
+	p{
+		font-weight: 400;
+		color: #252e45;
+		font-size: 18px;
 	}
 
 		#case-title{
