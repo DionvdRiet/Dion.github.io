@@ -1034,7 +1034,7 @@ body{
 			background-size: cover;
 			background-position: right;
 			background-repeat: no-repeat;
-			margin-bottom: -150px;
+			margin-bottom: -50px;
 			opacity: 1;
 			border-top: 1px solid #F6F6F6;
 			transition: opacity .6s cubic-bezier(.365,.305,0,1) .3s;
