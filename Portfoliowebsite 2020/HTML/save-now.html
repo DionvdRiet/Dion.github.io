@@ -313,7 +313,7 @@
 			<p>Samen met jou berekenen wij wat verantwoord is om per maand af te lossen van je schuld. Zie hoeveel je ondertussen al hebt afbetaald en wanneer je eindelijk verlost zal zijn van deze schuld!</p>
 		</div>
 	</section>
-	<section id="volgendeCaseCard">
+	<section id="volgendeCaseCard volgendeCasePlayNext">
 		<div class="ruimte"></div>
 		<h2>Bedankt voor het lezen!</h2>
 		<h3>Klaar voor de volgende case study?</h3>
@@ -326,7 +326,11 @@
 			<div id="volgendeCaseCardText">
 				<h1>Play Next</h1>
 				<h3>Ontdek jouw volgende favoriete game</h3>
-				<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseCardButton" onclick="playNextCard()" onmouseover="onNieuw()" onmouseout="caseOff()">
+				<div id="interactiveButton" onmouseover="onNieuw()" onmouseout="caseOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" class="interactiveButtonCase" onclick="playNextCard()" >
+					<input type="button" name="button" value="BEKIJK PROJECT" id="nieuweButtonUnderlay" class="interactiveUnderlayCase" onclick="playNextCard()" >
+					</div>
+				<!-- <div class="volgendeCasePlayNext"></div> -->
 			</div>
 		</div>
 	</section>

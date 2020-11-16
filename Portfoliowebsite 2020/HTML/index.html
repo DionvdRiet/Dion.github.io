@@ -95,7 +95,10 @@
 					<h1>Save Now</h1>
 					<h3>Verbeter je financiële situatie</h3>
 				</div>
-				<input type="button" name="button" value="BEKIJK PROJECT" class="projectCardButton" onclick="saveNowWelkom()">
+				<div id="interactiveButton" onmouseover="saveNowButton()" onmouseout="saveNowButtonOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="ibiSaveNow" class="interactiveButtonIndex" onclick="saveNowWelkom()" >
+					<input type="button" name="button" value="BEKIJK PROJECT" id="iuSaveNow" class="interactiveUnderlayIndex" onclick="saveNowWelkom()" >
+				</div>
 			</div>
 			<div class="projectCard">
 				<div class="projectCardImage play-next-header"></div>
@@ -106,7 +109,10 @@
 					<h1>Play Next</h1>
 					<h3>Ontdek jouw volgende favoriete game</h3>
 				</div>
-				<input type="button" name="button" value="BEKIJK PROJECT" class="projectCardButton" onclick="playNextWelkom()">
+				<div id="interactiveButton" onmouseover="playNextButton()" onmouseout="playNextButtonOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="ibiPlayNext" class="interactiveButtonIndex" onclick="playNextWelkom()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="iuPlayNext" class="interactiveUnderlayIndex" onclick="playNextWelkom()">
+				</div>
 			</div>
 			<div class="projectCard">
 				<div class="projectCardImage ben-header"></div>
@@ -117,7 +123,10 @@
 					<h1>Ben Verlengproces</h1>
 					<h3>Verlengen kan simpel zijn</h3>
 				</div>
-				<input type="button" name="button" value="BEKIJK PROJECT" class="projectCardButton" onclick="benVerlengprocesWelkom()">
+				<div id="interactiveButton" onmouseover="benButton()" onmouseout="benButtonOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="ibiBen" class="interactiveButtonIndex" onclick="benVerlengprocesWelkom()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="iuBen" class="interactiveUnderlayIndex" onclick="benVerlengprocesWelkom()">
+				</div>
 			</div>
 			<div class="projectCard projectCardLast">
 				<div class="projectCardImage noothulp-header"></div>
@@ -128,7 +137,10 @@
 					<h1>Noothulp</h1>
 					<h3>Muziekles zonder docent</h3>
 				</div>
-				<input type="button" name="button" value="BEKIJK PROJECT" class="projectCardButton" onclick="noothulpWelkom()">
+				<div id="interactiveButton" onmouseover="noothulpButton()" onmouseout="noothulpButtonOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="ibiNoothulp" class="interactiveButtonIndex" onclick="noothulpWelkom()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="iuNoothulp" class="interactiveUnderlayIndex" onclick="noothulpWelkom()">
+				</div>
 			</div>
 		</div>
 

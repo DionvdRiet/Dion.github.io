@@ -359,7 +359,10 @@
 			<div id="volgendeCaseCardText">
 				<h1>Ben Verlengproces</h1>
 				<h3>Verlengen kan simpel zijn</h3>
-				<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseCardButton" onclick="benVerlengprocesCard()" onmouseover="onNieuw()" onmouseout="caseOff()">
+				<div id="interactiveButton" onmouseover="onNieuw()" onmouseout="caseOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" class="interactiveButtonCase" onclick="benVerlengprocesCard()" >
+					<input type="button" name="button" value="BEKIJK PROJECT" id="nieuweButtonUnderlay" class="interactiveUnderlayCase" onclick="benVerlengprocesCard()" >
+				</div>
 			</div>
 		</div>
 	</section>

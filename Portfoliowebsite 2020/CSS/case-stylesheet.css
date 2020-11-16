@@ -1047,24 +1047,25 @@ body{
 		}
 
 			.volgendeCaseSaveNow, .volgendeCasePlayNext, .volgendeCaseBen, .volgendeCaseNoothulp{
-				grid-column: 3/4;
-				background-size: 100%;
+				grid-column: 1/4;
+				background-size: 50%;
+				background-repeat: no-repeat;
 			}
 
 			.volgendeCaseSaveNow{
-				background-image: url('../Afbeeldingen/Finance/header.jpg');
+				background-image: url('../Afbeeldingen/Finance/header-responsive.jpg');
 			}
 
 			.volgendeCasePlayNext{
-				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
+				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview-responsive.jpg');
 			}
 
 			.volgendeCaseBen{
-				background-image: url('../Afbeeldingen/Ben/header.jpg');
+				background-image: url('../Afbeeldingen/Ben/header-responsive.jpg');
 			}
 
 			.volgendeCaseNoothulp{
-				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+				background-image: url('../Afbeeldingen/Noothulp/header-responsive.jpg');
 			}
 
 		#footer{
@@ -1703,7 +1704,7 @@ body{
 	}
 
 	.welkom-projecten{
-		height: 60vh;
+		height: auto;
 	}
 
 	.welkom-introductie, .welkom-projecten{
@@ -1789,6 +1790,8 @@ body{
 	header{
 		z-index: 2;
 		height: 120px;
+		background-color: white;
+		padding-right: 4px;
 	}
 
 	header h1{
@@ -1988,14 +1991,24 @@ body{
 	}
 
 	input[type="button"]{
-		bottom: -50px;
-		font-size: 56px;
+		bottom: -16px;
+		font-size: 48px;
 		padding: 24px 40px;
+		padding-right: 120px;
+		height: 100px;
+		width: 80%;
+	}
+
+	.interactiveButtonIndex{
 		background-image: url("../Afbeeldingen/arrow-right.svg");
 		background-size: 40px;
-		background-position: 92% 50%;
+		background-position: 95% 67%;
 		background-repeat: no-repeat;
-		padding-right: 120px;
+	}
+
+	.interactiveUnderlayIndex, .interactiveUnderlayCase{
+		transform: translate(20px, 20px);
+		transition: transform .6s cubic-bezier(.365,.305,0,1);
 	}
 
 	section{
@@ -2052,7 +2065,8 @@ body{
 		overflow-x: auto;
 		width: 100%;
 		grid-column: 1/4;
-		height: 150%;
+		height: 840px;
+		/*padding-bottom: 30%;*/
 	}
 
 		.projectCardFirst{
@@ -2068,7 +2082,7 @@ body{
 			display: grid;
 			grid-template-rows: 50% 50%;
 			grid-template-columns: 48px auto 48px;
-			height: 840px;
+			height: 800px;
 			width: 80%;
 			box-shadow: 0px 10px 20px rgba(78, 78, 78, 0.05);
 			margin-right: 48px;
@@ -2262,18 +2276,18 @@ body{
 	}
 
 	footer{
-		grid-template-columns: 5% 50% 45% 0%;
-		grid-template-rows: 100px 120px;
+		grid-template-columns: 50px auto auto 1fr 100px 100px;
+		grid-template-rows: 100px 80px;
 		margin-top: 50px;
 		width: 100vw;
-		height: 160px;
+		height: 200px;
 	}
 
 		.footer-balk{
 			grid-row: 2/3;
 			grid-column: 1/5;
 			width: 100%;
-			height: 100%;
+			height: 80px;
 			z-index: -1; 
 		}
 
@@ -2282,28 +2296,18 @@ body{
 		 	letter-spacing: 3px;
 		}
 
-		.socials{
-			width: 100%;
-			justify-content: space-evenly;
-		}
-
-		.socials div{
-			width: 100px;
-			height: 50px;
-		}
-
 		#footer-transparent-left{
 			height: 50px;
 		}
 
-		#email{
-			margin-top: 4%;
+		#email, #linkedIn{
+			height: 100px;
 		}
 
 		#email-popup{
 			/*right: 0px;*/
 			width: 100%;
-			height: 100px;
+			height: 80px;
 			bottom: 100px;
 		}
 
@@ -2466,13 +2470,12 @@ body{
 			.caseCard{
 				position: relative;
 				display: grid;
-				grid-template-columns: 50px auto 50px;
+				grid-template-columns: 50px auto 33%;
 				grid-column: 2/3;
 				width: 100%;
 				height: 700px;
 				/*background-color: red;*/
-				background-size: cover;
-				background-position: 50% 40%;
+				background-position: 60vw;
 				background-repeat: no-repeat;
 				/*margin-bottom: -150px;*/
 				opacity: 1;

@@ -347,7 +347,10 @@
 			<div id="volgendeCaseCardText">
 				<h1>Noothulp</h1>
 				<h3>Muziekles zonder docent</h3>
-				<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseCardButton" onclick="noothulpCard()" onmouseover="onNieuw()" onmouseout="caseOff()">
+				<div id="interactiveButton" onmouseover="onNieuw()" onmouseout="caseOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" class="interactiveButtonCase" onclick="noothulpCard()" >
+					<input type="button" name="button" value="BEKIJK PROJECT" id="nieuweButtonUnderlay" class="interactiveUnderlayCase" onclick="noothulpCard()" >
+				</div>
 			</div>
 		</div>
 	</section>
