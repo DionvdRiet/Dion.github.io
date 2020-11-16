@@ -162,7 +162,7 @@ function openProject(){
 function aanHetScrollen() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         // document.getElementById("scroll-beneden").style.opacity = "0";
-        document.getElementById("desktop").style.gridTemplateColumns = "550px auto 550px";
+        document.getElementById("desktop").style.gridTemplateColumns = "40% auto 40%";
         document.getElementById("desktop").style.backgroundColor = "white";
         document.getElementById("desktop").style.borderBottom = "1px solid rgba(112,112,112,0.15)";
         document.getElementById("headerContainer2").style.backgroundColor = "#FFED00";

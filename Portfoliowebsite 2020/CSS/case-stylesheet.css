@@ -2578,12 +2578,12 @@ body{
 
 	#desktop{
 		display: grid;
-		grid-template-columns: 550px auto 550px;
+		grid-template-columns: 40% auto 40%;
 		width: 100vw;
 		z-index: 3;
 		margin-top: -4px;
 		background-color: transparent;
-		border-bottom:1px solid rgba(255,255,255,0.50);
+		border-bottom: 1px solid rgba(112,112,112,0.15);
 		transition: background-color .6s cubic-bezier(.365,.305,0,1);  
 
 	}
@@ -2686,6 +2686,27 @@ body{
 
 			.headerContainerActive{
 				background-color: white;
+			}
+
+			.headerDefault{
+				background-color: white !important;
+			}
+
+				.headerDefault #headerItem1, .headerDefault #headerItem2{
+					opacity: 1;
+				}
+
+				.headerDefault #active-page-1{
+					color: #252e45;
+				}
+
+				.headerDefault #inactive-page-1{
+					color: #252e45;
+					opacity: 0.5;
+				}
+
+			.headerContainerActiveIndex{
+				background-color: #FFED00;
 			}
 
 		header ul{
