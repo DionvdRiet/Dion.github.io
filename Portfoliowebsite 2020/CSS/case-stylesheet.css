@@ -1047,24 +1047,46 @@ body{
 		}
 
 			.volgendeCaseSaveNow, .volgendeCasePlayNext, .volgendeCaseBen, .volgendeCaseNoothulp{
+				grid-column: 3/4;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			.volgendeCaseSaveNow{
+				background-image: url('../Afbeeldingen/Finance/header.jpg');
+			}
+
+			.volgendeCasePlayNext{
+				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview.jpg');
+			}
+
+			.volgendeCaseBen{
+				background-image: url('../Afbeeldingen/Ben/header.jpg');
+			}
+
+			.volgendeCaseNoothulp{
+				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+			}
+
+			.volgendeCaseCardSaveNow, .volgendeCaseCardPlayNext, .volgendeCaseCardBen, .volgendeCaseCardNoothulp{
 				grid-column: 1/4;
 				background-size: 50%;
 				background-repeat: no-repeat;
 			}
 
-			.volgendeCaseSaveNow{
+			.volgendeCaseCardSaveNow{
 				background-image: url('../Afbeeldingen/Finance/header-responsive.jpg');
 			}
 
-			.volgendeCasePlayNext{
+			.volgendeCaseCardPlayNext{
 				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/overview-responsive.jpg');
 			}
 
-			.volgendeCaseBen{
+			.volgendeCaseCardBen{
 				background-image: url('../Afbeeldingen/Ben/header-responsive.jpg');
 			}
 
-			.volgendeCaseNoothulp{
+			.volgendeCaseCardNoothulp{
 				background-image: url('../Afbeeldingen/Noothulp/header-responsive.jpg');
 			}
 
@@ -1993,11 +2015,15 @@ body{
 	input[type="button"]{
 		bottom: -16px;
 		font-size: 48px;
-		padding: 24px 40px;
+		padding: 0px 40px;
 		padding-right: 120px;
 		height: 100px;
 		width: 80%;
 	}
+
+		.interactiveButtonCase{
+			border: 8px solid #252E45;
+		}
 
 	.interactiveButtonIndex{
 		background-image: url("../Afbeeldingen/arrow-right.svg");
