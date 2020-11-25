@@ -1003,7 +1003,7 @@ body{
 
 		#full-image-save-now-1, #full-image-save-now-2, #full-image-save-now-3{
 			grid-column: 1/6;
-			opacity: 0;
+			opacity: 1;
 			transition: opacity 0.3s cubic-bezier(.365,.305,0,1) 0.3s;
 		}
 
@@ -2828,7 +2828,15 @@ body{
 	#researchImage{
 		grid-column: 2/3;
 		grid-template-rows: 1/2;
+		height: 50vh;
 	}
+
+		.researchImageFinance{
+			background-image: url(../Afbeeldingen/Finance/geld.jpg);
+			background-size: cover;
+			background-position: 70%;
+			background-repeat: no-repeat;
+		}
 
 		.researchImageGaming{
 			background-image: url(../Afbeeldingen/Gaming/dualshock-controller.jpg);

@@ -323,6 +323,13 @@ function onNieuw(){
 	document.getElementById('volgendeCaseNieuw').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
 
+function onNieuwCard(){
+    document.getElementById('nieuweButtonUnderlayCard').style.transform = "translate(0px, 0px)";
+    document.getElementById('volgendeCaseButtonCard').style.transform = "translate(12px, 12px)";
+    document.getElementById('volgendeCaseNieuwCard').style.backgroundSize = "103%";
+    document.getElementById('volgendeCaseNieuwCard').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+}
+
 function saveNowButton(){
     document.getElementById('ibiSaveNow').style.transform = "translate(12px, 12px)";
     document.getElementById('iuSaveNow').style.transform = "translate(0px, 0px)";
@@ -356,6 +363,48 @@ function benButtonOff(){
 function noothulpButton(){
     document.getElementById('ibiNoothulp').style.transform = "translate(12px, 12px)";
     document.getElementById('iuNoothulp').style.transform = "translate(0px, 0px)";
+}
+
+function noothulpButtonOff(){
+    document.getElementById('ibiNoothulp').style.transform = "translate(0px, 0px)";
+    document.getElementById('iuNoothulp').style.transform = "translate(12px, 12px)";
+}
+
+/*Mobile*/
+
+function saveNowButtonCard(){
+    document.getElementById('ibiSaveNowCard').style.transform = "translate(12px, 12px)";
+    document.getElementById('iuSaveNowCard').style.transform = "translate(0px, 0px)";
+}
+
+function saveNowButtonOffCard(){
+    document.getElementById('ibiSaveNowCard').style.transform = "translate(0px, 0px)";
+    document.getElementById('iuSaveNowCard').style.transform = "translate(12px, 12px)";
+}
+
+function playNextButtonCard(){
+    document.getElementById('ibiPlayNextCard').style.transform = "translate(12px, 12px)";
+    document.getElementById('iuPlayNextCard').style.transform = "translate(0px, 0px)";
+}
+
+function playNextButtonOffCard(){
+    document.getElementById('ibiPlayNextCard').style.transform = "translate(0px, 0px)";
+    document.getElementById('iuPlayNextCard').style.transform = "translate(12px, 12px)";
+}
+
+function benButtonCard(){
+    document.getElementById('ibiBenCard').style.transform = "translate(12px, 12px)";
+    document.getElementById('iuBenCard').style.transform = "translate(0px, 0px)";
+}
+
+function benButtonOffCard(){
+    document.getElementById('ibiBenCard').style.transform = "translate(0px, 0px)";
+    document.getElementById('iuBenCard').style.transform = "translate(12px, 12px)";
+}
+
+function noothulpButtonCard(){
+    document.getElementById('ibiNoothulpCard').style.transform = "translate(12px, 12px)";
+    document.getElementById('iuNoothulpCard').style.transform = "translate(0px, 0px)";
 }
 
 function noothulpButtonOff(){

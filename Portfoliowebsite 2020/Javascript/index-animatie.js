@@ -85,11 +85,6 @@ function caseOne(){
         document.getElementById("project-indicator-2").style.width = "20px";
         document.getElementById("project-indicator-3").style.width = "20px";
         document.getElementById("project-indicator-4").style.width = "20px";
-
-        document.getElementById("project-indicator-1").style.boxShadow = "3px 3px 10px rgba(255, 237, 0,0.5)";
-        document.getElementById("project-indicator-2").style.boxShadow = "none";
-        document.getElementById("project-indicator-3").style.boxShadow = "none";
-        document.getElementById("project-indicator-4").style.boxShadow = "none";
 	} 
 }
 
@@ -108,11 +103,6 @@ function caseTwo(){
         document.getElementById("project-indicator-2").style.width = "40px";
         document.getElementById("project-indicator-3").style.width = "20px";
         document.getElementById("project-indicator-4").style.width = "20px";
-
-        document.getElementById("project-indicator-1").style.boxShadow = "none";
-        document.getElementById("project-indicator-2").style.boxShadow = "3px 3px 10px rgba(255, 237, 0,0.5)";
-        document.getElementById("project-indicator-3").style.boxShadow = "none";
-        document.getElementById("project-indicator-4").style.boxShadow = "none";
 	} 
 }
 
@@ -131,11 +121,6 @@ function caseThree(){
         document.getElementById("project-indicator-2").style.width = "20px";
         document.getElementById("project-indicator-3").style.width = "40px";
         document.getElementById("project-indicator-4").style.width = "20px";
-
-        document.getElementById("project-indicator-1").style.boxShadow = "none";
-        document.getElementById("project-indicator-2").style.boxShadow = "none";
-        document.getElementById("project-indicator-3").style.boxShadow = "3px 3px 10px rgba(255, 237, 0,0.5)";
-        document.getElementById("project-indicator-4").style.boxShadow = "none";
 	} 
 }
 
@@ -154,10 +139,5 @@ function caseFour(){
         document.getElementById("project-indicator-2").style.width = "20px";
         document.getElementById("project-indicator-3").style.width = "20px";
         document.getElementById("project-indicator-4").style.width = "40px";
-
-        document.getElementById("project-indicator-1").style.boxShadow = "none";
-        document.getElementById("project-indicator-2").style.boxShadow = "none";
-        document.getElementById("project-indicator-3").style.boxShadow = "none";
-        document.getElementById("project-indicator-4").style.boxShadow = "3px 3px 10px rgba(255, 237, 0,0.5)";
 	} 
 }
