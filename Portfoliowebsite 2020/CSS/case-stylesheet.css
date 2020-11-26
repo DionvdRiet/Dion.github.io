@@ -466,13 +466,13 @@ body{
 		#projectbeschrijving{
 			position: relative;
 			z-index: -1;
-			opacity: 0;
+			opacity: 1;
 			transform: translateY(-50px);
 			transition: transform 2s cubic-bezier(.365,.305,0,1), opacity 2s cubic-bezier(.365,.305,0,1) 0.3s;
 		}
 
 		#animateIn1, #animateIn2, #animateIn3, #animateIn4, #animateIn5, #animateIn6, #animateIn7{
-			opacity: 0;
+			opacity: 1;
 			transition: opacity 2s cubic-bezier(.365,.305,0,1);
 			transition-delay: 1.5s;
 		}
@@ -894,6 +894,29 @@ body{
 		position: absolute;
 		align-self: center;
 	}
+
+	.focusUitleg{
+		grid-column: 2/3;
+		padding: 6%;
+	}
+
+		.focusUitleg h2, .focusUitleg h3{
+			grid-column: 2/3;
+			color: #252e45;
+		}
+
+		.focusUitlegGrijs{
+			grid-column: 1/2;
+			width: 30vw;
+			height: 30vh;
+			background-color: #F9F9F9;
+			transform: translateY(-100%);
+			z-index: -1;
+		}
+
+
+
+
 
 	.quote{
 		width: 100%;
