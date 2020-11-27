@@ -840,6 +840,7 @@ body{
 		width: 100vw;
 		display: grid;
 		grid-template-columns: 300px 1fr 4% 1fr 4% 1fr 300px;
+		margin-bottom: -8%;
 	}
 
 	#focustekst{
@@ -902,7 +903,21 @@ body{
 
 		.focusUitleg h2, .focusUitleg h3{
 			grid-column: 2/3;
+			font-style: italic;
+		}
+
+		.focusUitleg h2{
 			color: #252e45;
+		}
+
+		.focusUitleg h3{
+			color: #575757;
+		}
+
+		.focusUitleg span{
+			font-weight: 700;
+			font-size: 20px;
+			color: #252E45;
 		}
 
 		.focusUitlegGrijs{
