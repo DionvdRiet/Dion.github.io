@@ -1086,8 +1086,10 @@ body{
 
 			.volgendeCaseSaveNow, .volgendeCasePlayNext, .volgendeCaseBen, .volgendeCaseNoothulp{
 				grid-column: 3/4;
-				background-size: cover;
+				background-size: 100%;
 				background-repeat: no-repeat;
+				background-position: center;
+				transition: background-size 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			.volgendeCaseSaveNow{
