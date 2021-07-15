@@ -45,7 +45,7 @@ function loadWebsite(){
 	  document.getElementById('loadWebsiteWit').style.opacity = "0";
 	  document.getElementById('loadWebsiteWit').style.display = "none";
 	  document.getElementById('welkom-foto-1').style.backgroundSize = "100%";
-	document.getElementById('welkom-foto-1').style.backgroundImage = "linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(255,0,0,0) 0%), url('../Afbeeldingen/Welkom/welkom-foto-1.jpeg')";
+	document.getElementById('welkom-foto-1').style.backgroundImage = "url('../Afbeeldingen/Welkom/welkom-foto-1.jpg')";
 
 	}, 3000);
 
