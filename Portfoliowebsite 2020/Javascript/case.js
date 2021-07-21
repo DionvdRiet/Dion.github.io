@@ -45,7 +45,7 @@ function loadWebsite(){
 	  document.getElementById('loadWebsiteWit').style.opacity = "0";
 	  document.getElementById('loadWebsiteWit').style.display = "none";
 	  document.getElementById('welkom-foto-1').style.backgroundSize = "100%";
-	document.getElementById('welkom-foto-1').style.backgroundImage = "url('../Afbeeldingen/Welkom/welkom-foto-1.jpg')";
+	document.getElementById('welkom-foto-1').style.backgroundImage = "url('../Afbeeldingen/Welkom/welkom-foto-1-small.jpg')";
 
 	}, 3000);
 
@@ -55,8 +55,6 @@ function loadWebsite(){
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
 	document.getElementById('welkom').style.opacity = "1";
-	document.getElementById('welkom-bericht').style.opacity = "1";
-	document.getElementById('welkom-bericht').style.transform = "translateX(0px)";
 	}, 900);
 
 	setTimeout(function(){
@@ -72,17 +70,14 @@ function websiteIsLoaded(){
 	document.getElementById('welkom').style.opacity = "1";
 	document.getElementById('loadWebsiteWit').style.display = "none";
 	document.getElementById('caseSwitchAnimation').style.transitionDelay = "none";
-	document.getElementById('welkom-bericht').style.transitionDelay = "0s";
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
-	document.getElementById('welkom-bericht').style.opacity = "1";
-	document.getElementById('welkom-bericht').style.transform = "translateX(0px)";
 	document.getElementById('loadWebsite').style.display = "none";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('desktop').style.opacity = "1";
 	document.getElementById('welkom-foto-1').style.backgroundSize = "100%";
-	document.getElementById('welkom-foto-1').style.backgroundImage = "url('../Afbeeldingen/Welkom/welkom-foto-1.jpg')";
+	document.getElementById('welkom-foto-1').style.backgroundImage = "url('../Afbeeldingen/Welkom/welkom-foto-1-small.jpg')";
 	setTimeout(function(){
 		document.getElementById('caseSwitchAnimation').style.display = "none";
 		document.getElementById('responsive-nav-list').style.display = "none";
@@ -129,7 +124,7 @@ function closeOverlay(){
     document.getElementById('close-overlay').id = "hamburger-menu";
     document.getElementById('hamburger-1').style.marginBottom = "5px";
     document.getElementById('hamburger-2').style.marginTop = "5px";
-    document.getElementById('hamburger-2').style.backgroundColor = "#252e45";
+    document.getElementById('hamburger-2').style.backgroundColor = "#131824";
 
     document.getElementById('hamburger-1').style.transform = "rotate(0deg)";
     document.getElementById('hamburger-2').style.transform = "rotate(0deg)";
@@ -172,9 +167,9 @@ function aanHetScrollen() {
             document.getElementById("inactive-page-1").style.fontSize = "18px";
             document.getElementById("inactive-page-2").style.fontSize = "18px";
 
-            document.getElementById("active-page-1").style.color = "#252e45";
-            document.getElementById("inactive-page-1").style.color = "#252e45";
-            document.getElementById("inactive-page-2").style.color = "#252e45";
+            document.getElementById("active-page-1").style.color = "#131824";
+            document.getElementById("inactive-page-1").style.color = "#131824";
+            document.getElementById("inactive-page-2").style.color = "#131824";
 
     } 
 
@@ -226,8 +221,8 @@ function headerSizeNormal(){
   //   	document.getElementById("inactive-page-2").style.fontSize = "22px";
 		// document.getElementById("active-page").style.margin = "0px 30px";
 	 //    document.getElementById("inactive-page").style.margin = "0px 30px";
-	    document.getElementById("active-page").style.color = "#252e45";
-	    document.getElementById("inactive-page").style.color = "#252e45";
+	    document.getElementById("active-page").style.color = "#131824";
+	    document.getElementById("inactive-page").style.color = "#131824";
 }
 
 function headerSizeBack(){
@@ -656,7 +651,7 @@ function emailCopied(){
 
 	document.getElementById('emailCopyButton').innerHTML = "GEKOPIËERD";
 	document.getElementById('emailCopyButton').style.color = "#FFED00";
-	document.getElementById('emailCopy').style.backgroundColor = "#252e45";
+	document.getElementById('emailCopy').style.backgroundColor = "#131824";
 	document.getElementById('email-popup-text').style.backgroundColor = "#FFED00";
 }
 

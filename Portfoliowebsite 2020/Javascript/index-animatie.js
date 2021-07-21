@@ -39,37 +39,18 @@ function aanHetScrollen() {
         // document.getElementById("scroll-beneden").style.opacity = "1";
         document.getElementById("desktop").style.height = "inherit";
         document.getElementById("desktop").style.gridTemplateColumns = "500px auto 500px";
-        document.getElementById("headerContainer").style.height = "65px";
-        document.getElementById("active-page-1").style.fontSize = "25px";
-        document.getElementById("inactive-page-1").style.fontSize = "25px";
+        document.getElementById("headerContainer").style.height = "50px";
+        document.getElementById("active-page-1").style.fontSize = "18px";
+        document.getElementById("inactive-page-1").style.fontSize = "18px";
         document.getElementById("active-page").style.margin = "0px 30px";
         document.getElementById("inactive-page-1").style.margin = "0px 30px";
-        document.getElementById("active-page").style.color = "#252e45";
-        document.getElementById("inactive-page-1").style.color = "#252e45";
+        document.getElementById("active-page").style.color = "#131824";
+        document.getElementById("inactive-page-1").style.color = "#131824";
     }
-}
-
-function welkomIntroductie(){
-    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-        document.getElementById("welkom-introductie-title").style.transform = "rotate(-90deg) translate(0px, -300px)";
-        document.getElementById("welkom-introductie-title").style.opacity = "1";
-        document.getElementById("welkom-introductie-tekst").style.opacity = "1";
-        document.getElementById("welkom-introductie-tekst").style.transform = "translateY(0px)";
-        document.getElementById("welkom-introductie-title-responsive").style.opacity = "1";
-        document.getElementById("welkom-introductie-title-responsive").style.transform = "translateY(0px)";
-        document.getElementById("welkom-introductie-tekst").style.color = "#575757";
-    } 
 }
 
 function caseOne(){
 	if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
-        document.getElementById("welkom-projecten-title").style.opacity = "1";
-        document.getElementById("welkom-projecten-title").style.transform = "translateY(0px)";
-
-        setTimeout(function(){ 
-        document.getElementById("welkom-grijs").style.opacity = "0";
-        document.getElementById("welkom-grijs").style.display = "none";
-        }, 300);
         
 	    document.getElementById("welkom-save-now").style.transform = "translateX(0%)";
 	    document.getElementById("welkom-save-now").style.opacity = "1";

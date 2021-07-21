@@ -58,28 +58,29 @@
 	</header>
 	<section id="welkom">
 		<div id="welkom-bericht">
-			<h1 id="welkom-bericht-title">Goedemiddag,</h1>
-			<h3 id="welkom-bericht-tekst">Mijn naam is Dion van de Riet, 22 jaar en student Communication and Multimedia Design aan de Haagse Hogeschool.</h3>
+			<h1 id="welkom-bericht-title">Welkom</h1>
+			<div id="welkom-lijn"></div>
+			<h3 id="welkom-bericht-tekst">Mijn naam is Dion van der Riet, 23 jaar en student Communication and Multimedia Design aan de Haagse Hogeschool.</h3>
 		</div>
 		<div id="welkom-foto-1"></div>
-		<div id="welkom-foto-2"></div>
+		<div id="welkom-yellow"></div>
 		<h3 id="scroll-beneden">Scroll naar beneden :)</h3>
 	</section>
 	<section class="welkom-introductie">
-		<div id="welkom-introductie-tekst-container">
-			<h1 id="welkom-introductie-title" class="highlightTitle">Over mij</h1>
-			<h1 id="welkom-introductie-title-responsive">Over mij</h1>
-			<h3 id="welkom-introductie-tekst">
-				Mijn passie voor design is enkele jaren voor mijn studie CMD begonnen bij grafisch design, een essentiële periode waar ik de liefde voor het vak heb leren kennen. In die periode was ik voornamelijk bezig met het creëren van de mooiste ontwerpen voor verschillende online klanten. Tijdens mijn studie heb ik naast het blijven ontwikkelen van mijn designstijl, steeds meer de focus 
-				leren leggen op de behoeften van de doelgroep. 
-				<br><br>
+		<div id="introductie-1">
+			<h3>
+				Mijn passie voor design is enkele jaren voor mijn studie CMD begonnen bij grafisch design, een essentiële periode waar ik de liefde voor het vak heb leren kennen. In die periode was ik voornamelijk bezig met het creëren van de mooiste ontwerpen voor verschillende online klanten. Tijdens mijn studie heb ik naast het blijven ontwikkelen van mijn designstijl, steeds meer de focus leren leggen op de behoeften van de doelgroep. 
+			</h3>
+		</div>
+		<div id="introductie-2">
+			<h3>
 				Als UX Designer haal ik veel plezier uit samen met de doelgroep komen tot een geschikt ontwerp waarmee hun problemen opgelost worden. Het uitvoeren van een usability test is dankzij de minor Usability Expert geen probleem voor mij, eveneens als verschillende onderzoeksmethoden zoals interviewen en enquêteren. 
 			</h3>
 		</div>
 	</section>
 	<section class="welkom-projecten">
 		<div class="welkom-projecten-intro">
-			<h1 id="welkom-projecten-title" class="highlightTitle">Projecten</h1>
+			<h1 id="welkom-projecten-title" class="highlightTitle">Case studies</h1>
 			<div id="welkom-projecten-scroll">
 				<h3>Scroll voor alle projecten</h3>
 				<img src="../Afbeeldingen/arrow-right.svg" width="40px">
@@ -146,48 +147,51 @@
 
 		<!-- Desktop -->
 
-		<div id="welkom-grijs"></div>
-		<div id="welkom-save-now">
-			<div class="welkom-projecten-info" id="save-now-project-info">
-				<h2>Save Now</h2>
-				<h3>Het creëren van een applicatie om alles te weten te komen over jouw aankopen en financiële situatie te verbeteren.</h3>
-				<div id="interactiveButton" onmouseover="saveNowButton()" onmouseout="saveNowButtonOff()">
-					<input type="button" name="button" value="BEKIJK PROJECT" id="ibiSaveNow" class="interactiveButtonIndex" onclick="saveNowWelkom()" >
-					<input type="button" name="button" value="BEKIJK PROJECT" id="iuSaveNow" class="interactiveUnderlayIndex" onclick="saveNowWelkom()" >
-				</div>
-			</div>
+		<h1 class="highlightTitle">Case studies</h1>
+		<div id="welkom-save-now"></div>
+		<div class="welkom-projecten-info" id="save-now-project-info">
+			<h2>Save Now</h2>
+			<h3>Het creëren van een applicatie om alles te weten te komen over jouw aankopen en financiële situatie te verbeteren.</h3>
+			<input type="button" name="button" value="BEKIJK PROJECT" id="ibiSaveNow" onclick="saveNowWelkom()">
+			<!-- <div id="interactiveButton" onmouseover="saveNowButton()" onmouseout="saveNowButtonOff()">
+				<input type="button" name="button" value="BEKIJK PROJECT" id="ibiSaveNow" class="interactiveButtonIndex" onclick="saveNowWelkom()" >
+				<input type="button" name="button" value="BEKIJK PROJECT" id="iuSaveNow" class="interactiveUnderlayIndex" onclick="saveNowWelkom()">
+			</div> -->
 		</div>
-		<div id="welkom-play-next">
-			<div class="welkom-projecten-info" id="play-next-project-info">
-				<h2>Play Next</h2>
-				<h3>Het ontwerpen van een app waar gebruikers alles te weten komen over aankomende games.</h3>
-				<div id="interactiveButton" onmouseover="playNextButton()" onmouseout="playNextButtonOff()">
-					<input type="button" name="button" value="BEKIJK PROJECT" id="ibiPlayNext" class="interactiveButtonIndex" onclick="playNextWelkom()">
-					<input type="button" name="button" value="BEKIJK PROJECT" id="iuPlayNext" class="interactiveUnderlayIndex" onclick="playNextWelkom()">
-				</div>
-			</div>
+			
+		<div class="welkom-projecten-info" id="play-next-project-info">
+			<h2>Play Next</h2>
+			<h3>Het ontwerpen van een app waar gebruikers alles te weten komen over aankomende games.</h3>
+			<input type="button" name="button" value="BEKIJK PROJECT" id="ibiSaveNow" onclick="playNextWelkom()">
+			<!-- <div id="interactiveButton" onmouseover="playNextButton()" onmouseout="playNextButtonOff()">
+				<input type="button" name="button" value="BEKIJK PROJECT" id="ibiPlayNext" class="interactiveButtonIndex" onclick="playNextWelkom()">
+				<input type="button" name="button" value="BEKIJK PROJECT" id="iuPlayNext" class="interactiveUnderlayIndex" onclick="playNextWelkom()">
+			</div> -->
 		</div>
-		<div id="welkom-ben">
-			<div class="welkom-projecten-info" id="ben-project-info">
-				<h2>Ben verlengproces</h2>
-				<h3>Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen.</h3>
-				<div id="interactiveButton" onmouseover="benButton()" onmouseout="benButtonOff()">
-					<input type="button" name="button" value="BEKIJK PROJECT" id="ibiBen" class="interactiveButtonIndex" onclick="benVerlengprocesWelkom()">
-					<input type="button" name="button" value="BEKIJK PROJECT" id="iuBen" class="interactiveUnderlayIndex" onclick="benVerlengprocesWelkom()">
-				</div>
-			</div>
+		<div id="welkom-play-next"></div>
+
+		<div id="welkom-ben"></div>
+		<div class="welkom-projecten-info" id="ben-project-info">
+			<h2>Ben verlengproces</h2>
+			<h3>Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen.</h3>
+			<input type="button" name="button" value="BEKIJK PROJECT" id="ibiBen" onclick="benVerlengprocesWelkom()">
+			<!-- <div id="interactiveButton" onmouseover="benButton()" onmouseout="benButtonOff()">
+				<input type="button" name="button" value="BEKIJK PROJECT" id="ibiBen" class="interactiveButtonIndex" onclick="benVerlengprocesWelkom()">
+				<input type="button" name="button" value="BEKIJK PROJECT" id="iuBen" class="interactiveUnderlayIndex" onclick="benVerlengprocesWelkom()">
+			</div> -->
 		</div>
-		<div id="welkom-noothulp">
-			<div class="welkom-projecten-info" id="noothulp-project-info">
-				<h2>Noothulp</h2>
-				<h3>Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent.</h3>
-				<div id="interactiveButton" onmouseover="noothulpButton()" onmouseout="noothulpButtonOff()">
-					<input type="button" name="button" value="BEKIJK PROJECT" id="ibiNoothulp" class="interactiveButtonIndex" onclick="noothulpWelkom()">
-					<input type="button" name="button" value="BEKIJK PROJECT" id="iuNoothulp" class="interactiveUnderlayIndex" onclick="noothulpWelkom()">
-				</div>
-			</div>
+
+		<div class="welkom-projecten-info" id="noothulp-project-info">
+			<h2>Noothulp</h2>
+			<h3>Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent.</h3>
+			<input type="button" name="button" value="BEKIJK PROJECT" id="ibiNoothulp" onclick="noothulpWelkom()">
+			<!-- <div id="interactiveButton" onmouseover="noothulpButton()" onmouseout="noothulpButtonOff()">
+				<input type="button" name="button" value="BEKIJK PROJECT" id="ibiNoothulp" class="interactiveButtonIndex" onclick="noothulpWelkom()">
+				<input type="button" name="button" value="BEKIJK PROJECT" id="iuNoothulp" class="interactiveUnderlayIndex" onclick="noothulpWelkom()">
+			</div> -->
 		</div>
-		</div>
+		<div id="welkom-noothulp"></div>
+
 	</section>
 	<footer onmouseleave="emailDown()">
 		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
