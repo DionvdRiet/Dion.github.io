@@ -51,21 +51,10 @@ function aanHetScrollen() {
 
 function caseOne(){
 	if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
-        
 	    document.getElementById("welkom-save-now").style.transform = "translateX(0%)";
 	    document.getElementById("welkom-save-now").style.opacity = "1";
         document.getElementById("welkom-save-now").style.backgroundSize = "100%";
 	    document.getElementById("save-now-project-info").style.opacity = "1";
-
-        document.getElementById("project-indicator-1").style.backgroundColor = "#FFED00";
-        document.getElementById("project-indicator-2").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-3").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-4").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-
-        document.getElementById("project-indicator-1").style.width = "40px";
-        document.getElementById("project-indicator-2").style.width = "20px";
-        document.getElementById("project-indicator-3").style.width = "20px";
-        document.getElementById("project-indicator-4").style.width = "20px";
 	} 
 }
 
@@ -74,16 +63,6 @@ function caseTwo(){
 	    document.getElementById("welkom-play-next").style.transform = "translateX(0%)";
         document.getElementById("welkom-play-next").style.backgroundSize = "100%";
 	    document.getElementById("play-next-project-info").style.opacity = "1";
-
-        document.getElementById("project-indicator-1").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-2").style.backgroundColor = "#FFED00";
-        document.getElementById("project-indicator-3").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-4").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-
-        document.getElementById("project-indicator-1").style.width = "20px";
-        document.getElementById("project-indicator-2").style.width = "40px";
-        document.getElementById("project-indicator-3").style.width = "20px";
-        document.getElementById("project-indicator-4").style.width = "20px";
 	} 
 }
 
@@ -92,16 +71,6 @@ function caseThree(){
 	    document.getElementById("welkom-ben").style.transform = "translateX(0%)";
         document.getElementById("welkom-ben").style.backgroundSize = "100%";
 	    document.getElementById("ben-project-info").style.opacity = "1";
-
-        document.getElementById("project-indicator-1").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-2").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-3").style.backgroundColor = "#FFED00";
-        document.getElementById("project-indicator-4").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-
-        document.getElementById("project-indicator-1").style.width = "20px";
-        document.getElementById("project-indicator-2").style.width = "20px";
-        document.getElementById("project-indicator-3").style.width = "40px";
-        document.getElementById("project-indicator-4").style.width = "20px";
 	} 
 }
 
@@ -110,15 +79,5 @@ function caseFour(){
 	    document.getElementById("welkom-noothulp").style.transform = "translateX(0%)";
         document.getElementById("welkom-noothulp").style.backgroundSize = "100%";
 	    document.getElementById("noothulp-project-info").style.opacity = "1";
-
-        document.getElementById("project-indicator-1").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-2").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-3").style.backgroundColor = "rgba(120, 120, 120, 0.3)";
-        document.getElementById("project-indicator-4").style.backgroundColor = "#FFED00";
-
-        document.getElementById("project-indicator-1").style.width = "20px";
-        document.getElementById("project-indicator-2").style.width = "20px";
-        document.getElementById("project-indicator-3").style.width = "20px";
-        document.getElementById("project-indicator-4").style.width = "40px";
 	} 
 }

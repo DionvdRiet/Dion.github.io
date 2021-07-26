@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/gqv3dkc.css">
 	<link rel="shortcut icon" type="image/png" href="../Afbeeldingen/favicon.ico"/>
 </head>
-<body onload="caseSwitchAnimationDown()">
+<body onload="caseSwitchAnimationDown()" class="contactBody">
 <div id="caseSwitchAnimation"></div>
 <header id="desktop" class="headerDefault" onmouseover="headerSizeNormal()" onmouseout="headerSizeBack()">
 		<div class="progress-container">
@@ -38,34 +38,46 @@
 		<h1 id="active-page" onclick="contact()">Contact</h1>
 	</div>
 </header>
-	<section id="sectie-1">
-		<div class="content">
-			<h1 class="titellijn">Contact</h1>
-			<div class="contact-informatie">
-				<!-- <p>Bij interesse ben ik te bereiken op <span>16102908@student.hhs.nl</span> en <span>06-21374084</span></p> -->
-				<div class="social-media">
-					<a href="https://www.linkedin.com/in/dion-van-der-riet-217479158/" target="_blank"><img src="../Afbeeldingen/linkedin.svg" height="40px" width="40px"></a>
+<section class="contactContent">
+	<div class="contactCardContainer">
+		<div class="contactCard" id="contact1">
+			<h2>Linkedin</h2>
+			<p>in/dion-van-der-riet-217479158</p>
+			<div class="contactCardLine"></div>
+			<input type="button" name="button" value="Open in nieuw tabblad" id="" class="contactButton">
+		</div>
+		<div class="contactCard" id="contact2">
+			<h2>E-mail</h2>
+			<p>16102908@student.hhs.nl</p>
+			<div class="contactCardLine"></div>
+			<input type="button" name="button" value="Kopieer adres" id="" class="contactButton">
+		</div>
+		<div class="contactCard" id="contact3">
+			<h2>Telefoonnummer</h2>
+			<p>+31(6) 21 37 40 84</p>
+			<div class="contactCardLine"></div>
+			<input type="button" name="button" value="Kopieer nummer" id="" class="contactButton">
+		</div>
+		<div id="contactBackground"></div>
+	</div>
+</section>
+
+	<section class="footerSection">
+		<footer onmouseleave="emailDown()" class="contactFooter">
+			<div id="footer-transparent-left" onmouseover="emailDown()"></div>
+			<div id="email-popup">
+				<input type="text" value="16102908@student.hhs.nl" id="email-popup-text">
+				<div id="emailCopy" onclick="emailCopied()">
+					<h1 id="emailCopyButton">KOPIËER</h1>
 				</div>
 			</div>
-
+			<h1>Dion van der Riet 2021</h1>
+				<div id="email" onmouseover="emailUp()"></div>
+				<div id="linkedIn" onclick="linkedIn()"></div>
+			<div class="footer-balk" onmouseout="emailDown()"></div>
+		</footer>
 	</section>
-
-<footer onmouseleave="emailDown()">
-		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
-		<div id="email-popup">
-			<input type="text" value="16102908@student.hhs.nl" id="email-popup-text">
-			<div id="emailCopy" onclick="emailCopied()">
-				<h1 id="emailCopyButton">KOPIËER</h1>
-			</div>
-		</div>
-		<h1>Dion van der Riet 2020</h1>
-		<div class="socials">
-			<div id="linkedIn" onclick="linkedIn()"></div>
-			<div id="email" onmouseover="emailUp()"></div>
-		</div>
-		<div class="footer-balk" onmouseout="emailDown()"></div>
-	</footer>
-	<script type="text/javascript" src="../Javascript/case.js"></script>	
-</script>
+	<script type="text/javascript" src="../Javascript/case.js"></script>
+	<script type="text/javascript" src="../Javascript/index-animatie.js"></script>
 </body>
 </html>

@@ -446,7 +446,6 @@ function saveNowWelkom(){
 	document.getElementById("arrow-left-home").style.opacity = "1";
 	}, 1000);
 
-	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -469,7 +468,6 @@ function playNextWelkom(){
 	document.getElementById("arrow-left-home").style.opacity = "1";
 	}, 1000);
 
-	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -491,7 +489,6 @@ function benVerlengprocesWelkom(){
 	document.getElementById("arrow-left-home").style.opacity = "1";
 	}, 1000);
 
-	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";
@@ -513,7 +510,6 @@ function noothulpWelkom(){
 	document.getElementById("arrow-left-home").style.opacity = "1";
 	}, 1000);
 
-	document.getElementById("welkom-projecten-indicator").style.transform = "translateX(+10%)";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
 	document.getElementById("caseSwitchAnimation").style.height = "100vh";

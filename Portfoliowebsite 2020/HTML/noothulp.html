@@ -47,7 +47,23 @@
 			<h1 id="responsive-nav-list-item-2" onclick="contact()">Contact</h1>
 		</div>
 	</header>
-	<div id="noothulp-case-header">
+	<div class="uxHeaderContainer">
+		<div id="case-header-title">
+			<h2>UX Case Study - Mobile Design</h2>
+			<h1>Noothulp</h1>
+			<h3>Muziekles zonder docent</h3>
+		</div>
+		<div class="case-header-content">
+			<div id="noothulp-case-header" class="caseHeaderImage"></div>
+			<div id="case-header-description">
+				<p>
+					Dagelijks komen er nieuwe games op de markt die elk een andere doelgroep interesseren. Hoe ga je als designer om met zoveel keuze aan games en hoe maak je het overzichtelijk voor gamers?
+				</p>
+			</div>
+			<div class="case-header-background"></div>
+		</div>
+	</div>
+	<!-- <div id="noothulp-case-header">
 		<div id="case-header-title">
 			<h1>Noothulp</h1>
 			<div id="case-header-title-line-box">
@@ -55,7 +71,7 @@
 			</div>
 			<h3>Muziekles zonder docent</h3>
 		</div>
-	</div>
+	</div> -->
  	<div class="noothulp-header-responsive responsive-header-image">
  		<div class="case-header-title-container">
 	 		<div id="case-header-title-responsive">
@@ -233,10 +249,11 @@
 				<div id="volgendeCaseNieuwTekst">
 					<h1>Save now</h1>
 					<h3>Verbeter je financiële situatie</h3>
-					<div id="interactiveButton" onmouseover="onNieuw()" onmouseout="caseOff()">
+					<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" onclick="saveNowNieuw()">
+					<!-- <div id="interactiveButton" onmouseover="onNieuw()" onmouseout="caseOff()">
 						<input type="button" name="button" value="BEKIJK PROJECT" id="volgendeCaseButton" class="interactiveButtonCase" onclick="saveNowNieuw()">
 						<input type="button" name="button" value="BEKIJK PROJECT" id="nieuweButtonUnderlay" class="interactiveUnderlayCase" onclick="saveNowNieuw()" >
-					</div>
+					</div> -->
 				</div>
 				<div class="volgendeCaseSaveNow" id="volgendeCaseImage"></div>
 			</div>
@@ -250,7 +267,7 @@
 				<h1 id="emailCopyButton">KOPIËER</h1>
 			</div>
 		</div>
-		<h1>Dion van der Riet 2020</h1>
+		<h1>Dion van der Riet 2021</h1>
 			<div id="email" onmouseover="emailUp()"></div>
 			<div id="linkedIn" onclick="linkedIn()"></div>
 		<div class="footer-balk" onmouseout="emailDown()"></div>
