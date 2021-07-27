@@ -225,19 +225,6 @@ function headerSizeNormal(){
 	    document.getElementById("inactive-page").style.color = "#131824";
 }
 
-function headerSizeBack(){
-        document.getElementById("desktop").style.height = "50px";
-        document.getElementById("desktop").style.gridTemplateColumns = "550px auto 550px";
-        document.getElementById("headerContainer").style.height = "50px";
-        document.getElementById("active-page-1").style.fontSize = "18px";
-    	document.getElementById("inactive-page-1").style.fontSize = "18px";
-    	document.getElementById("inactive-page-2").style.fontSize = "18px";
-        document.getElementById("active-page").style.margin = "-5px 20px";
-        document.getElementById("inactive-page").style.margin = "-5px 20px";
-        document.getElementById("active-page").style.color = "#575757";
-        document.getElementById("inactive-page").style.color = "#575757";
-}
-
 function startAnimation() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("sectie-indicatie-achtergrond").style.transform = "translateX(0px)";

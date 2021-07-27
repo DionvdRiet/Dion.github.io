@@ -8,7 +8,7 @@
 </head>
 <body onload="caseSwitchAnimationDown()" class="contactBody">
 <div id="caseSwitchAnimation"></div>
-<header id="desktop" class="headerDefault" onmouseover="headerSizeNormal()" onmouseout="headerSizeBack()">
+<header id="desktop" class="headerDefault">
 		<div class="progress-container">
 			<div class="progress-bar" id="myBar"></div>
 		</div>
@@ -23,21 +23,24 @@
 		</div>
 	</header>
 <header id="responsive-nav">
-	<div class="responsive-nav-top">
-		<div class="arrow-left" onclick="home()">
-			<img src="../Afbeeldingen/arrow-left.svg" width="50px">
+		<div class="progress-container">
+			<div class="progress-bar" id="myBarResponsive"></div>
 		</div>
-		<div class="hamburger-menu" id="hamburger-menu" onclick="overlay()">
-			<div id="hamburger-1"></div>
-			<div id="hamburger-2"></div>
+		<div class="responsive-nav-top">
+			<div class="arrow-left" id="arrow-left" onclick="home()">
+				<img src="../Afbeeldingen/arrow-left.svg" width="50px">
+			</div>
+			<div class="hamburger-menu" id="hamburger-menu" onclick="overlay()">
+				<div id="hamburger-1"></div>
+				<div id="hamburger-2"></div>
+			</div>
+			<h1 id="nav-project-title">Save Now</h1>
 		</div>
-		<h1>Contact</h1>
-	</div>
-	<div id="responsive-nav-list">
-		<h1 id="inactive-page" onclick="home()">Projecten</h1>
-		<h1 id="active-page" onclick="contact()">Contact</h1>
-	</div>
-</header>
+		<div id="responsive-nav-list">
+			<h1 id="responsive-nav-list-item-1" onclick="home()">Welkom</h1>
+			<h1 id="responsive-nav-list-item-2" onclick="contact()">Contact</h1>
+		</div>
+	</header>
 <section class="contactContent">
 	<div class="contactCardContainer">
 		<div class="contactCard" id="contact1">
