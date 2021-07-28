@@ -47,10 +47,10 @@
 			<h2>Linkedin</h2>
 			<p>in/dion-van-der-riet-217479158</p>
 			<div class="contactCardLine"></div>
-			<input type="button" name="button" value="Open in nieuw tabblad" id="" class="contactButton">
+			<input type="button" name="button" value="Open in nieuw tabblad" class="contactButton" onclick="linkedIn()">
 		</div>
 		<div class="contactCard" id="contact2">
-			<h2>E-mail</h2>
+			<h2>E-mail</h2>	
 			<p>16102908@student.hhs.nl</p>
 			<div class="contactCardLine"></div>
 			<input type="button" name="button" value="Kopieer adres" id="" class="contactButton">
@@ -63,10 +63,7 @@
 		</div>
 		<div id="contactBackground"></div>
 	</div>
-</section>
-
-	<section class="footerSection">
-		<footer onmouseleave="emailDown()" class="contactFooter">
+	<footer onmouseleave="emailDown()" class="contactFooter">
 			<div id="footer-transparent-left" onmouseover="emailDown()"></div>
 			<div id="email-popup">
 				<input type="text" value="16102908@student.hhs.nl" id="email-popup-text">
@@ -79,7 +76,11 @@
 				<div id="linkedIn" onclick="linkedIn()"></div>
 			<div class="footer-balk" onmouseout="emailDown()"></div>
 		</footer>
-	</section>
+</section>
+
+	<!-- <section class="footerSection">
+		
+	</section> -->
 	<script type="text/javascript" src="../Javascript/case.js"></script>
 	<script type="text/javascript" src="../Javascript/index-animatie.js"></script>
 </body>

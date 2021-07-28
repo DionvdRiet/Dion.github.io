@@ -1431,7 +1431,7 @@ body{
 
 		.contactContent{
 			width: 100vw;
-			height: 92vh;
+			height: 100vh;
 			position: absolute;
 			z-index: -1;
 			background: url('../Afbeeldingen/Contact/contactBackground.jpg');
