@@ -285,7 +285,7 @@ body{
 				height: 80vh;
 				background-size: cover;
 				background-repeat: no-repeat;
-				transition: transform .5s cubic-bezier(.365,.305,0,1), background-size 1s cubic-bezier(.365,.305,0,1);
+				box-shadow: 0px;
 			}
 
 			#welkom-save-now, #welkom-ben, #play-next-project-info, #noothulp-project-info{
@@ -298,24 +298,27 @@ body{
 
 			#welkom-save-now{
 				background-image: url('../Afbeeldingen/Finance/header.jpg');
-				transition-delay: .3s;
 				background-position: 30% 50%;
+				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			#welkom-play-next{
 				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/header.jpg');
 				background-position: 10% 50%;
+				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			#welkom-ben{
 				background-image: url('../Afbeeldingen/Ben/header.jpg');
 				background-position: 0% 50%;
+				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			#welkom-noothulp{
 				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 				margin-bottom: 0px;
 				background-position: 100% 50%;
+				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			.welkom-projecten-info{

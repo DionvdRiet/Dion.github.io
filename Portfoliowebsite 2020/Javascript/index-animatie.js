@@ -2,10 +2,7 @@ window.onscroll = function(){
 projectenIndicator();
 aanHetScrollen();
 welkomIntroductie();
-caseOne();
-caseTwo();
-caseThree();
-caseFour();
+saveNowWelkomHover();
 };
 
 function projectenIndicator(){
@@ -49,35 +46,51 @@ function aanHetScrollen() {
     }
 }
 
-function caseOne(){
-	if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
-	    document.getElementById("welkom-save-now").style.transform = "translateX(0%)";
-	    document.getElementById("welkom-save-now").style.opacity = "1";
-        document.getElementById("welkom-save-now").style.backgroundSize = "100%";
-	    document.getElementById("save-now-project-info").style.opacity = "1";
-	} 
+function saveNowWelkomHover(){
+    document.getElementById("welkom-save-now").style.transform = "translateY(-4%)";
+    document.getElementById("welkom-save-now").style.boxShadow = "0px 4px 8px rgba(0,0,0,0.06)";
+    document.getElementById("welkom-save-now").style.backgroundPosition = "40% 0%";
 }
 
-function caseTwo(){
-	if (document.body.scrollTop > 1650 || document.documentElement.scrollTop > 1650) {
-	    document.getElementById("welkom-play-next").style.transform = "translateX(0%)";
-        document.getElementById("welkom-play-next").style.backgroundSize = "100%";
-	    document.getElementById("play-next-project-info").style.opacity = "1";
-	} 
+function saveNowWelkomNormal(){
+    document.getElementById("welkom-save-now").style.transform = "translateY(0%)";
+    document.getElementById("welkom-save-now").style.boxShadow = "none";
+    document.getElementById("welkom-save-now").style.backgroundPosition = "30% 50%";
 }
 
-function caseThree(){
-	if (document.body.scrollTop > 2550 || document.documentElement.scrollTop > 2550) {
-	    document.getElementById("welkom-ben").style.transform = "translateX(0%)";
-        document.getElementById("welkom-ben").style.backgroundSize = "100%";
-	    document.getElementById("ben-project-info").style.opacity = "1";
-	} 
+function playNextWelkomHover(){
+    document.getElementById("welkom-play-next").style.transform = "translateY(-4%)";
+    document.getElementById("welkom-play-next").style.boxShadow = "0px 4px 8px rgba(0,0,0,0.06)";
+    document.getElementById("welkom-play-next").style.backgroundPosition = "20% 80%";
 }
 
-function caseFour(){
-	if (document.body.scrollTop > 3450 || document.documentElement.scrollTop > 3450) {
-	    document.getElementById("welkom-noothulp").style.transform = "translateX(0%)";
-        document.getElementById("welkom-noothulp").style.backgroundSize = "100%";
-	    document.getElementById("noothulp-project-info").style.opacity = "1";
-	} 
+function playNextWelkomNormal(){
+    document.getElementById("welkom-play-next").style.transform = "translateY(0%)";
+    document.getElementById("welkom-play-next").style.boxShadow = "none";
+    document.getElementById("welkom-play-next").style.backgroundPosition = "10% 50%";
 }
+
+function benWelkomHover(){
+    document.getElementById("welkom-ben").style.transform = "translateY(-4%)";
+    document.getElementById("welkom-ben").style.boxShadow = "0px 4px 8px rgba(0,0,0,0.06)";
+    document.getElementById("welkom-ben").style.backgroundPosition = "10% 60%";
+}
+
+function benWelkomNormal(){
+    document.getElementById("welkom-ben").style.transform = "translateY(0%)";
+    document.getElementById("welkom-ben").style.boxShadow = "none";
+    document.getElementById("welkom-ben").style.backgroundPosition = "0% 50%";
+}
+
+function noothulpWelkomHover(){
+    document.getElementById("welkom-noothulp").style.transform = "translateY(-4%)";
+    document.getElementById("welkom-noothulp").style.boxShadow = "0px 4px 8px rgba(0,0,0,0.06)";
+    document.getElementById("welkom-noothulp").style.backgroundPosition = "85% 50%";
+}
+
+function noothulpWelkomNormal(){
+    document.getElementById("welkom-noothulp").style.transform = "translateY(0%)";
+    document.getElementById("welkom-noothulp").style.boxShadow = "none";
+    document.getElementById("welkom-noothulp").style.backgroundPosition = "100% 50%";
+}
+
