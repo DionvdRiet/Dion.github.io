@@ -283,7 +283,7 @@ body{
 
 			#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
 				height: 80vh;
-				background-size: cover;
+				background-size: 300%;
 				background-repeat: no-repeat;
 				box-shadow: 0px;
 			}
@@ -298,26 +298,26 @@ body{
 
 			#welkom-save-now{
 				background-image: url('../Afbeeldingen/Finance/header.jpg');
-				background-position: 30% 50%;
+				background-position: 30% 100%;
 				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			#welkom-play-next{
 				background-image: url('../Afbeeldingen/Gaming/Eindresultaat/header.jpg');
-				background-position: 10% 50%;
+				background-position: 20% 100%;
 				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			#welkom-ben{
 				background-image: url('../Afbeeldingen/Ben/header.jpg');
-				background-position: 0% 50%;
+				background-position: 15% 60%;
 				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
 			#welkom-noothulp{
 				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 				margin-bottom: 0px;
-				background-position: 100% 50%;
+				background-position: 100% 100%;
 				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
@@ -365,24 +365,32 @@ body{
 				align-self: center;
 			}
 
-				#case-header-title h1,  #case-header-title h2, #case-header-title h3{
+				#projectTitle,  #projectTypeDesktop, #projectDescription{
 					margin: 8px 0px;
 				}
 
-				#case-header-title h1{
+				#projectTitle{
 					font-size: 54px;
-					letter-spacing: 12px;
+					letter-spacing: auto;
+					opacity: 0;
+					transition: opacity 0.3s cubic-bezier(.365,.305,0,1), letter-spacing 1s cubic-bezier(.365,.305,0,1);
 				}
 
-				#case-header-title h2{
+				#projectTypeDesktop{
 					color: #575757;
 					font-size: 18px;
 					margin-bottom: -8px;
+					opacity: 0;
+					transform: translateY(100%);
+					transition: opacity 0.6s cubic-bezier(.365,.305,0,1), transform 1s cubic-bezier(.365,.305,0,1);
 				}
 
-				#case-header-title h3{
+				#projectDescription{
 					margin-top: -8px;
 					color: #575757;
+					opacity: 0;
+					transform: translateY(-100%);
+					transition: opacity 0.6s cubic-bezier(.365,.305,0,1), transform 1s cubic-bezier(.365,.305,0,1);
 				}
 
 			.case-header-content{
@@ -394,10 +402,13 @@ body{
 				grid-row: 3/4;
 			}
 
-				.caseHeaderImage{
+				#caseHeaderImage{
 					grid-column: 2/12;
 					grid-row: 1/10;
 					z-index: -1;
+					height: 0%;
+					background-position: 50% 100%;
+					transition: background-position 2s cubic-bezier(.365,.305,0,1), height 1s cubic-bezier(.365,.305,0,1);
 				}
 
 				#case-header-description{
@@ -408,6 +419,9 @@ body{
 					background-color: #FFED00;
 					display: flex;
 					justify-content: center;
+					transform: translateX(100%);
+					transition: transform 0.6s cubic-bezier(.365,.305,0,1);
+					transition-delay: 1s;
 				}
 
 					#case-header-description p{
@@ -419,12 +433,15 @@ body{
 						/*align-self: center;*/
 					}
 
-				.case-header-background{
+				#case-header-background{
 					width: 100vw;
 					grid-column: 1/13;
 					grid-row: 1/13;
 					background: linear-gradient(to bottom, rgba(246, 246, 246,1), rgba(255,255,255,1), transparent);
 					z-index: -2;
+					opacity: 0;
+					transform: translateY(100%);
+					transition: opacity 3s cubic-bezier(.365,.305,0,1), transform 1s cubic-bezier(.365,.305,0,1);
 				}
 
 
@@ -1324,7 +1341,7 @@ body{
 			background-image: url('../Afbeeldingen/Finance/header.jpg');
 		}
 
-		#finance-case-header{
+		.finance-case-header{
 			background-image: url('../Afbeeldingen/Finance/header.jpg');
 		}
 
@@ -1360,7 +1377,7 @@ body{
 				align-self: center;
 			}
 
-		#finance-case-header, #play-next-case-header, #ben-case-header, #noothulp-case-header{
+		.finance-case-header, .play-next-case-header, .ben-case-header, .noothulp-case-header{
 			position: relative;
 			background-position: top;
 			background-size: cover;
@@ -1371,7 +1388,7 @@ body{
 			background-image: url('../Afbeeldingen/Gaming/Eindresultaat/header.jpg');
 		}
 
-		#play-next-case-header{
+		.play-next-case-header{
 			background-image: url('../Afbeeldingen/Gaming/Eindresultaat/header.jpg');
 		}
 
@@ -1397,7 +1414,7 @@ body{
 			background-image: url('../Afbeeldingen/Ben/header.jpg');
 		}
 
-		#ben-case-header{
+		.ben-case-header{
 			background-image: url('../Afbeeldingen/Ben/header.jpg');
 			background-position: 0% 30%;
 		}
@@ -1417,7 +1434,7 @@ body{
 			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 		}
 
-		#noothulp-case-header{
+		.noothulp-case-header{
 			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
 		}
 
@@ -1831,7 +1848,7 @@ body{
 		display: none;
 	}
 
-	#finance-case-header, #play-next-case-header, #ben-case-header, #noothulp-case-header{
+	.finance-case-header, .play-next-case-header, .ben-case-header, .noothulp-case-header{
 		display: none;
 	}
 

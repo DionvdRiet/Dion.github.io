@@ -601,7 +601,9 @@ function caseSwitchAnimationDown(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById("caseSwitchAnimation").style.transform = "translateX(100%)";
 	document.getElementById("caseSwitchAnimation").style.height = "100%";
-	setTimeout(noOpacity, 1000);
+    document.getElementById("case-header-background").style.opacity = "1";
+    document.getElementById("case-header-background").style.transform = "translateY(0%)";
+	setTimeout(noOpacity, 600);
 	document.getElementById('case-header-title').style.opacity = "1";
 	document.getElementById("case-header-title").style.transform = "translateY(0%)";
 	document.getElementById('case-header-title-responsive').style.opacity = "1";
@@ -612,6 +614,18 @@ function noOpacity(){
 	document.getElementById('caseSwitchAnimation').style.opacity = "0";
 	document.getElementById("caseSwitchAnimation").style.display = "none";
 	document.getElementById('responsive-nav-list').style.display = "none";
+
+    document.getElementById("projectTitle").style.letterSpacing = "12px";
+    document.getElementById("projectTitle").style.opacity = "1";
+    document.getElementById("projectTypeDesktop").style.opacity = "1";
+    document.getElementById("projectTypeDesktop").style.transform = "translateY(0%)";
+    document.getElementById("projectDescription").style.opacity = "1";
+    document.getElementById("projectDescription").style.transform = "translateY(0%)"
+
+    document.getElementById("caseHeaderImage").style.backgroundPosition = "50% 0%";
+    document.getElementById("caseHeaderImage").style.height = "100%";
+
+    document.getElementById("case-header-description").style.transform = "translateX(0%)"
 }
 
 function linkedIn(){

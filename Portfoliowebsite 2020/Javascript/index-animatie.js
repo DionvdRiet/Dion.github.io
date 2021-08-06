@@ -49,7 +49,7 @@ function aanHetScrollen() {
 function saveNowWelkomHover(){
     document.getElementById("welkom-save-now").style.transform = "translateY(-4%)";
     document.getElementById("welkom-save-now").style.boxShadow = "0px 4px 8px rgba(0,0,0,0.06)";
-    document.getElementById("welkom-save-now").style.backgroundPosition = "40% 0%";
+    document.getElementById("welkom-save-now").style.backgroundPosition = "30% 10%";
 }
 
 function saveNowWelkomNormal(){
@@ -61,36 +61,36 @@ function saveNowWelkomNormal(){
 function playNextWelkomHover(){
     document.getElementById("welkom-play-next").style.transform = "translateY(-4%)";
     document.getElementById("welkom-play-next").style.boxShadow = "0px 4px 8px rgba(0,0,0,0.06)";
-    document.getElementById("welkom-play-next").style.backgroundPosition = "20% 80%";
+    document.getElementById("welkom-play-next").style.backgroundPosition = "20% 0%";
 }
 
 function playNextWelkomNormal(){
     document.getElementById("welkom-play-next").style.transform = "translateY(0%)";
     document.getElementById("welkom-play-next").style.boxShadow = "none";
-    document.getElementById("welkom-play-next").style.backgroundPosition = "10% 50%";
+    document.getElementById("welkom-play-next").style.backgroundPosition = "20% 100%";
 }
 
 function benWelkomHover(){
     document.getElementById("welkom-ben").style.transform = "translateY(-4%)";
     document.getElementById("welkom-ben").style.boxShadow = "0px 4px 8px rgba(0,0,0,0.06)";
-    document.getElementById("welkom-ben").style.backgroundPosition = "10% 60%";
+    document.getElementById("welkom-ben").style.backgroundPosition = "15% 0%";
 }
 
 function benWelkomNormal(){
     document.getElementById("welkom-ben").style.transform = "translateY(0%)";
     document.getElementById("welkom-ben").style.boxShadow = "none";
-    document.getElementById("welkom-ben").style.backgroundPosition = "0% 50%";
+    document.getElementById("welkom-ben").style.backgroundPosition = "15% 60%";
 }
 
 function noothulpWelkomHover(){
     document.getElementById("welkom-noothulp").style.transform = "translateY(-4%)";
     document.getElementById("welkom-noothulp").style.boxShadow = "0px 4px 8px rgba(0,0,0,0.06)";
-    document.getElementById("welkom-noothulp").style.backgroundPosition = "85% 50%";
+    document.getElementById("welkom-noothulp").style.backgroundPosition = "100% 0%";
 }
 
 function noothulpWelkomNormal(){
     document.getElementById("welkom-noothulp").style.transform = "translateY(0%)";
     document.getElementById("welkom-noothulp").style.boxShadow = "none";
-    document.getElementById("welkom-noothulp").style.backgroundPosition = "100% 50%";
+    document.getElementById("welkom-noothulp").style.backgroundPosition = "100% 100%";
 }
 
