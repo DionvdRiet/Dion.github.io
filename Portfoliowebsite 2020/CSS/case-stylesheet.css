@@ -194,7 +194,7 @@ body{
 			#introductie-1{
 				grid-column: 3/6;
 				grid-row: 1/6;
-				background-color: #FFEE0D;
+				background-color: #131824;
 				position: absolute;
 				z-index: 1;
 			}
@@ -204,18 +204,19 @@ body{
 				grid-template-columns: 50% 50%;
 				grid-column: 4/10;
 				grid-row: 3/7;
-				background-color: #131824;
+				background-color: white;
 				position: absolute;
 				z-index: 0;
+				box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
 			}
 
 			#introductie-1 h3{
-				color: #131824;
+				color: #F6F6F6;
 				line-height: 32px;
 			}
 
 			#introductie-2 h3{
-				color: #F6F6F6;
+				color: #131824;
 				grid-column: 2/3;
 				padding-right: 40px;
 				line-height: 32px;
@@ -1300,16 +1301,22 @@ body{
 		}*/
 			input[type="button"]{
 				font-family: paralucent, sans-serif;
-				width: 200px;
+				/*width: 20px;*/
 				height: 52px;
 				border: none;
 				font-weight: 700;
-				font-size: 20px;
-				font-style: italic;
+				font-size: 18px;
+				font-style: normal;
 				outline:none;
 				background-color: #FFED00;
 				margin-top: 8px;
-
+				padding: 0px 32px 0px 32px;
+				background-image: url("../Afbeeldingen/arrow-right.svg");
+				background-size: 0%;
+				background-repeat: no-repeat;
+				background-position: 100% 50%;
+				transition: background-position .3s cubic-bezier(.365,.305,0,1), background-size 0.3s cubic-bezier(.365,.305,0,1) 0.1s, 
+				padding 0.3s cubic-bezier(.365,.305,0,1);
 			}
 
 			.interactiveButtonIndex, .interactiveButtonCase{
