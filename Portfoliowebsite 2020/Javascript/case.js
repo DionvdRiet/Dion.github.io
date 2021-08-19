@@ -40,12 +40,20 @@ function loadWebsite(){
 	document.getElementById('loadWebsiteBarFilled').style.width = "100%";
 
 	setTimeout(function(){ 
-	  document.body.style.overflowY = "scroll";
-	  document.getElementById('loadWebsite').style.opacity = "0";
-	  document.getElementById('loadWebsiteWit').style.opacity = "0";
-	  document.getElementById('loadWebsiteWit').style.display = "none";
-	  document.getElementById('welkom-foto-1').style.height = "100%";
-	  document.getElementById('welkom-foto-1').style.backgroundImage = "url('../Afbeeldingen/Welkom/welkom-foto-1-small.jpg')";
+	   document.body.style.overflowY = "scroll";
+	   document.getElementById('loadWebsite').style.opacity = "0";
+	   document.getElementById('loadWebsiteWit').style.opacity = "0";
+	   document.getElementById('loadWebsiteWit').style.display = "none";
+
+	   document.getElementById('welkom-foto-1').style.opacity = "1";
+       document.getElementById('welkom-foto-1').style.transform = "translateY(0%)";
+       document.getElementById('welkom-yellow').style.width = "100%";
+
+       document.getElementById('welkom-lijn').style.width = "100%";
+       document.getElementById('welkom-bericht-title').style.transform = "translateY(0%)";
+       document.getElementById('welkom-bericht-tekst').style.transform = "translateY(0%)";
+       document.getElementById('welkom-bericht-title').style.opacity = "1";
+       document.getElementById('welkom-bericht-tekst').style.opacity = "1";
 
 	}, 3000);
 
@@ -76,6 +84,7 @@ function websiteIsLoaded(){
 	document.getElementById('loadWebsite').style.display = "none";
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('desktop').style.opacity = "1";
+
 	document.getElementById('welkom-foto-1').style.opacity = "1";
     document.getElementById('welkom-foto-1').style.transform = "translateY(0%)";
     document.getElementById('welkom-yellow').style.width = "100%";
