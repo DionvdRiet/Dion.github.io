@@ -1680,6 +1680,42 @@ body{
 		height: 600px;
 	}
 
+	#projectTitle{
+		font-size: 80px;
+	}
+
+	#projectTypeDesktop, #projectDescription{
+		font-size: 32px;
+	}
+
+	#caseHeaderImage{
+		grid-column: 3/13;
+		grid-row: 1/13;
+	}
+
+	.uxHeaderContainer{
+		display: grid;
+		width: 100vw;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 20vh 80vh;
+	}
+
+		#case-header-title{
+			grid-column: 3/12;
+			grid-row: 1/2;
+			align-self: center;
+			height: 25%;
+		}
+
+		.case-header-content{
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: repeat(12, 1fr);
+			height: 72vh;
+			grid-column: 1/13;
+			grid-row: 2/3;
+		}
+
 
 	a{
 		grid-column: 1/4;
@@ -1867,11 +1903,6 @@ body{
 	#desktop, .desktop-image, #eindresultaat-section-desktop, .parallax-container, .header-extra, #volgendeCase, #volgendeCaseStatic, .welkom-projecten-info, #welkom-bericht-desktop{
 		display: none;
 	}
-
-	.finance-case-header, .play-next-case-header, .ben-case-header, .noothulp-case-header{
-		display: none;
-	}
-
 
 	#responsive,#responsive-nav,.responsive-image, #eindresultaat-section-responsive{
 		display: block;
