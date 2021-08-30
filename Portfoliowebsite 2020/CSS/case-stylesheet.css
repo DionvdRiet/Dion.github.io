@@ -632,9 +632,6 @@ body{
 		grid-column: 2/3;
 	}
 
-	.indicatieAchtergrondEen{
-		margin-top: 0px !important;
-	}
 
 	.sectie-indicatie-achtergrond{
 		grid-column: 1/2;
@@ -1689,19 +1686,19 @@ body{
 	}
 
 	#caseHeaderImage{
-		grid-column: 3/13;
+		grid-column: 2/7;
 		grid-row: 1/13;
 	}
 
 	.uxHeaderContainer{
 		display: grid;
 		width: 100vw;
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: 100px repeat(5, 1fr);
 		grid-template-rows: 20vh 80vh;
 	}
 
 		#case-header-title{
-			grid-column: 3/12;
+			grid-column: 2/7;
 			grid-row: 1/2;
 			align-self: center;
 			height: 25%;
@@ -1709,11 +1706,15 @@ body{
 
 		.case-header-content{
 			display: grid;
-			grid-template-columns: repeat(12, 1fr);
+			grid-template-columns: 100px repeat(5, 1fr);
 			grid-template-rows: repeat(12, 1fr);
-			height: 72vh;
+			height: 80vh;
 			grid-column: 1/13;
 			grid-row: 2/3;
+		}
+
+		#case-header-description{
+			display: none;
 		}
 
 
