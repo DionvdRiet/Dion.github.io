@@ -68,7 +68,7 @@
 	</section>
 	<div class="welkom-bericht-mobile-container">
 		<div id="welkom-bericht-mobile" class="welkom-bericht">
-			<h1 id="welkom-bericht-title">Welkom</h1>
+			<h1 id="welkom-bericht-title-mobile">Welkom</h1>
 			<div id="welkom-lijn"></div>
 			<h3 id="welkom-bericht-tekst">Mijn naam is Dion van der Riet, 23 jaar en student Communication and Multimedia Design aan de Haagse Hogeschool.</h3>
 		</div>
@@ -90,7 +90,6 @@
 			<h1 id="welkom-projecten-title" class="highlightTitle">Case studies</h1>
 			<div id="welkom-projecten-scroll">
 				<h3>Scroll voor alle projecten</h3>
-				<img src="../Afbeeldingen/arrow-right.svg" width="40px">
 			</div>
 		</div>
 		<div id="projectCardContainer">
@@ -103,10 +102,7 @@
 					<h1>Save Now</h1>
 					<h3>Verbeter je financiële situatie</h3>
 				</div>
-				<div id="interactiveButton" onmouseover="saveNowButtonCard()" onmouseout="saveNowButtonOffCard()">
-					<input type="button" name="button" value="BEKIJK CASE" id="ibiSaveNowCard" class="interactiveButtonIndex" onclick="saveNowWelkom()" >
-					<input type="button" name="button" value="BEKIJK CASE" id="iuSaveNowCard" class="interactiveUnderlayIndex" onclick="saveNowWelkom()" >
-				</div>
+				<input type="button" name="button" value="BEKIJK CASE" id="saveNowButtonMobile" onclick="saveNowWelkom()">
 			</div>
 			<div class="projectCard">
 				<div class="projectCardImage play-next-header"></div>
@@ -117,10 +113,7 @@
 					<h1>Play Next</h1>
 					<h3>Ontdek jouw volgende favoriete game</h3>
 				</div>
-				<div id="interactiveButton" onmouseover="playNextButtonCard()" onmouseout="playNextButtonOffCard()">
-					<input type="button" name="button" value="BEKIJK CASE" id="ibiPlayNextCard" class="interactiveButtonIndex" onclick="playNextWelkom()">
-					<input type="button" name="button" value="BEKIJK CASE" id="iuPlayNextCard" class="interactiveUnderlayIndex" onclick="playNextWelkom()">
-				</div>
+				<input type="button" name="button" value="BEKIJK CASE" id="playNextButtonMobile" onclick="playNextWelkom()">
 			</div>
 			<div class="projectCard">
 				<div class="projectCardImage ben-header"></div>
@@ -131,10 +124,7 @@
 					<h1>Ben Verlengproces</h1>
 					<h3>Verlengen kan simpel zijn</h3>
 				</div>
-				<div id="interactiveButton" onmouseover="benButtonCard()" onmouseout="benButtonOffCard()">
-					<input type="button" name="button" value="BEKIJK CASE" id="ibiBenCard" class="interactiveButtonIndex" onclick="benVerlengprocesWelkom()">
-					<input type="button" name="button" value="BEKIJK CASE" id="iuBenCard" class="interactiveUnderlayIndex" onclick="benVerlengprocesWelkom()">
-				</div>
+				<input type="button" name="button" value="BEKIJK CASE" id="benButtonMobile" onclick="benVerlengprocesWelkom()">
 			</div>
 			<div class="projectCard projectCardLast">
 				<div class="projectCardImage noothulp-header"></div>
@@ -145,16 +135,13 @@
 					<h1>Noothulp</h1>
 					<h3>Muziekles zonder docent</h3>
 				</div>
-				<div id="interactiveButton" onmouseover="noothulpButtonCard()" onmouseout="noothulpButtonOffCard()">
-					<input type="button" name="button" value="BEKIJK CASE" id="ibiNoothulpCard" class="interactiveButtonIndex" onclick="noothulpWelkom()">
-					<input type="button" name="button" value="BEKIJK CASE" id="iuNoothulpCard" class="interactiveUnderlayIndex" onclick="noothulpWelkom()">
-				</div>
+				<input type="button" name="button" value="BEKIJK CASE" id="noothulpButtonMobile" onclick="noothulpWelkom()">
 			</div>
 		</div>
 
 		<!-- Desktop -->
 
-		<h1 class="highlightTitle">Case studies</h1>
+		<h1 class="highlightTitle" id="highlightTitleDesktop">Case studies</h1>
 		<div id="welkom-save-now"></div>
 		<div class="welkom-projecten-info" id="save-now-project-info">
 			<h2 class="welkom-project-name">Save Now</h2>
@@ -181,7 +168,7 @@
 		<div class="welkom-projecten-info" id="ben-project-info">
 			<h2 class="welkom-project-name">Ben verlengproces</h2>
 			<h3>Het creëren van een verbeterde customer journey voor klanten bij Ben die hun account willen verlengen.</h3>
-			<input type="button" name="button" value="BEKIJK CASE" id="benButton" onclick="benVerlengprocesWelkom()" onclick="playNextWelkom()" onmouseover="benWelkomHover()" onmouseout="benWelkomNormal()">
+			<input type="button" name="button" value="BEKIJK CASE" id="benButton" onclick="benVerlengprocesWelkom()" onmouseover="benWelkomHover()" onmouseout="benWelkomNormal()">
 			<!-- <div id="interactiveButton" onmouseover="benButton()" onmouseout="benButtonOff()">
 				<input type="button" name="button" value="BEKIJK CASE" id="ibiBen" class="interactiveButtonIndex" onclick="benVerlengprocesWelkom()">
 				<input type="button" name="button" value="BEKIJK CASE" id="iuBen" class="interactiveUnderlayIndex" onclick="benVerlengprocesWelkom()">
@@ -191,7 +178,7 @@
 		<div class="welkom-projecten-info" id="noothulp-project-info">
 			<h2 class="welkom-project-name">Noothulp</h2>
 			<h3>Het creëren van een applicatie voor kinderen die muziekles volgen om verder thuis te kunnen oefenen zonder muziekdocent.</h3>
-			<input type="button" name="button" value="BEKIJK CASE" id="noothulpButton" onclick="noothulpWelkom()" onclick="playNextWelkom()" onmouseover="noothulpWelkomHover()" onmouseout="noothulpWelkomNormal()">
+			<input type="button" name="button" value="BEKIJK CASE" id="noothulpButton" onclick="noothulpWelkom()" onmouseover="noothulpWelkomHover()" onmouseout="noothulpWelkomNormal()">
 			<!-- <div id="interactiveButton" onmouseover="noothulpButton()" onmouseout="noothulpButtonOff()">
 				<input type="button" name="button" value="BEKIJK CASE" id="ibiNoothulp" class="interactiveButtonIndex" onclick="noothulpWelkom()">
 				<input type="button" name="button" value="BEKIJK CASE" id="iuNoothulp" class="interactiveUnderlayIndex" onclick="noothulpWelkom()">

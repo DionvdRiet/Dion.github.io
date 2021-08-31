@@ -51,8 +51,10 @@ function loadWebsite(){
 
        document.getElementById('welkom-lijn').style.width = "100%";
        document.getElementById('welkom-bericht-title').style.transform = "translateY(0%)";
+       document.getElementById('welkom-bericht-title-mobile').style.transform = "translateY(0%)";
        document.getElementById('welkom-bericht-tekst').style.transform = "translateY(0%)";
        document.getElementById('welkom-bericht-title').style.opacity = "1";
+       document.getElementById('welkom-bericht-title-mobile').style.opacity = "1";
        document.getElementById('welkom-bericht-tekst').style.opacity = "1";
 
 	}, 3000);
@@ -91,8 +93,10 @@ function websiteIsLoaded(){
 
     document.getElementById('welkom-lijn').style.width = "100%";
     document.getElementById('welkom-bericht-title').style.transform = "translateY(0%)";
+    document.getElementById('welkom-bericht-title-mobile').style.transform = "translateY(0%)";
     document.getElementById('welkom-bericht-tekst').style.transform = "translateY(0%)";
     document.getElementById('welkom-bericht-title').style.opacity = "1";
+    document.getElementById('welkom-bericht-title-mobile').style.opacity = "1";
     document.getElementById('welkom-bericht-tekst').style.opacity = "1";
 
 	setTimeout(function(){
