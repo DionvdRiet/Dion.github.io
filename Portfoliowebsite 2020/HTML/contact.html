@@ -44,24 +44,38 @@
 <section class="contactContent">
 	<div class="contactCardContainer">
 		<div class="contactCard" id="contact1">
-			<h2>Linkedin</h2>
-			<p>in/dion-van-der-riet-217479158</p>
-			<div class="contactCardLine"></div>
-			<input type="button" name="button" value="Open in nieuw tabblad" class="contactButton" onclick="linkedIn()">
+			<div class="contactCardTitle">
+				<div class="contactCardIcon" id="contactCardIconEmail"></div>
+				<h2>E-mail</h2>
+			</div>
+			<div class="contactCardDescription">
+				<p>dionvanderriet@gmail.com</p>
+				<input type="button" name="button" value="Kopieer adres" class="buttonSmall">
+			</div>
 		</div>
 		<div class="contactCard" id="contact2">
-			<h2>E-mail</h2>	
-			<p>16102908@student.hhs.nl</p>
-			<div class="contactCardLine"></div>
-			<input type="button" name="button" value="Kopieer adres" id="" class="contactButton">
+			<div class="contactCardTitle">
+				<div class="contactCardIcon" id="contactCardIconTelefoon"></div>
+				<h2>Telefoon</h2>
+			</div>
+			<div class="contactCardDescription">
+				<p>+31 6 21 37 40 84</p>
+				<input type="button" name="button" value="Kopieer nummer" class="buttonSmall">
+			</div>
 		</div>
 		<div class="contactCard" id="contact3">
-			<h2>Telefoonnummer</h2>
-			<p>+31(6) 21 37 40 84</p>
-			<div class="contactCardLine"></div>
-			<input type="button" name="button" value="Kopieer nummer" id="" class="contactButton">
+			<div class="contactCardTitle">
+				<div class="contactCardIcon" id="contactCardIconLinkedin"></div>
+				<h2>Linkedin</h2>
+			</div>
+			<div class="contactCardDescription">
+				<p>in/dion-van-der-riet-217479158</p>
+				<input type="button" name="button" value="Open link" class="buttonSmall">
+			</div>
 		</div>
-		<div id="contactBackground"></div>
+
+		<div id="contactBackground1"></div>
+		<div id="contactBackground2"></div>
 	</div>
 	<footer onmouseleave="emailDown()" class="contactFooter">
 			<div id="footer-transparent-left" onmouseover="emailDown()"></div>
@@ -71,7 +85,7 @@
 					<h1 id="emailCopyButton">KOPIËER</h1>
 				</div>
 			</div>
-			<h1>Dion van der Riet 2021</h1>
+			<h1>Dion van der Riet 2023</h1>
 				<div id="email" onmouseover="emailUp()"></div>
 				<div id="linkedIn" onclick="linkedIn()"></div>
 			<div class="footer-balk" onmouseout="emailDown()"></div>

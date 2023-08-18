@@ -60,7 +60,7 @@
 		<div id="welkom-bericht-desktop" class="welkom-bericht">
 			<h1 id="welkom-bericht-title">Welkom</h1>
 			<div id="welkom-lijn"></div>
-			<h3 id="welkom-bericht-tekst">Mijn naam is Dion van der Riet, 23 jaar en student Communication and Multimedia Design aan de Haagse Hogeschool.</h3>
+			<h3 id="welkom-bericht-tekst">Gepassioneerde UX Designer uit Den Haag.</h3>
 		</div>
 		<div id="welkom-foto-1"></div>
 		<div id="welkom-yellow"></div>
@@ -68,21 +68,24 @@
 	</section>
 	<div class="welkom-bericht-mobile-container">
 		<div id="welkom-bericht-mobile" class="welkom-bericht">
-			<h1 id="welkom-bericht-title-mobile">Welkom</h1>
+			<h2 id="welkom-bericht-title-mobile">Dion van der Riet</h2>
 			<div id="welkom-lijn"></div>
-			<h3 id="welkom-bericht-tekst">Mijn naam is Dion van der Riet, 23 jaar en student Communication and Multimedia Design aan de Haagse Hogeschool.</h3>
+			<p id="welkom-bericht-tekst">Gepassioneerde UX Designer uit Den Haag</p>
 		</div>
 	</div>
 	<section class="welkom-introductie">
+		<h2 id="welkomIntroductieMobileTitle">Over mij</h2>
 		<div id="introductie-1">
 			<h3>
 				Mijn passie voor design is enkele jaren voor mijn studie CMD begonnen bij grafisch design, een essentiële periode waar ik de liefde voor het vak heb leren kennen. In die periode was ik voornamelijk bezig met het creëren van de mooiste ontwerpen voor verschillende online klanten. Tijdens mijn studie heb ik naast het blijven ontwikkelen van mijn designstijl, steeds meer de focus leren leggen op de behoeften van de doelgroep. 
 			</h3>
+			<div class="introductie-1-background"></div>
 		</div>
 		<div id="introductie-2">
 			<h3>
 				Als UX Designer haal ik veel plezier uit samen met de doelgroep komen tot een geschikt ontwerp waarmee hun problemen opgelost worden. Het uitvoeren van een usability test is dankzij de minor Usability Expert geen probleem voor mij, eveneens als verschillende onderzoeksmethoden zoals interviewen en enquêteren. 
 			</h3>
+			<div class="introductie-2-background"></div>
 		</div>
 	</section>
 	<section class="welkom-projecten">
@@ -97,45 +100,45 @@
 				<div class="projectCardImage finance-header"></div>
 				<div class="projectCardInfo">
 					<div class="projectCardLabel">
-						<h2>Appdesign</h2>
+						<h3>Appdesign</h3>
 					</div>
-					<h1>Save Now</h1>
-					<h3>Verbeter je financiële situatie</h3>
+					<h2>Save Now</h2>
+					<p>Verbeter je financiële situatie</p>
+					<input type="button" name="button" value="BEKIJK CASE" id="saveNowButtonMobile" onclick="saveNowWelkom()">
 				</div>
-				<input type="button" name="button" value="BEKIJK CASE" id="saveNowButtonMobile" onclick="saveNowWelkom()">
 			</div>
 			<div class="projectCard">
 				<div class="projectCardImage play-next-header"></div>
 				<div class="projectCardInfo">
 					<div class="projectCardLabel">
-						<h2>Appdesign</h2>
+						<h3>Appdesign</h3>
 					</div>
-					<h1>Play Next</h1>
-					<h3>Ontdek jouw volgende favoriete game</h3>
+					<h2>Play Next</h2>
+					<p>Ontdek jouw volgende favoriete game</p>				
+					<input type="button" name="button" value="BEKIJK CASE" id="playNextButtonMobile" onclick="playNextWelkom()">
 				</div>
-				<input type="button" name="button" value="BEKIJK CASE" id="playNextButtonMobile" onclick="playNextWelkom()">
 			</div>
 			<div class="projectCard">
 				<div class="projectCardImage ben-header"></div>
 				<div class="projectCardInfo">
 					<div class="projectCardLabel">
-						<h2>Webdesign</h2>
+						<h3>Webdesign</h3>
 					</div>
-					<h1>Ben Verlengproces</h1>
-					<h3>Verlengen kan simpel zijn</h3>
+					<h2>Ben Verlengproces</h2>
+					<p>Verlengen kan simpel zijn</p>
+					<input type="button" name="button" value="BEKIJK CASE" id="benButtonMobile" onclick="benVerlengprocesWelkom()">
 				</div>
-				<input type="button" name="button" value="BEKIJK CASE" id="benButtonMobile" onclick="benVerlengprocesWelkom()">
 			</div>
 			<div class="projectCard projectCardLast">
 				<div class="projectCardImage noothulp-header"></div>
 				<div class="projectCardInfo">
 					<div class="projectCardLabel">
-						<h2>Appdesign</h2>
+						<h3>Appdesign</h3>
 					</div>
-					<h1>Noothulp</h1>
-					<h3>Muziekles zonder docent</h3>
+					<h2>Noothulp</h2>
+					<p>Muziekles zonder docent</p>
+					<input type="button" name="button" value="BEKIJK CASE" id="noothulpButtonMobile" onclick="noothulpWelkom()">
 				</div>
-				<input type="button" name="button" value="BEKIJK CASE" id="noothulpButtonMobile" onclick="noothulpWelkom()">
 			</div>
 		</div>
 
@@ -190,12 +193,12 @@
 	<footer onmouseleave="emailDown()">
 		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
 		<div id="email-popup">
-			<input type="text" value="16102908@student.hhs.nl" id="email-popup-text">
+			<input type="text" value="dionvanderriet@gmail.com" id="email-popup-text">
 			<div id="emailCopy" onclick="emailCopied()">
-				<h1 id="emailCopyButton">KOPIËER</h1>
+				<h5 id="emailCopyButton">KOPIËER</h5>
 			</div>
 		</div>
-		<h1>Dion van der Riet 2021</h1>
+		<h5>Dion van der Riet 2023</h5>
 			<div id="email" onmouseover="emailUp()"></div>
 			<div id="linkedIn" onclick="linkedIn()"></div>
 		<div class="footer-balk" onmouseout="emailDown()"></div>

@@ -627,6 +627,8 @@ function caseSwitchAnimationDown(){
 	setTimeout(noOpacity, 600);
 	document.getElementById('case-header-title').style.opacity = "1";
 	document.getElementById("case-header-title").style.transform = "translateY(0%)";
+    document.getElementById("case-header-line").style.width = "100%";
+    document.getElementById("projectDescription").style.opacity = "1";
 	document.getElementById('case-header-title-responsive').style.opacity = "1";
 	document.getElementById("case-header-title-responsive").style.transform = "translateY(0%)";
 }
@@ -643,7 +645,7 @@ function noOpacity(){
     document.getElementById("projectDescription").style.opacity = "1";
     document.getElementById("projectDescription").style.transform = "translateY(0%)"
 
-    document.getElementById("caseHeaderImage").style.backgroundPosition = "50% 0%";
+    document.getElementById("caseHeaderImage").style.backgroundPosition = "50% 20%";
     document.getElementById("caseHeaderImage").style.height = "100%";
 
     document.getElementById("case-header-description").style.transform = "translateX(0%)"
