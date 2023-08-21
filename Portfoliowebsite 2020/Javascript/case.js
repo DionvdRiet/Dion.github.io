@@ -527,6 +527,23 @@ function noothulpWelkom(){
 	setTimeout("location.href = 'noothulp.html';",1500)
 }
 
+function buttonOn(){
+    document.getElementById("volgendeCaseImage").style.backgroundSize = "105%";
+    document.getElementById("volgendeCaseImage").style.backgroundPosition = "50% 60%";
+    document.getElementById("volgendeCaseButton").style.backgroundPosition = "15% 80%";
+    document.getElementById("volgendeCaseButton").style.backgroundPosition = "90% 46%";
+    document.getElementById("volgendeCaseButton").style.backgroundSize = "8%";
+    document.getElementById("volgendeCaseButton").style.padding = "16px 60px 16px 32px";
+}
+
+function buttonOff(){
+    document.getElementById("volgendeCaseImage").style.backgroundSize = "100%";
+    document.getElementById("volgendeCaseImage").style.backgroundPosition = "50% 50%";
+
+    document.getElementById("volgendeCaseButton").style.backgroundSize = "0%";
+    document.getElementById("volgendeCaseButton").style.padding = "16px 32px";
+}
+
 function saveNowNieuw(){
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
