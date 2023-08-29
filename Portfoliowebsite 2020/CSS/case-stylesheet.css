@@ -2710,24 +2710,6 @@ body{
 			z-index: 3;
 		}
 
-	.quote{
-		margin-top: 30px;
-		grid-column: 1/4;
-		padding: 10% 0px;
-	}
-
-		.quote li{
-			line-height: 2;
-		}
-
-		.quote h3{
-			font-family: paralucent, sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			font-size: 36px;
-			color: #131824;
-		}
-
 	.focusUitleg{
 		grid-column: 1/4;
 	}
@@ -2924,8 +2906,92 @@ body{
 
 			.researchContainer{
 				display: grid;
+				grid-template-columns: 50px auto 50px;
+				grid-template-rows: auto auto 50px auto auto;
+				grid-column: 1/4;
+
+			}
+
+			.quote{
 				grid-column: 1/4;
 			}
+
+				.quote h3{
+					font-family: paralucent, sans-serif;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 36px;
+					color: #131824;
+				}
+
+				.quote p{
+					margin-left: 60px;
+				}
+
+				blockquote{
+					font-family: paralucent, sans-serif;
+					font-weight: 500;
+					font-size: 48px;
+					margin: 48px 60px;
+					font-style: normal;
+					color:#131824;
+					position: relative;
+				}
+
+					blockquote span{
+						font-weight: 700;
+						color: #131824;
+					}
+
+				#research1, #research2{
+					grid-column: 2/3;
+					border-radius: 24px;
+				}
+
+				#research1{
+					grid-row: 1/3;
+				}
+
+				#research2{
+					grid-row: 4/6;
+				}
+
+				#researchImage{
+					align-self: center;
+					z-index: -1;
+					grid-column: 1/4;
+					grid-row: 2/5;
+					height: 100%;
+					background-color: #F6F6F6;
+				}
+
+				.quote-getal-flex{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+				}
+
+				.quote-getal{
+					width: 100%;
+				}
+
+					.quote-getal h2, .quote-getal p{
+						text-align: center;
+					}
+
+					.quote-getal h2{
+						font-size: 72px;
+						margin-bottom: 8px;
+					}
+
+				#gamingResearch2{
+					margin:48px 60px;
+				}
+
+					#gamingResearch2 p{
+						color: #131824;
+						margin-left: 0px;
+					}
 
 			.responsive-eindresultaat{
 				grid-column: 2/3;
