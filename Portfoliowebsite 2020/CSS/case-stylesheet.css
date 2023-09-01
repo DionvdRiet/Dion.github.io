@@ -643,7 +643,6 @@ body{
 		/*background-color: red;*/
 		/*flex-direction: column;*/
 		margin: 64px;
-
 	}
 
 		.eindresultaatTileTekst h1{
@@ -904,7 +903,6 @@ body{
 
 		.wideImage{
 			display: grid;
-			grid-template-columns: 300px auto 300px;
 			grid-column:1/4;
 		}
 
@@ -930,7 +928,6 @@ body{
 		width: 100vw;
 		display: grid;
 		grid-template-columns: 300px 1fr 4% 1fr 4% 1fr 300px;
-		margin-bottom: -8%;
 	}
 
 	#focustekst{
@@ -944,7 +941,7 @@ body{
 		height: 500px;
 	}
 
-	#focus1 h1, #focus2 h1, #focus3 h1{
+	#focus1 h2, #focus2 h2, #focus3 h2{
 		font-size: 400px;
 		z-index: -1;
 		margin: 0px;
@@ -955,9 +952,7 @@ body{
 		position: relative;
 	}
 
-	#focus1 h2, #focus2 h2, #focus3 h2{
-		background-color: white;
-		padding:24px 60px;
+	#focus1 h3, #focus2 h3, #focus3 h3{
 		position: absolute;
 		align-self: center;
 		white-space: nowrap;
@@ -993,21 +988,6 @@ body{
 
 		.focusUitleg h2, .focusUitleg h3{
 			grid-column: 2/3;
-			font-style: italic;
-		}
-
-		.focusUitleg h2{
-			color: #131824;
-		}
-
-		.focusUitleg h3{
-			color: #5c5c5c;
-		}
-
-		.focusUitleg span{
-			font-weight: 700;
-			font-size: 20px;
-			color: #131824;
 		}
 
 		.focusUitlegGrijs{
@@ -1018,10 +998,6 @@ body{
 			transform: translateY(-100%);
 			z-index: -1;
 		}
-
-
-
-
 
 	.quote{
 		width: 100%;
@@ -1688,6 +1664,10 @@ body{
 				transition: background-color .3s cubic-bezier(.365,.305,0,1);
 			}
 
+			.focusPoint{
+				display: none;
+			}
+
 
 /* MOBILE */
 
@@ -1867,9 +1847,7 @@ body{
 		align-self: center;
 	}
 
-	#focus1 h2, #focus2 h2, #focus3 h2{
-		background-color: white;
-		padding:24px 60px;
+	#focus1 h3, #focus2 h3, #focus3 h3{
 		/*position: relative;*/
 		align-self: center;
 		white-space: nowrap;
@@ -1889,7 +1867,6 @@ body{
 
 	.focusTekst{
 		z-index: 3;
-		font-size: 72px; 
 	}
 
 	#focus1{
@@ -1909,21 +1886,16 @@ body{
 
 	#focus1Getal, #focus2Getal, #focus3Getal{
 		align-self: center;
-		font-size: 800px !important;
+		font-size: 400px !important;
+		text-align: center;
 	}
 
-	#focus1Yellow, #focus2Yellow, #focus3Yellow{
-		width: 100%;
-		height: 100%;
-		background-color: #FFED00;
-	}
+	.focusPoint{
+		display: inline;
+		position: relative;
+		color: #FFED00;
+		font-size: 120px;
 
-	#focus1Yellow, #focus3Yellow, #focus2Getal{
-		grid-column: 1/2;
-	}
-
-	#focus2Yellow, #focus1Getal, #focus3Getal{
-		grid-column: 3/4;
 	}
 
 	#welkom-introductie-title, #focus-lijn{
@@ -2609,6 +2581,10 @@ body{
 				margin-left: 24px;
 			}
 
+	.prototypeContainer{
+		grid-template-columns: 50px auto 50px;
+	}
+
 	.eindresultaat-section{
 		display: grid;
 		grid-template-columns: 50px auto auto auto 50px;
@@ -2689,10 +2665,6 @@ body{
 				font-size: 36px;
 			}
 
-			#expenses-tekst h3, #toevoegen-tekst h3{
-				font-size: 30px;
-			}
-
 		.eindresultaat-rechts{
 			grid-column: 3/5;
 			margin: -30px;
@@ -2770,7 +2742,6 @@ body{
 			display: grid;
 			grid-template-columns: 50px auto 50px;
 			width:100vw;
-			/*margin-top:100px;*/
 		}
 
 			.minder-margin{
@@ -2780,72 +2751,50 @@ body{
 
 			.responsive-eindresultaat-beschrijving{
 				z-index: 3;
-				grid-column: 1/4;
-				height: 500px;
+				grid-column: 2/3;
 				width: 100%;
 				background-color: white;
 			}
 
-				.responsive-eindresultaat-beschrijving *{
-					padding: 3%;
+				.responsive-eindresultaat-beschrijving h4{
+					color: #F22C50;
+					margin-bottom: 0px;
 				}
 
 				.responsive-eindresultaat-beschrijving h2{
-					font-size: 48px;
-					color: #131824;
-					margin-bottom: -3%;
+					margin-top: 0px;
+					margin-bottom: 20px;
 				}
 
-				.responsive-eindresultaat-beschrijving h2{
-					border-bottom: 8px solid #0B41DA;
-				}
-
-				.gaming-border h2{
-					border-bottom: 8px solid #F22B50;
-				}
-
-				.responsive-eindresultaat-beschrijving-lijn{
-					padding: 3%;
-					height: 1px;
+				.responsive-eindresultaat-line{
+					height: 2px;
 					width: 100%;
-					background-color: #0B41DA;
+					background-color: #F6F6F6;
 				}
 
 				.responsive-eindresultaat-beschrijving p{
-					font-size: 40px;
-					font-family: paralucent, sans-serif;
-					font-style: normal;
-					font-weight: 400;
-					color: #5c5c5c;
+					margin-top: 20px;
 				}
 
-			.eindresultaat-enkel,.eindresultaat-backdrop-blue, .eindresultaat-backdrop-white{
+			.eindresultaat-enkel-links{
 				display: grid;
 				grid-column: 1/4;
-				grid-template-columns: 50px auto 50px;
-				width: 100%;
-				height: auto;
-			}
-
-			.padding-b-10{
-				padding-top:10%;
-			}
-
-			.padding-b-20{
-				padding-top:20%;
-			}
-
-			.padding-o-10{
-				padding-bottom:10%;
-			}
-
-			.padding-o-20{
-				padding-bottom:20%;
-			}
-
-			.eindresultaat-enkel{
+				grid-template-columns: 50px repeat(6, 1fr) 50px;
 				position: relative;
+				width: 100%;
+				margin-top: 120px;
+				margin-bottom: 40px;
 			}
+
+				.eindresultaat-enkel-links img{
+					grid-column: 2/6;
+					box-shadow: 0px 8px 16px rgba(112, 112, 112, 0.20);
+				}
+
+				.eindresultaat-enkel-links .backdrop-grey{
+					grid-column: 1/8;
+					border-radius: 0px 0px 40px 0px;
+				}
 
 			.backdrop-grey{
 				display: flex;
@@ -2853,19 +2802,10 @@ body{
 				align-self: center;
 				vertical-align: middle;
 				position: absolute;
-				grid-column: 1/4;
 				z-index: -1;
 				background-color: #F9F9F9;
-				height: 1000px;
+				height: 40%;
 				width: 100%; 
-			}
-
-			.eindresultaat-backdrop-blue{
-				background-color: #0B41DA;
-			}
-
-			.eindresultaat-backdrop-red{
-				background-color: #F22B50;
 			}
 
 			.eindresultaat-backdrop-white{
@@ -2993,8 +2933,30 @@ body{
 						margin-left: 0px;
 					}
 
+			.wideImage{
+				grid-template-columns: 50px auto 50px;
+			}
+
 			.responsive-eindresultaat{
 				grid-column: 2/3;
+			}
+
+			.eindresultaatTileTekst{
+				margin: 24px 0px;
+			}
+
+			.eindresultaatTileTekst h2{
+				margin-top:0px;
+				margin-bottom: 0px;
+				font-size: 64px;
+			}
+
+			#eindresultaatImageMobile{
+				width: 100%;
+				grid-column: 1/4;
+				height: 100vh;
+				background-position: 10% 50%;
+				background-size: cover;
 			}
 
 			.volgendeCaseStatic, .volgendeCaseBen{
@@ -3056,7 +3018,6 @@ body{
 					flex-direction: column;
 					grid-column: 2/3;
 					opacity: 1;
-					/*transform: translateY(20%);*/
 				}
 
 					#volgendeCaseCardText h3{
@@ -3086,11 +3047,12 @@ body{
 	}
 
 	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-introductie-title-responsive,
-		#welkom-projecten-scroll, .finance-header-responsive, .gaming-header-responsive, .eindresultaat-responsive, #volgendeCaseCard, .welkom-bericht-mobile-container, #case-header-description-mobile{
+		#welkom-projecten-scroll, .finance-header-responsive, .gaming-header-responsive, .eindresultaat-responsive, #volgendeCaseCard, .welkom-bericht-mobile-container, 
+		#case-header-description-mobile{
 		display: none;
 	}
 
-	#focus1Yellow, #focus2Yellow, #focus3Yellow, .play-next-header-responsive, .responsive-header-image{
+	.play-next-header-responsive, .responsive-header-image{
 		display: none;
 	}
 
@@ -3352,10 +3314,6 @@ body{
 		margin-bottom: -8px;
 	}
 
-	h3{
-		font-style: normal;
-		line-height: 34px;
-	}
 
 	#projectDescriptionContainer{
 		grid-template-columns: repeat(12, 1fr);
@@ -3434,8 +3392,25 @@ body{
 		grid-column: 2/3;
 	}
 
+	.wideImage{
+		grid-template-columns: 300px auto 300px;
+	}
+
 	#volgendeCaseNieuwTekst h1{
 		width: 200%;
+	}
+
+	#focus1 h2, #focus2 h2, #focus3 h2{
+		font-size: 400px;
+		align-self: center;
+	}
+
+	#focus1 h3, #focus2 h3, #focus3 h3{
+		position: absolute;
+		align-self: center;
+		white-space: nowrap;
+		padding: 24px 60px;
+		background-color: white;
 	}
 
 	input[type="button"]{
