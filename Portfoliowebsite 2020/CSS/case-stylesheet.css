@@ -2641,7 +2641,7 @@ body{
 
 		.eindresultaat-links{
 			grid-column: 2/4;
-			margin: -30px;
+			margin: 0px;
 		}
 
 		#expenses-tekst, #toevoegen-tekst{
@@ -2666,8 +2666,7 @@ body{
 			}
 
 		.eindresultaat-rechts{
-			grid-column: 3/5;
-			margin: -30px;
+			margin: 0px;
 		}
 
 		#toevoegen-tekst{
@@ -2776,24 +2775,60 @@ body{
 					margin-top: 20px;
 				}
 
-			.eindresultaat-enkel-links{
+			.eindresultaat-links, .eindresultaat-rechts, .eindresultaat-dubbel{
 				display: grid;
 				grid-column: 1/4;
-				grid-template-columns: 50px repeat(6, 1fr) 50px;
 				position: relative;
-				width: 100%;
+				width: 100vw;
 				margin-top: 120px;
 				margin-bottom: 40px;
 			}
 
-				.eindresultaat-enkel-links img{
+			.eindresultaat-links, .eindresultaat-rechts{
+				grid-template-columns: 50px repeat(6, 1fr) 50px;
+			}
+
+			.eindresultaat-dubbel{
+				grid-template-columns: 50px 1fr 40px 1fr 50px;
+			}
+
+				.eindresultaat-links img{
 					grid-column: 2/6;
 					box-shadow: 0px 8px 16px rgba(112, 112, 112, 0.20);
 				}
 
-				.eindresultaat-enkel-links .backdrop-grey{
+				.eindresultaat-links .backdrop-grey{
 					grid-column: 1/8;
 					border-radius: 0px 0px 40px 0px;
+				}
+
+				.eindresultaat-rechts img{
+					grid-column: 4/8;
+					box-shadow: 0px 8px 16px rgba(112, 112, 112, 0.20);
+				}
+
+				.eindresultaat-rechts .backdrop-grey{
+					grid-column: 2/9;
+					border-radius: 0px 0px 0px 40px;
+				}
+
+				.eindresultaat-dubbel img{
+					box-shadow: 0px 8px 16px rgba(112, 112, 112, 0.20);
+				}
+
+					.eindresultaat-dubbel-links{
+						grid-column: 2/3;
+						margin-bottom: 240px;
+					}
+
+					.eindresultaat-dubbel-rechts{
+						grid-column: 4/5;
+						margin-top: 240px;
+					}
+
+
+				.eindresultaat-dubbel .backdrop-grey{
+					grid-column: 1/6;
 				}
 
 			.backdrop-grey{
@@ -2935,10 +2970,6 @@ body{
 
 			.wideImage{
 				grid-template-columns: 50px auto 50px;
-			}
-
-			.responsive-eindresultaat{
-				grid-column: 2/3;
 			}
 
 			.eindresultaatTileTekst{
