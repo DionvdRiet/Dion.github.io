@@ -982,6 +982,7 @@ body{
 	}
 
 	.focusUitleg{
+		position: relative;
 		grid-column: 2/3;
 		padding: 6%;
 	}
@@ -991,11 +992,12 @@ body{
 		}
 
 		.focusUitlegGrijs{
+			position: absolute;
 			grid-column: 1/2;
 			width: 30vw;
-			height: 30vh;
+			height: 50%;
+			border-radius: 0px 60px 60px 0px;
 			background-color: #F9F9F9;
-			transform: translateY(-100%);
 			z-index: -1;
 		}
 
@@ -2737,6 +2739,11 @@ body{
 			font-size: 34px;
 		}
 
+		.focusUitlegGrijs{
+			left: -50px;
+			bottom: 0px;
+		}
+
 		.eindresultaat-responsive{
 			display: grid;
 			grid-template-columns: 50px auto 50px;
@@ -3442,6 +3449,11 @@ body{
 		white-space: nowrap;
 		padding: 24px 60px;
 		background-color: white;
+	}
+
+	.focusUitlegGrijs{
+		left:-300px;
+		bottom: 20px;
 	}
 
 	input[type="button"]{
