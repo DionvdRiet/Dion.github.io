@@ -904,19 +904,23 @@ body{
 		.wideImage{
 			display: grid;
 			grid-column:1/4;
+			grid-template-rows: auto auto auto;
+/*			position: relative;*/
 		}
 
 		.wideImage > img{
+			grid-row: 1/4;
 			grid-column: 2/3;
-			position: relative;
+/*			position: relative;*/
 			border-radius: 12px;
 		}
 
-		#imageBackground{
+		.imageBackground{
 			grid-column: 1/4;
-			position: absolute;
+			grid-row: 2/3;
+/*			position: relative;*/
 			width: 100%;
-			height: 200px;
+			height: 10%;
 			align-self: center;
 			background-color: #F6F6F6;
 			z-index: -1;
@@ -1039,15 +1043,13 @@ body{
 
 		blockquote{
 			font-family: paralucent, sans-serif;
-			font-weight: 500;
-			font-size: 24px;
-			font-style: italic;
+			font-weight: 300;
 			color:#131824;
 			position: relative;
 		}
 
 			blockquote span{
-				font-weight: 700;
+				font-weight: 500;
 				color: #131824;
 			}
 
@@ -1390,152 +1392,7 @@ body{
 			height: 500px;
 		}
 
-		.contactContent{
-			width: 100vw;
-			height: 100vh;
-			position: absolute;
-			z-index: -1;
-			background: url('../Afbeeldingen/Contact/contactBackground.jpg');
-			background-size: cover;
-			background-position: top;
-		}
-
-			.contactCard{
-				display: grid;
-				grid-template-rows: 60px 80px;
-				align-self: center;
-				height: 140px;
-				background-color: white;
-				position: relative;
-				border-radius: 12px;
-				border:1px solid #F6F6F6;
-			}
-
-				.contactCardTitle{
-					display: grid;
-					grid-template-columns: 60px 1fr;
-					position: absolute;
-					grid-column: 1/3;
-					grid-row: 1/2;
-					top:0;
-					left: 0;
-					width: 100%;
-					height: 60px;
-					border-bottom:1px solid #F6F6F6;
-
-				}
-
-					.contactCardIcon{
-						grid-column: 1/2;
-						width: 60px;
-						height: 60px;
-						background-color: #F6F6F6;
-					}
-
-					#contactCardIconEmail{
-						background-image: url(../Afbeeldingen/emailGrey.svg);
-						background-size: 40%;
-						background-repeat: no-repeat;
-						background-position: center;
-					}
-
-					#contactCardIconTelefoon{
-						background-image: url(../Afbeeldingen/phone.svg);
-						background-size: 40%;
-						background-repeat: no-repeat;
-						background-position: center;
-					}
-
-					#contactCardIconLinkedin{
-						background-image: url(../Afbeeldingen/linkedinGrey.svg);
-						background-size: 40%;
-						background-repeat: no-repeat;
-						background-position: center;
-					}
-
-					.contactCardTitle h2{
-						grid-column: 2/3;
-						margin: 0px 0px 0px 24px;
-						padding: 0px !important;
-						align-self: center;
-					}
-
-				.contactCardDescription{
-					display: flex;
-					grid-column: 1/3;
-					grid-row: 2/3;
-					margin-left: 24px;
-				}
-
-				.contactCard p{
-					color: #71747C;
-					font-size: 16px;
-					letter-spacing: 1px;
-					align-self: center;
-				}
-
-				.contactCardLine{
-					width: 10%;
-					height: 1%;
-					background-color: #FFED00;
-					position: absolute;
-					bottom: 35%;
-				}
-
-				.buttonSmall{
-					border-top: 2px solid #FFED00;
-					font-style: normal;
-					font-size: 14px !important;
-					text-align: left;
-					letter-spacing: 0px;
-					padding: 16px 20px 16px 20px !important;
-					position: absolute;
-					right: 20px;
-					align-self: center;
-					margin-top: 0px !important;
-				}
-
-			.contactCardContainer{
-				grid-column: 1/17;
-				position: absolute;
-				display: grid;
-				grid-template-columns: repeat(17, 1fr);
-				grid-column-gap: 1vw;
-				width: 100vw;
-				height: 92vh;
-			}
-
-			#contact1{
-				grid-column: 2/7;
-			}
-
-			#contact2{
-				grid-column: 7/12;
-			}
-
-			#contact3{
-				grid-column: 12/17;
-			}
-
-			#contactBackground1, #contactBackground2{
-				height: 25vh;
-				position: absolute;
-				width: 100%;
-				z-index: -1;
-				border-radius: 12px 0px 0px 12px;
-			}
-
-			#contactBackground1{
-				grid-column: 1/5;
-				background-color: #F6F6F6;
-				top:16vh;
-			}
-
-			#contactBackground2{
-				grid-column: 14/18;
-				background-color: #FFED00;
-				bottom:20vh;
-			}
+		
 
 	footer{
 		display: grid;
@@ -1668,6 +1525,122 @@ body{
 
 			.focusPoint{
 				display: none;
+			}
+
+			.color-sn{
+				color: #0B41DA;
+			}
+
+			.color-pn{
+				color: #F22C50;
+			}
+
+			.color-bv{
+				color: #00AEEF;
+			}
+
+			.color-nh{
+				color: #6400D4;
+			}
+
+		.contactContent{
+			position: absolute;
+			z-index: -1;
+			background: url('../Afbeeldingen/Contact/contactBackground.jpg');
+			background-size: cover;
+			background-position: top;
+		}
+
+			.contactCard{
+				display: grid;
+				align-self: center;
+				background-color: white;
+				position: relative;
+				border-radius: 12px;
+				border:1px solid #F6F6F6;
+			}
+
+				.contactCardTitle{
+					display: grid;
+					position: absolute;
+					top:0;
+					left: 0;
+					width: 100%;
+					border-bottom:1px solid #F6F6F6;
+				}
+
+					.contactCardIcon{
+						grid-column: 1/2;
+						background-color: #F6F6F6;
+					}
+
+					#contactCardIconEmail{
+						background-image: url(../Afbeeldingen/emailGrey.svg);
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+
+					#contactCardIconTelefoon{
+						background-image: url(../Afbeeldingen/phone.svg);
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+
+					#contactCardIconLinkedin{
+						background-image: url(../Afbeeldingen/linkedinGrey.svg);
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+
+					.contactCardTitle h2{
+						align-self: center;
+					}
+
+				.contactCardDescription{
+					display: flex;
+				}
+
+				.contactCard p{
+					color: #71747C;
+					align-self: center;
+				}
+
+				.contactCardLine{
+					background-color: #FFED00;
+					position: absolute;
+				}
+
+				.buttonSmall{
+					border-top: 2px solid #FFED00;
+					font-style: normal;
+					font-size: 14px !important;
+					text-align: left;
+					letter-spacing: 0px;
+					padding: 16px 20px 16px 20px !important;
+					position: absolute;
+					right: 20px;
+					align-self: center;
+					margin-top: 0px !important;
+				}
+
+			.contactCardContainer{
+				position: absolute;
+				display: grid;
+			}
+
+			#contactBackground1, #contactBackground2{
+				position: absolute;
+				width: 100%;
+				z-index: -1;
+				border-radius: 12px 0px 0px 12px;
+			}
+
+			#contactBackground1{
+				background-color: #F6F6F6;
+			}
+
+			#contactBackground2{
+				background-color: #FFED00;
 			}
 
 
@@ -1974,7 +1947,7 @@ body{
 	}
 
 	#desktop, .desktop-image, #eindresultaat-section-desktop, .parallax-container, .header-extra, #volgendeCase, #volgendeCaseStatic,
-	.welkom-projecten-info, #welkom-bericht-desktop, #highlightTitleDesktop{
+	.welkom-projecten-info, #welkom-bericht-desktop, #highlightTitleDesktop, .desktopImage{
 		display: none;
 	}
 
@@ -2238,6 +2211,10 @@ body{
 		background-color: white;
 		padding-right: 4px;
 		border: none;
+	}
+
+	.finance-case-header{
+		background-position: 30% 50% !important;
 	}
 
 	.index-header{
@@ -2763,7 +2740,6 @@ body{
 			}
 
 				.responsive-eindresultaat-beschrijving h4{
-					color: #F22C50;
 					margin-bottom: 0px;
 				}
 
@@ -2912,18 +2888,13 @@ body{
 
 				blockquote{
 					font-family: paralucent, sans-serif;
-					font-weight: 500;
-					font-size: 48px;
+					font-size: 44px;
+					line-height: 68px;
 					margin: 48px 60px;
 					font-style: normal;
 					color:#131824;
 					position: relative;
 				}
-
-					blockquote span{
-						font-weight: 700;
-						color: #131824;
-					}
 
 				#research1, #research2{
 					grid-column: 2/3;
@@ -3073,6 +3044,127 @@ body{
 						justify-content: center;
 						grid-column: 1/4;
 					}
+
+			.contactContent{
+				width: 100vw;
+				height: 100vh;
+			}
+
+				.contactCard{
+					grid-template-rows: 120px auto;
+					height: auto;
+				}
+
+					.contactCardTitle{
+						grid-template-columns: 120px 1fr;
+						grid-column: 1/3;
+						grid-row: 1/2;
+						height: 120px;
+					}
+
+						.contactCardIcon{
+							grid-column: 1/2;
+							width: 120px;
+							height: 120px;
+						}
+
+						#contactCardIconEmail{
+							background-size: 40%;
+						}
+
+						#contactCardIconTelefoon{
+							background-size: 40%;
+						}
+
+						#contactCardIconLinkedin{
+							background-size: 40%;
+						}
+
+						.contactCardTitle h2{
+							grid-column: 2/3;
+							margin: 0px 0px 0px 24px;
+							padding: 0px !important;
+						}
+
+					.contactCardDescription{
+						display: grid;
+						grid-template-columns: auto;
+						grid-template-rows: 100px 200px;
+						grid-column: 1/3;
+						grid-row: 2/3;
+						margin-left: 24px;
+						height: auto;
+					}
+
+					.contactCard p{
+						grid-column: 1/2;
+						grid-row: 1/2;
+						letter-spacing: 1px;
+						margin-top: 80px;
+						margin-left: 20px;
+					}
+
+					.contactCardLine{
+						width: 10%;
+						height: 1%;
+						bottom: 35%;
+					}
+
+					.buttonSmall{
+						grid-column: 1/2;
+						grid-row: 2/3;
+						border-top: 2px solid #FFED00;
+						font-style: normal;
+						font-size: 32px !important;
+						text-align: left;
+						letter-spacing: 0px;
+						padding: 32px 40px 32px 40px !important;
+						position: absolute;
+						left: 40px;
+						align-self: center;
+						margin-top: 80px !important;
+					}
+
+				.contactCardContainer{
+					grid-column: 1/17;
+					grid-template-columns: 50px auto auto 50px;
+					grid-template-rows: auto auto 0px auto 0px auto auto;
+					grid-column-gap: 1vw;
+					height: 100vh;
+					width: 100vw;
+				}
+
+				#contact1, #contact2, #contact3{
+					grid-column: 2/4;
+				}
+
+				#contact1{
+					grid-row: 2/3;
+				}
+
+				#contact2{
+					grid-row: 4/5;
+				}
+
+				#contact3{
+					grid-row: 6/7;
+				}
+
+				#contactBackground1, #contactBackground2{
+					height: 25vh;
+				}
+
+				#contactBackground1{
+					grid-column: 1/3;
+					top:16vh;
+				}
+
+				#contactBackground2{
+					grid-column: 4/6;
+					bottom:20vh;
+				}
+
+
 }
 
 /* DESKTOP*/
@@ -3086,7 +3178,7 @@ body{
 
 	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-introductie-title-responsive,
 		#welkom-projecten-scroll, .finance-header-responsive, .gaming-header-responsive, .eindresultaat-responsive, #volgendeCaseCard, .welkom-bericht-mobile-container, 
-		#case-header-description-mobile{
+		#case-header-description-mobile, .mobileImage{
 		display: none;
 	}
 
@@ -3375,6 +3467,11 @@ body{
 		grid-gap: 16px;
 	}
 
+	blockquote{
+		font-size: 22px;
+		line-height: 32px;
+	}
+
 	#research1{
 		grid-column: 1/2;
 		grid-template-rows: 1/2;
@@ -3410,6 +3507,10 @@ body{
 		border-radius: 12px 0px 0px 12px;
 	}
 
+		#research2 blockquote{
+			padding-right: 40px;
+		}
+
 	#researchBron{
 		font-style: italic;
 		font-weight: 500;
@@ -3417,12 +3518,11 @@ body{
 		bottom: 0px;
 		display: inline;
 		margin-left:4px;
-		
 	}
 
-	/*.quote{
-		grid-column: 1/3;
-	}*/
+	#researchBron{
+		margin-left: 40px;
+	}
 
 	.image{
 		margin-top: 20px;
@@ -3475,6 +3575,110 @@ body{
 		grid-template-columns: 140px auto auto 200px 50px 50px 1%;
 		grid-template-rows: 50px 50px;
 	}
+
+	.contactContent{
+		width: 100vw;
+		height: 100vh;
+	}
+
+		.contactCard{
+			grid-template-rows: 60px 80px;
+			height: 140px;
+		}
+
+			.contactCardTitle{
+				grid-template-columns: 60px 1fr;
+				grid-column: 1/3;
+				grid-row: 1/2;
+				height: 60px;
+			}
+
+				.contactCardIcon{
+					grid-column: 1/2;
+					width: 60px;
+					height: 60px;
+				}
+
+				#contactCardIconEmail{
+					background-size: 40%;
+				}
+
+				#contactCardIconTelefoon{
+					background-size: 40%;
+				}
+
+				#contactCardIconLinkedin{
+					background-size: 40%;
+				}
+
+				.contactCardTitle h2{
+					grid-column: 2/3;
+					margin: 0px 0px 0px 24px;
+					padding: 0px !important;
+				}
+
+			.contactCardDescription{
+				grid-column: 1/3;
+				grid-row: 2/3;
+				margin-left: 24px;
+			}
+
+			.contactCard p{
+				letter-spacing: 1px;
+			}
+
+			.contactCardLine{
+				width: 10%;
+				height: 1%;
+				bottom: 35%;
+			}
+
+			.buttonSmall{
+				border-top: 2px solid #FFED00;
+				font-style: normal;
+				font-size: 14px !important;
+				text-align: left;
+				letter-spacing: 0px;
+				padding: 16px 20px 16px 20px !important;
+				position: absolute;
+				right: 20px;
+				align-self: center;
+				margin-top: 0px !important;
+			}
+
+		.contactCardContainer{
+			grid-column: 1/16;
+			grid-template-columns: repeat(17, 1fr);
+			grid-column-gap: 1vw;
+			height: 92vh;
+			width: 100%;
+		}
+
+		#contact1{
+			grid-column: 2/7;
+		}
+
+		#contact2{
+			grid-column: 7/12;
+		}
+
+		#contact3{
+			grid-column: 12/17;
+		}
+
+		#contactBackground1, #contactBackground2{
+			height: 25vh;
+		}
+
+		#contactBackground1{
+			grid-column: 1/5;
+			top:16vh;
+		}
+
+		#contactBackground2{
+			grid-column: 14/18;
+			bottom:20vh;
+		}
 
 	/*Animaties*/
 
