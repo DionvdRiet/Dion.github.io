@@ -304,10 +304,6 @@ body{
 				opacity: 1;
 			}
 
-				.welkom-projecten-info h1{
-					font-size: 60px;
-				}
-
 				.welkom-projecten-info h2{
 					margin-top: 0px;
 				}
@@ -400,7 +396,7 @@ body{
 					width: 100%;
 					height: 100%;
 					grid-column: 9/13;
-					grid-row: 8/13;
+					grid-row: 7/13;
 					background-color: #FFED00;
 					border-radius: 12px 0px 0px 0px;
 					display: flex;
@@ -411,10 +407,11 @@ body{
 				}
 
 					#case-header-description p{
+						color: #131824;
+						font-weight: 500;
 						align-self: center;
 						padding: 2% 12% 2% 8%;
 						margin: none;
-						font-size: 1.1rem;
 						line-height: 2em;
 						/*align-self: center;*/
 					}
@@ -459,13 +456,11 @@ body{
 		}
 
 		#case-header-title-responsive h1{
-			font-size: 120px;
 			text-shadow: 2px 2px 4px rgba(37,46,69,0.04);
 			text-align: center;
 		}
 
 		#case-header-title-responsive h3{
-			font-size: 40px;
 			text-shadow: 2px 2px 4px rgba(37,46,69,0.30);
 			text-align: center;
 		}
@@ -517,6 +512,10 @@ body{
  		color: #5C5C5C;
  		text-align: left;
  	}
+
+ 		p > span{
+ 			font-weight: 700;
+ 		}
 
 		#case-title{
 			z-index: 1;
@@ -608,10 +607,6 @@ body{
 		border-radius: 0px 0px 12px 0px;
 	}
 
-		.sectie-indicatie-achtergrond h2{
-			margin-left: 24px;		
-		}
-
 	#sectie-indicatie-achtergrond{
 		transform: translateX(0px);
 		transition: transform 0.3s cubic-bezier(.365,.305,0,1);
@@ -643,11 +638,7 @@ body{
 		/*background-color: red;*/
 		/*flex-direction: column;*/
 		margin: 64px;
-	}
-
-		.eindresultaatTileTekst h1{
-			margin:0px;
-		}
+	}	
 
 	.eindresultaat-section{
 		display: grid;
@@ -662,7 +653,6 @@ body{
 		.eindresultaat-section h1{
 			font-family: paralucent, sans-serif;
 			font-weight: 500;
-			font-size: 54px;
 			font-style: normal;
 			color:#131824;
 		}
@@ -798,7 +788,6 @@ body{
 
 				.eindresultaatContainer h4{
 					margin-bottom: 0px;
-					font-size: 24px;
 					font-family: paralucent, sans-serif;
 					font-weight: 700;
 					font-style: italic;
@@ -812,17 +801,13 @@ body{
 						color: #F22B50;
 					}
 
-				.eindresultaatContainer h2{
-					margin-top:4px;
-					font-family: paralucent, sans-serif;
-					font-weight: 500;
+				.eindresultaatContainer h3{
+					margin-top: 4px;
 				}
 
 				.eindresultaatContainer p{
 					line-height: 32px;
 					color: #5c5c5c;
-					font-family: paralucent, sans-serif;
-					font-weight: 400;
 				}
 
 
@@ -954,7 +939,6 @@ body{
 	}
 
 	#focus1 h2, #focus2 h2, #focus3 h2{
-		font-size: 400px;
 		z-index: -1;
 		margin: 0px;
 		color: rgba(211,211,211,0.20);
@@ -968,6 +952,7 @@ body{
 		position: absolute;
 		align-self: center;
 		white-space: nowrap;
+		border-radius: 20px;
 	}
 
 	#focus1{
@@ -983,7 +968,7 @@ body{
 	}
 
 	#focus-lijn{
-		transform: translateY(24px);
+		transform: translateY(12px);
 		height: 20px;
 		background-color: #FFED00;
 		width: 100vw;
@@ -1008,7 +993,7 @@ body{
 			grid-column: 1/2;
 			width: 30vw;
 			height: 50%;
-			border-radius: 0px 60px 60px 0px;
+			border-radius: 0px 20px 20px 0px;
 			background-color: #F9F9F9;
 			z-index: -1;
 		}
@@ -1041,7 +1026,6 @@ body{
 
 				.research-div-procenten h2{
 					align-self: center;
-					font-size: 26px;
 					margin-bottom: 0%;
 				}
 
@@ -1236,15 +1220,11 @@ body{
 			transition: opacity .6s cubic-bezier(.365,.305,0,1) .5s, transform .6s cubic-bezier(.365,.305,0,1) .5s;
 		}
 
-			#volgendeCaseNieuwTekst h2{
-				font-size: 48px;
-			}
-
 			#volgendeCaseNieuwTekst p{
 				color: #5c5c5c;
-				font-size: 18px;
 				font-weight: 400;
 				margin-bottom: 32px;
+				margin-top: 16px;
 			}
 
 		input[type="button"]{
@@ -1431,7 +1411,6 @@ body{
 			color: #131824;
 			grid-row: 2/3;
 			grid-column: 2/3;
-			font-size: 16px;
 			align-self: center;
 		 	letter-spacing: 3px;
 		}
@@ -1505,19 +1484,11 @@ body{
 				text-shadow: none;
 			}
 
-			#emailCopy h1{
-				font-weight: 700;
-				font-size: 20px;
-				font-style: italic;
-				color:#131824;
-			}
-
 			#email-popup-text{
 				margin-left: 5px;
 				outline: none;
 				border: none;
 				font-family: paralucent, sans-serif;
-				font-size: 16px;
 				font-weight: 500;
 				font-style: normal;
 				color: #131824;
@@ -1681,6 +1652,37 @@ body{
 		font-size: 32px;
 	}
 
+	input[type="button"]{
+		font-size: 40px;
+		padding: 24px 40px;
+		margin-top: 48px;
+	}
+
+
+	.welkom-projecten-info input[type="button"]{
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		bottom:-80px;
+		width: 60%;
+		text-shadow: none;
+		box-shadow: none;
+	}
+
+	.buttonSmall{
+		grid-column: 1/2;
+		grid-row: 2/3;
+		border-top: 2px solid #FFED00;
+		font-style: normal;
+		font-size: 32px !important;
+		text-align: left;
+		letter-spacing: 0px;
+		padding: 32px 40px 32px 40px !important;
+		position: absolute;
+		left: 40px;
+		align-self: center;
+		margin-top: 80px !important;
+	}
 
 	#finance-persona, #play-next-persona, #ben-persona{
 		height: 600px;
@@ -1688,9 +1690,6 @@ body{
 
 	#projectTitle{
 		margin-top: 16px;
-	}
-
-	#projectTypeDesktop, #projectDescription{
 	}
 
 	.caseLanding{
@@ -1773,7 +1772,6 @@ body{
 			grid-row: 2/3;
 			margin:0px;
 			color: #757575;
-			font-size: 36px;
 			line-height: 60px;
 		}
 
@@ -1791,12 +1789,6 @@ body{
 		margin-top: 28px;
 		margin-bottom: 102px;
 		background-size: 100%;
-	}
-
-	.image-beschrijving{
-		/*transform: translateY(120%);*/
-		font-size: 44px;
-		/*margin-bottom: 16px;*/
 	}
 
 	#focus{
@@ -1876,7 +1868,6 @@ body{
 		position: relative;
 		color: #FFED00;
 		font-size: 120px;
-
 	}
 
 	#welkom-introductie-title, #focus-lijn{
@@ -1892,7 +1883,6 @@ body{
 	}
 
 	#welkom-introductie-tekst{
-		font-size: 16px;
 		font-size-adjust: 1.5;
 		line-height: auto;
 		opacity: 0;
@@ -1961,6 +1951,10 @@ body{
 		display: block;
 	}
 
+	.sectie-indicatie-achtergrond h4{
+		margin-left: 40px;		
+	}
+
 	#loadWebsite{
 		position: relative;
 		grid-template-columns: 50px auto 50px;
@@ -1972,12 +1966,10 @@ body{
 		}
 
 			#loadWebsiteTitel h1{
-				font-size: 60px;
 				margin-bottom: -24px;
 			}
 
 			#loadWebsiteTitel h3{
-				font-size: 40px;
 				font-style: normal;
 			}
 
@@ -2023,14 +2015,12 @@ body{
 			}
 
 			#welkom-bericht-title-mobile{
-				font-size: 48px;
 				margin: 48px 0px 16px 0px;
 			}
 
 			#welkom-bericht-tekst{
 				width: 100%;
 				margin: 0px 0px 60px 0px;
-				font-size: 36px;
 				opacity: 0;
 				transform: translateY(50px);
 				animation: welkomBericht .6s cubic-bezier(.365,.305,0,1) forwards;
@@ -2075,7 +2065,6 @@ body{
 
 	#welkomIntroductieMobileTitle{
 		margin-top: 80px;
-		font-size: 48px;
 		display: block;
 		grid-column: 2/3;
 		grid-row: 1/2;
@@ -2110,7 +2099,6 @@ body{
 	}
 
 		#introductie-1 h3, #introductie-2 h3{
-			font-size: 36px;
 			padding: 0px 60px;
 			line-height: 72px;
 			grid-column: 1/3;
@@ -2169,17 +2157,6 @@ body{
 		background-color: white;
 		padding: 30px;
 		border-left: 5px solid #FFED00;
-	}
-
-	.welkom-projecten-info input[type="button"]{
-		display: flex;
-		justify-content: center;
-		font-size: 50px;
-		padding: 20px;
-		bottom:-80px;
-		width: 60%;
-		text-shadow: none;
-		box-shadow: none;
 	}
 
 	#nav-project-title{
@@ -2244,7 +2221,6 @@ body{
 			font-family: paralucent, sans-serif;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 50px;
 			color:#131A2B;
 		}
 
@@ -2380,7 +2356,6 @@ body{
 		bottom: 0%;
 		right: -4px;
 		text-align: right;
-		font-size: 32px;
 		background-image: url("../Afbeeldingen/arrow-down.svg");
 		background-size: 40px;
 		background-position: 16% 50%;
@@ -2456,7 +2431,6 @@ body{
 		font-family: paralucent, sans-serif;
 		font-weight: 500;
 		opacity: 1;
-		font-size: 60px;
 		color: #131824;
 		margin-left: 0px;
 		margin-bottom: 0px;
@@ -2466,12 +2440,6 @@ body{
 
 	.welkom-introductie h3::before, #welkom-projecten-title::before{
 		content: none;
-	}
-
-	input[type="button"]{
-		font-size: 40px;
-		padding: 24px 40px;
-		margin-top: 48px;
 	}
 
 	#projectCardContainer{
@@ -2524,12 +2492,10 @@ body{
 			}
 
 				.projectCardInfo h2{
-					font-size: 60px;
 					margin: 60px 0px 16px 0px;
 				}
 
 				.projectCardInfo p{
-					font-size: 40px;
 					color: #757575;
 					margin:0px;
 				}
@@ -2584,7 +2550,6 @@ body{
 		.eindresultaat-section h1{
 			font-family: paralucent, sans-serif;
 			font-weight: 700;
-			font-size: 30px;
 			font-style: normal;
 			color:#131824;
 		}
@@ -2646,10 +2611,6 @@ body{
 				bottom: -300px;
 			}
 
-			#expenses-tekst h1, #toevoegen-tekst h1{
-				font-size: 36px;
-			}
-
 		.eindresultaat-rechts{
 			margin: 0px;
 		}
@@ -2698,7 +2659,6 @@ body{
 		}
 
 		footer h5{
-			font-size: 32px;
 		 	letter-spacing: 3px;
 		}
 
@@ -2716,10 +2676,6 @@ body{
 			width: 100%;
 			height: 80px;
 			bottom: 100px;
-		}
-
-		#email-popup h1{
-			font-size: 34px;
 		}
 
 		.focusUitlegGrijs{
@@ -2884,7 +2840,6 @@ body{
 					font-family: paralucent, sans-serif;
 					font-style: normal;
 					font-weight: 700;
-					font-size: 36px;
 					color: #131824;
 				}
 
@@ -2939,7 +2894,6 @@ body{
 					}
 
 					.quote-getal h2{
-						font-size: 72px;
 						margin-bottom: 8px;
 					}
 
@@ -2966,9 +2920,9 @@ body{
 			}
 
 			.eindresultaatTileTekst h2{
+				font-size: 64px;
 				margin-top:0px;
 				margin-bottom: 0px;
-				font-size: 64px;
 			}
 
 			#eindresultaatImageMobile{
@@ -3041,7 +2995,6 @@ body{
 				}
 
 					#volgendeCaseCardText h3{
-						font-size: 44px;
 						width: 90%;
 					}
 
@@ -3121,21 +3074,6 @@ body{
 						bottom: 35%;
 					}
 
-					.buttonSmall{
-						grid-column: 1/2;
-						grid-row: 2/3;
-						border-top: 2px solid #FFED00;
-						font-style: normal;
-						font-size: 32px !important;
-						text-align: left;
-						letter-spacing: 0px;
-						padding: 32px 40px 32px 40px !important;
-						position: absolute;
-						left: 40px;
-						align-self: center;
-						margin-top: 80px !important;
-					}
-
 				.contactCardContainer{
 					grid-column: 1/17;
 					grid-template-columns: 50px auto auto 50px;
@@ -3185,7 +3123,67 @@ body{
 	p{
 		font-size: 18px;
 		line-height: 32px;
+		margin-top:0px;
 	}
+
+		.p-small{
+			font-size: 16px;
+		}
+
+	h1{
+		font-size: 50px;
+	}
+
+	h2{
+		font-size: 40px;
+	}
+
+ 	h3{
+		font-size: 22px;
+		margin-bottom: 8px;
+	}
+
+	h4{
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+
+	h5{
+		font-size: 18px;
+	}
+
+	h6{
+		font-size: 16px;
+	}
+
+	input[type="button"]{
+		font-size: 18px;
+		font-style: normal;
+		outline:none;
+		color: #131824;
+		background-color: #FFED00;
+		padding: 16px 32px;
+		background-image: url("../Afbeeldingen/arrow-right.svg");
+		background-size: 0%;
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		transition: background-position .3s cubic-bezier(.365,.305,0,1), background-size 0.3s cubic-bezier(.365,.305,0,1) 0.1s, 
+		padding 0.3s cubic-bezier(.365,.305,0,1);
+	}
+
+	.buttonSmall{
+		border-top: 2px solid #FFED00;
+		font-style: normal;
+		font-size: 14px !important;
+		text-align: left;
+		letter-spacing: 0px;
+		padding: 16px 20px 16px 20px !important;
+		position: absolute;
+		right: 20px;
+		align-self: center;
+		margin-top: 0px !important;
+	}
+
 
 	#responsive, #responsive-nav, .responsive-image, #eindresultaat-section-responsive, #projectCardContainer, #welkom-introductie-title-responsive,
 		#welkom-projecten-scroll, .finance-header-responsive, .gaming-header-responsive, .eindresultaat-responsive, #volgendeCaseCard, .welkom-bericht-mobile-container, 
@@ -3217,8 +3215,8 @@ body{
 		display: grid;
 	}
 
-		#volgendeCase h2, #volgendeCaseStatic h2{
-			margin-bottom: -12px;
+		#volgendeCaseStatic h3{
+			margin-bottom: 0px;
 		}
 
 	.indexHeader{
@@ -3376,7 +3374,6 @@ body{
 
 	header h1{
 		margin: 0px 30px;
-		font-size: 25px;
 		transition: color .3s cubic-bezier(.365,.305,0,1);
 		transition: font-size .3s cubic-bezier(.365,.305,0,1);
 	}
@@ -3393,10 +3390,6 @@ body{
 
 	.introductie{
 		margin-top: 32px;
-	}
-
-	h1{
-		font-size: 50px;
 	}
 
 	.welkom-introductie{
@@ -3455,6 +3448,9 @@ body{
 		margin-bottom: -8px;
 	}
 
+	.eindresultaatTileTekst p{
+		margin-top: 8px;
+	}
 
 	#projectDescriptionContainer{
 		grid-template-columns: repeat(12, 1fr);
@@ -3467,6 +3463,42 @@ body{
 		#projectDescription{
 			grid-column: 2/12;
 		}
+
+	.quote{
+		width: 100%;
+		background-color: #FFED00;
+	}
+		.quote h2, .quote h3{
+			padding: 0px 20px;
+		}
+
+		.quote h3{
+			color:#5c5c5c;
+			font-style: italic;
+			font-weight: 500;
+		}
+
+			.quote-getal-flex{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+			}
+
+			.quote-getal{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
+
+				.quote-getal h2{
+					align-self: center;
+					margin-top: 16px;
+					margin-bottom: 4px;
+				}
+
+				.research-div-procenten h3{
+					color: white;
+				}
 
 	.researchContainer{
 		display: grid;
@@ -3550,10 +3582,6 @@ body{
 			margin: 16px 0px;
 		}
 
-	#volgendeCaseNieuwTekst h1{
-		width: 200%;
-	}
-
 	#focus1 h2, #focus2 h2, #focus3 h2{
 		font-size: 400px;
 		align-self: center;
@@ -3567,29 +3595,22 @@ body{
 		background-color: white;
 	}
 
+	.focusUitleg{
+		margin-top: -10%;
+	}
+
 	.focusUitlegGrijs{
 		left:-300px;
 		bottom: 20px;
 	}
 
-	input[type="button"]{
-		font-size: 18px;
-		font-style: normal;
-		outline:none;
-		color: #131824;
-		background-color: #FFED00;
-		padding: 16px 32px;
-		background-image: url("../Afbeeldingen/arrow-right.svg");
-		background-size: 0%;
-		background-repeat: no-repeat;
-		background-position: 100% 50%;
-		transition: background-position .3s cubic-bezier(.365,.305,0,1), background-size 0.3s cubic-bezier(.365,.305,0,1) 0.1s, 
-		padding 0.3s cubic-bezier(.365,.305,0,1);
-	}
-
 	footer{
 		grid-template-columns: 140px auto auto 200px 50px 50px 1%;
 		grid-template-rows: 50px 50px;
+	}
+
+	.sectie-indicatie-achtergrond h4{
+		margin-left: 24px;		
 	}
 
 	.contactContent{
@@ -3647,19 +3668,6 @@ body{
 				width: 10%;
 				height: 1%;
 				bottom: 35%;
-			}
-
-			.buttonSmall{
-				border-top: 2px solid #FFED00;
-				font-style: normal;
-				font-size: 14px !important;
-				text-align: left;
-				letter-spacing: 0px;
-				padding: 16px 20px 16px 20px !important;
-				position: absolute;
-				right: 20px;
-				align-self: center;
-				margin-top: 0px !important;
 			}
 
 		.contactCardContainer{
@@ -3728,11 +3736,6 @@ body{
 
 	header h1{
 		margin: 5px 50px;
-		font-size: 40px;
-	}
-
-	h1{
-		font-size: 80px;
 	}
 
 	section{
@@ -3743,9 +3746,6 @@ body{
 		width: 60px;
 		height: 40px;
 	}
-		.sectie-indicatie h4{
-			font-size: 20px;
-		}
 
 	section h2{
 		margin-bottom: -3px;
@@ -3758,7 +3758,6 @@ body{
 
 	.welkom-introductie *{
 		line-height: 60px;
-		font-size: 40px;
 	}
 
 	.image{
@@ -3780,10 +3779,6 @@ body{
 		padding: 50px;
 		border-left: 10px solid #FFED00;
 	}
-
-		.welkom-projecten-info h2{
-			font-size: 60px;
-		}
 		
 		 h3{
 			font-size: 40px;
@@ -3797,14 +3792,6 @@ body{
 			width: 50%;
 		}
 
-
-			#welkom-bericht h1{
-				font-size: 60px;
-			}
-
-			#welkom-bericht h3{
-				margin-right: 600px;
-			}
 
 		#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
 			background-size: 100%;
