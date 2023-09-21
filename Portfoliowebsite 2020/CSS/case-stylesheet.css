@@ -503,6 +503,7 @@ body{
  		font-weight: 500;
  		font-style: normal;
  		color: #131824;
+ 		text-align: left;
  	}
 
  	p{
@@ -627,6 +628,7 @@ body{
 		height: 70vh;
 		background-size: cover;
 		background-repeat: no-repeat;
+		border-radius: 0px 20px 20px 0px;
 	}
 
 	.eindresultaatTileTekst{
@@ -792,14 +794,6 @@ body{
 					font-weight: 700;
 					font-style: italic;
 				}
-
-					.saveNowImageTekst h4{
-						color: #0B41DA;
-					}
-
-					.playNextImageTekst h4{
-						color: #F22B50;
-					}
 
 				.eindresultaatContainer h3{
 					margin-top: 4px;
@@ -1032,6 +1026,10 @@ body{
 				.research-div-procenten h3{
 					color: white;
 				}
+
+			#researchBron{
+				color: #575757;
+			}
 
 		blockquote{
 			font-family: paralucent, sans-serif;
@@ -2771,6 +2769,14 @@ body{
 						margin-top: 240px;
 					}
 
+					.eindresultaat-horizontaal{
+						grid-column: 2/5;
+					}
+
+						.eindresultaat-horizontaal{
+							margin-bottom: 40px;
+						}
+
 
 				.eindresultaat-dubbel .backdrop-grey{
 					grid-column: 1/6;
@@ -2861,6 +2867,17 @@ body{
 					grid-column: 2/3;
 					border-radius: 24px;
 				}
+
+				#researchSingle{
+					grid-column: 2/3;
+					border-radius: 24px;
+				}
+
+					#researchSingle h3{
+						color: #131824;
+						font-style: normal;
+						padding-left: 0px;
+					}
 
 				#research1{
 					grid-row: 1/3;
@@ -3552,6 +3569,28 @@ body{
 
 		#research2 blockquote{
 			padding-right: 40px;
+		}
+
+	#researchSingle{
+		grid-column: 2/4;
+		border-radius: 12px 0px 0px 12px;
+		margin-bottom: 20px;
+	}
+
+		#researchSingle h3{
+			color: #131824;
+			font-style: normal;
+			padding-left: 0px;
+		}
+
+		#researchSingle blockquote{
+			font-size: 20px;
+		}
+
+		#researchSingle p{
+			color: #575757;
+			font-style: italic;
+			margin-top: 24px;
 		}
 
 	#researchBron{
