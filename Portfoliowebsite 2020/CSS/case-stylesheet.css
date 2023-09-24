@@ -724,10 +724,6 @@ body{
 				transform: translateY(50%);
 			}
 
-				.eindresultaatImage{
-					position: relative;
-				}
-
 				/*Save Now*/
 
 				#eindresultaatITArticles{
@@ -803,6 +799,126 @@ body{
 					line-height: 32px;
 					color: #5c5c5c;
 				}
+
+				.noothulpEindresultaat{
+					grid-template-columns: repeat(16, 1fr);
+					margin:60px 0px;
+				}
+
+				/* Home */
+
+				#noothulpHome .eindresultaatTekst{
+					grid-column: 9/13;
+				}
+
+				#noothulpHome img{
+					grid-column: 5/8;
+					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
+				}
+
+				.backdrop-grey{
+					z-index: -1;
+					position: absolute;
+					align-self: center;
+					background-color: #F6F6F6;
+					height: 50%;
+					width: 100%;
+					border-radius: 16px;
+				}
+
+				#noothulpHome .backdrop-grey{
+					grid-column: 6/10;
+				}
+
+				/* Oefenen */
+
+				#noothulpOefenen .eindresultaatTekst{
+					grid-column: 3/7;
+				}
+
+				#noothulpOefenen img{
+					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
+				}
+
+				#nhOefenen1{
+					grid-column: 8/11;
+				}
+
+				#nhOefenen2{
+					grid-column: 12/15;
+				}
+
+				#noothulpOefenen .backdrop-grey{
+					grid-column: 6/14;
+				}
+
+				/* Kalibratie */
+
+				#noothulpKalibratie .eindresultaatTekst{
+					grid-column: 10/14;
+					align-self: center;
+					position: absolute;
+				}
+
+				#noothulpKalibratie img{
+					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
+				}
+
+				#nhKalibratie1{
+					grid-column: 2/6;
+				}
+
+				#nhKalibratie2{
+					grid-column: 3/7;
+				}
+
+				#nhKalibratie3{
+					grid-column: 2/6;
+				}
+
+				#noothulpKalibratie .backdrop-grey{
+					grid-column: 4/9;
+				}
+
+				/* Spelen */
+
+				#noothulpSpelen .eindresultaatTekst{
+					grid-column: 3/7;
+					align-self: center;
+					position: absolute;
+				}
+
+				#noothulpSpelen img{
+					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
+				}
+
+				#nhSpelen1{
+					grid-column: 8/13;
+				}
+
+				#nhSpelen2{
+					grid-column: 10/15;
+				}
+
+				#noothulpSpelen .backdrop-grey{
+					grid-column: 6/14;
+				}
+
+				/* Beoordeling */
+
+				#noothulpBeoordeling .eindresultaatTekst{
+					grid-column: 9/13;
+				}
+
+				#noothulpBeoordeling img{
+					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
+					grid-column: 5/8;
+				}
+
+				#noothulpBeoordeling .backdrop-grey{
+					grid-column: 6/10;
+				}
+
 
 
 		.eindresultaat-links{
