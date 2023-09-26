@@ -692,6 +692,42 @@ function emailCopied(){
 	document.getElementById('email-popup-text').style.backgroundColor = "#FFED00";
 }
 
+function emailCopiedContact(){
+    var copyText = document.getElementById("contact-email-text");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+
+    document.getElementById('contactEmail').value = "Gekopieerd!";
+}
+
+function phoneCopiedContact(){
+    var copyText = document.getElementById("contact-phone-text");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+
+    document.getElementById('contactPhone').value = "Gekopieerd!";
+}
+
+function emailCopiedContactRes(){
+    var copyText = document.getElementById("contact-email-text-res");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+
+    document.getElementById('contactEmailRes').value = "Gekopieerd!";
+}
+
+function phoneCopiedContactRes(){
+    var copyText = document.getElementById("contact-phone-text-res");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+
+    document.getElementById('contactPhoneRes').value = "Gekopieerd!";
+}
+
 function saveNowQuote(){
 	if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
 		document.getElementById('doelgroepAnimation').style.opacity = "1";

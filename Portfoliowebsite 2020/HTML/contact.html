@@ -42,40 +42,75 @@
 		</div>
 	</header>
 <section class="contactContent">
-	<div class="contactCardContainer">
+	<div class="contactCardContainer" id="contactDesktop">
 		<div class="contactCard" id="contact1">
 			<div class="contactCardTitle">
-				<div class="contactCardIcon" id="contactCardIconEmail"></div>
-				<h2>E-mail</h2>
+				<div class="contactCardIcon contactCardIconEmail"></div>
+				<h4>E-mail</h4>
 			</div>
 			<div class="contactCardDescription">
-				<p>dionvanderriet@gmail.com</p>
-				<input type="button" name="button" value="Kopieer adres" class="buttonSmall">
+				<input class="p-small" id="contact-email-text" value="dionvanderriet@gmail.com">
+				<input type="button" name="button" value="Kopieer adres" class="buttonSmall" id="contactEmail" onclick="emailCopiedContact()">
 			</div>
 		</div>
 		<div class="contactCard" id="contact2">
 			<div class="contactCardTitle">
-				<div class="contactCardIcon" id="contactCardIconTelefoon"></div>
-				<h2>Telefoon</h2>
+				<div class="contactCardIcon contactCardIconTelefoon"></div>
+				<h4>Telefoon</h4>
 			</div>
 			<div class="contactCardDescription">
-				<p>+31 6 21 37 40 84</p>
-				<input type="button" name="button" value="Kopieer nummer" class="buttonSmall">
+				<input class="p-small" id="contact-phone-text" value="06 21374084">
+				<input type="button" name="button" value="Kopieer nummer" class="buttonSmall" id="contactPhone" onclick="phoneCopiedContact()">
 			</div>
 		</div>
 		<div class="contactCard" id="contact3">
 			<div class="contactCardTitle">
-				<div class="contactCardIcon" id="contactCardIconLinkedin"></div>
-				<h2>Linkedin</h2>
+				<div class="contactCardIcon contactCardIconLinkedin"></div>
+				<h4>Linkedin</h4>
 			</div>
 			<div class="contactCardDescription">
-				<p>in/dion-van-der-riet-217479158</p>
-				<input type="button" name="button" value="Open link" class="buttonSmall">
+				<p class="p-small">in/dion-van-der-riet-217479158</p>
+				<input type="button" name="button" value="Open link" class="buttonSmall" onclick="linkedIn()">
 			</div>
 		</div>
 
-		<div id="contactBackground1"></div>
-		<div id="contactBackground2"></div>
+		<div class="contactBackground1"></div>
+		<div class="contactBackground2"></div>
+	</div>
+
+	<div class="contactCardContainer" id="contactMobile">
+		<div class="contactCard" id="contact1">
+			<div class="contactCardTitle">
+				<div class="contactCardIcon contactCardIconEmail"></div>
+				<h3>E-mail</h3>
+			</div>
+			<div class="contactCardDescription">
+				<input class="p-small" id="contact-email-text-res" value="dionvanderriet@gmail.com">
+				<input type="button" name="button" value="Kopieer adres" class="buttonSmall" id="contactEmailRes" onclick="emailCopiedContactRes()">
+			</div>
+		</div>
+		<div class="contactCard" id="contact2">
+			<div class="contactCardTitle">
+				<div class="contactCardIcon contactCardIconTelefoon"></div>
+				<h3>Telefoon</h3>
+			</div>
+			<div class="contactCardDescription">
+				<input class="p-small" id="contact-phone-text-res" value="06 21374084">
+				<input type="button" name="button" value="Kopieer nummer" class="buttonSmall" id="contactPhoneRes" onclick="phoneCopiedContactRes()">
+			</div>
+		</div>
+		<div class="contactCard" id="contact3">
+			<div class="contactCardTitle">
+				<div class="contactCardIcon contactCardIconLinkedin"></div>
+				<h3>Linkedin</h3>
+			</div>
+			<div class="contactCardDescription">
+				<p class="p-small">in/dion-van-der-riet-217479158</p>
+				<input type="button" name="button" value="Open link" class="buttonSmall" onclick="linkedIn()">
+			</div>
+		</div>
+		<div class="contactBackground1"></div>
+		<div class="contactBackground2"></div>
 	</div>
 	<!-- <footer onmouseleave="emailDown()" class="contactFooter">
 		<div id="footer-transparent-left" onmouseover="emailDown()"></div>
