@@ -30,7 +30,8 @@ function loadWebsiteCheck() {
 }
 
 function loadWebsite(){
-	document.getElementById('loadWebsite').style.opacity = "1";
+	document.body.style.overflowY = "hidden";
+    document.getElementById('loadWebsite').style.opacity = "1";
 	document.getElementById('loadWebsiteWit').style.height = "100%";
 	document.getElementById('caseSwitchAnimation').style.display = "none";
 	document.getElementById('caseSwitchAnimation').style.opacity = "0";
@@ -73,6 +74,7 @@ function loadWebsite(){
 		document.getElementById('desktop').style.animationName = "navDown";
 		document.getElementById('desktop').style.opacity = "1";
 		document.getElementById('responsive-nav-list').style.display = "none";
+        document.body.style.overflowY = "visible";
 	}, 4000);
 }
 
