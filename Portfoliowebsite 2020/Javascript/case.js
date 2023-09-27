@@ -659,8 +659,8 @@ function noOpacity(){
 
     document.getElementById("projectTitle").style.letterSpacing = "12px";
     document.getElementById("projectTitle").style.opacity = "1";
-    document.getElementById("projectTypeDesktop").style.opacity = "1";
-    document.getElementById("projectTypeDesktop").style.transform = "translateY(0%)";
+    document.getElementById("projectType").style.opacity = "1";
+    document.getElementById("projectType").style.transform = "translateY(0%)";
     document.getElementById("projectDescription").style.opacity = "1";
     document.getElementById("projectDescription").style.transform = "translateY(0%)"
 

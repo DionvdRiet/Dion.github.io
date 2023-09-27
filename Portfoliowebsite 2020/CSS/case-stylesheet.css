@@ -327,7 +327,7 @@ body{
 				align-self: center;
 			}
 
-				#projectTitle,  #projectTypeDesktop, #projectDescription{
+				#projectTitle,  #projectType, #projectDescription{
 					margin: 8px 0px;
 				}
 
@@ -338,13 +338,20 @@ body{
 					transition: opacity 0.3s cubic-bezier(.365,.305,0,1), letter-spacing 1s cubic-bezier(.365,.305,0,1);
 				}
 
-				#projectTypeDesktop{
+				#projectType{
 					color: #71747C;
 					margin-bottom: -8px;
 					opacity: 0;
 					transform: translateY(100%);
 					transition: opacity 0.6s cubic-bezier(.365,.305,0,1), transform 1s cubic-bezier(.365,.305,0,1);
 				}
+
+					#projectType span{
+						color: #FFED00;
+						font-weight: 700;
+						font-size: 20px;
+						align-self: center;
+					}
 
 			#projectDescriptionContainer{
 				display: grid;
@@ -1893,10 +1900,10 @@ body{
 			color: #757575;
 			line-height: 60px;
 		}
-
-		/*#case-header-description-mobile h4::before{
-			content: "...";
-		}*/
+		
+	#projectType span{
+		font-size: 40px;
+	}
 
 
 	a{
@@ -3083,26 +3090,12 @@ body{
 				transition: opacity .6s cubic-bezier(.365,.305,0,1) .3s;
 			}
 
-				#projectType{
-					grid-column: 1/3;
-					display: flex;
-					flex-direction: row;
-					position: absolute;
-					top:0;
-					left: 0;
-				}
-
 					#projectTypeLine{
 						/*align-self: center;*/
 						height: 100px;
 						width: 12px;
 						background-color: #FFED00;
 						margin-right: 40px;
-					}
-
-					#projectType h3{
-						font-weight: 500;
-						margin-top: 16px;
 					}
 
 				#volgendeCaseCard{
