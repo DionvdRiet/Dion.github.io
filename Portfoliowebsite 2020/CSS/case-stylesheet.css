@@ -3200,6 +3200,14 @@ body{
 						margin-top: 80px;
 					}
 
+					#contact-email-text-res{
+						position: relative;
+					}
+
+					#contactEmailRes{
+						position: absolute;
+					}
+
 					.contactCard #contact-email-text-res, .contactCard #contact-phone-text-res{
 						margin-top: 40px;
 					}
