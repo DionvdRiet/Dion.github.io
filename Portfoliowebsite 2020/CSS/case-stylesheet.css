@@ -3189,7 +3189,7 @@ body{
 						height: auto;
 					}
 
-					.contactCard p, .contactCard input{
+					.contactCard p, .contactCard .p-small{
 						grid-column: 1/2;
 						grid-row: 1/2;
 						letter-spacing: 1px;
@@ -3198,14 +3198,6 @@ body{
 
 					.contactCard p{
 						margin-top: 80px;
-					}
-
-					#contact-email-text-res{
-						position: relative;
-					}
-
-					#contactEmailRes{
-						position: absolute;
 					}
 
 					.contactCard #contact-email-text-res, .contactCard #contact-phone-text-res{
