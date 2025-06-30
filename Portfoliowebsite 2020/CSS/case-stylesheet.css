@@ -216,41 +216,7 @@ body{
 				grid-column: 2/3;
 			}
 
-			#welkom-projecten-indicator{
-				display: grid;
-				grid-template-columns: 300px auto 300px;
-				width: 100vw;
-				position: fixed;
-				top: 50%;
-				transform: translateY(-50%);
-				transform: translateX(+50%);
-				z-index: 3;
-				opacity: 0;
-				transition: opacity 3s cubic-bezier(.365,.305,0,1) linear 3s;
-				transition: transform .3s cubic-bezier(.365,.305,0,1);
-			}
-
-				#welkom-projecten-indicator div{
-					grid-column: 3/4;
-					position: relative;
-					left: 200px;
-					height: 5px;
-					width: 20px;
-					margin:5px;
-					transition: width .1s cubic-bezier(.365,.305,0,1);
-				}
-
-				#project-indicator-1{
-					background-color: #FFED00;
-				}
-
-				@keyframes indicatorfade{
-				  from {opacity: 1;}
-				  to {opacity: 0;}
-				}
-
-
-			#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
+			#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-bykarlie{
 				height: 80vh;
 				background-size: 300%;
 				background-repeat: no-repeat;
@@ -258,11 +224,11 @@ body{
 				border-radius: 12px;
 			}
 
-			#welkom-save-now, #welkom-ben, #play-next-project-info, #noothulp-project-info{
+			#welkom-save-now, #welkom-ben, #play-next-project-info, #bykarlie-project-info{
 				grid-column: 2/6;
 			}
 
-			#welkom-play-next, #welkom-noothulp, #save-now-project-info, #ben-project-info{
+			#welkom-play-next, #welkom-bykarlie, #save-now-project-info, #ben-project-info{
 				grid-column: 9/13;
 			}
 
@@ -284,8 +250,8 @@ body{
 				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 
-			#welkom-noothulp{
-				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+			#welkom-bykarlie{
+				background-image: url('../Afbeeldingen/bykarlie/header.jpg');
 				margin-bottom: 0px;
 				background-position: 100% 100%;
 				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
@@ -743,11 +709,12 @@ body{
 				/*Play Next*/
 
 				#eindresultaatITHome{
-					grid-column: 7/10;
+					grid-column: 9/13;
+					transform: translateX(-10%);
 				}
 
 				#eindresultaatHome{
-					grid-column:5/8;
+					grid-column: 5/9;
 				}
 
 				#eindresultaatITNews{
@@ -798,7 +765,7 @@ body{
 					color: #5c5c5c;
 				}
 
-				.noothulpEindresultaat{
+				.bykarlieEindresultaat{
 					grid-template-columns: repeat(16, 1fr);
 					margin:60px 0px;
 				}
@@ -810,11 +777,11 @@ body{
 
 				/* Home */
 
-				#noothulpHome .eindresultaatTekst{
+				#bykarlieHome .eindresultaatTekst{
 					grid-column: 9/13;
 				}
 
-				#noothulpHome img{
+				#bykarlieHome img{
 					grid-column: 5/8;
 					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
 				}
@@ -829,17 +796,17 @@ body{
 					border-radius: 16px;
 				}
 
-				#noothulpHome .backdrop-grey{
+				#bykarlieHome .backdrop-grey{
 					grid-column: 6/10;
 				}
 
 				/* Oefenen */
 
-				#noothulpOefenen .eindresultaatTekst{
+				#bykarlieOefenen .eindresultaatTekst{
 					grid-column: 3/7;
 				}
 
-				#noothulpOefenen img{
+				#bykarlieOefenen img{
 					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
 				}
 
@@ -851,19 +818,19 @@ body{
 					grid-column: 12/15;
 				}
 
-				#noothulpOefenen .backdrop-grey{
+				#bykarlieOefenen .backdrop-grey{
 					grid-column: 6/14;
 				}
 
 				/* Kalibratie */
 
-				#noothulpKalibratie .eindresultaatTekst{
+				#bykarlieKalibratie .eindresultaatTekst{
 					grid-column: 10/14;
 					align-self: center;
 					position: absolute;
 				}
 
-				#noothulpKalibratie img{
+				#bykarlieKalibratie img{
 					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
 				}
 
@@ -879,19 +846,19 @@ body{
 					grid-column: 2/6;
 				}
 
-				#noothulpKalibratie .backdrop-grey{
+				#bykarlieKalibratie .backdrop-grey{
 					grid-column: 4/9;
 				}
 
 				/* Spelen */
 
-				#noothulpSpelen .eindresultaatTekst{
+				#bykarlieSpelen .eindresultaatTekst{
 					grid-column: 3/7;
 					align-self: center;
 					position: absolute;
 				}
 
-				#noothulpSpelen img{
+				#bykarlieSpelen img{
 					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
 				}
 
@@ -903,22 +870,22 @@ body{
 					grid-column: 10/15;
 				}
 
-				#noothulpSpelen .backdrop-grey{
+				#bykarlieSpelen .backdrop-grey{
 					grid-column: 6/14;
 				}
 
 				/* Beoordeling */
 
-				#noothulpBeoordeling .eindresultaatTekst{
+				#bykarlieBeoordeling .eindresultaatTekst{
 					grid-column: 9/13;
 				}
 
-				#noothulpBeoordeling img{
+				#bykarlieBeoordeling img{
 					box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
 					grid-column: 5/8;
 				}
 
-				#noothulpBeoordeling .backdrop-grey{
+				#bykarlieBeoordeling .backdrop-grey{
 					grid-column: 6/10;
 				}
 
@@ -1003,17 +970,68 @@ body{
 			display: grid;
 			grid-column:1/4;
 			grid-template-rows: auto auto auto;
-/*			position: relative;*/
 		}
 
 		.wideImage > img{
 			grid-row: 1/4;
 			grid-column: 2/3;
-/*			position: relative;*/
 			border-radius: 12px;
 			border:1px solid #F6F6F6;
 			box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
 		}
+
+		.mobileDesktopContainer{
+			display: grid;
+			grid-template-columns: 300px auto 300px;
+		}
+
+			.mobileDesktop{
+				display: grid;
+				grid-column:1/4;
+				grid-template-columns: 70% 2% 28%;
+				grid-template-rows: auto auto auto;
+			}
+
+			.mobileDesktop img, .mobileResultContainer{
+				border-radius: 12px;
+				border:1px solid #F6F6F6;
+				box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
+			}
+
+				.mobileDesktop > .desktopResult, .mobileDesktop > cite {
+					grid-column: 1/2;
+				}
+
+				.mobileDesktop > .mobileResultContainer{
+					grid-column: 3/4;
+				}
+
+				.mobileResultContainer{
+					border-radius: 12px;
+					max-height: 60vh;
+					overflow-y: auto;
+					overflow-x: hidden;
+					width: fit-content;
+				}
+
+				/* Hide scrollbar for Chrome, Safari, and Opera */
+				.mobileResultContainer::-webkit-scrollbar {
+				  display: none; /* or width: 0; height: 0; */
+				}
+
+				/* Hide scrollbar for IE, Edge and Firefox (modern versions) */
+				.mobileResultContainer {
+				  -ms-overflow-style: none;  /* IE and Edge */
+				  scrollbar-width: none;  /* Firefox */
+				}
+
+					.mobileResultContainer img{
+						width: 100%;
+						height: auto;
+						display: block;
+					}
+
+
 
 		.imageBackground{
 			grid-column: 1/4;
@@ -1263,7 +1281,7 @@ body{
 			transition: opacity .6s cubic-bezier(.365,.305,0,1) .3s;
 		}
 
-			.volgendeCaseSaveNow, .volgendeCasePlayNext, .volgendeCaseBen, .volgendeCaseNoothulp{
+			.volgendeCaseSaveNow, .volgendeCasePlayNext, .volgendeCaseBen, .volgendeCasebykarlie{
 				grid-column: 3/4;
 				background-size: 100%;
 				background-repeat: no-repeat;
@@ -1275,7 +1293,7 @@ body{
 				margin-top: ;
 			}
 
-			.volgendeCaseSaveNow, .volgendeCasePlayNext, .volgendeCaseBen, .volgendeCaseNoothulp{
+			.volgendeCaseSaveNow, .volgendeCasePlayNext, .volgendeCaseBen, .volgendeCasebykarlie{
 				background-position: 50% 50%;
 				background-size: 100%;
 				transition: background-size 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
@@ -1293,11 +1311,11 @@ body{
 				background-image: url('../Afbeeldingen/Ben/header.jpg');
 			}
 
-			.volgendeCaseNoothulp{
-				background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+			.volgendeCasebykarlie{
+				background-image: url('../Afbeeldingen/bykarlie/header.jpg');
 			}
 
-			.volgendeCaseCardSaveNow, .volgendeCaseCardPlayNext, .volgendeCaseCardBen, .volgendeCaseCardNoothulp{
+			.volgendeCaseCardSaveNow, .volgendeCaseCardPlayNext, .volgendeCaseCardBen, .volgendeCaseCardbykarlie{
 				grid-column: 1/4;
 				background-size: 50%;
 				background-repeat: no-repeat;
@@ -1315,8 +1333,8 @@ body{
 				background-image: url('../Afbeeldingen/Ben/header-responsive.jpg');
 			}
 
-			.volgendeCaseCardNoothulp{
-				background-image: url('../Afbeeldingen/Noothulp/header-responsive.jpg');
+			.volgendeCaseCardbykarlie{
+				background-image: url('../Afbeeldingen/bykarlie/header-responsive.jpg');
 			}
 
 		#footer{
@@ -1419,7 +1437,7 @@ body{
 			transition: opacity .6s cubic-bezier(.365,.305,0,1) 0.6s;
 		}
 
-		.finance-case-header, .play-next-case-header, .ben-case-header, .noothulp-case-header{
+		.finance-case-header, .play-next-case-header, .ben-case-header, .bykarlie-case-header{
 			position: relative;
 			background-position: top;
 			background-size: cover;
@@ -1472,27 +1490,18 @@ body{
 			height: 500px;
 		}
 
-		.noothulp-header{
-			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+		.bykarlie-header{
+			background-image: url('../Afbeeldingen/ByKarlie/header.jpg');
 		}
 
-		.noothulp-case-header{
-			background-image: url('../Afbeeldingen/Noothulp/header.jpg');
+		.bykarlie-case-header{
+			background-image: url('../Afbeeldingen/ByKarlie/header.jpg');
 		}
 
-		.noothulp-header-responsive{
-			background-image: url('../Afbeeldingen/Noothulp/header-responsive.jpg'); 
+		.bykarlie-header-responsive{
+			background-image: url('../Afbeeldingen/ByKarlie/header-responsive.jpg'); 
 			background-position: 85% 50% !important;
-		}
-
-		#noothulp-persona{
-			background-image: url('../Afbeeldingen/Noothulp/persona.png');
-			background-size: contain;
-			background-repeat: no-repeat;
-			height: 500px;
-		}
-
-		
+		}		
 
 	footer{
 		display: grid;
@@ -1531,6 +1540,7 @@ body{
 			grid-column: 2/3;
 			align-self: center;
 		 	letter-spacing: 3px;
+		 	margin: 0px;
 		}
 
 		#footer-transparent-left{
@@ -1900,7 +1910,7 @@ body{
 			color: #757575;
 			line-height: 60px;
 		}
-		
+
 	#projectType span{
 		font-size: 40px;
 	}
@@ -2534,7 +2544,7 @@ body{
 			margin-left: 40px;
 		}
 
-	#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
+	#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-bykarlie{
 		display: none;
 		background-size: 140%;
 		height: 800px;
@@ -3175,12 +3185,39 @@ body{
 					.contactCardDescription{
 						display: grid;
 						grid-template-columns: auto;
-						grid-template-rows: 100px 200px;
+						grid-template-rows: 120px 160px;
 						grid-column: 1/3;
 						grid-row: 2/3;
-						margin-left: 24px;
+/*						margin-left: 24px;*/
 						height: auto;
 					}
+
+						.contactCardDescriptionP{
+							grid-column: 1/3;
+							display: flex;
+							justify-content: center;
+							grid-row: 1/2;
+							background-color: orange;
+						}
+
+							.contactCardDescriptionP .p-small{
+								margin-left: 40px !important;
+								margin-top: 0px !important;
+								margin-bottom: 0px !important;
+								background-color: green;
+							}
+
+						.contactCardDescriptionButton{
+							grid-column: 1/3;
+							display: flex;
+							justify-content: center;
+							grid-row: 2/3;
+							background-color: purple;
+						}
+
+							.contactCardDescriptionButton input{
+								margin-top: -40px !important;
+							}
 
 					.contactCard p, .contactCard .p-small{
 						grid-column: 1/2;
@@ -3291,6 +3328,7 @@ body{
 
 	h5{
 		font-size: 18px;
+		margin-bottom: 8px;
 	}
 
 	h6{
@@ -3962,7 +4000,7 @@ body{
 		}
 
 
-		#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-noothulp{
+		#welkom-save-now, #welkom-play-next, #welkom-ben, #welkom-bykarlie{
 			background-size: 100%;
 			height: 1100px;
 			background-position: center;
