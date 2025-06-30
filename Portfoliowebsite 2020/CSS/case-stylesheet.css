@@ -200,6 +200,12 @@ body{
 				margin-bottom: 16px;
 			}
 
+			#highlightTitleDesktop{
+				transform: translateY(0%);
+				transition: transform 1s cubic-bezier(.365,.305,0,1);	
+			}
+
+
 			#welkom-projecten-title{
 				opacity: 0;
 				margin-left: -40px;
@@ -224,11 +230,11 @@ body{
 				border-radius: 12px;
 			}
 
-			#welkom-save-now, #welkom-ben, #play-next-project-info, #bykarlie-project-info{
+			 #welkom-bykarlie, #save-now-project-info, #welkom-play-next, #ben-project-info{
 				grid-column: 2/6;
 			}
 
-			#welkom-play-next, #welkom-bykarlie, #save-now-project-info, #ben-project-info{
+			#bykarlie-project-info, #welkom-save-now, #play-next-project-info, #welkom-ben{
 				grid-column: 9/13;
 			}
 
@@ -253,7 +259,8 @@ body{
 			#welkom-bykarlie{
 				background-image: url('../Afbeeldingen/bykarlie/header.jpg');
 				margin-bottom: 0px;
-				background-position: 100% 100%;
+				background-position: 0% 50%;
+				background-size: 300%;
 				transition: transform 1s cubic-bezier(.365,.305,0,1), box-shadow 1s cubic-bezier(.365,.305,0,1), background-position 1s cubic-bezier(.365,.305,0,1);
 			}
 

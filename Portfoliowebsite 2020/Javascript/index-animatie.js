@@ -103,22 +103,24 @@ function benWelkomNormal(){
     document.getElementById("benButton").style.transitionDelay = "0s";
 }
 
-function noothulpWelkomHover(){
-    document.getElementById("welkom-noothulp").style.transform = "translateY(-4%)";
-    document.getElementById("welkom-noothulp").style.boxShadow = "0px 10px 20px rgba(0,0,0,0.06)";
-    document.getElementById("welkom-noothulp").style.backgroundPosition = "100% 80%";
-    document.getElementById("noothulpButton").style.backgroundPosition = "90% 46%";
-    document.getElementById("noothulpButton").style.backgroundSize = "8%";
-    document.getElementById("noothulpButton").style.padding = "16px 60px 16px 32px";
+function bykarlieWelkomHover(){
+    document.getElementById("welkom-bykarlie").style.transform = "translateY(-4%)";
+    document.getElementById("welkom-bykarlie").style.boxShadow = "0px 10px 20px rgba(0,0,0,0.06)";
+    document.getElementById("welkom-bykarlie").style.backgroundPosition = "0% 60%";
+    document.getElementById("bykarlieButton").style.backgroundPosition = "90% 46%";
+    document.getElementById("bykarlieButton").style.backgroundSize = "8%";
+    document.getElementById("bykarlieButton").style.padding = "16px 60px 16px 32px";
+    document.getElementById("highlightTitleDesktop").style.transform = "translateY(-44%)";
 }
 
-function noothulpWelkomNormal(){
-    document.getElementById("welkom-noothulp").style.transform = "translateY(0%)";
-    document.getElementById("welkom-noothulp").style.boxShadow = "none";
-    document.getElementById("welkom-noothulp").style.backgroundPosition = "100% 100%";
-    document.getElementById("noothulpButton").style.backgroundPosition = "100% 50%";
-    document.getElementById("noothulpButton").style.backgroundSize = "0%";
-    document.getElementById("noothulpButton").style.padding = "16px 32px";
-    document.getElementById("noothulpButton").style.transitionDelay = "0s";
+function bykarlieWelkomNormal(){
+    document.getElementById("welkom-bykarlie").style.transform = "translateY(0%)";
+    document.getElementById("welkom-bykarlie").style.boxShadow = "none";
+    document.getElementById("welkom-bykarlie").style.backgroundPosition = "0% 50%";
+    document.getElementById("bykarlieButton").style.backgroundPosition = "100% 50%";
+    document.getElementById("bykarlieButton").style.backgroundSize = "0%";
+    document.getElementById("bykarlieButton").style.padding = "16px 32px";
+    document.getElementById("bykarlieButton").style.transitionDelay = "0s";
+    document.getElementById("highlightTitleDesktop").style.transform = "translateY(0%)";
 }
 

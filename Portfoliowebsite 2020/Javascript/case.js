@@ -364,14 +364,14 @@ function benButtonOff(){
     document.getElementById('iuBen').style.transform = "translate(12px, 12px)";
 }
 
-function noothulpButton(){
-    document.getElementById('ibiNoothulp').style.transform = "translate(12px, 12px)";
-    document.getElementById('iuNoothulp').style.transform = "translate(0px, 0px)";
+function bykarlieButton(){
+    document.getElementById('ibibykarlie').style.transform = "translate(12px, 12px)";
+    document.getElementById('iubykarlie').style.transform = "translate(0px, 0px)";
 }
 
-function noothulpButtonOff(){
-    document.getElementById('ibiNoothulp').style.transform = "translate(0px, 0px)";
-    document.getElementById('iuNoothulp').style.transform = "translate(12px, 12px)";
+function bykarlieButtonOff(){
+    document.getElementById('ibibykarlie').style.transform = "translate(0px, 0px)";
+    document.getElementById('iubykarlie').style.transform = "translate(12px, 12px)";
 }
 
 /*Mobile*/
@@ -406,14 +406,14 @@ function benButtonOffCard(){
     document.getElementById('iuBenCard').style.transform = "translate(12px, 12px)";
 }
 
-function noothulpButtonCard(){
-    document.getElementById('ibiNoothulpCard').style.transform = "translate(12px, 12px)";
-    document.getElementById('iuNoothulpCard').style.transform = "translate(0px, 0px)";
+function bykarlieButtonCard(){
+    document.getElementById('ibibykarlieCard').style.transform = "translate(12px, 12px)";
+    document.getElementById('iubykarlieCard').style.transform = "translate(0px, 0px)";
 }
 
-function noothulpButtonOff(){
-    document.getElementById('ibiNoothulp').style.transform = "translate(0px, 0px)";
-    document.getElementById('iuNoothulp').style.transform = "translate(12px, 12px)";
+function bykarlieButtonOff(){
+    document.getElementById('ibibykarlie').style.transform = "translate(0px, 0px)";
+    document.getElementById('iubykarlie').style.transform = "translate(12px, 12px)";
 }
 
 function caseOff(){
@@ -430,8 +430,8 @@ function caseOff(){
     document.getElementById('welkom-ben').style.backgroundSize = "100%";
     document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 
-    document.getElementById('welkom-noothulp').style.backgroundSize = "100%";
-    document.getElementById('welkom-noothulp').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+    document.getElementById('welkom-bykarlie').style.backgroundSize = "100%";
+    document.getElementById('welkom-bykarlie').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
 
 function benVerlengprocesOn(){
@@ -439,9 +439,9 @@ function benVerlengprocesOn(){
 	document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
 
-function noothulpOn(){
-	document.getElementById('welkom-noothulp').style.backgroundSize = "103%";
-	document.getElementById('welkom-noothulp').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+function bykarlieOn(){
+	document.getElementById('welkom-bykarlie').style.backgroundSize = "103%";
+	document.getElementById('welkom-bykarlie').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
 
 function saveNowWelkom(){
@@ -508,12 +508,12 @@ function benVerlengprocesWelkom(){
 	setTimeout("location.href = 'ben-verlengproces.html';",1500)
 }
 
-function noothulpWelkom(){
+function bykarlieWelkom(){
 	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
 	document.getElementById("nav-project-title").style.opacity = "0";
 
 	setTimeout(function(){ 
-	document.getElementById("nav-project-title").innerHTML = "Noothulp";
+	document.getElementById("nav-project-title").innerHTML = "ByKarlie";
 	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
 	document.getElementById("nav-project-title").style.opacity = "1";
 	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
@@ -526,7 +526,7 @@ function noothulpWelkom(){
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
 
-	setTimeout("location.href = 'noothulp.html';",1500)
+	setTimeout("location.href = 'bykarlie.html';",1500)
 }
 
 function buttonOn(){
@@ -579,7 +579,7 @@ function benVerlengprocesNieuw(){
 	setTimeout("location.href = 'ben-verlengproces.html';",1500)
 }
 
-function noothulpNieuw(){
+function bykarlieNieuw(){
 	document.getElementById('caseSwitchAnimation').style.display = "block";
 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
@@ -587,7 +587,7 @@ function noothulpNieuw(){
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
 
-	setTimeout("location.href = 'noothulp.html';",1500)
+	setTimeout("location.href = 'bykarlie.html';",1500)
 }
 
 // function saveNow(){
@@ -624,7 +624,7 @@ function noothulpNieuw(){
 // 	setTimeout("location.href = 'ben-verlengproces.html';",1500)
 // }
 
-// function noothulp(){
+// function bykarlie(){
 // 	document.getElementById('caseSwitchAnimation').style.display = "block";
 // 	document.getElementById('caseSwitchAnimation').style.opacity = "1";
 // 	document.getElementById('caseSwitchAnimation').style.position = "fixed";
@@ -632,7 +632,7 @@ function noothulpNieuw(){
 // 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 // 	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
 
-// 	setTimeout("location.href = 'noothulp.html';",1500)
+// 	setTimeout("location.href = 'bykarlie.html';",1500)
 // }
 
 
@@ -890,12 +890,12 @@ function benVerlengprocesCard(){
 	setTimeout("location.href = 'ben-verlengproces.html';",1600)
 }
 
-function noothulpCard(){
+function bykarlieCard(){
 	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
 	document.getElementById("nav-project-title").style.opacity = "0";
 
 	setTimeout(function(){ 
-	document.getElementById("nav-project-title").innerHTML = "Noothulp";
+	document.getElementById("nav-project-title").innerHTML = "bykarlie";
 	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
 	document.getElementById("nav-project-title").style.opacity = "1";
 	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
@@ -908,7 +908,7 @@ function noothulpCard(){
 	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
 	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
 
-	setTimeout("location.href = 'noothulp.html';",1600)
+	setTimeout("location.href = 'bykarlie.html';",1600)
 }
 
 
