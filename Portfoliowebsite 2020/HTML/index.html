@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Portfoliowebsite Dion van der Riet</title>
-	<link rel="stylesheet" type="text/css" href="../CSS/case-stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
 	<link rel="stylesheet" href="https://use.typekit.net/gqv3dkc.css">
 	<link rel="shortcut icon" type="image/png" href="../Afbeeldingen/favicon.ico"/>
 	<meta charset="UTF-8">
 </head>
-<body onload="loadWebsiteCheck()">
+<body onload=" loadWebsiteCheck()">
 	<div id="loadWebsite">
 		<div id="loadWebsiteTitel">
 			<h2>Dion van der Riet</h2>
@@ -77,7 +77,7 @@
 		</div>
 		<div id="introductie-2">
 			<p>
-				Als UX Designer haal ik veel plezier uit samen met de doelgroep komen tot een geschikt ontwerp waarmee hun problemen opgelost worden. Het uitvoeren van een usability test is dankzij de minor Usability Expert geen probleem voor mij, eveneens als verschillende onderzoeksmethoden zoals interviewen en enquêteren. 
+				Als UX- en Digital Designer haal ik veel plezier uit samen met de doelgroep komen tot een geschikt ontwerp waarmee hun problemen opgelost worden. Het uitvoeren van een usability test is dankzij de minor Usability Expert geen probleem voor mij, eveneens als verschillende onderzoeksmethoden zoals interviewen en enquêteren. 
 			</p>
 			<div class="introductie-2-background"></div>
 		</div>
@@ -91,6 +91,17 @@
 		</div>
 		<div id="projectCardContainer">
 			<div class="projectCard projectCardFirst">
+				<div class="projectCardImage bykarlie-header"></div>
+				<div class="projectCardInfo">
+					<div class="projectCardLabel">
+						<h4>Web- & Appdesign</h4>
+					</div>
+					<h2>ByKarlie</h2>
+					<p>Redesign kleding webshop</p>
+					<input type="button" name="button" value="BEKIJK CASE" id="bykarlieButtonMobile" onclick="bykarlieWelkom()">
+				</div>
+			</div>
+			<div class="projectCard">
 				<div class="projectCardImage finance-header"></div>
 				<div class="projectCardInfo">
 					<div class="projectCardLabel">
@@ -112,7 +123,7 @@
 					<input type="button" name="button" value="BEKIJK CASE" id="playNextButtonMobile" onclick="playNextWelkom()">
 				</div>
 			</div>
-			<div class="projectCard">
+			<div class="projectCard projectCardLast">
 				<div class="projectCardImage ben-header"></div>
 				<div class="projectCardInfo">
 					<div class="projectCardLabel">
@@ -121,17 +132,6 @@
 					<h2>Ben Verlengproces</h2>
 					<p>Verlengen kan simpel zijn</p>
 					<input type="button" name="button" value="BEKIJK CASE" id="benButtonMobile" onclick="benVerlengprocesWelkom()">
-				</div>
-			</div>
-			<div class="projectCard projectCardLast">
-				<div class="projectCardImage bykarlie-header"></div>
-				<div class="projectCardInfo">
-					<div class="projectCardLabel">
-						<h4>Appdesign</h4>
-					</div>
-					<h2>bykarlie</h2>
-					<p>Muziekles zonder docent</p>
-					<input type="button" name="button" value="BEKIJK CASE" id="bykarlieButtonMobile" onclick="bykarlieWelkom()">
 				</div>
 			</div>
 		</div>
@@ -143,7 +143,7 @@
 		<div id="welkom-bykarlie"></div>
 		<div class="welkom-projecten-info" id="bykarlie-project-info">
 			<h3 class="welkom-project-name">ByKarlie</h3>
-			<p>Het creëren van redesign voor een bestaande kleding webshop.</p>
+			<p>Het creëren van een redesign voor een bestaande kleding webshop.</p>
 			<input type="button" name="button" value="BEKIJK CASE" id="bykarlieButton" onclick="bykarlieWelkom()" onmouseover="bykarlieWelkomHover()" onmouseout="bykarlieWelkomNormal()">
 		</div>
 

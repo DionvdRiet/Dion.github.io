@@ -2,7 +2,7 @@ window.onscroll = function(){
 projectenIndicator();
 aanHetScrollen();
 welkomIntroductie();
-saveNowWelkomHover();
+bykarlieWelkomHover();
 };
 
 function projectenIndicator(){
@@ -44,6 +44,27 @@ function aanHetScrollen() {
         document.getElementById("active-page").style.color = "#131824";
         document.getElementById("inactive-page-1").style.color = "#131824";
     }
+}
+
+function bykarlieWelkomHover(){
+    document.getElementById("welkom-bykarlie").style.transform = "translateY(-4%)";
+    document.getElementById("welkom-bykarlie").style.boxShadow = "0px 10px 20px rgba(0,0,0,0.06)";
+    document.getElementById("welkom-bykarlie").style.backgroundPosition = "0% 60%";
+    document.getElementById("bykarlieButton").style.backgroundPosition = "90% 46%";
+    document.getElementById("bykarlieButton").style.backgroundSize = "8%";
+    document.getElementById("bykarlieButton").style.padding = "16px 60px 16px 32px";
+    document.getElementById("highlightTitleDesktop").style.transform = "translateY(-44%)";
+}
+
+function bykarlieWelkomNormal(){
+    document.getElementById("welkom-bykarlie").style.transform = "translateY(0%)";
+    document.getElementById("welkom-bykarlie").style.boxShadow = "none";
+    document.getElementById("welkom-bykarlie").style.backgroundPosition = "0% 50%";
+    document.getElementById("bykarlieButton").style.backgroundPosition = "100% 50%";
+    document.getElementById("bykarlieButton").style.backgroundSize = "0%";
+    document.getElementById("bykarlieButton").style.padding = "16px 32px";
+    document.getElementById("bykarlieButton").style.transitionDelay = "0s";
+    document.getElementById("highlightTitleDesktop").style.transform = "translateY(0%)";
 }
 
 function saveNowWelkomHover(){
@@ -102,25 +123,3 @@ function benWelkomNormal(){
     document.getElementById("benButton").style.padding = "16px 32px";
     document.getElementById("benButton").style.transitionDelay = "0s";
 }
-
-function bykarlieWelkomHover(){
-    document.getElementById("welkom-bykarlie").style.transform = "translateY(-4%)";
-    document.getElementById("welkom-bykarlie").style.boxShadow = "0px 10px 20px rgba(0,0,0,0.06)";
-    document.getElementById("welkom-bykarlie").style.backgroundPosition = "0% 60%";
-    document.getElementById("bykarlieButton").style.backgroundPosition = "90% 46%";
-    document.getElementById("bykarlieButton").style.backgroundSize = "8%";
-    document.getElementById("bykarlieButton").style.padding = "16px 60px 16px 32px";
-    document.getElementById("highlightTitleDesktop").style.transform = "translateY(-44%)";
-}
-
-function bykarlieWelkomNormal(){
-    document.getElementById("welkom-bykarlie").style.transform = "translateY(0%)";
-    document.getElementById("welkom-bykarlie").style.boxShadow = "none";
-    document.getElementById("welkom-bykarlie").style.backgroundPosition = "0% 50%";
-    document.getElementById("bykarlieButton").style.backgroundPosition = "100% 50%";
-    document.getElementById("bykarlieButton").style.backgroundSize = "0%";
-    document.getElementById("bykarlieButton").style.padding = "16px 32px";
-    document.getElementById("bykarlieButton").style.transitionDelay = "0s";
-    document.getElementById("highlightTitleDesktop").style.transform = "translateY(0%)";
-}
-

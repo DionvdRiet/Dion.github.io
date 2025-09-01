@@ -334,87 +334,10 @@ function onNieuwCard(){
     document.getElementById('volgendeCaseNieuwCard').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
 
-function saveNowButton(){
-    document.getElementById('ibiSaveNow').style.transform = "translate(12px, 12px)";
-    document.getElementById('iuSaveNow').style.transform = "translate(0px, 0px)";
-}
 
-function saveNowButtonOff(){
-    document.getElementById('ibiSaveNow').style.transform = "translate(0px, 0px)";
-    document.getElementById('iuSaveNow').style.transform = "translate(12px, 12px)";
-}
-
-function playNextButton(){
-    document.getElementById('ibiPlayNext').style.transform = "translate(12px, 12px)";
-    document.getElementById('iuPlayNext').style.transform = "translate(0px, 0px)";
-}
-
-function playNextButtonOff(){
-    document.getElementById('ibiPlayNext').style.transform = "translate(0px, 0px)";
-    document.getElementById('iuPlayNext').style.transform = "translate(12px, 12px)";
-}
-
-function benButton(){
-    document.getElementById('ibiBen').style.transform = "translate(12px, 12px)";
-    document.getElementById('iuBen').style.transform = "translate(0px, 0px)";
-}
-
-function benButtonOff(){
-    document.getElementById('ibiBen').style.transform = "translate(0px, 0px)";
-    document.getElementById('iuBen').style.transform = "translate(12px, 12px)";
-}
-
-function bykarlieButton(){
-    document.getElementById('ibibykarlie').style.transform = "translate(12px, 12px)";
-    document.getElementById('iubykarlie').style.transform = "translate(0px, 0px)";
-}
-
-function bykarlieButtonOff(){
-    document.getElementById('ibibykarlie').style.transform = "translate(0px, 0px)";
-    document.getElementById('iubykarlie').style.transform = "translate(12px, 12px)";
-}
 
 /*Mobile*/
 
-function saveNowButtonCard(){
-    document.getElementById('ibiSaveNowCard').style.transform = "translate(12px, 12px)";
-    document.getElementById('iuSaveNowCard').style.transform = "translate(0px, 0px)";
-}
-
-function saveNowButtonOffCard(){
-    document.getElementById('ibiSaveNowCard').style.transform = "translate(0px, 0px)";
-    document.getElementById('iuSaveNowCard').style.transform = "translate(12px, 12px)";
-}
-
-function playNextButtonCard(){
-    document.getElementById('ibiPlayNextCard').style.transform = "translate(12px, 12px)";
-    document.getElementById('iuPlayNextCard').style.transform = "translate(0px, 0px)";
-}
-
-function playNextButtonOffCard(){
-    document.getElementById('ibiPlayNextCard').style.transform = "translate(0px, 0px)";
-    document.getElementById('iuPlayNextCard').style.transform = "translate(12px, 12px)";
-}
-
-function benButtonCard(){
-    document.getElementById('ibiBenCard').style.transform = "translate(12px, 12px)";
-    document.getElementById('iuBenCard').style.transform = "translate(0px, 0px)";
-}
-
-function benButtonOffCard(){
-    document.getElementById('ibiBenCard').style.transform = "translate(0px, 0px)";
-    document.getElementById('iuBenCard').style.transform = "translate(12px, 12px)";
-}
-
-function bykarlieButtonCard(){
-    document.getElementById('ibibykarlieCard').style.transform = "translate(12px, 12px)";
-    document.getElementById('iubykarlieCard').style.transform = "translate(0px, 0px)";
-}
-
-function bykarlieButtonOff(){
-    document.getElementById('ibibykarlie').style.transform = "translate(0px, 0px)";
-    document.getElementById('iubykarlie').style.transform = "translate(12px, 12px)";
-}
 
 function caseOff(){
     document.getElementById('nieuweButtonUnderlay').style.transform = "translate(12px, 12px)";
@@ -439,9 +362,25 @@ function benVerlengprocesOn(){
 	document.getElementById('welkom-ben').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
 }
 
-function bykarlieOn(){
-	document.getElementById('welkom-bykarlie').style.backgroundSize = "103%";
-	document.getElementById('welkom-bykarlie').style.transition = "background-size .3s cubic-bezier(.365,.305,0,1)";
+function bykarlieWelkom(){
+    document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
+    document.getElementById("nav-project-title").style.opacity = "0";
+
+    setTimeout(function(){ 
+    document.getElementById("nav-project-title").innerHTML = "ByKarlie";
+    document.getElementById("nav-project-title").style.transform = "translateY(0%)";
+    document.getElementById("nav-project-title").style.opacity = "1";
+    document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
+    document.getElementById("arrow-left-home").style.opacity = "1";
+    }, 1000);
+
+    document.getElementById('caseSwitchAnimation').style.display = "block";
+    document.getElementById('caseSwitchAnimation').style.position = "fixed";
+    document.getElementById("caseSwitchAnimation").style.height = "100vh";
+    document.getElementById("caseSwitchAnimation").style.bottom = "0px";
+    document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
+
+    setTimeout("location.href = 'bykarlie.html';",1500)
 }
 
 function saveNowWelkom(){
@@ -508,30 +447,9 @@ function benVerlengprocesWelkom(){
 	setTimeout("location.href = 'ben-verlengproces.html';",1500)
 }
 
-function bykarlieWelkom(){
-	document.getElementById("nav-project-title").style.transform = "translateY(+90%)";
-	document.getElementById("nav-project-title").style.opacity = "0";
-
-	setTimeout(function(){ 
-	document.getElementById("nav-project-title").innerHTML = "ByKarlie";
-	document.getElementById("nav-project-title").style.transform = "translateY(0%)";
-	document.getElementById("nav-project-title").style.opacity = "1";
-	document.getElementById("arrow-left-home").style.transform = "translateY(0%)";
-	document.getElementById("arrow-left-home").style.opacity = "1";
-	}, 1000);
-
-	document.getElementById('caseSwitchAnimation').style.display = "block";
-	document.getElementById('caseSwitchAnimation').style.position = "fixed";
-	document.getElementById("caseSwitchAnimation").style.height = "100vh";
-	document.getElementById("caseSwitchAnimation").style.bottom = "0px";
-	document.getElementById("caseSwitchAnimation").style.animationName = "caseSwitch";
-
-	setTimeout("location.href = 'bykarlie.html';",1500)
-}
-
 function buttonOn(){
     document.getElementById("volgendeCaseImage").style.backgroundSize = "105%";
-    document.getElementById("volgendeCaseImage").style.backgroundPosition = "50% 60%";
+    document.getElementById("volgendeCaseImage").style.backgroundPosition = "50% 20%";
     document.getElementById("volgendeCaseButton").style.backgroundPosition = "15% 80%";
     document.getElementById("volgendeCaseButton").style.backgroundPosition = "90% 46%";
     document.getElementById("volgendeCaseButton").style.backgroundSize = "8%";
@@ -540,7 +458,7 @@ function buttonOn(){
 
 function buttonOff(){
     document.getElementById("volgendeCaseImage").style.backgroundSize = "100%";
-    document.getElementById("volgendeCaseImage").style.backgroundPosition = "50% 50%";
+    document.getElementById("volgendeCaseImage").style.backgroundPosition = "50% 0%";
 
     document.getElementById("volgendeCaseButton").style.backgroundSize = "0%";
     document.getElementById("volgendeCaseButton").style.padding = "16px 32px";
